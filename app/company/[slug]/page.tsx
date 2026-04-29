@@ -87,7 +87,7 @@ export default async function CompanyPage({
             <div className="bg-white/10 rounded-2xl p-6 text-center min-w-48">
               <div className="text-4xl font-black text-yellow-300 mb-1">{company.rating}</div>
               <div className="flex justify-center mb-2">
-                {"★".repeat(Math.floor(company.rating)).split("").map((s, i) => (
+                {"".repeat(Math.floor(company.rating)).split("").map((s, i) => (
                   <span key={i} className="text-yellow-300">{s}</span>
                 ))}
               </div>
@@ -118,24 +118,24 @@ export default async function CompanyPage({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-green-50 rounded-xl p-5 border border-green-100">
               <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
-                <span className="text-green-600">✓</span> メリット
+                <span className="text-green-600"></span> メリット
               </h3>
               <ul className="space-y-2">
                 {company.pros.map((p) => (
                   <li key={p} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="text-green-500 mt-0.5">●</span> {p}
+                    <span className="text-green-500 mt-0.5"></span> {p}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="bg-red-50 rounded-xl p-5 border border-red-100">
               <h3 className="font-bold text-red-800 mb-3 flex items-center gap-2">
-                <span className="text-red-600">✗</span> デメリット
+                <span className="text-red-600"></span> デメリット
               </h3>
               <ul className="space-y-2">
                 {company.cons.map((c) => (
                   <li key={c} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="text-red-400 mt-0.5">●</span> {c}
+                    <span className="text-red-400 mt-0.5"></span> {c}
                   </li>
                 ))}
               </ul>
@@ -169,7 +169,7 @@ export default async function CompanyPage({
           <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">対応エリア</h2>
           <div className="bg-sky-50 rounded-xl p-6 border border-sky-100">
             <div className="flex items-center gap-3 mb-3">
-              <span className="text-2xl">📍</span>
+              <span className="text-2xl"></span>
               <span className="font-bold text-sky-800 text-lg">{company.coverage}対応</span>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">

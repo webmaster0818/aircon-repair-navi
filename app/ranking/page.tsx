@@ -20,10 +20,10 @@ export default function RankingPage() {
           <p className="text-sky-100 text-lg">2024年最新・編集部が厳選した信頼できる10社を徹底比較</p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <Link href="/ranking/fast" className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
-              ⚡ 即日対応ランキング
+               即日対応ランキング
             </Link>
             <Link href="/ranking/cheap" className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
-              💴 安い業者ランキング
+               安い業者ランキング
             </Link>
           </div>
         </div>
@@ -49,9 +49,9 @@ export default function RankingPage() {
                 </span>
                 <h2 className="text-xl font-bold text-slate-900">{c.name}</h2>
                 {index < 3 && (
-                  <span className="text-2xl">{index === 0 ? "🥇" : index === 1 ? "🥈" : "🥉"}</span>
+                  <span className="text-2xl">{index === 0 ? "" : index === 1 ? "" : ""}</span>
                 )}
-                <span className="ml-auto text-sm font-bold text-sky-600">★ {c.rating}</span>
+                <span className="ml-auto text-sm font-bold text-sky-600"> {c.rating}</span>
               </div>
 
               <div className="p-6">
@@ -71,7 +71,7 @@ export default function RankingPage() {
                   </div>
                   <div className="text-center bg-purple-50 rounded-lg p-3">
                     <p className="text-xs text-gray-500 mb-1">評価</p>
-                    <p className="font-bold text-purple-700 text-sm">★ {c.rating}</p>
+                    <p className="font-bold text-purple-700 text-sm"> {c.rating}</p>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2 mb-4">
@@ -103,14 +103,14 @@ export default function RankingPage() {
         {/* Related Links */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="/ranking/fast" className="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-200 transition-colors">
-            <span className="text-3xl">⚡</span>
+            <span className="text-3xl"></span>
             <div>
               <h3 className="font-bold text-slate-900">即日対応ランキング</h3>
               <p className="text-sm text-gray-600">急ぎで修理したい方はこちら</p>
             </div>
           </Link>
           <Link href="/ranking/cheap" className="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-200 transition-colors">
-            <span className="text-3xl">💴</span>
+            <span className="text-3xl"></span>
             <div>
               <h3 className="font-bold text-slate-900">安い業者ランキング</h3>
               <p className="text-sm text-gray-600">費用を抑えたい方はこちら</p>

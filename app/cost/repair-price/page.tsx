@@ -72,7 +72,7 @@ export default function RepairPricePage() {
         {/* Summary */}
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
           <h2 className="font-bold text-amber-900 mb-3 flex items-center gap-2">
-            <span>💡</span> 修理費用の基本的な仕組み
+            <span></span> 修理費用の基本的な仕組み
           </h2>
           <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>（3,000〜8,000円）+ <strong>診断料</strong>（2,000〜5,000円）+ <strong>修理費</strong>が基本構成</span></li>

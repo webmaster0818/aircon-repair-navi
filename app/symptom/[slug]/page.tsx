@@ -128,7 +128,7 @@ export default async function SymptomPage({
                   <p className="text-sm text-gray-600 leading-relaxed">{solution.description}</p>
                   {!solution.diy && (
                     <div className="mt-3 flex items-center gap-2 text-xs text-orange-600 bg-orange-50 px-3 py-2 rounded-lg">
-                      <span>⚠️</span>
+                      <span>️</span>
                       <span>専門資格が必要な作業です。必ず業者に依頼してください。</span>
                     </div>
                   )}
@@ -144,18 +144,18 @@ export default async function SymptomPage({
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-green-50 rounded-xl p-5 border border-green-100">
               <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
-                <span>🛠️</span> DIYで対応できる場合
+                <span>️</span> DIYで対応できる場合
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> フィルターの清掃・交換</li>
-                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> リモコンの電池交換</li>
-                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> ドレンホースの簡単な詰まり除去</li>
-                <li className="flex items-start gap-2"><span className="text-green-500">✓</span> 電源リセット・再起動</li>
+                <li className="flex items-start gap-2"><span className="text-green-500"></span> フィルターの清掃・交換</li>
+                <li className="flex items-start gap-2"><span className="text-green-500"></span> リモコンの電池交換</li>
+                <li className="flex items-start gap-2"><span className="text-green-500"></span> ドレンホースの簡単な詰まり除去</li>
+                <li className="flex items-start gap-2"><span className="text-green-500"></span> 電源リセット・再起動</li>
               </ul>
             </div>
             <div className="bg-orange-50 rounded-xl p-5 border border-orange-100">
               <h3 className="font-bold text-orange-800 mb-3 flex items-center gap-2">
-                <span>👨‍🔧</span> 業者依頼が必要な場合
+                <span>‍</span> 業者依頼が必要な場合
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-orange-500">!</span> 冷媒ガスの補充・修理（資格が必要）</li>

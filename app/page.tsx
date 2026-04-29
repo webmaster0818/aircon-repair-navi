@@ -2,14 +2,14 @@ import Link from "next/link";
 import companies from "@/data/companies.json";
 
 const symptoms = [
-  { icon: "🥵", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
-  { icon: "💧", label: "水漏れ", href: "/symptom/water-leak", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
-  { icon: "🔊", label: "異音がする", href: "/symptom/noise", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
-  { icon: "👃", label: "臭いがする", href: "/symptom/bad-smell", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
-  { icon: "❌", label: "動かない", href: "/symptom/not-starting", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
-  { icon: "💨", label: "ガス漏れ", href: "/symptom/gas-leak", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
-  { icon: "📱", label: "リモコン不良", href: "/symptom/remote-error", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
-  { icon: "⚠️", label: "エラーコード", href: "/symptom/error-code", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
+  { icon: "", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
+  { icon: "", label: "水漏れ", href: "/symptom/water-leak", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
+  { icon: "", label: "異音がする", href: "/symptom/noise", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
+  { icon: "", label: "臭いがする", href: "/symptom/bad-smell", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
+  { icon: "", label: "動かない", href: "/symptom/not-starting", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
+  { icon: "", label: "ガス漏れ", href: "/symptom/gas-leak", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
+  { icon: "", label: "リモコン不良", href: "/symptom/remote-error", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
+  { icon: "️", label: "エラーコード", href: "/symptom/error-code", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
 ];
 
 const costTable = [
@@ -22,11 +22,11 @@ const costTable = [
 ];
 
 const choosingPoints = [
-  { icon: "⏱️", title: "対応スピード", desc: "緊急時は最短即日〜翌日対応の業者を選ぶ。受付時間も重要。" },
-  { icon: "📍", title: "対応エリア", desc: "全国対応か地域密着型か。地方では対応可能な業者が限られることも。" },
-  { icon: "💴", title: "料金の透明性", desc: "事前見積もり無料・追加料金なしの業者が安心。相場との比較を。" },
+  { icon: "️", title: "対応スピード", desc: "緊急時は最短即日〜翌日対応の業者を選ぶ。受付時間も重要。" },
+  { icon: "", title: "対応エリア", desc: "全国対応か地域密着型か。地方では対応可能な業者が限られることも。" },
+  { icon: "", title: "料金の透明性", desc: "事前見積もり無料・追加料金なしの業者が安心。相場との比較を。" },
   { icon: "⭐", title: "実績・口コミ", desc: "施工実績数や口コミ評価を確認。資格保有者が在籍かも確認を。" },
-  { icon: "🔧", title: "保証・アフターケア", desc: "修理後の保証期間や再修理対応があるか確認しておく。" },
+  { icon: "", title: "保証・アフターケア", desc: "修理後の保証期間や再修理対応があるか確認しておく。" },
 ];
 
 const faqs = [
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: "修理業者を選ぶ際のポイントは？",
-    a: "①対応スピード ②料金の透明性 ③有資格者の在籍 ④口コミ・実績 ⑤保証内容の5つを確認しましょう。複数業者から見積もりを取ることで相場感がわかります。",
+    a: "対応スピード 料金の透明性 有資格者の在籍 口コミ・実績 保証内容の5つを確認しましょう。複数業者から見積もりを取ることで相場感がわかります。",
   },
   {
     q: "エアコン修理と買い替えどちらが得ですか？",
@@ -91,7 +91,7 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 text-center text-white" style={{ zIndex: 2 }}>
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full mb-6 border border-white/30">
-            <span>❄️</span>
+            <span>️</span>
             <span>全国10社以上を徹底比較・PRを含みます</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
@@ -119,16 +119,16 @@ export default function HomePage() {
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span>✅</span><span>無料見積もり</span>
+              <span></span><span>無料見積もり</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span>⚡</span><span>最短即日対応</span>
+              <span></span><span>最短即日対応</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span>🛡️</span><span>修理保証あり</span>
+              <span>️</span><span>修理保証あり</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span>🕐</span><span>24時間365日</span>
+              <span></span><span>24時間365日</span>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ export default function HomePage() {
                   <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full text-xl font-black shadow-lg ${
                     index === 0 ? "bg-yellow-500" : index === 1 ? "bg-gray-400" : "bg-orange-500"
                   }`}>
-                    {index === 0 ? "🥇" : index === 1 ? "🥈" : "🥉"}
+                    {index === 0 ? "" : index === 1 ? "" : ""}
                   </span>
                 </div>
                 <div className="mt-4">
@@ -394,7 +394,7 @@ export default function HomePage() {
           style={{ background: "linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%)" }}
         />
         <div className="relative max-w-3xl mx-auto px-4 text-center text-white" style={{ zIndex: 1 }}>
-          <div className="text-4xl mb-4">❄️</div>
+          <div className="text-4xl mb-4">️</div>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブル、今すぐ解決！</h2>
           <p className="text-sky-200 mb-8 text-lg">24時間365日対応の業者多数。まずは無料見積もりから。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

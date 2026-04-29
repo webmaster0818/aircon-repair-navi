@@ -38,7 +38,7 @@ export default function CheapRankingPage() {
         {/* Tips */}
         <div className="bg-emerald-50 rounded-2xl p-6 border border-emerald-100 mb-10">
           <h2 className="text-lg font-bold text-emerald-900 mb-3 flex items-center gap-2">
-            <span>💡</span> 修理費用を安く抑える5つのコツ
+            <span></span> 修理費用を安く抑える5つのコツ
           </h2>
           <ol className="space-y-2 text-sm text-gray-700">
             <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">1.</span> 複数の業者から見積もりを取って比較する</li>

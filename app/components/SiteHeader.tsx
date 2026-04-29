@@ -27,7 +27,7 @@ export default function SiteHeader() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 no-underline">
-            <span className="text-2xl">❄️</span>
+            <span className="text-2xl">️</span>
             <div>
               <span className="font-bold text-lg text-sky-500 leading-none block">エアコン修理ナビ</span>
               <span className="text-xs text-orange-500 font-medium">PRを含みます</span>

@@ -69,7 +69,7 @@ export default function SiteFooter() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
               <Link href="/" className="flex items-center gap-2 no-underline">
-                <span className="text-xl">❄️</span>
+                <span className="text-xl">️</span>
                 <span className="font-bold text-white">エアコン修理ナビ</span>
               </Link>
               <p className="mt-2 text-xs text-gray-500 max-w-md">

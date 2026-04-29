@@ -10,35 +10,35 @@ export const metadata: Metadata = {
 const decisionFactors = [
   {
     factor: "使用年数",
-    icon: "📅",
+    icon: "",
     repair: "5年未満",
     replace: "10年以上",
     detail: "エアコンの平均寿命は約10〜15年。使用年数が長いほど部品の劣化が進み、修理してもすぐに別の箇所が壊れるリスクがあります。",
   },
   {
     factor: "修理費用の比率",
-    icon: "💴",
+    icon: "",
     repair: "新品価格の30%未満",
     replace: "新品価格の50%以上",
     detail: "修理費が新品購入費の50%を超える場合、買い替えの方が長期的にお得なことが多いです。",
   },
   {
     factor: "省エネ性能",
-    icon: "⚡",
+    icon: "",
     repair: "5年以内のモデル",
     replace: "10年以上前のモデル",
     detail: "最新エアコンは旧モデルと比較して電気代が20〜40%安くなる場合があります。長期的な電気代の節約効果も考慮しましょう。",
   },
   {
     factor: "部品の入手可能性",
-    icon: "🔩",
+    icon: "",
     repair: "部品が入手可能",
     replace: "部品保有期間終了後",
     detail: "メーカーは製造終了後7〜9年程度で補修部品の保有を終了します。部品が入手できない場合は修理不可能になります。",
   },
   {
     factor: "修理頻度",
-    icon: "🔧",
+    icon: "",
     repair: "初めて故障した",
     replace: "過去に何度も修理",
     detail: "短期間に複数回故障している場合、耐用年数が来ている可能性が高く、買い替えを検討すべきシグナルです。",
@@ -78,19 +78,19 @@ export default function ReplaceVsRepairPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-green-50 border-2 border-green-300 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-              <span>🔧</span> 修理すべきケース
+              <span></span> 修理すべきケース
             </h2>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span> 使用年数が5年未満</li>
-              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span> メーカー保証期間内</li>
-              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span> 修理費が2〜3万円未満</li>
-              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span> フィルター詰まりなど軽微な不具合</li>
-              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5">✓</span> 冬季・夏季の繁忙期で新品入手困難</li>
+              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> 使用年数が5年未満</li>
+              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> メーカー保証期間内</li>
+              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> 修理費が2〜3万円未満</li>
+              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> フィルター詰まりなど軽微な不具合</li>
+              <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> 冬季・夏季の繁忙期で新品入手困難</li>
             </ul>
           </div>
           <div className="bg-orange-50 border-2 border-orange-300 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-orange-800 mb-4 flex items-center gap-2">
-              <span>🛒</span> 買い替えすべきケース
+              <span></span> 買い替えすべきケース
             </h2>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2"><span className="text-orange-500 mt-0.5">!</span> 使用年数が10年以上</li>

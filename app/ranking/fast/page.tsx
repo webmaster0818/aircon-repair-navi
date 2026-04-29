@@ -35,7 +35,7 @@ export default function FastRankingPage() {
       <section className="bg-gradient-to-br from-orange-600 to-red-700 text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">PR</span>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">⚡ 即日対応 修理業者ランキング</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4"> 即日対応 修理業者ランキング</h1>
           <p className="text-orange-100 text-lg">急なエアコントラブルに最速で対応する業者TOP5</p>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function FastRankingPage() {
         {/* Emergency Tips */}
         <div className="bg-red-50 rounded-2xl p-6 border border-red-100 mb-10">
           <h2 className="text-lg font-bold text-red-900 mb-3 flex items-center gap-2">
-            <span>🚨</span> 急な修理の前に確認すること
+            <span></span> 急な修理の前に確認すること
           </h2>
           <ol className="space-y-2 text-sm text-gray-700">
             <li className="flex items-start gap-2"><span className="text-red-600 font-bold">1.</span> まずブレーカーとコンセントを確認する（意外と多い）</li>
@@ -63,7 +63,7 @@ export default function FastRankingPage() {
                 <span className="text-xl font-black text-orange-600">#{index + 1}</span>
                 <h2 className="text-lg font-bold text-slate-900">{c.name}</h2>
                 <span className="ml-auto font-bold text-green-700 bg-green-100 px-3 py-1 rounded-full text-sm">
-                  ⚡ {c.responseTime}
+                   {c.responseTime}
                 </span>
               </div>
               <div className="p-6">
