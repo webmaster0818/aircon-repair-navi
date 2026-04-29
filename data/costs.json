@@ -1,0 +1,96 @@
+[
+  {
+    "id": "repair-price",
+    "title": "エアコン修理費用の相場",
+    "description": "症状別のエアコン修理費用の目安と料金内訳を詳しく解説します。",
+    "categories": [
+      {
+        "symptom": "冷えない（ガス補充）",
+        "minCost": 20000,
+        "maxCost": 50000,
+        "avgCost": 35000,
+        "note": "ガス漏れ修理込みの場合は別途加算"
+      },
+      {
+        "symptom": "水漏れ修理",
+        "minCost": 3000,
+        "maxCost": 30000,
+        "avgCost": 12000,
+        "note": "ドレンホース詰まりは安く済むことが多い"
+      },
+      {
+        "symptom": "異音修理（ファン系）",
+        "minCost": 8000,
+        "maxCost": 40000,
+        "avgCost": 20000,
+        "note": "部品代込み"
+      },
+      {
+        "symptom": "基板交換",
+        "minCost": 30000,
+        "maxCost": 100000,
+        "avgCost": 60000,
+        "note": "機種により大きく異なる"
+      },
+      {
+        "symptom": "コンプレッサー交換",
+        "minCost": 80000,
+        "maxCost": 200000,
+        "avgCost": 130000,
+        "note": "費用によっては買い替えを検討"
+      },
+      {
+        "symptom": "リモコン交換",
+        "minCost": 2000,
+        "maxCost": 10000,
+        "avgCost": 5000,
+        "note": "純正品か汎用品で異なる"
+      },
+      {
+        "symptom": "フィルター清掃（業者依頼）",
+        "minCost": 5000,
+        "maxCost": 15000,
+        "avgCost": 8000,
+        "note": "クリーニングを含む"
+      },
+      {
+        "symptom": "ガス漏れ修理+補充",
+        "minCost": 30000,
+        "maxCost": 80000,
+        "avgCost": 50000,
+        "note": "配管の種類・状態により異なる"
+      }
+    ]
+  },
+  {
+    "id": "replace-vs-repair",
+    "title": "修理 vs 買い替え判断ガイド",
+    "description": "エアコンを修理すべきか買い替えるべきかを判断するための詳しいガイドです。",
+    "decisionFactors": [
+      {
+        "factor": "使用年数",
+        "repairAdvised": "5年未満",
+        "replaceAdvised": "10年以上",
+        "description": "一般的なエアコンの寿命は10〜15年。年数が経つほど故障リスクが高まる"
+      },
+      {
+        "factor": "修理費用の目安",
+        "repairAdvised": "新品価格の30%未満",
+        "replaceAdvised": "新品価格の50%以上",
+        "description": "修理費用が高い場合は買い替えの方が長期的にお得な場合が多い"
+      },
+      {
+        "factor": "省エネ性能",
+        "repairAdvised": "5年以内のモデル",
+        "replaceAdvised": "10年以上前のモデル",
+        "description": "最新モデルは省エネ性能が大幅に向上しており、電気代の節約につながる"
+      },
+      {
+        "factor": "部品の入手可能性",
+        "repairAdvised": "部品が入手可能",
+        "replaceAdvised": "メーカーの部品保有期間終了後",
+        "description": "製造終了後7〜9年で部品保有期間が終わることが多い"
+      }
+    ]
+  }
+]
