@@ -2,14 +2,14 @@ import Link from "next/link";
 import companies from "@/data/companies.json";
 
 const symptoms = [
-  { icon: "", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
-  { icon: "", label: "水漏れ", href: "/symptom/water-leak", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
-  { icon: "", label: "異音がする", href: "/symptom/noise", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
-  { icon: "", label: "臭いがする", href: "/symptom/bad-smell", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
-  { icon: "", label: "動かない", href: "/symptom/not-starting", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
-  { icon: "", label: "ガス漏れ", href: "/symptom/gas-leak", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
-  { icon: "", label: "リモコン不良", href: "/symptom/remote-error", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
-  { icon: "️", label: "エラーコード", href: "/symptom/error-code", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
+  { iconSrc: "/images/icon-snowflake.png", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
+  { iconSrc: "/images/icon-water-drop.png", label: "水漏れ", href: "/symptom/water-leak", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
+  { iconSrc: "/images/icon-sound-wave.png", label: "異音がする", href: "/symptom/noise", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
+  { iconSrc: "/images/icon-nose.png", label: "臭いがする", href: "/symptom/bad-smell", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
+  { iconSrc: "/images/icon-power.png", label: "動かない", href: "/symptom/not-starting", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
+  { iconSrc: "/images/icon-gas.png", label: "ガス漏れ", href: "/symptom/gas-leak", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
+  { iconSrc: "/images/icon-remote.png", label: "リモコン不良", href: "/symptom/remote-error", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
+  { iconSrc: "/images/icon-alert.png", label: "エラーコード", href: "/symptom/error-code", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
 ];
 
 const costTable = [
@@ -148,7 +148,7 @@ export default function HomePage() {
               href={s.href}
               className={`flex flex-col items-center gap-3 p-5 rounded-2xl border-2 transition-all shadow-sm hover:shadow-md hover:-translate-y-1 ${s.color}`}
             >
-              <span className={`text-4xl w-14 h-14 flex items-center justify-center rounded-full ${s.iconBg}`}>{s.icon}</span>
+              <span className={`w-14 h-14 flex items-center justify-center rounded-full ${s.iconBg}`}><img src={s.iconSrc} alt="" className="w-8 h-8 inline-block" /></span>
               <span className="font-bold text-sm text-slate-800">{s.label}</span>
             </Link>
           ))}
