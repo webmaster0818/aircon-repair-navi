@@ -22,11 +22,11 @@ const costTable = [
 ];
 
 const choosingPoints = [
-  { icon: "️", title: "対応スピード", desc: "緊急時は最短即日〜翌日対応の業者を選ぶ。受付時間も重要。" },
-  { icon: "", title: "対応エリア", desc: "全国対応か地域密着型か。地方では対応可能な業者が限られることも。" },
-  { icon: "", title: "料金の透明性", desc: "事前見積もり無料・追加料金なしの業者が安心。相場との比較を。" },
-  { icon: "⭐", title: "実績・口コミ", desc: "施工実績数や口コミ評価を確認。資格保有者が在籍かも確認を。" },
-  { icon: "", title: "保証・アフターケア", desc: "修理後の保証期間や再修理対応があるか確認しておく。" },
+  { iconType: "speed", title: "対応スピード", desc: "緊急時は最短即日〜翌日対応の業者を選ぶ。受付時間も重要。" },
+  { iconType: "area", title: "対応エリア", desc: "全国対応か地域密着型か。地方では対応可能な業者が限られることも。" },
+  { iconType: "price", title: "料金の透明性", desc: "事前見積もり無料・追加料金なしの業者が安心。相場との比較を。" },
+  { iconType: "reviews", title: "実績・口コミ", desc: "施工実績数や口コミ評価を確認。資格保有者が在籍かも確認を。" },
+  { iconType: "guarantee", title: "保証・アフターケア", desc: "修理後の保証期間や再修理対応があるか確認しておく。" },
 ];
 
 const faqs = [
@@ -91,7 +91,7 @@ export default function HomePage() {
         {/* Content */}
         <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 text-center text-white" style={{ zIndex: 2 }}>
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full mb-6 border border-white/30">
-            <span>️</span>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <span>全国10社以上を徹底比較・PRを含みます</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
@@ -119,16 +119,16 @@ export default function HomePage() {
           {/* Trust badges */}
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span></span><span>無料見積もり</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>無料見積もり</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span></span><span>最短即日対応</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最短即日対応</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span>️</span><span>修理保証あり</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>修理保証あり</span>
             </div>
             <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <span></span><span>24時間365日</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>24時間365日</span>
             </div>
           </div>
         </div>
@@ -181,10 +181,10 @@ export default function HomePage() {
                   </div>
                 )}
                 <div className="absolute -top-5 left-6">
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full text-xl font-black shadow-lg ${
+                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full text-lg font-black shadow-lg text-white ${
                     index === 0 ? "bg-yellow-500" : index === 1 ? "bg-gray-400" : "bg-orange-500"
                   }`}>
-                    {index === 0 ? "" : index === 1 ? "" : ""}
+                    {index + 1}
                   </span>
                 </div>
                 <div className="mt-4">
@@ -346,7 +346,11 @@ export default function HomePage() {
           {choosingPoints.map((p, i) => (
             <div key={p.title} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all text-center hover:-translate-y-1">
               <div className="w-14 h-14 bg-sky-50 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-3xl">{p.icon}</span>
+                {p.iconType === "speed" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>}
+                {p.iconType === "area" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>}
+                {p.iconType === "price" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><text x="12" y="16" textAnchor="middle" fill="currentColor" stroke="none" fontSize="11" fontWeight="bold">¥</text></svg>}
+                {p.iconType === "reviews" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>}
+                {p.iconType === "guarantee" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>}
               </div>
               <div className="text-xs text-sky-500 font-bold mb-1">POINT {i + 1}</div>
               <h3 className="font-bold text-slate-900 mb-2 text-sm">{p.title}</h3>
@@ -394,7 +398,7 @@ export default function HomePage() {
           style={{ background: "linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%)" }}
         />
         <div className="relative max-w-3xl mx-auto px-4 text-center text-white" style={{ zIndex: 1 }}>
-          <div className="text-4xl mb-4">️</div>
+          <div className="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
           <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブル、今すぐ解決！</h2>
           <p className="text-sky-200 mb-8 text-lg">24時間365日対応の業者多数。まずは無料見積もりから。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

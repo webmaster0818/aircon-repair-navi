@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
@@ -7,38 +8,41 @@ export const metadata: Metadata = {
   description: "エアコンを修理すべきか買い替えるべきか迷ったときの判断基準を解説。使用年数・修理費用・省エネ性能から総合的に判断する方法をわかりやすく紹介。",
 };
 
+const FactorIcons: Record<string, React.ReactNode> = {
+  "使用年数": <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>,
+  "修理費用の比率": <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><text x="12" y="16" textAnchor="middle" fill="currentColor" stroke="none" fontSize="11" fontWeight="bold">¥</text></svg>,
+  "省エネ性能": <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>,
+  "部品の入手可能性": <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>,
+  "修理頻度": <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>,
+};
+
 const decisionFactors = [
   {
     factor: "使用年数",
-    icon: "",
     repair: "5年未満",
     replace: "10年以上",
     detail: "エアコンの平均寿命は約10〜15年。使用年数が長いほど部品の劣化が進み、修理してもすぐに別の箇所が壊れるリスクがあります。",
   },
   {
     factor: "修理費用の比率",
-    icon: "",
     repair: "新品価格の30%未満",
     replace: "新品価格の50%以上",
     detail: "修理費が新品購入費の50%を超える場合、買い替えの方が長期的にお得なことが多いです。",
   },
   {
     factor: "省エネ性能",
-    icon: "",
     repair: "5年以内のモデル",
     replace: "10年以上前のモデル",
     detail: "最新エアコンは旧モデルと比較して電気代が20〜40%安くなる場合があります。長期的な電気代の節約効果も考慮しましょう。",
   },
   {
     factor: "部品の入手可能性",
-    icon: "",
     repair: "部品が入手可能",
     replace: "部品保有期間終了後",
     detail: "メーカーは製造終了後7〜9年程度で補修部品の保有を終了します。部品が入手できない場合は修理不可能になります。",
   },
   {
     factor: "修理頻度",
-    icon: "",
     repair: "初めて故障した",
     replace: "過去に何度も修理",
     detail: "短期間に複数回故障している場合、耐用年数が来ている可能性が高く、買い替えを検討すべきシグナルです。",
@@ -109,7 +113,7 @@ export default function ReplaceVsRepairPage() {
             {decisionFactors.map((factor) => (
               <div key={factor.factor} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
                 <h3 className="font-bold text-slate-900 mb-3 flex items-center gap-2">
-                  <span className="text-2xl">{factor.icon}</span>
+                  {FactorIcons[factor.factor]}
                   {factor.factor}
                 </h3>
                 <div className="grid grid-cols-2 gap-4 mb-3">
