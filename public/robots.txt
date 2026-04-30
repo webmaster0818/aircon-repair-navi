@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aircon-repair-navi-deploy.pages.dev/sitemap.xml
+Sitemap: https://aircon-maintenance-navi.com/sitemap.xml
