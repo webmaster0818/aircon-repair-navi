@@ -2,6 +2,14 @@ import Link from "next/link";
 
 const footerLinks: { category: string; links: { href: string; label: string }[] }[] = [
   {
+    category: "サイト情報",
+    links: [
+      { href: "/terms", label: "利用規約" },
+      { href: "/privacy", label: "プライバシーポリシー" },
+      { href: "/content-policy", label: "記事の制作ポリシー" },
+    ],
+  },
+  {
     category: "業者ランキング",
     links: [
       { href: "/ranking", label: "総合ランキング" },
@@ -45,7 +53,7 @@ export default function SiteFooter() {
   return (
     <footer className="bg-slate-900 text-gray-300 mt-auto">
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {footerLinks.map(({ category, links }) => (
             <div key={category}>
               <h3 className="text-white font-bold text-sm mb-4">{category}</h3>
