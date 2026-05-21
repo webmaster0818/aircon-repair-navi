@@ -5,6 +5,7 @@ import SiteFooter from "./components/SiteFooter";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://aircon-maintenance-navi.com"),
+  alternates: { canonical: "/" },
   title: {
     default: "エアコン修理ナビ｜信頼できる修理業者を比較・紹介",
     template: "%s｜エアコン修理ナビ",
