@@ -36,7 +36,12 @@ export default function RootLayout({
     <html lang="ja" className="h-full">
       <body className="min-h-full flex flex-col bg-slate-50">
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">{children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"エアコン修理ナビ\",\"url\":\"https://aircon-repair-navi-deploy.pages.dev/\",\"logo\":\"https://aircon-repair-navi-deploy.pages.dev/favicon.ico\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"株式会社MediaX\",\"url\":\"https://mediax.biz\"},\"sameAs\":[\"https://aircon-repair-navi-deploy.pages.dev/about/\"]}" }}
+        />
+        </main>
         <SiteFooter />
       </body>
     </html>
