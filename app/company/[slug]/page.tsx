@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import companies from "@/data/companies.json";
 
+// aircon-trouble-center は専用の口コミ・評判記事ページで生成するため除外
 export async function generateStaticParams() {
-  return companies.map((c) => ({ slug: c.slug }));
+  return companies.filter((c) => c.slug !== "aircon-trouble-center").map((c) => ({ slug: c.slug }));
 }
 
 export async function generateMetadata({
