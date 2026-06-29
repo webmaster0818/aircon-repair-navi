@@ -5,9 +5,9 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "テイクサービスの口コミ・評判は？エアコン修理の料金・対応エリアを徹底調査【2026年最新】",
+    "テイクサービス（エアコントラブルテイク）の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   description:
-    "生活トラブル解決サービス「テイクサービス」のエアコン修理について、口コミ・評判をまとめました。実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・デメリット、向いている人まで中立的に解説します。",
+    "エアコントラブルに対応する「テイクサービス（エアコントラブルテイク）」の口コミ・評判をまとめました。実際の利用者の声、料金の目安（10,000円〜）、24時間受付・全国対応エリア、依頼の流れ、メリット・デメリットまで中立的に解説します。",
   alternates: { canonical: "/company/take-service" },
 };
 
@@ -153,7 +153,7 @@ export default function Page() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             エアコンが急に効かなくなったり、水漏れや異音が起きたりしたとき、すぐに動いてくれる修理サービスは心強い存在です。
             この記事では、生活トラブル全般に対応する
-            <strong className="font-semibold text-slate-900">テイクサービス</strong>
+            <strong className="font-semibold text-slate-900">テイクサービス（エアコントラブルテイク）</strong>
             のエアコン修理について、実際に紹介されている利用者の声、料金の目安、対応エリアや受付時間、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
