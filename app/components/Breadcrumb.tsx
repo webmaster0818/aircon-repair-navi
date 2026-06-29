@@ -19,7 +19,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
       "@type": "ListItem",
       position: index + 1,
       name: item.name,
-      item: `https://aircon-repair-navi.pages.dev${item.href}`,
+      item: `https://aircon-maintenance-navi.com${item.href}`,
     })),
   };
 
