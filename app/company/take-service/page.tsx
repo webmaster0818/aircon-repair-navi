@@ -357,9 +357,12 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは相談・見積もりで、症状と費用の目安を確認してみましょう。</p>
-              <a href="https://www.take-service.net/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <div className="flex justify-center mb-5">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NKMSH" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www25.a8.net/svt/bgt?aid=260628928534&wid=013&eno=01&mid=s00000014894010006000&mc=1" /></a><img width={1} height={1} src="https://www13.a8.net/0.gif?a8mat=4B66KG+8TXR2Q+36X8+1NKMSH" alt="" style={{ display: "none" }} />
+              </div>
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 テイクサービス公式サイトを見る
-              </a>
+              </a><img width={1} height={1} src="https://www19.a8.net/0.gif?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" alt="" style={{ display: "none" }} />
             </div>
           </section>
 

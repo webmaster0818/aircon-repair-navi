@@ -377,9 +377,12 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
               <p className="text-sky-100 text-sm mb-5">対応エリアなら、まずは料金と空き状況を確認してみましょう。</p>
-              <a href="https://seifu-ac.jp/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <div className="flex justify-center mb-5">
+                <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BXYE9" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www24.a8.net/svt/bgt?aid=260628928539&wid=013&eno=01&mid=s00000020635002006000&mc=1" /></a><img width={1} height={1} src="https://www11.a8.net/0.gif?a8mat=4B66KG+8WWX3M+4F7Y+BXYE9" alt="" style={{ display: "none" }} />
+              </div>
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 エアコンクリーニング清風 公式サイトを見る
-              </a>
+              </a><img width={1} height={1} src="https://www14.a8.net/0.gif?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" alt="" style={{ display: "none" }} />
             </div>
           </section>
 
