@@ -250,9 +250,12 @@ export default function HomePage() {
           </table>
         </div>
         <p className="text-xs text-gray-400 mt-3 text-center">※費用はあくまで目安です。実際の費用は症状・機種・業者によって異なります。</p>
-        <div className="text-center mt-4">
-          <Link href="/cost/repair-price" className="text-sky-600 font-bold hover:underline text-sm">
-            詳しい費用相場を見る →
+        <div className="text-center mt-4 flex flex-col sm:flex-row gap-3 justify-center">
+          <Link href="/guide/repair-cost" className="text-sky-600 font-bold hover:underline text-sm">
+            エアコン修理の費用・料金相場ガイド →
+          </Link>
+          <Link href="/guide/noise" className="text-sky-600 font-bold hover:underline text-sm">
+            異音「ガガガ」の原因と対処ガイド →
           </Link>
         </div>
       </section>
