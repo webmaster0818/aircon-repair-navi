@@ -5,6 +5,13 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
 
+const UPDATED = "2026年6月29日";
+
+const guideMeta: Record<string, { href: string; label: string }> = {
+  "repair-cost": { href: "/guide/repair-cost", label: "エアコン修理費用の相場ガイド" },
+  noise: { href: "/guide/noise", label: "エアコンの異音 原因と対処ガイド" },
+};
+
 export async function generateStaticParams() {
   return symptoms.map((s) => ({ slug: s.slug }));
 }
@@ -17,9 +24,11 @@ export async function generateMetadata({
   const { slug } = await params;
   const symptom = symptoms.find((s) => s.slug === slug);
   if (!symptom) return {};
+  const s = symptom as Record<string, unknown>;
   return {
-    title: symptom.title,
-    description: symptom.description,
+    title: (s.seoTitle as string) ?? symptom.title,
+    description: (s.seoDescription as string) ?? symptom.description,
+    alternates: { canonical: `/symptom/${symptom.slug}` },
   };
 }
 
@@ -35,6 +44,11 @@ const urgencyLabel: Record<string, { label: string; color: string }> = {
   high: { label: "高（早急に対処）", color: "text-red-600" },
 };
 
+interface CostRow {
+  item: string;
+  range: string;
+}
+
 export default async function SymptomPage({
   params,
 }: {
@@ -44,11 +58,27 @@ export default async function SymptomPage({
   const symptom = symptoms.find((s) => s.slug === slug);
   if (!symptom) notFound();
 
+  const s = symptom as Record<string, unknown>;
+  const seoTitle = (s.seoTitle as string) ?? symptom.title;
+  const seoDescription = (s.seoDescription as string) ?? symptom.description;
+  const quickCheck = (s.quickCheck as string[] | undefined) ?? [];
+  const costBreakdown = (s.costBreakdown as CostRow[] | undefined) ?? [];
+  const relatedGuides = (s.relatedGuides as string[] | undefined) ?? [];
+  const relatedSymptomSlugs = (s.relatedSymptoms as string[] | undefined) ?? [];
+
   const recommendedCompanies = companies.filter((c) =>
     symptom.recommendedCompanies.includes(c.slug)
   );
 
-  const jsonLd = {
+  const relatedSymptoms = relatedSymptomSlugs
+    .map((rs) => symptoms.find((x) => x.slug === rs))
+    .filter((x): x is (typeof symptoms)[number] => Boolean(x));
+
+  const guideLinks = relatedGuides
+    .map((g) => guideMeta[g])
+    .filter((g): g is { href: string; label: string } => Boolean(g));
+
+  const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: symptom.faqs.map((faq) => ({
@@ -61,17 +91,32 @@ export default async function SymptomPage({
     })),
   };
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: seoTitle,
+    description: seoDescription,
+    datePublished: "2026-06-29",
+    dateModified: "2026-06-29",
+    author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
+    publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
+  };
+
   const urgency = urgencyLabel[symptom.urgencyLevel] ?? urgencyLabel.medium;
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Breadcrumb
         items={[
-          { name: "症状から探す", href: "/symptom/not-cooling" },
+          { name: "症状から探す", href: "/symptom" },
           { name: symptom.title, href: `/symptom/${symptom.slug}` },
         ]}
       />
@@ -83,6 +128,7 @@ export default async function SymptomPage({
             <span className={`text-sm font-bold px-3 py-1 rounded-full bg-white/20 ${urgency.color} !text-white`}>
               緊急度: {urgency.label}
             </span>
+            <span className="text-xs text-sky-100">最終更新: {UPDATED}</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">{symptom.title}</h1>
           <p className="text-sky-100 text-lg max-w-2xl">{symptom.description}</p>
@@ -96,6 +142,29 @@ export default async function SymptomPage({
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10 space-y-12">
+        {/* Quick check / conclusion */}
+        {quickCheck.length > 0 && (
+          <section>
+            <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                まず確認すること
+              </h2>
+              <ul className="space-y-2">
+                {quickCheck.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
+                    <span className="text-sky-500 font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-xs text-gray-500 mt-4">
+                上記を試しても改善しない場合や、専門資格が必要な作業が原因の場合は、無理をせず専門業者への相談をおすすめします。
+              </p>
+            </div>
+          </section>
+        )}
+
         {/* Causes */}
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">考えられる原因</h2>
@@ -121,15 +190,20 @@ export default async function SymptomPage({
                 <div key={solution.title} className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <h3 className="font-bold text-slate-900">{solution.title}</h3>
-                    <span className={`text-xs font-bold px-2 py-1 rounded-full flex-shrink-0 ${diff.color}`}>
-                      {diff.label}
-                    </span>
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <span className={`text-xs font-bold px-2 py-1 rounded-full ${solution.diy ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-600"}`}>
+                        {solution.diy ? "自分で対応可" : "業者依頼"}
+                      </span>
+                      <span className={`text-xs font-bold px-2 py-1 rounded-full ${diff.color}`}>
+                        {diff.label}
+                      </span>
+                    </div>
                   </div>
                   <p className="text-sm text-gray-600 leading-relaxed">{solution.description}</p>
                   {!solution.diy && (
                     <div className="mt-3 flex items-center gap-2 text-xs text-orange-600 bg-orange-50 px-3 py-2 rounded-lg">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-                      <span>専門資格が必要な作業です。必ず業者に依頼してください。</span>
+                      <span>専門資格・専用工具が必要な作業です。必ず業者に依頼してください。</span>
                     </div>
                   )}
                 </div>
@@ -138,30 +212,64 @@ export default async function SymptomPage({
           </div>
         </section>
 
+        {/* Cost table */}
+        <section>
+          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">修理費用の目安</h2>
+          {costBreakdown.length > 0 ? (
+            <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+              <table className="w-full">
+                <thead className="bg-sky-600 text-white">
+                  <tr>
+                    <th className="px-5 py-3 text-left text-sm font-bold">原因・修理内容</th>
+                    <th className="px-5 py-3 text-right text-sm font-bold">費用目安</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {costBreakdown.map((row, i) => (
+                    <tr key={row.item} className={i % 2 === 0 ? "bg-white" : "bg-gray-50/60"}>
+                      <td className="px-5 py-3 text-sm text-slate-700">{row.item}</td>
+                      <td className="px-5 py-3 text-sm text-slate-900 font-semibold text-right whitespace-nowrap">{row.range}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : (
+            <div className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm">
+              <p className="text-slate-700">
+                修理費用の目安は <span className="font-bold">{symptom.estimatedCost}</span> です。
+              </p>
+            </div>
+          )}
+          <p className="text-xs text-gray-500 mt-3">
+            ※費用はあくまで目安です。実際の金額は症状・機種・地域・業者によって変動します。正確な額は必ず見積もりで確認してください。
+          </p>
+        </section>
+
         {/* DIY vs Pro */}
         <section>
-          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">DIY対応 vs 業者依頼の判断基準</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">自分でできること / 業者に頼むべきサイン</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-green-50 rounded-xl p-5 border border-green-100">
               <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg> DIYで対応できる場合
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg> 自分で対応できること
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-green-500"></span> フィルターの清掃・交換</li>
-                <li className="flex items-start gap-2"><span className="text-green-500"></span> リモコンの電池交換</li>
-                <li className="flex items-start gap-2"><span className="text-green-500"></span> ドレンホースの簡単な詰まり除去</li>
-                <li className="flex items-start gap-2"><span className="text-green-500"></span> 電源リセット・再起動</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> フィルターの清掃・交換</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> リモコンの電池交換</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> ドレンホース先端の簡単な詰まり除去</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> 電源リセット・再起動、室外機周りの片付け</li>
               </ul>
             </div>
             <div className="bg-orange-50 rounded-xl p-5 border border-orange-100">
               <h3 className="font-bold text-orange-800 mb-3 flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg> 業者依頼が必要な場合
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> 業者に頼むべきサイン
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-orange-500">!</span> 冷媒ガスの補充・修理（資格が必要）</li>
-                <li className="flex items-start gap-2"><span className="text-orange-500">!</span> 基板・コンプレッサーの修理・交換</li>
-                <li className="flex items-start gap-2"><span className="text-orange-500">!</span> 電気系統のトラブル</li>
-                <li className="flex items-start gap-2"><span className="text-orange-500">!</span> 焦げ臭がする場合（火災リスク）</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 冷媒ガスの補充・修理（資格が必要）</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 基板・コンプレッサーの修理・交換</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 電気系統のトラブル・自分での対処で改善しない</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 焦げ臭い・煙・火花がある場合（火災リスク・すぐ運転停止）</li>
               </ul>
             </div>
           </div>
@@ -213,10 +321,48 @@ export default async function SymptomPage({
           </div>
         </section>
 
+        {/* Related links */}
+        {(guideLinks.length > 0 || relatedSymptoms.length > 0) && (
+          <section>
+            <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">関連する情報</h2>
+            {guideLinks.length > 0 && (
+              <div className="mb-5">
+                <p className="text-sm font-bold text-slate-700 mb-2">詳しいガイド</p>
+                <ul className="space-y-2">
+                  {guideLinks.map((g) => (
+                    <li key={g.href}>
+                      <Link href={g.href} className="inline-flex items-center gap-2 text-sky-600 font-bold hover:underline text-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                        {g.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {relatedSymptoms.length > 0 && (
+              <div>
+                <p className="text-sm font-bold text-slate-700 mb-2">関連する症状</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  {relatedSymptoms.map((rs) => (
+                    <Link
+                      key={rs.slug}
+                      href={`/symptom/${rs.slug}`}
+                      className="block bg-white rounded-xl p-4 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all text-sm font-bold text-slate-800"
+                    >
+                      {rs.title}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
+
         {/* CTA */}
         <div className="bg-gradient-to-r from-sky-600 to-sky-700 rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">まずは無料相談・見積もりを</h2>
-          <p className="text-sky-100 text-sm mb-6">専門業者に相談することで、最適な修理方法と費用がわかります。</p>
+          <p className="text-sky-100 text-sm mb-6">専門業者に相談することで、最適な修理方法と費用がわかります。費用は機種・地域・業者で変動するため、正確な額は見積もりでご確認ください。</p>
           <Link
             href="/ranking"
             className="inline-block bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"

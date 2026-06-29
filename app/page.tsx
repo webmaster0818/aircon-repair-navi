@@ -153,6 +153,12 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
+        <div className="text-center mt-8">
+          <Link href="/symptom" className="inline-flex items-center gap-2 text-sky-600 font-bold hover:underline text-sm bg-sky-50 px-6 py-3 rounded-full hover:bg-sky-100 transition-colors">
+            すべての症状から原因と対処法を探す
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          </Link>
+        </div>
       </section>
 
       {/* TOP3 Ranking */}
