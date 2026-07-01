@@ -5,9 +5,9 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ヤマダ電機 出張修理料金はいくら？エアコン修理の口コミ・申込方法を徹底調査【2026年最新】",
+    "ヤマダ電機の出張修理は高い？出張費・診断料の落とし穴とメーカー vs 街の業者比較【2026年最新】",
   description:
-    "ヤマダ電機の出張修理（ヤマダテクニカルサービス）の料金はいくら？出張費3,500円〜5,000円・診断料1,100円＋出張料3,850円の目安、口コミ・評判、エアコン修理の申込方法と流れを具体的に解説。費用で損しない事前確認のポイントもまとめました。",
+    "ヤマダ電機の出張修理は高い？出張費3,500円〜5,000円・診断料1,100円＋出張料3,850円（要確認）が別途かかる落とし穴や、メーカー直営 vs 街の業者はどっちが安い・早いかを第三者視点で比較。エアコン修理の料金相場・業者ランキングと合わせて損しない選び方を解説します。",
   alternates: { canonical: "/company/yamada-repair" },
 };
 
@@ -295,6 +295,20 @@ export default function Page() {
               料金は症状や必要な作業によって変わります。申込時に出張費・診断料の有無と金額を確認し、現地では作業範囲と総額の見積もりを提示してもらってから、納得して依頼するのがおすすめです。修理か買い替えかで迷う場合は、見積もり内容を踏まえて判断しましょう。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は公称・体験談に基づく目安です。正確な金額は申込・現地の見積もりでご確認ください。</p>
+            <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <p className="font-bold text-slate-900 mb-1">メーカー直営 vs 街の業者、どっちが安い？</p>
+              <p className="text-[0.95rem] leading-7 text-slate-700 mb-4">
+                出張費や診断料まで含めると、街の修理業者のほうが安く早いケースもあります。実際の料金相場や、対応が早い業者を比較してから判断すると失敗を防げます。
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <Link href="/guide/repair-cost" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  エアコン修理の料金相場ガイド →
+                </Link>
+                <Link href="/ranking" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  修理業者ランキングで比較する →
+                </Link>
+              </div>
+            </div>
           </section>
 
           <section id="flow" className="scroll-mt-24">

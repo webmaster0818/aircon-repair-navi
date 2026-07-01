@@ -5,9 +5,9 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ケーズデンキ 出張修理料金と流れは？エアコン修理の口コミ・申込方法を徹底調査【2026年最新】",
+    "ケーズデンキの出張修理は高い？診断・出張料の落とし穴と大手 vs 街の業者比較【2026年最新】",
   description:
-    "ケーズデンキの出張修理料金はいくら？診断・点検・出張料の考え方、WEB受付から訪問・見積もり・修理完了までの流れ、口コミ・評判を具体的に解説。大手量販店の安心感と、費用で損しない事前見積もり確認のポイントをまとめました。",
+    "ケーズデンキの出張修理は高い？症状が再現しなくても診断・点検・出張料がかかる落とし穴や、大手量販店 vs 街の業者はどっちが安い・早いかを第三者視点で比較。エアコン修理の料金相場・業者ランキングと合わせて、費用で損しない選び方を解説します。",
   alternates: { canonical: "/company/ksdenki-repair" },
 };
 
@@ -297,6 +297,20 @@ export default function Page() {
               想定外の費用を避けるためにも、申込時に診断・出張にかかる費用の有無と金額を確認し、現地では作業範囲と総額の見積もりを提示してもらってから、納得して依頼するのがおすすめです。修理か買い替えかで迷う場合は、見積もり内容を踏まえて判断しましょう。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は機種・症状により変動します。正確な金額は申込・現地の見積もりでご確認ください。</p>
+            <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <p className="font-bold text-slate-900 mb-1">大手量販店 vs 街の業者、どっちが安い？</p>
+              <p className="text-[0.95rem] leading-7 text-slate-700 mb-4">
+                診断・点検・出張料まで含めると、街の修理業者のほうが安く早いケースもあります。実際の料金相場や、対応が早い業者を比較してから判断すると失敗を防げます。
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <Link href="/guide/repair-cost" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  エアコン修理の料金相場ガイド →
+                </Link>
+                <Link href="/ranking" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  修理業者ランキングで比較する →
+                </Link>
+              </div>
+            </div>
           </section>
 
           <section id="flow" className="scroll-mt-24">

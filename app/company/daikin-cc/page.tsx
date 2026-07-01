@@ -5,9 +5,9 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ダイキンエアコン修理の口コミ・評判は？料金・相談方法を徹底調査【2026年最新】",
+    "ダイキンの修理は高い？メーカー直営 vs 街の業者はどっちが安い・早い？料金比較【2026年最新】",
   description:
-    "ダイキンのエアコン修理（コンタクトセンター）の口コミ・評判は？空調専業メーカーならではの正規対応・全国網羅、料金の考え方、年中無休の相談体制やWeb修理相談の使い方、利用前の注意点まで中立的に解説します。",
+    "ダイキンのエアコン修理（コンタクトセンター）は高い？メーカー直営 vs 街の業者はどっちが安い・早いかを第三者視点で比較。正規対応の強みと出張費・料金の考え方（要確認）、エアコン修理の料金相場・業者ランキングと合わせて損しない選び方を解説します。",
   alternates: { canonical: "/company/daikin-cc" },
 };
 
@@ -290,6 +290,20 @@ export default function Page() {
               なお、メーカー保証期間内で保証対象の自然故障であれば、規定に基づいて無償修理となる場合があります。保証書や購入時期を確認したうえで相談しましょう。修理か買い替えかで迷うケースでは、見積もり額と製品の年式を踏まえて判断するのがおすすめです。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は症状・部品により変動します。正確な金額は現地診断後に提示されます。</p>
+            <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <p className="font-bold text-slate-900 mb-1">メーカー直営 vs 街の業者、どっちが安い・早い？</p>
+              <p className="text-[0.95rem] leading-7 text-slate-700 mb-4">
+                メーカー正規の安心感がある一方、混雑期は訪問まで日数がかかることも。街の修理業者のほうが安く早いケースもあるため、実際の料金相場や対応が早い業者を比較してから判断すると失敗を防げます。
+              </p>
+              <div className="grid sm:grid-cols-2 gap-3">
+                <Link href="/guide/repair-cost" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  エアコン修理の料金相場ガイド →
+                </Link>
+                <Link href="/ranking" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                  修理業者ランキングで比較する →
+                </Link>
+              </div>
+            </div>
           </section>
 
           <section id="flow" className="scroll-mt-24">
