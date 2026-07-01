@@ -1,5 +1,6 @@
 import Link from "next/link";
 import companies from "@/data/companies.json";
+import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 
 const symptoms = [
   { iconSrc: "/images/icon-snowflake.png", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
@@ -215,6 +216,10 @@ export default function HomePage() {
                   >
                     詳細を見る →
                   </Link>
+                  <AffiliateOfficialButton
+                    slug={company.slug}
+                    className="block text-center mt-2 font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md bg-orange-500 hover:bg-orange-600 text-white"
+                  />
                 </div>
               </div>
             ))}
@@ -290,12 +295,18 @@ export default function HomePage() {
                   <span><strong>費用:</strong> {c.avgCost}</span>
                   <span><strong>速度:</strong> {c.responseTime}</span>
                 </div>
-                <Link
-                  href={`/company/${c.slug}`}
-                  className="block text-center bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
-                >
-                  詳細を見る →
-                </Link>
+                <div className="flex gap-2">
+                  <Link
+                    href={`/company/${c.slug}`}
+                    className="flex-1 block text-center bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
+                  >
+                    詳細を見る →
+                  </Link>
+                  <AffiliateOfficialButton
+                    slug={c.slug}
+                    className="flex-1 block text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
+                  />
+                </div>
               </div>
             ))}
           </div>
@@ -330,12 +341,18 @@ export default function HomePage() {
                       <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium">{c.coverage}</span>
                     </td>
                     <td className="px-4 py-3 text-center">
-                      <Link
-                        href={`/company/${c.slug}`}
-                        className="bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow"
-                      >
-                        詳細
-                      </Link>
+                      <div className="flex flex-col items-center gap-1.5">
+                        <Link
+                          href={`/company/${c.slug}`}
+                          className="bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow"
+                        >
+                          詳細
+                        </Link>
+                        <AffiliateOfficialButton
+                          slug={c.slug}
+                          className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors shadow-sm hover:shadow whitespace-nowrap"
+                        />
+                      </div>
                     </td>
                   </tr>
                 ))}

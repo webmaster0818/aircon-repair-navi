@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
@@ -184,6 +185,11 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               専門店として年間実績3万台を掲げ、お掃除機能付きを含む全機種に対応する点が強みです。汚れの度合いで追加料金が発生しない「機種を問わない一律料金」を採用し、2台目から割引がある点も分かりやすいポイントです。
             </p>
+            <AffiliateBanner
+              slug="seifu-ac"
+              heading="公式サイトで詳細・料金を確認する"
+              note="対応エリア（関東・関西・東海）なら、まずは料金と空き状況を確認してみましょう。"
+            />
           </section>
 
           <section id="company" className="scroll-mt-24">
@@ -378,11 +384,11 @@ export default function Page() {
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
               <p className="text-sky-100 text-sm mb-5">対応エリアなら、まずは料金と空き状況を確認してみましょう。</p>
               <div className="flex justify-center mb-5">
-                <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BXYE9" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www24.a8.net/svt/bgt?aid=260628928539&wid=013&eno=01&mid=s00000020635002006000&mc=1" /></a><img width={1} height={1} src="https://www11.a8.net/0.gif?a8mat=4B66KG+8WWX3M+4F7Y+BXYE9" alt="" style={{ display: "none" }} />
+                <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BXYE9" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www24.a8.net/svt/bgt?aid=260628928539&wid=013&eno=01&mid=s00000020635002006000&mc=1" /></a>
               </div>
               <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 エアコンクリーニング清風 公式サイトを見る
-              </a><img width={1} height={1} src="https://www14.a8.net/0.gif?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" alt="" style={{ display: "none" }} />
+              </a>
             </div>
           </section>
 

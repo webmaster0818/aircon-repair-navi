@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import companies from "@/data/companies.json";
+import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
+import { getAffiliate } from "@/lib/affiliates";
 
 export const metadata: Metadata = {
   title: "エアコン修理業者ランキング｜2024年最新おすすめ10社",
@@ -86,14 +88,21 @@ export default function RankingPage() {
                   >
                     詳細を見る
                   </Link>
-                  <a
-                    href={c.officialUrl}
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
-                  >
-                    公式サイトへ（PR）
-                  </a>
+                  {getAffiliate(c.slug) ? (
+                    <AffiliateOfficialButton
+                      slug={c.slug}
+                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
+                    />
+                  ) : (
+                    <a
+                      href={c.officialUrl}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
+                    >
+                      公式サイトへ（PR）
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

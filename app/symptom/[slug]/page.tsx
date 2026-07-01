@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
+import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 
 const UPDATED = "2026年6月29日";
 
@@ -290,12 +291,18 @@ export default async function SymptomPage({
                     <span>速度: {c.responseTime}</span>
                   </div>
                 </div>
-                <Link
-                  href={`/company/${c.slug}`}
-                  className="flex-shrink-0 bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
-                >
-                  詳細
-                </Link>
+                <div className="flex-shrink-0 flex flex-col items-stretch gap-1.5">
+                  <Link
+                    href={`/company/${c.slug}`}
+                    className="text-center bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
+                  >
+                    詳細
+                  </Link>
+                  <AffiliateOfficialButton
+                    slug={c.slug}
+                    className="text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
+                  />
+                </div>
               </div>
             ))}
           </div>
