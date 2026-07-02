@@ -84,7 +84,7 @@ export default function SymptomHubPage() {
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">もっと詳しく知りたい方へ</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <Link href="/guide/repair-cost" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+            <Link href="/cost/repair-price/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコン修理費用の相場ガイド</span>
               <span className="block text-xs text-gray-500">症状・修理内容別の費用相場と見積もりのポイント</span>
             </Link>

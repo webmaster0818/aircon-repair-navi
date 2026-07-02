@@ -276,7 +276,7 @@ export default function Page() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/guide/repair-cost", label: "エアコン修理の費用・料金相場【2026年】" },
+                { href: "/cost/repair-price/", label: "エアコン修理の費用・料金相場【2026年】" },
                 { href: "/symptom/noise", label: "エアコンの異音の症状ページ" },
                 { href: "/company/aircon-trouble-center", label: "エアコントラブルセンターの口コミ・評判" },
                 { href: "/company/denki-koujiya", label: "電気の工事屋さんの口コミ・評判" },

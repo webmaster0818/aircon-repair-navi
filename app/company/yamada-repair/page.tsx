@@ -301,7 +301,7 @@ export default function Page() {
                 出張費や診断料まで含めると、街の修理業者のほうが安く早いケースもあります。実際の料金相場や、対応が早い業者を比較してから判断すると失敗を防げます。
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
-                <Link href="/guide/repair-cost" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
+                <Link href="/cost/repair-price/" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
                   エアコン修理の料金相場ガイド →
                 </Link>
                 <Link href="/ranking" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">

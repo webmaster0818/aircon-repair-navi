@@ -9,7 +9,7 @@ import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 const UPDATED = "2026年6月29日";
 
 const guideMeta: Record<string, { href: string; label: string }> = {
-  "repair-cost": { href: "/guide/repair-cost", label: "エアコン修理費用の相場ガイド" },
+  "repair-cost": { href: "/cost/repair-price/", label: "エアコン修理費用の相場ガイド" },
   noise: { href: "/guide/noise", label: "エアコンの異音 原因と対処ガイド" },
 };
 

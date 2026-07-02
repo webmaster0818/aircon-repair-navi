@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "エアコン修理の費用・料金相場【2026年】症状別の目安と損しないコツ",
   description:
     "エアコン修理の費用・価格・料金相場を症状別にまとめた2026年版ガイド。ガス補充・基板交換・ファンモーター・水漏れ・リモコンなどの修理代の目安、修理と買い替えの判断基準、見積もりで損しないコツをわかりやすく解説します。",
-  alternates: { canonical: "/guide/repair-cost" },
+  alternates: { canonical: "/cost/repair-price/" },
 };
 
 const UPDATED = "2026年6月29日";
