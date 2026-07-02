@@ -49,15 +49,37 @@
     ],
     "estimatedCost": "5,000〜80,000円（原因によって大きく異なる）",
     "costBreakdown": [
-      { "item": "フィルター清掃・点検", "range": "5,000〜10,000円" },
-      { "item": "冷媒ガス補充（漏れ修理含む）", "range": "20,000〜50,000円" },
-      { "item": "コンプレッサー交換", "range": "80,000〜200,000円" },
-      { "item": "基板交換", "range": "30,000〜100,000円" }
+      {
+        "item": "フィルター清掃・点検",
+        "range": "5,000〜10,000円"
+      },
+      {
+        "item": "冷媒ガス補充（漏れ修理含む）",
+        "range": "20,000〜50,000円"
+      },
+      {
+        "item": "コンプレッサー交換",
+        "range": "80,000〜200,000円"
+      },
+      {
+        "item": "基板交換",
+        "range": "30,000〜100,000円"
+      }
     ],
     "urgencyLevel": "medium",
-    "recommendedCompanies": ["aircon-trouble-center", "take-service", "denki-koujiya"],
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["gas-leak", "not-starting", "error-code"],
+    "recommendedCompanies": [
+      "take-service",
+      "aircon-trouble-center",
+      "duskin-servicemaster"
+    ],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "gas-leak",
+      "not-starting",
+      "error-code"
+    ],
     "faqs": [
       {
         "question": "エアコンが冷えないとき、まず自分で何を確認すればいいですか？",
@@ -125,15 +147,37 @@
     ],
     "estimatedCost": "3,000〜30,000円",
     "costBreakdown": [
-      { "item": "ドレンホースの詰まり除去・清掃", "range": "3,000〜8,000円" },
-      { "item": "ドレンパンの清掃・交換", "range": "10,000〜25,000円" },
-      { "item": "本体の水平調整・取り付け直し", "range": "8,000〜20,000円" },
-      { "item": "配管・断熱材の補修", "range": "10,000〜30,000円" }
+      {
+        "item": "ドレンホースの詰まり除去・清掃",
+        "range": "3,000〜8,000円"
+      },
+      {
+        "item": "ドレンパンの清掃・交換",
+        "range": "10,000〜25,000円"
+      },
+      {
+        "item": "本体の水平調整・取り付け直し",
+        "range": "8,000〜20,000円"
+      },
+      {
+        "item": "配管・断熱材の補修",
+        "range": "10,000〜30,000円"
+      }
     ],
     "urgencyLevel": "high",
-    "recommendedCompanies": ["aircon-trouble-center", "life-kyukyusha", "seikatsu110"],
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["not-cooling", "bad-smell", "noise"],
+    "recommendedCompanies": [
+      "take-service",
+      "aircon-trouble-center",
+      "life-kyukyusha"
+    ],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "not-cooling",
+      "bad-smell",
+      "noise"
+    ],
     "faqs": [
       {
         "question": "エアコンの水漏れは放置してよいですか？",
@@ -189,15 +233,37 @@
     ],
     "estimatedCost": "20,000〜80,000円",
     "costBreakdown": [
-      { "item": "ガス漏れ箇所の特定・点検", "range": "5,000〜15,000円" },
-      { "item": "冷媒ガスの補充", "range": "20,000〜50,000円" },
-      { "item": "配管接続部の補修・溶接", "range": "15,000〜40,000円" },
-      { "item": "配管の交換", "range": "30,000〜80,000円" }
+      {
+        "item": "ガス漏れ箇所の特定・点検",
+        "range": "5,000〜15,000円"
+      },
+      {
+        "item": "冷媒ガスの補充",
+        "range": "20,000〜50,000円"
+      },
+      {
+        "item": "配管接続部の補修・溶接",
+        "range": "15,000〜40,000円"
+      },
+      {
+        "item": "配管の交換",
+        "range": "30,000〜80,000円"
+      }
     ],
     "urgencyLevel": "high",
-    "recommendedCompanies": ["denki-koujiya", "aircon-trouble-center", "take-service"],
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["not-cooling", "error-code", "noise"],
+    "recommendedCompanies": [
+      "take-service",
+      "denki-koujiya",
+      "aircon-trouble-center"
+    ],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "not-cooling",
+      "error-code",
+      "noise"
+    ],
     "faqs": [
       {
         "question": "エアコンのガス漏れは自分で修理できますか？",
@@ -261,15 +327,38 @@
     ],
     "estimatedCost": "3,000〜100,000円",
     "costBreakdown": [
-      { "item": "異物除去・点検・清掃", "range": "3,000〜10,000円" },
-      { "item": "取り付け・ネジ・部品の調整", "range": "5,000〜15,000円" },
-      { "item": "ファンモーターの修理・交換", "range": "8,000〜40,000円" },
-      { "item": "コンプレッサーの点検・交換", "range": "80,000〜200,000円" }
+      {
+        "item": "異物除去・点検・清掃",
+        "range": "3,000〜10,000円"
+      },
+      {
+        "item": "取り付け・ネジ・部品の調整",
+        "range": "5,000〜15,000円"
+      },
+      {
+        "item": "ファンモーターの修理・交換",
+        "range": "8,000〜40,000円"
+      },
+      {
+        "item": "コンプレッサーの点検・交換",
+        "range": "80,000〜200,000円"
+      }
     ],
     "urgencyLevel": "medium",
-    "recommendedCompanies": ["aircon-trouble-center", "denki-koujiya", "take-service"],
-    "relatedGuides": ["noise", "repair-cost"],
-    "relatedSymptoms": ["not-cooling", "not-starting", "error-code"],
+    "recommendedCompanies": [
+      "take-service",
+      "aircon-trouble-center",
+      "denki-koujiya"
+    ],
+    "relatedGuides": [
+      "noise",
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "not-cooling",
+      "not-starting",
+      "error-code"
+    ],
     "faqs": [
       {
         "question": "エアコンのカタカタという音はどういう意味ですか？",
@@ -291,8 +380,14 @@
     "seoTitle": "エアコンが臭い原因と対策は？カビ臭・酸っぱい臭いの対処法【2026年】",
     "seoDescription": "エアコンをつけるとカビ臭い・酸っぱい・焦げ臭いといった異臭がする原因を解説。フィルター清掃など自分でできる対処、エアコンクリーニングが必要なケース、焦げ臭い時の注意点と費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "エアコンをつけると臭い、カビ臭・酸っぱい臭い・焦げ臭いなど、エアコンからの異臭の原因と対処法を解説します。",
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["water-leak", "not-cooling", "noise"],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "water-leak",
+      "not-cooling",
+      "noise"
+    ],
     "causes": [
       "内部のカビ・雑菌の繁殖",
       "フィルターや熱交換器の汚れ",
@@ -323,7 +418,11 @@
     ],
     "estimatedCost": "8,000〜30,000円（クリーニング費用）",
     "urgencyLevel": "low",
-    "recommendedCompanies": ["kurashi-market", "mitsumoa", "seikatsu110"],
+    "recommendedCompanies": [
+      "duskin-servicemaster",
+      "r-cleaning",
+      "seifu-ac"
+    ],
     "faqs": [
       {
         "question": "エアコンのカビ臭はどのくらいで消えますか？",
@@ -341,8 +440,14 @@
     "seoTitle": "エアコンが動かない・電源が入らない原因と対処法は？【2026年】",
     "seoDescription": "エアコンの電源が入らない、運転ランプが点滅する、起動後すぐ止まる原因を解説。ブレーカー・コンセント確認やリセットなど自分でできる対処、基板やセンサーの故障で業者依頼が必要なケースと費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "エアコンの電源が入らない、運転ランプが点滅する、起動後すぐに止まるなど、エアコンが正常に動作しない場合の原因と対処法を解説します。",
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["error-code", "remote-error", "not-cooling"],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "error-code",
+      "remote-error",
+      "not-cooling"
+    ],
     "causes": [
       "ブレーカーが落ちている",
       "コンセントの問題",
@@ -380,7 +485,11 @@
     ],
     "estimatedCost": "5,000〜70,000円",
     "urgencyLevel": "medium",
-    "recommendedCompanies": ["aircon-trouble-center", "take-service", "life-kyukyusha"],
+    "recommendedCompanies": [
+      "take-service",
+      "aircon-trouble-center",
+      "life-kyukyusha"
+    ],
     "faqs": [
       {
         "question": "エアコンのランプが点滅しているのはなぜですか？",
@@ -398,8 +507,14 @@
     "seoTitle": "エアコンのリモコンが効かない原因と直し方は？【2026年】",
     "seoDescription": "エアコンのリモコンが反応しない・ボタンを押しても動かない原因を解説。電池交換や受光部の清掃など自分でできる対処、スマホでの故障確認方法、リモコン・受光部の交換費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "エアコンのリモコンが反応しない、ボタンを押しても動かないなど、リモコンのトラブルについて原因と対処法を解説します。",
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["not-starting", "error-code", "not-cooling"],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "not-starting",
+      "error-code",
+      "not-cooling"
+    ],
     "causes": [
       "リモコンの電池切れ・電池の向き間違い",
       "リモコンの受光部への汚れ・障害物",
@@ -436,7 +551,11 @@
     ],
     "estimatedCost": "2,000〜20,000円",
     "urgencyLevel": "low",
-    "recommendedCompanies": ["seikatsu110", "life-kyukyusha", "aircon-trouble-center"],
+    "recommendedCompanies": [
+      "take-service",
+      "seikatsu110",
+      "life-kyukyusha"
+    ],
     "faqs": [
       {
         "question": "リモコンが故障した場合、汎用リモコンは使えますか？",
@@ -454,8 +573,14 @@
     "seoTitle": "エアコンのエラーコードの意味と対処法は？メーカー別の調べ方【2026年】",
     "seoDescription": "ダイキン・日立・三菱・パナソニック・東芝など主要メーカーのエアコンのエラーコードの意味と調べ方を解説。電源リセットなど自分でできる対処、業者依頼が必要なケースと修理費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "ダイキン・日立・三菱・パナソニック・東芝など主要メーカーのエアコンエラーコードの意味と対処法をまとめた一覧です。",
-    "relatedGuides": ["repair-cost"],
-    "relatedSymptoms": ["not-starting", "not-cooling", "noise"],
+    "relatedGuides": [
+      "repair-cost"
+    ],
+    "relatedSymptoms": [
+      "not-starting",
+      "not-cooling",
+      "noise"
+    ],
     "causes": [
       "センサー異常（室内・室外・排水）",
       "通信エラー（室内外機間）",
@@ -492,7 +617,11 @@
     ],
     "estimatedCost": "5,000〜80,000円（エラー内容による）",
     "urgencyLevel": "medium",
-    "recommendedCompanies": ["aircon-trouble-center", "denki-koujiya", "take-service"],
+    "recommendedCompanies": [
+      "take-service",
+      "aircon-trouble-center",
+      "denki-koujiya"
+    ],
     "faqs": [
       {
         "question": "エラーコードが表示されたらすぐに使用を止めるべきですか？",

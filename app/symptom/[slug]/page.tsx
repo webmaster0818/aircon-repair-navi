@@ -6,7 +6,43 @@ import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 
-const UPDATED = "2026年6月29日";
+const UPDATED = "2026年7月2日";
+
+// 症状の主因タイプ: 修理(故障起因) / クリーニング(汚れ起因) / 両方あり得る
+const careType: Record<string, "repair" | "cleaning" | "hybrid"> = {
+  "not-cooling": "hybrid",
+  "water-leak": "hybrid",
+  "gas-leak": "repair",
+  noise: "repair",
+  "bad-smell": "cleaning",
+  "not-starting": "repair",
+  "remote-error": "repair",
+  "error-code": "repair",
+};
+
+const careTypeBox: Record<
+  "repair" | "cleaning" | "hybrid",
+  { title: string; body: string; linkHref: string; linkLabel: string }
+> = {
+  repair: {
+    title: "この症状は「修理」の相談先が近道です",
+    body: "この症状は部品の故障・不具合が原因のことが多く、分解洗浄（エアコンクリーニング）では解決しない場合があります。修理に対応する業者へ症状を伝えて、見積もりを取るのが近道です。",
+    linkHref: "/ranking",
+    linkLabel: "修理業者の比較ランキングを見る",
+  },
+  cleaning: {
+    title: "この症状は「クリーニング」の対象であることが大半です",
+    body: "この症状は故障ではなく、エアコン内部のカビ・ホコリ汚れが原因のことが大半です。修理業者ではなく、分解洗浄を行うエアコンクリーニング業者（ダスキン・アールクリーニング・清風など）への依頼が適しています。",
+    linkHref: "/company/duskin-servicemaster",
+    linkLabel: "エアコンクリーニング業者の詳細を見る",
+  },
+  hybrid: {
+    title: "この症状は「汚れ起因」と「故障起因」の両方があり得ます",
+    body: "フィルターやドレンホースの汚れが原因ならクリーニングで解決することが多く、それでも改善しない場合は部品故障の可能性があるため修理業者への相談が近道です。まず下の「まず確認すること」を試してから切り分けましょう。",
+    linkHref: "/ranking",
+    linkLabel: "修理・クリーニング業者の比較を見る",
+  },
+};
 
 const guideMeta: Record<string, { href: string; label: string }> = {
   "repair-cost": { href: "/cost/repair-price/", label: "エアコン修理費用の相場ガイド" },
@@ -165,6 +201,23 @@ export default async function SymptomPage({
             </div>
           </section>
         )}
+
+        {/* 修理 or クリーニング判定 */}
+        {(() => {
+          const ct = careTypeBox[careType[symptom.slug] ?? "repair"];
+          return (
+            <section>
+              <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                <h2 className="text-lg font-bold text-amber-900 mb-2">{ct.title}</h2>
+                <p className="text-sm text-slate-700 leading-relaxed mb-3">{ct.body}</p>
+                <Link href={ct.linkHref} className="inline-flex items-center gap-1 text-sky-600 font-bold hover:underline text-sm">
+                  {ct.linkLabel}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </Link>
+              </div>
+            </section>
+          );
+        })()}
 
         {/* Causes */}
         <section>

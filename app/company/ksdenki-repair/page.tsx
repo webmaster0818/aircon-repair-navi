@@ -286,6 +286,20 @@ export default function Page() {
             </div>
           </section>
 
+          {/* 夏の繁忙期・緊急性の注意（2026-07-02追加） */}
+          <section className="scroll-mt-24">
+            <div className="bg-orange-50 border border-orange-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-orange-900 mb-2">7〜8月の繁忙期は「予約の取りやすさ」も比較を</h2>
+              <p className="text-sm text-slate-700 leading-relaxed mb-3">
+                エアコン修理の依頼は夏場（7〜8月）に集中するため、ケーズデンキの出張修理に限らず、繁忙期はどの窓口も予約が取りにくくなる傾向があります。故障したエアコンを待つ間の熱中症リスクを考えると、「どこが安いか」だけでなく「いつ来てもらえるか」を並行して確認するのが現実的です。
+              </p>
+              <p className="text-sm text-slate-700 leading-relaxed mb-3">
+                急ぎの場合は、24時間受付・最短即日対応を公称する専門業者（例：<Link href="/company/take-service" className="text-sky-600 font-bold hover:underline">テイクサービス</Link>）にも同時に見積もりを依頼し、到着が早い方に頼む「相見積もり」が有効です。※対応スピードは地域・混雑状況で変動するため、受付時に到着目安の確認をおすすめします。
+              </p>
+              <Link href="/ranking" className="inline-flex items-center gap-1 text-sky-600 font-bold hover:underline text-sm">対応スピードで業者を比較する →</Link>
+            </div>
+          </section>
+
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の考え方</h2>
             <p className="leading-8 text-slate-700">
