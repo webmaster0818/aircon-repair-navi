@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "パナソニックエアコン修理の口コミ・評判は？料金・申込方法を徹底調査【2026年最新】｜エアコン修理ナビ",
+    "パナソニックエアコン修理の口コミ・評判は？料金・申込方法を徹底調査【2026年最新】",
   description:
     "パナソニック修理ご相談窓口の特徴・信頼性をまとめました。メーカー公式窓口ならではの正規部品・全国対応、修理料金の目安の調べ方、電話・Webでの申し込み方法、利用前の注意点まで中立的に解説します。",
   alternates: { canonical: "/company/panasonic-repair" },

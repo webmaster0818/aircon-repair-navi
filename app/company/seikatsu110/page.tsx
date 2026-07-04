@@ -186,6 +186,18 @@ export default function Page() {
             </p>
           </section>
 
+          {/* 仲介型と直接依頼型の違い（中立の比較導線・2026-07-04追加） */}
+          <section className="scroll-mt-24">
+            <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6">
+              <h2 className="text-lg font-bold text-sky-900 mb-2">先に知っておきたい：「仲介型」と「直接依頼型」の違い</h2>
+              <p className="text-sm text-slate-700 leading-relaxed mb-3">
+                生活110番のような「仲介・マッチング型」は、複数の登録業者から比較して選べるのが利点です。一方で、実際の作業は登録業者が行うため、料金や対応品質は担当業者によって幅があります。急ぎの修理では、業者へ直接依頼する「直接依頼型」（例：<Link href="/company/take-service" className="text-sky-600 font-bold hover:underline">テイクサービス</Link>＝24時間受付・最短即日対応を公称）と並行して見積もりを取り、条件と到着スピードで選ぶのが失敗しにくい使い方です。
+              </p>
+              <p className="text-sm text-slate-700 leading-relaxed mb-3"><strong>迷ったら</strong>：今日・明日中に直したい→直接依頼型に電話、複数の見積もりを比べてから決めたい→仲介型、が1秒で選べる目安です。</p>
+              <Link href="/ranking" className="inline-flex items-center gap-1 text-sky-600 font-bold hover:underline text-sm">仲介型・直接型を含む業者比較ランキングを見る →</Link>
+            </div>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
