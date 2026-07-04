@@ -109,6 +109,22 @@ export default function RankingPage() {
           ))}
         </div>
 
+        {/* 夜間・24時間受付で選ぶ（2026-07-04・夏の熱帯夜対策） */}
+        <section className="mt-12 bg-sky-50 border border-sky-200 rounded-2xl p-6">
+          <h2 className="text-xl font-bold text-slate-900 mb-2">夜間・24時間受付で選ぶ（熱帯夜の故障に）</h2>
+          <p className="text-sm text-slate-700 leading-relaxed mb-4">
+            7〜8月の夜間にエアコンが止まると熱中症のリスクに直結します。当サイト掲載業者のうち、<strong>24時間受付を公称している業者</strong>は次のとおりです（受付=相談・予約の受付時間。実際の訪問時間帯は業者・地域・混雑状況で異なるため、電話時に到着目安をご確認ください）。
+          </p>
+          <ul className="space-y-2 text-sm text-slate-700 mb-4">
+            {companies.filter((c) => (c.features || []).some((f) => String(f).includes("24時間"))).map((c) => (
+              <li key={c.slug} className="flex items-center justify-between gap-3 bg-white rounded-lg px-4 py-2.5 border border-gray-100">
+                <span><Link href={`/company/${c.slug}`} className="font-bold text-sky-700 hover:underline">{c.name}</Link><span className="text-xs text-gray-500 ml-2">{c.responseTime}</span></span>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs text-gray-500">※「24時間」は各社公式の受付に関する公称です。深夜帯は割増料金の業者もあるため、料金条件もあわせてご確認ください。</p>
+        </section>
+
         {/* Related Links */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="/ranking/fast" className="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-200 transition-colors">

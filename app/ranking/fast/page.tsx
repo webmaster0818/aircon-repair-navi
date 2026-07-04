@@ -6,7 +6,7 @@ import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 import { getAffiliate } from "@/lib/affiliates";
 
 export const metadata: Metadata = {
-  title: "即日対応エアコン修理業者ランキング｜急ぎの修理はこれ",
+  title: "エアコン修理を即日で頼むには？【今日直したい】24時間受付業者と当日予約のコツ",
   description: "エアコンが急に壊れた！今すぐ修理したい方向けの即日・最速対応業者ランキング。最短5分で手配可能な業者も。",
 };
 
@@ -125,6 +125,29 @@ export default function FastRankingPage() {
             全10社ランキングを見る
           </Link>
         </div>
+        {/* 今日直すための実用ガイド（2026-07-04追加） */}
+        <section className="mt-12 space-y-6">
+          <div className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+            <h2 className="text-xl font-bold text-slate-900 mb-3">今日中に修理してもらうための4つのコツ</h2>
+            <ol className="space-y-2 text-sm text-slate-700 list-decimal pl-5">
+              <li><strong>朝一番（受付開始直後）に電話する</strong>：即日枠は先着で埋まります。24時間受付の業者なら深夜〜早朝の予約も有効です。</li>
+              <li><strong>症状・機種情報を先にまとめる</strong>：室内機のメーカー名と型番（前面パネル下部などのシール）、症状（冷えない/水漏れ/異音/エラーコード）、設置年をメモしてから電話すると、手配が速くなります。</li>
+              <li><strong>複数社に同時に問い合わせる</strong>：繁忙期は1社目で「明日以降」と言われることも。24時間受付の業者に相見積もりし、早く来られる方に頼むのが現実的です。</li>
+              <li><strong>集合住宅は管理会社にも一報</strong>：賃貸は修理費の負担者（貸主負担のケースあり）を先に確認するとトラブルを防げます。</li>
+            </ol>
+          </div>
+          <div className="bg-orange-50 rounded-xl p-6 border border-orange-100">
+            <h2 className="text-xl font-bold text-orange-900 mb-3">業者を待つ間の応急対処（安全第一）</h2>
+            <ul className="space-y-2 text-sm text-slate-700">
+              <li>・電源プラグの抜き差しで再起動（リセットで直る一時的な不具合もあります）</li>
+              <li>・フィルターの目詰まり確認・清掃、室外機の周りの物をどける（吸排気の確保）</li>
+              <li>・冷えない間は、カーテンで直射日光を遮る・扇風機併用・水分補給で熱中症対策を最優先に</li>
+              <li>・<strong>焦げ臭い・煙・火花がある場合は使用を中止</strong>し、プラグを抜いて業者へ（火災リスク）</li>
+            </ul>
+            <p className="text-xs text-gray-500 mt-3">※分解を伴う作業や冷媒ガスの処置は資格が必要です。無理をせず業者にお任せください。症状別の詳しい対処は<Link href="/symptom" className="text-sky-600 underline font-bold">症状から探す</Link>へ。</p>
+          </div>
+        </section>
+
       </div>
     </>
   );
