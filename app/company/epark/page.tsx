@@ -7,72 +7,49 @@ export const metadata: Metadata = {
   title:
     "EPARKくらしのレスキューの評判は悪い？口コミ・料金は高い？他社比較で徹底調査【2026年最新】",
   description:
-    "EPARKくらしのレスキューの評判は悪い？口コミ・料金は高い？公式にはない他社との比較・利用者の生の声から、掲載業者の口コミの傾向、料金の目安（要確認）、注意点までエアコン修理の視点で正直に検証。後悔しない選び方も解説します。",
+    "EPARKくらしのレスキューの評判・仕組みを当サイトが公式で実査（2026年7月7日確認）。運営は株式会社REsta（旧EPARKくらしのレスキュー・2024年11月社名変更）。料金は掲載業者ごとに異なる・運営はトラブルを仲介しない規約など、予約前に知るべき構造をエアコン修理の視点で正直に解説します。",
   alternates: { canonical: "/company/epark" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月7日";
 
 const toc = [
   { id: "summary", label: "EPARKくらしのレスキューとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "bad", label: "制限条件・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
-  { id: "price", label: "料金の目安" },
+  { id: "price", label: "料金の仕組み" },
   { id: "flow", label: "依頼から修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
 
-const goodReviews = [
-  {
-    body:
-      "初めての修理依頼で不安な気持ちでお電話しましたが、オペレーターの方がとても親身に対応してくださり、当日中に職人さんに来ていただけました。",
-    who: "エアコン修理の利用者",
-    source: "EPARKくらしのレスキュー（rescue.epark.jp）掲載業者の口コミ",
-  },
-  {
-    body:
-      "職人の方も不安なことをつたえると、事細かに修理内容や料金についてお話ししてくださり安心してお任せすることができました。",
-    who: "エアコン修理の利用者",
-    source: "EPARKくらしのレスキュー（rescue.epark.jp）掲載業者の口コミ",
-  },
-  {
-    body:
-      "口コミでこちらに決めましたが、口コミにあったように電話対応もよく、工事も丁寧でした。",
-    who: "エアコン修理の利用者",
-    source: "EPARKくらしのレスキュー（rescue.epark.jp）掲載業者の口コミ",
-  },
-  {
-    body:
-      "親身になって相談に乗ってもらい、新しいエアコンもすぐに手配してくださり、明日には快適に過ごせそうです。",
-    who: "エアコン修理の利用者",
-    source: "EPARKくらしのレスキュー（rescue.epark.jp）掲載業者の口コミ",
-  },
-];
-
 const faqs = [
   {
     q: "EPARKくらしのレスキューはどんなサービスですか？",
-    a: "エアコン修理や水まわり、鍵、ガラス、害虫駆除など、生活の駆けつけサービス業者をWeb上で検索・比較し、電話で予約できるプラットフォームです。掲載されている業者の特徴や料金、口コミを見て選べます。",
+    a: "エアコン修理・水まわり・鍵・ガラス・害虫駆除などの駆けつけ業者を、全国47都道府県で検索・比較して予約できるプラットフォームです。運営は株式会社REsta（旧・株式会社EPARKくらしのレスキュー、2024年11月に社名変更）。EPARKグループの一員で、設立2020年・資本金9,000万円の企業です（2026年7月7日公式確認）。",
   },
   {
     q: "料金はどのくらいかかりますか？",
-    a: "症状や作業内容、選ぶ業者によって幅があります。掲載業者では基本料金（出張・見積もり無料を掲げる業者もあり）に加え、ガスチャージなどの作業費が加算される形が一般的です。正確な金額は予約・見積もり時に確認してください。",
+    a: "EPARK自体は料金を設定しておらず、掲載業者ごとの料金が適用されます。エアコンカテゴリの掲載例では基本料金3,300円〜・修理8,800円〜等の業者がありました（2026年7月7日時点・業者により異なる）。予約前に必ず業者ページの料金・キャンセル料を確認してください。",
   },
   {
-    q: "口コミは確認できますか？",
-    a: "掲載業者の詳細ページに、実際の利用者の口コミが掲載されています。電話対応や作業の丁寧さなどを事前に確認したうえで予約できるのが特徴です。",
+    q: "トラブルがあったら運営が対応してくれますか？",
+    a: "利用規約上、運営は利用者と業者間の相談等を「仲介・代理・斡旋・保証等するものではない」と明記されており、トラブルは当事者間での解決が原則です。契約は業者との直接契約になるため、作業前の見積もり確認と、業者選びの段階での口コミチェックが重要です。",
+  },
+  {
+    q: "支払いはどうやりますか？",
+    a: "施工完了後に業者へ直接後払いする方式です。クレジットカードやスマホ決済の可否は業者によって異なるため、カード払い希望の場合は予約時に確認しましょう。",
   },
   {
     q: "24時間対応していますか？",
-    a: "受付時間は掲載業者によって異なり、24時間受付に対応している業者もあります。急ぎの場合は、業者ページや問い合わせ時に対応可能な時間を確認しておくと安心です。",
+    a: "受付時間は掲載業者ごとに異なります。24時間受付の業者もあれば10:00〜24:00等の業者もあり、到着目安（最短10分等）も個別業者の表記です。急ぎの場合は業者ページで受付時間を確認のうえ予約してください。",
   },
   {
-    q: "見積もりだけでも相談できますか？",
-    a: "掲載業者の中には、出張費・見積もり費用を無料としているところもあります。条件は業者によって異なるため、依頼前に作業範囲と総額を確認し、納得してから契約するのがおすすめです。",
+    q: "掲載されている業者は信頼できますか？",
+    a: "公式には「厳選された業者のみを掲載」とありますが、具体的な審査基準や必要許認可は公開されていません（2026年7月7日確認）。業者ページの口コミ・料金表記の具体性（実額を書いているか・キャンセル料の明記があるか）を自分の目で確認して選ぶのが確実です。",
   },
 ];
 
@@ -82,7 +59,7 @@ const articleJsonLd = {
   headline:
     "EPARKくらしのレスキューの口コミ・評判は？エアコン修理の料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-07",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,15 +73,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -132,7 +100,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-07">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -156,9 +124,15 @@ export default function Page() {
             <strong className="font-semibold text-slate-900">EPARKくらしのレスキュー</strong>
             のエアコン修理について、掲載業者の実際の口コミ、料金の目安、運営会社や受付時間、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
           </p>
-          <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミは、EPARKくらしのレスキュー公式サイト（rescue.epark.jp）の掲載業者ページで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・業者・症状により変わるため、最新の情報は予約時にご確認ください（調査時点：2026年6月）。
-          </p>
+          <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
+            <p className="font-bold text-slate-900 mb-3">先に結論（30秒まとめ）</p>
+            <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
+              <li>・EPARKくらしのレスキューは<strong>業者を比較して選べる検索プラットフォーム</strong>。料金・受付時間・キャンセル料は<strong>すべて掲載業者ごとに異なります</strong>（運営は料金を決めていません）</li>
+              <li>・利用規約上、<strong>契約は利用者と業者の直接契約で、運営はトラブルを仲介・保証しません</strong>。「どの業者を選ぶか」が全てです</li>
+              <li>・向くのは「複数業者の掲載条件・口コミを見比べて自分で選びたい人」。選ぶ手間を省きたい人は、当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査</Link>で実額公開業者から選ぶ方が早いケースもあります</li>
+            </ul>
+            <p className="mt-3 text-xs text-slate-400">※2026年7月7日に公式サイト・利用規約・運営会社情報を確認した内容です。</p>
+          </div>
         </div>
 
         <nav aria-label="目次" className="max-w-3xl mx-auto px-5 mt-8">
@@ -212,6 +186,9 @@ export default function Page() {
                     ["受付時間", "業者により異なる（24時間受付対応の業者もあり）"],
                     ["料金確認", "各業者ページで料金・口コミを比較可能"],
                     ["公式サイト", "rescue.epark.jp"],
+                    ["運営会社", "株式会社REsta（旧・株式会社EPARKくらしのレスキュー／2024年11月1日社名変更・EPARKグループ）"],
+                    ["会社情報", "東京都港区芝5-15-2／設立2020年3月／資本金9,000万円"],
+                    ["許認可の表示", "プラットフォーム運営のため施工系許認可の主体ではない。掲載業者の審査基準・必要許認可は非開示（2026年7月7日確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                       <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
@@ -225,25 +202,28 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              掲載業者の口コミで目立つのは、
-              <strong className="font-semibold">オペレーターや職人の親身な対応</strong>
-              と、修理内容・料金をきちんと説明してくれる丁寧さを評価する内容です。当日中に来てもらえた、口コミ通り良かった、といった声が見られます。
+              当サイトの方針として口コミ本文の転載はせず、公式サイトの掲載業者ページ・レビューサイトで確認できた<strong className="font-semibold">傾向の要約</strong>のみお伝えします（2026年7月調査）。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+                <h3 className="font-bold text-sky-800 mb-3">好意的な声の傾向</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>・複数業者を口コミ・料金で見比べてから選べる利便性</li>
+                  <li>・オペレーター経由の予約で当日手配できたという声</li>
+                  <li>・業者ページの口コミで事前に雰囲気が分かる安心感</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
+                <h3 className="font-bold text-orange-800 mb-3">否定的な声・構造的な指摘の傾向</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>・結局の品質は「選んだ加盟業者次第」という構造的指摘</li>
+                  <li>・EPARKブランド全体のレビューと混ざりがちで、サービス単体の評判が見えにくい</li>
+                </ul>
+              </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はEPARKくらしのレスキュー公式サイトの掲載業者ページで公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※公式サイト掲載の業者別口コミ・外部レビューサイトの内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -251,16 +231,13 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
-            <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、複数の業者が掲載される検索・予約型プラットフォームという性質上、
-              <strong className="font-semibold">どの業者を選ぶかで対応や料金が変わる</strong>
-              点は理解しておきたいところです。安心して任せるために、依頼時には次の点を確認しておくとよいでしょう。
-            </p>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（利用規約・公式FAQ確認ベース）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>業者によって対応エリア・受付時間・料金が異なるため、各業者ページの確認が前提</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>エアコン修理の専門業者だけでなく生活トラブル全般の業者も掲載されている</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを確認してから依頼するのが安心</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>運営はトラブルを仲介・保証しません</strong>——利用規約に「仲介・代理・斡旋・保証等するものではありません」「（トラブルは）利用者及び利用施設間で解決する」と明記。契約はあなたと業者の直接契約です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>料金・キャンセル料は業者ごとに異なります</strong>——プラットフォーム共通の料金はなく、「業者によりキャンセル料が発生する場合がある」と公式FAQに記載。予約前に業者ページの条件確認が必須です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>加盟業者の審査基準は非開示</strong>——「厳選された業者のみ掲載」とありますが、具体的な基準・必要許認可は公開されていません（2026年7月7日確認）</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>サイト共通の保証制度はありません</strong>——アフター保証の有無・内容は各業者依存です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>受付時間・到着目安も業者ごとに違います</strong>——「24時間」「最短10分」等はあくまで個別業者の表記です</span></li>
             </ul>
           </section>
 
@@ -309,16 +286,13 @@ export default function Page() {
           </section>
 
           <section id="price" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の仕組み（2026年7月7日 公式確認）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              EPARKくらしのレスキュー自体は料金を設定せず、<strong className="font-semibold">掲載業者ごとの料金がそのまま適用されます</strong>。支払いも施工完了後に業者へ直接後払いで、カード可否も業者次第です。エアコンカテゴリの掲載例（実査日時点）では、基本料金3,300円〜・エアコン修理8,800円〜・ガスチャージ8,800円〜（エアコントラブルセンター）などの表記がありました。
+            </p>
             <p className="leading-8 text-slate-700">
-              エアコン修理の費用は、症状や必要な作業（点検・ガス補充・部品交換など）と、選ぶ業者によって幅があります。EPARKくらしのレスキューの掲載業者では、
-              <strong className="font-semibold">基本料金に加えてガスチャージなどの作業費が加算される</strong>
-              形が一般的で、出張費・見積もり費用を無料としている業者もあります。
+              つまり「EPARKだから安い/高い」は存在せず、<strong className="font-semibold">選んだ業者の料金表がすべて</strong>です。同じ業者に直接申し込む場合と条件が変わらないか、業者の公式サイトともあわせて確認すると確実です。相場感は<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査インデックス</Link>をご覧ください。
             </p>
-            <p className="mt-4 leading-8 text-slate-700">
-              各業者ページで料金と口コミを見比べられるので、複数の業者を比較してから選ぶと納得感が高まります。訪問時には作業範囲と総額の見積もりを確認し、納得してから依頼するのがおすすめです。
-            </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は掲載業者の目安です。正確な金額は各業者の見積もりでご確認ください。</p>
           </section>
 
           <section id="flow" className="scroll-mt-24">
