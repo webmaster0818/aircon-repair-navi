@@ -126,6 +126,10 @@ export default function RankingPage() {
         </section>
 
         {/* Related Links */}
+        <div className="mt-6 bg-sky-50 border border-sky-200 rounded-xl p-4 text-sm">
+          <Link href="/cost/price-index/" className="font-bold text-sky-700 hover:underline">📊 27社の料金実査データ（2026年7月・出張費/見積無料/実額の一覧）→</Link>
+        </div>
+
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
           <Link href="/ranking/fast" className="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-200 transition-colors">
             <span className="text-3xl"></span>
