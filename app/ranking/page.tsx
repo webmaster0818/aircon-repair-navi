@@ -6,7 +6,7 @@ import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 import { getAffiliate } from "@/lib/affiliates";
 
 export const metadata: Metadata = {
-  title: "エアコン修理業者ランキング｜2024年最新おすすめ10社",
+  title: "エアコン修理業者ランキング【2026年7月】おすすめ10社を徹底比較",
   description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
 };
 
@@ -19,7 +19,7 @@ export default function RankingPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理業者 総合ランキング</h1>
-          <p className="text-sky-100 text-lg">2024年最新・編集部が厳選した信頼できる10社を徹底比較</p>
+          <p className="text-sky-100 text-lg">2026年7月更新・編集部が各社公式サイトを確認して厳選した10社を徹底比較</p>
           <div className="flex flex-wrap justify-center gap-4 mt-6">
             <Link href="/ranking/fast" className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
                即日対応ランキング
