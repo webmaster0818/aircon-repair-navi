@@ -5,9 +5,9 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "最安修理.comの口コミ・評判は？エアコン修理の料金・対応エリアを徹底調査【2026年最新】",
+    "最安修理.comの評判は悪い？口コミ・料金は本当に安い？他社比較で徹底調査【2026年最新】",
   description:
-    "修理費用を比較できる「最安修理.com」のエアコン修理について、サービスの仕組み、料金の目安、運営会社や対応エリア、メリット・デメリット、向いている人まで中立的に解説します。実際の口コミの扱いについても正直にまとめました。",
+    "最安修理.comの評判は悪い？料金は本当に安い？修理費用を比較できるサービスの仕組み・料金の目安・運営会社・対応エリアを他社と比較。メリット・デメリット、向いている人まで中立的に徹底調査します。実際の口コミの扱いについても正直にまとめました。",
   alternates: { canonical: "/company/saiyasu" },
 };
 
@@ -60,7 +60,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "最安修理.comの口コミ・評判は？エアコン修理の料金・対応エリアを徹底調査【2026年最新】",
+    "最安修理.comの評判は悪い？口コミ・料金は本当に安い？他社比較で徹底調査【2026年最新】",
   datePublished: "2026-06-10",
   dateModified: "2026-06-10",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
