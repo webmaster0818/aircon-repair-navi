@@ -268,6 +268,9 @@ export default function HomePage() {
           <Link href="/guide/noise" className="text-sky-600 font-bold hover:underline text-sm">
             異音「ガガガ」の原因と対処ガイド →
           </Link>
+          <Link href="/guide/busy-season/" className="text-sky-600 font-bold hover:underline text-sm">
+            修理はいつ頼むべき？繁忙期カレンダー →
+          </Link>
         </div>
       </section>
 
