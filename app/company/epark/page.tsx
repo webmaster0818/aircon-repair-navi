@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "EPARKくらしのレスキューの評判は悪い？口コミ・料金は高い？他社比較で徹底調査【2026年最新】",
+    "EPARKくらしのレスキューの評判は？口コミ・料金・仕組みを実査【2026年7月】",
   description:
     "「EPARKくらしのレスキューの評判は悪い？」を公式実査で検証（2026年7月確認）。運営は株式会社REsta（旧EPARK）で、実は“修理業者を紹介する仕組み”＝料金も品質も掲載業者ごとに変わり、運営はトラブルを仲介しない規約です。良い口コミ・悪い口コミの傾向、依頼前に必ず確認したい3点（出張費・見積・キャンセル料）、安く早く頼むコツまでエアコン修理目線で中立に整理しました。",
   alternates: { canonical: "/company/epark" },
