@@ -3,7 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
+import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
 import { getAffiliate } from "@/lib/affiliates";
+import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
   title: "エアコン修理を即日で頼むには？【今日直したい】24時間受付業者と当日予約のコツ",
@@ -94,6 +96,12 @@ export default function FastRankingPage() {
                   </Link>
                   {getAffiliate(c.slug) ? (
                     <AffiliateOfficialButton
+                      slug={c.slug}
+                      label="今すぐ相談する（PR）"
+                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                    />
+                  ) : getFelmat(c.slug) ? (
+                    <FelmatOfficialButton
                       slug={c.slug}
                       label="今すぐ相談する（PR）"
                       className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"

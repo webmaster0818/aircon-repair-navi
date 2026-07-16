@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/cost/price-index/" },
@@ -93,6 +94,11 @@ export default function PriceIndexPage() {
               </tbody>
             </table>
           </div>
+          <FelmatBanner
+            slug="aircon-trouble-center"
+            heading="出張費・見積無料で確認するなら（エアコントラブルセンター）"
+            note="24時間受付・全国2,000社以上の加盟店ネットワーク。まずは無料相談で症状と費用の目安を確認できます。"
+          />
         </section>
 
         {/* 仲介 */}
@@ -176,6 +182,11 @@ export default function PriceIndexPage() {
             </table>
           </div>
           <p className="text-xs text-slate-500 mt-2">※セーフリー・いえなかまは業者マッチングサイト（自社施工なし）のため本表から除外しています。安値順: おそうじラボ9,800円→おそうじ革命9,980円→セイフウ13,200円…（{SURVEY_DATE}時点の通常価格）。</p>
+          <FelmatBanner
+            slug="osoji-labo"
+            heading="大阪・兵庫でクリーニングを頼むなら（おそうじLabo）"
+            note="100%自社作業・初回限定価格あり。最新の料金と予約可能日を公式サイトで確認できます。"
+          />
         </section>
 
         {/* 使い方 */}

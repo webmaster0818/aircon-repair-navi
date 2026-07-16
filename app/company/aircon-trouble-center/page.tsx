@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
@@ -160,13 +161,11 @@ export default function Page() {
               24時間365日受付・最短30分〜1時間での駆けつけ（いずれも公称）をうたっており、「まずスピーディーに動いてほしい」ニーズに向いた窓口です。運営元は株式会社composure（東京都新宿区）で、会社概要上の事業内容は情報通信業・広告代理店業・メディア事業・マーケティングサポートとされ、自社で施工を行う工事会社ではない点は理解しておきたいところです（2026年7月11日公式確認）。
             </p>
 
-            <div className="my-8 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
-              <p className="text-base font-bold text-slate-800 mb-1">公式サイトで詳細・料金を確認する</p>
-              <p className="text-sm text-slate-500 mb-4">24時間受付・最短即日対応。まずは無料相談で症状と費用の目安を確認してみましょう。</p>
-              <a href="https://aircon-troubleone.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
-                公式サイトで詳細を確認 →
-              </a>
-            </div>
+            <FelmatBanner
+              slug="aircon-trouble-center"
+              heading="公式サイトで詳細・料金を確認する"
+              note="24時間受付・最短即日対応。まずは無料相談で症状と費用の目安を確認してみましょう。"
+            />
           </section>
 
           {/* 仲介型と直接依頼型の違い（中立の比較導線） */}
@@ -327,13 +326,11 @@ export default function Page() {
             <p className="mt-3 text-xs text-slate-400">出典：公式サイト（aircon-troubleone.com・基本料金8,800円〜）、EPARKくらしのレスキュー掲載情報（症状別参考額）。いずれも2026年7月11日確認。</p>
           </section>
 
-          <div className="my-8 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
-            <p className="text-base font-bold text-slate-800 mb-1">まずは無料見積もりで金額を確認</p>
-            <p className="text-sm text-slate-500 mb-4">出張費・見積もり・施工前キャンセルは無料（公式明記）。金額を見てから判断できます。</p>
-            <a href="https://aircon-troubleone.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
-              公式サイトで無料相談する →
-            </a>
-          </div>
+          <FelmatBanner
+            slug="aircon-trouble-center"
+            heading="まずは無料見積もりで金額を確認"
+            note="出張費・見積もり・施工前キャンセルは無料（公式明記）。金額を見てから判断できます。"
+          />
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
@@ -383,9 +380,10 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは無料相談・見積もりで、症状と費用の目安を確認してみましょう。</p>
-              <a href="https://aircon-troubleone.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://t.felmat.net/fmcl?ak=N119806.1.G1645575.X138222G" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 エアコントラブルセンター公式サイトを見る
               </a>
+              <p className="mt-4 text-xs text-sky-200">※本リンクはプロモーション（PR）です。</p>
             </div>
           </section>
 

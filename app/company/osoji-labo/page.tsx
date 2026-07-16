@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
@@ -184,6 +185,11 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               すべての作業を外注せず「100%自社作業」で行う点が特徴で、損害保険にも加入。駐車料金を自社負担とするなど、追加費用が発生しにくい仕組みを掲げています。地域密着で大阪・兵庫の一部に絞って対応しているため、エリア内の人には相談しやすいサービスです。
             </p>
+            <FelmatBanner
+              slug="osoji-labo"
+              heading="おそうじLabo公式サイトで料金・空き状況を確認する"
+              note="大阪・兵庫エリアなら、まずは料金と予約可能日を確認してみましょう。"
+            />
           </section>
 
           <section id="company" className="scroll-mt-24">
@@ -325,6 +331,11 @@ export default function Page() {
               初回限定価格やキャンペーンは時期によって変わります。台数や機種、オプションによって総額が変わるため、申し込み時に最新の料金と総額を確認しておくと安心です。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。最新の金額は申し込み時にご確認ください。</p>
+            <FelmatBanner
+              slug="osoji-labo"
+              heading="最新の料金・キャンペーンを公式で確認する"
+              note="初回限定価格やキャンペーンは時期により変わります。申し込み時に最新料金をご確認ください。"
+            />
           </section>
 
           <section id="flow" className="scroll-mt-24">
@@ -375,9 +386,10 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
               <p className="text-sky-100 text-sm mb-5">大阪・兵庫エリアなら、まずは料金と空き状況を確認してみましょう。</p>
-              <a href="https://osojilabo.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 おそうじLabo公式サイトを見る
               </a>
+              <p className="mt-4 text-xs text-sky-200">※本リンクはプロモーション（PR）です。</p>
             </div>
           </section>
 

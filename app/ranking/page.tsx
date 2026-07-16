@@ -3,7 +3,9 @@ import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
+import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
 import { getAffiliate } from "@/lib/affiliates";
+import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
   title: "エアコン修理業者ランキング【2026年7月】おすすめ10社を徹底比較",
@@ -90,6 +92,11 @@ export default function RankingPage() {
                   </Link>
                   {getAffiliate(c.slug) ? (
                     <AffiliateOfficialButton
+                      slug={c.slug}
+                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
+                    />
+                  ) : getFelmat(c.slug) ? (
+                    <FelmatOfficialButton
                       slug={c.slug}
                       className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
                     />

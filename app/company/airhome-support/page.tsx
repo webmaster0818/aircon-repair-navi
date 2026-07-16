@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
@@ -161,13 +162,11 @@ export default function Page() {
             </p>
           </section>
 
-          <div className="rounded-2xl bg-gradient-to-br from-sky-600 to-sky-800 p-7 text-center text-white">
-            <p className="text-lg font-bold mb-2">エアホームに相談してみる</p>
-            <p className="text-sky-100 text-sm mb-5">まずは症状を伝えて、対応可否と費用の目安を確認してみましょう。</p>
-            <a href="https://airhomesupport.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
-              エアホーム公式サイトを見る
-            </a>
-          </div>
+          <FelmatBanner
+            slug="airhome-support"
+            heading="エアホーム公式サイトで相談・見積もりを確認する"
+            note="まずは症状を伝えて、対応可否と費用の目安を確認してみましょう。"
+          />
 
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
@@ -307,13 +306,11 @@ export default function Page() {
             <p className="mt-3 text-xs text-slate-400">※料金は公式サイトに明記がありません。正確な金額は現地の見積もりでご確認ください(2026年7月12日確認)。</p>
           </section>
 
-          <div className="rounded-2xl bg-gradient-to-br from-sky-600 to-sky-800 p-7 text-center text-white">
-            <p className="text-lg font-bold mb-2">まずは無料相談で費用の目安を確認</p>
-            <p className="text-sky-100 text-sm mb-5">料金は公式サイトに掲載がないため、症状を伝えて見積もりを確認してから判断しましょう。</p>
-            <a href="https://airhomesupport.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
-              エアホーム公式サイトを見る
-            </a>
-          </div>
+          <FelmatBanner
+            slug="airhome-support"
+            heading="まずは無料相談で費用の目安を確認"
+            note="料金は公式サイトに掲載がないため、症状を伝えて見積もりを確認してから判断しましょう。"
+          />
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から修理完了までの流れ</h2>
@@ -363,9 +360,10 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは症状を伝えて、対応可否と費用の目安を確認してみましょう。</p>
-              <a href="https://airhomesupport.com/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://t.felmat.net/fmcl?ak=M11945U.1.3164608W.X138222G" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 エアホーム公式サイトを見る
               </a>
+              <p className="mt-4 text-xs text-sky-200">※本リンクはプロモーション（PR）です。</p>
             </div>
           </section>
 
