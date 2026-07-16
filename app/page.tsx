@@ -1,6 +1,7 @@
 import Link from "next/link";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
+import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
 
 const symptoms = [
   { iconSrc: "/images/icon-snowflake.png", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
@@ -50,7 +51,10 @@ const faqs = [
 ];
 
 export default function HomePage() {
-  const top3 = companies.slice(0, 3);
+  // TOP3はアフィリエイト提携済みの業者のみで構成（施主方針・2026-07-16）
+  const top3 = ["aircon-trouble-center", "take-service", "airhome-support"]
+    .map((s) => companies.find((c) => c.slug === s))
+    .filter((c): c is (typeof companies)[number] => c !== undefined);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -217,6 +221,10 @@ export default function HomePage() {
                     詳細を見る →
                   </Link>
                   <AffiliateOfficialButton
+                    slug={company.slug}
+                    className="block text-center mt-2 font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md bg-orange-500 hover:bg-orange-600 text-white"
+                  />
+                  <FelmatOfficialButton
                     slug={company.slug}
                     className="block text-center mt-2 font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md bg-orange-500 hover:bg-orange-600 text-white"
                   />
