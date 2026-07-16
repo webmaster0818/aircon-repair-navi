@@ -170,7 +170,6 @@ export default function HomePage() {
       <section className="bg-gradient-to-b from-slate-50 to-white py-14">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full mb-3">PR</span>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">エアコン修理業者 TOP3</h2>
             <p className="text-gray-500 mt-2">編集部が厳選した信頼できる業者</p>
           </div>
@@ -286,7 +285,6 @@ export default function HomePage() {
       <section className="bg-slate-50 py-14">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block bg-orange-100 text-orange-600 text-xs font-bold px-3 py-1 rounded-full mb-3">PR</span>
             <h2 className="text-2xl md:text-3xl font-bold text-slate-900">10社 一括比較</h2>
           </div>
 
@@ -314,6 +312,10 @@ export default function HomePage() {
                     詳細を見る →
                   </Link>
                   <AffiliateOfficialButton
+                    slug={c.slug}
+                    className="flex-1 block text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
+                  />
+                  <FelmatOfficialButton
                     slug={c.slug}
                     className="flex-1 block text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
                   />
@@ -360,6 +362,10 @@ export default function HomePage() {
                           詳細
                         </Link>
                         <AffiliateOfficialButton
+                          slug={c.slug}
+                          className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors shadow-sm hover:shadow whitespace-nowrap"
+                        />
+                        <FelmatOfficialButton
                           slug={c.slug}
                           className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors shadow-sm hover:shadow whitespace-nowrap"
                         />
