@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ヤマダ電機のエアコン修理の評判は？料金・出張費を実査【2026年7月】",
+    "ヤマダ電機の出張修理料金はいくら？出張料4,500円〜・評判も実査【2026年7月】",
   description:
     "ヤマダ電機のエアコン出張修理（施工＝株式会社ヤマダテクニカルサービス）の料金・出張費・口コミ傾向を当サイトが公式ページで実査（2026年7月11日確認）。出張料4,500円・冷房不良20,000円〜・水漏れ10,000円〜（公式）、訪問後キャンセル時の費用、直営エリアの制限、メーカー保証・長期保証との関係まで正直に解説します。",
   alternates: { canonical: "/company/yamada-repair" },
