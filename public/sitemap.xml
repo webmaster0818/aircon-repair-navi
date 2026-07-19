@@ -61,6 +61,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://aircon-maintenance-navi.com/company/aircon-kyukyusha/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://aircon-maintenance-navi.com/company/seikatsu110/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

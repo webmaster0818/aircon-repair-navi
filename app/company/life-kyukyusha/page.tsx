@@ -118,6 +118,14 @@ export default function Page() {
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
+          <div className="mb-6 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
+            <p className="text-[0.95rem] leading-7 text-slate-700">
+              <strong className="font-semibold text-slate-900">「エアコン救急隊」の情報をお探しですか？</strong>
+              「ライフ救急車」と「エアコン救急隊」は名称が似ていますが別のサービスです。エアコン救急隊(株式会社SAZANKA運営ほか同名サービス)の運営情報・料金・見分け方は
+              <Link href="/company/aircon-kyukyusha/" className="text-sky-700 underline font-semibold">エアコン救急隊の評判・実査ページ</Link>
+              にまとめています。
+            </p>
+          </div>
           <p className="text-[1.05rem] leading-8 text-slate-700">
             エアコンが急に効かなくなったとき、24時間受付・スピード対応をうたう出張サービスは頼りたくなる存在です。
             この記事では、生活トラブルの出張受付窓口である
