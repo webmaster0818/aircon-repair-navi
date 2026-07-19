@@ -5,18 +5,18 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "電気工事110番の評判は悪い？口コミ・料金は高い？他社比較で徹底調査【2026年最新】｜エアコン修理ナビ",
+    "電気工事110番の評判は悪い？口コミ・料金は高い？他社比較で徹底調査【2026年最新】",
   description:
     "電気工事110番の評判は悪い？料金は高い？東証上場企業が運営するサービスの実際の利用者の声・料金の目安・対応エリア・受付時間を他社と比較。メリット・デメリットを中立的に徹底調査します。生活110番とは別運営である点もあわせて紹介します。",
   alternates: { canonical: "/company/denki110" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "電気工事110番とは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,27 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "問い合わせてから対応が速く、こちらの状況に合わせてすぐに動いてくれました。急いでいたので助かりました。",
-    who: "利用者の声",
-    source: "safely.co.jp 掲載のレビュー",
-  },
-  {
-    body:
-      "深夜にトラブルが起きて不安でしたが、電話するとすぐにつながり、迅速に対応してもらえて安心できました。",
-    who: "利用者の声",
-    source: "safely.co.jp 掲載のレビュー",
-  },
-  {
-    body:
-      "作業が丁寧で、何をどう直すのかをきちんと説明してくれました。任せて良かったと感じています。",
-    who: "利用者の声",
-    source: "infotop.jp 掲載のレビュー",
-  },
 ];
 
 const faqs = [
@@ -76,7 +55,7 @@ const articleJsonLd = {
   headline:
     "電気工事110番の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -126,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -151,7 +121,7 @@ export default function Page() {
             について、実際に紹介されている利用者の声、料金の目安、対応エリアや受付時間、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミは、口コミ掲載サイトなどで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年6月）。
+            ※本記事では、口コミ本文の転載・創作は行わず、確認できた評価の傾向のみを要約してお伝えしています。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
           </p>
         </div>
 
@@ -209,25 +179,19 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミ掲載サイトで目立つのは、
-              <strong className="font-semibold">対応の速さ</strong>
-              と、作業の丁寧さを評価する内容です。深夜でもすぐに電話がつながり迅速に対応してもらえた、説明がわかりやすかった、といった声が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。電気工事110番については、口コミ掲載サイトのセーフリー（safely.co.jp）で評価の傾向を確認しました。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>問い合わせ後の初動が速く、急ぎの依頼にも対応してもらえたという評価</li>
+                <li>深夜のトラブルでも電話がつながり、迅速に対応してもらえたという評価</li>
+                <li>作業が丁寧で、修理内容の説明が分かりやすいという評価</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記は口コミ掲載サイトなどで公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価の傾向は時期・担当業者・地域によって異なる場合があります。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

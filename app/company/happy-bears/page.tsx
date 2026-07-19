@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/happy-bears" },
 };
 
-const UPDATED = "2026年6月28日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "ベアーズとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,33 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "色々と丁寧に説明してくださって、スケジュール調整も希望日を伝えてからすぐに折り返しの電話をいただき、スムーズに日程が決まりました。",
-    who: "利用者の声",
-    source: "みん評(ベアーズ エアコンクリーニングの口コミ)を要約",
-  },
-  {
-    body:
-      "10年ほど洗っていなかったエアコンの頑固なカビや汚れも、しっかりきれいになりました。",
-    who: "利用者の声",
-    source: "みん評(ベアーズ エアコンクリーニングの口コミ)を要約",
-  },
-  {
-    body:
-      "作業の前後で写真を撮ってもらえて、素人にもわかりやすく説明してくれました。",
-    who: "利用者の声",
-    source: "ベアーズ公式サイト掲載のお客様の声を要約",
-  },
-  {
-    body:
-      "作業終了後にフォローのお電話をいただけて、アフターの対応も安心できました。",
-    who: "利用者の声",
-    source: "マイナビ・口コミ調査記事掲載の利用者の声を要約",
-  },
 ];
 
 const faqs = [
@@ -82,7 +55,7 @@ const articleJsonLd = {
   headline:
     "ベアーズ(ハッピーベアーズ)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-06-28",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -132,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -214,25 +178,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミで目立つのは、
-              <strong className="font-semibold">スタッフの丁寧な説明・対応と、しっかりした洗浄力</strong>
-              を評価する声です。日程調整がスムーズだった、頑固なカビもきれいになった、ビフォーアフターの写真でわかりやすかった、といった内容が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。ベアーズについては、みん評・マイナビなどの口コミ調査記事や公式サイトのお客様の声で利用者の評価が公開されています。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>スタッフの丁寧な説明や、日程調整のスムーズさを評価する声が目立つ</li>
+                <li>長年掃除していないエアコンの頑固なカビ・汚れも落ちたとする内容が見られる</li>
+                <li>作業前後の写真を使ったわかりやすい説明への評価がある</li>
+                <li>作業終了後のフォローコールなど、アフター対応の安心感を評価する傾向がある</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はみん評・口コミ調査記事・公式サイト等で公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

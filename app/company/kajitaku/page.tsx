@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/kajitaku" },
 };
 
-const UPDATED = "2026年6月28日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "カジタクとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,33 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "良い人が来てくれて安心でした。来てもらってきれいになり、対応も丁寧で満足しています。",
-    who: "利用者の声",
-    source: "みん評(カジタク エアコンクリーニングの口コミ)を要約",
-  },
-  {
-    body:
-      "申し込みから支払いまでWebで完結でき、料金も事前にわかるので、見積もりで金額が変わる不安がありませんでした。",
-    who: "利用者の声",
-    source: "マイナビ(カジタクの口コミ調査記事)掲載の利用者の声を要約",
-  },
-  {
-    body:
-      "イオングループという安心感があり、初めてのエアコンクリーニングでも申し込みやすかったです。防カビ仕上げが無料なのも良かったです。",
-    who: "利用者の声",
-    source: "みん評・利用者アンケート調査記事を要約",
-  },
-  {
-    body:
-      "細やかな気遣いが行き届いていて、仕上がりもきれいでした。",
-    who: "利用者の声",
-    source: "Googleマップ・口コミ調査記事を要約",
-  },
 ];
 
 const faqs = [
@@ -82,7 +55,7 @@ const articleJsonLd = {
   headline:
     "カジタク(イオン)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-06-28",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -132,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -156,7 +120,7 @@ export default function Page() {
             です。この記事では、全国対応のカジタクについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声、料金プラン、対応エリアや保証、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミは、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
+            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月)。
           </p>
         </div>
 
@@ -212,25 +176,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミで目立つのは、
-              <strong className="font-semibold">イオングループの安心感と、Web完結・明朗な料金の手軽さ</strong>
-              を評価する声です。丁寧な対応と仕上がりの良さ、防カビ仕上げが無料な点も好評です。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。カジタクについては、Googleマップ・みん評・マイナビの口コミ調査記事・公式サイトで公開されている利用者の声を確認しました。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>スタッフの対応が丁寧で、仕上がりがきれいだったという内容</li>
+                <li>申し込みから支払いまでWebで完結し、料金が事前にわかる点を評価する内容</li>
+                <li>イオングループ運営の安心感で、初めてでも申し込みやすかったという内容</li>
+                <li>防カビ仕上げが無料で付く点を評価する内容</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はみん評・口コミ調査記事・公式サイト等で公開されている利用者の声を引用・要約したものです。公式の利用者アンケートでは97%が満足と回答したと案内されています。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

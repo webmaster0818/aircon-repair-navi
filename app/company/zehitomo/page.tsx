@@ -5,18 +5,18 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ゼヒトモの評判は悪い？口コミ・料金は高い？エアコン修理を他社比較で徹底調査【2026年最新】｜エアコン修理ナビ",
+    "ゼヒトモの評判は？エアコン修理の口コミ・料金・仕組みを実査【2026年7月】",
   description:
-    "ゼヒトモの評判は悪い？料金は高い？プロから相見積もり提案が届くマッチングサービスについて、複数社を比較できる仕組み・実際の利用者の声・料金の目安・対応エリアを他社と比較。メリット・デメリットまで中立的に徹底調査します。",
+    "ゼヒトモ（運営: 株式会社Zehitomo）のエアコン修理の評判・口コミの傾向・料金の考え方を実査。フォーム入力でプロから相見積もり提案が届くマッチングの仕組み、依頼者は無料で提案を受け取れる点、プロごとに料金・対応が変わる注意点まで中立的に解説します。",
   alternates: { canonical: "/company/zehitomo" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "ゼヒトモとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,27 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "複数の業者から提案が届くので、料金や対応を比較しながら選べてとても便利でした。",
-    who: "利用者の声",
-    source: "公式サイトのレビュー一覧",
-  },
-  {
-    body:
-      "依頼の内容に対する提案がとても丁寧で、こちらの希望をしっかり汲み取ってもらえました。",
-    who: "利用者の声",
-    source: "公式サイトのレビュー一覧",
-  },
-  {
-    body:
-      "フォームに入力するだけでプロから連絡が来るので、自分で一から探す手間が省けて助かりました。",
-    who: "利用者の声",
-    source: "公式サイトのレビュー一覧",
-  },
 ];
 
 const faqs = [
@@ -74,9 +53,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ゼヒトモの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ゼヒトモの評判は？エアコン修理の口コミ・料金・仕組みを実査【2026年7月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -119,14 +89,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ゼヒトモの口コミ・評判は？
+            ゼヒトモの評判は？
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            エアコン修理の口コミ・料金・仕組みを実査【2026年7月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -148,10 +118,10 @@ export default function Page() {
             エアコンの修理を依頼したいけれど、どの業者に頼めばよいか分からない。そんなときに、複数のプロから提案を受け取って比較できるサービスは便利です。
             この記事では、フォーム入力でプロから相見積もり提案が届くマッチングサービス
             <strong className="font-semibold text-slate-900">ゼヒトモ</strong>
-            について、実際に紹介されている利用者の声、料金の目安、対応エリアや特徴、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
+            について、口コミ・評判の傾向、料金の考え方、対応エリアや特徴、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミは、公式サイトのレビュー一覧などで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報は申し込み時にご確認ください（調査時点：2026年6月）。
+            ※当サイトは口コミ本文の転載・創作を行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報は申し込み時にご確認ください（最終確認：2026年7月19日）。
           </p>
         </div>
 
@@ -173,7 +143,7 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ゼヒトモとは</h2>
             <p className="leading-8 text-slate-700">
-              ゼヒトモは、ゼヒトモ株式会社が運営するマッチングサービスです。フォームに依頼内容を入力すると、登録しているプロ（業者）から見積もりや提案が届く仕組みで、利用者は複数の提案を比較したうえで依頼先を選べます。エアコンの修理・取り付けをはじめ、暮らしのさまざまな依頼に対応しています。
+              ゼヒトモは、株式会社Zehitomo（東京都品川区・2015年設立）が運営するマッチングサービスです。フォームに依頼内容を入力すると、登録しているプロ（業者）から見積もりや提案が届く仕組みで、利用者は複数の提案を比較したうえで依頼先を選べます。エアコンの修理・取り付けをはじめ、暮らしのさまざまな依頼に対応しています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               2025年6月の人気依頼ランキングではエアコン修理が3位に入っており、実績が蓄積されています。全国に対応しており、複数の業者を比較してから依頼先を決めたいという人に向いています。
@@ -187,7 +157,7 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "ゼヒトモ"],
-                    ["運営会社", "ゼヒトモ株式会社"],
+                    ["運営会社", "株式会社Zehitomo（東京都品川区・2015年8月設立）"],
                     ["サービス形態", "フォーム入力でプロから相見積もり提案が届くマッチング"],
                     ["実績", "2025年6月の人気依頼ランキングでエアコン修理が3位"],
                     ["対応エリア", "全国（登録プロのエリアにより変動）"],
@@ -207,25 +177,19 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
-            <p className="leading-8 text-slate-700 mb-6">
-              公式サイトのレビュー一覧では、取り付けを含めて高評価のプロが多く確認できます。目立つのは
-              <strong className="font-semibold">複数社を比較できる便利さ</strong>
-              と、提案の丁寧さを評価する内容です。フォーム入力だけで提案が届くため、自分で探す手間が省けたという声も見られます。
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。ゼヒトモでは、サイト上の各プロ（業者）のプロフィールに利用者のレビューが公開される仕組みがあり、依頼前に個別のプロの評価を確認できます。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>・<strong>複数のプロの提案を比較して選べる便利さ</strong>を評価する傾向——料金や対応を見比べてから決められる点がマッチング型の利点として挙げられます</li>
+                <li>・フォーム入力だけで提案が届くため、<strong>自分で一から業者を探す手間が省ける</strong>という利便性への評価</li>
+                <li>・一方で、<strong>評価はプロ（業者）ごとに大きく異なる</strong>ため、サービス全体ではなく「依頼するプロ個人のレビュー」を確認することが重要です</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記は公式サイトのレビュー一覧などで公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。ゼヒトモはマッチング型のため、施工品質・対応は登録プロごとに異なります。依頼前に各プロのプロフィール上のレビューと実績をご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

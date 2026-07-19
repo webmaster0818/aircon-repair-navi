@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年6月28日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -25,33 +25,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "作業内容の説明や養生がとても丁寧で、料金も明瞭でした。問い合わせへのレスポンスも早くて安心できました。",
-    who: "利用者の声",
-    source: "オリコン顧客満足度(ダスキン)の利用者口コミを要約",
-  },
-  {
-    body:
-      "効きが悪かったエアコンが、クリーニングで冷房効果がはっきり良くなりました。",
-    who: "利用者の声",
-    source: "口コミ調査記事・Googleマップの口コミを要約",
-  },
-  {
-    body:
-      "大手ならではの安心感があり、スタッフの方も清潔で説明がわかりやすかったです。",
-    who: "利用者の声",
-    source: "オリコン顧客満足度(ダスキン)の利用者口コミを要約",
-  },
-  {
-    body:
-      "プロの仕事という感じで、丁寧かつスピーディーに仕上げてもらえました。",
-    who: "利用者の声",
-    source: "Googleマップ(ダスキン サービスマスター)の口コミを要約",
-  },
 ];
 
 const faqs = [
@@ -83,7 +56,7 @@ const articleJsonLd = {
   headline:
     "ダスキン サービスマスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-06-28",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,15 +70,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -133,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -218,25 +182,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミで目立つのは、
-              <strong className="font-semibold">説明・養生の丁寧さと、大手ならではの安心感・仕上がりの品質</strong>
-              を評価する声です。料金が明瞭、効きが良くなった、スタッフが清潔で説明がわかりやすい、といった内容が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。ダスキン サービスマスターについては、オリコン顧客満足度・Googleマップ・口コミ調査記事などで利用者の評価が公開されています。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>作業内容の説明や養生の丁寧さ、料金の明瞭さを評価する声が目立つ</li>
+                <li>クリーニング後に冷房の効きが良くなったとする内容が見られる</li>
+                <li>大手ならではの安心感や、スタッフの清潔感・説明のわかりやすさへの評価が多い</li>
+                <li>丁寧かつスピーディーな仕上がりの品質を評価する傾向がある</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はオリコン顧客満足度・Googleマップ・口コミ調査記事等で公開されている利用者の声を引用・要約したものです。Googleの口コミでは、2,000件超のレビューで平均4.6台の評価が確認できます。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当店舗・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

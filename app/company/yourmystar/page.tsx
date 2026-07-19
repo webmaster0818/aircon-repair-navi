@@ -5,18 +5,18 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ユアマイスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】｜エアコン修理ナビ",
+    "ユアマイスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   description:
     "職人登録型マッチングサービス「ユアマイスター」の口コミ・評判をまとめました。累計作業50万件超の実績、実際の利用者の声、料金の目安、対応エリアや特徴、メリット・デメリットまで中立的に解説します。",
   alternates: { canonical: "/company/yourmystar" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "ユアマイスターとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,27 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "迅速かつ丁寧に作業して下さり感動しました。お願いして本当に良かったと思える対応でした。",
-    who: "利用者の声",
-    source: "minhyo.jp（みん評）掲載のレビュー",
-  },
-  {
-    body:
-      "丁寧な説明と作業で満足しています。気持ちのいい接客で、安心して任せることができました。",
-    who: "利用者の声",
-    source: "minhyo.jp（みん評）掲載のレビュー",
-  },
-  {
-    body:
-      "作業前の説明から仕上がりまで一つひとつ丁寧で、職人さんの対応がとても良かったです。",
-    who: "利用者の声",
-    source: "公式サイト掲載の口コミ",
-  },
 ];
 
 const faqs = [
@@ -76,7 +55,7 @@ const articleJsonLd = {
   headline:
     "ユアマイスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -126,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -207,25 +177,19 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミ掲載サイトには多くの声が寄せられており（みん評では200件を超えるレビューが確認できます）、目立つのは
-              <strong className="font-semibold">作業の丁寧さと職人の接客の良さ</strong>
-              を評価する内容です。迅速かつ丁寧に作業してもらえた、説明がわかりやすく満足できた、といった声が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。みん評（minhyo.jp）には200件を超えるレビューが寄せられており、公式サイト掲載の口コミとあわせて確認したところ、次のような評価の傾向が見られました。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>迅速かつ丁寧な作業を評価する内容</li>
+                <li>作業前の説明のわかりやすさや仕上がりの丁寧さを評価する内容</li>
+                <li>職人の接客・対応の良さで安心して任せられたとする内容</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記は口コミ掲載サイトや公式サイトで公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期や依頼する職人・地域により異なります。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

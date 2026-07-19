@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年6月28日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -25,33 +25,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "想像していた以上にきれいになって驚きました。価格を考えると清掃のクオリティがとても高く、コストパフォーマンスに満足しています。",
-    who: "利用者の声",
-    source: "みん評(アールクリーニングの口コミ)で公開されている利用者の声を要約",
-  },
-  {
-    body:
-      "予約前の質問への返答が早く、作業当日も流れや日頃のお手入れ方法まで丁寧に説明してもらえて安心でした。",
-    who: "利用者の声",
-    source: "みん評・くらしのマーケット掲載の利用者の声を要約",
-  },
-  {
-    body:
-      "独自の洗剤と高圧洗浄で内部の汚れがごっそり落ち、エアコンの効きもよくなった気がします。",
-    who: "利用者の声",
-    source: "Googleマップ(アールクリーニング)の口コミを要約",
-  },
-  {
-    body:
-      "防カビ・抗菌コートが無料で付いていてお得感がありました。スタッフの対応も感じが良かったです。",
-    who: "利用者の声",
-    source: "くらしのマーケット(アールクリーニング)掲載の利用者の声を要約",
-  },
 ];
 
 const faqs = [
@@ -83,7 +56,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-06-28",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,15 +70,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -133,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -157,7 +121,7 @@ export default function Page() {
             です。この記事では、首都圏を中心に対応するアールクリーニングについて、みん評・Googleマップ・くらしのマーケットなどで公開されている利用者の声、料金の目安、対応エリアや受付時間、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※アールクリーニングは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミは、みん評・Googleマップ・くらしのマーケット等で公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
+            ※アールクリーニングは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評・Googleマップ・くらしのマーケット等で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
           </p>
         </div>
 
@@ -218,25 +182,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミで目立つのは、
-              <strong className="font-semibold">価格を上回る清掃のクオリティと、スタッフの丁寧な対応</strong>
-              を評価する声です。事前説明や質問への返答が早い、防カビ・抗菌コートが無料でお得、といった内容が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。アールクリーニングについては、みん評・Googleマップ・くらしのマーケットなどの口コミプラットフォームで多数の利用者の声が公開されており、2026年6月時点でGoogleマップ評価4.7(1,600件超)、くらしのマーケット評価4.7台などの評価が確認できます。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>価格に対して清掃のクオリティが高く、コストパフォーマンスに満足したという評価</li>
+                <li>予約前の質問への返答が早く、当日の作業の流れや日頃のお手入れ方法の説明も丁寧だったという評価</li>
+                <li>独自洗剤と高圧洗浄で内部の汚れがよく落ち、エアコンの効きが改善したと感じたという評価</li>
+                <li>防カビ・抗菌コートが無料で付く点にお得感があり、スタッフの対応の感じが良かったという評価</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はみん評・Googleマップ・くらしのマーケット等で公開されている利用者の声を引用・要約したものです。2026年6月時点でGoogleマップ評価4.7(1,600件超)、くらしのマーケット評価4.7台などの評価が確認できます。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

@@ -5,18 +5,18 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "セーフリー（Safely）のエアコン修理は評判が良い？審査・口コミの仕組みを徹底調査【2026年最新】｜エアコン修理ナビ",
+    "セーフリー（Safely）のエアコン修理は評判が良い？審査・口コミの仕組みを徹底調査【2026年最新】",
   description:
     "暮らしのトラブルポータル「セーフリー（Safely）」の特徴をまとめました。掲載事業者の審査・監視体制、画像付き口コミで比較できる仕組み、マッチング系との違い、利用前の注意点まで中立的に解説します。",
   alternates: { canonical: "/company/safely" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "セーフリーとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "評価できる点・利用者の声" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,33 +24,6 @@ const toc = [
   { id: "flow", label: "依頼先探しから修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "口コミに作業写真が載っていて、どんな仕上がりになるかイメージしてから依頼できたのが安心でした。",
-    who: "利用者の声",
-    source: "ポータル掲載の利用者口コミ",
-  },
-  {
-    body:
-      "複数の事業者の評価を見比べて選べたので、初めての依頼でも納得して決められました。",
-    who: "利用者の声",
-    source: "ポータル掲載の利用者口コミ",
-  },
-  {
-    body:
-      "実際に利用した人のレビューが具体的で、料金感や対応の雰囲気をつかみやすかったです。",
-    who: "利用者の声",
-    source: "ポータル掲載の利用者口コミ",
-  },
-  {
-    body:
-      "気になる事業者の口コミをまとめて確認できて、比較検討の時間を短くできました。",
-    who: "利用者の声",
-    source: "ポータル掲載の利用者口コミ",
-  },
 ];
 
 const faqs = [
@@ -82,7 +55,7 @@ const articleJsonLd = {
   headline:
     "セーフリー（Safely）のエアコン修理は評判が良い？審査・口コミの仕組みを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -132,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -157,7 +121,7 @@ export default function Page() {
             について、掲載事業者の審査・監視体制や、画像付き口コミで比較できる仕組み、マッチング系サービスとの違い、利用前に知っておきたい注意点を中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミは、ポータルに掲載されている利用者の声を引用・要約したものです。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年6月）。
+            ※本記事では口コミ本文の引用は行わず、確認できた範囲の情報のみをまとめています。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
           </p>
         </div>
 
@@ -213,25 +177,19 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">評価できる点・利用者の声</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              ポータルに寄せられた声で目立つのは、
-              <strong className="font-semibold">画像付き口コミで仕上がりや対応をイメージしてから選べる安心感</strong>
-              と、複数の事業者を見比べて納得して依頼できる点です。審査・監視された掲載と具体的なレビューが、比較検討のしやすさにつながっているようです。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。セーフリーの利用体験については、調査時点で第三者の口コミを出典を特定できる形で確認できませんでした。そのため個別の口コミ内容は掲載せず、公式サイトで案内されている仕組みの範囲で整理しています。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>画像・動画付きの口コミで、仕上がりや対応を確認してから依頼先を選べる仕組みがある</li>
+                <li>複数の事業者を口コミ付きで見比べられるため、比較検討しやすい構成になっている</li>
+                <li>掲載事業者を審査・監視する体制が案内されており、掲載の質に配慮しているとされる</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はポータルに掲載されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。第三者の口コミは特定できる形で確認できなかったため、個人の感想に基づく口コミ引用は掲載していません。最新の口コミはセーフリー公式サイトでご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

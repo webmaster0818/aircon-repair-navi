@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/seifu-ac" },
 };
 
-const UPDATED = "2026年6月28日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "エアコンクリーニング清風とは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -25,33 +25,6 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "作業員の方の誠実さ・親しみやすさに安心できました。テキパキとした対応で予想より早く完了し、クリーニング後の風量に驚きました。",
-    who: "男性 利用者",
-    source: "ユアマイスター 掲載の清風 利用者口コミ",
-  },
-  {
-    body:
-      "予定時間より早く終わりました。作業員の清潔感と対応の良さが印象的でした。",
-    who: "女性 利用者",
-    source: "ユアマイスター 掲載の清風 利用者口コミ",
-  },
-  {
-    body:
-      "エアコン2台をお願いしました。礼儀正しく、手際が良くスムーズに完了。においも消えてスッキリしました。",
-    who: "男性 利用者",
-    source: "ユアマイスター 掲載の清風 利用者口コミ",
-  },
-  {
-    body:
-      "価格がリーズナブルで作業も丁寧。毎年のようにリピートしています。",
-    who: "利用者の声",
-    source: "第三者の口コミ紹介サイト掲載の清風 利用者の声",
-  },
 ];
 
 const faqs = [
@@ -83,7 +56,7 @@ const articleJsonLd = {
   headline:
     "エアコンクリーニング清風の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-06-28",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,15 +70,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -133,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -158,7 +122,7 @@ export default function Page() {
             について、実際に紹介されている利用者の声、機種を問わない一律料金、対応エリアや受付時間、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※清風は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」の専門店です。本記事の口コミは、ユアマイスターや紹介サイトで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
+            ※清風は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」の専門店です。本記事では口コミ本文の引用は行わず、ユアマイスターで公開されている利用者評価の傾向を要約してお伝えしています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月)。
           </p>
         </div>
 
@@ -220,25 +184,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              口コミで目立つのは、
-              <strong className="font-semibold">作業員の丁寧で誠実な対応と、作業の手際の良さ</strong>
-              を評価する声です。予定より早く終わった、クリーニング後の風量やニオイの改善に驚いた、といった内容が多く見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。清風については、口コミプラットフォーム「ユアマイスター」に掲載されている利用者評価を確認し、その傾向を整理しました。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>作業員の誠実で丁寧な対応や清潔感を評価する内容が目立つ</li>
+                <li>手際が良く、予定より早く作業が完了したという内容が複数見られる</li>
+                <li>クリーニング後の風量やニオイの改善など、仕上がりへの満足に触れる内容がある</li>
+                <li>複数台の依頼でもスムーズに対応してもらえたという内容がある</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記はユアマイスターや紹介サイトで公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記はユアマイスター掲載の利用者評価をもとに編集部が傾向を要約したものです。個々の口コミ本文の引用は掲載していません。最新の口コミは各プラットフォームでご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

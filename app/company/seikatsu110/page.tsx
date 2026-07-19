@@ -11,12 +11,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/seikatsu110" },
 };
 
-const UPDATED = "2026年6月10日";
+const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "生活110番とは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "良い口コミ・評判" },
+  { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
@@ -24,33 +24,6 @@ const toc = [
   { id: "flow", label: "依頼から修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
-];
-
-const goodReviews = [
-  {
-    body:
-      "迅速な駆け付けと誠実な対応をしてくれて助かりました。丁寧な対応に救われた思いです。",
-    who: "利用者の声",
-    source: "口コミ紹介サイト（limia ほか）で公開されている利用者の声",
-  },
-  {
-    body:
-      "初めてのことでわかりにくかったのですが、わかりやすい見積りと説明で安心してお願いできました。",
-    who: "利用者の声",
-    source: "口コミ紹介サイト（駅探PICKS ほか）で公開されている利用者の声",
-  },
-  {
-    body:
-      "対応が早く、心配りがされていました。事前に金額や方法など詳しい説明があったので納得して任せられました。",
-    who: "利用者の声",
-    source: "口コミ紹介サイト（カジナビ ほか）で公開されている利用者の声",
-  },
-  {
-    body:
-      "見積もりについて丁寧かつ詳しく説明していただき感謝しています。とても親切な業者さんでした。",
-    who: "利用者の声",
-    source: "生活110番 加盟店レビュー（公式サイト掲載）で公開されている利用者の声",
-  },
 ];
 
 const faqs = [
@@ -82,7 +55,7 @@ const articleJsonLd = {
   headline:
     "生活110番のエアコン修理の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-06-10",
+  dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,15 +69,6 @@ const faqJsonLd = {
     acceptedAnswer: { "@type": "Answer", text: f.a },
   })),
 };
-
-function Stars({ n }: { n: number }) {
-  return (
-    <span className="text-amber-500 tracking-tight" aria-hidden>
-      {"★".repeat(n)}
-      <span className="text-slate-300">{"★".repeat(5 - n)}</span>
-    </span>
-  );
-}
 
 export default function Page() {
   return (
@@ -132,7 +96,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -225,25 +189,20 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              公開されている利用者の声で目立つのは、
-              <strong className="font-semibold">駆けつけの早さと、見積もり・作業の説明の丁寧さ</strong>
-              を評価する内容です。はじめて依頼する人でも安心できた、誠実に対応してもらえた、といった声が見られます。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。生活110番の加盟店レビュー（公式サイト掲載）や複数の口コミ紹介サイトを確認したところ、次のような評価の傾向が見られました。
             </p>
-            <div className="grid gap-4">
-              {goodReviews.map((r, i) => (
-                <figure key={i} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_1px_0_rgba(0,0,0,0.02)]">
-                  <Stars n={5} />
-                  <blockquote className="mt-3 text-slate-800 leading-7">「{r.body}」</blockquote>
-                  <figcaption className="mt-3 text-sm text-slate-500">
-                    {r.who}
-                    <span className="block text-xs text-slate-400 mt-0.5">出典：{r.source}</span>
-                  </figcaption>
-                </figure>
-              ))}
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>駆けつけ・対応の早さを評価する内容</li>
+                <li>見積もりや作業内容の説明のわかりやすさを評価する内容</li>
+                <li>事前に金額や作業方法の説明があり、納得して依頼できたとする内容</li>
+                <li>誠実・丁寧な対応で、初めての依頼でも安心できたとする内容</li>
+              </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※上記は公式の加盟店レビューや口コミ紹介サイト（limia、駅探PICKS、カジナビ ほか）で公開されている利用者の声を引用・要約したものです。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期・担当する加盟店・地域により異なります。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
