@@ -17,6 +17,7 @@ const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
@@ -24,6 +25,7 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -123,7 +125,7 @@ export default function Page() {
             について、実際に紹介されている利用者の声、料金の目安、対応エリアや受付時間、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※おそうじLaboは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、ユアマイスターや公式サイトで公開されている利用者の声の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月)。
+            ※おそうじLaboは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、エキテンや公式サイトで公開されている情報の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月、口コミ出典は2026年8月1日に再調査)。
           </p>
         </div>
 
@@ -163,6 +165,16 @@ export default function Page() {
             />
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
+            <p className="leading-8 text-slate-700">
+              おそうじLabo（大阪・株式会社ペイストレージ）については、<strong className="font-semibold">第三者サイトでの口コミ蓄積はまだ少ない</strong>のが実情です（2026年8月1日調査時点）。店舗情報サイトのエキテンにはページがあり評点3.06と表示されていますが、口コミ本文の投稿は0件で、評価の傾向を判断できる材料はありません。公式サイトには「想像以上にきれいになった」といった5つ星のお客様の声が掲載されているものの、自社サイト掲載のため第三者による検証はできません。くらしのマーケットの出店ページも確認できませんでした。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              一方で、悪い評判の一次出典も確認できておらず、口コミが少ないこと自体は「悪評がある」という意味ではありません。第三者の裏づけが少ない分、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前確認しておくことが、口コミの代わりになるチェックポイントです。
+            </p>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
@@ -194,18 +206,30 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。おそうじLaboについては、ユアマイスターの利用者口コミと公式サイトで公開されているお客様の声を確認しました。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。おそうじLabo（大阪）については、エキテンの店舗ページと公式サイトで公開されているお客様の声を確認しました。なお、ユアマイスターに掲載のある「株式会社おそうじラボ」は東京の別法人のため（後述）、同社の口コミは本記事では扱っていません。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向（公式サイト自社掲載の声より）</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>事前のメッセージ対応が丁寧で、初めてでも安心して任せられたという内容</li>
-                <li>養生がしっかりしていて、部屋を汚す心配がなかったという内容</li>
-                <li>作業後に出た汚れの多さや仕上がりのきれいさに満足したという内容</li>
-                <li>料金説明が分かりやすく、追加費用がなかった点を評価する内容</li>
+                <li>「想像以上にきれいになった」など、仕上がりへの驚き・満足を伝える内容</li>
+                <li>料金説明が明確で分かりやすかった点を評価する内容</li>
               </ul>
+              <p className="mt-3 text-xs text-slate-500">※いずれも公式サイトに自社掲載されたお客様の声のため、第三者による検証はできません。</p>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="font-bold text-slate-700 text-sm mb-2">参照元（2026年8月1日確認）</p>
+              <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
+                <li>
+                  ・参照元: <a href="https://www.ekiten.jp/shop_27504638/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">エキテン（おそうじLabo店舗ページ）</a>
+                  ——評点表示は3.06ですが、口コミ本文の投稿は0件です（2026年8月1日確認）。掲載はエアコンクリーニング8,800円〜等のメニュー情報が中心です
+                </li>
+                <li>
+                  ・参照元: 公式サイト（osojilabo.com）——5つ星のお客様の声を自社掲載。自社サイト掲載のため第三者検証はできません
+                </li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-400">※みん評に該当ページはなく、くらしのマーケットの出店ページ・Googleマップの評点も確認できませんでした（2026年8月1日調査）。口コミ本文の長文転載は行わず、傾向の要約のみ掲載しています。</p>
+            </div>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日（2026年8月1日に再調査）。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -329,6 +353,16 @@ export default function Page() {
             </ol>
           </section>
 
+          <section id="confusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              東京都には<strong className="font-semibold">「株式会社おそうじラボ」という同名（表記違い）の別法人</strong>が実在し、ハウスクリーニング予約サイトの<a href="https://yourmystar.jp/suppliers/osoujilab/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">ユアマイスターに出店</a>しています（壁掛けエアコンクリーニングの口コミ1件・評点5.0／2026年8月1日時点）。カタカナ・英字の表記が違うだけの同名のため、ユアマイスター上の高評価口コミを大阪の「おそうじLabo」のものと誤認しやすい状況ですが、<strong className="font-semibold">両者は別の会社</strong>です。本記事でも東京の同名法人の口コミは、大阪のおそうじLaboの評価として扱っていません。
+            </p>
+            <p className="leading-8 text-slate-700">
+              本記事で扱う「おそうじLabo」は、<strong className="font-semibold">株式会社ペイストレージ運営・大阪市中央区南船場拠点・公式ドメイン osojilabo.com</strong>のサービスです。口コミを調べる際は、運営法人名と所在地（大阪か東京か）が一致しているかを確認しましょう。
+            </p>
+          </section>
+
           <section id="faq" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">よくある質問</h2>
             <div className="divide-y divide-slate-200 border-y border-slate-200">
@@ -347,7 +381,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              おそうじLaboは、大阪・兵庫を中心に「100%自社作業」でエアコンクリーニングを行うサービスです。利用者の声では、丁寧な事前説明・養生と、仕上がりへの満足を評価する内容が見られます。一方で、対応エリアが大阪・兵庫の一部に絞られている点や、故障の修理ではなくクリーニングである点は理解しておきましょう。
+              おそうじLaboは、大阪・兵庫を中心に「100%自社作業」でエアコンクリーニングを行うサービスです。公式サイト掲載のお客様の声では、仕上がりへの満足や料金説明の分かりやすさを評価する内容が見られます（自社掲載のため第三者検証は不可）。一方で、エキテン等の第三者サイトでの口コミ蓄積はまだ少なく、対応エリアが大阪・兵庫の一部に絞られている点や、故障の修理ではなくクリーニングである点は理解しておきましょう。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               料金は機種・台数・オプションで変わります。初回限定価格やキャンペーンは時期で変動するため、申し込み時に総額を確認し、納得してから依頼するのがおすすめです。

@@ -17,6 +17,7 @@ const UPDATED = "2026年7月12日";
 
 const toc = [
   { id: "summary", label: "エアホームとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "review", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -24,6 +25,7 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の考え方" },
   { id: "flow", label: "依頼から修理完了までの流れ" },
+  { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -169,6 +171,16 @@ export default function Page() {
             </p>
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
+            <p className="leading-8 text-slate-700">
+              エアホーム（airhomesupport.com）については、Yahoo!知恵袋・みん評・Googleマップ・くらしのマーケットなどを対象に再調査を行いましたが、同社を特定できる一次的な口コミの掲載は確認できず、<strong className="font-semibold">第三者サイトでの口コミ蓄積はまだ少ない</strong>のが実情です（2026年8月1日調査時点）。公式サイトにもお客様の声・実績件数の掲載はありません。つまり、良い評判・悪い評判のどちらも、出典を示せる形では存在しないというのが確認できた事実です。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              口コミが確認できないこと自体は「悪い評判がある」という意味ではありません。ただし第三者情報での裏づけが取れない分、依頼前に<strong className="font-semibold">「総額見積もりの書面化」「運営法人名・許認可の有無」「再発時の保証の有無」</strong>を電話で直接確認しておくことが、口コミの代わりになる自衛策です。
+            </p>
+          </section>
+
           <FelmatBanner
             slug="airhome-support"
             heading="エアホーム公式サイトで相談・見積もりを確認する"
@@ -209,7 +221,7 @@ export default function Page() {
           <section id="review" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。エアホーム(airhomesupport.com)については、2026年7月12日時点で、くらしのマーケット・ミツモアなどの主要な口コミプラットフォームや検索結果を調べても、<strong className="font-semibold">同社を特定できる第三者の口コミ・評価は確認できませんでした</strong>。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。エアホーム(airhomesupport.com)については、2026年7月12日時点で、くらしのマーケット・ミツモアなどの主要な口コミプラットフォームや検索結果を調べても、<strong className="font-semibold">同社を特定できる第三者の口コミ・評価は確認できませんでした</strong>。2026年8月1日にYahoo!知恵袋・みん評・Googleマップも含めて再調査しましたが、結果は同じです。知恵袋には同社を名指しするスレッドが見つからず、検索でヒットしたエアコン故障相談のスレッドを実際に開いて確認しても同社への言及はありませんでした。「エアホームの口コミ」を扱う体裁の外部記事も確認しましたが、実際の口コミは一件も引用されておらず、業界一般論の紹介にとどまっていました。
             </p>
             <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
               <h3 className="font-bold text-orange-800 mb-3">評判を見るうえでの前提</h3>
@@ -219,7 +231,7 @@ export default function Page() {
                 <li>・そのため本記事では、事実として確認できた公式サイトの掲載内容のみを扱い、評価の断定は避けています</li>
               </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月12日。調査対象：エアホーム公式サイト、くらしのマーケット・ミツモア等の口コミプラットフォーム、一般検索結果。口コミが確認できないことは「悪い評判がある」という意味ではありませんが、事前の情報収集がしづらい点は依頼前に留意しておきましょう。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月12日（2026年8月1日に再調査）。調査対象：エアホーム公式サイト、Yahoo!知恵袋、みん評、Googleマップ、くらしのマーケット・ミツモア等の口コミプラットフォーム、一般検索結果。いずれにも同社を特定できる一次口コミの掲載はなく、リンクでご案内できる出典もありません。口コミが確認できないことは「悪い評判がある」という意味ではありませんが、事前の情報収集がしづらい点は依頼前に留意しておきましょう。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -342,6 +354,21 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="confusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              「エアホーム（AIR HOME）」は一般的な語の組み合わせのため、検索すると不動産・住宅・空調以外の「エア○○」系など、無関係の事業者・サービスが結果に混ざりやすい名称です。実際、当サイトの調査でも検索結果の上位にエアコン修理と無関係の「エア」関連ページが多く表示されました（2026年8月1日確認）。なお「株式会社エアホーム」という同名法人の実在は、今回の調査では確認できませんでした。
+            </p>
+            <p className="leading-8 text-slate-700">
+              評判や口コミを調べる際に別事業者の情報を同社のものと誤認しないよう、次の3点で同一の事業者かを確認しましょう。
+            </p>
+            <ul className="mt-3 space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span>公式ドメインが <strong className="font-semibold">airhomesupport.com</strong> であること</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span>所在地が<strong className="font-semibold">神奈川県横浜市西区浅間町1丁目4番3号 ウィザードビル402</strong>であること</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span>電話番号が<strong className="font-semibold">050-1793-2218</strong>（公式記載）であること</span></li>
+            </ul>
           </section>
 
           <section id="faq" className="scroll-mt-24">

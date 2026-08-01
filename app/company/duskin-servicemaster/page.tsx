@@ -17,6 +17,7 @@ const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
@@ -165,6 +166,16 @@ export default function Page() {
             />
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
+            <p className="leading-8 text-slate-700">
+              ダスキンのエアコンクリーニングは、大手ならではの安心感や2名体制での効率的な作業・時間厳守を評価する声(「料金に見合う内容」とする評価など)が確認できる一方、口コミサイト「みん評」のエアコンクリーニング関連の口コミ(127件・2026年8月1日時点)では低評価の投稿が優勢という厳しい結果も確認でき、評価が分かれるサービスです。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              否定的な声の中心は、水漏れ・ルーバー破損など作業起因のトラブル報告、加盟店(フランチャイズ)ごとの品質バラつき、トラブル時の対応の遅さ、料金が品質に対して割高という指摘です。Yahoo!知恵袋でも評判を尋ねる質問にネガティブ寄りの回答が付いた例が確認できます。なお、みん評のダスキン全体の口コミ422件はモップレンタル・家事代行なども含む全サービス混在の数字のため、エアコンクリーニング単体の評価はタグ絞り込みページの127件で見る必要があります。大手の体制を評価する声も実在するため、依頼時は担当加盟店の対応と保証条件を個別に確認するのが安全です。
+            </p>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
@@ -206,6 +217,7 @@ export default function Page() {
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当店舗・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/duskin/tags/aircon" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(ダスキンのエアコンクリーニング関連口コミ・127件)</a>では、2名体制の効率的な作業や時間厳守など「料金に見合う内容」とする肯定的な評価も確認できます(2026年8月1日確認)。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -225,6 +237,10 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(5〜7月)の土日は予約が取りにくくなる場合がある</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>土日祝・夜間の追加費用、駐車スペースの有無を事前に確認しておく</li>
             </ul>
+            <p className="mt-4 leading-8 text-slate-700">
+              また、口コミサイトでは水漏れやルーバー破損など作業起因のトラブル報告や、トラブル時の連絡・対応の遅さを指摘する声も確認できます。10年を超えた機種は保証が制限される場合があるという声もあるため、古い機種を依頼する際は事前に保証条件を確認しておくと安心です。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/duskin/tags/aircon" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(エアコンクリーニング関連の口コミ・127件)</a> ／ <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10307121805" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Yahoo!知恵袋(ダスキンのエアコンクリーニングの評判に関するQ&A)</a>(いずれも2026年8月1日確認)。みん評のダスキン全体の口コミ(422件)は全サービス混在のため、エアコンクリーニング単体の傾向は上記の絞り込みページを参照しています。</p>
           </section>
 
           <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" label="ダスキン サービスマスター公式サイトを見る" lead="口コミの傾向を踏まえて検討したい方へ。詳細は公式サイトで確認できます" />

@@ -17,6 +17,7 @@ const UPDATED = "2026年7月7日";
 
 const toc = [
   { id: "summary", label: "テイクサービスとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -24,6 +25,7 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の仕組み" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -177,6 +179,16 @@ export default function Page() {
             />
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
+            <p className="leading-8 text-slate-700">
+              テイクサービスの口コミは評価がはっきり分かれています。口コミまとめサイト「口評」では総合4.0/5.0とされ、相見積もりで見積額が最安だった・深夜でも電話が繋がった・急な依頼に対応してもらえたという好意的な声が確認できます。一方、Yahoo!知恵袋では「テイクサービスというエアコン業者は安全ですか?」という質問(2019年投稿・閲覧7.7万回超)に対し、無料のはずの出張・見積もりで費用を請求されたという報告や修理後すぐの再故障の報告など、強い否定的な回答が付いており、厳しい声も確認できます(2026年8月1日時点)。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              実作業は全国の提携業者(加盟店)が行う紹介型のため「品質は担当業者に依存し当たり外れがある」という構造的な指摘は第三者の解説記事でも共通しています。急ぎで駆けつけてほしい場面では利用価値があるものの、金額トラブルを避けるため、作業前の書面見積もりの確保と、急ぎでなければ相見積もりを強くおすすめします。
+            </p>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
@@ -226,6 +238,7 @@ export default function Page() {
               </div>
             </div>
             <p className="mt-4 text-xs text-slate-400">※複数のレビュー紹介サイト・Q&Aサイトに掲載された内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。紹介型サービスのため、実際の作業品質は担当する加盟店により差が出る点は構造的な特徴です。</p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://kuchihyou.xsrv.jp/take-service/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">口評(総合4.0/5.0の口コミまとめ)</a> ／ <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10210386690" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Yahoo!知恵袋(安全性を尋ねるQ&A・強い否定的な回答あり)</a> ／ <a href="https://reformfact.com/takeservice-reputation/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">リフォームファクト(業界経験者による解説記事)</a>(いずれも2026年8月1日確認)</p>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向はいずれも「金額の認識ズレ」に関するものです。完全見積制のサービスなので、<strong className="font-semibold">作業前に総額見積もりを書面（またはスマホ写真）で残す</strong>だけでトラブルの大半は防げます。
             </p>
@@ -346,6 +359,20 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="confusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
+            <p className="leading-8 text-slate-700">
+              「株式会社テイクサービス」という名称の法人は、業種の異なる複数の会社が実在します。口コミや評判を調べる際に混同しやすいため、次の区別を押さえておきましょう。
+            </p>
+            <ul className="mt-4 space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">大阪市住吉区の株式会社テイクサービス(take-service.jp)</strong>：ボディコーティング・板金・車内クリーニングなどカーケア専門の会社(法人番号2120001110791)。エアコン修理のテイクサービスとは別会社です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">東京都練馬区西大泉の株式会社テイクサービス</strong>：管工事・冷暖房設備工事を手がける建設業の会社で、こちらも別会社です</span></li>
+            </ul>
+            <p className="mt-4 leading-8 text-slate-700">
+              本記事で紹介しているエアコン修理受付のテイクサービスは、株式会社アシスト(東京都渋谷区)が運営するとされる紹介型サービスです。評判を調べる際は、運営会社名とサービス内容(エアコン修理の受付・紹介)が一致しているかを確認し、同名の別会社の評価と取り違えないよう注意してください。
+            </p>
           </section>
 
           <section id="faq" className="scroll-mt-24">

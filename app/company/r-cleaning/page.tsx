@@ -17,6 +17,7 @@ const UPDATED = "2026年7月19日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "気になる点・利用前の注意点" },
@@ -24,6 +25,7 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -165,6 +167,16 @@ export default function Page() {
             />
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
+            <p className="leading-8 text-slate-700">
+              アールクリーニングは、くらしのマーケットの店舗ページで総合4.73/5.0・口コミ662件(2026年8月1日時点)という高評価を得ており、丁寧な作業や問い合わせ対応の早さ、繁忙期の対応を称賛する声が中心です。明朗会計や事前説明、ビフォーアフター写真の提示など、作業プロセスの丁寧さを評価する内容も多く確認できます。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              一方、みん評の口コミは11件(2026年8月1日時点)と少数ながら評価が1〜5点に二極化しており、水漏れで部屋が濡れたという報告や、洗浄範囲・トラブル後の対応への不満といった厳しい声も確認できます。担当者による品質のムラを指摘する声もあるため、高評価が多数とはいえ当たり外れの可能性は念頭に置き、作業範囲と万一の際の補償を申し込み時に確認しておくと安心です。
+            </p>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
@@ -206,6 +218,7 @@ export default function Page() {
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://curama.jp/600123749/review/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">くらしのマーケット(総合4.73/5.0・口コミ662件)</a> ／ <a href="https://selectra.jp/home/review/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">セレクトラのレビュー記事</a>(いずれも2026年8月1日確認)</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -225,6 +238,10 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(夏前など)は予約が取りにくく、希望日に作業できない場合がある</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>感謝価格(割引)やオプションは条件・期間が変わるため、申し込み時に総額を確認する</li>
             </ul>
+            <p className="mt-4 leading-8 text-slate-700">
+              なお、みん評では水漏れ事故や洗浄範囲への不満、トラブル後の対応に関する厳しい声も確認できます(件数は11件と少数で評価は二極化)。万一に備え、補償の有無と連絡窓口を作業前に確認しておくと安心です。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(アールクリーニングの口コミ・11件)</a> ／ <a href="https://selectra.jp/home/review/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">セレクトラのレビュー記事</a>(いずれも2026年8月1日確認)</p>
           </section>
 
           <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" label="アールクリーニング公式サイトを見る" lead="口コミの傾向を踏まえて検討したい方へ。詳細は公式サイトで確認できます" />
@@ -322,6 +339,21 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="confusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
+            <p className="leading-8 text-slate-700">
+              「アールクリーニング」という名称は、自宅から衣類を預ける<strong className="font-semibold">宅配衣類クリーニングのサービス</strong>を指して使われている例も確認できます。本記事で紹介しているのは、東京都を拠点に首都圏でエアコンクリーニング・ハウスクリーニングを行うアールクリーニング(公式サイト: r-cleaning.com)で、衣類の宅配クリーニングとは業態が異なります。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              口コミや評判を調べる際は、次の点を確認すると別業態の同名サービスと取り違えるのを防げます。
+            </p>
+            <ul className="mt-3 space-y-2 text-slate-700 text-[0.95rem] leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>「エアコンクリーニング」「ハウスクリーニング」の文脈での評価かどうか(衣類の仕上がりの話であれば別サービスの可能性)</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式サイトのドメインが「r-cleaning.com」か</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>対応エリアが東京・埼玉・神奈川・千葉の首都圏か</li>
+            </ul>
           </section>
 
           <section id="faq" className="scroll-mt-24">

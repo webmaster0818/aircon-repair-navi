@@ -17,6 +17,7 @@ const UPDATED = "2026年7月11日";
 
 const toc = [
   { id: "summary", label: "エアコントラブルセンターとは" },
+  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -24,6 +25,7 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の仕組み" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -177,6 +179,16 @@ export default function Page() {
             />
           </section>
 
+          <section id="review-summary" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
+            <p className="leading-8 text-slate-700">
+              第三者サイトの一次口コミを再調査したところ（2026年8月1日時点）、まとめ系のレビュー紹介サイトには「対応が早い・丁寧」といった好意的な記述が見られる一方、これらは出所が明示されていないため一次評価としては扱っていません。実際に本文まで確認できた一次出典はYahoo!知恵袋の相談スレッド2件で、「電話がつながりにくく折り返しが来なかった」「支払い後に症状が再発し、請求書の記載内容に不安が残った」という厳しい声も確認できます。みん評に該当ページはなく、評点・件数が明記されたレビューサイトへの掲載も確認できませんでした。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              否定的な体験談が複数ある一方で、利用者全体の傾向を示せる件数・評点のデータはないため、良し悪しの断定はできません。だからこそ依頼時には<strong className="font-semibold">「作業前に総額見積もりを書面で残す」「請求書に事業所名・担当者名の記載を求める」</strong>の2点を必ず押さえておきましょう。
+            </p>
+          </section>
+
           {/* 仲介型と直接依頼型の違い（中立の比較導線） */}
           <section className="scroll-mt-24">
             <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6">
@@ -241,6 +253,20 @@ export default function Page() {
               </div>
             </div>
             <p className="mt-4 text-xs text-slate-400">※複数のレビュー紹介サイト（Stay&不動産、ハウスケアラボ、楽ちんおそうじ術ほか）に掲載された内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。紹介型サービスのため、実際の作業品質は担当する加盟店により差が出る点は構造的な特徴です。</p>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="font-bold text-slate-700 text-sm mb-2">参照元（本文を直接確認できた一次出典・2026年8月1日確認）</p>
+              <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
+                <li>
+                  ・参照元: <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13323742728" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">Yahoo!知恵袋（該当スレッド・2025年12月投稿）</a>
+                  ——「口コミが良かったので電話したが、自動音声が途中で切れて折り返しが来ない」という相談。回答には「メーカーや購入店への依頼を優先すべき」という助言が寄せられ、質問者は最終的にメーカー修理を利用したと報告しています
+                </li>
+                <li>
+                  ・参照元: <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11302361246" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">Yahoo!知恵袋（該当スレッド・2024年8月投稿）</a>
+                  ——「6万円を支払ったが夜には症状が再発した。請求書に事業所名・氏名の記載がなかった」という相談。回答には「消費者センターへ相談を」という助言が寄せられています
+                </li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-400">※口コミ本文の長文転載は行わず、傾向の要約のみ掲載しています。個別の相談内容であり、サービス全体の品質を示すものではありません。なお、みん評（minhyo.jp）に該当ページはなく、評点・件数が明記されたレビュープラットフォームへの掲載も確認できませんでした（2026年8月1日調査）。</p>
+            </div>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向は「加盟店ごとの品質差」と「金額の認識ズレ」に集約されます。<strong className="font-semibold">作業前に総額見積もりを書面（またはスマホ写真）で残す</strong>だけでトラブルの大半は防げます。
             </p>
@@ -364,6 +390,20 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="confusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              「エアコントラブル○○」という名称の緊急対応系サービスは複数実在し、検索結果や口コミが混ざりやすい状況です。当サイトが実在を確認できた（2026年8月1日時点）類似名称のサービスは次のとおりです。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコントラブルバスターズ</strong>（<a href="https://www.aircon-troublebusters.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-troublebusters.com</a>・横浜市神奈川区金港町・0120-539-588）——名称が酷似する別サービスです。全国対応・即日対応を掲げており、本記事のエアコントラブルセンターとは運営が異なります</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコン救急隊</strong>（<a href="https://aircon-kaketsuke119.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-kaketsuke119.com</a>）——「救急」系の名称を持つ別のエアコン修理業者で、緊急駆けつけ系の検索結果で混在しやすい名称です</span></li>
+            </ul>
+            <p className="mt-4 leading-8 text-slate-700">
+              本記事で扱うエアコントラブルセンターは、<strong className="font-semibold">株式会社composure（東京都新宿区）運営・公式ドメイン aircon-troubleone.com・電話050-5369-1348</strong>のサービスです。口コミや評判を調べる際は、公式ドメインと運営会社名が一致しているかを確認し、別サービスの評判を同社のものと取り違えないようにしましょう。
+            </p>
           </section>
 
           <section id="faq" className="scroll-mt-24">
