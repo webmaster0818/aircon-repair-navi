@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import { StickyCta, MiniCta } from "@/app/components/AffCta";
 import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
@@ -226,6 +227,8 @@ export default function Page() {
             </ul>
           </section>
 
+          <MiniCta href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" label="おそうじLabo公式サイトを見る" lead="口コミの傾向を踏まえて検討したい方へ。詳細は公式サイトで確認できます" />
+
           <section id="merit" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">メリット・デメリット</h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -303,6 +306,8 @@ export default function Page() {
             />
           </section>
 
+          <MiniCta href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" label="おそうじLabo公式サイトを見る" lead="料金の詳細・正確な見積もりは公式サイトの無料相談で確認できます" />
+
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
@@ -374,7 +379,8 @@ export default function Page() {
             </div>
           </section>
         </div>
-      </article>
+      <StickyCta href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" label="おそうじLabo公式サイトを見る" />
+</article>
     </>
   );
 }

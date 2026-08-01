@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { StickyCta, MiniCta } from "@/app/components/AffCta";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
@@ -246,6 +247,8 @@ export default function Page() {
             </ul>
           </section>
 
+          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" label="テイクサービス公式サイトを見る" lead="口コミの傾向を踏まえて検討したい方へ。詳細は公式サイトで確認できます" />
+
           <section id="merit" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">メリット・デメリット</h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -315,6 +318,8 @@ export default function Page() {
               症状別の実額を公開している業者（例: 修理3,300円〜等）と違い、テイクサービスは<strong className="font-semibold">現地見積もりで金額が決まる方式</strong>です。「見積金額の範囲内での作業」を公式に約束しているため、<strong className="font-semibold">提示された見積もりを書面で残す</strong>ことが自衛の要点になります。相場感は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
             </p>
           </section>
+
+          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" label="テイクサービス公式サイトを見る" lead="料金の詳細・正確な見積もりは公式サイトの無料相談で確認できます" />
 
           <AffiliateBanner
             slug="take-service"
@@ -395,7 +400,8 @@ export default function Page() {
             </div>
           </section>
         </div>
-      </article>
+      <StickyCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" label="テイクサービス公式サイトを見る" />
+</article>
     </>
   );
 }
