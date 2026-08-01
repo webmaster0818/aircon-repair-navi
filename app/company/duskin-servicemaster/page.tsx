@@ -139,6 +139,15 @@ export default function Page() {
           </div>
         </nav>
 
+        <div className="max-w-3xl mx-auto px-5 mt-8">
+          <div className="rounded-2xl border-2 border-orange-200 bg-orange-50 p-6 text-center">
+            <p className="text-base font-bold text-slate-800 mb-3">＼ 公式サイトはこちら ／</p>
+            <div className="flex justify-center mb-4"><a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+60OXD" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www27.a8.net/svt/bgt?aid=260628928547&wid=013&eno=01&mid=s00000023342001011000&mc=1" /></a></div>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">ダスキン サービスマスター公式サイトを見る →</a>
+            <p className="mt-3 text-xs text-slate-400">※本リンクはプロモーション（PR）です。</p>
+          </div>
+        </div>
+
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ダスキン サービスマスターとは</h2>
@@ -342,7 +351,7 @@ export default function Page() {
               <div className="flex justify-center mb-5">
                 <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+60OXD" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www27.a8.net/svt/bgt?aid=260628928547&wid=013&eno=01&mid=s00000023342001011000&mc=1" /></a>
               </div>
-              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">
                 ダスキン サービスマスター公式サイトを見る
               </a>
             </div>

@@ -151,6 +151,12 @@ export default function Page() {
           </div>
         </nav>
 
+        <div className="max-w-3xl mx-auto px-5 mt-8">
+          <div className="flex justify-center mb-4">
+            <FelmatBanner slug="airhome-support" heading="＼ 公式サイトはこちら ／" />
+          </div>
+        </div>
+
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">エアホームとは</h2>
@@ -360,7 +366,7 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは症状を伝えて、対応可否と費用の目安を確認してみましょう。</p>
-              <a href="https://t.felmat.net/fmcl?ak=M11945U.1.3164608W.X138222G" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://t.felmat.net/fmcl?ak=M11945U.1.3164608W.X138222G" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">
                 エアホーム公式サイトを見る
               </a>
               <p className="mt-4 text-xs text-sky-200">※本リンクはプロモーション（PR）です。</p>
