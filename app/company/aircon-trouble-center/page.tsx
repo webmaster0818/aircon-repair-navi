@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/aircon-trouble-center" },
 };
 
-const UPDATED = "2026年7月11日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "エアコントラブルセンターとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の仕組み" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "流れの詳細と所要時間の目安" },
+  { id: "menu-scope", label: "症状・メニュー別の対応範囲" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
@@ -55,6 +59,26 @@ const faqs = [
     q: "支払い方法は何が使えますか？",
     a: "公式サイトではVISA・マスター・JCBのクレジットカード、銀行振込、現金に対応と記載されています。カード払い希望の場合は、加盟店により可否が異なる可能性があるため受付時に伝えておくのが確実です。",
   },
+  {
+    q: "修理以外（取り付け・クリーニング）も頼めますか？",
+    a: "はい。公式サイトの対応メニューには、エアコン修理（水漏れ・ガスチャージ・故障修理・室外機の故障対応）のほか、エアコン取り付け・エアコン新規購入・エアコンクリーニングが掲載されています（2026年8月2日確認）。ただしいずれも料金・作業範囲の詳細は公式に記載がないため、内容と金額は見積もり時に確認してください。",
+  },
+  {
+    q: "法人でも利用できますか？後日請求払いは可能ですか？",
+    a: "公式FAQに、法人の後日請求払いは「対応可能。ただし加盟店により出来かねる場合もあるため、受付時にその旨を申し付けてほしい」旨が記載されています（2026年8月2日確認）。法人利用で請求書払いを希望する場合は、受付の時点で必ず伝えましょう。",
+  },
+  {
+    q: "割引やクーポンはありますか？",
+    a: "公式サイトにWEB限定クーポン1,000円OFFの表示があります（2026年8月2日確認）。ただし適用条件・併用可否の詳細は記載されていないため、受付時に適用されるかを確認し、見積書に反映されているかもチェックするのが確実です。",
+  },
+  {
+    q: "作業前に署名する書類はありますか？",
+    a: "公式サイトには「事前作業承諾書の署名（サイン）を義務付けており、承諾後の作業になっている」と記載されています（2026年8月2日確認）。承諾書は施工依頼の意思表示にあたるため、署名前に総額・保証・キャンセル条件を確認し、控えやスマホ写真を残しておきましょう。",
+  },
+  {
+    q: "見積もり後・施工依頼後のキャンセルはできますか？",
+    a: "無料と明記されているのは「施工依頼前のキャンセル」までです。施工依頼後（承諾書への署名後）や作業開始後のキャンセル規定は公式に記載がありません（2026年8月2日確認）。依頼を確定する前に、キャンセル費用が発生する条件を担当加盟店に確認しておきましょう。",
+  },
 ];
 
 const articleJsonLd = {
@@ -63,7 +87,7 @@ const articleJsonLd = {
   headline:
     "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年7月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-11",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -104,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-11">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -390,6 +414,99 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">流れの詳細と所要時間の目安（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式受付ページの記載をもとに、各ステップで確認しておきたいポイントと時間の目安を整理しました。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["① 問い合わせ", "電話・Webで24時間365日受付（公称）。症状・設置状況・希望日時を伝えます"],
+                    ["② 加盟店の手配・訪問", "到着目安は公式トップに「30分以内に駆け付けます」、公式FAQには「1時間以内に現場へ向かいます」と記載。加盟スタッフの作業スケジュールや遠方の場合は時間が変動する旨の注記があります"],
+                    ["③ 現地確認・見積もり", "出張費・見積もりは無料（公式明記）。金額に納得できなければ、施工依頼前のキャンセルは無料です"],
+                    ["④ 承諾書への署名・作業", "公式は「事前作業承諾書の署名を義務付けており、承諾後の作業」と記載。署名前に総額・保証・キャンセル条件を確認しましょう"],
+                    ["⑤ 支払い・完了", "支払いは「見積金額のみ」で追加請求はしない旨の案内。クレジットカード・銀行振込・現金に対応します"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">※修理作業そのものの所要時間は公式に記載がなく、症状・部品の有無・担当加盟店により変わります。急ぎの場合は受付時に到着目安とあわせて確認しましょう（2026年8月2日 公式確認）。</p>
+          </section>
+
+          <section id="menu-scope" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">症状・メニュー別の対応範囲（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式受付ページに掲載されている対応メニューは、次の4系統です。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["エアコン修理", "水漏れ／ガスチャージ／故障修理／室外機の故障対応が例示されています"],
+                    ["エアコンクリーニング", "対応メニューとして掲載（作業範囲・料金の詳細は記載なし）"],
+                    ["エアコン取り付け", "対応メニューとして掲載（料金の詳細は記載なし）"],
+                    ["エアコン新規購入", "対応メニューとして掲載（取り扱い機種の詳細は記載なし）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              冷えない・水漏れ・異音・電源が入らないといった症状の相談から、取り付け・新規購入・クリーニングまで受付の間口は広い一方、<strong className="font-semibold">対応メーカー・年式・機種別の可否は公式に記載がありません</strong>。業務用エアコンや特殊な設置環境（高所・天井埋め込み型など）の場合は、受付時に対応可否と追加費用の有無を確認しておきましょう。
+            </p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年8月2日 公式確認）</h2>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["支払い方法", "クレジットカード（VISA・マスター・JCB）／銀行振込／現金"],
+                    ["法人の後日請求払い", "対応可能と公式FAQに記載。ただし「加盟店により出来かねる場合もある」ため、受付時の申告が必要"],
+                    ["施工依頼前のキャンセル", "無料（「施行依頼前のキャンセル料金は掛かりません」と公式明記）"],
+                    ["施工依頼後・作業後のキャンセル", "公式に記載なし。事前作業承諾書に署名する前に条件の確認が必要"],
+                    ["割引", "WEB限定クーポン1,000円OFFの表示あり（適用条件の詳細は記載なし）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="leading-8 text-slate-700">
+              キャンセルが無料と明記されているのは<strong className="font-semibold">「施工依頼前」まで</strong>です。同社は作業前に事前作業承諾書への署名を義務付けているため、実務上はこの署名が施工依頼の区切りになります。署名した後のキャンセル・作業後の返金条件は公式に記載がないため、迷いがある段階では署名せず、総額と条件を確認してから判断しましょう。カード払い・法人の請求書払いは加盟店により可否が異なるため、受付時に希望を伝えておくのが確実です。
+            </p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              料金の仕組みの表で見たとおり、無料なのは「出張費・見積もり・施工前キャンセル」までで、基本料金8,800円〜の先の実額は現地見積もりで決まります。見積書を受け取ったら、<strong className="font-semibold">事前作業承諾書に署名する前に</strong>次の6点を確認しましょう。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>総額の内訳</strong>——基本料金8,800円〜に何が含まれ、部品代・作業料・ガス代がいくら上乗せされるのか、見積書で項目ごとに確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>深夜・休日の割増の有無</strong>——公式に割増の記載がないため、時間外依頼では見積額に割増が含まれているかを確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>「再故障時は全額返金」の期間・条件</strong>——公式に詳細の記載がないため、口頭ではなく見積書・承諾書に書面で残るかを確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>担当加盟店の名称・連絡先</strong>——請求書に事業所名・担当者名が記載されるか。過去の相談事例（Yahoo!知恵袋）で問題になった点です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>カード払いの可否</strong>——公式は対応と案内していますが加盟店により異なる場合があるため、作業前に確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>クーポン適用後の金額</strong>——WEB限定1,000円OFFクーポンが見積額に反映されているかを確認する</span></li>
+            </ul>
           </section>
 
           <section id="confusion" className="scroll-mt-24">

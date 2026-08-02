@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/airhome-support" },
 };
 
-const UPDATED = "2026年7月12日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "エアホームとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の考え方" },
   { id: "flow", label: "依頼から修理完了までの流れ" },
+  { id: "flow-detail", label: "申し込みの流れ・フォーム入力の詳細" },
+  { id: "menu-scope", label: "症状・メニュー別の対応範囲" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
@@ -55,6 +59,26 @@ const faqs = [
     q: "依頼してからどのくらいで来てくれますか？",
     a: "公式サイトに受付時間や対応スピードの具体的な記載はありません。申し込みフォームでは訪問時間帯として「9〜12時」「12〜15時」「15〜18時」「18〜21時」の4枠が選べるようになっています。地域や繁忙期(真夏・真冬)によって訪問までの時間は変動するため、急ぎの場合は最短の訪問可能日を確認しておくと安心です(2026年7月12日確認)。",
   },
+  {
+    q: "キャンセル料や日程変更の規定はありますか？",
+    a: "公式サイトにキャンセル料・日程変更の規定は掲載されていません（2026年8月2日再確認）。見積もり後に断った場合の費用の有無も不明なため、訪問前の電話の時点で「見積もりだけで断った場合に出張費やキャンセル料がかかるか」を確認しておくことをおすすめします。",
+  },
+  {
+    q: "支払いにクレジットカードは使えますか？",
+    a: "支払い方法は公式サイトに記載がありません（2026年8月2日確認）。現金以外（クレジットカード・銀行振込・QRコード決済など）を希望する場合は、受付時に対応可否を確認しておきましょう。支払いのタイミング（作業完了後か前払いか）もあわせて確認しておくと安心です。",
+  },
+  {
+    q: "法人でも依頼できますか？",
+    a: "お問い合わせフォームには任意入力の「法人名」欄があり、法人からの依頼も想定した造りになっています（2026年8月2日確認）。ただし法人対応の詳細（請求書払いの可否など）は公式に明記されていないため、必要な場合は電話で確認してください。",
+  },
+  {
+    q: "エアコンクリーニングや取り付けも頼めますか？",
+    a: "公式サイトで確認できる依頼内容は「冷えない」「水漏れ」「異音」「電源が入らない」「その他」の5択のみで、クリーニング・取り付け・撤去といった修理以外のメニューは明記されていません（2026年8月2日確認）。修理以外の作業は「その他」として相談し、対応可否を確認する形になります。",
+  },
+  {
+    q: "訪問希望日はどのように指定しますか？",
+    a: "申し込みフォームでは訪問希望日を第1希望・第2希望の2枠まで指定でき、時間帯は9〜12時・12〜15時・15〜18時・18〜21時の4枠から選択します（2026年8月2日確認）。確定日時の連絡方法・返信までの目安時間は明記されていないため、急ぎの場合は電話での問い合わせが確実です。",
+  },
 ];
 
 const articleJsonLd = {
@@ -63,7 +87,7 @@ const articleJsonLd = {
   headline:
     "エアホームのエアコン修理の評判は？口コミ・料金を実査【2026年7月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-12",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -104,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-12">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -354,6 +378,104 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込みの流れ・フォーム入力項目の詳細（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトの申し込みルートは、電話（050-1793-2218）とお問い合わせフォームの2つです。2026年8月2日にフォームの構成を再確認したところ、入力項目は次のとおりで、訪問希望日は第1希望・第2希望の2枠まで指定できます。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["必須項目", "お名前／フリガナ／メールアドレス／電話番号（確認用含む）／郵便番号／ご住所／ご依頼内容／ご希望の訪問日"],
+                    ["ご依頼内容の選択肢", "冷えない／水漏れ／異音／電源が入らない／その他 の5択"],
+                    ["訪問希望日", "第1希望・第2希望の2枠を指定"],
+                    ["訪問時間帯", "9〜12時／12〜15時／15〜18時／18〜21時 の4枠から選択"],
+                    ["任意項目", "法人名／お問い合わせ内容（自由記入）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              フォームに法人名の入力欄があり、法人からの依頼も想定した造りになっています（請求書払いの可否など法人対応の詳細は公式に明記がないため、必要な場合は電話で確認を）。一方で、<strong className="font-semibold">フォーム送信後の連絡方法・返信までの目安時間、訪問後の見積もり提示から作業完了までの所要時間は、いずれも公式に記載がありません</strong>。急ぎの場合は電話で問い合わせ、訪問時には作業内容と総額を書面で確認するのが確実です。
+            </p>
+          </section>
+
+          <section id="menu-scope" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">症状・メニュー別の対応範囲（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトで対応範囲として確認できるのは、申し込みフォームの「ご依頼内容」に並ぶ次の5つの選択肢です。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["冷えない", "対応症状として掲載（作業内容・料金の詳細は記載なし）"],
+                    ["水漏れ", "対応症状として掲載（同上）"],
+                    ["異音", "対応症状として掲載（同上）"],
+                    ["電源が入らない", "対応症状として掲載（同上）"],
+                    ["その他", "上記以外の症状・相談のための選択肢"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              エアコンクリーニング・取り付け・撤去といった修理以外のメニュー、対応メーカー・年式・業務用エアコンの可否は、いずれも公式に記載がありません（2026年8月2日確認）。症状別・機種別の対応範囲を事前に比べたい場合は情報が不足しているため、該当するか微妙な依頼内容は「その他」で相談し、受付時に対応可否を確認する形になります。
+            </p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年8月2日に公式サイトを再確認しましたが、支払い方法・キャンセル規定はいずれも掲載がありません。掲載がない項目は「ない」のではなく「電話で確認する」項目と捉えて、依頼前に次を押さえておきましょう。
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["支払い方法", "公式に記載なし。現金以外（クレジットカード・振込・QR決済）を使いたい場合は受付時に要確認"],
+                    ["支払いタイミング", "公式に記載なし（作業完了後か前払いかを要確認）"],
+                    ["キャンセル料", "公式に記載なし。無料でキャンセルできる期限があるかを要確認"],
+                    ["日程変更", "公式に記載なし。変更の連絡期限・手数料の有無を要確認"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="leading-8 text-slate-700">
+              この4点は業者による差が大きい項目です。とくにキャンセル規定は、<strong className="font-semibold">見積もり金額に納得できなかった場合に無料で断れるか</strong>に直結します。訪問前の電話の時点で「見積もり後に断った場合、出張費やキャンセル料はかかりますか」と確認し、回答をメモに残しておくのが安全です。
+            </p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              料金の考え方の表で見たとおり、エアホームは出張費・見積もり料・症状別実額・キャンセル料・割増のいずれも非公開です。非公開の項目が多い業者ほど、見積もり時の確認がそのまま自衛策になります。訪問時には次の6点をチェックしましょう。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>出張費・見積もり料の有無</strong>——見積もりだけで断った場合にも費用が発生するか、訪問前の電話で確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>総額の内訳</strong>——点検料・部品代・作業料が見積書に項目ごとに分かれて記載されているか</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>時間帯による割増</strong>——18〜21時枠など遅い時間帯の訪問で割増が付くか</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>保証</strong>——修理後に同じ症状が再発した場合の無償対応の有無・期間が書面に残るか</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>事業者情報</strong>——見積書・請求書に法人名（屋号）・担当者名・連絡先が記載されるか</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>資格</strong>——ガス補充や電気系統の作業を伴う場合、有資格者が対応するか</span></li>
+            </ul>
           </section>
 
           <section id="confusion" className="scroll-mt-24">

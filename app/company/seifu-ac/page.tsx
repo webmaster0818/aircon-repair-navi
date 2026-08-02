@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/seifu-ac" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "エアコンクリーニング清風とは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "予約から作業完了までの流れ（詳細版）" },
+  { id: "menu-detail", label: "機種・メニュー別の対応範囲" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "申し込み前に確認すべきチェックポイント" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -50,6 +54,30 @@ const faqs = [
     q: "受付時間はいつですか？",
     a: "受付時間は9時〜18時で、土日祝はお休みと案内されています。平日の対応となるため、希望日は早めに相談しておくと安心です。",
   },
+  {
+    q: "キャンセルや日程変更はいつまでできますか？",
+    a: "サービス前日の正午（12時）までに連絡すればキャンセル・変更できます。それ以降のキャンセルはサービス予定料金の全額（100%）がかかると公式の料金ページに明記されています（2026年8月2日公式確認）。予定が変わりそうな場合は、前日の午前中までに連絡しましょう。",
+  },
+  {
+    q: "土日祝や夜間も作業してもらえますか？",
+    a: "電話受付は平日9時〜18時のみですが、作業（サービス実施）は日曜・祝日も可能で、年末年始を除き無休と公式FAQに案内されています（2026年8月2日確認）。夜間については、一般家庭では日中〜遅くとも20時ごろまでが目安とされています。",
+  },
+  {
+    q: "クレジットカードで支払えますか？",
+    a: "使えますが、前日正午（12時）までにWeb決済（決済代行会社ゼウス経由）を済ませる必要があり、メールアドレスが必須です（2026年8月2日公式確認）。当日の支払いは現金またはPayPayになるため、カード払い希望の場合は予約時に手続き方法を確認しておきましょう。",
+  },
+  {
+    q: "古いエアコンでもクリーニングできますか？",
+    a: "古いタイプでも洗浄自体は可能とされていますが、製造から約8年経過したエアコンについては洗浄時のトラブルの補償を行っていないと公式FAQに明記されています（2026年8月2日確認）。年式の古い機種は、このリスクを理解したうえで依頼するかを判断しましょう。",
+  },
+  {
+    q: "作業中は在宅が必要ですか？",
+    a: "はい。公式FAQに「必ずご在宅いただけますようお願いいたします」と記載されています（2026年8月2日確認）。作業に立ち会っても、別室で待っていても構いません。また、浴室やベランダなど水が使える場所の提供が必要です。",
+  },
+  {
+    q: "現地での見積もりは必要ですか？",
+    a: "不要です。公式FAQに「現地でのお見積りは不要。電話で必要事項を聞かせてもらえれば正式な見積りを提案できる」と記載されています（2026年8月2日確認）。エアコンのメーカー・型番が分かるものを手元に用意して問い合わせるとスムーズです。相談・見積もりは無料です。",
+  },
 ];
 
 const articleJsonLd = {
@@ -58,7 +86,7 @@ const articleJsonLd = {
   headline:
     "エアコンクリーニング清風の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-19",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -99,7 +127,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -340,6 +368,105 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">予約から作業完了までの流れ（詳細版・2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトの「ご利用の流れ」とFAQをもとに、各ステップの実務的なポイントを整理しました。清風の特徴は<strong className="font-semibold">現地での見積もりが不要</strong>で、電話の時点で正式な見積もりが確定する点です。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["① 問い合わせ・見積もり", "電話（0120-770-102・平日9時〜18時）またはフォームで連絡。メーカー・型番を伝えれば電話で正式な見積もりを提示してもらえます（相談・見積もり無料）"],
+                    ["② 予約", "希望日を2〜3日分用意しておくと調整がスムーズ。予約時には氏名・住所・電話番号・エアコンの種別・メーカー・型番・駐車場の有無・メールアドレスの8項目を伝えます"],
+                    ["③ 前日正午まで", "クレジットカード払いの場合は前日正午までにWeb決済。キャンセル・日程変更の無料期限も前日正午です"],
+                    ["④ 当日：作業", "エアコン周りの片付けと、脚立を置くスペースの家具移動をしておくとスムーズ。作業中は在宅が必要で、浴室・ベランダなど水が使える場所の提供が必要です。作業時間はスタンダード約1時間・お掃除機能付き1〜2時間"],
+                    ["⑤ 試運転・支払い", "仕上がりと動作を試運転で確認してから支払い（現金・PayPay。カードは前日決済済み）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              受付は平日のみですが、<strong className="font-semibold">作業自体は日曜・祝日も可能で、年末年始を除き無休</strong>と案内されています。夜間は一般家庭では日中〜遅くとも20時ごろまでが目安です。土日に作業してほしい場合も、予約の連絡は平日の受付時間内に行う必要がある点に注意しましょう。
+            </p>
+          </section>
+
+          <section id="menu-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">機種・メニュー別の対応範囲と作業時間（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式のメニューページ・FAQをもとに、機種ごとの料金・作業時間・作業範囲を整理しました（税込・調査時点）。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["家庭用壁掛け スタンダード", "13,200円／作業時間 約1時間。熱交換器（アルミフィン）とシロッコファンの高圧洗浄、カバー・フィルター・ルーバー等のパーツ洗浄"],
+                    ["家庭用壁掛け お掃除機能付き", "18,700円／作業時間 1〜2時間。複雑なお掃除ユニットも分解して内部を高圧洗浄"],
+                    ["家庭用 天井埋込カセット型", "26,400円（全タイプ一律）"],
+                    ["業務用（天井埋込・吊り下げ）", "36,300円／2〜3台の場合は1台あたり33,000円"],
+                    ["オプション", "室外機5,500円（業務用8,800円）／防カビ・抗菌コート2,200円"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              作業は「①道具の準備 ②エアコン付近の養生 ③カバーなどパーツの分解・洗浄 ④エアコン本体の養生 ⑤洗剤塗布・高圧洗浄 ⑥抗菌コート塗布 ⑦組み立て ⑧乾燥」の8工程と公式FAQに案内されています。古いエアコンも洗浄自体は可能ですが、<strong className="font-semibold">製造から約8年経過した機種は洗浄時トラブルの補償対象外</strong>とされている点は依頼前に把握しておきましょう。また、正常に動作しない場合や、分解に必要な隙間・スペースが確保できない場合は清掃できないことがある旨も明記されています。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              対応エリアは、関東（東京23区、横浜市・川崎市の全区、千葉・埼玉の主要都市）、関西（大阪市・堺市ほか、神戸市と阪神地域、京都・奈良の主要都市）、東海（名古屋市周辺、浜松市周辺）です。営業所の近隣エリアに絞って訪問することで「効率化と割安価格を実現」する方針が公式に示されており、エリア外の場合は地域の事業者を探せる「暮らしのプロ名鑑cocol」が案内されています。
+            </p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年8月2日 公式確認）</h2>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["支払い方法", "現金／PayPay／クレジットカード"],
+                    ["カード払いの条件", "前日正午（12時）までのWeb決済が必要（決済代行会社ゼウスを利用・メールアドレス必須）。当日にカードで支払うことはできません"],
+                    ["支払いタイミング", "サービス完了後、試運転で仕上がりを確認してから（カードは前日までのWeb決済）"],
+                    ["キャンセル・日程変更", "サービス前日の正午（12時）までに連絡。それ以降のキャンセルはサービス予定料金の全額（100%）が発生（公式明記）"],
+                    ["駐車料金", "実費（上限2,000円）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="leading-8 text-slate-700">
+              期限がいずれも<strong className="font-semibold">「前日の正午」に揃っている</strong>のが清風のルールの特徴です。カード払いのWeb決済も、無料でキャンセル・変更できるのも前日正午まで。予定が変わりそうな場合やカード払いにしたい場合は、前日の午前中までに連絡・手続きを済ませておきましょう。駐車場がない場合はコインパーキング実費（上限2,000円）がかかる点も、見積もり時に確認しておくと総額のズレを防げます。
+            </p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込み前に確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              料金の目安の表のとおり、清風は機種を問わない一律料金で「汚れがひどくても追加料金なし」と案内されており、金額面の不確定要素は少なめです。それでも申し込み前に確認しておきたいのは次の6点です。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>エアコンの製造年</strong>——製造から約8年経過した機種は洗浄時トラブルが補償対象外。本体ラベルで型番・製造年を確認してから問い合わせる</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>オプション込みの総額</strong>——室外機5,500円・防カビ抗菌コート2,200円などを付けるかを先に決め、台数分の合計を電話見積もりで確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>駐車場の有無</strong>——駐車場がない場合はコインパーキング実費（上限2,000円）が加算されるため、予約時に伝えて総額に含めてもらう</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>支払い方法</strong>——カード希望なら前日正午までのWeb決済が必須。当日は現金・PayPayのみのため、事前に決めておく</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>設置環境</strong>——分解に必要な隙間・スペースがないと清掃できない場合があるため、エアコン周辺の隙間の状況を予約時に伝える</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>希望日の候補</strong>——受付は平日のみ（作業は日祝も可）。繁忙期は予約が取りにくいため、希望日を2〜3日分用意して早めに連絡する</span></li>
+            </ul>
           </section>
 
           <section id="faq" className="scroll-mt-24">

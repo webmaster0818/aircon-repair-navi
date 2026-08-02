@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
+  { id: "menu-price", label: "機種・メニュー別の料金の見方" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
@@ -51,6 +55,30 @@ const faqs = [
     q: "防カビ・抗菌コートは追加料金がかかりますか？",
     a: "公式サイトでは防カビ・抗菌コートを無料サービスとして案内しています。内容や条件は時期によって変わる場合があるため、申し込み時に確認しておくと安心です。",
   },
+  {
+    q: "キャンセルや日程変更はいつまで無料ですか？",
+    a: "公式サイトでは、予約日前日の14:59までの連絡であればキャンセル料はかからないと案内されています。前日15:00以降のキャンセル・日程変更は料金の100%が発生すると明記されているため、予定が変わりそうな場合は早めに連絡しましょう(2026年8月2日公式確認)。",
+  },
+  {
+    q: "お掃除機能付きエアコンの料金はいくらですか？",
+    a: "公式サイトのエアコンクリーニングページでは、お掃除機能付きエアコンはキャンペーン価格16,000円(税込17,600円)と案内されています(2026年8月2日確認)。キャンペーン価格は時期により変わるため、申し込み時に最新の金額を確認してください。",
+  },
+  {
+    q: "作業時間はどのくらいかかりますか？",
+    a: "公式サイトでは、壁掛けタイプのエアコンクリーニングの作業時間は約1.5時間と案内されています(2026年8月2日確認)。台数や汚れの状況、オプションの有無によって前後する場合があります。",
+  },
+  {
+    q: "室外機やドレンホースの掃除も頼めますか？",
+    a: "オプションとして、室外機清掃(2026年8月2日確認時点でキャンペーン価格4,500円・通常8,800円)、ドレンホース洗浄(2,500円/箇所)、防虫キャップ取付(1,650円/箇所)が公式サイトに案内されています。価格・条件は時期により変わるため申し込み時に確認してください。",
+  },
+  {
+    q: "製造から10年以上経ったエアコンでも依頼できますか？",
+    a: "公式サイトでは、10年以上経過している設備については保障できない場合があると案内されています。洗浄起因の故障への保証は製造10年未満のエアコンが対象とされているため、古い機種を依頼する場合は事前に保証の扱いを確認しておくと安心です(2026年8月2日確認)。",
+  },
+  {
+    q: "作業後に不具合が見つかったらどうすればいいですか？",
+    a: "公式サイトでは、作業後の不具合の報告は2週間以内に申し付けるよう案内されています(2026年8月2日確認)。作業完了時に動作を一緒に確認し、気になる点があれば早めに連絡窓口へ伝えましょう。",
+  },
 ];
 
 const articleJsonLd = {
@@ -59,7 +87,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-19",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -100,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -339,6 +367,116 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込み〜作業完了までの流れ【詳細版】</h2>
+            <p className="leading-8 text-slate-700 mb-6">
+              2026年8月2日に公式サイトの「ご依頼の流れ」ページとエアコンクリーニング詳細ページで確認できた情報をもとに、申し込みから作業完了までの流れをさらに詳しく整理しました。
+            </p>
+            <ol className="space-y-4">
+              {[
+                ["電話・Webで見積もり依頼", "掃除箇所・希望日程・住所などのほか、エアコンのお掃除機能の有無と駐車場の有無を確認されます。お掃除機能付きは料金が変わるため、機種名や室内機の型番を控えておくとスムーズです。見積金額が折り合わない場合はキャンセルでき、出張・見積もり費用はかからないと案内されています。"],
+                ["前日までの準備", "作業箇所周辺の荷物は事前に移動しておくよう案内されています。キャンセル・日程変更は前日14:59までなら無料です(15:00以降は100%のキャンセル料)。"],
+                ["訪問・作業前の確認", "スタッフが訪問し、作業前に清掃箇所を確認します。公式サイトでは「基本的に追加料金は発生しません」と案内されています。"],
+                ["分解洗浄(壁掛けで約1.5時間)", "公式サイトでは、分解→養生→洗剤噴射→部品洗浄→内部洗浄→内部乾燥→組立という工程が案内されており、壁掛けタイプの作業時間は約1.5時間とされています。"],
+                ["動作確認・支払い", "仕上がりと動作を確認し、現金・各種クレジットカード・電子マネー/QR決済(一部を除く)で支払って完了です。"],
+                ["アフター対応", "作業後の不具合の報告は2週間以内に申し付けるよう案内されています。気になる点があれば早めに連絡しましょう。"],
+              ].map(([t, d], i) => (
+                <li key={i} className="flex gap-4">
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <div>
+                    <p className="font-semibold text-slate-900">{t}</p>
+                    <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 text-xs text-slate-400">※2026年8月2日公式確認。流れ・条件は変更される場合があります。最新の内容は申し込み時にご確認ください。</p>
+          </section>
+
+          <section id="menu-price" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">機種・メニュー別の料金の見方</h2>
+            <p className="leading-8 text-slate-700">
+              アールクリーニングの料金は「通常価格」と「キャンペーン価格」の二段構えで表示されており、申し込み時期のキャンペーン価格が実際の目安になります。2026年8月2日に公式サイトのエアコンクリーニング詳細ページで確認できた料金は次のとおりです。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["壁掛けタイプ(通常機) 1台目", "キャンペーン価格 9,800円(税込10,780円)／通常価格19,350円"],
+                    ["壁掛けタイプ(通常機) 2台目以降", "キャンペーン価格 8,800円(税込9,680円)"],
+                    ["お掃除機能付き", "キャンペーン価格 16,000円(税込17,600円)"],
+                    ["埋め込み型エアコン", "キャンペーン価格 18,000円(税込19,800円)／通常価格29,980円"],
+                    ["室外機清掃(オプション)", "キャンペーン価格 4,500円(通常8,800円・確認時点)"],
+                    ["ドレンホース洗浄(オプション)", "2,500円/箇所"],
+                    ["防虫キャップ取付(オプション)", "1,650円/箇所"],
+                    ["防カビ・抗菌コート", "無料サービス(公称)"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              料金表を見るうえでのポイントは3点です。第一に、<strong className="font-semibold">2台目以降は1台目より安くなる複数台割引</strong>があるため、複数台まとめて依頼すると1台あたりの単価を下げられます。第二に、お掃除機能付きは通常機より高くなるため、<strong className="font-semibold">機種のお掃除機能の有無を正しく申告する</strong>ことが見積もりと請求のズレを防ぐ鍵になります。第三に、キャンペーン価格には期限が表示されており(確認時点では8月10日までの表示)、時期によって金額・割引率が変わります。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              対応範囲については、取り外しができない部品がある場合や機器が故障している場合は部分的な作業のみになると案内されています。また、洗浄起因の故障への保証は製造10年未満のエアコンが対象とされ、10年以上経過した設備は保証できない場合があると記載されています。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※料金は2026年8月2日に公式サイトで確認した掲載内容です。キャンペーンの内容・期限は時期により変わります。</p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定</h2>
+            <p className="leading-8 text-slate-700">
+              支払いは作業完了後で、公式サイトでは<strong className="font-semibold">現金・各種クレジットカード・電子マネー/QR決済</strong>(一部を除く)に対応すると案内されています(2026年8月2日確認)。使いたい決済手段が決まっている場合は、申し込み時に利用可否を確認しておくと確実です。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">キャンセル・日程変更の規定は次のとおり明記されています。</p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["予約日前日の14:59まで", "キャンセル料なし"],
+                    ["予約日前日の15:00以降", "料金の100%(日程変更も同様)"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              前日15:00を境に全額のキャンセル料が発生する規定のため、天候や体調で予定が崩れそうなときは、<strong className="font-semibold">前日の昼までに連絡する</strong>のが安全です。なお、見積もり段階で金額が折り合わない場合のキャンセルは可能で、出張・見積もり費用はかからないと案内されています。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認。規定は変更される場合があります。</p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              アールクリーニングはキャンペーン価格中心の料金体系のため、見積もり時に条件を固めておくほど当日のズレを防げます。申し込み前に次の点を確認しておきましょう。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">税込総額</strong>：台数(2台目以降の割引適用)・お掃除機能の有無・室外機やドレンホースなどオプションを含めた合計金額</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンペーンの適用条件</strong>：申し込み時点の価格と期限(時期により変動)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">機種の申告</strong>：お掃除機能付きかどうか(型番で確認)。申告漏れは当日の金額変更につながりやすい</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">古い機種の保証</strong>：製造10年以上の機種は保証できない場合があるため、依頼可否と条件を事前に確認</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エリア・駐車場</strong>：対応エリア外の場合の出張料金(3,000円〜)、駐車場の有無</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンセル期限</strong>：前日14:59まで無料・15:00以降100%という規定の再確認</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">アフター窓口</strong>：不具合報告の期限は2週間以内。連絡先を控えておく</span></li>
+            </ul>
+            <p className="mt-5 leading-8 text-slate-700">
+              補償体制については、公式サイトの「安心のための取り組み」ページに、<strong className="font-semibold">最大1億円の損害賠償保険に加入している</strong>ことと、作業後2週間の保証(気づかなかった不具合の報告に対応)が明記されています(2026年8月2日確認)。あわせて、使い捨てスリッパの持参、女性のみの世帯などへの女性スタッフの指名対応、予約前日のSMS確認、静音性の高い高圧洗浄機の使用、自社研修施設でのスタッフ教育といった取り組みも案内されています。一方、経年劣化(10年以上)による破損や落ちない変色、取り外せない部品などは保証の対象外になる場合があると注記されているため、古い機種は依頼前の確認が重要です。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              なお、運営会社については、2026年8月2日の確認時点で公式サイトの運営会社ページに株式会社Fire Works(東京都杉並区上高井戸)と記載されていることが確認できました(それ以前の調査時点では会社名の明記が確認できませんでした)。営業時間は9:00〜18:00・年中無休と案内されています。
+            </p>
           </section>
 
           <section id="confusion" className="scroll-mt-24">

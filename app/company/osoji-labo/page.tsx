@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "流れの詳細と作業時間の目安" },
+  { id: "menu-detail", label: "機種・メニュー別の対応範囲" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "申し込み前に確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
@@ -51,6 +55,30 @@ const faqs = [
     q: "外注ではなく自社で作業してくれますか？",
     a: "公式サイトでは「100%自社作業」で外注しないと案内されています。自社スタッフが対応するため、作業品質や接客にばらつきが生じにくいとされています。",
   },
+  {
+    q: "キャンセルや日程変更はいつまでできますか？",
+    a: "キャンセル・日時変更は前日までと公式サイトに明記されています。当日のお客様都合によるキャンセル・日時変更は、見積もり料金の100%がキャンセル料として発生します（2026年8月2日公式確認）。予定が不確実な場合は、必ず前日までに連絡しましょう。",
+  },
+  {
+    q: "クレジットカード払いはいつ支払いますか？",
+    a: "銀行振込・クレジットカード払いは前払いと公式サイトに明記されています（2026年8月2日確認）。当日に支払う場合は現金となるため、カード払いを希望する場合は予約時に前払いの手続き方法とタイミングを確認しておきましょう。",
+  },
+  {
+    q: "天井埋め込み型や業務用のエアコンも対応していますか？",
+    a: "はい。家庭用天井埋め込み型は通常13,800円・初回限定12,800円（2台目以降11,800円）、作業時間90〜120分と案内されています。業務用も壁掛け型（初回12,000円）、天井埋め込み型・吊り下げ型（初回25,000円）に対応しています（いずれも税込・2026年8月2日公式確認）。",
+  },
+  {
+    q: "作業時間はどのくらいかかりますか？",
+    a: "公称の作業時間は、ノーマルタイプ60〜90分、お掃除機能付き120〜180分、天井埋め込み型90〜120分、業務用120〜180分です（2026年8月2日確認）。複数台を依頼する場合はその分長くなるため、予約時に全体の所要時間を確認しておくと安心です。",
+  },
+  {
+    q: "仕上がりに不満があった場合はどうなりますか？",
+    a: "公式サイトには、仕上がりに満足できなければ無料で追加作業を行う旨が記載されています（2026年8月2日確認）。また損害保険に加入しており、作業の際に発生した壁の破損・汚れ・エアコン本体の故障に関する費用は同社が補償すると明記されています。気になる点は作業完了の確認時にその場で伝えましょう。",
+  },
+  {
+    q: "洗浄に使う水場がない場合はどうなりますか？",
+    a: "洗浄時の水場はベランダ・風呂場・庭を優先し、使えない場合は洗面台を使用すると公式FAQに記載されています（2026年8月2日確認）。水場の状況が特殊な場合は、予約時に伝えておくと当日の作業がスムーズです。",
+  },
 ];
 
 const articleJsonLd = {
@@ -59,7 +87,7 @@ const articleJsonLd = {
   headline:
     "おそうじLaboの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-19",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -100,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -351,6 +379,102 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">流れの詳細と作業時間の目安（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトの案内をもとに、予約から作業完了までの実務的なポイントを時系列で整理しました。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["予約〜前日", "電話（10:00〜19:00）またはLINE（24時間）で見積もり・予約。問い合わせへの返信は最短当日中。キャンセル・日時変更は前日までに連絡すれば対応してもらえます"],
+                    ["支払いの準備", "銀行振込・クレジットカード払いは前払い（公式明記）。当日払いは現金などになるため、支払い方法と手続きのタイミングは予約時に決めておきましょう"],
+                    ["当日：訪問・説明", "自社スタッフが訪問し、作業前に内容を説明。洗浄にはベランダ・風呂場・庭などの水場を使用します（使えない場合は洗面台）"],
+                    ["作業", "公称の作業時間はノーマルタイプ60〜90分／お掃除機能付き120〜180分／天井埋め込み型90〜120分／業務用120〜180分"],
+                    ["確認・完了後", "仕上がりと動作を確認。仕上がりに満足できなければ無料で追加作業を行うと案内されています。作業後の不安・疑問に対応するアフターフォローも明記されています"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">※作業時間は公式サイト掲載の目安です。汚れの状態・台数・設置環境により前後します（2026年8月2日確認）。</p>
+          </section>
+
+          <section id="menu-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">機種・メニュー別の対応範囲と作業時間（2026年8月2日 公式確認）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトには、家庭用・業務用エアコンとハウスクリーニングのメニューが掲載されています。エアコン関連の主なメニューと公称の作業時間は次のとおりです（税込・調査時点）。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["家庭用ノーマルタイプ", "初回8,800円／2台目以降7,800円（作業60〜90分）"],
+                    ["家庭用お掃除機能付き", "初回17,000円／2台目以降16,000円（作業120〜180分）"],
+                    ["家庭用天井埋め込み型", "通常13,800円・初回限定12,800円／2台目以降11,800円（作業90〜120分）"],
+                    ["業務用壁掛け型", "初回12,000円／2台目以降11,000円"],
+                    ["業務用天井埋め込み型・吊り下げ型", "初回25,000円／2台目以降24,000円（作業120〜180分）"],
+                    ["オプション", "室外機洗浄+3,300円／抗菌・防カビコート（キャンペーン時 無料）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              エアコン以外にも、レンジフード（9,800円〜）・キッチン・浴室・トイレ・洗面所の単品クリーニング、水回りセット（29,800円〜）、在室・空室のまるごとクリーニング、ベランダ・バルコニー清掃まで対応メニューが公開されています。エアコンクリーニングとあわせて依頼する場合は、合計金額と全体の所要時間を予約時に確認しておきましょう。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※料金・メニューは公式サイト掲載の内容（2026年8月2日確認）。キャンペーン等により変わる場合があります。</p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年8月2日 公式確認）</h2>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["支払い方法", "現金／銀行振込／クレジットカード（VISA・Mastercard・American Express）／PayPay"],
+                    ["支払いタイミング", "銀行振込・カード払いは前払い（公式明記）。当日は仕上がり・動作確認後に支払い"],
+                    ["キャンセル・日時変更", "前日までの連絡で対応（公式明記）"],
+                    ["当日キャンセル", "お客様都合の当日キャンセル・日時変更は、見積もり料金の100%がキャンセル料として発生（公式明記）"],
+                    ["駐車料金", "当社負担（公式明記）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="leading-8 text-slate-700">
+              当日キャンセルは<strong className="font-semibold">見積もり料金の100%</strong>と明確に規定されているため、予定が不確実な場合は前日までに連絡するのが鉄則です。カード払い・銀行振込は前払いのため、支払い方法を決めたうえで手続きの段取りを予約時に確認しておくとスムーズです。駐車料金が自社負担と明記されている点は、都市部のマンションなどでは地味に効く安心材料です。
+            </p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込み前に確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              料金の目安の表で見た初回限定価格・オプションを、実際の申し込みに落とし込むときの確認ポイントを整理しました。予約の連絡時に次の6点を押さえておくと、当日の認識ズレを防げます。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>初回限定価格の適用条件</strong>——「初回」がどの単位で適用されるか（世帯か・キャンペーン期間か）、2台目以降の価格と合わせて総額で確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>オプション込みの総額</strong>——室外機洗浄（+3,300円）・抗菌防カビコートを付けるかどうかを先に決め、台数分の合計を見積もりで確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>キャンペーンの期限</strong>——抗菌・防カビコート無料などのキャンペーンは時期で変わるため、申し込み時点で適用されるかを確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>支払い方法と前払いの期限</strong>——カード・振込は前払いのため、手続きの方法と期限を予約時に確認する</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>補償の適用手順</strong>——壁の破損・汚れ・エアコン本体の故障は補償と明記されています。万一の際の連絡先・手順を作業前に聞いておく</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>対応エリアの確認</strong>——大阪府全域と兵庫県の一部が対象で、近郊は「要相談」。エリアの境目にお住まいの場合は最初に確認する</span></li>
+            </ul>
           </section>
 
           <section id="confusion" className="scroll-mt-24">

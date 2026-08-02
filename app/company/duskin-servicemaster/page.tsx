@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
+  { id: "menu-price", label: "機種別の対応範囲と料金の見方" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
 ];
@@ -50,6 +54,30 @@ const faqs = [
     q: "作業前に確認しておくことはありますか？",
     a: "公式サイトでは、駐車スペースの確保が必要(なければ有料駐車場を利用)、対象は幅120cm未満のエアコン、といった条件が案内されています。土日祝・夜間作業は追加費用が生じる場合があるため、事前に確認しておくと安心です。",
   },
+  {
+    q: "キャンセル料はいつから発生しますか？",
+    a: "公式のWEBお見積りページでは、サービス実施日の変更・中止は少なくとも2日前(土・日・祝日を除く)までに連絡するよう案内されています。前日のキャンセルはサービス予定額(税抜)の15%、当日はサービス予定額(税抜)の30%のキャンセル料がかかると記載されています(2026年8月2日公式確認)。",
+  },
+  {
+    q: "お掃除機能付きエアコンの料金はいくらですか？",
+    a: "公式サイトでは、お掃除機能付きエアコンは1台26,400円、2台セット47,300円、3台目以降は1台につき23,650円(いずれも税込)と案内されています。また、本体両側にファンがついているタイプや特殊構造のタイプは、お掃除機能付きの料金が適用されると記載されています(2026年8月2日公式確認)。",
+  },
+  {
+    q: "天井埋め込みタイプのエアコンにも対応していますか？",
+    a: "対応しています。公式サイトでは天井埋込1・2方向タイプのエアコンクリーニングが34,100円(税込)〜と案内されています(2026年8月2日公式確認)。機種や設置状況で金額が変わるため、正確な金額は見積もりで確認してください。",
+  },
+  {
+    q: "支払いにクレジットカードは使えますか？",
+    a: "公式のWEBお見積りページには、クレジットカード決済を選択した場合にダスキンの会員プログラム(DDuet)のコインがサービス料金(税抜)の1%分付与されるという記載があり、クレジットカード決済に関する案内が確認できます(2026年8月2日確認)。現金などその他の支払い方法の可否は公式サイトに一覧の記載が確認できなかったため、担当店に確認しておくと安心です。",
+  },
+  {
+    q: "最低利用金額はありますか？",
+    a: "公式のWEBお見積りページでは「サービスは1回あたり11,000円(税込)以上で承ります」と案内されています(2026年8月2日確認)。壁掛けタイプ1台(15,400円)であれば単体でこの条件を満たします。",
+  },
+  {
+    q: "仕上がりに満足できなかった場合はどうなりますか？",
+    a: "ダスキンには「満足の保証」という制度があり、サービスに満足できなかった場合には満足されるまで何度でもサービスをやり直すと公式サイトに明記されています。対象サービスにはサービスマスター(ハウスクリーニング)が含まれます(2026年8月2日確認)。申し出方法や条件の詳細は担当店に確認してください。",
+  },
 ];
 
 const articleJsonLd = {
@@ -58,7 +86,7 @@ const articleJsonLd = {
   headline:
     "ダスキン サービスマスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-19",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -99,7 +127,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -340,6 +368,138 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込み〜作業完了までの流れ【詳細版】</h2>
+            <p className="leading-8 text-slate-700 mb-6">
+              2026年8月2日に公式サイト(WEBお見積りページ・エアコンクリーニング詳細ページ)で確認できた情報をもとに、申し込みから作業完了までの流れをさらに詳しく整理しました。ダスキンは見積もりの段階が丁寧に設計されており、多くの場合はWEB上で概算金額まで確認できます。
+            </p>
+            <ol className="space-y-4">
+              {[
+                ["WEBお見積りまたは電話で相談", "公式のWEBお見積りは「サービスを選ぶ→情報を入力→見積り結果→写真登録」の4ステップで、多くの場合は自宅への訪問なしで概算金額を確認できます。エアコンは壁掛けタイプ・天井埋込タイプが対象です。"],
+                ["訪問見積もり(必要な場合)", "規定のサイズを超えるエアコンなどは、無料の訪問見積もりが案内されます。なお、サービスは1回あたり11,000円(税込)以上での受付と案内されています。故障している機器は対応を断られる場合があります。"],
+                ["実施日の決定", "サービス実施日は、後日担当店から連絡があり、相談のうえで決定すると案内されています。土日祝・夜間を希望する場合は追加費用の有無もこの段階で確認しておきましょう。"],
+                ["作業前の動作確認・養生", "公式サイトでは、作業前にエアコンの動作確認を行うと案内されています。作業時は壁・床を養生カバーで保護します。駐車スペースがない場合は有料駐車場の利用料が利用者負担となります。"],
+                ["分解・高圧洗浄", "熱交換器とファンを分解し、高圧洗浄で内部のカビ・ホコリを洗い流します。取り外した部品も洗浄し、作業で出た汚水は持ち帰って処理すると案内されています。"],
+                ["動作確認・完了", "仕上がりと動作を確認して完了です。万一仕上がりに満足できない場合は、後述の「満足の保証」の対象になります。"],
+              ].map(([t, d], i) => (
+                <li key={i} className="flex gap-4">
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <div>
+                    <p className="font-semibold text-slate-900">{t}</p>
+                    <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 text-xs text-slate-400">※2026年8月2日公式確認。流れ・条件は変更される場合があります。最新の内容は申し込み時にご確認ください。</p>
+          </section>
+
+          <section id="menu-price" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">機種別の対応範囲と料金の見方</h2>
+            <p className="leading-8 text-slate-700">
+              ダスキンのエアコンクリーニングは、機種のタイプによって適用される料金が変わります。公式サイトのメニューを2026年8月2日に確認したところ、機種別の料金は次のように案内されていました(いずれも税込)。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["壁掛けタイプ(通常) 1台", "15,400円"],
+                    ["壁掛けタイプ(通常) 2台セット", "25,300円"],
+                    ["壁掛けタイプ(通常) 3台目以降", "1台につき12,650円"],
+                    ["お掃除機能付き 1台", "26,400円"],
+                    ["お掃除機能付き 2台セット", "47,300円"],
+                    ["お掃除機能付き 3台目以降", "1台につき23,650円"],
+                    ["天井埋込1・2方向タイプ", "34,100円〜"],
+                    ["抗菌コート(オプション)", "1台につき+2,750円"],
+                    ["室外機クリーニング(オプション)", "+6,600円"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              天井埋込1・2方向タイプは、公式の詳細ページでさらに細かい料金が案内されています(税込・2026年8月2日確認)。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["天井埋込 1台目", "34,100円"],
+                    ["天井埋込 2台目", "30,800円"],
+                    ["天井埋込 3台目以降", "追加1台につき27,500円"],
+                    ["フィルター自動お掃除機能付き 1台目", "39,600円"],
+                    ["フィルター自動お掃除機能付き 2台目", "36,300円"],
+                    ["フィルター自動お掃除機能付き 3台目以降", "追加1台につき33,000円"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              天井埋込タイプの対象はルームエアコン(吹出口1〜2方向)で、三菱電機・三菱重工製は別途費用がかかる可能性があると注記されています。また、長期経年機種や不具合のある機器は対応を断られる場合があります。オプションの抗菌コート(1台2,750円)は天井埋込タイプにも用意されています。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              壁掛けタイプの料金表を見るうえでのポイントは次の3点です。第一に、対象は<strong className="font-semibold">幅120cm未満の壁掛けタイプ</strong>で、本体の両側にファンがついているタイプや特殊構造のタイプは、見た目が通常タイプでも「お掃除機能付き」の料金が適用されると案内されています。第二に、製造から長期間経過した機種は対応できない場合があると記載されています。第三に、公式サイトには「サービスマスター 地域別料金一覧」があり、都道府県ごとに料金を確認できる仕組みのため、実際の金額は自分の地域のページで確認するのが確実です。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※料金は2026年8月2日に公式サイトで確認した掲載内容です。店舗・地域・時期により異なる場合があります。</p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定</h2>
+            <p className="leading-8 text-slate-700">
+              公式のWEBお見積りページには、クレジットカード決済を選択した場合にダスキンの会員プログラム(DDuet)のコインがサービス料金(税抜)の1%分付与されるという記載があり、クレジットカード決済に関する案内が確認できます。一方、現金などその他の支払い方法の可否は公式サイトに一覧の記載が確認できませんでした。実際の作業は地域の加盟店が担当するため、希望の支払い方法がある場合は申し込み時に担当店へ確認しておくと安心です。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              キャンセル・日程変更の規定は、公式のWEBお見積りページに次のように明記されています(2026年8月2日確認)。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["実施日の2日前(土日祝除く)まで", "変更・中止の連絡期限(キャンセル料の記載なし)"],
+                    ["前日のキャンセル", "サービス予定額(税抜)の15%"],
+                    ["当日のキャンセル", "サービス予定額(税抜)の30%"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              「サービス実施日の変更・中止は少なくとも2日前(土・日・祝日を除く)までにご連絡ください」というのが公式の案内です。繁忙期は日程の再調整に時間がかかることもあるため、予定が変わりそうな場合は早めに担当店へ連絡しておきましょう。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認(WEBお見積りページの記載)。規定は変更される場合があります。</p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              ダスキンはフランチャイズ展開のため、最終的な条件は担当店との間で決まります。見積もり・申し込みの段階で次の点を確認しておくと、当日の行き違いを防げます。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">税込総額</strong>：台数・お掃除機能の有無・抗菌コートや室外機などオプションを含めた合計金額</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">機種の扱い</strong>：幅120cm未満か、両側ファン・特殊構造で「お掃除機能付き」料金にならないか、製造から年数が経った機種でも対応可能か</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">追加費用</strong>：土日祝・夜間の追加費用の有無と金額</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">駐車スペース</strong>：確保できない場合の有料駐車場代の負担</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンセル期限</strong>：実施日の2日前(土日祝除く)を過ぎると前日15%・当日30%(いずれも税抜)のキャンセル料</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">支払い方法</strong>：クレジットカード以外を希望する場合の可否</span></li>
+            </ul>
+            <p className="mt-5 leading-8 text-slate-700">
+              また、ダスキンには「満足の保証」という制度があります。公式サイトでは、スタッフが身分証を携帯・提示すること、料金を事前にはっきり伝えること、そして<strong className="font-semibold">サービスに満足できなかった場合には満足されるまで何度でもやり直す</strong>ことが宣言されており、対象サービスにはサービスマスター(ハウスクリーニング)が含まれます(2026年8月2日確認)。仕上がりに不満があった場合の申し出先(担当店の連絡先)も、作業前に控えておくと安心です。
+            </p>
           </section>
 
           <section id="faq" className="scroll-mt-24">

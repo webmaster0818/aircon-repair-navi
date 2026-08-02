@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/take-service" },
 };
 
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年8月2日";
 
 const toc = [
   { id: "summary", label: "テイクサービスとは" },
@@ -25,6 +25,10 @@ const toc = [
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の仕組み" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
+  { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
+  { id: "menu-price", label: "対応メニューと料金の見方" },
+  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
   { id: "last", label: "まとめ" },
@@ -55,6 +59,26 @@ const faqs = [
     q: "支払い方法は何が使えますか？",
     a: "VISA・マスター・JCBのクレジットカードに対応しています（一部の加盟店では不可）。法人の後日請求払いも条件付きで対応とされています。カード払い希望の場合は受付時に伝えておくのが確実です。",
   },
+  {
+    q: "修理以外の作業(クリーニングや取り付け・取り外し)も頼めますか？",
+    a: "公式受付ページでは、エアコン修理のほかにエアコンクリーニング・取り付け・取り外し・ガスチャージがメニューとして掲載されています(2026年8月2日確認)。ただし、いずれも個別の料金は掲載されておらず、現地見積もりで金額が決まる方式です。",
+  },
+  {
+    q: "他社の見積もりが高かった場合、安くしてもらえますか？",
+    a: "公式FAQには「他社よりも安いご案内を心掛けております」と記載されています(2026年8月2日確認)。ただし必ず安くなることを保証する記載ではないため、金額を重視する場合は他社の見積書を手元に用意したうえで比較・相談するのが現実的です。",
+  },
+  {
+    q: "作業後に高額請求される心配はありませんか？",
+    a: "公式FAQでは「作業後に高額請求されることはありますか？」という質問に対し「いいえ、御座いません」とし、作業前に方法と料金を詳しく説明すると回答しています(2026年8月2日確認)。そのうえで、口コミでは金額の認識ズレに関する指摘も確認できるため、作業前の見積もりを書面やスマホ写真で残しておくことをおすすめします。",
+  },
+  {
+    q: "夜間でも作業してもらえますか？",
+    a: "公式FAQでは、夜間対応について「ご相談頂ければお客様のご希望に合わせてお伺い致します」と案内されています(2026年8月2日確認)。ただし、夜間や繁忙期は対応できず他の業者を紹介される場合があることもFAQに明記されているため、受付時に到着目安を確認しましょう。",
+  },
+  {
+    q: "施工を依頼した後のキャンセルはできますか？",
+    a: "無料と明記されているのは「施工依頼前」のキャンセルです(2026年8月2日確認)。施工依頼後・作業開始後のキャンセル規定は公式ページに記載が確認できないため、見積もりを承諾する前に、依頼後にキャンセルした場合の扱いを担当スタッフに確認しておくと安心です。",
+  },
 ];
 
 const articleJsonLd = {
@@ -63,7 +87,7 @@ const articleJsonLd = {
   headline:
     "テイクサービスの口コミ・評判は？エアコン修理の料金・対応エリアを徹底調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-07",
+  dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -104,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-07">最終更新：{UPDATED}</time>
+            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -359,6 +383,106 @@ export default function Page() {
                 </li>
               ))}
             </ol>
+          </section>
+
+          <section id="flow-detail" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">申し込み〜作業完了までの流れ【詳細版】</h2>
+            <p className="leading-8 text-slate-700 mb-6">
+              2026年8月2日に公式受付ページを再確認したところ、依頼の流れ自体は「簡単3ステップ」と案内されているものの、各ステップのテキストでの説明は掲載されていませんでした。そこで、公式FAQ・注意書きから確認できる事実をもとに、実際の依頼で通過する段階を当サイトで整理すると次のようになります。
+            </p>
+            <ol className="space-y-4">
+              {[
+                ["受付(24時間365日)", "電話・Webで症状(冷えない・水漏れ・異音・電源が入らない等)と設置状況を伝えます。夜間の作業も相談すれば希望に合わせて対応すると公式FAQにあります。カード払い希望・法人の後日請求払い希望はこの時点で伝えておきましょう。"],
+                ["加盟店の手配・訪問", "テイクサービスに登録している加盟店のスタッフが訪問します(最短5分・公称)。夜間・繁忙期など対応が難しい場合は、他の業者を紹介されることがあると公式FAQに明記されています。"],
+                ["現地確認・無料見積もり", "出張費・見積もりは無料です。ただし、器具の取り外し・通電チェック・電波状況調査・漏電調査が必要な場合は調査費用が発生すると注記されています(金額非公開)。該当しそうな症状のときは、調査費用の有無と金額を作業前に確認しましょう。"],
+                ["依頼するかどうかの判断", "見積もりに納得できなければ、施工依頼前のキャンセルは無料と明記されています。「見積金額の範囲内での作業」が公式の約束のため、依頼する場合は総額見積もりを書面またはスマホ写真で残しておくのが安全です。"],
+                ["施工・動作確認", "見積もり承諾後に加盟店が作業を行い、完了後に動作を確認します。同じ症状が保証期間内に再発した場合は無料保証の対象(別箇所の故障は対象外)のため、保証の期間と範囲をこの時点で聞いておきましょう。"],
+                ["支払い", "VISA・マスター・JCBのクレジットカードに対応(一部加盟店は不可)。法人の後日請求払いは条件付き対応です。"],
+              ].map(([t, d], i) => (
+                <li key={i} className="flex gap-4">
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <div>
+                    <p className="font-semibold text-slate-900">{t}</p>
+                    <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-4 text-xs text-slate-400">※2026年8月2日公式確認。公式ページの「簡単3ステップ」は画像での案内のみで、上記は公式FAQ・注意書きの記載を当サイトが段階順に整理したものです。</p>
+          </section>
+
+          <section id="menu-price" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">対応メニューと料金の見方</h2>
+            <p className="leading-8 text-slate-700">
+              2026年8月2日に公式受付ページを確認したところ、対応メニューとして次の5つが掲載されていました。いずれも<strong className="font-semibold">個別の料金表は掲載されておらず、現地見積もりで金額が決まる完全見積制</strong>です。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["エアコン修理", "冷えない・水漏れ・異音・電源が入らない等のトラブル対応。実額は現地見積もり"],
+                    ["エアコンクリーニング", "メニューとして掲載あり。料金掲載なし"],
+                    ["エアコン取り付け", "メニューとして掲載あり。料金掲載なし"],
+                    ["エアコン取り外し", "メニューとして掲載あり。料金掲載なし"],
+                    ["ガスチャージ", "冷媒ガスの補充。メニューとして掲載あり。料金掲載なし"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              完全見積制のサービスで金額の妥当性を判断するには、<strong className="font-semibold">症状別の相場を先に頭に入れてから見積もりを受ける</strong>のが有効です。ガス補充・基板交換・水漏れ修理などの相場感は、当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査インデックス</Link>で確認できます。提示額が相場から大きく外れている場合は、内訳(部品代・技術料・出張関連費)の説明を求めましょう。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※メニューの掲載内容は2026年8月2日に公式受付ページで確認したものです。対応可否は症状・機種・地域により異なります。</p>
+          </section>
+
+          <section id="payment" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年8月2日に公式受付ページで確認できた、費用まわりの規定を整理します。
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["クレジットカード", "VISA・マスター・JCBに対応(一部の加盟店では不可)"],
+                    ["法人の後日請求払い", "柔軟に対応(一定基準により非対応の場合あり・受付時に相談)"],
+                    ["出張費", "無料(「出張料はいただいておりません」と公式FAQに明記)"],
+                    ["見積もり", "無料。ただし器具外し・通電チェック・電波状況調査・漏電調査は調査費用あり(金額非公開)"],
+                    ["施工依頼前のキャンセル", "無料(「キャンセル料金はいただいておりません」と公式FAQに明記)"],
+                    ["施工依頼後のキャンセル", "規定の記載なし(依頼前に要確認)"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              注意したいのは、カード対応が<strong className="font-semibold">加盟店単位</strong>である点と、無料と明記されているキャンセルが<strong className="font-semibold">「施工依頼前」に限られる</strong>点です。現金の持ち合わせがない状態でカード不可の加盟店が来ると支払いに困るため、カード払い希望は受付時に必ず伝え、見積もりを承諾する前に「依頼後にキャンセルした場合の扱い」も確認しておきましょう。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認。規定は変更される場合があります。</p>
+          </section>
+
+          <section id="checklist" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              テイクサービスは完全見積制かつ施工が加盟店に委ねられる仕組みのため、<strong className="font-semibold">見積もり時点でどこまで条件を固められるか</strong>がトラブル回避の分かれ目です。訪問スタッフに次の点を確認しましょう。
+            </p>
+            <ul className="space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">総額と内訳</strong>：部品代・技術料・その他費用を分けた書面見積もり(またはスマホ写真での記録)。「見積金額の範囲内での作業」が公式の約束のため、これが最大の自衛策です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">調査費用</strong>：器具外し・通電チェック・電波状況調査・漏電調査に該当する作業があるか、ある場合の金額(公式には金額非公開)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">保証の期間と範囲</strong>：同一症状の再発は無料保証が公式の基本線ですが、期間は工事内容・加盟店により異なるため、具体的な日数と対象範囲を確認</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">支払い方法</strong>：訪問する加盟店がカード対応か(VISA・マスター・JCB対応でも一部加盟店は不可)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">依頼後キャンセルの扱い</strong>：無料と明記されているのは施工依頼前のみ。承諾後にやめた場合の費用を事前に確認</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">相場との照合</strong>：提示額を<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別相場</Link>と比べ、大きく外れる場合は説明を求める。急ぎでなければ相見積もりが安全です</span></li>
+            </ul>
           </section>
 
           <section id="confusion" className="scroll-mt-24">
