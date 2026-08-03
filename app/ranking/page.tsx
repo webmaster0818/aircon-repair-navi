@@ -8,7 +8,7 @@ import { getAffiliate } from "@/lib/affiliates";
 import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
-  title: "エアコン修理業者ランキング【2026年7月】おすすめ10社を徹底比較",
+  title: "エアコン修理業者ランキング【2026年8月】おすすめ10社を徹底比較",
   description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
 };
 

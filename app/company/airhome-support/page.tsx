@@ -7,7 +7,7 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアホームのエアコン修理の評判は？口コミ・料金を実査【2026年7月】",
+    "エアホームのエアコン修理の評判は？口コミ・料金を実査【2026年8月】",
   description:
     "エアコン修理「エアホーム」(横浜市西区)の口コミ・料金を当サイトが公式サイトで実査(2026年7月12日確認)。料金・受付時間・保証・許認可・特定商取引法の表記がいずれも非掲載という実態、第三者口コミが確認できない点、依頼前に確認すべき点まで中立的に解説します。",
   alternates: { canonical: "/company/airhome-support" },
@@ -85,7 +85,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアホームのエアコン修理の評判は？口コミ・料金を実査【2026年7月】",
+    "エアホームのエアコン修理の評判は？口コミ・料金を実査【2026年8月】",
   datePublished: "2026-06-28",
   dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -123,7 +123,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアホームのエアコン修理の評判は？
             <br className="hidden md:block" />
-            口コミ・料金を実査【2026年7月】
+            口コミ・料金を実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>

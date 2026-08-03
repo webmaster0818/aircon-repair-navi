@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "くらしのマーケットのエアコン修理の評判は？料金・口コミ・仕組みを実査【2026年7月】",
+    "くらしのマーケットのエアコン修理の評判は？料金・口コミ・仕組みを実査【2026年8月】",
   description:
     "くらしのマーケットのエアコン修理の評判・料金・仕組みを当サイトが公式ページで実査（2026年7月12日確認）。運営はみんなのマーケット株式会社。出店者（個人事業主含む）が直接施工し料金も出店者が設定するマーケットプレイス型、利用者の手数料は無料、損害賠償補償制度の条件、許認可が出店者次第という構造的な注意点まで正直に解説します。",
   alternates: { canonical: "/company/kurashi-market" },
@@ -57,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "くらしのマーケットのエアコン修理の評判は？料金・口コミ・仕組みを実査【2026年7月】",
+    "くらしのマーケットのエアコン修理の評判は？料金・口コミ・仕組みを実査【2026年8月】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -118,7 +118,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             くらしのマーケットのエアコン修理の評判は？
             <br className="hidden md:block" />
-            料金・口コミ・仕組みを実査【2026年7月】
+            料金・口コミ・仕組みを実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -240,7 +240,7 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※出典：くらしのマーケット公式エアコン修理カテゴリ（curama.jp／2026年7月時点で累計口コミ18,049件・平均点4.86）、およびみん評・口コミ紹介サイト等で公開されている内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。作業を行うのは各出店者のため、品質は担当出店者により差が出る点は構造的な特徴です。</p>
+            <p className="mt-4 text-xs text-slate-400">※出典：くらしのマーケット公式エアコン修理カテゴリ（curama.jp／2026年8月3日時点で累計口コミ19,865件・平均点4.84）、およびみん評・口コミ紹介サイト等で公開されている内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。作業を行うのは各出店者のため、品質は担当出店者により差が出る点は構造的な特徴です。</p>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向はいずれも「出店者ごとの品質差」に関するものです。マーケットプレイス型のサービスなので、<strong className="font-semibold">口コミ件数・内容・資格表示をよく確認し、作業範囲や追加料金の条件を予約前にメッセージで確認する</strong>だけでトラブルの大半は防げます。
             </p>

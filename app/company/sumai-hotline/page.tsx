@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "住まいのホットラインの評判は？口コミ・料金を実査【2026年7月】",
+    "住まいのホットラインの評判は？口コミ・料金を実査【2026年8月】",
   description:
     "住まい（すまい）のホットラインのエアコン修理の口コミ傾向・料金の仕組みを当サイトが公式サイト（hotlines.shop）で実査（2026年7月12日確認）。運営は株式会社ハイファイブ、実態は掲載店舗を比較予約する仲介（マーケットプレイス）型。ガス漏れ・水漏れの料金目安、受付時間、出張費・保証が店舗ごとに異なる点、依頼前チェックまで正直に解説します。",
   alternates: { canonical: "/company/sumai-hotline" },
@@ -57,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "住まいのホットラインの評判は？口コミ・料金を実査【2026年7月】",
+    "住まいのホットラインの評判は？口コミ・料金を実査【2026年8月】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -95,7 +95,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             住まいのホットラインの評判は？
             <br className="hidden md:block" />
-            口コミ・料金を実査【2026年7月】
+            口コミ・料金を実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -205,7 +205,7 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として口コミ本文の転載・創作はせず、公式サイトの掲載口コミやレビュー傾向から確認できた<strong className="font-semibold">傾向の要約</strong>のみお伝えします。エアコン修理カテゴリの掲載口コミは平均★4.75・719件（2026年7月12日確認）でした。
+              当サイトの方針として口コミ本文の転載・創作はせず、公式サイトの掲載口コミやレビュー傾向から確認できた<strong className="font-semibold">傾向の要約</strong>のみお伝えします。エアコン修理カテゴリの掲載口コミは平均★4.75・736件（2026年8月3日確認）でした。
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">

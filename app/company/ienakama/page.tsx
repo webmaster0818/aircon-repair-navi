@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "家仲間コムの評判は？手数料・口コミ・仕組みを実査【2026年7月】",
+    "家仲間コムの評判は？手数料・口コミ・仕組みを実査【2026年8月】",
   description:
     "家仲間コム（運営: 株式会社マッチングジャパン）のエアコン工事・修理を公式ページで実査（2026年7月12日確認）。利用者の手数料は無料・手数料は業者側が負担する仕組み、業者の月額5,000円と成約手数料0円、最高1,000万円の損害補償（条件あり）、マッチング型ゆえ施工は登録業者で品質差が出る構造的特徴、口コミの傾向まで中立にまとめました。",
   alternates: { canonical: "/company/ienakama" },
@@ -57,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "家仲間コムの評判は？手数料・口コミ・仕組みを実査【2026年7月】",
+    "家仲間コムの評判は？手数料・口コミ・仕組みを実査【2026年8月】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -95,7 +95,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             家仲間コムの評判は？
             <br className="hidden md:block" />
-            手数料・口コミ・仕組みを実査【2026年7月】
+            手数料・口コミ・仕組みを実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>

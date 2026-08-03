@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/busy-season/" },
 };
 
-const UPDATED = "2026年7月12日";
+const UPDATED = "2026年8月3日";
 
 const toc = [
   { id: "summary", label: "結論：いつ頼むのがよい？" },
@@ -140,6 +140,12 @@ export default function Page() {
             <strong className="font-semibold text-slate-900">「いつ頼めば早く直せるのか」</strong>
             という点です。真夏は修理の依頼が集中し、訪問まで日数がかかることがあります。この記事では、繁忙期（6〜8月）の混雑・待ち日数・予約の傾向を月別カレンダーで整理し、早く安く頼むコツと、業者を待つ間の応急対処までまとめました。
           </p>
+          <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50/70 p-5">
+            <p className="font-bold text-rose-800 mb-1">いま（2026年8月上旬）は年間で最も混み合う時期です</p>
+            <p className="text-sm leading-7 text-slate-700">
+              8月は需要のピークにあたり、訪問まで1週間以上待つ場合もあります。お盆期間は休業する業者も多く、日程調整にさらに時間がかかる傾向があります。急ぎの場合は<Link href="/ranking/fast" className="text-sky-700 underline underline-offset-4 font-semibold">即日対応の業者</Link>への同時相談と、下の応急対処の併用がおすすめです。
+            </p>
+          </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※本記事の混雑度・待ち日数は、各社の公式告知や一般的な傾向にもとづく「目安」であり、その年の天候・地域・業者・症状によって大きく変わります（推定を含みます）。正確な状況は依頼先へ直接ご確認ください（確認日：2026年7月12日）。
           </p>
@@ -349,6 +355,7 @@ export default function Page() {
             <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
               <p className="text-sm font-bold text-slate-700 mb-3">更新履歴</p>
               <ul className="space-y-1 text-[0.9rem] text-slate-600">
+                <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-08-03</span><span>8月更新。最繁忙期の現在地とお盆期間の注意を追記。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-07-12</span><span>初版公開。混雑カレンダーと公式告知を掲載。</span></li>
               </ul>
               <p className="mt-3 text-xs text-slate-400">

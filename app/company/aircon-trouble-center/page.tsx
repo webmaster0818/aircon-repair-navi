@@ -7,7 +7,7 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年7月】",
+    "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年8月】",
   description:
     "エアコントラブルセンター（運営: 株式会社composure）の口コミ傾向・料金の仕組みを当サイトが公式ページで実査（2026年7月11日確認）。出張費・見積もり・施工前キャンセルは無料、基本料金8,800円〜の公称のみで症状別実額は公式非公開、実態は全国2,000社以上の加盟店を手配する紹介型という特徴、保証・許認可の表示状況まで正直に解説します。",
   alternates: { canonical: "/company/aircon-trouble-center" },
@@ -85,7 +85,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年7月】",
+    "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年8月】",
   datePublished: "2026-06-10",
   dateModified: "2026-08-02",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -123,7 +123,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアコントラブルセンターの評判は？
             <br className="hidden md:block" />
-            口コミ・料金を実査【2026年7月】
+            口コミ・料金を実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>

@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "ライフ救急車のエアコン修理の評判は？口コミ・料金を実査【2026年7月】",
+    "ライフ救急車のエアコン修理の評判は？口コミ・料金を実査【2026年8月】",
   description:
     "エアコン修理の受付窓口「ライフ救急車」の口コミ傾向・料金・運営会社を当サイトが実査（2026年7月12日確認）。公式サイト（life-kyukyusha.jp）が現在アクセスできないこと、施工は別会社が担う紹介型であること、料金実額や許認可が公式に確認できないこと、口コミで見られる注意すべき傾向まで、良い点・気になる点の両面から正直に解説します。",
   alternates: { canonical: "/company/life-kyukyusha" },
@@ -57,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ライフ救急車のエアコン修理の評判は？口コミ・料金を実査【2026年7月】",
+    "ライフ救急車のエアコン修理の評判は？口コミ・料金を実査【2026年8月】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -95,7 +95,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             ライフ救急車のエアコン修理の評判は？
             <br className="hidden md:block" />
-            口コミ・料金を実査【2026年7月】
+            口コミ・料金を実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>

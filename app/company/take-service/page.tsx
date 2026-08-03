@@ -7,7 +7,7 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "テイクサービスの口コミ・評判は？完全見積制の料金と注意点を実査【2026年7月】",
+    "テイクサービスの口コミ・評判は？完全見積制の料金と注意点を実査【2026年8月】",
   description:
     "エアコン修理のテイクサービス（運営: 株式会社アシスト）の口コミ傾向・料金の仕組みを当サイトが公式ページで実査（2026年7月7日確認）。出張費・見積・依頼前キャンセル無料、症状別の実額は非公開＝完全見積制という特徴、調査費用が有料になる条件、依頼前チェック3点まで正直に解説します。",
   alternates: { canonical: "/company/take-service" },

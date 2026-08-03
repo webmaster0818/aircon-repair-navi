@@ -5,7 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "エアコン救急隊の評判は？同名の複数サービスの見分け方・料金を実査【2026年7月】",
+    "エアコン救急隊の評判は？同名の複数サービスの見分け方・料金を実査【2026年8月】",
   description:
     "「エアコン救急隊」という名称のエアコン修理サービスは複数存在します。当サイトが各公式サイトを実査(2026年7月19日確認)し、株式会社SAZANKA運営のエアコン救急隊(aircon99.net)ほか同名サービスの運営情報・対応エリア・料金の掲載状況・依頼前の見分け方と注意点を中立的に解説します。",
   alternates: { canonical: "/company/aircon-kyukyusha" },
@@ -57,7 +57,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコン救急隊の評判は？同名の複数サービスの見分け方・料金を実査【2026年7月】",
+    "エアコン救急隊の評判は？同名の複数サービスの見分け方・料金を実査【2026年8月】",
   datePublished: "2026-07-19",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -95,7 +95,7 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアコン救急隊の評判は？
             <br className="hidden md:block" />
-            同名の複数サービスの見分け方・料金を実査【2026年7月】
+            同名の複数サービスの見分け方・料金を実査【2026年8月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
