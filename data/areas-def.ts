@@ -163,6 +163,16 @@ const CITY_LIST: [string, string, string, string][] = [
   ["matsusaka", "松阪市", "mie", "三重県"],
   ["nagaoka", "長岡市", "niigata", "新潟県"],
   ["joetsu", "上越市", "niigata", "新潟県"],
+  ["yamaguchi-city", "山口市", "yamaguchi", "山口県"],
+  ["saga-city", "佐賀市", "saga", "佐賀県"],
+  ["hachinohe", "八戸市", "aomori", "青森県"],
+  ["hirosaki", "弘前市", "aomori", "青森県"],
+  ["tomakomai", "苫小牧市", "hokkaido", "北海道"],
+  ["kushiro", "釧路市", "hokkaido", "北海道"],
+  ["obihiro", "帯広市", "hokkaido", "北海道"],
+  ["ishinomaki", "石巻市", "miyagi", "宮城県"],
+  ["tsuruoka", "鶴岡市", "yamagata", "山形県"],
+  ["aizuwakamatsu", "会津若松市", "fukushima", "福島県"],
 ];
 
 export const CITIES: AreaDef[] = CITY_LIST.map(([slug, name, prefSlug, prefName]) => ({
