@@ -190,6 +190,7 @@ export default function ErrorCodeDaikinPage() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { href: "/guide/error-code-mitsubishi/", label: "三菱(霧ヶ峰)のランプ点滅・エラー表示" },
                 { href: "/symptom/error-code/", label: "エラーコードが出る(症状別の切り分け)" },
                 { href: "/cost/maker-repair-fee/", label: "メーカー修理費用の比較" },
                 { href: "/guide/where-to-repair/", label: "エアコン修理はどこに頼む？" },
