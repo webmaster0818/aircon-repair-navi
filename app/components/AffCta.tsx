@@ -9,7 +9,7 @@ export function StickyCta({ href, label }: { href: string; label: string }) {
         href={href}
         target="_blank"
         rel="sponsored nofollow noopener"
-        className="block w-full rounded-full bg-orange-500 py-3 text-center text-base font-bold text-white shadow hover:bg-orange-600 transition-colors"
+        className="ac-btn ac-btn-cta w-full"
       >
         {label} →
       </a>
@@ -27,7 +27,7 @@ export function MiniCta({ href, label, lead }: { href: string; label: string; le
         href={href}
         target="_blank"
         rel="sponsored nofollow noopener"
-        className="inline-block rounded-full bg-orange-500 px-8 py-3 font-bold text-white shadow hover:bg-orange-600 transition-colors"
+        className="ac-btn ac-btn-cta px-8 py-3"
       >
         {label} →
       </a>

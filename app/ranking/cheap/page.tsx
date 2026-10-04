@@ -30,9 +30,9 @@ export default function CheapRankingPage() {
         ]}
       />
 
-      <section className="bg-gradient-to-br from-emerald-600 to-emerald-800 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">PR</span>
+          <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">安いエアコン修理業者ランキング</h1>
           <p className="text-emerald-100 text-lg">修理費用を最小限に抑えたい方向け・費用重視TOP5</p>
         </div>
@@ -72,26 +72,26 @@ export default function CheapRankingPage() {
                 <div className="flex gap-3">
                   <Link
                     href={`/company/${c.slug}`}
-                    className="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                    className="ac-btn ac-btn-outline flex-1 text-sm py-2.5"
                   >
                     詳細を見る
                   </Link>
                   {getAffiliate(c.slug) ? (
                     <AffiliateOfficialButton
                       slug={c.slug}
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     />
                   ) : getFelmat(c.slug) ? (
                     <FelmatOfficialButton
                       slug={c.slug}
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     />
                   ) : (
                     <a
                       href={c.officialUrl}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     >
                       公式サイトへ（PR）
                     </a>
@@ -103,14 +103,14 @@ export default function CheapRankingPage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 bg-gradient-to-r from-sky-600 to-sky-700 rounded-2xl p-8 text-center text-white">
+        <div className="mt-10 bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">複数社を比較して最安値を見つけよう</h2>
           <p className="text-sky-100 text-sm mb-6">無料見積もりを複数社から取ることで、最大50%費用を節約できるケースも。</p>
           <Link
             href="/ranking"
-            className="inline-block bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+            className="ac-btn ac-btn-cta px-8 py-4 text-lg"
           >
-            全10社ランキングを見る
+            全27社ランキングを見る
           </Link>
         </div>
       </div>

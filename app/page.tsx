@@ -2,16 +2,20 @@ import Link from "next/link";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
+import AreaFinder from "@/app/components/AreaFinder";
+import SiteShot, { hasShot } from "@/app/components/SiteShot";
 
+// 症状アイコンは2026-10-04に8点を同一スタイルで作り直した（512px/背景透過）。
+// 色はブランド紺#0F4C81＋スカイ#38A3E0の2色のみ。カードの色は変えずに統一する。
 const symptoms = [
-  { iconSrc: "/images/icon-snowflake.png", label: "冷えない", href: "/symptom/not-cooling", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
-  { iconSrc: "/images/icon-water-drop.png", label: "水漏れ", href: "/symptom/water-leak", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
-  { iconSrc: "/images/icon-sound-wave.png", label: "異音がする", href: "/symptom/noise", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
-  { iconSrc: "/images/icon-nose.png", label: "臭いがする", href: "/symptom/bad-smell", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
-  { iconSrc: "/images/icon-power.png", label: "動かない", href: "/symptom/not-starting", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
-  { iconSrc: "/images/icon-gas.png", label: "ガス漏れ", href: "/symptom/gas-leak", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
-  { iconSrc: "/images/icon-remote.png", label: "リモコン不良", href: "/symptom/remote-error", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
-  { iconSrc: "/images/icon-alert.png", label: "エラーコード", href: "/symptom/error-code", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
+  { icon: "/images/icons/icon-not-cooling.png", label: "冷えない", note: "ガス漏れ・フィルター詰まり", href: "/symptom/not-cooling" },
+  { icon: "/images/icons/icon-water-leak.png", label: "水漏れ", note: "ドレンホース・結露", href: "/symptom/water-leak" },
+  { icon: "/images/icons/icon-noise.png", label: "異音がする", note: "ガガガ・カラカラ音", href: "/symptom/noise" },
+  { icon: "/images/icons/icon-bad-smell.png", label: "臭いがする", note: "カビ臭・酸っぱい臭い", href: "/symptom/bad-smell" },
+  { icon: "/images/icons/icon-not-starting.png", label: "動かない", note: "電源が入らない", href: "/symptom/not-starting" },
+  { icon: "/images/icons/icon-gas-leak.png", label: "ガス漏れ", note: "室外機・配管から", href: "/symptom/gas-leak" },
+  { icon: "/images/icons/icon-remote-error.png", label: "リモコン不良", note: "反応しない・表示が消える", href: "/symptom/remote-error" },
+  { icon: "/images/icons/icon-error-code.png", label: "エラーコード", note: "ランプ点滅・数字表示", href: "/symptom/error-code" },
 ];
 
 const costTable = [
@@ -50,6 +54,14 @@ const faqs = [
   },
 ];
 
+function Chevron({ className = "w-4 h-4" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+      <polyline points="9 6 15 12 9 18" />
+    </svg>
+  );
+}
+
 export default function HomePage() {
   // TOP3はアフィリエイト提携済みの業者のみで構成（施主方針・2026-07-16）
   const top3 = ["aircon-trouble-center", "take-service", "airhome-support"]
@@ -62,369 +74,323 @@ export default function HomePage() {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.q,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.a,
-      },
+      acceptedAnswer: { "@type": "Answer", text: faq.a },
     })),
   };
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      {/* Hero - Full width with background image */}
-      <section className="relative w-full overflow-hidden" style={{ minHeight: "520px" }}>
-        {/* Background image */}
-        <img
-          src="/images/hero-final.png"
-          alt="エアコン修理"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-          style={{ zIndex: 0 }}
-        />
-        {/* Sky blue gradient overlay for readability */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(135deg, rgba(14,165,233,0.82) 0%, rgba(2,132,199,0.75) 50%, rgba(3,105,161,0.65) 100%)",
-            zIndex: 1,
-          }}
-        />
-        {/* Content */}
-        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-28 text-center text-white" style={{ zIndex: 2 }}>
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm text-white text-sm px-4 py-2 rounded-full mb-6 border border-white/30">
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-            <span>全国10社以上を徹底比較・PRを含みます</span>
+      {/* ============ ヒーロー ============
+          写真は左、文字は右の明るい面に置く。文字の上に色を被せず、
+          背景とのコントラストで読ませる（施主指示⑤）。 */}
+      <section className="relative bg-[var(--color-surface)] border-b border-[var(--color-line)]">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_1fr]">
+          <div className="relative min-h-[260px] lg:min-h-[520px] order-1 lg:order-none">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/hero.jpg"
+              alt="エアコンの室内機を点検する修理スタッフ"
+              className="absolute inset-0 w-full h-full object-cover"
+              fetchPriority="high"
+            />
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-6 drop-shadow-lg">
-            エアコンが壊れた？<br />
-            <span className="text-yellow-300">最適な修理業者</span>が見つかる。
-          </h1>
-          <p className="text-lg md:text-xl text-sky-100 mb-8 max-w-2xl mx-auto drop-shadow">
-            症状から業者を探せる。費用相場も一目でわかる。<br />
-            信頼できるエアコン修理業者を比較してご紹介します。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/ranking"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
-            >
-              業者ランキングを見る
-            </Link>
-            <Link
-              href="/symptom/not-cooling"
-              className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all border border-white/50 hover:border-white/80 hover:-translate-y-0.5"
-            >
-              症状から探す
-            </Link>
-          </div>
-          {/* Trust badges */}
-          <div className="flex flex-wrap justify-center gap-4 mt-10">
-            <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span>無料見積もり</span>
+
+          <div className="px-6 py-12 lg:px-14 lg:py-20 flex flex-col justify-center">
+            <span className="ac-eyebrow self-start">AIRCON REPAIR GUIDE</span>
+            <h1 className="mt-6 text-[28px] lg:text-[40px] font-bold leading-[1.45] text-[var(--color-ink)]">
+              エアコンが壊れた。
+              <br />
+              <span className="text-[var(--color-brand)]">どこに頼むか</span>を、
+              <br className="hidden lg:block" />
+              5分で決める。
+            </h1>
+            <p className="mt-6 text-sm lg:text-base text-[var(--color-ink-2)] leading-[2.1]">
+              症状から原因を切り分け、費用の目安を確かめ、全国27社から条件に合う業者を選べます。
+              料金は各社が公表している金額のみを掲載しています。
+            </p>
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-3">
+              <Link href="#symptom" className="ac-btn ac-btn-primary">
+                症状から探す
+                <Chevron />
+              </Link>
+              <Link href="#area" className="ac-btn ac-btn-outline">
+                エリアから探す
+                <Chevron />
+              </Link>
             </div>
-            <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最短即日対応</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>修理保証あり</span>
-            </div>
-            <div className="flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full text-sm border border-white/20">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>24時間365日</span>
-            </div>
+
+            <dl className="mt-10 grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden">
+              {[
+                ["掲載業者", "27社"],
+                ["対応エリア", "191"],
+                ["症状別ガイド", "8種"],
+              ].map(([k, v], i) => (
+                <div key={k} className={`px-3 py-4 text-center ${i < 2 ? "border-r border-[var(--color-line)]" : ""}`}>
+                  <dt className="text-[11px] text-[var(--color-ink-3)] tracking-wider">{k}</dt>
+                  <dd className="text-xl font-bold text-[var(--color-brand)] leading-tight mt-1">{v}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </div>
       </section>
 
-      {/* Symptom Diagnosis */}
-      <section className="max-w-6xl mx-auto px-4 py-14">
+      {/* ============ 症状から探す ============ */}
+      <section id="symptom" className="max-w-6xl mx-auto px-4 py-16">
         <div className="text-center mb-10">
-          <span className="inline-block bg-sky-100 text-sky-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wide">SYMPTOM SEARCH</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">症状から探す</h2>
-          <p className="text-gray-500">あてはまる症状を選んでください</p>
+          <span className="ac-eyebrow">SYMPTOM SEARCH</span>
+          <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">症状から探す</h2>
+          <p className="text-[var(--color-ink-2)] text-sm">あてはまる症状を選ぶと、原因の切り分けと対処法、費用の目安が確認できます</p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+        {/* カードの色は8枚すべて同一。選択肢ごとに色を変えない（施主指示④） */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {symptoms.map((s) => (
             <Link
               key={s.href}
               href={s.href}
-              className={`flex flex-col items-center gap-3 p-5 rounded-2xl border-2 transition-all shadow-sm hover:shadow-md hover:-translate-y-1 ${s.color}`}
+              className="ac-card group flex flex-col items-center text-center px-4 py-7 hover:border-[var(--color-brand)] hover:bg-[var(--color-brand-wash)] transition-colors"
             >
-              <span className={`w-14 h-14 flex items-center justify-center rounded-full ${s.iconBg}`}><img src={s.iconSrc} alt="" className="w-8 h-8 inline-block" /></span>
-              <span className="font-bold text-sm text-slate-800">{s.label}</span>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={s.icon} alt="" width={112} height={112} className="w-20 h-20 lg:w-28 lg:h-28" />
+              <span className="mt-4 font-bold text-[15px] lg:text-base text-[var(--color-ink)]">{s.label}</span>
+              <span className="mt-1 text-[11px] lg:text-xs text-[var(--color-ink-3)] leading-relaxed">{s.note}</span>
             </Link>
           ))}
         </div>
+
         <div className="text-center mt-8">
-          <Link href="/symptom" className="inline-flex items-center gap-2 text-sky-600 font-bold hover:underline text-sm bg-sky-50 px-6 py-3 rounded-full hover:bg-sky-100 transition-colors">
-            すべての症状から原因と対処法を探す
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+          <Link href="/symptom" className="ac-btn ac-btn-outline">
+            すべての症状の原因と対処法を見る
+            <Chevron />
           </Link>
         </div>
       </section>
 
-      {/* TOP3 Ranking */}
-      <section className="bg-gradient-to-b from-slate-50 to-white py-14">
+      {/* ============ エリアから探す（2026-10-04 新設） ============ */}
+      <AreaFinder />
+
+      {/* ============ 注目の3社 ============ */}
+      <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">エアコン修理業者 TOP3</h2>
-            <p className="text-gray-500 mt-2">編集部が厳選した信頼できる業者</p>
+            <span className="ac-eyebrow">PICK UP</span>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">まず検討したい3社</h2>
+            <p className="text-[var(--color-ink-2)] text-sm">当サイトが提携している業者です（PR）。公式サイトの内容は下の画像でご確認いただけます</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div className="grid gap-5 md:grid-cols-3">
             {top3.map((company, index) => (
-              <div
-                key={company.slug}
-                className={`relative rounded-2xl p-6 border-2 shadow-md hover:shadow-xl transition-all hover:-translate-y-1 ${
-                  index === 0
-                    ? "border-yellow-400 bg-gradient-to-b from-yellow-50 to-white"
-                    : index === 1
-                    ? "border-gray-300 bg-gradient-to-b from-gray-50 to-white"
-                    : "border-orange-300 bg-gradient-to-b from-orange-50 to-white"
-                }`}
-              >
-                {index === 0 && (
-                  <div className="absolute -top-3 -right-3 bg-yellow-400 text-white text-xs font-bold px-2 py-1 rounded-full shadow">
-                    人気No.1
-                  </div>
-                )}
-                <div className="absolute -top-5 left-6">
-                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-full text-lg font-black shadow-lg text-white ${
-                    index === 0 ? "bg-yellow-500" : index === 1 ? "bg-gray-400" : "bg-orange-500"
-                  }`}>
+              <div key={company.slug} className="ac-card overflow-hidden flex flex-col">
+                <div className="relative">
+                  <SiteShot slug={company.slug} name={company.name} caption={false} className="[&>div]:rounded-none [&>div]:border-0 [&>div]:border-b [&>div]:border-[var(--color-line)]" />
+                  {!hasShot(company.slug) && (
+                    <div className="aspect-[16/10] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]" />
+                  )}
+                  <span className="absolute top-3 left-3 inline-flex items-center justify-center w-8 h-8 rounded-md bg-[var(--color-brand)] text-white text-sm font-bold shadow-sm">
                     {index + 1}
                   </span>
                 </div>
-                <div className="mt-4">
-                  <h3 className="text-lg font-bold text-slate-900 mb-1">{company.name}</h3>
-                  <p className="text-sm text-gray-500 mb-3">{company.tagline}</p>
-                  <div className="flex flex-wrap gap-1 mb-4">
+
+                <div className="p-5 flex flex-col flex-1">
+                  <h3 className="text-lg font-bold">{company.name}</h3>
+                  <p className="text-xs text-[var(--color-ink-3)] mt-1">{company.tagline}</p>
+
+                  <div className="flex flex-wrap gap-1.5 mt-3">
                     {company.features.slice(0, 3).map((f) => (
-                      <span key={f} className="text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded-full font-medium">{f}</span>
+                      <span key={f} className="text-[11px] border border-[var(--color-line-strong)] text-[var(--color-brand)] px-2 py-0.5 rounded">
+                        {f}
+                      </span>
                     ))}
                   </div>
-                  <div className="bg-slate-50 rounded-xl p-3 mb-4 space-y-1">
-                    <p className="text-xs text-gray-600"><span className="font-bold text-slate-700">費用目安:</span> {company.avgCost}</p>
-                    <p className="text-xs text-gray-600"><span className="font-bold text-slate-700">対応速度:</span> {company.responseTime}</p>
+
+                  <dl className="mt-4 border border-[var(--color-line)] rounded-lg divide-y divide-[var(--color-line)] text-xs">
+                    <div className="flex px-3 py-2">
+                      <dt className="w-20 text-[var(--color-ink-3)]">費用目安</dt>
+                      <dd className="font-bold">{company.avgCost}</dd>
+                    </div>
+                    <div className="flex px-3 py-2">
+                      <dt className="w-20 text-[var(--color-ink-3)]">対応速度</dt>
+                      <dd className="font-bold">{company.responseTime}</dd>
+                    </div>
+                  </dl>
+
+                  <div className="flex flex-col gap-2 mt-auto pt-5">
+                    <Link href={`/company/${company.slug}`} className="ac-btn ac-btn-outline w-full text-sm">
+                      詳細を見る
+                      <Chevron />
+                    </Link>
+                    <AffiliateOfficialButton slug={company.slug} className="ac-btn ac-btn-cta w-full text-sm" />
+                    <FelmatOfficialButton slug={company.slug} className="ac-btn ac-btn-cta w-full text-sm" />
                   </div>
-                  <Link
-                    href={`/company/${company.slug}`}
-                    className={`block text-center font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md ${
-                      index === 0
-                        ? "bg-yellow-500 hover:bg-yellow-400 text-white"
-                        : "bg-sky-500 hover:bg-sky-600 text-white"
-                    }`}
-                  >
-                    詳細を見る →
-                  </Link>
-                  <AffiliateOfficialButton
-                    slug={company.slug}
-                    className="block text-center mt-2 font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md bg-orange-500 hover:bg-orange-600 text-white"
-                  />
-                  <FelmatOfficialButton
-                    slug={company.slug}
-                    className="block text-center mt-2 font-bold py-3 rounded-xl text-sm transition-all shadow hover:shadow-md bg-orange-500 hover:bg-orange-600 text-white"
-                  />
                 </div>
               </div>
             ))}
           </div>
+
           <div className="text-center mt-8">
-            <Link href="/ranking" className="inline-flex items-center gap-2 text-sky-600 font-bold hover:underline text-sm bg-sky-50 px-6 py-3 rounded-full hover:bg-sky-100 transition-colors">
-              全10社のランキングを見る
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+            <Link href="/ranking" className="ac-btn ac-btn-outline">
+              全27社の比較を見る
+              <Chevron />
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Cost Overview */}
-      <section className="max-w-6xl mx-auto px-4 py-14">
-        <div className="text-center mb-10">
-          <span className="inline-block bg-sky-100 text-sky-700 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wide">COST GUIDE</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">修理費用の目安</h2>
-          <p className="text-gray-500">症状別の修理費用相場一覧</p>
-        </div>
-        <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden">
-          <table className="w-full">
-            <thead className="bg-gradient-to-r from-sky-600 to-sky-700 text-white">
-              <tr>
-                <th className="px-6 py-4 text-left text-sm font-bold">症状・修理内容</th>
-                <th className="px-6 py-4 text-right text-sm font-bold">費用目安</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100">
-              {costTable.map((row, i) => (
-                <tr key={row.symptom} className={`transition-colors hover:bg-sky-50 ${i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}>
-                  <td className="px-6 py-4 text-sm text-slate-700">{row.symptom}</td>
-                  <td className="px-6 py-4 text-sm font-bold text-sky-600 text-right">{row.range}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p className="text-xs text-gray-400 mt-3 text-center">※費用はあくまで目安です。実際の費用は症状・機種・業者によって異なります。</p>
-        <div className="text-center mt-4 flex flex-col sm:flex-row gap-3 justify-center">
-          <Link href="/cost/repair-price/" className="text-sky-600 font-bold hover:underline text-sm">
-            エアコン修理の費用・料金相場ガイド →
-          </Link>
-          <Link href="/guide/noise" className="text-sky-600 font-bold hover:underline text-sm">
-            異音「ガガガ」の原因と対処ガイド →
-          </Link>
-          <Link href="/guide/busy-season/" className="text-sky-600 font-bold hover:underline text-sm">
-            修理はいつ頼むべき？繁忙期カレンダー →
-          </Link>
-        </div>
-      </section>
-
-      {/* All Companies Comparison */}
-      <section className="bg-slate-50 py-14">
-        <div className="max-w-6xl mx-auto px-4">
+      {/* ============ 修理費用の目安 ============ */}
+      <section className="bg-[var(--color-surface)] border-y border-[var(--color-line)] py-16">
+        <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900">10社 一括比較</h2>
+            <span className="ac-eyebrow">COST GUIDE</span>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">修理費用の目安</h2>
+            <p className="text-[var(--color-ink-2)] text-sm">症状別の修理費用相場</p>
           </div>
 
-          {/* Mobile: Card layout */}
-          <div className="md:hidden space-y-3">
-            {companies.map((c) => (
-              <div key={c.slug} className="border border-gray-200 rounded-2xl p-4 bg-white shadow-sm hover:shadow-md transition-all">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2">
-                    <span className="text-lg font-black text-sky-500">#{c.rank}</span>
-                    <span className="font-bold text-slate-900">{c.name}</span>
-                  </div>
-                  <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">{c.coverage}</span>
-                </div>
-                <p className="text-xs text-gray-500 mb-2">{c.tagline}</p>
-                <div className="flex gap-4 text-xs text-gray-700 mb-3 bg-slate-50 rounded-lg p-2">
-                  <span><strong>費用:</strong> {c.avgCost}</span>
-                  <span><strong>速度:</strong> {c.responseTime}</span>
-                </div>
-                <div className="flex gap-2">
-                  <Link
-                    href={`/company/${c.slug}`}
-                    className="flex-1 block text-center bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
-                  >
-                    詳細を見る →
-                  </Link>
-                  <AffiliateOfficialButton
-                    slug={c.slug}
-                    className="flex-1 block text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
-                  />
-                  <FelmatOfficialButton
-                    slug={c.slug}
-                    className="flex-1 block text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold py-2.5 rounded-xl transition-colors"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Desktop: Table layout */}
-          <div className="hidden md:block overflow-x-auto rounded-2xl shadow-md border border-gray-200">
+          <div className="border border-[var(--color-line)] rounded-lg overflow-hidden">
             <table className="w-full text-sm">
-              <thead className="bg-slate-800 text-white">
-                <tr>
-                  <th className="px-4 py-4 text-left">順位</th>
-                  <th className="px-4 py-4 text-left">業者名</th>
-                  <th className="px-4 py-4 text-left">特徴</th>
-                  <th className="px-4 py-4 text-left">費用目安</th>
-                  <th className="px-4 py-4 text-left">対応速度</th>
-                  <th className="px-4 py-4 text-left">エリア</th>
-                  <th className="px-4 py-4 text-center">詳細</th>
+              <thead>
+                <tr className="bg-[var(--color-brand)] text-white">
+                  <th className="px-5 py-3.5 text-left font-bold">症状・修理内容</th>
+                  <th className="px-5 py-3.5 text-right font-bold">費用目安</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-100">
-                {companies.map((c, i) => (
-                  <tr key={c.slug} className={`transition-colors hover:bg-sky-50 ${i % 2 === 0 ? "bg-white" : "bg-gray-50/50"}`}>
-                    <td className="px-4 py-3">
-                      <span className="font-black text-sky-600">#{c.rank}</span>
-                    </td>
-                    <td className="px-4 py-3">
-                      <span className="font-bold text-slate-800">{c.name}</span>
-                    </td>
-                    <td className="px-4 py-3 text-gray-500 max-w-xs">{c.tagline}</td>
-                    <td className="px-4 py-3 font-bold text-sky-600">{c.avgCost}</td>
-                    <td className="px-4 py-3 text-green-600 font-medium">{c.responseTime}</td>
-                    <td className="px-4 py-3">
-                      <span className="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-medium">{c.coverage}</span>
-                    </td>
-                    <td className="px-4 py-3 text-center">
-                      <div className="flex flex-col items-center gap-1.5">
-                        <Link
-                          href={`/company/${c.slug}`}
-                          className="bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors shadow-sm hover:shadow"
-                        >
-                          詳細
-                        </Link>
-                        <AffiliateOfficialButton
-                          slug={c.slug}
-                          className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors shadow-sm hover:shadow whitespace-nowrap"
-                        />
-                        <FelmatOfficialButton
-                          slug={c.slug}
-                          className="bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors shadow-sm hover:shadow whitespace-nowrap"
-                        />
-                      </div>
-                    </td>
+              <tbody className="divide-y divide-[var(--color-line)]">
+                {costTable.map((row) => (
+                  <tr key={row.symptom} className="bg-[var(--color-surface)]">
+                    <td className="px-5 py-3.5">{row.symptom}</td>
+                    <td className="px-5 py-3.5 text-right font-bold text-[var(--color-brand)] whitespace-nowrap">{row.range}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
+          <p className="text-xs text-[var(--color-ink-3)] mt-3">
+            ※費用はあくまで目安です。実際の費用は症状・機種・業者によって異なります。
+          </p>
+
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <Link href="/cost/repair-price/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
+              エアコン修理の費用・料金相場ガイド
+            </Link>
+            <Link href="/guide/noise/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
+              異音「ガガガ」の原因と対処ガイド
+            </Link>
+            <Link href="/guide/busy-season/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
+              修理はいつ頼むべき？繁忙期カレンダー
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* How to choose */}
-      <section className="max-w-6xl mx-auto px-4 py-14">
-        <div className="text-center mb-10">
-          <span className="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wide">GUIDE</span>
-          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">優良業者の選び方 5つのポイント</h2>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
-          {choosingPoints.map((p, i) => (
-            <div key={p.title} className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm hover:shadow-md transition-all text-center hover:-translate-y-1">
-              <div className="w-14 h-14 bg-sky-50 rounded-full flex items-center justify-center mx-auto mb-3">
-                {p.iconType === "speed" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>}
-                {p.iconType === "area" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>}
-                {p.iconType === "price" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9"/><text x="12" y="16" textAnchor="middle" fill="currentColor" stroke="none" fontSize="11" fontWeight="bold">¥</text></svg>}
-                {p.iconType === "reviews" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>}
-                {p.iconType === "guarantee" && <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>}
+      {/* ============ 27社一括比較 ============ */}
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="ac-eyebrow">COMPARISON</span>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">27社 一括比較</h2>
+            <p className="text-[var(--color-ink-2)] text-sm">各社の公式サイトを当サイトで撮影して掲載しています</p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {companies.map((c) => (
+              <div key={c.slug} className="ac-card overflow-hidden flex flex-col">
+                <div className="relative">
+                  <SiteShot slug={c.slug} name={c.name} caption={false} className="[&>div]:rounded-none [&>div]:border-0 [&>div]:border-b [&>div]:border-[var(--color-line)]" />
+                  {!hasShot(c.slug) && (
+                    <div className="aspect-[16/10] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)] flex items-center justify-center text-xs text-[var(--color-ink-3)]">
+                      公式サイト画像は準備中
+                    </div>
+                  )}
+                </div>
+
+                <div className="p-4 flex flex-col flex-1">
+                  <div className="flex items-baseline gap-2">
+                    <span className="text-xs font-bold text-[var(--color-ink-3)]">#{c.rank}</span>
+                    <h3 className="font-bold leading-snug">{c.name}</h3>
+                  </div>
+                  <p className="text-xs text-[var(--color-ink-3)] mt-1 leading-relaxed">{c.tagline}</p>
+
+                  <dl className="mt-3 border border-[var(--color-line)] rounded-lg divide-y divide-[var(--color-line)] text-xs">
+                    <div className="flex px-3 py-2">
+                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">費用</dt>
+                      <dd className="font-bold">{c.avgCost}</dd>
+                    </div>
+                    <div className="flex px-3 py-2">
+                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">速度</dt>
+                      <dd className="font-bold">{c.responseTime}</dd>
+                    </div>
+                    <div className="flex px-3 py-2">
+                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">エリア</dt>
+                      <dd className="font-bold">{c.coverage}</dd>
+                    </div>
+                  </dl>
+
+                  <div className="flex flex-col gap-2 mt-auto pt-4">
+                    <Link href={`/company/${c.slug}`} className="ac-btn ac-btn-outline w-full text-xs py-2.5">
+                      詳細を見る
+                      <Chevron className="w-3.5 h-3.5" />
+                    </Link>
+                    <AffiliateOfficialButton slug={c.slug} className="ac-btn ac-btn-cta w-full text-xs py-2.5" />
+                    <FelmatOfficialButton slug={c.slug} className="ac-btn ac-btn-cta w-full text-xs py-2.5" />
+                  </div>
+                </div>
               </div>
-              <div className="text-xs text-sky-500 font-bold mb-1">POINT {i + 1}</div>
-              <h3 className="font-bold text-slate-900 mb-2 text-sm">{p.title}</h3>
-              <p className="text-xs text-gray-500 leading-relaxed">{p.desc}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="bg-white py-14">
+      {/* ============ 選び方 ============ */}
+      <section className="bg-[var(--color-surface)] border-y border-[var(--color-line)] py-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <span className="ac-eyebrow">GUIDE</span>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4">優良業者の選び方 5つのポイント</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            {choosingPoints.map((p, i) => (
+              <div key={p.title} className="ac-card p-5 text-center">
+                <div className="w-14 h-14 border border-[var(--color-line-strong)] rounded-full flex items-center justify-center mx-auto mb-3 text-[var(--color-brand)]">
+                  {p.iconType === "speed" && <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 15" /></svg>}
+                  {p.iconType === "area" && <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" /><circle cx="12" cy="9" r="2.5" /></svg>}
+                  {p.iconType === "price" && <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><circle cx="12" cy="12" r="9" /><path strokeLinecap="round" d="M9 8l3 4 3-4M12 12v5M9.5 13.5h5M9.5 15.5h5" /></svg>}
+                  {p.iconType === "reviews" && <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinejoin="round" d="M12 3.5l2.7 5.47 6.03.88-4.36 4.25 1.03 6-5.4-2.84-5.4 2.84 1.03-6L3.27 9.85l6.03-.88L12 3.5z" /></svg>}
+                  {p.iconType === "guarantee" && <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}><path strokeLinecap="round" strokeLinejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg>}
+                </div>
+                <div className="text-[11px] tracking-widest text-[var(--color-ink-3)] font-bold mb-1">POINT {i + 1}</div>
+                <h3 className="font-bold mb-2 text-sm">{p.title}</h3>
+                <p className="text-xs text-[var(--color-ink-2)] leading-relaxed">{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ FAQ ============ */}
+      <section className="py-16">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-10">
-            <span className="inline-block bg-slate-100 text-slate-600 text-xs font-bold px-3 py-1 rounded-full mb-3 tracking-wide">FAQ</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">よくある質問</h2>
+            <span className="ac-eyebrow">FAQ</span>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4">よくある質問</h2>
           </div>
           <div className="space-y-3">
             {faqs.map((faq) => (
-              <details key={faq.q} className="group border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-all">
-                <summary className="flex items-center justify-between px-6 py-4 cursor-pointer list-none font-bold text-slate-900 hover:bg-sky-50 transition-colors">
-                  <span className="flex items-center gap-3">
-                    <span className="flex-shrink-0 w-7 h-7 bg-sky-500 text-white rounded-full flex items-center justify-center text-sm font-black">Q</span>
+              <details key={faq.q} className="ac-card overflow-hidden group">
+                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer list-none font-bold">
+                  <span className="flex items-start gap-3">
+                    <span className="shrink-0 w-6 h-6 border border-[var(--color-brand)] text-[var(--color-brand)] rounded flex items-center justify-center text-xs font-bold mt-0.5">Q</span>
                     {faq.q}
                   </span>
-                  <svg className="w-5 h-5 text-gray-400 flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <svg className="w-5 h-5 shrink-0 text-[var(--color-ink-3)] transition-transform group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    <polyline points="6 9 12 15 18 9" />
                   </svg>
                 </summary>
-                <div className="px-6 py-4 bg-sky-50/50 border-t border-gray-100">
-                  <p className="text-gray-700 leading-relaxed flex gap-3">
-                    <span className="flex-shrink-0 w-7 h-7 bg-green-500 text-white rounded-full flex items-center justify-center text-sm font-black">A</span>
+                <div className="px-5 py-4 bg-[var(--color-wash)] border-t border-[var(--color-line)]">
+                  <p className="text-sm text-[var(--color-ink-2)] flex gap-3 leading-[2]">
+                    <span className="shrink-0 w-6 h-6 bg-[var(--color-brand)] text-white rounded flex items-center justify-center text-xs font-bold mt-0.5">A</span>
                     <span>{faq.a}</span>
                   </p>
                 </div>
@@ -434,28 +400,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="relative overflow-hidden py-20">
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, #0284c7 0%, #0369a1 50%, #075985 100%)" }}
-        />
-        <div className="relative max-w-3xl mx-auto px-4 text-center text-white" style={{ zIndex: 1 }}>
-          <div className="flex justify-center mb-4"><svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg></div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブル、今すぐ解決！</h2>
-          <p className="text-sky-200 mb-8 text-lg">24時間365日対応の業者多数。まずは無料見積もりから。</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/ranking"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition-all shadow-xl hover:shadow-2xl hover:-translate-y-0.5"
-            >
-              業者ランキングを見る
+      {/* ============ 末尾CTA ============ */}
+      <section className="bg-[var(--color-brand)] py-16">
+        <div className="max-w-3xl mx-auto px-4 text-center text-white">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブル、今すぐ解決</h2>
+          <p className="text-[var(--color-brand-wash)] mb-8 text-sm md:text-base">
+            24時間365日対応の業者も掲載しています。まずは無料見積もりから。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/ranking" className="ac-btn ac-btn-cta">
+              全27社の比較を見る
+              <Chevron />
             </Link>
             <Link
               href="/ranking/fast"
-              className="bg-white text-sky-700 font-bold px-8 py-4 rounded-xl text-lg hover:bg-sky-50 transition-all hover:-translate-y-0.5 shadow-lg"
+              className="ac-btn bg-white text-[var(--color-brand)] border-white hover:bg-[var(--color-brand-wash)]"
             >
-              即日対応業者を探す
+              即日対応の業者を探す
+              <Chevron />
             </Link>
           </div>
         </div>

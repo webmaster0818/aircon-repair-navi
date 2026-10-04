@@ -293,7 +293,7 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="relative pb-3 mt-14 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
       {children}
-      <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+      <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
     </h2>
   );
 }
@@ -301,7 +301,7 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 function SubHeading({ children }: { children: React.ReactNode }) {
   return (
     <h4 className="relative pl-4 mt-8 mb-3 font-bold text-base md:text-lg leading-snug tracking-wide">
-      <span className="absolute left-0 top-0 bottom-0 w-[4px] rounded-l-[2px] bg-orange-400" />
+      <span className="absolute left-0 top-0 bottom-0 w-[4px] rounded-l-[2px] bg-[var(--color-cta)]" />
       {children}
     </h4>
   );
@@ -311,11 +311,11 @@ function VendorBlock({ v, rank }: { v: Vendor; rank: number }) {
   return (
     <div id={v.slug}>
       <h3 className="relative pb-3 mb-5 mt-12 text-lg md:text-xl font-bold leading-snug tracking-wide border-b-4 border-slate-200">
-        <span className="inline-flex items-center justify-center w-8 h-8 mr-2 rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 text-white text-base align-middle">
+        <span className="inline-flex items-center justify-center w-8 h-8 mr-2 rounded-full bg-[var(--color-brand)] text-white text-base align-middle">
           {rank}
         </span>
         【{v.badge}】{v.name} <span className="text-sm font-semibold text-slate-500">/ {v.category}</span>
-        <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+        <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
       </h3>
       {v.aff === "a8" && <AffiliateBanner slug={v.slug} heading={`${v.name} 公式サイト`} />}
       {v.aff === "felmat" && <FelmatBanner slug={v.slug} heading={`${v.name} 公式サイト`} />}
@@ -460,7 +460,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
 
         <SectionHeading>その症状、クリーニングで直るかも？{area.name}のクリーニング業者{cleaning.length}選</SectionHeading>
         <div className="mt-4 rounded-lg border-2 border-orange-200 bg-orange-50/60 px-5 py-4 text-[13px] md:text-[14px] leading-[1.8]">
-          <p className="font-bold text-orange-600 mb-1">💡 修理を呼ぶ前にチェック</p>
+          <p className="font-bold text-orange-600 mb-1">修理を呼ぶ前にチェック</p>
           <p>
             「冷えが弱い」「カビ臭い」「送風口から水が飛ぶ」は、内部のカビ・ホコリ詰まりが原因のケースがあります。
             その場合は修理ではなく<strong>クリーニングで改善する</strong>ことがあり、費用も抑えられます。

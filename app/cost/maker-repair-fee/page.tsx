@@ -197,7 +197,7 @@ export default function MakerRepairFeePage() {
               ※パナソニックは対話型の料金シミュレーターのみで静的な一覧の公式掲載がないため本表に含めていません。日立は室内機の設置状況（通常／高所等）で金額が変わります。ダイキンは「誤って冷媒ガスを放出させた場合はメーカー保証対象外」と明記しています。
             </p>
             <div className="mt-5 rounded-2xl border-2 border-orange-200 bg-orange-50/60 p-5 text-sm leading-7">
-              <p className="font-bold text-orange-700 mb-1">💡 冷媒回路の故障は「5年保証」をまず確認</p>
+              <p className="font-bold text-orange-700 mb-1">冷媒回路の故障は「5年保証」をまず確認</p>
               <p>
                 「冷えない」系の高額修理（6万〜20万円）の原因になりやすい冷媒回路は、
                 <strong>購入から5年以内ならメーカー保証で無償になる可能性</strong>があります（ダイキン・パナソニック・三菱・シャープが公式明記）。
@@ -213,7 +213,7 @@ export default function MakerRepairFeePage() {
               保証が切れている場合は、先に無料見積もりで相場を把握してからメーカー費用と比べるのが合理的です。
               ただし、見積もり後の追加請求トラブルも報告されているため、<strong className="font-semibold">作業前に総額を書面で確認</strong>してから依頼しましょう。
             </p>
-            <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-6 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">見積もり無料の業者を比較する</p>
               <p className="text-sky-100 text-sm mb-5">料金・口コミ・対応スピードを確認日つきで比較しています。</p>
               <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

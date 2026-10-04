@@ -120,7 +120,7 @@ export default function WhereToRepairPage() {
         <div className="max-w-3xl mx-auto px-5">
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image
-              src="/images/hero-c.png"
+              src="/images/hero-c.jpg"
               alt="エアコン修理の依頼先を選ぶイメージ"
               fill
               priority
@@ -198,7 +198,7 @@ export default function WhereToRepairPage() {
                 </div>
               ))}
               <div className="rounded-2xl border-2 border-orange-200 bg-orange-50/60 p-5 text-sm leading-7">
-                <p className="font-bold text-orange-700 mb-1">⚡ 例外：とにかく今日直したいとき</p>
+                <p className="font-bold text-orange-700 mb-1">例外：とにかく今日直したいとき</p>
                 <p>
                   保証が残っていても、メーカー・量販店の訪問は繁忙期に日数がかかることがあります。「猛暑で待てない」場合は
                   <Link href="/ranking/fast" className="text-sky-700 underline underline-offset-2 font-semibold">即日対応の修理業者</Link>
@@ -219,7 +219,7 @@ export default function WhereToRepairPage() {
                 パナソニックも本体1年・冷媒循環回路部品5年と公式に案内しています。
               </p>
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-5 text-sm leading-7">
-                <p className="font-bold text-sky-800 mb-1">💡 「冷えない」は5年保証の対象かも</p>
+                <p className="font-bold text-sky-800 mb-1">「冷えない」は5年保証の対象かも</p>
                 <p>
                   ガス漏れ・コンプレッサー不良など「冷えない」系の故障は冷媒系統が原因のことがあり、
                   <strong>購入5年以内なら無償修理になる可能性</strong>があります。有償の業者を呼ぶ前に、保証書と購入日を確認しましょう。
@@ -270,7 +270,7 @@ export default function WhereToRepairPage() {
                 ネット広告の「安い」「即日」だけで選ばず、<strong className="font-semibold">作業前に総額見積もりを書面で確認</strong>しましょう。
               </p>
             </div>
-            <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-6 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">修理業者を比較して選ぶ</p>
               <p className="text-sky-100 text-sm mb-5">料金・口コミ・対応スピードを確認日つきで比較しています。</p>
               <div className="flex flex-wrap justify-center gap-3">

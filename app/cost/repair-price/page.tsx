@@ -61,7 +61,7 @@ export default function RepairPricePage() {
         ]}
       />
 
-      <section className="bg-gradient-to-br from-sky-700 to-sky-900 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理費用の相場</h1>
         <div className="bg-sky-50 border border-sky-200 rounded-xl p-4 my-5 text-sm text-slate-700">
@@ -92,7 +92,7 @@ export default function RepairPricePage() {
             <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">{category.category}</h2>
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
               <table className="w-full">
-                <thead className="bg-sky-600 text-white">
+                <thead className="bg-[var(--color-brand)] text-white">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-bold">修理内容</th>
                     <th className="px-4 py-3 text-center text-sm font-bold">最安値目安</th>
@@ -128,13 +128,13 @@ export default function RepairPricePage() {
         </div>
 
         {/* CTA */}
-        <div className="bg-gradient-to-r from-sky-600 to-sky-700 rounded-2xl p-8 text-center text-white">
+        <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">無料見積もりで実際の費用を確認しよう</h2>
           <p className="text-sky-100 text-sm mb-6">複数社に見積もりを依頼すると最大30〜50%費用を抑えられるケースも。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ranking"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-3 rounded-xl transition-colors"
+              className="ac-btn ac-btn-cta px-8 py-3"
             >
               業者ランキングを見る
             </Link>

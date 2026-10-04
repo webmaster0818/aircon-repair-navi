@@ -3,6 +3,7 @@ import { StickyCta, MiniCta } from "@/app/components/AffCta";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
@@ -132,16 +133,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-c.png"
-              alt="エアコン内部を分解洗浄するクリーニング作業のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="duskin-servicemaster" name="ダスキン サービスマスター" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -173,7 +165,7 @@ export default function Page() {
           <div className="rounded-2xl border-2 border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-base font-bold text-slate-800 mb-3">＼ 公式サイトはこちら ／</p>
             <div className="flex justify-center mb-4"><a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+60OXD" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www27.a8.net/svt/bgt?aid=260628928547&wid=013&eno=01&mid=s00000023342001011000&mc=1" /></a></div>
-            <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">ダスキン サービスマスター公式サイトを見る →</a>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow noopener" className="ac-btn ac-btn-cta px-10 py-4 text-lg">ダスキン サービスマスター公式サイトを見る →</a>
             <p className="mt-3 text-xs text-slate-400">※本リンクはプロモーション（PR）です。</p>
           </div>
         </div>
@@ -249,7 +241,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を洗浄するクリーニング作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を洗浄するクリーニング作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -360,7 +352,7 @@ export default function Page() {
                 ["動作確認・支払い", "仕上がりと動作を確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -385,7 +377,7 @@ export default function Page() {
                 ["動作確認・完了", "仕上がりと動作を確認して完了です。万一仕上がりに満足できない場合は、後述の「満足の保証」の対象になります。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -526,13 +518,13 @@ export default function Page() {
               料金は機種・台数・オプションや曜日・時間帯で変わります。申し込み時に総額と追加費用の条件を確認し、納得してから依頼するのがおすすめです。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
               <p className="text-sky-100 text-sm mb-5">大手の安心感と品質を重視するなら、まずは料金と最寄り店舗を確認してみましょう。</p>
               <div className="flex justify-center mb-5">
                 <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+60OXD" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www27.a8.net/svt/bgt?aid=260628928547&wid=013&eno=01&mid=s00000023342001011000&mc=1" /></a>
               </div>
-              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" target="_blank" rel="sponsored nofollow" className="ac-btn ac-btn-cta px-10 py-4 text-lg">
                 ダスキン サービスマスター公式サイトを見る
               </a>
             </div>

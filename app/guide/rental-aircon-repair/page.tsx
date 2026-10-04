@@ -75,7 +75,7 @@ export default function RentalAirconRepairPage() {
         <div className="max-w-3xl mx-auto px-5">
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image
-              src="/images/hero-b.png"
+              src="/images/hero-b.jpg"
               alt="賃貸住宅のエアコン修理費の負担を確認するイメージ"
               fill
               priority
@@ -241,19 +241,19 @@ export default function RentalAirconRepairPage() {
             <div className="rounded-2xl border-2 border-rose-200 bg-rose-50/60 p-6">
               <ul className="space-y-3 text-slate-700 text-[0.95rem] leading-7">
                 <li className="flex gap-2">
-                  <span className="text-rose-500 font-bold shrink-0">✕</span>
+                  <svg className="w-4 h-4 shrink-0 mt-1 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
                   <span><strong>大家・管理会社に連絡する前に修理業者を呼ぶ</strong> — 民法607条の2の要件（通知＋相当期間 or 急迫の事情）を満たさない修理は、費用を請求できないおそれがあります。</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-rose-500 font-bold shrink-0">✕</span>
+                  <svg className="w-4 h-4 shrink-0 mt-1 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
                   <span><strong>口頭連絡だけで記録を残さない</strong> — 「通知した」ことが後で証明できません。メール・管理アプリ・LINEなど記録が残る手段を使いましょう。</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-rose-500 font-bold shrink-0">✕</span>
+                  <svg className="w-4 h-4 shrink-0 mt-1 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
                   <span><strong>契約書を確認せずに交渉する</strong> — エアコンが「設備」か「残置物」かで結論が変わります。特約の有無も含め、まず契約書の確認を。</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-rose-500 font-bold shrink-0">✕</span>
+                  <svg className="w-4 h-4 shrink-0 mt-1 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
                   <span><strong>放置して症状を悪化させる</strong> — 水漏れを放置して壁や床を傷めると、その部分は入居者の責任を問われるおそれがあります。</span>
                 </li>
               </ul>
@@ -272,7 +272,7 @@ export default function RentalAirconRepairPage() {
                 ["費用を大家さんに償還請求", "民法608条1項により、支出した必要費は直ちに請求できます。領収書・見積書・やりとりの記録を保管しておきましょう。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4 rounded-2xl border border-slate-200 p-5">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-600 text-white font-bold">{i + 1}</span>
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-brand)] text-white font-bold">{i + 1}</span>
                   <div>
                     <p className="font-bold text-slate-900">{t}</p>
                     <p className="mt-1 text-sm leading-7 text-slate-600">{d}</p>
@@ -280,7 +280,7 @@ export default function RentalAirconRepairPage() {
                 </li>
               ))}
             </ol>
-            <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-6 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">自分で手配することになったら</p>
               <p className="text-sky-100 text-sm mb-5">見積もり無料・書面確認できる業者を比較して選びましょう。</p>
               <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

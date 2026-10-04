@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
@@ -129,16 +130,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-a.png"
-              alt="室内機のエアコン修理を行う作業のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="panasonic-repair" name="パナソニック修理ご相談窓口" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -222,7 +214,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="merit" className="scroll-mt-24">
@@ -378,7 +370,7 @@ export default function Page() {
               「安く・早く」を優先するなら、出張費・見積無料や最短即日対応をうたう街の修理業者も有力です（品質は業者差があるため実績・保証の確認を）。どちらが得かは故障内容とあなたの優先順位次第。まずはメーカーと業者の両方に見積もりを取り、料金とスピードを比べて選ぶのが失敗しないコツです。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">パナソニック製エアコンの故障でお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">安さ・早さで選ぶなら街の業者を、純正・保証で選ぶなら公式を。まずは両方を比較しましょう。</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">

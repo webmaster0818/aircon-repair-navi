@@ -44,7 +44,7 @@ export default function AffiliateBanner({
         href={a.textHref}
         target="_blank"
         rel="sponsored nofollow"
-        className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors"
+        className="ac-btn ac-btn-primary px-7 py-3"
       >
         {textLinkLabel}
       </a>

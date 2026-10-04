@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
@@ -105,16 +106,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-a.png"
-              alt="急なエアコントラブルに駆けつける出張修理のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="life-kyukyusha" name="ライフ救急車" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -225,7 +217,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -313,7 +305,7 @@ export default function Page() {
           <div className="my-8 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
             <p className="text-base font-bold text-slate-800 mb-1">まずは料金相場を確認してから比較</p>
             <p className="text-sm text-slate-500 mb-4">実額を公開している業者と相見積もりを取ると、金額の妥当性を判断しやすくなります。</p>
-            <Link href="/cost/price-index/" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
+            <Link href="/cost/price-index/" className="ac-btn ac-btn-primary px-7 py-3">
               27社の料金実査一覧を見る →
             </Link>
           </div>
@@ -329,7 +321,7 @@ export default function Page() {
                 ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -363,14 +355,14 @@ export default function Page() {
               エアコン修理は症状によって費用が変わります。急ぎでないときは、料金や会社情報を公開している業者を含めて複数から見積もりを取り、内容と対応を比較して選ぶと失敗を防げます。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">料金・会社情報が明確な業者と比較したい方へ</p>
               <p className="text-sky-100 text-sm mb-5">当サイトが実査した業者ランキングと料金相場から、納得できる依頼先を選べます。</p>
               <div className="flex flex-col sm:flex-row justify-center gap-3">
                 <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                   エアコン修理業者ランキングを見る
                 </Link>
-                <Link href="/cost/price-index/" className="inline-block rounded-full bg-sky-500/30 ring-1 ring-white/60 px-7 py-3 font-bold text-white hover:bg-sky-500/50 transition-colors">
+                <Link href="/cost/price-index/" className="ac-btn bg-transparent text-white border-white/60 hover:bg-white/10 px-7 py-3">
                   料金実査一覧を見る
                 </Link>
               </div>

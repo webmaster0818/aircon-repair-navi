@@ -124,7 +124,7 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-5">
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image
-              src="/images/hero-a.png"
+              src="/images/hero-a.jpg"
               alt="エアコン修理を依頼する時期を考えるイメージ"
               fill
               priority
@@ -203,7 +203,7 @@ export default function Page() {
             </p>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
-                <thead className="bg-sky-600 text-white">
+                <thead className="bg-[var(--color-brand)] text-white">
                   <tr>
                     <th className="px-3 py-3 text-left font-bold">月</th>
                     <th className="px-3 py-3 text-center font-bold">混雑度</th>
@@ -231,7 +231,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="夏の室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="夏の室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="reality" className="scroll-mt-24">
@@ -295,7 +295,7 @@ export default function Page() {
                 ["メーカー名・型番・症状をメモしておく", "型番やエラー表示、いつ・どんな症状かを伝えられると、受付・見積もり・日程調整がスムーズです。事前準備が待ち時間の短縮につながります。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -363,7 +363,7 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">混み合う前に無料見積もりで相談を</p>
               <p className="text-sky-100 text-sm mb-5">24時間受付の業者も多数。早めの相談で選択肢が広がります。</p>
               <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

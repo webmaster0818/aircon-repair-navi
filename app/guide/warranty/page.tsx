@@ -112,7 +112,7 @@ export default function WarrantyPage() {
               </table>
             </div>
             <div className="mt-5 rounded-2xl border-2 border-orange-200 bg-orange-50/60 p-5 text-sm leading-7">
-              <p className="font-bold text-orange-700 mb-1">💡 ここが最大の見落としポイント</p>
+              <p className="font-bold text-orange-700 mb-1">ここが最大の見落としポイント</p>
               <p>
                 「保証は1年で切れた」と思い込んで有償修理を頼む人が多いのですが、
                 <strong>「冷えない」故障の主要因である冷媒回路は5年保証</strong>です。
@@ -162,7 +162,7 @@ export default function WarrantyPage() {
               <Link href="/cost/maker-repair-fee/" className="text-sky-600 underline underline-offset-2 font-semibold">6社の出張費・診断料の横断比較</Link>）、
               修理業者には見積もり無料の会社もあります。総額の書面見積もりを確認したうえで、納得できる依頼先を選びましょう。
             </p>
-            <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-6 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">保証切れなら業者比較で安く</p>
               <p className="text-sky-100 text-sm mb-5">見積もり無料・料金確認日つきで比較しています。</p>
               <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

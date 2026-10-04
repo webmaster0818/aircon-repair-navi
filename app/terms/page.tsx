@@ -11,7 +11,7 @@ export default function TermsPage() {
     <>
       <Breadcrumb items={[{ name: "利用規約", href: "/terms" }]} />
 
-      <section className="bg-gradient-to-br from-sky-700 to-sky-900 text-white py-10">
+      <section className="bg-[var(--color-brand)] text-white py-10">
         <div className="max-w-4xl mx-auto px-4">
           <h1 className="text-3xl font-bold mb-2">利用規約</h1>
           <p className="text-sky-200 text-sm">最終更新日：2026年4月27日</p>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
@@ -105,16 +106,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-a.png"
-              alt="室内機のエアコン修理を行う作業のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="epark" name="EPARK" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -227,7 +219,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -306,7 +298,7 @@ export default function Page() {
                 ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -340,7 +332,7 @@ export default function Page() {
               エアコン修理は症状によって費用が変わります。急ぎでないときは複数の業者を比較し、料金と口コミを見比べて選ぶと失敗を防げます。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">口コミを見て業者を選びたい方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは掲載業者の口コミ・料金を比較して、症状と費用の目安を確認してみましょう。</p>
               <a href="https://rescue.epark.jp/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

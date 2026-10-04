@@ -135,7 +135,7 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-5">
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image
-              src="/images/hero-a.png"
+              src="/images/hero-a.jpg"
               alt="室内機のエアコン修理を行う作業のイメージ"
               fill
               priority
@@ -182,7 +182,7 @@ export default function Page() {
           <div className="rounded-2xl border-2 border-orange-200 bg-orange-50 p-6 text-center">
             <p className="text-base font-bold text-slate-800 mb-3">＼ 公式サイトはこちら ／</p>
             <div className="flex justify-center mb-4"><a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NKMSH" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www25.a8.net/svt/bgt?aid=260628928534&wid=013&eno=01&mid=s00000014894010006000&mc=1" /></a></div>
-            <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" target="_blank" rel="sponsored nofollow noopener" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">テイクサービス公式サイトを見る →</a>
+            <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" target="_blank" rel="sponsored nofollow noopener" className="ac-btn ac-btn-cta px-10 py-4 text-lg">テイクサービス公式サイトを見る →</a>
             <p className="mt-3 text-xs text-slate-400">※本リンクはプロモーション（PR）です。</p>
           </div>
         </div>
@@ -269,7 +269,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -375,7 +375,7 @@ export default function Page() {
                 ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -400,7 +400,7 @@ export default function Page() {
                 ["支払い", "VISA・マスター・JCBのクレジットカードに対応(一部加盟店は不可)。法人の後日請求払いは条件付き対応です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -523,13 +523,13 @@ export default function Page() {
               エアコン修理は症状によって費用が変わります。急ぎでないときは複数の業者から見積もりを取り、料金と対応を比較して選ぶと失敗を防げます。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは相談・見積もりで、症状と費用の目安を確認してみましょう。</p>
               <div className="flex justify-center mb-5">
                 <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NKMSH" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www25.a8.net/svt/bgt?aid=260628928534&wid=013&eno=01&mid=s00000014894010006000&mc=1" /></a>
               </div>
-              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" target="_blank" rel="sponsored nofollow" className="inline-block rounded-full bg-orange-500 px-10 py-4 text-lg font-bold text-white shadow-lg ring-2 ring-orange-300 hover:bg-orange-600 hover:shadow-xl transition-all">
+              <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8TXR2Q+36X8+1NJK7M" target="_blank" rel="sponsored nofollow" className="ac-btn ac-btn-cta px-10 py-4 text-lg">
                 テイクサービス公式サイトを見る
               </a>
             </div>

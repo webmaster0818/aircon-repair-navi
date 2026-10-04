@@ -1,19 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
+/* ------------------------------------------------------------------
+   デザイントークン（2026-10-04 全面整理）
+   施主指示: ①絵文字を使わない ②アイコンは高解像度で大きく
+   ③各業者の画像を使う ④選択ボタンは色を変えず統一
+   ⑤背景とのコントラストを考えて枠を使う ⑥TOPにエリア導線
+   色は「面=白 / 地=ごく薄い青グレー / 線=1px」の3層だけで構成し、
+   彩度の高い色はブランド紺とCTAオレンジの2色に限定する。
+   ------------------------------------------------------------------ */
 @theme inline {
-  --color-primary: #0EA5E9;
-  --color-cta: #F97316;
-  --color-dark: #0F172A;
-  --color-bg: #F8FAFC;
-  --color-accent: #10B981;
-  --color-background: #F8FAFC;
-  --color-foreground: #0F172A;
+  /* ブランド（新アイコンと同じ2色） */
+  --color-brand: #0F4C81;
+  --color-brand-dark: #0B3A63;
+  --color-brand-light: #38A3E0;
+  --color-brand-wash: #EAF2FA;
+
+  /* 申込CTA（サイト内で唯一のオレンジ） */
+  --color-cta: #E2600F;
+  --color-cta-dark: #C45009;
+
+  /* 面・地・線 */
+  --color-surface: #FFFFFF;
+  --color-wash: #F4F7FB;
+  --color-line: #D7E0EB;
+  --color-line-strong: #BCCBDC;
+
+  /* 文字 */
+  --color-ink: #16202E;
+  --color-ink-2: #516073;
+  --color-ink-3: #7C8A9C;
+
+  /* 旧トークン互換（既存ページが参照しているため残す） */
+  --color-primary: #0F4C81;
+  --color-dark: #16202E;
+  --color-bg: #F4F7FB;
+  --color-accent: #0F4C81;
+  --color-background: #F4F7FB;
+  --color-foreground: #16202E;
+
+  /* ------------------------------------------------------------------
+     既存約60ページが使っている sky / cyan / orange のスケールを
+     ブランド色そのものに差し替える。各ページのclassNameを書き換えずに
+     サイト全体の色を1系統へ統一するための上書き（2026-10-04）。
+     ------------------------------------------------------------------ */
+  --color-sky-50:  #F2F7FC;
+  --color-sky-100: #E3EDF7;
+  --color-sky-200: #C9DCEE;
+  --color-sky-300: #9FC2DF;
+  --color-sky-400: #5E9BCB;
+  --color-sky-500: #2E79B4;
+  --color-sky-600: #0F4C81;
+  --color-sky-700: #0D4272;
+  --color-sky-800: #0B3A63;
+  --color-sky-900: #082C4B;
+  --color-sky-950: #051B2E;
+
+  --color-cyan-50:  #F2F7FC;
+  --color-cyan-100: #E3EDF7;
+  --color-cyan-200: #C9DCEE;
+  --color-cyan-300: #9FC2DF;
+  --color-cyan-400: #5E9BCB;
+  --color-cyan-500: #2E79B4;
+  --color-cyan-600: #0F4C81;
+  --color-cyan-700: #0D4272;
+
+  --color-orange-50:  #FDF4EC;
+  --color-orange-100: #FAE5D3;
+  --color-orange-200: #F5CCAC;
+  --color-orange-300: #EFAC79;
+  --color-orange-400: #EA8544;
+  --color-orange-500: #E2600F;
+  --color-orange-600: #C45009;
+  --color-orange-700: #A24208;
+  --color-orange-800: #83360A;
+  --color-orange-900: #6B2D0B;
+
   --font-sans: "Noto Sans JP", sans-serif;
 }
 
-body {
-  background: var(--color-bg);
-  color: var(--color-dark);
-  font-family: "Noto Sans JP", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
+
+body {
+  background: var(--color-wash);
+  color: var(--color-ink);
+  font-family: "Noto Sans JP", sans-serif;
+  letter-spacing: 0.02em;
+  line-height: 1.9;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+/* --- 共通パーツ ------------------------------------------------- */
+
+/* 面。背景(--color-wash)との境目を必ず1pxの線で示す */
+.ac-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: 10px;
+}
+
+/* セクション見出しの上に置く小ラベル */
+.ac-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-brand);
+  border: 1px solid var(--color-line-strong);
+  border-radius: 999px;
+  padding: 3px 14px;
+  background: var(--color-surface);
+}
+
+/* ボタン: 全ページでこの3種類だけを使う。色は変えない */
+.ac-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 13px 22px;
+  line-height: 1.4;
+  transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+.ac-btn-primary {
+  background: var(--color-brand);
+  color: #fff;
+  border-color: var(--color-brand);
+}
+.ac-btn-primary:hover { background: var(--color-brand-dark); border-color: var(--color-brand-dark); }
+
+.ac-btn-outline {
+  background: var(--color-surface);
+  color: var(--color-brand);
+  border-color: var(--color-line-strong);
+}
+.ac-btn-outline:hover { background: var(--color-brand-wash); border-color: var(--color-brand); }
+
+.ac-btn-cta {
+  background: var(--color-cta);
+  color: #fff;
+  border-color: var(--color-cta);
+}
+.ac-btn-cta:hover { background: var(--color-cta-dark); border-color: var(--color-cta-dark); }
+
+/* 掲載先公式サイトのスクリーンショット枠 */
+.ac-shot {
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--color-wash);
+}
+.ac-shot img { display: block; width: 100%; height: auto; }

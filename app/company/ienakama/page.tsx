@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
@@ -105,16 +106,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-a.png"
-              alt="室内機のエアコン工事を行う作業のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="ienakama" name="家仲間コム" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -162,7 +154,7 @@ export default function Page() {
             <div className="mt-6 rounded-2xl bg-sky-50 border border-sky-100 p-6 text-center">
               <p className="font-bold text-slate-900 mb-1">エアコン工事・修理を比較して頼みたい方へ</p>
               <p className="text-slate-600 text-sm mb-4">利用者の見積依頼は無料。複数業者の料金と対応を比べてから選べます。</p>
-              <a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
+              <a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="ac-btn ac-btn-primary px-7 py-3">
                 家仲間コム公式で無料見積もりを見る
               </a>
             </div>
@@ -226,7 +218,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する工事作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する工事作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -320,7 +312,7 @@ export default function Page() {
           <div className="rounded-2xl bg-sky-50 border border-sky-100 p-6 text-center">
             <p className="font-bold text-slate-900 mb-1">まずは無料で見積もりを取り寄せる</p>
             <p className="text-slate-600 text-sm mb-4">利用者は手数料無料。複数業者の料金と対応を見比べてから決められます。</p>
-            <a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
+            <a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="ac-btn ac-btn-primary px-7 py-3">
               家仲間コム公式で無料見積もりを見る
             </a>
           </div>
@@ -336,7 +328,7 @@ export default function Page() {
                 ["動作確認・支払い", "正常に動くか確認し、業者へ支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -370,7 +362,7 @@ export default function Page() {
               エアコン工事・修理は作業内容によって費用が変わります。急ぎでないときは複数の見積もりを比較し、料金と対応をふまえて選ぶと失敗を防げます。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコン工事・修理を比較して頼みたい方へ</p>
               <p className="text-sky-100 text-sm mb-5">利用者は手数料無料。まずは見積もりを取り寄せて、料金と対応の目安を確認してみましょう。</p>
               <a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

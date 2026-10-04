@@ -36,7 +36,7 @@ export default function FastRankingPage() {
         ]}
       />
 
-      <section className="bg-gradient-to-br from-orange-600 to-red-700 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4"> 即日対応 修理業者ランキング</h1>
@@ -74,7 +74,7 @@ export default function FastRankingPage() {
                 <p className="text-gray-600 text-sm mb-4">{c.tagline}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {c.features.map((f) => (
-                    <span key={f} className="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded-full">{f}</span>
+                    <span key={f} className="text-xs border border-[var(--color-line-strong)] text-[var(--color-brand)] px-2 py-1 rounded">{f}</span>
                   ))}
                 </div>
                 <div className="grid grid-cols-2 gap-3 mb-4">
@@ -90,7 +90,7 @@ export default function FastRankingPage() {
                 <div className="flex gap-3">
                   <Link
                     href={`/company/${c.slug}`}
-                    className="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                    className="ac-btn ac-btn-outline flex-1 text-sm py-2.5"
                   >
                     詳細を見る
                   </Link>
@@ -98,20 +98,20 @@ export default function FastRankingPage() {
                     <AffiliateOfficialButton
                       slug={c.slug}
                       label="今すぐ相談する（PR）"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     />
                   ) : getFelmat(c.slug) ? (
                     <FelmatOfficialButton
                       slug={c.slug}
                       label="今すぐ相談する（PR）"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     />
                   ) : (
                     <a
                       href={c.officialUrl}
                       target="_blank"
                       rel="noopener noreferrer nofollow"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2.5 rounded-xl text-sm transition-colors"
+                      className="ac-btn ac-btn-cta flex-1 text-sm py-2.5"
                     >
                       今すぐ相談する（PR）
                     </a>
@@ -123,14 +123,14 @@ export default function FastRankingPage() {
         </div>
 
         {/* CTA */}
-        <div className="mt-10 bg-gradient-to-r from-orange-500 to-red-600 rounded-2xl p-8 text-center text-white">
+        <div className="mt-10 bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">今すぐエアコンを修理したい方へ</h2>
           <p className="text-orange-100 text-sm mb-6">24時間365日対応の業者に相談。最短即日修理も可能です。</p>
           <Link
             href="/ranking"
             className="inline-block bg-white text-orange-600 font-bold px-8 py-4 rounded-xl text-lg hover:bg-orange-50 transition-colors"
           >
-            全10社ランキングを見る
+            全27社ランキングを見る
           </Link>
         </div>
         {/* 今日直すための実用ガイド（2026-07-04追加） */}

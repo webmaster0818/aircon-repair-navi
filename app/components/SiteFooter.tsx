@@ -82,11 +82,11 @@ export default function SiteFooter() {
               </Link>
               <p className="mt-2 text-xs text-gray-500 max-w-md">
                 当サイトはエアコン修理業者の比較・紹介を行うサイトです。一部記事にはPR（広告）を含みます。
-                掲載情報は2024年時点のものです。最新情報は各業者サイトをご確認ください。
+                掲載情報は2026年10月時点のものです。最新情報は各業者サイトをご確認ください。
               </p>
             </div>
             <div className="text-xs text-gray-500">
-              <p>© 2024 エアコン修理ナビ. All rights reserved.</p>
+              <p>© 2026 エアコン修理ナビ. All rights reserved.</p>
             </div>
           </div>
         </div>

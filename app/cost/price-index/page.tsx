@@ -199,7 +199,7 @@ export default function PriceIndexPage() {
               ["3", "メーカー窓口と比べる", "保証期間内・高級機はメーカーへ。保証外は点検費（ダイキン8,500円〜等）が修理しなくても発生する点だけ注意。"],
             ].map(([n, t, d]) => (
               <div key={n} className="bg-white border border-gray-200 rounded-xl p-5">
-                <div className="w-8 h-8 rounded-full bg-sky-600 text-white font-bold flex items-center justify-center mb-3">{n}</div>
+                <div className="w-8 h-8 rounded-full bg-[var(--color-brand)] text-white font-bold flex items-center justify-center mb-3">{n}</div>
                 <h3 className="font-bold text-slate-900 text-sm mb-1">{t}</h3>
                 <p className="text-xs text-slate-600 leading-relaxed">{d}</p>
               </div>
@@ -223,7 +223,7 @@ export default function PriceIndexPage() {
           </Link>
           <Link href="/ranking/" className="bg-white border border-gray-200 rounded-xl p-4 hover:border-sky-300 transition-colors">
             <p className="font-bold text-slate-900 text-sm">修理業者ランキング</p>
-            <p className="text-xs text-slate-500 mt-1">2026年7月更新・10社比較</p>
+            <p className="text-xs text-slate-500 mt-1">2026年10月更新・27社比較</p>
           </Link>
           <Link href="/ranking/fast/" className="bg-white border border-gray-200 rounded-xl p-4 hover:border-sky-300 transition-colors">
             <p className="font-bold text-slate-900 text-sm">今日直したい方はこちら</p>

@@ -306,11 +306,11 @@ const faqs = [
 function CompanyHeading({ rank, badge, name, category }: { rank: number; badge: string; name: string; category: string }) {
   return (
     <h3 className="relative pb-3 mb-5 mt-12 text-lg md:text-xl font-bold leading-snug tracking-wide border-b-4 border-slate-200">
-      <span className="inline-flex items-center justify-center w-8 h-8 mr-2 rounded-full bg-gradient-to-r from-sky-500 to-cyan-400 text-white text-base align-middle">
+      <span className="inline-flex items-center justify-center w-8 h-8 mr-2 rounded-full bg-[var(--color-brand)] text-white text-base align-middle">
         {rank}
       </span>
       【{badge}】{name} <span className="text-sm font-semibold text-slate-500">/ {category}</span>
-      <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+      <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
     </h3>
   );
 }
@@ -318,7 +318,7 @@ function CompanyHeading({ rank, badge, name, category }: { rank: number; badge: 
 function SubHeading({ children }: { children: React.ReactNode }) {
   return (
     <h4 className="relative pl-4 mt-8 mb-3 font-bold text-base md:text-lg leading-snug tracking-wide">
-      <span className="absolute left-0 top-0 bottom-0 w-[4px] rounded-l-[2px] bg-orange-400" />
+      <span className="absolute left-0 top-0 bottom-0 w-[4px] rounded-l-[2px] bg-[var(--color-cta)]" />
       {children}
     </h4>
   );
@@ -441,7 +441,7 @@ export default function OsakaAreaPage() {
         {/* 早見比較表 */}
         <h2 className="relative pb-3 mt-10 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           大阪で頼める7社の早見比較
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-[12px] md:text-[13px]">
@@ -476,7 +476,7 @@ export default function OsakaAreaPage() {
         {/* 修理セクション */}
         <h2 className="relative pb-3 mt-14 mb-2 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           大阪でエアコン修理を頼める業者4選
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600">
           「電源が入らない」「エラーコードが出る」「異音がする」など故障が疑われる場合は、修理対応の業者・窓口へ。
@@ -488,10 +488,10 @@ export default function OsakaAreaPage() {
         {/* クリーニングセクション */}
         <h2 className="relative pb-3 mt-16 mb-2 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           その症状、クリーニングで直るかも？大阪のクリーニング業者3選
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="mt-4 rounded-lg border-2 border-orange-200 bg-orange-50/60 px-5 py-4 text-[13px] md:text-[14px] leading-[1.8]">
-          <p className="font-bold text-orange-600 mb-1">💡 修理を呼ぶ前にチェック</p>
+          <p className="font-bold text-orange-600 mb-1">修理を呼ぶ前にチェック</p>
           <p>
             「冷えが弱い」「カビ臭い」「送風口から水が飛ぶ」は、内部のカビ・ホコリ詰まりが原因のケースがあります。
             その場合は修理ではなく<strong>クリーニング（8,800円〜）で改善する</strong>ことがあり、費用も抑えられます。
@@ -505,7 +505,7 @@ export default function OsakaAreaPage() {
         {/* 症状別料金相場 */}
         <h2 className="relative pb-3 mt-16 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           大阪のエアコン修理 症状別の料金相場
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
           大阪府の事業者を掲載するマッチングサイト2社が公表している相場（2026年8月時点の掲載値）です。
@@ -546,7 +546,7 @@ export default function OsakaAreaPage() {
         {/* 注意喚起 */}
         <h2 className="relative pb-3 mt-16 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           知っておきたい：エアコン修理トラブルが5年で2倍以上に
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333] space-y-4">
           <p>
@@ -573,32 +573,32 @@ export default function OsakaAreaPage() {
         {/* テーマ別 */}
         <h2 className="relative pb-3 mt-16 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           目的別：大阪でエアコン業者を選ぶなら
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="grid md:grid-cols-2 gap-4 text-[13px] md:text-[14px] leading-[1.8]">
           <div className="rounded-lg border border-slate-200 p-5">
-            <p className="font-bold text-sky-600 mb-2">🚨 今日中に直したいなら</p>
+            <p className="font-bold text-sky-600 mb-2">今日中に直したいなら</p>
             <p>
               24時間365日受付の<a href="#aircon-trouble-center" className="text-sky-600 font-semibold hover:underline">エアコントラブルセンター</a>。
               公式サイトに「30分以内に駆け付けます」の案内があります（混雑状況により変動）。
             </p>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <p className="font-bold text-sky-600 mb-2">🏠 大阪の地元業者に頼みたいなら</p>
+            <p className="font-bold text-sky-600 mb-2">大阪の地元業者に頼みたいなら</p>
             <p>
               大阪特化の<a href="#osoji-labo" className="text-sky-600 font-semibold hover:underline">おそうじLabo</a>（クリーニング）や、
               <a href="#kurashi-market" className="text-sky-600 font-semibold hover:underline">くらしのマーケット</a>で大阪の事業者65店を比較。
             </p>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <p className="font-bold text-sky-600 mb-2">🏢 大手の安心感で選ぶなら</p>
+            <p className="font-bold text-sky-600 mb-2">大手の安心感で選ぶなら</p>
             <p>
               大阪府内104店舗の<a href="#duskin-servicemaster" className="text-sky-600 font-semibold hover:underline">ダスキン</a>、
               なんばに大阪支社がある<a href="#yamada-repair" className="text-sky-600 font-semibold hover:underline">ヤマダデンキ出張修理</a>。
             </p>
           </div>
           <div className="rounded-lg border border-slate-200 p-5">
-            <p className="font-bold text-sky-600 mb-2">💰 料金を比較して安く頼みたいなら</p>
+            <p className="font-bold text-sky-600 mb-2">料金を比較して安く頼みたいなら</p>
             <p>
               <a href="#mitsumoa" className="text-sky-600 font-semibold hover:underline">ミツモア</a>で最大5件の無料見積もり、
               明朗会計なら一律料金の<a href="#seifu-ac" className="text-sky-600 font-semibold hover:underline">清風</a>。
@@ -609,7 +609,7 @@ export default function OsakaAreaPage() {
         {/* FAQ */}
         <h2 className="relative pb-3 mt-16 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
           大阪のエアコン修理 よくある質問
-          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-gradient-to-r from-sky-500 to-cyan-400" />
+          <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="space-y-3">
           {faqs.map((f, i) => (

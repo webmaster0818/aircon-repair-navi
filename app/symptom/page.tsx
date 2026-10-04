@@ -10,15 +10,17 @@ export const metadata: Metadata = {
   alternates: { canonical: "/symptom" },
 };
 
-const iconMap: Record<string, { iconSrc: string; color: string; iconBg: string }> = {
-  "not-cooling": { iconSrc: "/images/icon-snowflake.png", color: "bg-sky-50 border-sky-200 hover:bg-sky-100 hover:border-sky-400", iconBg: "bg-sky-100" },
-  "water-leak": { iconSrc: "/images/icon-water-drop.png", color: "bg-blue-50 border-blue-200 hover:bg-blue-100 hover:border-blue-400", iconBg: "bg-blue-100" },
-  noise: { iconSrc: "/images/icon-sound-wave.png", color: "bg-yellow-50 border-yellow-200 hover:bg-yellow-100 hover:border-yellow-400", iconBg: "bg-yellow-100" },
-  "bad-smell": { iconSrc: "/images/icon-nose.png", color: "bg-green-50 border-green-200 hover:bg-green-100 hover:border-green-400", iconBg: "bg-green-100" },
-  "not-starting": { iconSrc: "/images/icon-power.png", color: "bg-red-50 border-red-200 hover:bg-red-100 hover:border-red-400", iconBg: "bg-red-100" },
-  "gas-leak": { iconSrc: "/images/icon-gas.png", color: "bg-purple-50 border-purple-200 hover:bg-purple-100 hover:border-purple-400", iconBg: "bg-purple-100" },
-  "remote-error": { iconSrc: "/images/icon-remote.png", color: "bg-orange-50 border-orange-200 hover:bg-orange-100 hover:border-orange-400", iconBg: "bg-orange-100" },
-  "error-code": { iconSrc: "/images/icon-alert.png", color: "bg-gray-50 border-gray-200 hover:bg-gray-100 hover:border-gray-400", iconBg: "bg-gray-100" },
+// アイコンは2026-10-04に8点を同一スタイルで作り直した（512px/背景透過）。
+// カードの色は変えず、全症状で同じ見た目に統一する（施主指示④）。
+const iconMap: Record<string, string> = {
+  "not-cooling": "/images/icons/icon-not-cooling.png",
+  "water-leak": "/images/icons/icon-water-leak.png",
+  noise: "/images/icons/icon-noise.png",
+  "bad-smell": "/images/icons/icon-bad-smell.png",
+  "not-starting": "/images/icons/icon-not-starting.png",
+  "gas-leak": "/images/icons/icon-gas-leak.png",
+  "remote-error": "/images/icons/icon-remote-error.png",
+  "error-code": "/images/icons/icon-error-code.png",
 };
 
 const order = [
@@ -42,10 +44,10 @@ export default function SymptomHubPage() {
       <Breadcrumb items={[{ name: "症状から探す", href: "/symptom" }]} />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-800 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-5xl mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコンの症状から原因と対処法を探す</h1>
-          <p className="text-sky-100 text-lg max-w-2xl">
+          <p className="text-[var(--color-brand-wash)] max-w-2xl text-sm md:text-base leading-[2]">
             エアコンの故障・トラブルは症状ごとに原因と対処法が異なります。あてはまる症状を選ぶと、考えられる原因・自分でできる対処・業者に頼むべきサイン・修理費用の目安を確認できます。
           </p>
         </div>
@@ -63,16 +65,15 @@ export default function SymptomHubPage() {
                 <Link
                   key={s.slug}
                   href={`/symptom/${s.slug}`}
-                  className={`flex items-start gap-4 p-5 rounded-2xl border-2 transition-all shadow-sm hover:shadow-md ${icon?.color ?? "bg-white border-gray-200 hover:border-sky-300"}`}
+                  className="ac-card flex items-start gap-4 p-5 hover:border-[var(--color-brand)] hover:bg-[var(--color-brand-wash)] transition-colors"
                 >
                   {icon && (
-                    <span className={`flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full ${icon.iconBg}`}>
-                      <img src={icon.iconSrc} alt="" className="w-7 h-7 inline-block" />
-                    </span>
+                    /* eslint-disable-next-line @next/next/no-img-element */
+                    <img src={icon} alt="" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20 shrink-0" />
                   )}
                   <span className="flex-1">
-                    <span className="block font-bold text-slate-900 mb-1">{s.title}</span>
-                    <span className="block text-xs text-gray-500 line-clamp-2">{s.description}</span>
+                    <span className="block font-bold mb-1">{s.title}</span>
+                    <span className="block text-xs text-[var(--color-ink-2)] line-clamp-2 leading-relaxed">{s.description}</span>
                   </span>
                 </Link>
               );

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
@@ -159,7 +160,7 @@ export default async function SymptomPage({
       />
 
       {/* Hero */}
-      <section className="bg-gradient-to-br from-sky-600 to-sky-800 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center gap-3 mb-4">
             <span className={`text-sm font-bold px-3 py-1 rounded-full bg-white/20 ${urgency.color} !text-white`}>
@@ -190,7 +191,7 @@ export default async function SymptomPage({
               <ul className="space-y-2">
                 {quickCheck.map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-slate-700">
-                    <span className="text-sky-500 font-bold flex-shrink-0 mt-0.5">✓</span>
+                    <svg className="w-4 h-4 shrink-0 mt-1.5 text-[var(--color-brand)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.4} aria-hidden="true"><polyline points="4 12 10 18 20 6"/></svg>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -225,7 +226,7 @@ export default async function SymptomPage({
           <ul className="space-y-3">
             {symptom.causes.map((cause, i) => (
               <li key={cause} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
-                <span className="flex-shrink-0 w-6 h-6 bg-sky-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                <span className="flex-shrink-0 w-6 h-6 bg-[var(--color-brand)] rounded-full flex items-center justify-center text-white text-xs font-bold">
                   {i + 1}
                 </span>
                 <span className="text-slate-700">{cause}</span>
@@ -272,7 +273,7 @@ export default async function SymptomPage({
           {costBreakdown.length > 0 ? (
             <div className="overflow-hidden rounded-xl border border-gray-100 shadow-sm">
               <table className="w-full">
-                <thead className="bg-sky-600 text-white">
+                <thead className="bg-[var(--color-brand)] text-white">
                   <tr>
                     <th className="px-5 py-3 text-left text-sm font-bold">原因・修理内容</th>
                     <th className="px-5 py-3 text-right text-sm font-bold">費用目安</th>
@@ -334,10 +335,13 @@ export default async function SymptomPage({
           <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">この症状におすすめの業者</h2>
           <div className="space-y-4">
             {recommendedCompanies.map((c, index) => (
-              <div key={c.slug} className="bg-white rounded-xl p-5 border border-gray-100 shadow-sm flex items-start gap-4">
-                <div className="flex-shrink-0 text-2xl font-black text-sky-500">#{index + 1}</div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-slate-900 mb-1">{c.name}</h3>
+              <div key={c.slug} className="ac-card p-5 flex flex-col sm:flex-row items-start gap-4">
+                <SiteShot slug={c.slug} name={c.name} caption={false} className="w-full sm:w-[180px] shrink-0" />
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-bold text-slate-900 mb-1">
+                    <span className="text-[var(--color-ink-3)] text-sm font-bold mr-1.5">#{index + 1}</span>
+                    {c.name}
+                  </h3>
                   <p className="text-sm text-gray-600 mb-2">{c.tagline}</p>
                   <div className="flex gap-3 text-xs text-gray-500">
                     <span>費用: {c.avgCost}</span>
@@ -347,13 +351,13 @@ export default async function SymptomPage({
                 <div className="flex-shrink-0 flex flex-col items-stretch gap-1.5">
                   <Link
                     href={`/company/${c.slug}`}
-                    className="text-center bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition-colors"
+                    className="ac-btn ac-btn-outline text-xs px-4 py-2"
                   >
                     詳細
                   </Link>
                   <AffiliateOfficialButton
                     slug={c.slug}
-                    className="text-center bg-orange-500 hover:bg-orange-600 text-white text-xs font-bold px-3 py-2 rounded-lg transition-colors whitespace-nowrap"
+                    className="ac-btn ac-btn-cta text-xs px-3 py-2 whitespace-nowrap"
                   />
                 </div>
               </div>
@@ -420,12 +424,12 @@ export default async function SymptomPage({
         )}
 
         {/* CTA */}
-        <div className="bg-gradient-to-r from-sky-600 to-sky-700 rounded-2xl p-8 text-center text-white">
+        <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">まずは無料相談・見積もりを</h2>
           <p className="text-sky-100 text-sm mb-6">専門業者に相談することで、最適な修理方法と費用がわかります。費用は機種・地域・業者で変動するため、正確な額は見積もりでご確認ください。</p>
           <Link
             href="/ranking"
-            className="inline-block bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors shadow-lg"
+            className="ac-btn ac-btn-cta px-8 py-4 text-lg"
           >
             業者ランキングを見る
           </Link>

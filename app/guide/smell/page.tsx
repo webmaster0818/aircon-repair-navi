@@ -67,7 +67,7 @@ export default function SmellPage() {
             この記事ではダイキン公式FAQの記載をベースに、原因→自分でできる範囲→やってはいけないこと→業者クリーニングの順で整理します（{UPDATED}確認）。
           </p>
           <div className="mt-5 rounded-2xl border border-red-200 bg-red-50/70 p-5">
-            <p className="font-bold text-red-800 mb-1">⚠️ 公式の警告: 市販の洗浄スプレーは使用しない</p>
+            <p className="font-bold text-red-800 mb-1">公式の警告： 市販の洗浄スプレーは使用しない</p>
             <p className="text-sm leading-7 text-slate-700">
               ダイキン公式FAQは「市販の洗浄スプレーは、ご使用しないでください」と案内しています。誤った方法での内部クリーニングは<strong>部品破損による水漏れ・電気部品の故障、最悪の場合は発煙発火</strong>につながるおそれがあるためです（{UPDATED}確認）。
             </p>

@@ -127,7 +127,7 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-5">
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image
-              src="/images/hero-c.png"
+              src="/images/hero-c.jpg"
               alt="エアコンの異音を確認するイメージ"
               fill
               priority
@@ -199,7 +199,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="self" className="scroll-mt-24">
@@ -263,7 +263,7 @@ export default function Page() {
               エアコンの異音は、音の種類によって原因がさまざまです。「ガガガ」「カラカラ」はファンや異物、「ポコポコ」はドレンの逆流、「キーン」は電子部品由来などが考えられます。まずはフィルター清掃や目視確認といった安全な範囲で対処し、改善しない場合や他の異常を伴う場合は、無理をせず専門業者に点検を依頼してください。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">異音が続くときは専門業者に相談を</p>
               <p className="text-sky-100 text-sm mb-5">無料見積もりで原因と費用の目安を確認できます。</p>
               <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

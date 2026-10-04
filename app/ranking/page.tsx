@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
@@ -8,7 +9,7 @@ import { getAffiliate } from "@/lib/affiliates";
 import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
-  title: "エアコン修理業者ランキング【2026年8月】おすすめ10社を徹底比較",
+  title: "エアコン修理業者ランキング【2026年8月】おすすめ27社を徹底比較",
   description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
 };
 
@@ -17,99 +18,75 @@ export default function RankingPage() {
     <>
       <Breadcrumb items={[{ name: "業者ランキング", href: "/ranking" }]} />
 
-      <section className="bg-gradient-to-br from-sky-700 to-sky-900 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <span className="inline-block bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">PR</span>
+          <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理業者 総合ランキング</h1>
-          <p className="text-sky-100 text-lg">2026年7月更新・編集部が各社公式サイトを確認して厳選した10社を徹底比較</p>
-          <div className="flex flex-wrap justify-center gap-4 mt-6">
-            <Link href="/ranking/fast" className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
-               即日対応ランキング
+          <p className="text-[var(--color-brand-wash)] text-sm md:text-base">
+            編集部が各社公式サイトを確認して比較した27社。公式サイトの画面は当サイトで撮影したものです
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mt-6">
+            <Link href="/ranking/fast" className="ac-btn bg-white text-[var(--color-brand)] border-white hover:bg-[var(--color-brand-wash)] text-sm">
+              即日対応ランキング
             </Link>
-            <Link href="/ranking/cheap" className="bg-white/20 hover:bg-white/30 text-white text-sm font-bold px-4 py-2 rounded-full transition-colors">
-               安い業者ランキング
+            <Link href="/ranking/cheap" className="ac-btn bg-transparent text-white border-white/60 hover:bg-white/10 text-sm">
+              安い業者ランキング
             </Link>
           </div>
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
-        <div className="space-y-6">
-          {companies.map((c, index) => (
-            <div
-              key={c.slug}
-              className={`bg-white rounded-2xl shadow-sm border-2 overflow-hidden ${
-                index === 0 ? "border-yellow-400" : index === 1 ? "border-gray-300" : index === 2 ? "border-orange-300" : "border-gray-100"
-              }`}
-            >
-              {/* Rank badge */}
-              <div className={`flex items-center gap-3 px-6 py-3 ${
-                index === 0 ? "bg-yellow-50" : index === 1 ? "bg-gray-50" : index === 2 ? "bg-orange-50" : "bg-slate-50"
-              }`}>
-                <span className={`text-2xl font-black ${
-                  index === 0 ? "text-yellow-600" : index === 1 ? "text-gray-500" : index === 2 ? "text-orange-500" : "text-slate-400"
-                }`}>
-                  #{c.rank}
+        <div className="space-y-5">
+          {companies.map((c) => (
+            <div key={c.slug} className="ac-card overflow-hidden">
+              <div className="flex items-center gap-3 px-5 py-3 bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
+                <span className="inline-flex items-center justify-center w-8 h-8 rounded-md bg-[var(--color-brand)] text-white text-sm font-bold shrink-0">
+                  {c.rank}
                 </span>
-                <h2 className="text-xl font-bold text-slate-900">{c.name}</h2>
-                {index < 3 && (
-                  <span className="text-2xl">{index === 0 ? "" : index === 1 ? "" : ""}</span>
-                )}
-                <span className="ml-auto text-sm font-bold text-sky-600"> {c.rating}</span>
+                <h2 className="text-lg font-bold">{c.name}</h2>
               </div>
 
-              <div className="p-6">
-                <p className="text-gray-600 mb-4">{c.description}</p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
-                  <div className="text-center bg-sky-50 rounded-lg p-3">
-                    <p className="text-xs text-gray-500 mb-1">費用目安</p>
-                    <p className="font-bold text-sky-700 text-sm">{c.avgCost}</p>
+              <div className="p-5 md:flex md:gap-5">
+                <SiteShot slug={c.slug} name={c.name} className="md:w-[280px] shrink-0 mb-4 md:mb-0" />
+
+                <div className="flex-1 min-w-0">
+                  <p className="text-sm text-[var(--color-ink-2)] leading-[2] mb-4">{c.description}</p>
+
+                  <dl className="grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden text-center mb-4">
+                    {([["費用目安", c.avgCost], ["対応速度", c.responseTime], ["対応エリア", c.coverage]] as const).map(([k, v], i) => (
+                      <div key={k} className={`px-2 py-3 ${i < 2 ? "border-r border-[var(--color-line)]" : ""}`}>
+                        <dt className="text-[11px] text-[var(--color-ink-3)] mb-0.5">{k}</dt>
+                        <dd className="font-bold text-sm text-[var(--color-brand)] leading-snug">{v}</dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  <div className="flex flex-wrap gap-1.5 mb-4">
+                    {c.features.map((f) => (
+                      <span key={f} className="text-[11px] border border-[var(--color-line-strong)] text-[var(--color-brand)] px-2 py-0.5 rounded">{f}</span>
+                    ))}
                   </div>
-                  <div className="text-center bg-green-50 rounded-lg p-3">
-                    <p className="text-xs text-gray-500 mb-1">対応速度</p>
-                    <p className="font-bold text-green-700 text-sm">{c.responseTime}</p>
+
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <Link href={`/company/${c.slug}`} className="ac-btn ac-btn-outline flex-1 text-sm">
+                      詳細を見る
+                    </Link>
+                    {getAffiliate(c.slug) ? (
+                      <AffiliateOfficialButton slug={c.slug} className="ac-btn ac-btn-cta flex-1 text-sm" />
+                    ) : getFelmat(c.slug) ? (
+                      <FelmatOfficialButton slug={c.slug} className="ac-btn ac-btn-cta flex-1 text-sm" />
+                    ) : (
+                      <a
+                        href={c.officialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="ac-btn ac-btn-cta flex-1 text-sm"
+                      >
+                        公式サイトへ（PR）
+                      </a>
+                    )}
                   </div>
-                  <div className="text-center bg-blue-50 rounded-lg p-3">
-                    <p className="text-xs text-gray-500 mb-1">対応エリア</p>
-                    <p className="font-bold text-blue-700 text-sm">{c.coverage}</p>
-                  </div>
-                  <div className="text-center bg-purple-50 rounded-lg p-3">
-                    <p className="text-xs text-gray-500 mb-1">評価</p>
-                    <p className="font-bold text-purple-700 text-sm"> {c.rating}</p>
-                  </div>
-                </div>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {c.features.map((f) => (
-                    <span key={f} className="text-xs bg-sky-100 text-sky-700 px-2 py-1 rounded-full">{f}</span>
-                  ))}
-                </div>
-                <div className="flex gap-3">
-                  <Link
-                    href={`/company/${c.slug}`}
-                    className="flex-1 text-center bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
-                  >
-                    詳細を見る
-                  </Link>
-                  {getAffiliate(c.slug) ? (
-                    <AffiliateOfficialButton
-                      slug={c.slug}
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
-                    />
-                  ) : getFelmat(c.slug) ? (
-                    <FelmatOfficialButton
-                      slug={c.slug}
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
-                    />
-                  ) : (
-                    <a
-                      href={c.officialUrl}
-                      target="_blank"
-                      rel="noopener noreferrer nofollow"
-                      className="flex-1 text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-sm transition-colors"
-                    >
-                      公式サイトへ（PR）
-                    </a>
-                  )}
                 </div>
               </div>
             </div>
@@ -134,7 +111,7 @@ export default function RankingPage() {
 
         {/* Related Links */}
         <div className="mt-6 bg-sky-50 border border-sky-200 rounded-xl p-4 text-sm">
-          <Link href="/cost/price-index/" className="font-bold text-sky-700 hover:underline">📊 27社の料金実査データ（2026年7月・出張費/見積無料/実額の一覧）→</Link>
+          <Link href="/cost/price-index/" className="font-bold text-sky-700 hover:underline">27社の料金実査データ（2026年7月・出張費/見積無料/実額の一覧）→</Link>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">

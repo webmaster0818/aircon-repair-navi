@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
@@ -105,16 +106,7 @@ export default function Page() {
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image
-              src="/images/hero-a.png"
-              alt="室内機のエアコン修理を行う作業のイメージ"
-              fill
-              priority
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 768px"
-            />
-          </div>
+          <SiteShot slug="sumai-hotline" name="すまいのホットライン" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
@@ -205,7 +197,7 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として口コミ本文の転載・創作はせず、公式サイトの掲載口コミやレビュー傾向から確認できた<strong className="font-semibold">傾向の要約</strong>のみお伝えします。エアコン修理カテゴリの掲載口コミは平均★4.75・736件（2026年8月3日確認）でした。
+              当サイトの方針として口コミ本文の転載・創作はせず、公式サイトの掲載口コミやレビュー傾向から確認できた<strong className="font-semibold">傾向の要約</strong>のみお伝えします。エアコン修理カテゴリの掲載口コミは平均4.75（5点満点）・736件（2026年8月3日確認）でした。
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
@@ -231,7 +223,7 @@ export default function Page() {
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-            <Image src="/images/hero-b.png" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
 
           <section id="bad" className="scroll-mt-24">
@@ -321,7 +313,7 @@ export default function Page() {
           <div className="my-8 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
             <p className="text-base font-bold text-slate-800 mb-1">口コミと料金を比べて選びたい方へ</p>
             <p className="text-sm text-slate-500 mb-4">掲載店舗の口コミ・料金を比較して、症状と費用の目安を確認できます。</p>
-            <a href="https://hotlines.shop/repair-aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-sky-600 px-7 py-3 font-bold text-white hover:bg-sky-700 transition-colors">
+            <a href="https://hotlines.shop/repair-aircon/" target="_blank" rel="noopener noreferrer" className="ac-btn ac-btn-primary px-7 py-3">
               住まいのホットラインでエアコン修理店を探す
             </a>
           </div>
@@ -337,7 +329,7 @@ export default function Page() {
                 ["動作確認・支払い", "正常に動くか確認し、作業後に担当店舗へ直接支払って完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
-                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-sky-600 text-white font-bold text-sm">{i + 1}</span>
+                  <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
                   <div>
                     <p className="font-semibold text-slate-900">{t}</p>
                     <p className="text-slate-600 text-[0.95rem] leading-7">{d}</p>
@@ -371,7 +363,7 @@ export default function Page() {
               エアコン修理は症状によって費用が変わります。急ぎでないときは複数の店舗を比較し、料金と口コミを見比べて選ぶと失敗を防げます。今日・明日中に確実に来てほしいときは、24時間受付の直接依頼型とも相見積もりを取るのが安全です。
             </p>
 
-            <div className="mt-8 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">口コミと料金を比べて選びたい方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは店舗の口コミ・料金を比較して、症状と費用の目安を確認してみましょう。</p>
               <a href="https://hotlines.shop/repair-aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

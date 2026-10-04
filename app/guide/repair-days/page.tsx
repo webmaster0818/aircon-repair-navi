@@ -141,7 +141,7 @@ export default function RepairDaysPage() {
                 ["総額の見積もりを書面で確認してから依頼", "国民生活センターは2026年6月、ネット広告の「安い」「即日」をうたう業者との修理トラブル（相談件数は5年で2倍超）に注意喚起を出しています。急いでいても、作業前に総額を書面・メールで受け取ることだけは省かないでください。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4 rounded-2xl border border-slate-200 p-5">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-sky-600 text-white font-bold">{i + 1}</span>
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-brand)] text-white font-bold">{i + 1}</span>
                   <div>
                     <p className="font-bold text-slate-900">{t}</p>
                     <p className="mt-1 text-sm leading-7 text-slate-600">{d}</p>
@@ -149,7 +149,7 @@ export default function RepairDaysPage() {
                 </li>
               ))}
             </ol>
-            <div className="mt-6 rounded-2xl bg-gradient-to-br from-sky-700 to-sky-900 p-7 text-center text-white">
+            <div className="mt-6 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">今日・明日中に直したい人へ</p>
               <p className="text-sky-100 text-sm mb-5">24時間受付・即日対応をうたう業者を比較しています。</p>
               <Link href="/ranking/fast" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">

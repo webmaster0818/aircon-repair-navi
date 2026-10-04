@@ -70,7 +70,7 @@ export default function ReplaceVsRepairPage() {
         ]}
       />
 
-      <section className="bg-gradient-to-br from-purple-700 to-purple-900 text-white py-12">
+      <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">修理 vs 買い替え 判断ガイド</h1>
           <p className="text-purple-100 text-lg">どっちがお得か？状況別に徹底解説</p>
@@ -226,13 +226,13 @@ export default function ReplaceVsRepairPage() {
         </section>
 
         {/* CTA */}
-        <div className="bg-gradient-to-r from-sky-600 to-sky-700 rounded-2xl p-8 text-center text-white">
+        <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
           <h2 className="text-xl font-bold mb-3">まずは専門業者に相談してみよう</h2>
           <p className="text-sky-100 text-sm mb-6">修理か買い替えか迷ったら、プロの診断を受けることが一番確実です。多くの業者が無料で診断してくれます。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ranking"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-bold px-8 py-3 rounded-xl transition-colors"
+              className="ac-btn ac-btn-cta px-8 py-3"
             >
               業者ランキングを見る
             </Link>

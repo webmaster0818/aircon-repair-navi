@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const navLinks = [
   { href: "/ranking", label: "業者ランキング" },
+  { href: "/#area", label: "エリアから探す" },
   { href: "/symptom/not-cooling", label: "症状から探す", children: [
     { href: "/symptom/not-cooling", label: "冷えない" },
     { href: "/symptom/water-leak", label: "水漏れ" },
@@ -22,7 +23,7 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-100">
+    <header className="sticky top-0 z-50 bg-[var(--color-surface)] border-b border-[var(--color-line)]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -30,7 +31,7 @@ export default function SiteHeader() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logos/logo-header.png" alt="エアコン修理ナビ ロゴ" width={36} height={36} className="w-9 h-9 rounded-md" />
             <div>
-              <span className="font-bold text-lg text-sky-500 leading-none block">エアコン修理ナビ</span>
+              <span className="font-bold text-lg text-[var(--color-brand)] leading-none block">エアコン修理ナビ</span>
             </div>
           </Link>
 
@@ -40,7 +41,7 @@ export default function SiteHeader() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-gray-700 hover:text-sky-500 transition-colors"
+                className="text-sm font-medium text-[var(--color-ink-2)] hover:text-[var(--color-brand)] transition-colors"
               >
                 {link.label}
               </Link>
@@ -51,7 +52,7 @@ export default function SiteHeader() {
           <div className="hidden md:block">
             <Link
               href="/ranking"
-              className="bg-orange-500 hover:bg-orange-600 text-white text-sm font-bold px-4 py-2 rounded-lg transition-colors"
+              className="ac-btn ac-btn-primary text-sm px-4 py-2"
             >
               業者を探す
             </Link>
@@ -59,7 +60,7 @@ export default function SiteHeader() {
 
           {/* Hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
+            className="md:hidden p-2 rounded-lg text-[var(--color-ink-2)] hover:bg-[var(--color-wash)]"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="メニューを開く"
           >
@@ -76,13 +77,13 @@ export default function SiteHeader() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 shadow-lg">
+        <div className="md:hidden bg-[var(--color-surface)] border-t border-[var(--color-line)]">
           <nav className="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <div key={link.href}>
                 <Link
                   href={link.href}
-                  className="block py-2 px-3 rounded-lg text-sm font-medium text-gray-700 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                  className="block py-2 px-3 rounded-lg text-sm font-medium text-[var(--color-ink-2)] hover:bg-[var(--color-brand-wash)] hover:text-[var(--color-brand)] transition-colors"
                   onClick={() => setMenuOpen(false)}
                 >
                   {link.label}
@@ -93,7 +94,7 @@ export default function SiteHeader() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block py-1.5 px-3 rounded-lg text-xs text-gray-600 hover:bg-sky-50 hover:text-sky-600 transition-colors"
+                        className="block py-1.5 px-3 rounded-lg text-xs text-[var(--color-ink-3)] hover:bg-[var(--color-brand-wash)] hover:text-[var(--color-brand)] transition-colors"
                         onClick={() => setMenuOpen(false)}
                       >
                         {child.label}
@@ -103,10 +104,10 @@ export default function SiteHeader() {
                 )}
               </div>
             ))}
-            <div className="mt-3 pt-3 border-t border-gray-100">
+            <div className="mt-3 pt-3 border-t border-[var(--color-line)]">
               <Link
                 href="/ranking"
-                className="block text-center bg-orange-500 text-white text-sm font-bold py-3 rounded-lg"
+                className="ac-btn ac-btn-primary w-full text-sm"
                 onClick={() => setMenuOpen(false)}
               >
                 業者を探す
