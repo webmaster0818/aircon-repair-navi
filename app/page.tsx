@@ -83,49 +83,50 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* ============ ヒーロー ============
-          写真は左、文字は右の明るい面に置く。文字の上に色を被せず、
-          背景とのコントラストで読ませる（施主指示⑤）。 */}
-      <section className="relative bg-[var(--color-surface)] border-b border-[var(--color-line)]">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-[1.05fr_1fr]">
-          <div className="relative min-h-[260px] lg:min-h-[520px] order-1 lg:order-none">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/hero.jpg"
-              alt="エアコンの室内機を点検する修理スタッフ"
-              className="absolute inset-0 w-full h-full object-cover"
-              fetchPriority="high"
-            />
-          </div>
+          2026-10-08 施主指示: 英字のラベルを外し、キービジュアルを最上部に全幅で置く。
+          文字の上に色を被せず、写真と文字を上下に分ける。 */}
+      <section className="bg-[var(--color-surface)] border-b border-[var(--color-line)]">
+        <div className="relative w-full h-[220px] sm:h-[320px] lg:h-[440px] overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/hero.jpg"
+            alt="エアコンの室内機を点検する修理スタッフ"
+            className="absolute inset-0 w-full h-full object-cover"
+            fetchPriority="high"
+          />
+        </div>
 
-          <div className="px-6 py-12 lg:px-14 lg:py-20 flex flex-col justify-center">
-            <span className="ac-eyebrow self-start">AIRCON REPAIR GUIDE</span>
-            <h1 className="mt-6 text-[28px] lg:text-[40px] font-bold leading-[1.45] text-[var(--color-ink)]">
-              エアコンが壊れた。
-              <br />
-              <span className="text-[var(--color-brand)]">どこに頼むか</span>を、
-              <br className="hidden lg:block" />
-              5分で決める。
-            </h1>
-            <p className="mt-6 text-sm lg:text-base text-[var(--color-ink-2)] leading-[2.1]">
-              症状から原因を切り分け、費用の目安を確かめ、全国27社から条件に合う業者を選べます。
-              料金は各社が公表している金額のみを掲載しています。
-            </p>
+        <div className="max-w-6xl mx-auto px-4 py-10 lg:py-14">
+          <div className="grid lg:grid-cols-[1.25fr_1fr] gap-8 lg:gap-14 items-start">
+            <div>
+              <h1 className="text-[28px] lg:text-[40px] font-bold leading-[1.45] text-[var(--color-ink)]">
+                エアコンが壊れた。
+                <br />
+                <span className="text-[var(--color-brand)]">どこに頼むか</span>を、
+                <br className="hidden lg:block" />
+                5分で決める。
+              </h1>
+              <p className="mt-6 text-sm lg:text-base text-[var(--color-ink-2)] leading-[2.1]">
+                症状から原因を切り分け、費用の目安を確かめ、全国27社から条件に合う業者を選べます。
+                料金は各社が公表している金額のみを掲載しています。
+              </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <Link href="#symptom" className="ac-btn ac-btn-primary">
-                症状から探す
-                <Chevron />
-              </Link>
-              <Link href="#area" className="ac-btn ac-btn-outline">
-                エリアから探す
-                <Chevron />
-              </Link>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <Link href="#symptom" className="ac-btn ac-btn-primary">
+                  症状から探す
+                  <Chevron />
+                </Link>
+                <Link href="#area" className="ac-btn ac-btn-outline">
+                  エリアから探す
+                  <Chevron />
+                </Link>
+              </div>
             </div>
 
-            <dl className="mt-10 grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden">
+            <dl className="grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden lg:mt-2">
               {[
                 ["掲載業者", "27社"],
-                ["対応エリア", "191"],
+                ["対応エリア", "214"],
                 ["症状別ガイド", "8種"],
               ].map(([k, v], i) => (
                 <div key={k} className={`px-3 py-4 text-center ${i < 2 ? "border-r border-[var(--color-line)]" : ""}`}>

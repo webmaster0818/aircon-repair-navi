@@ -47,20 +47,17 @@ export default function AreaFinder() {
 
         {/* ===== 東京都（別枠・最上段） ===== */}
         <div className="ac-card overflow-hidden mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 px-4 md:px-5 py-4 bg-[var(--color-brand)] text-white">
-            <div className="flex items-baseline gap-3 whitespace-nowrap">
-              <span className="text-lg font-bold">東京都</span>
-              <span className="text-[11px] text-white/70">23区・多摩地域 {tokyoAll.length}エリア</span>
-            </div>
+          <div className="flex items-center justify-between gap-3 px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
             <Link
               href="/area/tokyo/"
-              className="shrink-0 self-start sm:self-auto inline-flex items-center gap-1.5 rounded-md bg-white/15 hover:bg-white/25 border border-white/30 px-4 min-h-[44px] text-xs font-bold transition-colors"
+              className="inline-flex items-center gap-1.5 min-h-[44px] font-bold text-[var(--color-brand)] hover:underline underline-offset-4"
             >
-              東京都の全体
-              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
+              東京都
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} aria-hidden="true">
                 <polyline points="9 6 15 12 9 18" />
               </svg>
             </Link>
+            <span className="text-xs text-[var(--color-ink-2)]">23区・多摩地域 {tokyoAll.length}エリア</span>
           </div>
 
           <div className="p-4 md:p-5">
