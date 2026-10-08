@@ -45,9 +45,12 @@ export default function AreaFinder() {
           </p>
         </div>
 
-        {/* ===== 東京都（別枠・最上段） ===== */}
-        <div className="ac-card overflow-hidden mb-6">
-          <div className="flex items-center justify-between gap-3 px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
+        {/* ===== 東京都（別枠・最上段） =====
+            2026-10-08: 他の地方と同じアコーディオンにした（施主指示）。
+            見出しの「東京都」はリンクのまま（押すと都のページへ行く）、
+            右側のシェブロンで開閉する。既定は開いた状態。 */}
+        <details className="ac-card overflow-hidden mb-6 group" open>
+          <summary className="flex items-center justify-between gap-3 cursor-pointer list-none px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
             <Link
               href="/area/tokyo/"
               className="inline-flex items-center gap-1.5 min-h-[44px] font-bold text-[var(--color-brand)] hover:underline underline-offset-4"
@@ -57,8 +60,20 @@ export default function AreaFinder() {
                 <polyline points="9 6 15 12 9 18" />
               </svg>
             </Link>
-            <span className="text-xs text-[var(--color-ink-2)]">23区・多摩地域 {tokyoAll.length}エリア</span>
-          </div>
+            <span className="flex items-center gap-2 text-xs text-[var(--color-ink-2)]">
+              23区・多摩地域 {tokyoAll.length}エリア
+              <svg
+                className="w-4 h-4 transition-transform group-open:rotate-180"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </span>
+          </summary>
 
           <div className="p-4 md:p-5">
             <p className="text-[11px] font-bold tracking-widest text-[var(--color-ink-3)] mb-3">23区から探す</p>
@@ -95,7 +110,7 @@ export default function AreaFinder() {
               </>
             )}
           </div>
-        </div>
+        </details>
 
         {/* ===== 東京都以外の地方 ===== */}
         <div className="grid gap-3 md:grid-cols-2 items-start">
