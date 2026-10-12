@@ -49,8 +49,8 @@ export default function AreaFinder() {
             2026-10-08: 他の地方と同じアコーディオンにした（施主指示）。
             見出しの「東京都」はリンクのまま（押すと都のページへ行く）、
             右側のシェブロンで開閉する。既定は開いた状態。 */}
-        <details className="ac-card overflow-hidden mb-6 group" open>
-          <summary className="flex items-center justify-between gap-3 cursor-pointer list-none px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
+        <details className="ac-card overflow-hidden mb-6 group">
+          <summary className="flex items-center justify-between gap-3 cursor-pointer list-none px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-transparent group-open:border-[var(--color-line)]">
             <Link
               href="/area/tokyo/"
               className="inline-flex items-center gap-1.5 min-h-[44px] font-bold text-[var(--color-brand)] hover:underline underline-offset-4"
@@ -118,9 +118,8 @@ export default function AreaFinder() {
             <details
               key={region.key}
               className="ac-card overflow-hidden group"
-              open={region.key === "kanto" || region.key === "kinki"}
             >
-              <summary className="flex items-center justify-between gap-3 cursor-pointer list-none px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)]">
+              <summary className="flex items-center justify-between gap-3 cursor-pointer list-none px-4 md:px-5 min-h-[56px] bg-[var(--color-brand-wash)] border-b border-transparent group-open:border-[var(--color-line)]">
                 <span className="font-bold text-[var(--color-brand)]">{region.name}</span>
                 <span className="flex items-center gap-2 text-xs text-[var(--color-ink-2)]">
                   {region.prefs.length}県
