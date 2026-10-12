@@ -1,4 +1,5 @@
 import Analytics from "@/app/components/Analytics";
+import MotionRoot from "./components/MotionRoot";
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteHeader from "./components/SiteHeader";
@@ -41,6 +42,7 @@ export default function RootLayout({
         </div>
 
         <SiteHeader />
+        <MotionRoot />
         <main className="flex-1">{children}
         <script
           type="application/ld+json"

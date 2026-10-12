@@ -23,7 +23,7 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[var(--color-surface)] border-b border-[var(--color-line)]">
+    <header className="sticky top-0 z-50 bg-[var(--color-brand)] border-b border-[var(--color-brand-dark)]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -31,7 +31,7 @@ export default function SiteHeader() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/logos/logo-header.png" alt="エアコン修理ナビ ロゴ" width={36} height={36} className="w-9 h-9 rounded-md" />
             <div>
-              <span className="font-bold text-lg text-[var(--color-brand)] leading-none block">エアコン修理ナビ</span>
+              <span className="font-bold text-lg text-white leading-none block">エアコン修理ナビ</span>
             </div>
           </Link>
 
@@ -41,7 +41,7 @@ export default function SiteHeader() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-[var(--color-ink-2)] hover:text-[var(--color-brand)] transition-colors"
+                className="text-sm font-medium text-white/85 hover:text-white transition-colors"
               >
                 {link.label}
               </Link>
@@ -52,7 +52,7 @@ export default function SiteHeader() {
           <div className="hidden md:block">
             <Link
               href="/ranking"
-              className="ac-btn ac-btn-primary text-sm px-4 py-2"
+              className="ac-btn ac-btn-onbrand text-sm px-4 py-2"
             >
               業者を探す
             </Link>
@@ -60,7 +60,7 @@ export default function SiteHeader() {
 
           {/* Hamburger */}
           <button
-            className="md:hidden p-2 rounded-lg text-[var(--color-ink-2)] hover:bg-[var(--color-wash)]"
+            className="md:hidden p-2 rounded-lg text-white hover:bg-white/10"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="メニューを開く"
           >

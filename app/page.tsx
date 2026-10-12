@@ -295,52 +295,58 @@ export default function HomePage() {
             <p className="text-[var(--color-ink-2)] text-sm">各社の公式サイトを当サイトで撮影して掲載しています</p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {companies.map((c) => (
-              <div key={c.slug} className="ac-card overflow-hidden flex flex-col">
-                <div className="relative">
-                  <SiteShot slug={c.slug} name={c.name} caption={false} className="[&>div]:rounded-none [&>div]:border-0 [&>div]:border-b [&>div]:border-[var(--color-line)]" />
-                  {!hasShot(c.slug) && (
-                    <div className="aspect-[16/10] bg-[var(--color-brand-wash)] border-b border-[var(--color-line)] flex items-center justify-center text-xs text-[var(--color-ink-3)]">
-                      公式サイト画像は準備中
-                    </div>
-                  )}
-                </div>
-
-                <div className="p-4 flex flex-col flex-1">
-                  <div className="flex items-baseline gap-2">
-                    <span className="text-xs font-bold text-[var(--color-ink-3)]">#{c.rank}</span>
-                    <h3 className="font-bold leading-snug">{c.name}</h3>
-                  </div>
-                  <p className="text-xs text-[var(--color-ink-3)] mt-1 leading-relaxed">{c.tagline}</p>
-
-                  <dl className="mt-3 border border-[var(--color-line)] rounded-lg divide-y divide-[var(--color-line)] text-xs">
-                    <div className="flex px-3 py-2">
-                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">費用</dt>
-                      <dd className="font-bold">{c.avgCost}</dd>
-                    </div>
-                    <div className="flex px-3 py-2">
-                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">速度</dt>
-                      <dd className="font-bold">{c.responseTime}</dd>
-                    </div>
-                    <div className="flex px-3 py-2">
-                      <dt className="w-16 text-[var(--color-ink-3)] shrink-0">エリア</dt>
-                      <dd className="font-bold">{c.coverage}</dd>
-                    </div>
-                  </dl>
-
-                  <div className="flex flex-col gap-2 mt-auto pt-4">
-                    <Link href={`/company/${c.slug}`} className="ac-btn ac-btn-outline w-full text-xs py-2.5">
-                      詳細を見る
-                      <Chevron className="w-3.5 h-3.5" />
-                    </Link>
-                    <AffiliateOfficialButton slug={c.slug} className="ac-btn ac-btn-cta w-full text-xs py-2.5" />
-                    <FelmatOfficialButton slug={c.slug} className="ac-btn ac-btn-cta w-full text-xs py-2.5" />
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/* マイベストの比較表を実測して合わせた構成（2026-10-12 施主指示）:
+              各社を縦に並べ、左の「順位」「社名」を固定したまま
+              横スクロールで項目を比べられる表にする */}
+          <div className="ac-cmp-wrap">
+            <table className="ac-cmp">
+              <thead>
+                <tr>
+                  <th className="c-rank">#</th>
+                  <th className="c-name">業者名</th>
+                  <th className="nowrap">費用の目安</th>
+                  <th className="nowrap">対応の速さ</th>
+                  <th className="nowrap">対応エリア</th>
+                  <th>主な特徴</th>
+                  <th className="nowrap">詳細</th>
+                  <th className="nowrap">公式</th>
+                </tr>
+              </thead>
+              <tbody>
+                {companies.map((c) => (
+                  <tr key={c.slug}>
+                    <th scope="row" className="c-rank">{c.rank}</th>
+                    <td className="c-name">
+                      <Link href={`/company/${c.slug}`} className="font-bold leading-snug no-underline hover:underline">
+                        {c.name}
+                      </Link>
+                      <span className="block text-[11px] text-[var(--color-ink-3)] leading-snug mt-0.5">{c.tagline}</span>
+                    </td>
+                    <td className="nowrap font-bold">{c.avgCost}</td>
+                    <td className="nowrap">{c.responseTime}</td>
+                    <td className="nowrap">{c.coverage}</td>
+                    <td>
+                      <span className="flex flex-wrap gap-1 max-w-[22rem]">
+                        {(c.features ?? []).slice(0, 3).map((ft: string) => (
+                          <span key={ft} className="inline-block rounded border border-[var(--color-line)] px-1.5 py-0.5 text-[11px] text-[var(--color-ink-2)] whitespace-nowrap">
+                            {ft}
+                          </span>
+                        ))}
+                      </span>
+                    </td>
+                    <td className="nowrap">
+                      <Link href={`/company/${c.slug}`} className="ac-btn ac-btn-outline text-xs px-3 py-2">詳細</Link>
+                    </td>
+                    <td className="nowrap">
+                      <AffiliateOfficialButton slug={c.slug} className="ac-btn ac-btn-cta text-xs px-3 py-2" />
+                      <FelmatOfficialButton slug={c.slug} className="ac-btn ac-btn-cta text-xs px-3 py-2" />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+          <p className="ac-cmp-hint">表は横にスクロールできます。順位と業者名は固定されたまま、各項目を比べられます。</p>
         </div>
       </section>
 
