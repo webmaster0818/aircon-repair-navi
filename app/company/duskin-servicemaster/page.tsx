@@ -8,20 +8,21 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "ダスキン サービスマスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ダスキンのエアコンクリーニングの口コミ・評判は？悪い口コミ・料金・満足の保証を調査【2026年10月】",
   description:
-    "エアコンクリーニング「ダスキン サービスマスター」の口コミ・評判をまとめました。オリコン・Googleマップ等の実際の利用者の声、料金の目安、対応エリアや注意点、メリットまで中立的に解説します。",
+    "ダスキンのエアコンクリーニング（サービスマスター）の口コミ・評判をまとめました。オリコン・Googleマップ等の実際の利用者の声、料金の目安、対応エリアや注意点、メリットまで中立的に解説します。",
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月14日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
+  { id: "latest", label: "2026年10月の料金・キャンペーン・保証の申し出期限" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "good", label: "良い口コミ・評判の傾向" },
+  { id: "bad", label: "悪い口コミ・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
@@ -77,7 +78,11 @@ const faqs = [
   },
   {
     q: "仕上がりに満足できなかった場合はどうなりますか？",
-    a: "ダスキンには「満足の保証」という制度があり、サービスに満足できなかった場合には満足されるまで何度でもサービスをやり直すと公式サイトに明記されています。対象サービスにはサービスマスター(ハウスクリーニング)が含まれます(2026年8月2日確認)。申し出方法や条件の詳細は担当店に確認してください。",
+    a: "ダスキンには「満足の保証」という制度があり、サービスに満足できなかった場合には満足されるまで何度でもサービスをやり直すと公式サイトに明記されています。対象サービスにはサービスマスター(ハウスクリーニング)が含まれます(2026年8月2日確認)。申し出は作業終了時に仕上がりを確認してサインしたうえで、実施日を含む3日以内(土日祝を除く)に担当店へ連絡する決まりです(2026年10月14日確認)。",
+  },
+  {
+    q: "ダスキンのエアコンクリーニングは「やばい」って本当ですか？",
+    a: "「やばい」という検索は、みん評などで水漏れ・ルーバー破損といった作業後のトラブルの投稿が見られることが背景にあると考えられます。一方で、大手の体制や時間厳守を評価する声もあり、評価は加盟店(担当店)によって分かれます。ダスキンには不備があればやり直す「満足の保証」があり、申し出は実施日を含む3日以内(土日祝を除く)です。作業直後に動作と仕上がりを確認し、気になる点はその場か期限内に伝えるのが確実です(2026年10月14日公式確認)。",
   },
 ];
 
@@ -85,9 +90,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ダスキン サービスマスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ダスキンのエアコンクリーニングの口コミ・評判は？悪い口コミ・料金・満足の保証を調査【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -121,14 +126,14 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ダスキン サービスマスターの口コミ・評判は？
+            ダスキンのエアコンクリーニングの口コミ・評判は？
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            悪い口コミ・料金・満足の保証を調査【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -186,6 +191,41 @@ export default function Page() {
             />
           </section>
 
+          <section id="latest" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の料金・キャンペーン・保証の申し出期限</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年10月14日に公式サイト（duskin.jp）でエアコンクリーニングの料金ページと「満足の保証」のページを確認し直しました。料金は8月の確認時点から変わっていません（税込）。
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["壁掛け（幅120cm未満）", "1台15,400円／2台セット25,300円／3台目以降1台12,650円"],
+                    ["壁掛け（幅120cm以上・お掃除機能なし）", "18,700円"],
+                    ["お掃除機能付き", "1台26,400円／2台セット47,300円／3台目以降1台23,650円"],
+                    ["お掃除機能なし＋付きの2台", "36,300円"],
+                    ["作業時間の目安", "お掃除機能なし1〜1.5時間／付き1.5〜3時間"],
+                    ["実施中のキャンペーン", "キャッシュレスキャンペーン第2弾（2026年9月1日〜11月30日・20,000円以上を対象の決済で支払うと1,500ポイント）"],
+                    ["満足の保証の申し出期限", "作業終了時に仕上がりを確認してサイン → 実施日を含む3日以内（土日祝を除く）に担当店へ連絡"],
+                    ["問い合わせ", "ダスキンコンタクトセンター 0120-100-100（365日 8:00〜20:00）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              口コミで目立つ「作業後の水漏れ・部品の破損」に備えるうえで大事なのが、<strong className="font-semibold">満足の保証の申し出期限が短い</strong>ことです。作業当日に運転して水漏れや異音がないかを確認し、気になる点は3日以内（土日祝を除く）に担当店へ伝えましょう。料金は「条件があります」と注記されており、本体の両側にファンがある機種はお掃除機能付きの料金になる、土日祝や夜間は受けられない・追加費用がかかる場合がある、作業前に下見の訪問がある、といった条件が公式に書かれています。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              他社との料金比較は、首都圏の<Link href="/company/r-cleaning/" className="text-sky-600 underline underline-offset-2">アールクリーニング</Link>（壁掛けキャンペーン価格10,780円）、関東・関西・東海の<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風</Link>（壁掛け13,200円）など、同日に確認した各社の料金を<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>とあわせて見ると判断しやすくなります。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：ダスキン公式サイト（エアコンクリーニング料金ページ・満足の保証、2026年10月14日確認）。料金の適用条件は担当店にご確認ください。</p>
+          </section>
+
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
             <p className="leading-8 text-slate-700">
@@ -223,7 +263,7 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
               当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。ダスキン サービスマスターについては、オリコン顧客満足度・Googleマップ・口コミ調査記事などで利用者の評価が公開されています。
             </p>
@@ -245,7 +285,7 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">悪い口コミ・利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
               評価が高い一方で、フランチャイズ展開のサービスという性質上、
               <strong className="font-semibold">料金は他社より高めで、店舗によって対応に差が出る場合がある</strong>
@@ -534,10 +574,10 @@ export default function Page() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/ranking", label: "エアコン修理業者ランキング" },
-                { href: "/ranking/fast", label: "対応が早い修理業者" },
-                { href: "/cost/repair-price", label: "エアコン修理の料金相場" },
-                { href: "/cost/replace-vs-repair", label: "修理と買い替えどちらが得か" },
+                { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場と業者別の口コミ" },
+                { href: "/company/osoji-labo/", label: "おそうじLaboの口コミ・評判" },
+                { href: "/company/r-cleaning/", label: "アールクリーニングの口コミ・評判" },
+                { href: "/company/seifu-ac/", label: "エアコンクリーニング清風の口コミ・評判" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

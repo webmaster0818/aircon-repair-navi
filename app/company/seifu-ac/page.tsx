@@ -8,16 +8,17 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアコンクリーニング清風の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "エアコンクリーニング清風（せいふう）の口コミ・評判は？運営会社・料金・対応エリアを調査【2026年10月】",
   description:
     "エアコンクリーニング専門店「清風」の口コミ・評判をまとめました。実際の利用者の声、機種を問わない一律料金、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
   alternates: { canonical: "/company/seifu-ac" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月14日";
 
 const toc = [
   { id: "summary", label: "エアコンクリーニング清風とは" },
+  { id: "latest", label: "2026年10月の確認結果（運営会社・料金・保証）" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
@@ -45,7 +46,7 @@ const faqs = [
   },
   {
     q: "料金はどのくらいですか？",
-    a: "公式サイトでは、家庭用壁掛けスタンダードが13,200円、お掃除機能付きが18,700円、天井埋込カセット型が26,400円(1台・税込)と案内されています。機種を問わない一律料金で、2台目から割引がある点が特徴です。最新の料金は申し込み時にご確認ください。",
+    a: "公式サイトでは、家庭用壁掛けスタンダードが13,200円、お掃除機能付きが18,700円、天井埋込カセット型が26,400円(1台・税込)と案内されています。機種を問わない一律料金で、汚れ具合や作業時間による追加料金はなしと明記されています。業務用は2〜3台で1台あたり33,000円になります(2026年10月14日確認)。最新の料金は申し込み時にご確認ください。",
   },
   {
     q: "お掃除機能付きエアコンも対応できますか？",
@@ -85,9 +86,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコンクリーニング清風の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "エアコンクリーニング清風（せいふう）の口コミ・評判は？運営会社・料金・対応エリアを調査【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -121,14 +122,14 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            エアコンクリーニング清風の口コミ・評判は？
+            エアコンクリーニング清風（せいふう）の口コミ・評判は？
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            運営会社・料金・対応エリアを調査【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -178,13 +179,47 @@ export default function Page() {
               清風は、エアコンクリーニングを専門に手がけるサービスです。家庭用の壁掛けエアコン(スタンダード・お掃除機能付き)から天井埋込カセット型、業務用エアコンまで対応し、室外機洗浄や防カビ・抗菌コートのオプションも用意されています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              専門店として年間実績3万台を掲げ、お掃除機能付きを含む全機種に対応する点が強みです。汚れの度合いで追加料金が発生しない「機種を問わない一律料金」を採用し、2台目から割引がある点も分かりやすいポイントです。
+              専門店として年間実績3万台を掲げ、お掃除機能付きを含む全機種に対応する点が強みです。汚れの度合いで追加料金が発生しない「機種を問わない一律料金」を採用し、期間限定キャンペーンに左右されない価格設定も分かりやすいポイントです。
             </p>
             <AffiliateBanner
               slug="seifu-ac"
               heading="公式サイトで詳細・料金を確認する"
               note="対応エリア（関東・関西・東海）なら、まずは料金と空き状況を確認してみましょう。"
             />
+          </section>
+
+          <section id="latest" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の確認結果（運営会社・料金・保証）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年10月14日に公式サイト（seifu-ac.jp）の料金ページと会社概要を確認し直しました。料金は8月の確認時点から変わっていません。
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["運営会社", "株式会社アロン（大阪市中央区南船場1-7-8・2012年9月設立）"],
+                    ["家庭用壁掛け", "スタンダード13,200円／お掃除機能付き18,700円（税込）"],
+                    ["家庭用天井埋込", "26,400円（全タイプ一律）"],
+                    ["キャンペーン", "「現在、期間限定キャンペーンは実施しておりません」と案内。2021年以降はキャンペーン価格を通常価格にしているとの説明"],
+                    ["追加料金", "汚れ具合・作業時間による追加料金なし（駐車場は実費・上限2,000円）"],
+                    ["キャンセル", "前日正午まで無料。それ以降は料金の100%"],
+                    ["受付", "平日9:00〜18:00（土日祝休み）・0120-770-102"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              注意したいのは<strong className="font-semibold">損害保険・作業保証についての記載</strong>です。2026年10月14日時点で、公式サイトのトップページ・料金ページ・会社概要のいずれにも、損害賠償保険や作業後の保証の記載は見つかりませんでした。記載がないことは「保険に入っていない」という意味ではありませんが、万一の破損や水漏れに備えて、<strong className="font-semibold">予約の電話で保険加入の有無と作業後の連絡期限を確認しておく</strong>と安心です。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              口コミについては、店舗情報サイトのエキテンに「清風（エアコンクリーニングノセイフウ）」の店舗ページがありますが、口コミは1件のみの表示でした（2026年10月14日・検索結果での表示）。第三者サイトの口コミはまだ少なく、件数から評判を判断できる段階ではありません。なお「清風」は学校名など同じ名前の団体が多いため、口コミを検索するときは「清風 エアコンクリーニング」と業種を付けると別の団体の情報が混ざりにくくなります。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：エアコンクリーニング清風 公式サイト（料金表・会社概要、2026年10月14日確認）。</p>
           </section>
 
           <section id="review-summary" className="scroll-mt-24">
@@ -204,10 +239,11 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "エアコンクリーニングのプロ 清風"],
+                    ["運営会社", "株式会社アロン(大阪市中央区南船場・2012年9月設立)"],
                     ["サービス内容", "家庭用・業務用エアコンクリーニング／室外機洗浄／防カビ・抗菌コート"],
                     ["対応エリア", "関東(東京・神奈川・千葉・埼玉)、関西(大阪・兵庫・京都・奈良)、東海(愛知・静岡)"],
                     ["受付時間", "9時〜18時(土日祝休み)"],
-                    ["料金の特徴", "機種を問わない一律料金・2台目から割引"],
+                    ["料金の特徴", "機種を問わない一律料金・汚れや作業時間による追加料金なし(公式明記)"],
                     ["実績", "年間実績3万台(公称)"],
                     ["支払い方法", "PayPay／クレジットカード決済"],
                     ["電話番号", "0120-770-102(公式記載)"],
@@ -272,7 +308,7 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>エアコンクリーニング専門店で、全機種対応の知識・実績がある</li>
                   <li>機種を問わない一律料金で、汚れによる追加料金が発生しにくい</li>
-                  <li>2台目から割引があり、複数台依頼でお得</li>
+                  <li>キャンペーンに頼らない通常価格の一律料金で、総額を把握しやすい</li>
                   <li>作業員の丁寧な対応・手際の良さを評価する声が多い</li>
                 </ul>
               </div>
@@ -312,7 +348,7 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              清風の公式サイトでは、エアコンクリーニングの料金が次のように案内されています(税込・調査時点)。機種を問わない一律料金で、2台目から割引があります。
+              清風の公式サイトでは、エアコンクリーニングの料金が次のように案内されています(税込・調査時点)。機種を問わない一律料金です(業務用は2〜3台で1台あたり33,000円)。
             </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -501,10 +537,10 @@ export default function Page() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/ranking", label: "エアコン修理業者ランキング" },
-                { href: "/ranking/fast", label: "対応が早い修理業者" },
-                { href: "/cost/repair-price", label: "エアコン修理の料金相場" },
-                { href: "/cost/replace-vs-repair", label: "修理と買い替えどちらが得か" },
+                { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場と業者別の口コミ" },
+                { href: "/company/osoji-labo/", label: "おそうじLaboの口コミ・評判" },
+                { href: "/company/r-cleaning/", label: "アールクリーニングの口コミ・評判" },
+                { href: "/company/duskin-servicemaster/", label: "ダスキン サービスマスターの口コミ・評判" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

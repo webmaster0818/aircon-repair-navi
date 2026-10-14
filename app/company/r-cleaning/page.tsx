@@ -8,20 +8,21 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "アールクリーニングの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "アールクリーニングの口コミ・評判は？悪い口コミ・料金・他社比較を調査【2026年10月】",
   description:
     "エアコンクリーニング「アールクリーニング」の口コミ・評判をまとめました。みん評・Googleマップ・くらしのマーケット等の実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月14日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
+  { id: "latest", label: "2026年10月の料金と他社比較" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "good", label: "良い口コミ・評判の傾向" },
+  { id: "bad", label: "悪い口コミ・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている人・向いていない人" },
   { id: "price", label: "料金の目安" },
@@ -62,7 +63,7 @@ const faqs = [
   },
   {
     q: "お掃除機能付きエアコンの料金はいくらですか？",
-    a: "公式サイトのエアコンクリーニングページでは、お掃除機能付きエアコンはキャンペーン価格16,000円(税込17,600円)と案内されています(2026年8月2日確認)。キャンペーン価格は時期により変わるため、申し込み時に最新の金額を確認してください。",
+    a: "公式サイトのエアコンクリーニングページでは、お掃除機能付きエアコンはキャンペーン価格17,000円(税込18,700円)・通常価格24,750円と案内されています(2026年10月14日確認。8月2日の確認時点では16,000円)。キャンペーン価格は時期により変わるため、申し込み時に最新の金額を確認してください。",
   },
   {
     q: "作業時間はどのくらいかかりますか？",
@@ -86,9 +87,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "アールクリーニングの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "アールクリーニングの口コミ・評判は？悪い口コミ・料金・他社比較を調査【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -124,12 +125,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             アールクリーニングの口コミ・評判は？
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            悪い口コミ・料金・他社比較を調査【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -187,6 +188,42 @@ export default function Page() {
             />
           </section>
 
+          <section id="latest" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の料金と他社比較（公式で再確認）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年10月14日に公式サイト（r-cleaning.com）を確認し直しました。壁掛けタイプは通常価格19,350円に対し、キャンペーン価格9,800円（税込10,780円）の表示です。お掃除機能付きは8月時点の16,000円から<strong className="font-semibold">17,000円（税込18,700円）</strong>に変わっていました。キャンペーンの受付期限は「10月20日まで」と表示されており、室外機清掃は10月限定4,500円（通常8,800円）です。
+            </p>
+            <p className="leading-8 text-slate-700 mb-4">同じ日に公式サイトで確認した、ほかのエアコンクリーニング業者の壁掛けタイプの料金と並べると次のとおりです（税込）。</p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["業者", "壁掛け（お掃除機能なし）", "お掃除機能付き", "対応エリア"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["アールクリーニング", "10,780円（キャンペーン価格）", "18,700円（キャンペーン価格）", "東京・埼玉・神奈川・千葉"],
+                    ["ダスキン", "15,400円", "26,400円", "全国"],
+                    ["エアコンクリーニング清風", "13,200円", "18,700円", "関東・関西・東海の10都府県"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      {r.map((v, i) => (
+                        <td key={i} className={`border border-slate-300 px-3 py-2 leading-7 ${i === 0 ? "font-semibold whitespace-nowrap" : ""}`}>{v}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              アールクリーニングは首都圏限定のキャンペーン価格で、表の中ではもっとも安い表示です。ただしキャンペーンには期限があり、時期によって金額が変わります。ダスキンは全国対応で価格は固定、清風はキャンペーンを行わず通常価格を一律にしている、という違いがあります。各社の詳細は<Link href="/company/duskin-servicemaster/" className="text-sky-600 underline underline-offset-2">ダスキンの口コミ・評判</Link>・<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風の口コミ・評判</Link>、相場全体は<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>にまとめています。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：各社公式サイトの掲載価格（いずれも2026年10月14日確認）。キャンペーン・料金は変わる場合があります。</p>
+          </section>
+
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
             <p className="leading-8 text-slate-700">
@@ -204,6 +241,7 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "アールクリーニング"],
+                    ["運営会社", "株式会社Fire Works(東京都杉並区上高井戸)"],
                     ["サービス内容", "エアコンクリーニング／ハウスクリーニング 等"],
                     ["対応エリア", "東京都・埼玉県・神奈川県・千葉県(エリア外は出張料金3,000円〜で対応の案内あり)"],
                     ["受付時間", "毎日 9:00〜18:00"],
@@ -220,11 +258,11 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：公式サイトの掲載情報。受付時間や料金は変更される場合があります。運営会社名は公式サイトに明記が確認できませんでした。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：公式サイトの掲載情報(運営会社は2026年10月14日確認)。受付時間や料金は変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">良い口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
               当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。アールクリーニングについては、みん評・Googleマップ・くらしのマーケットなどの口コミプラットフォームで多数の利用者の声が公開されており、2026年6月時点でGoogleマップ評価4.7(1,600件超)、くらしのマーケット評価4.7台などの評価が確認できます。
             </p>
@@ -246,7 +284,7 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">悪い口コミ・利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
               高評価が多い一方で、口コミの多い人気サービスという性質上、
               <strong className="font-semibold">スタッフによって対応や仕上がりの感じ方に差が出る場合がある</strong>
@@ -398,7 +436,7 @@ export default function Page() {
                   {[
                     ["壁掛けタイプ(通常機) 1台目", "キャンペーン価格 9,800円(税込10,780円)／通常価格19,350円"],
                     ["壁掛けタイプ(通常機) 2台目以降", "キャンペーン価格 8,800円(税込9,680円)"],
-                    ["お掃除機能付き", "キャンペーン価格 16,000円(税込17,600円)"],
+                    ["お掃除機能付き", "キャンペーン価格 17,000円(税込18,700円)／通常価格24,750円(10月14日確認)"],
                     ["埋め込み型エアコン", "キャンペーン価格 18,000円(税込19,800円)／通常価格29,980円"],
                     ["室外機清掃(オプション)", "キャンペーン価格 4,500円(通常8,800円・確認時点)"],
                     ["ドレンホース洗浄(オプション)", "2,500円/箇所"],
@@ -477,6 +515,9 @@ export default function Page() {
               「アールクリーニング」という名称は、自宅から衣類を預ける<strong className="font-semibold">宅配衣類クリーニングのサービス</strong>を指して使われている例も確認できます。本記事で紹介しているのは、東京都を拠点に首都圏でエアコンクリーニング・ハウスクリーニングを行うアールクリーニング(公式サイト: r-cleaning.com)で、衣類の宅配クリーニングとは業態が異なります。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
+              また、千葉県船橋市周辺には<strong className="font-semibold">「アールクリーン」という名前の似た別のクリーニング業者</strong>があり、ミツモアなどでは高評価・口コミ件数の多い店舗として表示されます（2026年10月14日確認）。名前が一文字違うだけなので、評価を見るときは店名をよく確認してください。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
               口コミや評判を調べる際は、次の点を確認すると別業態の同名サービスと取り違えるのを防げます。
             </p>
             <ul className="mt-3 space-y-2 text-slate-700 text-[0.95rem] leading-7">
@@ -526,10 +567,10 @@ export default function Page() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/ranking", label: "エアコン修理業者ランキング" },
-                { href: "/ranking/fast", label: "対応が早い修理業者" },
-                { href: "/cost/repair-price", label: "エアコン修理の料金相場" },
-                { href: "/cost/replace-vs-repair", label: "修理と買い替えどちらが得か" },
+                { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場と業者別の口コミ" },
+                { href: "/company/osoji-labo/", label: "おそうじLaboの口コミ・評判" },
+                { href: "/company/seifu-ac/", label: "エアコンクリーニング清風の口コミ・評判" },
+                { href: "/company/duskin-servicemaster/", label: "ダスキン サービスマスターの口コミ・評判" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

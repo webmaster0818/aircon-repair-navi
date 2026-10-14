@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
+import companies from "@/data/companies.json";
+
+const CLEANING_SLUGS = ["duskin-servicemaster", "r-cleaning", "seifu-ac", "osoji-labo", "osouji-kakumei", "kajitaku", "happy-bears"];
 
 export const metadata: Metadata = {
   title:
@@ -185,6 +188,40 @@ export default function CleaningFeePage() {
               <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社の料金インデックス</Link>にまとめています。
               また、製造から10年を超えている機種は<Link href="/guide/lifespan/" className="text-sky-600 underline underline-offset-2">寿命と買い替えの判断</Link>もあわせてご検討ください。
             </p>
+          </section>
+
+          <section id="companies" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">クリーニング業者別の口コミ・評判</h2>
+            <p className="text-sm leading-7 text-slate-700 mb-4">
+              大手2社以外にも、地域密着型・専門店型のエアコンクリーニング業者があります。対応エリアが業者ごとに大きく違うため、まず自分の地域が対象かを確認しましょう。
+              各ページでは公式サイトの料金・受付時間と、口コミサイトで確認できた評判の傾向（出典つき）をまとめています。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">業者</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">対応エリア</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">特徴（公式掲載）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {CLEANING_SLUGS.map((slug) => {
+                    const c = companies.find((x) => x.slug === slug);
+                    if (!c) return null;
+                    return (
+                      <tr key={slug}>
+                        <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">
+                          <Link href={`/company/${slug}/`} className="text-sky-600 underline underline-offset-2">{c.name}の口コミ・評判</Link>
+                        </td>
+                        <td className="border border-slate-300 px-3 py-2 leading-7">{c.coverage}</td>
+                        <td className="border border-slate-300 px-3 py-2 leading-7">{c.tagline}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </section>
 
           <section id="faq" className="scroll-mt-24">

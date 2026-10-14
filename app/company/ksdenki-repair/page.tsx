@@ -6,7 +6,7 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ケーズデンキの出張修理料金はいくら？診断料の落とし穴と評判を実査【2026年7月】",
+    "ケーズデンキのエアコン修理依頼の方法｜WEB受付・出張修理料金・診断料の注意点と評判",
   description:
     "ケーズデンキのエアコン出張修理（運営: 株式会社ケーズホールディングス）の料金・出張費・診断料の仕組みを当サイトが公式ページで実査（2026年7月11日確認）。症状が再現しなくても診断料・点検料・出張料がかかる落とし穴、見積もり後キャンセルの診断料は保証外である点、長期無料保証との関係まで正直に解説します。",
   alternates: { canonical: "/company/ksdenki-repair" },

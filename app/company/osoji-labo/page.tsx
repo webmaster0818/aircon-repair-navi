@@ -8,16 +8,17 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "おそうじLaboの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "おそうじLabo（おそうじラボ）の口コミ・評判は？大阪・兵庫の料金と対応エリアを調査【2026年10月】",
   description:
-    "エアコンクリーニング「おそうじLabo」の口コミ・評判をまとめました。実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
+    "大阪・兵庫のエアコンクリーニング「おそうじLabo（おそうじラボ）」の口コミ・評判をまとめました。実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月14日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
+  { id: "latest", label: "2026年10月の最新料金・キャンペーン" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
@@ -86,9 +87,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "おそうじLaboの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "おそうじLabo（おそうじラボ）の口コミ・評判は？大阪・兵庫の料金と対応エリアを調査【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -122,14 +123,14 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            おそうじLaboの口コミ・評判は？
+            おそうじLabo（おそうじラボ）の口コミ・評判は？
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            大阪・兵庫の料金と対応エリアを調査【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -183,6 +184,46 @@ export default function Page() {
               heading="おそうじLabo公式サイトで料金・空き状況を確認する"
               note="大阪・兵庫エリアなら、まずは料金と予約可能日を確認してみましょう。"
             />
+          </section>
+
+          <section id="latest" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の最新料金・キャンペーン（公式で再確認）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              2026年10月14日に公式サイト（osojilabo.com）で、料金・キャンペーン・対応エリアを確認し直しました。料金は「通常価格」「初回限定価格」「2台目以降」の3段で表示されています（税込）。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["機種", "通常", "初回限定", "2台目以降", "作業時間"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["ノーマルタイプ", "9,800円", "8,800円", "7,800円", "60〜90分"],
+                    ["お掃除機能付き", "18,000円", "17,000円", "16,000円", "120〜180分"],
+                    ["家庭用天井埋め込み型", "13,800円", "12,800円", "11,800円", "90〜120分"],
+                    ["業務用壁掛け型", "13,000円", "12,000円", "—", "—"],
+                    ["業務用天井埋め込み型", "26,000円", "25,000円", "—", "—"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      {r.map((v, i) => (
+                        <td key={i} className={`border border-slate-300 px-3 py-2 ${i === 0 ? "font-semibold" : "whitespace-nowrap"}`}>{v}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="mt-4 space-y-2 text-slate-700 text-[0.95rem] leading-7">
+              <li>・<strong className="font-semibold">実施中の特典</strong>：抗菌・防カビコート無料（終了時期は未定と案内）／電話予約で500円オフ／セット注文の初回1,000円オフ／室外機洗浄の依頼で防虫キャップ無料取付</li>
+              <li>・<strong className="font-semibold">対応エリア</strong>：大阪府（大阪市全域ほか）、兵庫県の尼崎市・伊丹市・西宮市・宝塚市・芦屋市・川西市・猪名川町</li>
+              <li>・<strong className="font-semibold">受付</strong>：電話 10:00〜19:00（050-8893-3636）／LINE 24時間</li>
+              <li>・<strong className="font-semibold">補償</strong>：損害保険に加入、壁の破損・汚れや本体故障は補償すると案内。仕上がりに不満があれば無料で追加作業、作業は外部委託なしの自社スタッフ</li>
+            </ul>
+            <p className="mt-3 text-xs text-slate-400">出典：おそうじLabo公式サイト（2026年10月14日確認）。特典の内容・期間は変わる場合があります。申し込み時に最新の金額をご確認ください。</p>
           </section>
 
           <section id="review-summary" className="scroll-mt-24">
@@ -475,6 +516,9 @@ export default function Page() {
               東京都には<strong className="font-semibold">「株式会社おそうじラボ」という同名（表記違い）の別法人</strong>が実在し、ハウスクリーニング予約サイトの<a href="https://yourmystar.jp/suppliers/osoujilab/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">ユアマイスターに出店</a>しています（壁掛けエアコンクリーニングの口コミ1件・評点5.0／2026年8月1日時点）。カタカナ・英字の表記が違うだけの同名のため、ユアマイスター上の高評価口コミを大阪の「おそうじLabo」のものと誤認しやすい状況ですが、<strong className="font-semibold">両者は別の会社</strong>です。本記事でも東京の同名法人の口コミは、大阪のおそうじLaboの評価として扱っていません。
             </p>
             <p className="leading-8 text-slate-700">
+              また「おそうじラボ」で検索すると、<strong className="font-semibold">宮城県仙台市の「スッキリおそうじラボ」</strong>や、全国チェーンの「おそうじ本舗」の口コミページも上位に表示されます（2026年10月14日確認）。いずれも本記事のおそうじLaboとは別の事業者で、口コミの件数や評点もそれぞれ別物です。
+            </p>
+            <p className="leading-8 text-slate-700 mt-4">
               本記事で扱う「おそうじLabo」は、<strong className="font-semibold">株式会社ペイストレージ運営・大阪市中央区南船場拠点・公式ドメイン osojilabo.com</strong>のサービスです。口コミを調べる際は、運営法人名と所在地（大阪か東京か）が一致しているかを確認しましょう。
             </p>
           </section>
@@ -517,10 +561,10 @@ export default function Page() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/ranking", label: "エアコン修理業者ランキング" },
-                { href: "/ranking/fast", label: "対応が早い修理業者" },
-                { href: "/cost/repair-price", label: "エアコン修理の料金相場" },
-                { href: "/cost/replace-vs-repair", label: "修理と買い替えどちらが得か" },
+                { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場と業者別の口コミ" },
+                { href: "/company/r-cleaning/", label: "アールクリーニングの口コミ・評判" },
+                { href: "/company/seifu-ac/", label: "エアコンクリーニング清風の口コミ・評判" },
+                { href: "/company/duskin-servicemaster/", label: "ダスキン サービスマスターの口コミ・評判" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

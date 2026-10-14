@@ -6,17 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ヤマダ電機の出張修理料金はいくら？費用の確認方法と評判を実査【2026年8月】",
+    "ヤマダ電機のエアコン修理依頼の方法｜受付電話・Web申込・出張修理料金と評判【2026年10月】",
   description:
     "ヤマダ電機のエアコン出張修理（施工＝株式会社ヤマダテクニカルサービス）の料金・口コミ傾向を当サイトが実査（2026年8月3日確認）。2026年8月の公式サイト刷新で料金表の掲載がなくなった最新状況、参考となる旧公式掲載額（出張料4,500円等）、申込前に総額を確かめるコツまで正直に解説します。",
   alternates: { canonical: "/company/yamada-repair" },
 };
 
-const UPDATED = "2026年7月11日";
+const UPDATED = "2026年10月14日";
 const OFFICIAL = "https://yamada-ts.co.jp/";
 
 const toc = [
   { id: "summary", label: "ヤマダ電機の出張修理とは" },
+  { id: "request", label: "修理依頼の方法（受付電話・Web・受付時間）" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -59,9 +60,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ヤマダ電機のエアコン修理の評判は？料金・出張費・出張エリアを実査【2026年7月】",
+    "ヤマダ電機のエアコン修理依頼の方法｜受付電話・Web申込・出張修理料金と評判【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-11",
+  dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -95,14 +96,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ヤマダ電機のエアコン修理の評判は？
+            ヤマダ電機のエアコン修理依頼の方法は？
             <br className="hidden md:block" />
-            料金・出張費を実査【2026年7月】
+            受付電話・Web申込・料金と評判【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-11">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -159,6 +160,48 @@ export default function Page() {
                 ヤマダテクニカルサービス公式サイトを見る
               </a>
             </div>
+          </section>
+
+          <section id="request" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">修理依頼の方法（受付電話・Web・受付時間）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              ヤマダデンキでエアコンの修理を頼む窓口は、<strong className="font-semibold">加入している保証の種類によって電話番号が分かれています</strong>。2026年10月14日にヤマダデンキ公式サイトのお問い合わせページ・修理受付ページで確認した内容は次のとおりです。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["こんなとき", "窓口", "受付"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Webで申し込みたい（保証の有無を問わない）", "公式サイトの出張修理受付フォーム", "24時間。メーカー・型番・購入日・症状・保証の種類を入力。ヤマダ以外で買った製品・保証なしも選択可（ベストFC保証は電話のみ）"],
+                    ["家電総合保証「家電保」に入っている", "修理受付サポートセンター 0120-506-858", "電話24時間受付（19:00〜翌10:00は自動音声）・元日を除く。9時台・10時台はつながりにくいと注記"],
+                    ["ヤマダの長期無料保証を使う", "長期無料保証の窓口 0570-666-533", "電話24時間受付（19:00〜翌10:00は自動音声）・元日を除く。オンライン受付は24時間"],
+                    ["修理を受け付けた後の問い合わせ", "YAMADA SELECT 0120-258-260", "10:00〜19:00（元日を除き年中無休）"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      {r.map((v, i) => (
+                        <td key={i} className={`border border-slate-300 px-3 py-2 leading-7 ${i === 0 ? "font-semibold" : ""}`}>{v}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="mt-4 space-y-2 text-slate-700 text-[0.95rem] leading-7">
+              <li>・<strong className="font-semibold">用意するもの</strong>：購入時のレシートまたは保証書（長期無料保証は保証No.21桁・保証台紙）、エアコンのメーカーと型番、購入日、症状のメモ</li>
+              <li>・<strong className="font-semibold">受付時間の注意</strong>：公式の告知ページでは「有人対応は9:00〜19:00、それ以外は自動受付」とされ、お問い合わせページの「19:00〜翌10:00は自動音声」と表記が分かれています。時間外に電話するとSMSで受付フォームのURLが届く仕組みです。21時頃以降の問い合わせは翌日の受付扱いと案内されています</li>
+              <li>・<strong className="font-semibold">いつ来るか</strong>：何日で訪問するかの目安は公式に書かれていません。受付後に担当者から電話で訪問日の連絡があり、希望日に沿えない場合やその場で直らず再訪問になる場合があると案内されています</li>
+              <li>・<strong className="font-semibold">料金</strong>：金額表は公式に載っていません。見積もりは訪問時に担当者へ確認する形で、訪問後にキャンセルすると訪問の実費や診断料がかかる場合があります（家電保の規程でも、修理キャンセル時の点検診断料・出張料はお客様負担）</li>
+            </ul>
+            <p className="mt-4 leading-8 text-slate-700">
+              夏場や繁忙期は電話がつながりにくいという口コミも見られるため、急ぐ場合は電話よりWebフォームで先に受付を済ませるのが確実です。保証が切れていて早く直したい場合は、<Link href="/ranking/fast" className="text-sky-600 underline underline-offset-2">対応が早い修理業者</Link>への相見積もりも選択肢になります。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：ヤマダデンキ公式「お問い合わせ」「修理のご依頼」「出張修理受付フォーム」「24時間受付のお知らせ」、家電保リーフレット（いずれも2026年10月14日確認）。電話番号・受付時間は変更される場合があります。</p>
           </section>
 
           <section id="company" className="scroll-mt-24">
