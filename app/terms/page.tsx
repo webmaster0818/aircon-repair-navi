@@ -4,6 +4,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "利用規約",
   description: "エアコン修理ナビの利用規約です。サービス概要、禁止事項、免責事項などについて定めています。",
+  alternates: { canonical: "/terms/" },
 };
 
 export default function TermsPage() {

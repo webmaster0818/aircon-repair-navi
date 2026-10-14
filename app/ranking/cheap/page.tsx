@@ -10,6 +10,7 @@ import { getFelmat } from "@/lib/felmat";
 export const metadata: Metadata = {
   title: "安いエアコン修理業者ランキング｜費用を抑えるコツも解説",
   description: "エアコン修理費用を安く抑えたい方向けのランキング。費用相場が安い業者TOP5を厳選。見積もり比較で賢く節約する方法も紹介。",
+  alternates: { canonical: "/ranking/cheap/" },
 };
 
 // Sort by cheapest (based on min avg cost)

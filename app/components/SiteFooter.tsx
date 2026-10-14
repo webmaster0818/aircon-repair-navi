@@ -4,6 +4,7 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
   {
     category: "サイト情報",
     links: [
+      { href: "/about", label: "運営者情報" },
       { href: "/terms", label: "利用規約" },
       { href: "/privacy", label: "プライバシーポリシー" },
       { href: "/content-policy", label: "記事の制作ポリシー" },

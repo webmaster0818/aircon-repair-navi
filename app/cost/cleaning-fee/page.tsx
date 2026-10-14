@@ -148,7 +148,7 @@ export default function CleaningFeePage() {
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">カビ臭・酸っぱい臭い</td>
                     <td className="border border-slate-300 px-3 py-2 whitespace-nowrap text-emerald-700 font-semibold">クリーニング</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">内部のカビ・ホコリが主因のことが多い。<Link href="/symptom/bad-smell/" className="text-sky-600 underline underline-offset-2">臭いの症状ページ</Link>で切り分け手順を解説</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">内部のカビ・ホコリが主因のことが多い。<Link href="/symptom/bad-smell/" className="text-sky-600 underline underline-offset-2">臭いの症状ページ</Link>で切り分け手順を解説（原因別の対処は<Link href="/guide/smell/" className="text-sky-600 underline underline-offset-2">臭いの対処ガイド</Link>）</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">風量低下・効きが鈍い</td>

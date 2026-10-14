@@ -367,7 +367,13 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   const n = all.length;
   const stats = D.prefStats[area.prefSlug];
   const center = D.shohiCenters[area.prefName];
-  const siblingCities = ALL_AREAS.filter((a) => a.type === "city" && a.prefSlug === area.prefSlug && a.slug !== area.slug).slice(0, 4);
+  // 都道府県ページは県内の全都市、都市ページは県内で自分の次から4都市(循環)を出す。
+  // 先頭4件固定だと5件目以降の都市がTOPからしか張られず孤立していた。
+  const prefCities = ALL_AREAS.filter((a) => a.type === "city" && a.prefSlug === area.prefSlug);
+  const myIdx = prefCities.findIndex((a) => a.slug === area.slug);
+  const siblingCities = area.type === "pref"
+    ? prefCities
+    : prefCities.slice(myIdx + 1).concat(prefCities.slice(0, myIdx)).slice(0, 4);
   const prefPage = area.type === "city" ? (area.prefSlug === "osaka" ? { slug: "osaka", name: "大阪府" } : ALL_AREAS.find((a) => a.type === "pref" && a.slug === area.prefSlug)) : null;
 
   const faqs = [

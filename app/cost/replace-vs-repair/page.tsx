@@ -6,6 +6,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "エアコン修理 vs 買い替え｜どっちがお得か判断する方法",
   description: "エアコンを修理すべきか買い替えるべきか迷ったときの判断基準を解説。使用年数・修理費用・省エネ性能から総合的に判断する方法をわかりやすく紹介。",
+  alternates: { canonical: "/cost/replace-vs-repair/" },
 };
 
 const FactorIcons: Record<string, React.ReactNode> = {

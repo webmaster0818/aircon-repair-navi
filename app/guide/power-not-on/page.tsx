@@ -97,6 +97,7 @@ export default function PowerNotOnPage() {
               リセット・ブレーカー・仕様確認で改善しない場合は、基板・配線・受電系の不具合が考えられ、自分での特定はできません。
               修理費用の水準は<Link href="/cost/repair-price/" className="text-sky-700 underline">修理の実額ガイド</Link>と<Link href="/guide/repair-cost/" className="text-sky-700 underline">修理費用の相場ガイド</Link>で確認できます。
               使用年数が10年前後なら<Link href="/guide/lifespan/" className="text-sky-700 underline">寿命・買い替え判断</Link>も併読を。
+              電源は入るが暖房だけ効かない場合は<Link href="/guide/heating-not-working/" className="text-sky-700 underline">暖房が効かない原因ガイド</Link>へ。
               賃貸の備え付けエアコンは原則貸主負担のため、まず管理会社へ(<Link href="/guide/rental-aircon-repair/" className="text-sky-700 underline">賃貸の負担区分ガイド</Link>)。
             </p>
           </section>

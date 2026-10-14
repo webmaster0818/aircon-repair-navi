@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title:
     "エアコントラブルセンターの評判は？口コミ・料金を実査【2026年8月】",
   description:
-    "エアコントラブルセンター（運営: 株式会社composure）の口コミ傾向・料金の仕組みを当サイトが公式ページで実査（2026年7月11日確認）。出張費・見積もり・施工前キャンセルは無料、基本料金8,800円〜の公称のみで症状別実額は公式非公開、実態は全国2,000社以上の加盟店を手配する紹介型という特徴、保証・許認可の表示状況まで正直に解説します。",
+    "エアコントラブルセンター（運営: 株式会社composure）の口コミ傾向・料金の仕組みを公式ページで実査（2026年7月11日確認）。出張費・見積もり・施工前キャンセルは無料、基本料金8,800円〜の公称のみで症状別実額は公式非公開、実態は全国2,000社以上の加盟店を手配する紹介型という特徴まで正直に解説します。",
   alternates: { canonical: "/company/aircon-trouble-center" },
 };
 
@@ -508,7 +508,7 @@ export default function Page() {
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコントラブルバスターズ</strong>（<a href="https://www.aircon-troublebusters.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-troublebusters.com</a>・横浜市神奈川区金港町・0120-539-588）——名称が酷似する別サービスです。全国対応・即日対応を掲げており、本記事のエアコントラブルセンターとは運営が異なります</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコン救急隊</strong>（<a href="https://aircon-kaketsuke119.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-kaketsuke119.com</a>）——「救急」系の名称を持つ別のエアコン修理業者で、緊急駆けつけ系の検索結果で混在しやすい名称です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコン救急隊</strong>（<a href="https://aircon-kaketsuke119.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-kaketsuke119.com</a>）——「救急」系の名称を持つ別のエアコン修理業者で、緊急駆けつけ系の検索結果で混在しやすい名称です（同名サービスの見分け方は<Link href="/company/aircon-kyukyusha/" className="text-sky-700 underline">エアコン救急隊の実査ページ</Link>に整理）</span></li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">
               本記事で扱うエアコントラブルセンターは、<strong className="font-semibold">株式会社composure（東京都新宿区）運営・公式ドメイン aircon-troubleone.com・電話050-5369-1348</strong>のサービスです。口コミや評判を調べる際は、公式ドメインと運営会社名が一致しているかを確認し、別サービスの評判を同社のものと取り違えないようにしましょう。

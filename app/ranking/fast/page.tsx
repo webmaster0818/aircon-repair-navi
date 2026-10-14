@@ -10,6 +10,7 @@ import { getFelmat } from "@/lib/felmat";
 export const metadata: Metadata = {
   title: "エアコン修理を即日で頼むには？【今日直したい】24時間受付業者と当日予約のコツ",
   description: "エアコンが急に壊れた！今すぐ修理したい方向けの即日・最速対応業者ランキング。最短5分で手配可能な業者も。",
+  alternates: { canonical: "/ranking/fast/" },
 };
 
 // Sort by fastest response

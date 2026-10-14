@@ -5,6 +5,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "エアコン修理の料金相場一覧【2026年】出張費・診断料・症状別の費用目安",
   description: "エアコン修理の費用・価格・料金相場を症状別に一覧化【2026年版】。ガス補充・水漏れ・基板交換の目安に加え、見落としがちな出張費・診断料、修理と買い替えの判断基準まで解説。金額は目安のため見積もりでの確認を推奨します。",
+  alternates: { canonical: "/cost/repair-price/" },
 };
 
 const costItems = [

@@ -73,7 +73,9 @@
       "duskin-servicemaster"
     ],
     "relatedGuides": [
-      "repair-cost"
+      "repair-cost",
+      "heating-not-working",
+      "repair-days"
     ],
     "relatedSymptoms": [
       "gas-leak",
@@ -381,7 +383,9 @@
     "seoDescription": "エアコンをつけるとカビ臭い・酸っぱい・焦げ臭いといった異臭がする原因を解説。フィルター清掃など自分でできる対処、エアコンクリーニングが必要なケース、焦げ臭い時の注意点と費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "エアコンをつけると臭い、カビ臭・酸っぱい臭い・焦げ臭いなど、エアコンからの異臭の原因と対処法を解説します。",
     "relatedGuides": [
-      "repair-cost"
+      "repair-cost",
+      "smell",
+      "cleaning-fee"
     ],
     "relatedSymptoms": [
       "water-leak",
@@ -441,7 +445,9 @@
     "seoDescription": "エアコンの電源が入らない、運転ランプが点滅する、起動後すぐ止まる原因を解説。ブレーカー・コンセント確認やリセットなど自分でできる対処、基板やセンサーの故障で業者依頼が必要なケースと費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "エアコンの電源が入らない、運転ランプが点滅する、起動後すぐに止まるなど、エアコンが正常に動作しない場合の原因と対処法を解説します。",
     "relatedGuides": [
-      "repair-cost"
+      "repair-cost",
+      "power-not-on",
+      "repair-days"
     ],
     "relatedSymptoms": [
       "error-code",
@@ -574,7 +580,9 @@
     "seoDescription": "ダイキン・日立・三菱・パナソニック・東芝など主要メーカーのエアコンのエラーコードの意味と調べ方を解説。電源リセットなど自分でできる対処、業者依頼が必要なケースと修理費用の目安（要見積もり）までまとめた2026年版ガイドです。",
     "description": "ダイキン・日立・三菱・パナソニック・東芝など主要メーカーのエアコンエラーコードの意味と対処法をまとめた一覧です。",
     "relatedGuides": [
-      "repair-cost"
+      "repair-cost",
+      "error-code-daikin",
+      "error-code-mitsubishi"
     ],
     "relatedSymptoms": [
       "not-starting",

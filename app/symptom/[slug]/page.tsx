@@ -48,6 +48,13 @@ const careTypeBox: Record<
 const guideMeta: Record<string, { href: string; label: string }> = {
   "repair-cost": { href: "/cost/repair-price/", label: "エアコン修理費用の相場ガイド" },
   noise: { href: "/guide/noise", label: "エアコンの異音 原因と対処ガイド" },
+  "heating-not-working": { href: "/guide/heating-not-working/", label: "暖房が効かない原因と故障の見分け方" },
+  "repair-days": { href: "/guide/repair-days/", label: "エアコン修理は何日かかる？依頼先別の日数目安" },
+  smell: { href: "/guide/smell/", label: "エアコンの臭いの原因と対処ガイド" },
+  "cleaning-fee": { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場" },
+  "power-not-on": { href: "/guide/power-not-on/", label: "電源が入らない時の確認手順とリセット方法" },
+  "error-code-daikin": { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
+  "error-code-mitsubishi": { href: "/guide/error-code-mitsubishi/", label: "三菱(霧ヶ峰)のランプ点滅・エラー表示の意味" },
 };
 
 export async function generateStaticParams() {

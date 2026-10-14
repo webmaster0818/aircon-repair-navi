@@ -4,6 +4,7 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "記事の制作ポリシー",
   description: "エアコン修理ナビの記事制作ポリシーです。編集方針・情報の正確性への取り組み・広告との関係について説明しています。",
+  alternates: { canonical: "/content-policy/" },
 };
 
 export default function ContentPolicyPage() {

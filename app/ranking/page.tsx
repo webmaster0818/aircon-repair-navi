@@ -11,6 +11,7 @@ import { getFelmat } from "@/lib/felmat";
 export const metadata: Metadata = {
   title: "エアコン修理業者ランキング【2026年8月】おすすめ27社を徹底比較",
   description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
+  alternates: { canonical: "/ranking/" },
 };
 
 export default function RankingPage() {
