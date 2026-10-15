@@ -255,32 +255,6 @@
     "rating": 4.0
   },
   {
-    "name": "最安修理.com",
-    "slug": "saiyasu",
-    "tagline": "修理店の料金比較サイト（エアコンの掲載業者なし）",
-    "description": "修理店の料金を比較できるサイトです。2026年10月15日に公式サイトを確認した時点で、エアコンのカテゴリに掲載されている業者は0件でした。",
-    "features": [
-      "最安値追求",
-      "修理費用比較"
-    ],
-    "pros": [
-      "費用を最小限に抑えられる",
-      "料金が明確で安心",
-      "不要な追加料金がない",
-      "コスパが高い"
-    ],
-    "cons": [
-      "最安値追求のため対応が遅い場合がある",
-      "サポート体制が薄い場合がある"
-    ],
-    "avgCost": "エアコンの掲載業者なし",
-    "responseTime": "—",
-    "coverage": "エアコンの掲載業者0件(10/15確認)",
-    "officialUrl": "https://saiyasu-syuuri.com/",
-    "rank": 10,
-    "rating": 3.9
-  },
-  {
     "name": "電気工事110番",
     "slug": "denki110",
     "tagline": "全国対応・年中無休の電気工事マッチング(生活110番とは別運営)",
@@ -304,7 +278,7 @@
     "responseTime": "即日対応(状況により別日)",
     "coverage": "全国",
     "officialUrl": "https://denki110.net/",
-    "rank": 11,
+    "rank": 10,
     "rating": 3.9
   },
   {
@@ -330,7 +304,7 @@
     "responseTime": "プロにより異なる",
     "coverage": "修理は12道県・クリーニングは全国",
     "officialUrl": "https://yourmystar.jp/",
-    "rank": 12,
+    "rank": 11,
     "rating": 4.0
   },
   {
@@ -356,7 +330,7 @@
     "responseTime": "プロにより異なる",
     "coverage": "全国",
     "officialUrl": "https://www.zehitomo.com/",
-    "rank": 13,
+    "rank": 12,
     "rating": 3.9
   },
   {
@@ -383,7 +357,7 @@
     "responseTime": "要予約",
     "coverage": "対応地域は要問い合わせ",
     "officialUrl": "https://panasonic.jp/support/repair/on-site.html",
-    "rank": 14,
+    "rank": 13,
     "rating": 4.1
   },
   {
@@ -411,7 +385,7 @@
     "responseTime": "要予約",
     "coverage": "全国",
     "officialUrl": "https://www.daikincc.com/",
-    "rank": 15,
+    "rank": 14,
     "rating": 4.1
   },
   {
@@ -437,7 +411,7 @@
     "responseTime": "業者による",
     "coverage": "全国",
     "officialUrl": "https://safely.co.jp/ec/air/",
-    "rank": 16,
+    "rank": 15,
     "rating": 3.8
   },
   {
@@ -464,7 +438,7 @@
     "responseTime": "業者による",
     "coverage": "全国",
     "officialUrl": "https://www.ienakama.com/aircon/",
-    "rank": 17,
+    "rank": 16,
     "rating": 3.8
   },
   {
@@ -490,7 +464,7 @@
     "responseTime": "要予約",
     "coverage": "全国(一部地域対象外)",
     "officialUrl": "https://yamada-ts.co.jp/",
-    "rank": 18,
+    "rank": 17,
     "rating": 3.9
   },
   {
@@ -516,7 +490,7 @@
     "responseTime": "要予約",
     "coverage": "全国",
     "officialUrl": "https://www.ksdenki.co.jp/store/service/support_repair/",
-    "rank": 19,
+    "rank": 18,
     "rating": 3.8
   },
   {
@@ -544,7 +518,7 @@
     "responseTime": "最短10分(公称・24時間受付)",
     "coverage": "東京・神奈川・千葉・埼玉・愛知・岐阜・大阪・兵庫",
     "officialUrl": "https://airhomesupport.com/",
-    "rank": 20,
+    "rank": 19,
     "rating": 3.6
   },
   {
@@ -572,7 +546,7 @@
     "responseTime": "最短当日連絡",
     "coverage": "大阪府・兵庫県の一部",
     "officialUrl": "https://osojilabo.com/",
-    "rank": 21,
+    "rank": 20,
     "rating": 4.0
   },
   {
@@ -600,7 +574,7 @@
     "responseTime": "要予約(平日9-18時)",
     "coverage": "関東・関西・東海の主要都市圏",
     "officialUrl": "https://seifu-ac.jp/",
-    "rank": 22,
+    "rank": 21,
     "rating": 4.0
   },
   {
@@ -628,7 +602,7 @@
     "responseTime": "要予約(毎日9-18時)",
     "coverage": "東京・埼玉・神奈川・千葉",
     "officialUrl": "https://r-cleaning.com/",
-    "rank": 23,
+    "rank": 22,
     "rating": 4.0
   },
   {
@@ -656,7 +630,7 @@
     "responseTime": "要予約(土日祝も営業)",
     "coverage": "全国47都道府県",
     "officialUrl": "https://www.osoujikakumei.jp/aircon-cleaning/",
-    "rank": 24,
+    "rank": 23,
     "rating": 4.0
   },
   {
@@ -684,7 +658,7 @@
     "responseTime": "要予約(Web申込)",
     "coverage": "43都道府県の対象市区町村",
     "officialUrl": "https://www.kajitaku.com/house-cleaning/airconditioner/",
-    "rank": 25,
+    "rank": 24,
     "rating": 4.0
   },
   {
@@ -712,7 +686,7 @@
     "responseTime": "要予約(9-18時・年中無休)",
     "coverage": "5大都市中心(34都道府県の一部)",
     "officialUrl": "https://www.happy-bears.com/houseclean/aircon/",
-    "rank": 26,
+    "rank": 25,
     "rating": 3.9
   },
   {
@@ -740,7 +714,7 @@
     "responseTime": "要予約(店舗による)",
     "coverage": "全国(約1,200店舗)",
     "officialUrl": "https://www.duskin.jp/servicemaster/spot/sm000010/",
-    "rank": 27,
+    "rank": 26,
     "rating": 4.0
   }
 ]

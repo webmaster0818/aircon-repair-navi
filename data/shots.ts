@@ -23,7 +23,6 @@ export const SHOT_SLUGS: string[] = [
   "panasonic-repair",
   "r-cleaning",
   "safely",
-  "saiyasu",
   "seifu-ac",
   "seikatsu110",
   "sumai-hotline",

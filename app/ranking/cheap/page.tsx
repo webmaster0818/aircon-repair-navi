@@ -119,7 +119,7 @@ export default function CheapRankingPage() {
             href="/ranking"
             className="ac-btn ac-btn-cta px-8 py-4 text-lg"
           >
-            全27社ランキングを見る
+            全26社ランキングを見る
           </Link>
         </div>
       </div>

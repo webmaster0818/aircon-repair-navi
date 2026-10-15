@@ -132,7 +132,7 @@ export default function FastRankingPage() {
             href="/ranking"
             className="inline-block bg-white text-orange-600 font-bold px-8 py-4 rounded-xl text-lg hover:bg-orange-50 transition-colors"
           >
-            全27社ランキングを見る
+            全26社ランキングを見る
           </Link>
         </div>
         {/* 今日直すための実用ガイド（2026-07-04追加） */}

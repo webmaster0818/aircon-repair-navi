@@ -107,7 +107,7 @@ export default function HomePage() {
                 5分で決める。
               </h1>
               <p className="mt-6 text-sm lg:text-base text-[var(--color-ink-2)] leading-[2.1]">
-                症状から原因を切り分け、費用の目安を確かめ、全国27社から条件に合う業者を選べます。
+                症状から原因を切り分け、費用の目安を確かめ、全国26社から条件に合う業者を選べます。
                 料金は各社が公表している金額のみを掲載しています。
               </p>
 
@@ -125,7 +125,7 @@ export default function HomePage() {
 
             <dl className="grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden lg:mt-2">
               {[
-                ["掲載業者", "27社"],
+                ["掲載業者", "26社"],
                 ["対応エリア", "214"],
                 ["症状別ガイド", "8種"],
               ].map(([k, v], i) => (
@@ -234,7 +234,7 @@ export default function HomePage() {
 
           <div className="text-center mt-8">
             <Link href="/ranking" className="ac-btn ac-btn-outline">
-              全27社の比較を見る
+              全26社の比較を見る
               <Chevron />
             </Link>
           </div>
@@ -286,12 +286,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============ 27社一括比較 ============ */}
+      {/* ============ 26社一括比較 ============ */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="ac-eyebrow">COMPARISON</span>
-            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">27社 一括比較</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">26社 一括比較</h2>
             <p className="text-[var(--color-ink-2)] text-sm">各社の公式サイトを当サイトで撮影して掲載しています</p>
           </div>
 
@@ -416,7 +416,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/ranking" className="ac-btn ac-btn-cta">
-              全27社の比較を見る
+              全26社の比較を見る
               <Chevron />
             </Link>
             <Link
