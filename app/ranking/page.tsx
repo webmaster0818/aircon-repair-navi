@@ -9,7 +9,7 @@ import { getAffiliate } from "@/lib/affiliates";
 import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
-  title: "エアコン修理業者ランキング【2026年8月】おすすめ27社を徹底比較",
+  title: "エアコン修理業者ランキング【2026年10月】おすすめ27社を徹底比較",
   description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
   alternates: { canonical: "/ranking/" },
 };
@@ -24,7 +24,7 @@ export default function RankingPage() {
           <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理業者 総合ランキング</h1>
           <p className="text-[var(--color-brand-wash)] text-sm md:text-base">
-            編集部が各社公式サイトを確認して比較した27社。公式サイトの画面は当サイトで撮影したものです
+            編集部が各社公式サイトを確認して比較した27社（費用・対応速度・エリア・特徴は2026年10月15日に公式で再確認）。公式サイトの画面は当サイトで撮影したものです
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             <Link href="/ranking/fast" className="ac-btn bg-white text-[var(--color-brand)] border-white hover:bg-[var(--color-brand-wash)] text-sm">

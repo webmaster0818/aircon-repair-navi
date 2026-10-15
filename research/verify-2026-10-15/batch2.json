@@ -1,0 +1,114 @@
+[
+ {
+  "rank": 8,
+  "slug": "sumai-hotline",
+  "name": "すまいのホットライン",
+  "avgCost": "7,000〜40,000円",
+  "responseTime": "最短当日",
+  "coverage": "全国主要都市",
+  "features": [
+   "価格比較機能",
+   "住まい全般のトラブル対応",
+   "全国対応",
+   "無料相談",
+   "登録業者の審査あり"
+  ],
+  "officialUrl": "https://hotlines.shop/"
+ },
+ {
+  "rank": 9,
+  "slug": "epark",
+  "name": "EPARK",
+  "avgCost": "8,000〜45,000円",
+  "responseTime": "最短当日",
+  "coverage": "全国主要都市",
+  "features": [
+   "かけつけサービス",
+   "全国対応",
+   "急な修理にも対応",
+   "24時間受付",
+   "複数サービス一括管理"
+  ],
+  "officialUrl": "https://epark.jp/"
+ },
+ {
+  "rank": 10,
+  "slug": "saiyasu",
+  "name": "最安修理.com",
+  "avgCost": "5,000〜25,000円",
+  "responseTime": "1〜3日",
+  "coverage": "全国",
+  "features": [
+   "最安値追求",
+   "料金透明性",
+   "全国対応",
+   "修理費用比較",
+   "無料見積もり"
+  ],
+  "officialUrl": "https://saiyasu-syuuri.com/"
+ },
+ {
+  "rank": 11,
+  "slug": "denki110",
+  "name": "電気工事110番",
+  "avgCost": "7,000円〜",
+  "responseTime": "最短即日",
+  "coverage": "全国",
+  "features": [
+   "全国対応",
+   "年中無休(9-22時)",
+   "メール24時間受付",
+   "無料相談",
+   "上場企業運営"
+  ],
+  "officialUrl": "https://denki110.net/"
+ },
+ {
+  "rank": 12,
+  "slug": "yourmystar",
+  "name": "ユアマイスター",
+  "avgCost": "8,000〜40,000円",
+  "responseTime": "要見積もり",
+  "coverage": "全国",
+  "features": [
+   "職人登録型",
+   "累計50万件超",
+   "全国対応",
+   "口コミが豊富",
+   "修理・清掃に対応"
+  ],
+  "officialUrl": "https://yourmystar.jp/"
+ },
+ {
+  "rank": 13,
+  "slug": "zehitomo",
+  "name": "ゼヒトモ",
+  "avgCost": "要見積もり",
+  "responseTime": "要見積もり",
+  "coverage": "全国",
+  "features": [
+   "相見積もり提案型",
+   "フォーム入力で簡単",
+   "全国対応",
+   "プロの実績が見える",
+   "無料で利用可"
+  ],
+  "officialUrl": "https://www.zehitomo.com/"
+ },
+ {
+  "rank": 14,
+  "slug": "panasonic-repair",
+  "name": "パナソニック修理ご相談窓口",
+  "avgCost": "品番で目安確認可",
+  "responseTime": "要予約",
+  "coverage": "全国",
+  "features": [
+   "メーカー正規対応",
+   "純正部品使用",
+   "出張修理",
+   "料金目安が確認可",
+   "全国対応"
+  ],
+  "officialUrl": "https://panasonic.jp/support/repair/on-site.html"
+ }
+]

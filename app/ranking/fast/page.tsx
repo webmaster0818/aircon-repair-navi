@@ -16,12 +16,13 @@ export const metadata: Metadata = {
 // Sort by fastest response
 const fastCompanies = [...companies]
   .sort((a, b) => {
+    // 「最短N分」は分数、即日・当日は同日扱い、翌日はその次
     const getSpeed = (t: string) => {
-      if (t.includes("5分")) return 1;
-      if (t.includes("即日")) return 2;
-      if (t.includes("当日")) return 3;
-      if (t.includes("翌日")) return 4;
-      return 5;
+      const m = t.match(/最短(\d+)分/);
+      if (m) return parseInt(m[1]);
+      if (t.includes("即日") || t.includes("当日")) return 600;
+      if (t.includes("翌日")) return 1440;
+      return 99999;
     };
     return getSpeed(a.responseTime) - getSpeed(b.responseTime);
   })

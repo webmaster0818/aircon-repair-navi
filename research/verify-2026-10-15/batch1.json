@@ -1,0 +1,114 @@
+[
+ {
+  "rank": 1,
+  "slug": "aircon-trouble-center",
+  "name": "エアコントラブルセンター",
+  "avgCost": "8,000〜50,000円",
+  "responseTime": "最短即日",
+  "coverage": "全国",
+  "features": [
+   "24時間365日受付",
+   "全国対応",
+   "見積もり無料",
+   "提携業者2,000社以上",
+   "最短即日対応"
+  ],
+  "officialUrl": "https://aircon-troubleone.com/"
+ },
+ {
+  "rank": 2,
+  "slug": "take-service",
+  "name": "テイクサービス",
+  "avgCost": "10,000〜60,000円",
+  "responseTime": "最短5分で手配",
+  "coverage": "全国",
+  "features": [
+   "最短5分でスタッフ手配",
+   "年間30,000件以上の実績",
+   "全国対応",
+   "24時間受付",
+   "アフターフォロー完備"
+  ],
+  "officialUrl": "https://aircon-syuri.jp/"
+ },
+ {
+  "rank": 3,
+  "slug": "denki-koujiya",
+  "name": "電気の工事屋さん",
+  "avgCost": "15,000〜80,000円",
+  "responseTime": "最短翌日",
+  "coverage": "全国",
+  "features": [
+   "有資格の電気工事士対応",
+   "全国対応",
+   "施工後保証あり",
+   "電気系トラブルも対応",
+   "見積もり無料"
+  ],
+  "officialUrl": "https://denki-koji.work/"
+ },
+ {
+  "rank": 4,
+  "slug": "life-kyukyusha",
+  "name": "ライフ救急車",
+  "avgCost": "8,000〜45,000円",
+  "responseTime": "最短当日",
+  "coverage": "全国",
+  "features": [
+   "365日年中無休",
+   "全国対応",
+   "生活全般のトラブル対応",
+   "緊急対応可能",
+   "電話受付24時間"
+  ],
+  "officialUrl": "https://lifeqq.info/denki/aircon/"
+ },
+ {
+  "rank": 5,
+  "slug": "seikatsu110",
+  "name": "生活110番",
+  "avgCost": "7,000〜40,000円",
+  "responseTime": "最短当日",
+  "coverage": "全国",
+  "features": [
+   "加盟業者数業界最大級",
+   "ASPアフィリエイト対応",
+   "全国対応",
+   "24時間受付",
+   "無料見積もり"
+  ],
+  "officialUrl": "https://www.seikatsu110.jp/"
+ },
+ {
+  "rank": 6,
+  "slug": "kurashi-market",
+  "name": "くらしのマーケット",
+  "avgCost": "6,000〜35,000円",
+  "responseTime": "業者によって異なる",
+  "coverage": "全国",
+  "features": [
+   "口コミ・評価システム",
+   "事前料金確認可能",
+   "全国対応",
+   "多様な業者から選択",
+   "メッセージで事前相談可能"
+  ],
+  "officialUrl": "https://curama.jp/"
+ },
+ {
+  "rank": 7,
+  "slug": "mitsumoa",
+  "name": "ミツモア",
+  "avgCost": "5,000〜30,000円",
+  "responseTime": "業者によって異なる",
+  "coverage": "全国",
+  "features": [
+   "最大5社同時見積もり",
+   "料金比較が簡単",
+   "全国対応",
+   "チャットで相談可能",
+   "口コミ評価あり"
+  ],
+  "officialUrl": "https://meetsmore.com/"
+ }
+]

@@ -9,14 +9,21 @@ import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
   title: "安いエアコン修理業者ランキング｜費用を抑えるコツも解説",
-  description: "エアコン修理費用を安く抑えたい方向けのランキング。費用相場が安い業者TOP5を厳選。見積もり比較で賢く節約する方法も紹介。",
+  description: "エアコン修理費用を安く抑えたい方向けのランキング。各社の公式サイトに載っている最低料金が安い順にTOP5を紹介。見積もり比較で賢く節約する方法も解説。",
   alternates: { canonical: "/ranking/cheap/" },
 };
 
 // Sort by cheapest (based on min avg cost)
 const cheapCompanies = [...companies]
   .sort((a, b) => {
-    const getMin = (cost: string) => parseInt(cost.replace(/[^0-9]/g, "").slice(0, 5) || "99999");
+    // 最初に出てくる0円以外の金額（「2.7万円」は27000）。「出張費0円」は料金ではないので飛ばす。金額が無いものは末尾
+    const getMin = (cost: string) => {
+      for (const m of cost.matchAll(/(\d[\d,]*(?:\.\d+)?)(万)?(?:円|〜)/g)) {
+        const n = parseFloat(m[1].replace(/,/g, "")) * (m[2] ? 10000 : 1);
+        if (n > 0) return n;
+      }
+      return 999999;
+    };
     return getMin(a.avgCost) - getMin(b.avgCost);
   })
   .slice(0, 5);
@@ -36,6 +43,7 @@ export default function CheapRankingPage() {
           <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">安いエアコン修理業者ランキング</h1>
           <p className="text-emerald-100 text-lg">修理費用を最小限に抑えたい方向け・費用重視TOP5</p>
+          <p className="text-emerald-100 text-xs mt-2">各社の公式サイトに載っている最低料金の安い順（2026年10月15日確認）。料金に含まれる作業や条件は各社で異なります</p>
         </div>
       </section>
 

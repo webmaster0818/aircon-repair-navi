@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/busy-season/" },
 };
 
-const UPDATED = "2026年8月3日";
+const UPDATED = "2026年10月15日";
 
 const toc = [
   { id: "summary", label: "結論：いつ頼むのがよい？" },
@@ -76,7 +76,7 @@ const articleJsonLd = {
   headline:
     "エアコン修理はいつ頼むべき？繁忙期カレンダー【2026年】混雑・待ち日数の目安",
   datePublished: "2026-07-12",
-  dateModified: "2026-07-12",
+  dateModified: "2026-10-15",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -117,7 +117,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-12">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-15">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -140,10 +140,10 @@ export default function Page() {
             <strong className="font-semibold text-slate-900">「いつ頼めば早く直せるのか」</strong>
             という点です。真夏は修理の依頼が集中し、訪問まで日数がかかることがあります。この記事では、繁忙期（6〜8月）の混雑・待ち日数・予約の傾向を月別カレンダーで整理し、早く安く頼むコツと、業者を待つ間の応急対処までまとめました。
           </p>
-          <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50/70 p-5">
-            <p className="font-bold text-rose-800 mb-1">いま（2026年8月上旬）は年間で最も混み合う時期です</p>
+          <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/70 p-5">
+            <p className="font-bold text-sky-800 mb-1">いま（2026年10月）は予約が取りやすくなる時期です</p>
             <p className="text-sm leading-7 text-slate-700">
-              8月は需要のピークにあたり、訪問まで1週間以上待つ場合もあります。お盆期間は休業する業者も多く、日程調整にさらに時間がかかる傾向があります。急ぎの場合は<Link href="/ranking/fast" className="text-sky-700 underline underline-offset-4 font-semibold">即日対応の業者</Link>への同時相談と、下の応急対処の併用がおすすめです。
+              10月は冷房シーズンが終わり、真夏に比べて日程を取りやすくなります。11月に暖房を使い始めてから不調に気づく人が増え、12月は年末年始の休業で予約が取りにくくなる傾向があるため、暖房の試運転と点検・修理の相談はいまのうちに済ませておくのがおすすめです。
             </p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">

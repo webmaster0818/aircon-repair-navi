@@ -1,0 +1,114 @@
+[
+ {
+  "rank": 15,
+  "slug": "daikin-cc",
+  "name": "ダイキンコンタクトセンター",
+  "avgCost": "出張費＋修理費(事前案内)",
+  "responseTime": "要予約",
+  "coverage": "全国",
+  "features": [
+   "空調専業メーカー",
+   "出張修理",
+   "年中無休受付",
+   "24時間365日サポート",
+   "全国対応"
+  ],
+  "officialUrl": "https://www.daikincc.com/"
+ },
+ {
+  "rank": 16,
+  "slug": "safely",
+  "name": "セーフリー",
+  "avgCost": "業者により異なる",
+  "responseTime": "業者による",
+  "coverage": "全国",
+  "features": [
+   "口コミ比較ポータル",
+   "掲載業者を審査",
+   "画像・動画付き口コミ",
+   "業者を監視",
+   "全国対応"
+  ],
+  "officialUrl": "https://safely.co.jp/ec/air/"
+ },
+ {
+  "rank": 17,
+  "slug": "ienakama",
+  "name": "家仲間コム",
+  "avgCost": "業者により異なる",
+  "responseTime": "業者による",
+  "coverage": "全国",
+  "features": [
+   "利用者26万人超",
+   "手数料無料",
+   "工事費が安くなりやすい",
+   "低評価業者は退会",
+   "全国対応"
+  ],
+  "officialUrl": "https://www.ienakama.com/aircon/"
+ },
+ {
+  "rank": 18,
+  "slug": "yamada-repair",
+  "name": "ヤマダ電機 出張修理",
+  "avgCost": "出張費約3,500〜5,000円",
+  "responseTime": "要予約",
+  "coverage": "全国",
+  "features": [
+   "大手量販店",
+   "出張修理",
+   "Web・電話受付",
+   "全国対応",
+   "購入店以外も相談可"
+  ],
+  "officialUrl": "https://yamada-ts.co.jp/"
+ },
+ {
+  "rank": 19,
+  "slug": "ksdenki-repair",
+  "name": "ケーズデンキ 出張修理",
+  "avgCost": "機種・症状で変動",
+  "responseTime": "要予約",
+  "coverage": "全国",
+  "features": [
+   "大手量販店",
+   "出張修理WEB受付",
+   "提携業者が施工",
+   "全国対応",
+   "購入店以外も相談可"
+  ],
+  "officialUrl": "https://www.ksdenki.co.jp/store/service/support_repair/"
+ },
+ {
+  "rank": 20,
+  "slug": "airhome-support",
+  "name": "エアホーム",
+  "avgCost": "要見積もり",
+  "responseTime": "要確認",
+  "coverage": "全国(地域により変動)",
+  "features": [
+   "症状から相談",
+   "全国対応の案内あり",
+   "エアコン修理に特化",
+   "電話で相談",
+   "横浜拠点"
+  ],
+  "officialUrl": "https://airhomesupport.com/"
+ },
+ {
+  "rank": 21,
+  "slug": "osoji-labo",
+  "name": "おそうじLabo",
+  "avgCost": "8,800円〜(エアコンクリーニング)",
+  "responseTime": "最短当日連絡",
+  "coverage": "大阪府全域・兵庫県一部",
+  "features": [
+   "100%自社作業",
+   "大阪・兵庫対応",
+   "損害保険加入",
+   "LINE24時間受付",
+   "初回限定価格あり"
+  ],
+  "officialUrl": "https://osojilabo.com/"
+ }
+]

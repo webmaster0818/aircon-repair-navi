@@ -1,0 +1,98 @@
+[
+ {
+  "rank": 22,
+  "slug": "seifu-ac",
+  "name": "エアコンクリーニング清風",
+  "avgCost": "13,200円〜(エアコンクリーニング)",
+  "responseTime": "要予約(平日9-18時)",
+  "coverage": "関東・関西・東海の主要都市圏",
+  "features": [
+   "クリーニング専門店",
+   "全機種対応",
+   "機種一律料金",
+   "追加料金なし(公式明記)",
+   "年間3万台実績"
+  ],
+  "officialUrl": "https://seifu-ac.jp/"
+ },
+ {
+  "rank": 23,
+  "slug": "r-cleaning",
+  "name": "アールクリーニング",
+  "avgCost": "9,800円〜(エアコンクリーニング)",
+  "responseTime": "要予約(毎日9-18時)",
+  "coverage": "東京・埼玉・神奈川・千葉",
+  "features": [
+   "クリーニング専門",
+   "首都圏対応",
+   "独自洗剤＋高圧洗浄",
+   "防カビ抗菌コート無料",
+   "作業実績50万件"
+  ],
+  "officialUrl": "https://r-cleaning.com/"
+ },
+ {
+  "rank": 24,
+  "slug": "osouji-kakumei",
+  "name": "おそうじ革命",
+  "avgCost": "9,980円〜(エアコンクリーニング)",
+  "responseTime": "要予約(店舗による)",
+  "coverage": "全国47都道府県",
+  "features": [
+   "クリーニング専門",
+   "全国47都道府県対応",
+   "追加料金なし宣言",
+   "エコ洗剤使用",
+   "損害保険・無料再作業"
+  ],
+  "officialUrl": "https://www.osoujikakumei.jp/aircon-cleaning/"
+ },
+ {
+  "rank": 25,
+  "slug": "kajitaku",
+  "name": "カジタク",
+  "avgCost": "9,700円〜(エアコンクリーニング)",
+  "responseTime": "要予約(Web申込)",
+  "coverage": "全国(沖縄・一部離島を除く)",
+  "features": [
+   "クリーニング専門",
+   "イオングループ運営",
+   "Web完結・明朗料金",
+   "3プランから選択",
+   "再施工保証あり"
+  ],
+  "officialUrl": "https://www.kajitaku.com/house-cleaning/airconditioner/"
+ },
+ {
+  "rank": 26,
+  "slug": "happy-bears",
+  "name": "ベアーズ",
+  "avgCost": "機種・台数で変動",
+  "responseTime": "要予約(9-18時・年中無休)",
+  "coverage": "全国(地域により範囲あり)",
+  "features": [
+   "クリーニング専門",
+   "全国対応",
+   "研修スタッフが対応",
+   "累計250万件超",
+   "フォローコール・手直し保証"
+  ],
+  "officialUrl": "https://www.happy-bears.com/houseclean/aircon/"
+ },
+ {
+  "rank": 27,
+  "slug": "duskin-servicemaster",
+  "name": "ダスキン サービスマスター",
+  "avgCost": "15,400円〜(壁掛けタイプ)",
+  "responseTime": "要予約(店舗による)",
+  "coverage": "全国(約1,200店舗)",
+  "features": [
+   "クリーニング専門",
+   "全国約1,200店舗",
+   "徹底分解洗浄",
+   "30年以上・300万件実績",
+   "大手のサポート体制"
+  ],
+  "officialUrl": "https://www.duskin.jp/servicemaster/spot/sm000010/"
+ }
+]

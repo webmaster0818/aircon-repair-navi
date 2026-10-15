@@ -66,10 +66,10 @@ export default function RepairDaysPage() {
             この記事では、依頼先別の日数の目安と、待ち日数を1日でも縮める動き方を整理しました。
             公式に日数を明記しているメーカーはほとんどないため、<strong className="font-semibold text-slate-900">公式記載が確認できたものと、傾向として言えることを区別して</strong>書いています（{UPDATED}確認）。
           </p>
-          <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50/70 p-5">
-            <p className="font-bold text-rose-800 mb-1">いま（8月）は年間で最も待つ時期です</p>
+          <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/70 p-5">
+            <p className="font-bold text-sky-800 mb-1">いま（10月）は予約が取りやすい時期です</p>
             <p className="text-sm leading-7 text-slate-700">
-              8月は需要のピークで、訪問まで1週間以上かかる場合もあります。急ぐ場合は、この記事の「今日直したいときの動き方」を先にご覧ください。
+              秋（10〜11月）は需要が少なく、真夏に比べて訪問の日程を取りやすい時期です。月別の混雑傾向は<Link href="/guide/busy-season/" className="text-sky-700 underline underline-offset-4 font-semibold">繁忙期カレンダー</Link>で確認できます。
             </p>
           </div>
         </div>
