@@ -34,15 +34,11 @@ const faqs = [
   },
   {
     q: "対応エリアはどこまでですか？",
-    a: "東京・神奈川・埼玉・千葉などの関東圏、大阪・京都・兵庫・奈良・滋賀・和歌山などの関西圏、愛知、福岡といった主要エリアに対応しているとされています（一部エリアを除く）。依頼前に自宅の住所が対応範囲か確認しておくと安心です。",
+    a: "公式サイトの出張対応エリアには42都道府県が掲載されており、岩手・秋田・長野・鳥取・島根は掲載されていません（2026年10月15日・公式確認）。依頼前に自宅の住所が対応範囲か確認しておくと安心です。",
   },
   {
     q: "出張料や見積もりは有料ですか？",
-    a: "公称では出張料が一律3,300円、見積もりは原則無料とされています。条件は時期や作業内容により変わる場合があるため、依頼時に確認しておきましょう。",
-  },
-  {
-    q: "修理できなかった場合も費用はかかりますか？",
-    a: "公称では、修理しても直らなかった場合は修理費が0円とされています。詳しい適用条件は依頼時に確認してください。",
+    a: "公式サイトでは見積もり無料と案内されています。出張料の金額は公式サイトに記載がありません（2026年10月15日・公式確認）。料金はエアコン修理3,300円（税込）〜と掲載されているため、出張料が含まれるかを依頼時に確認しておきましょう。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -138,7 +134,7 @@ export default function Page() {
               電気の工事屋さんは、国家資格を持つ電気工事士が対応する電気工事・修理サービスです。エアコンの取り付けや修理に加え、コンセント・ブレーカー・照明・アンテナなど、住まいの電気まわり全般に対応しています。エアコンが効かない原因が電気系統にあるケースでも相談しやすいのが特徴です。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              出張料は一律で分かりやすく、見積もりは原則無料を公称。さらに修理しても直らなかった場合は修理費が0円とされており、施工後の保証も用意されています。技術面の安心感を重視する人に向いたサービスです。
+              見積もりは無料と公式に案内されており、エアコン修理は3,300円（税込）〜、冷媒ガス充填は16,500円（税込）〜など、作業別の料金が公式サイトに掲載されています（2026年10月15日・公式確認）。技術面の安心感を重視する人に向いたサービスです。
             </p>
           </section>
 
@@ -151,11 +147,10 @@ export default function Page() {
                     ["サービス名", "電気の工事屋さん"],
                     ["主な対応内容", "エアコン取り付け・修理、コンセント・ブレーカー・照明・アンテナ工事 など"],
                     ["対応する作業者", "有資格の電気工事士（公称）"],
-                    ["対応エリア", "東京・神奈川・埼玉・千葉・大阪・京都・兵庫・奈良・愛知・滋賀・福岡・和歌山 など（一部エリアを除く）"],
-                    ["出張料", "一律3,300円（公称）"],
-                    ["見積もり", "原則無料（公称）"],
-                    ["保証", "施工後保証あり（公称）／直らなければ修理費0円"],
-                    ["公式サイト", "www.denki-koujiya.jp"],
+                    ["対応エリア", "42都道府県（岩手・秋田・長野・鳥取・島根を除く／2026年10月15日・公式確認）"],
+                    ["料金", "エアコン修理3,300円（税込）〜（出張料の記載なし）"],
+                    ["見積もり", "無料（公式）"],
+                    ["公式サイト", "denki-koji.work"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                       <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
@@ -179,7 +174,7 @@ export default function Page() {
                 <li>問い合わせから訪問までの対応が早いという評価</li>
                 <li>電話対応や、希望に合わせた提案が丁寧という評価</li>
                 <li>有資格の電気工事士が対応する安心感と、説明の分かりやすさへの評価</li>
-                <li>見積もり時に費用の内訳が明確で、施工後保証にも安心できたという評価</li>
+                <li>見積もり時に費用の内訳が明確だったという評価</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価の傾向は時期・担当者・地域によって異なる場合があります。</p>
@@ -198,7 +193,7 @@ export default function Page() {
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期（真夏・真冬）は予約が取りにくく、訪問まで時間がかかる場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>対応エリアが主要都市中心のため、地域によっては対応範囲外のことがある</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式の出張対応エリアは42都道府県で、岩手・秋田・長野・鳥取・島根は掲載されていない（2026年10月15日・公式確認）</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、出張料・調査費を含む総額の見積もりを書面で確認してから依頼するのが安心</li>
             </ul>
           </section>
@@ -211,8 +206,7 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>国家資格を持つ電気工事士が対応する安心感がある</li>
                   <li>エアコンの電気系統トラブルにも対応しやすい</li>
-                  <li>出張料が一律で分かりやすく、見積もりは原則無料（公称）</li>
-                  <li>施工後保証があり、直らなければ修理費0円とされている</li>
+                  <li>作業別の料金が公式に掲載され、見積もりは無料</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
@@ -220,7 +214,7 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>料金は症状で変わるため、事前の見積もり確認が前提</li>
                   <li>繁忙期は予約が取りにくくなる場合がある</li>
-                  <li>対応エリアが主要都市中心で、地域によっては対象外のことがある</li>
+                  <li>岩手・秋田・長野・鳥取・島根は対応エリアに掲載されていない</li>
                 </ul>
               </div>
             </div>
@@ -234,7 +228,6 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>有資格者に技術面を安心して任せたい人</li>
                   <li>エアコンの電源・配線など電気系統の不調が疑われる人</li>
-                  <li>施工後の保証を重視したい人</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
@@ -250,9 +243,9 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              エアコン修理の費用は、症状や必要な作業（点検・ガス補充・部品交換など）によって幅があります。電気の工事屋さんでは、出張料が
-              <strong className="font-semibold">一律3,300円</strong>
-              、見積もりは原則無料とされており、修理しても直らなかった場合は修理費0円を公称しています。ガス補充や基板交換など追加作業が必要な場合は、その分の費用が加算されます。
+              エアコン修理の費用は、症状や必要な作業（点検・ガス補充・部品交換など）によって幅があります。電気の工事屋さんの公式サイトでは、エアコン修理が
+              <strong className="font-semibold">3,300円（税込）〜</strong>
+              、冷媒ガス充填が16,500円（税込）〜、水漏れが5,500円（税込）〜と案内されており、見積もりは無料です（2026年10月15日・公式確認）。出張料の金額は記載がありません。ガス補充や基板交換など追加作業が必要な場合は、その分の費用が加算されます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               訪問時には出張料・調査費を含めた作業範囲と総額の見積もりを書面で確認し、納得してから依頼するのがおすすめです。可能であれば、複数の業者から見積もりを取って比較すると安心です。
@@ -268,7 +261,7 @@ export default function Page() {
                 ["訪問日時の調整", "都合の良い日時を調整し、有資格の電気工事士が訪問します。"],
                 ["現地確認・見積もり", "エアコンや電気系統の状態を確認し、作業内容と費用を提示してもらいます。"],
                 ["修理作業", "見積もりに納得後、修理を実施します。"],
-                ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。施工後保証の内容も確認しましょう。"],
+                ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
                   <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
@@ -299,7 +292,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              電気の工事屋さんは、国家資格を持つ電気工事士が対応する点と、出張料が一律・見積もり原則無料・直らなければ修理費0円といった分かりやすい料金体系が強みのサービスです。利用者の声では対応の早さと丁寧さ、有資格者ならではの安心感を評価する内容が目立ちます。一方で、料金は症状によって幅が出るため、依頼時には総額の見積もりを書面で確認し、納得してから進めるのが安心です。
+              電気の工事屋さんは、国家資格を持つ電気工事士が対応する点と、作業別の料金が公式に掲載され見積もりが無料である点が強みのサービスです。利用者の声では対応の早さと丁寧さ、有資格者ならではの安心感を評価する内容が目立ちます。一方で、料金は症状によって幅が出るため、依頼時には総額の見積もりを書面で確認し、納得してから進めるのが安心です。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理は症状によって費用が変わります。急ぎでないときは複数の業者から見積もりを取り、料金と対応を比較して選ぶと失敗を防げます。
@@ -308,7 +301,7 @@ export default function Page() {
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンや電気まわりのトラブルでお困りの方へ</p>
               <p className="text-sky-100 text-sm mb-5">まずは無料見積もりで、症状と費用の目安を確認してみましょう。</p>
-              <a href="https://www.denki-koujiya.jp/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
+              <a href="https://denki-koji.work/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 電気の工事屋さん公式サイトを見る
               </a>
             </div>

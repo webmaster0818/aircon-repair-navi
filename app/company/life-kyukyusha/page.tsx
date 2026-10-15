@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title:
     "ライフ救急車のエアコン修理の評判は？口コミ・料金を実査【2026年8月】",
   description:
-    "エアコン修理の受付窓口「ライフ救急車」の口コミ傾向・料金・運営会社を当サイトが実査（2026年7月12日確認）。公式サイト（life-kyukyusha.jp）が現在アクセスできないこと、施工は別会社が担う紹介型であること、料金実額や許認可が公式に確認できないこと、口コミの傾向まで正直に解説します。",
+    "エアコン修理の窓口「ライフ救急車」の料金・対応エリア・口コミ傾向を公式ページで実査（2026年10月15日再確認）。料金は作業費5,500円〜＋部材費、対応は24府県。施工は別会社が担う紹介型であることや、許認可が公式に確認できない点まで正直に解説します。",
   alternates: { canonical: "/company/life-kyukyusha" },
 };
 
@@ -30,7 +30,7 @@ const toc = [
 const faqs = [
   {
     q: "ライフ救急車の公式サイトはどこですか？",
-    a: "かつて使われていたドメイン（life-kyukyusha.jp）は、当サイトが2026年7月12日に確認した時点でアクセスできない状態（名前解決不可）でした。関連する紹介サイトでも料金表や会社概要ページの掲載は確認できず、フリーダイヤルでの電話受付が中心とされています。公式な情報開示が乏しい点は、依頼前に理解しておきたいポイントです。",
+    a: "かつて使われていたドメイン（life-kyukyusha.jp）は、当サイトが2026年7月12日に確認した時点でアクセスできない状態（名前解決不可）でした。2026年10月15日には、エアコン修理の公式ページ（lifeqq.info/denki/aircon/）で料金・対応エリア・営業時間を確認できました（同日時点でこのページのSSL証明書は期限切れでした）。会社概要などの公式な情報開示が乏しい点は、依頼前に理解しておきたいポイントです。",
   },
   {
     q: "ライフ救急車は自社で修理するのですか？",
@@ -38,11 +38,11 @@ const faqs = [
   },
   {
     q: "料金はいくらくらいかかりますか？",
-    a: "公式サイトが確認できないため、公式の料金表は確認できませんでした。紹介サイトでは施工会社の作業料金が8,000円〜（出張料・処分料込み）と記載されていますが、症状別の実額・キャンセル料・深夜割増などは公式に確認できません。金額を比較して決めたい方は、実額を公開している業者との相見積もりが安全です（当サイトの料金実査一覧が目安になります）。",
+    a: "公式ページでは、基本料金として「作業費（調査・施工）5,500円〜＋部材費」と掲載され、5,500円で終わるものから数万〜10万円以上かかるものまであると注記されています（2026年10月15日・公式確認）。症状別の実額・キャンセル料は公式に確認できず、夜間・早朝は夜間料金が発生する場合があります。金額を比較して決めたい方は、実額を公開している業者との相見積もりが安全です（当サイトの料金実査一覧が目安になります）。",
   },
   {
     q: "24時間対応していますか？",
-    a: "紹介サイトでは24時間365日のフリーダイヤル受付・最短15分の駆けつけ（いずれも公称）とされています。ただし訪問時間は地域や手配状況によって変わり、口コミでは当日連絡がつかない・エリア外を理由に直前で断られたという報告も見られます。急ぎの場合は受付時に到着目安と対応可否を確認しましょう。",
+    a: "2026年10月15日に確認した公式ページでは、24時間受付や最短の駆けつけ時間の記載は確認できませんでした。営業時間は「年中無休 365日施工」とされ、深夜・早朝の対応も可能ですが夜間料金が発生する場合があるとされています。訪問時間は地域や手配状況によって変わり、口コミでは当日連絡がつかない・エリア外を理由に直前で断られたという報告も見られます。急ぎの場合は受付時に到着目安と対応可否を確認しましょう。",
   },
   {
     q: "許認可（建設業許可・電気工事業登録）はありますか？",
@@ -120,19 +120,19 @@ export default function Page() {
           </div>
           <p className="text-[1.05rem] leading-8 text-slate-700">
             エアコンが急に効かなくなったとき、24時間受付・スピード対応をうたう出張サービスは頼りたくなる存在です。
-            この記事では、生活トラブルの出張受付窓口である
+            この記事では、エアコンなど電気まわりのトラブルの出張受付窓口である
             <strong className="font-semibold text-slate-900">ライフ救急車</strong>
-            のエアコン修理について、当サイトが公式・関連情報を直接確認した事実（2026年7月12日実査）をもとに、料金の実態・口コミの傾向・依頼前に確認すべき点を、良い点・気になる点の両面から中立的にまとめました。
+            のエアコン修理について、当サイトが公式・関連情報を直接確認した事実（2026年7月12日実査・2026年10月15日に公式ページで再確認）をもとに、料金の実態・口コミの傾向・依頼前に確認すべき点を、良い点・気になる点の両面から中立的にまとめました。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">先に結論（30秒まとめ）</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
-              <li>・かつての<strong>公式ドメイン（life-kyukyusha.jp）は現在アクセスできず</strong>（2026年7月12日確認）、料金表や会社概要など<strong>公式の情報開示が乏しい</strong>のが実態です</li>
-              <li>・実態は<strong>施工会社を手配する紹介型の受付窓口</strong>（施工は株式会社ARS等とされる）。料金実額・保証・許認可は公式に確認できませんでした</li>
+              <li>・かつての<strong>公式ドメイン（life-kyukyusha.jp）はアクセスできず</strong>（2026年7月12日確認）、会社概要など<strong>公式の情報開示が乏しい</strong>のが実態です。現在の公式ページで確認できる料金は作業費5,500円〜＋部材費、対応エリアは24府県です（2026年10月15日・公式確認）</li>
+              <li>・実態は<strong>施工会社を手配する紹介型の受付窓口</strong>（施工は株式会社ARS等とされる）。症状別の料金実額・許認可は公式に確認できませんでした（保証期間は公式FAQで1年）</li>
               <li>・口コミには<strong>「ガス補充だけで根本修理をしない」「高額請求」「直前キャンセル」といった注意すべき傾向</strong>の指摘があり、依頼前に<Link href="/cost/price-index/" className="text-sky-700 underline">実額公開業者との相見積もり</Link>を強くおすすめします</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年7月12日に公式ドメインの稼働状況・関連紹介サイト・口コミ掲載サイトで確認した内容です。</p>
+            <p className="mt-3 text-xs text-slate-400">※2026年7月12日に公式ドメインの稼働状況・関連紹介サイト・口コミ掲載サイトで確認した内容です。料金・対応エリア・営業時間・保証は2026年10月15日に公式ページで再確認しました。</p>
           </div>
         </div>
 
@@ -154,10 +154,10 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ライフ救急車とは</h2>
             <p className="leading-8 text-slate-700">
-              ライフ救急車は、冷えない・水漏れ・異音といったエアコントラブルや生活まわりの困りごとに対応する<strong className="font-semibold">出張の受付窓口</strong>です。紹介サイトの情報によると、受付・手配を担う窓口で、実際の相談・見積もり・施工は提携する施工会社（株式会社ARSなどと紹介されています）が対応する<strong className="font-semibold">紹介型</strong>の仕組みとされています。
+              ライフ救急車は、冷えない・水漏れ・異音といったエアコントラブルなど電気まわりの困りごとに対応する<strong className="font-semibold">出張の受付窓口</strong>です。紹介サイトの情報によると、受付・手配を担う窓口で、実際の相談・見積もり・施工は提携する施工会社（株式会社ARSなどと紹介されています）が対応する<strong className="font-semibold">紹介型</strong>の仕組みとされています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              24時間365日のフリーダイヤル受付・全国主要都市対応・最短15分の駆けつけ（いずれも公称）をうたっています。ただし、当サイトが2026年7月12日に確認した時点では、かつての公式ドメイン（life-kyukyusha.jp）は名前解決ができずアクセスできない状態で、料金表・会社概要・許認可などの<strong className="font-semibold">公式な情報開示は確認できませんでした</strong>。
+              2026年10月15日に確認した公式ページ（lifeqq.info/denki/aircon/）では、対応エリアは24府県（岩手・宮城・山形・茨城・栃木・群馬・埼玉・千葉・東京・神奈川・山梨・岐阜・愛知・三重・滋賀・京都・大阪・兵庫・奈良・和歌山・岡山・広島・福岡・沖縄）、営業時間は「年中無休 365日施工」とされています。24時間受付や最短の駆けつけ時間は公式ページでは確認できませんでした。なお、2026年7月12日に確認した時点では、かつての公式ドメイン（life-kyukyusha.jp）は名前解決ができずアクセスできない状態で、会社概要・許認可などの<strong className="font-semibold">公式な情報開示は確認できませんでした</strong>。
             </p>
           </section>
 
@@ -171,11 +171,11 @@ export default function Page() {
                     ["運営会社", "公式に会社概要ページを確認できず。関連紹介サイトでは「合同会社JCC」と紹介（正式名称・所在地は公式に記載なし・2026年7月12日確認）"],
                     ["施工体制", "紹介型（受付・手配を行い、施工は提携施工会社が実施。株式会社ARS等とされる）"],
                     ["許認可の表示", "建設業許可・電気工事業登録等の公式な記載を確認できず（2026年7月12日確認）"],
-                    ["対応エリア", "全国主要都市を中心に対応（公称。地域により手配先・対応スピードが異なる）"],
-                    ["受付時間", "24時間365日のフリーダイヤル受付（公称。訪問時間は地域・手配状況により変動）"],
-                    ["対応スピード", "最短15分の駆けつけ（公称）"],
-                    ["料金", "公式料金表は確認できず。紹介サイトでは作業料金8,000円〜（出張料・処分料込み）と記載"],
-                    ["公式サイト", "life-kyukyusha.jp は現在アクセス不可（名前解決不可・2026年7月12日確認）"],
+                    ["対応エリア", "24府県（岩手・宮城・山形・茨城・栃木・群馬・埼玉・千葉・東京・神奈川・山梨・岐阜・愛知・三重・滋賀・京都・大阪・兵庫・奈良・和歌山・岡山・広島・福岡・沖縄。2026年10月15日・公式確認）"],
+                    ["営業時間", "年中無休・365日施工（公式）。24時間受付の記載は確認できず（2026年10月15日・公式確認）"],
+                    ["対応スピード", "公式ページに明記なし（2026年10月15日確認）"],
+                    ["料金", "作業費（調査・施工）5,500円〜＋部材費（2026年10月15日・公式確認）"],
+                    ["公式サイト", "lifeqq.info/denki/aircon/（2026年10月15日確認。SSL証明書は期限切れ）。旧ドメイン life-kyukyusha.jp はアクセス不可（名前解決不可・2026年7月12日確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                       <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
@@ -185,7 +185,7 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：公式ドメインの稼働状況の確認、および関連紹介サイトの掲載情報（2026年7月12日確認）。運営会社名・施工会社名は第三者の紹介サイトによる情報で、公式の会社概要ページは確認できませんでした。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：公式ドメインの稼働状況の確認、および関連紹介サイトの掲載情報（2026年7月12日確認）。対応エリア・営業時間・料金は公式ページ（2026年10月15日確認）。運営会社名・施工会社名は第三者の紹介サイトによる情報で、公式の会社概要ページは確認できませんでした。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
@@ -197,8 +197,8 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">評価されている点（公称・傾向）</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・24時間受付ですぐ電話がつながり相談しやすい（公称・一部の声）</li>
-                  <li>・エアコン以外の生活トラブルもまとめて相談できる窓口がある</li>
+                  <li>・電話がつながりやすく相談しやすい（一部の声）</li>
+                  <li>・エアコン以外の電気まわりのトラブルも相談できる窓口がある</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
@@ -223,9 +223,9 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（実査ベース）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>公式サイトが現在アクセスできず、情報開示が乏しい</strong>——かつての公式ドメイン（life-kyukyusha.jp）は2026年7月12日時点で名前解決不可。料金表・会社概要・許認可を公式に確認できません</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>症状別の料金実額・キャンセル料・深夜割増が不明です</strong>。紹介サイトの「作業料金8,000円〜（出張料・処分料込み）」以外に公開情報がなく、金額重視の方は実額公開業者との比較が前提になります</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>紹介型で施工は別会社が担い、保証の明記がありません</strong>。訪問する担当者・料金・保証は手配先（株式会社ARS等とされる）により異なるため、保証の期間・範囲は依頼前に必ず確認を</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>旧公式ドメインがアクセスできず、情報開示が乏しい</strong>——かつての公式ドメイン（life-kyukyusha.jp）は2026年7月12日時点で名前解決不可。現在の公式ページ（lifeqq.info）も2026年10月15日時点でSSL証明書の期限が切れており、会社概要・許認可は公式に確認できません</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>症状別の料金実額・キャンセル料が不明です</strong>。公式の料金は「作業費（調査・施工）5,500円〜＋部材費」のみで、数万〜10万円以上かかる作業もあると注記されています。深夜・早朝は夜間料金が発生する場合があります（2026年10月15日・公式確認）。金額重視の方は実額公開業者との比較が前提になります</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>紹介型で施工は別会社が担います</strong>。公式FAQでは保証期間は1年とされていますが、訪問する担当者・料金は手配先（株式会社ARS等とされる）により異なるため、保証の範囲は依頼前に必ず確認を</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>建設業許可・電気工事業登録などの公式な許認可表示が確認できません</strong>。電気工事を伴う作業もあるため、訪問時に施工会社名と有資格者かどうかを確認しましょう</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>口コミで作業・料金トラブルの指摘が見られます</strong>（ガス補充のみで根本修理せずメーカー誘導・高額請求・直前キャンセル等）。作業前の書面見積もりと相見積もりが特に重要です</span></li>
             </ul>
@@ -237,15 +237,16 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>24時間受付を公称しており、急なトラブルでも電話で相談しやすい</li>
-                  <li>エアコン以外の生活まわりのトラブルもまとめて相談できる窓口がある</li>
-                  <li>全国主要都市に対応し、スピード出張を公称している</li>
+                  <li>年中無休で、深夜・早朝の対応も可能とされている（夜間料金あり）</li>
+                  <li>エアコン以外の電気まわりのトラブルも相談できる窓口がある</li>
+                  <li>基本料金（作業費5,500円〜＋部材費）と1年保証が公式に掲載されている</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>公式サイトが確認できず、料金・会社情報・許認可の開示が乏しい</li>
+                  <li>旧公式ドメインがアクセスできず、会社情報・許認可の開示が乏しい</li>
+                  <li>対応エリアは24府県で、それ以外の地域は対象外</li>
                   <li>紹介型のため実際の対応・料金・保証が手配先で変わる</li>
                   <li>口コミに作業・料金トラブルの指摘があり、事前確認が必須</li>
                 </ul>
@@ -276,18 +277,18 @@ export default function Page() {
           </section>
 
           <section id="price" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の実態（2026年7月12日 実査）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の実態（2026年10月15日 公式確認）</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
               <table className="w-full text-[0.95rem]">
                 <tbody>
                   {[
-                    ["公式料金表", "公式サイトが確認できず、掲載を確認できない"],
-                    ["作業料金", "8,000円〜（出張料・処分料込み／関連紹介サイトの記載）"],
-                    ["出張費", "上記作業料金に含むとの記載（公式の明記は確認できず）"],
+                    ["公式料金表", "基本料金のみ掲載（症状別の料金表はなし）"],
+                    ["作業料金", "作業費（調査・施工）5,500円〜＋部材費（公式）"],
+                    ["出張費", "依頼時に要確認"],
                     ["見積もり", "公式に記載なし（受付時に無料かどうかを要確認）"],
                     ["症状別の修理実額", "公式に記載なし（現地見積もりで決まる）"],
                     ["キャンセル料", "公式に記載なし（要確認）"],
-                    ["深夜・早朝の割増", "公式に記載なし（要確認）"],
+                    ["深夜・早朝の割増", "夜間料金が発生する場合あり（公式FAQ）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                       <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
@@ -298,7 +299,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              症状別の実額を公開している業者と違い、ライフ救急車は<strong className="font-semibold">公式の料金開示がなく、現地見積もりで金額が決まる方式</strong>です。口コミには料金トラブルの指摘もあるため、<strong className="font-semibold">提示された総額見積もりと施工会社名を書面で残す</strong>ことが自衛の要点になります。相場感は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金実査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
+              症状別の実額を公開している業者と違い、ライフ救急車の公式料金は基本料金（作業費5,500円〜＋部材費）のみで、5,500円で終わるものから数万〜10万円以上かかるものまであると注記されています。<strong className="font-semibold">実際の金額は現地見積もりで決まる方式</strong>です。口コミには料金トラブルの指摘もあるため、<strong className="font-semibold">提示された総額見積もりと施工会社名を書面で残す</strong>ことが自衛の要点になります。相場感は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金実査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
             </p>
           </section>
 
@@ -314,7 +315,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["電話で相談", "症状や設置状況を伝えます。受付は24時間365日のフリーダイヤルとされています。"],
+                ["電話で相談", "症状や設置状況を伝えます。"],
                 ["手配・訪問日時の調整", "都合の良い日時を調整し、提携施工会社が訪問します。"],
                 ["現地確認・見積もり", "エアコンの状態を確認し、作業内容と費用を提示してもらいます。施工会社名と総額を書面で残しましょう。"],
                 ["修理作業", "見積もりに納得後、修理を実施します。追加作業はその場で即決せず内容を確認します。"],
@@ -349,7 +350,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ライフ救急車は、24時間受付・スピード出張を公称する生活トラブルの受付窓口です。一方で、当サイトが2026年7月12日に確認した時点では公式サイトがアクセスできず、料金・会社情報・許認可の公式な開示が乏しいうえ、施工は別会社が担う紹介型で、口コミには作業・料金トラブルの指摘も見られました。依頼するなら「施工会社名と総額見積もりを書面で残す」「追加作業をその場で即決しない」「複数社で相見積もりを取る」の3点は必ず押さえましょう。
+              ライフ救急車は、年中無休で24府県のエアコンなど電気まわりのトラブルを受け付ける窓口です（2026年10月15日・公式確認）。一方で、旧公式ドメインは2026年7月12日時点でアクセスできず、会社情報・許認可の公式な開示が乏しいうえ、施工は別会社が担う紹介型で、口コミには作業・料金トラブルの指摘も見られました。依頼するなら「施工会社名と総額見積もりを書面で残す」「追加作業をその場で即決しない」「複数社で相見積もりを取る」の3点は必ず押さえましょう。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理は症状によって費用が変わります。急ぎでないときは、料金や会社情報を公開している業者を含めて複数から見積もりを取り、内容と対応を比較して選ぶと失敗を防げます。

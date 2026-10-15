@@ -356,9 +356,9 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              ヤマダ電機の出張修理は、症状別の一部料金と出張料が公式に公開されている点で分かりやすい一方、<strong className="font-semibold">「修理をしなくても訪問実費・診断料がかかる場合がある」</strong>のが量販店・メーカー系修理に共通する見落としがちな費用です。出張料や診断料まで含めると、街の修理業者のほうが安く早いケースもあります。相場感は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
+              ヤマダ電機の出張修理は、現在は公式に料金の金額が掲載されておらず（2026年10月15日・公式確認）、見積もりで総額を確認する方式です。そのうえで、<strong className="font-semibold">「修理をしなくても訪問実費・診断料がかかる場合がある」</strong>のが量販店・メーカー系修理に共通する見落としがちな費用です。出張料や診断料まで含めると、街の修理業者のほうが安く早いケースもあります。相場感は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金実査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は施工会社（ヤマダテクニカルサービス）公式ページ・公式料金表の記載に基づく目安です。正確な金額は申込・現地の見積もりでご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※旧公式掲載額は、2026年8月の公式サイト刷新前に施工会社（ヤマダテクニカルサービス）の公式ページ・公式料金表に記載されていた目安です。2026年10月15日時点の公式ページには金額の記載はありません。正確な金額は申込・現地の見積もりでご確認ください。</p>
             <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
               <p className="text-base font-bold text-slate-800 mb-1">量販店 vs 街の業者、どっちが得？</p>
               <p className="text-sm text-slate-500 mb-4">出張費・診断料まで含めた総額で比べると判断を誤りません。まずは相場と対応の早い業者を確認しましょう。</p>
