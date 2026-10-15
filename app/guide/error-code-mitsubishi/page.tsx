@@ -211,6 +211,7 @@ export default function ErrorCodeMitsubishiPage() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { href: "/guide/heating-not-working/", label: "暖房中に止まる・ランプ点滅(霜取り運転)の見分け方" },
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧【家庭用】" },
                 { href: "/symptom/error-code/", label: "エラーコードが出る(症状別の切り分け)" },
                 { href: "/cost/maker-repair-fee/", label: "メーカー修理費用の比較" },

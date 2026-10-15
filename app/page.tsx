@@ -282,6 +282,12 @@ export default function HomePage() {
             <Link href="/guide/busy-season/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
               修理はいつ頼むべき？繁忙期カレンダー
             </Link>
+            <Link href="/guide/heating-not-working/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
+              暖房が効かない・ランプ点滅（霜取り）の見分け方
+            </Link>
+            <Link href="/cost/cleaning-fee/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
+              エアコンクリーニング料金と業者別の口コミ
+            </Link>
           </div>
         </div>
       </section>
