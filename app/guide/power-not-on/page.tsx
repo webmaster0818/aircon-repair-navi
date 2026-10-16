@@ -69,7 +69,7 @@ export default function PowerNotOnPage() {
           <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
             <p className="font-bold text-amber-800 mb-1">最初に行う公式のリセット（ダイキン公式FAQより）</p>
             <p className="text-sm leading-7 text-slate-700">
-              ①運転を停止する → ②<strong>電源プラグを抜く（またはエアコン専用ブレーカーをOFFにする）して1分待つ</strong> → ③元に戻す → ④再運転する。
+              ①運転を停止します → ②<strong>電源プラグを抜いて（またはエアコン専用ブレーカーをOFFにして）1分待ちます</strong> → ③元に戻します → ④再運転します。
               一時的な症状であれば、この操作で回復する場合があります。
             </p>
           </div>

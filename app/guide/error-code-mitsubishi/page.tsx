@@ -164,7 +164,7 @@ export default function ErrorCodeMitsubishiPage() {
               <div className="rounded-2xl border border-slate-200 p-5">
                 <h3 className="font-bold text-slate-900 mb-2">数字点滅・運転ランプ点滅：3つの手順による切り分け</h3>
                 <p className="text-sm leading-7 text-slate-700">
-                  ①フラップの取付を確認する → ②室外機の吹出口・吸込口まわりの物を撤去する → ③電源プラグを抜いて約1分後に差し直し、再運転する。
+                  ①フラップの取付を確認します → ②室外機の吹出口・吸込口まわりの物を撤去します → ③電源プラグを抜いて約1分後に差し直し、再運転します。
                   この3つの手順で解消しない場合は、公式FAQによると「制御機器や部品の訪問修理が必要な故障」です。点滅している数字を控えたうえで、
                   <Link href="/guide/where-to-repair/" className="text-sky-600 underline underline-offset-2">修理の依頼先のガイド</Link>を参考に依頼先をお選びください。
                 </p>
