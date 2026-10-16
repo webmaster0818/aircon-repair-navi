@@ -526,7 +526,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             国民生活センターは2026年6月3日、「エアコン修理のトラブルに注意！」という注意喚起を公表しました。
             全国の消費生活センターに寄せられたエアコン修理の相談は
             <strong className="font-bold underline decoration-orange-300 decoration-[3px] underline-offset-4">2021年度の451件から2025年度は1,251件へと、5年で2倍以上に増加</strong>
-            しています。典型的な事例は「ネット検索で見つけた即日対応の業者に依頼し、高額な料金を支払ったが直っていない」というものです。トラブルを防ぐためのポイントは次の3つです。
+            しています。典型的な事例は「ネット検索した即日対応業者に依頼し、高額料金を支払ったが直っていない」というものです。トラブルを防ぐためのポイントは次の3つです。
           </p>
           <div className="rounded-lg border border-sky-100 bg-sky-50/60 px-5 py-4">
             <p className="whitespace-pre-line leading-[2.0]">

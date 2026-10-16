@@ -210,7 +210,7 @@ export default function Page() {
               <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
                 <h3 className="font-bold text-orange-800 mb-3">否定的な声・構造的な指摘の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・品質は選んだ加盟業者によって左右されるという指摘</li>
+                  <li>・品質は「選んだ加盟業者次第」という構造的な指摘</li>
                   <li>・EPARKブランド全体のレビューと混同されやすく、サービス単体の評判がわかりにくいという指摘</li>
                 </ul>
               </div>
