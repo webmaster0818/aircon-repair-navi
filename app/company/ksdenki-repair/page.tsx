@@ -197,17 +197,17 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">好意的な声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・大手量販店で問い合わせ先が明確だった</li>
-                  <li>・WEB受付フォームからの申込みがわかりやすかった</li>
-                  <li>・購入品が保証期間内で、無料で修理してもらえた</li>
+                  <li>・大手量販店で問い合わせ先が明確だったという声</li>
+                  <li>・WEB受付フォームからの申込みがわかりやすかったという声</li>
+                  <li>・購入品が保証期間内で、無料で修理してもらえたという声</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
                 <h3 className="font-bold text-orange-800 mb-3">否定的な声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・直らなかった／症状が出なかったのに診断料・出張料を請求された</li>
-                  <li>・専門の緊急業者に比べて訪問までに日数がかかった</li>
-                  <li>・担当者によって対応の丁寧さに差を感じた</li>
+                  <li>・直らなかった／症状が出なかったのに診断料・出張料を請求されたという声</li>
+                  <li>・専門の緊急業者に比べて訪問までに日数がかかったという声</li>
+                  <li>・担当者によって対応の丁寧さに差を感じたという声</li>
                 </ul>
               </div>
             </div>
@@ -238,19 +238,19 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>全国展開の大手量販店が窓口で、相談先が明確である</li>
-                  <li>ケーズデンキでの購入品は、長期無料保証・あんしんパスポートにより保証の範囲内で無料修理を受けられる</li>
-                  <li>出張修理WEB受付フォームから申込みできる</li>
-                  <li>上場企業が運営し、支払い・記録などの手続きが明確である</li>
+                  <li>全国展開の大手量販店が窓口のため、相談先が明確です</li>
+                  <li>ケーズデンキでの購入品は、長期無料保証・あんしんパスポートにより保証の範囲内で無料修理を受けられます</li>
+                  <li>出張修理WEB受付フォームから申し込みできます</li>
+                  <li>上場企業が運営しており、支払い・記録などの手続きが明確です</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>症状未再現・キャンセル時も診断料・点検料・出張料がかかる場合がある</li>
-                  <li>修理料金の実額が非公開で、事前の見積もり確認が前提</li>
-                  <li>保証切れは有料で、割高になりやすい</li>
-                  <li>訪問は調整制のため、急ぎの故障には不向き</li>
+                  <li>症状未再現・キャンセル時も診断料・点検料・出張料がかかる場合があります</li>
+                  <li>修理料金の実額が非公開のため、事前の見積もり確認が必要です</li>
+                  <li>保証切れの場合は有料で、割高になる傾向があります</li>
+                  <li>訪問は調整制のため、急ぎの故障には適していません</li>
                 </ul>
               </div>
             </div>
@@ -314,7 +314,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              ケーズデンキでの購入品で保証期間内であれば、あんしんパスポートと連携した長期無料保証により無料で修理を受けられる点が最大の強みです。一方、<strong className="font-semibold">保証切れの場合は、診断料・点検料・出張料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります</strong>。症状別の実額を公開している業者と異なり、金額は現地での見積もりで決まるため、提示された見積もりを書面で受け取ることをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
+              ケーズデンキでの購入品で保証期間内であれば、あんしんパスポートと連携した長期無料保証により無料で修理を受けられる点が主な特徴です。一方、<strong className="font-semibold">保証切れの場合は、診断料・点検料・出張料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります</strong>。症状別の実額を公開している業者と異なり、金額は現地での見積もりで決まるため、提示された見積もりを書面で受け取ることをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は機種・症状・保証加入状況により変動します。正確な金額は申込・現地の見積もりでご確認ください（2026年7月11日時点の公式確認）。</p>
             <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">

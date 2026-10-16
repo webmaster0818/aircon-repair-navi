@@ -236,17 +236,17 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>SAZANKA運営のサービスは運営会社・所在地が公式サイトで確認でき、受付時間も9:00〜22:00と明記されている</li>
-                  <li>広域対応を掲げており、症状(冷えない・水漏れ・異音など)を電話で相談できる</li>
-                  <li>即日出張対応を掲げている(SAZANKA運営・時期や地域により変動)</li>
+                  <li>SAZANKA運営のサービスは運営会社・所在地が公式サイトで確認でき、受付時間も9:00〜22:00と明記されています</li>
+                  <li>広域対応を掲げており、症状(冷えない・水漏れ・異音など)を電話で相談できます</li>
+                  <li>即日出張対応を掲げています(SAZANKA運営・時期や地域により変動)</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>同名の別サービスが複数あり、取り違えのリスクがある</li>
-                  <li>料金・保証・許認可の掲載がなく、事前確認が前提</li>
-                  <li>第三者の口コミを特定できる形で確認できない</li>
+                  <li>同名の別サービスが複数あり、取り違えのおそれがあります</li>
+                  <li>料金・保証・許認可の掲載がないため、事前の確認が必要です</li>
+                  <li>第三者の口コミを、特定できる形で確認できません</li>
                 </ul>
               </div>
             </div>

@@ -277,7 +277,7 @@ export default function Page() {
                   <li>エアコン修理に特化したサービスで、症状から相談が可能</li>
                   <li>代表的なトラブル(冷えない・水漏れ・異音など)に対応</li>
                   <li>電話またはフォームで症状を伝えることが可能</li>
-                  <li>訪問時間帯を4枠から選べるため、予定を立てやすい</li>
+                  <li>訪問時間帯を4枠から選択でき、予定の調整が容易</li>
                   <li>出張費・相談・見積もり0円、24時間365日受付と公式に掲載</li>
                 </ul>
               </div>
@@ -286,7 +286,7 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>症状別の修理実額・保証・許認可・法人名が非掲載で、事前確認が前提</li>
                   <li>対応地域の案内が図（8都府県）とよくある質問（全国）で相違</li>
-                  <li>第三者の口コミを公開情報として確認できない</li>
+                  <li>公開情報として確認できる第三者の口コミはなし</li>
                   <li>地域や繁忙期によって訪問までの時間が変動</li>
                 </ul>
               </div>
@@ -464,11 +464,11 @@ export default function Page() {
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>故障診断料の有無</strong>——出張費・見積もりは0円と公式にありますが、故障診断に別途料金が発生する場合があるとされているため、見積もりだけで断った場合にも費用が発生するか、訪問前の電話で確認します</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>総額の内訳</strong>——点検料・部品代・作業料が見積書に項目ごとに分かれて記載されているか</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>時間帯による割増</strong>——18〜21時枠など遅い時間帯の訪問で割増が付くか</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>保証</strong>——修理後に同じ症状が再発した場合の無償対応の有無・期間が書面に残るか</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>事業者情報</strong>——見積書・請求書に法人名（屋号）・担当者名・連絡先が記載されるか</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>資格</strong>——ガス補充や電気系統の作業を伴う場合、有資格者が対応するか</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>総額の内訳</strong>——点検料・部品代・作業料が見積書に項目ごとに分かれて記載されているかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>時間帯による割増</strong>——18〜21時枠など遅い時間帯の訪問で割増が付くかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>保証</strong>——修理後に同じ症状が再発した場合の無償対応の有無・期間が書面に残るかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>事業者情報</strong>——見積書・請求書に法人名（屋号）・担当者名・連絡先が記載されるかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>資格</strong>——ガス補充や電気系統の作業を伴う場合に、有資格者が対応するかを確認します</span></li>
             </ul>
           </section>
 

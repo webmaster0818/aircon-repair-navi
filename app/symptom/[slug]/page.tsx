@@ -319,7 +319,7 @@ export default async function SymptomPage({
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> フィルターの清掃・交換</li>
                 <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> リモコンの電池交換</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> ドレンホース先端の簡単な詰まり除去</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> ドレンホース先端の軽度の詰まり除去</li>
                 <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> 電源リセット・再起動、室外機周りの片付け</li>
               </ul>
             </div>

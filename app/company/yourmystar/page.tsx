@@ -207,19 +207,19 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>エアコンクリーニングは口コミが豊富で選びやすい（修理の口コミは少数）</li>
-                  <li>職人のプロフィール・口コミを比較して依頼先を選べる</li>
-                  <li>エアコンクリーニングは全国でプロを探せる</li>
-                  <li>口コミでは作業の丁寧さ・接客の良さを評価する声が多く見られる</li>
+                  <li>エアコンクリーニングは口コミが豊富で、依頼先を選びやすくなっています（修理の口コミは少数です）。</li>
+                  <li>職人のプロフィール・口コミを比較して依頼先を選べます。</li>
+                  <li>エアコンクリーニングは全国でプロを探せます。</li>
+                  <li>口コミでは、作業の丁寧さ・接客の良さを評価する声が多く見られます。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>エアコン修理のプロが掲載されているのは12道県のみ（東京都などは0件）</li>
-                  <li>依頼する職人によって対応に差が生じる場合がある</li>
-                  <li>お掃除機能付きは難易度が高く、職人選びが重要である</li>
-                  <li>料金は依頼内容により異なるため、事前の見積もり確認が必要</li>
+                  <li>エアコン修理のプロが掲載されているのは12道県のみです（東京都などは0件）。</li>
+                  <li>依頼する職人によって、対応に差が生じる場合があります。</li>
+                  <li>お掃除機能付きは作業の難易度が高いため、職人選びが重要です。</li>
+                  <li>料金は依頼内容により異なるため、事前に見積もりをご確認ください。</li>
                 </ul>
               </div>
             </div>

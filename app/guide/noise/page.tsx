@@ -208,10 +208,10 @@ export default function Page() {
               業者へ依頼する前に、取扱説明書の範囲で確認を行っておくと、原因の切り分けや相談が円滑になります。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>運転を止め、電源を切ってからフィルターを外して清掃する</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>吹き出し口やルーバーに異物・ホコリの塊がないか目視で確認する</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>室外機が傾いていないか、周囲に物が当たっていないか確認する</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>音が鳴る時間帯と音の種類を記録する（業者への説明に役立ちます）</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>運転を止め、電源を切ってからフィルターを外して清掃します。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>吹き出し口やルーバーに異物・ホコリの塊がないか、目視で確認します。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>室外機が傾いていないか、周囲に物が当たっていないかを確認します。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>音が鳴る時間帯と音の種類を記録します（業者への説明に役立ちます）。</li>
             </ul>
           </section>
 
@@ -219,10 +219,10 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">業者へ依頼すべき症状</h2>
             <div className="rounded-2xl border border-amber-200 bg-amber-50 p-6">
               <ul className="space-y-2 text-[0.95rem] text-slate-700 leading-7">
-                <li className="flex items-start gap-2"><span>・</span><span>清掃・確認をしても異音が改善しない</span></li>
-                <li className="flex items-start gap-2"><span>・</span><span>金属がこすれる音や大きな振動を伴う</span></li>
-                <li className="flex items-start gap-2"><span>・</span><span>異音とあわせて水漏れ・冷えない・効かないなどの症状がある</span></li>
-                <li className="flex items-start gap-2"><span>・</span><span>焦げ臭い・煙・火花など、すぐに対応すべき異常がある</span></li>
+                <li className="flex items-start gap-2"><span>・</span><span>清掃・確認をしても異音が改善しない場合</span></li>
+                <li className="flex items-start gap-2"><span>・</span><span>金属がこすれる音や大きな振動を伴う場合</span></li>
+                <li className="flex items-start gap-2"><span>・</span><span>異音とあわせて水漏れ・冷えない・効かないなどの症状がある場合</span></li>
+                <li className="flex items-start gap-2"><span>・</span><span>焦げ臭い・煙・火花など、すぐに対応すべき異常がある場合</span></li>
               </ul>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
@@ -235,10 +235,10 @@ export default function Page() {
           <section id="safety" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">安全上の注意</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>内部を無理に分解しない（感電・けが・故障悪化・保証外の原因になります）</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>清掃や確認の際は必ず電源を切ってから行う</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>焦げ臭い・煙が出るなどの場合はすぐに運転を止め、使用を控える</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>高所での作業は行わず、専門業者に依頼する</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>内部を無理に分解しないでください（感電・けが・故障悪化・保証外の原因になります）。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>清掃や確認の際は、必ず電源を切ってから行ってください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>焦げ臭い・煙が出るなどの場合は、すぐに運転を止めて使用をお控えください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>高所での作業は行わず、専門業者にご依頼ください。</li>
             </ul>
           </section>
 

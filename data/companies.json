@@ -135,7 +135,7 @@
       "人気業者は予約が取りにくい"
     ],
     "avgCost": "平均2.7万円(公式掲載)",
-    "responseTime": "加盟業者による",
+    "responseTime": "加盟業者により変動",
     "coverage": "全国",
     "officialUrl": "https://www.seikatsu110.jp/",
     "rank": 5,
@@ -145,7 +145,7 @@
     "name": "くらしのマーケット",
     "slug": "kurashi-market",
     "tagline": "口コミ・評価で比較できるマーケットプレイス",
-    "description": "個人・業者の口コミが充実したマーケットプレイス型のサービスです。実際の利用者の評価を参考に業者を選べるほか、料金も事前に確認できます。",
+    "description": "個人・業者の口コミを多数掲載しているマーケットプレイス型のサービスです。実際の利用者の評価を参考に業者を選べるほか、料金も事前に確認できます。",
     "features": [
       "口コミ・評価システム",
       "事前料金確認可能",
@@ -162,9 +162,9 @@
       "繁忙期は希望日時に予約が取れないことも",
       "業者によってサービス品質が大きく異なる"
     ],
-    "avgCost": "出品者により異なる",
-    "responseTime": "業者によって異なる",
-    "coverage": "出品者の対応地域による",
+    "avgCost": "出品者ごとに設定",
+    "responseTime": "業者により変動",
+    "coverage": "出品者の対応地域に準拠",
     "officialUrl": "https://curama.jp/",
     "rank": 6,
     "rating": 4.3
@@ -176,7 +176,7 @@
     "description": "最大5社から同時に見積もりを取得できる比較サービスです。複数の見積もりを比べたうえで、利用者が業者を選べる仕組みです。",
     "features": [
       "最大5社同時見積もり",
-      "料金比較が簡単",
+      "料金を比較可能",
       "チャットで相談可能",
       "口コミ評価あり"
     ],
@@ -191,8 +191,8 @@
       "見積もりから予約まで時間がかかる場合がある"
     ],
     "avgCost": "6,000〜15,400円(公式の相場)",
-    "responseTime": "業者によって異なる",
-    "coverage": "プロの対応地域による",
+    "responseTime": "業者により変動",
+    "coverage": "プロの対応地域に準拠",
     "officialUrl": "https://meetsmore.com/",
     "rank": 7,
     "rating": 4.2
@@ -220,7 +220,7 @@
       "専門業者に比べると対応範囲が広すぎる場合も"
     ],
     "avgCost": "11,000〜20,000円(公式の修理相場)",
-    "responseTime": "出店者により異なる",
+    "responseTime": "出店者により変動",
     "coverage": "全国",
     "officialUrl": "https://hotlines.shop/",
     "rank": 8,
@@ -247,8 +247,8 @@
       "エアコン修理専門ではない",
       "地域によって対応業者の質が異なる"
     ],
-    "avgCost": "事業者により異なる",
-    "responseTime": "事業者により異なる",
+    "avgCost": "事業者ごとに設定",
+    "responseTime": "事業者により変動",
     "coverage": "全国",
     "officialUrl": "https://rescue.epark.jp/category/kaden/aircon",
     "rank": 9,
@@ -301,7 +301,7 @@
       "お掃除機能付きは業者選びが重要"
     ],
     "avgCost": "要見積もり(訪問診断で確定)",
-    "responseTime": "プロにより異なる",
+    "responseTime": "プロにより変動",
     "coverage": "修理は12道県・クリーニングは全国",
     "officialUrl": "https://yourmystar.jp/",
     "rank": 11,
@@ -314,7 +314,7 @@
     "description": "ゼヒトモ株式会社が運営するマッチングサービスです。フォームに入力すると、エアコン修理のプロから相見積もりの提案が届きます。2025年6月の人気依頼ランキングでは、エアコン修理が3位に入っています。",
     "features": [
       "相見積もり提案型",
-      "フォーム入力で簡単",
+      "フォーム入力で依頼可能",
       "全国対応",
       "プロの実績が見える",
       "無料で利用可"
@@ -327,7 +327,7 @@
       "修理単体の口コミはやや限定的"
     ],
     "avgCost": "要見積もり",
-    "responseTime": "プロにより異なる",
+    "responseTime": "プロにより変動",
     "coverage": "全国",
     "officialUrl": "https://www.zehitomo.com/",
     "rank": 12,
@@ -407,8 +407,8 @@
     "cons": [
       "最終的な依頼は掲載業者と直接やり取り"
     ],
-    "avgCost": "業者により異なる",
-    "responseTime": "業者による",
+    "avgCost": "業者ごとに設定",
+    "responseTime": "業者により変動",
     "coverage": "全国",
     "officialUrl": "https://safely.co.jp/ec/air/",
     "rank": 15,
@@ -434,8 +434,8 @@
     "cons": [
       "依頼は掲載業者と直接やり取り"
     ],
-    "avgCost": "業者により異なる",
-    "responseTime": "業者による",
+    "avgCost": "業者ごとに設定",
+    "responseTime": "業者により変動",
     "coverage": "全国",
     "officialUrl": "https://www.ienakama.com/aircon/",
     "rank": 16,

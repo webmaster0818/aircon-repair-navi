@@ -239,18 +239,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>掲載業者の口コミを確認してから予約できる</li>
-                  <li>EPARKグループの知名度・予約のしやすさ</li>
-                  <li>エアコン以外の生活トラブルもまとめて探せる</li>
-                  <li>24時間受付に対応する業者も掲載されている</li>
+                  <li>掲載業者の口コミを確認してから予約できます</li>
+                  <li>EPARKグループの予約サービスとして運営されています</li>
+                  <li>エアコン以外の生活トラブルもまとめて探せます</li>
+                  <li>24時間受付に対応する業者も掲載されています</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>選ぶ業者によって対応・料金に差が出る</li>
-                  <li>エアコン専門に特化したサービスではない</li>
-                  <li>料金は症状によって変わるため、事前の見積もり確認が必要</li>
+                  <li>選ぶ業者によって、対応・料金に差が出ます</li>
+                  <li>エアコン専門のサービスではありません</li>
+                  <li>料金は症状によって変わるため、事前の見積もり確認が必要です</li>
                 </ul>
               </div>
             </div>

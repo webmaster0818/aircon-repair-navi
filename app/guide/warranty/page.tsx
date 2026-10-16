@@ -69,7 +69,7 @@ export default function WarrantyPage() {
           <div className="mt-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-5">
             <p className="font-bold text-sky-800 mb-1">無料修理の確認項目</p>
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
-              <li>□ 購入から<strong>1年以内</strong> → 本体のメーカー保証により無償となる可能性が高い</li>
+              <li>□ 購入から<strong>1年以内</strong> → 本体のメーカー保証により無償となる可能性が高いケース</li>
               <li>□ 購入から<strong>5年以内で「冷えない」故障</strong> → 冷媒回路の5年保証が適用される可能性あり</li>
               <li>□ <strong>量販店の長期保証</strong>に加入済み（購入時のみ加入可） → 購入店へ相談</li>
               <li>□ 賃貸の備え付けエアコン → <Link href="/guide/rental-aircon-repair/" className="text-sky-700 underline underline-offset-2 font-semibold">大家の負担</Link>となる可能性あり</li>
@@ -193,7 +193,7 @@ export default function WarrantyPage() {
                 <li>・三菱電機公式FAQ（冷媒回路5年保証）</li>
                 <li>・シャープ「エアコン 出張修理概算料金」（冷媒回路の保証記載）</li>
                 <li>・ヤマダデンキ「無料 長期保証」規定ページ</li>
-                <li>・ケーズデンキ「長期無料保証」は公式ページを確認できなかったため、参考情報として記載しています（最新の条件は公式サイトをご確認ください）</li>
+                <li>・ケーズデンキ「長期無料保証」（公式ページ未確認のため参考情報）</li>
               </ul>
             </div>
           </section>

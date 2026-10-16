@@ -249,18 +249,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">買い替えを検討する目安</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>修理費用が新品価格の半額以上になる</li>
-                  <li>使用年数が10年前後を超えている</li>
-                  <li>部品の保有期間が終了し、修理できない</li>
-                  <li>同じ箇所で何度も故障している</li>
+                  <li>修理費用が新品価格の半額以上になる場合</li>
+                  <li>使用年数が10年前後を超えている場合</li>
+                  <li>部品の保有期間が終了し、修理できない場合</li>
+                  <li>同じ箇所で何度も故障している場合</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">修理が適している目安</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>購入から年数が浅く、保証期間内</li>
-                  <li>不具合箇所が限定的で、修理費が比較的安い</li>
-                  <li>リモコン交換や軽い詰まりなど軽度の症状</li>
+                  <li>購入から年数が浅く、保証期間内である場合</li>
+                  <li>不具合箇所が限定的で、修理費が比較的安い場合</li>
+                  <li>リモコン交換や軽い詰まりなど、症状が軽度の場合</li>
                 </ul>
               </div>
             </div>

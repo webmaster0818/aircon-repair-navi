@@ -24,7 +24,7 @@ export default function ContentPolicyPage() {
 
           <div className="bg-sky-50 border border-sky-200 rounded-xl p-5">
             <p className="text-sky-800 font-medium">
-              エアコン修理ナビは、読者の方が最適な修理業者を選べるよう、独自の調査・比較に基づいた公正な情報提供を行うことをお約束します。
+              エアコン修理ナビは、読者の方が適切な修理業者を選べるよう、独自の調査・比較に基づいた公正な情報提供を行うことをお約束します。
             </p>
           </div>
 
@@ -34,10 +34,10 @@ export default function ContentPolicyPage() {
               当サイトのコンテンツは、エアコン修理に関する専門知識を持つ編集者・ライターが、独自の調査・比較・取材に基づいて制作しています。主な制作基準は以下のとおりです。
             </p>
             <ul className="list-disc list-inside space-y-1 ml-2">
-              <li>複数の業者・情報源を比較し、読者に有益な情報を提供する</li>
-              <li>主観的な意見と客観的な事実を明確に区別して記載する</li>
-              <li>読者が行動判断できる具体的な情報を優先する</li>
-              <li>専門用語には適切な解説を付記する</li>
+              <li>複数の業者・情報源を比較し、読者に有益な情報を提供します</li>
+              <li>主観的な意見と客観的な事実を明確に区別して記載します</li>
+              <li>読者が行動を判断できる具体的な情報を優先します</li>
+              <li>専門用語には適切な解説を付記します</li>
             </ul>
           </section>
 

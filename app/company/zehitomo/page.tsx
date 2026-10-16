@@ -208,18 +208,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>複数のプロから提案が届き、料金や対応を比較して選べる</li>
-                  <li>フォーム入力のみで提案が届き、業者を探す手間を省ける</li>
-                  <li>全国対応で、暮らしの依頼に幅広く対応している</li>
-                  <li>エアコン修理は人気依頼ランキング3位の利用実績がある</li>
+                  <li>複数のプロから提案が届き、料金や対応を比較して選べます。</li>
+                  <li>フォーム入力のみで提案が届くため、業者を探す手間を省けます。</li>
+                  <li>全国対応で、暮らしの依頼に幅広く対応しています。</li>
+                  <li>エアコン修理は、人気依頼ランキング3位の利用実績があります。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>依頼するプロによって対応や料金に差が生じる場合がある</li>
-                  <li>修理単体の依頼はやや限定的な場合がある</li>
-                  <li>料金は提案内容により異なるため、事前の見積もり比較が必要</li>
+                  <li>依頼するプロによって、対応や料金に差が生じる場合があります。</li>
+                  <li>修理単体の依頼は、対応できるプロが限られる場合があります。</li>
+                  <li>料金は提案内容により異なるため、事前に見積もりを比較してください。</li>
                 </ul>
               </div>
             </div>

@@ -6,11 +6,11 @@ const navLinks = [
   { href: "/ranking", label: "業者ランキング" },
   { href: "/#area", label: "エリアから探す" },
   { href: "/symptom/not-cooling", label: "症状から探す", children: [
-    { href: "/symptom/not-cooling", label: "冷えない" },
+    { href: "/symptom/not-cooling", label: "冷えない症状" },
     { href: "/symptom/water-leak", label: "水漏れ" },
     { href: "/symptom/noise", label: "異音" },
     { href: "/symptom/bad-smell", label: "臭い" },
-    { href: "/symptom/not-starting", label: "動かない" },
+    { href: "/symptom/not-starting", label: "動かない症状" },
     { href: "/symptom/gas-leak", label: "ガス漏れ" },
     { href: "/symptom/remote-error", label: "リモコン不良" },
     { href: "/symptom/error-code", label: "エラーコード" },

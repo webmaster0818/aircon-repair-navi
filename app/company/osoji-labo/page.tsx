@@ -320,7 +320,7 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>100%自社作業で、品質や接客にばらつきが生じにくい</li>
+                  <li>100%自社作業による、品質や接客のばらつきが生じにくい体制</li>
                   <li>損害保険に加入し、駐車料金は自社負担</li>
                   <li>LINEは24時間受付のため、相談が容易</li>
                   <li>初回限定価格やキャンペーン(抗菌防カビコート無料など)を実施</li>
@@ -329,7 +329,7 @@ export default function Page() {
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>対応エリアが大阪・兵庫の一部に限られる</li>
+                  <li>対応エリアは大阪・兵庫の一部に限定</li>
                   <li>故障修理ではなくクリーニングのサービス</li>
                   <li>繁忙期は予約が取りにくくなる場合あり</li>
                 </ul>

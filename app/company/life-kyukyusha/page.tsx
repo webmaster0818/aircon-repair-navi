@@ -197,8 +197,8 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">評価されている点（公称・傾向）</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・電話がつながりやすく、相談しやすい（一部の声）</li>
-                  <li>・エアコン以外の電気まわりのトラブルも相談できる窓口がある</li>
+                  <li>・電話がつながりやすく、相談しやすいという声（一部）</li>
+                  <li>・エアコン以外の電気まわりのトラブルも相談できる窓口への評価</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
@@ -237,18 +237,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>年中無休で、深夜・早朝の対応も可能とされている（夜間料金あり）</li>
-                  <li>エアコン以外の電気まわりのトラブルも相談できる窓口がある</li>
-                  <li>基本料金（作業費5,500円〜＋部材費）と1年保証が公式に掲載されている</li>
+                  <li>年中無休で、深夜・早朝の対応も可能とされています（夜間料金あり）</li>
+                  <li>エアコン以外の電気まわりのトラブルも相談できる窓口があります</li>
+                  <li>基本料金（作業費5,500円〜＋部材費）と1年保証が公式に掲載されています</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>旧公式ドメインにアクセスできず、会社情報・許認可の開示が限られている</li>
-                  <li>対応エリアは24府県で、それ以外の地域は対象外</li>
-                  <li>紹介型のため、実際の対応・料金・保証が手配先によって異なる</li>
-                  <li>口コミに作業・料金トラブルの指摘があり、事前の確認が必要</li>
+                  <li>旧公式ドメインにアクセスできず、会社情報・許認可の開示が限られています</li>
+                  <li>対応エリアは24府県で、それ以外の地域は対象外です</li>
+                  <li>紹介型のため、実際の対応・料金・保証が手配先によって異なります</li>
+                  <li>口コミに作業・料金トラブルの指摘があるため、事前の確認が必要です</li>
                 </ul>
               </div>
             </div>

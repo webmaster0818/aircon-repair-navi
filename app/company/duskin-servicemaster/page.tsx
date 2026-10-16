@@ -292,7 +292,7 @@ export default function Page() {
               点にご留意ください。申し込み時には、次の点を確認することをおすすめします。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>個人事業者や低価格帯の業者と比べると料金は高めの設定</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>個人事業者や低価格帯の業者と比べると、料金は高めに設定されています</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>加盟店(フランチャイズ)が対応するため、店舗によって対応に差が出る場合があります</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(5〜7月)の土日は予約が取りにくくなる場合があります</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>土日祝・夜間の追加費用と駐車スペースの有無は、事前の確認をおすすめします</li>

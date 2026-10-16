@@ -204,17 +204,17 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>国家資格を持つ電気工事士が対応する</li>
-                  <li>エアコンの電気系統トラブルにも対応しやすい</li>
-                  <li>作業別の料金が公式に掲載され、見積もりは無料</li>
+                  <li>国家資格を持つ電気工事士が対応します。</li>
+                  <li>エアコンの電気系統のトラブルにも対応しています。</li>
+                  <li>作業別の料金が公式に掲載されており、見積もりは無料です。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>料金は症状により異なるため、事前の見積もり確認が必要</li>
-                  <li>繁忙期は予約が取りにくくなる場合がある</li>
-                  <li>岩手・秋田・長野・鳥取・島根は対応エリアに掲載されていない</li>
+                  <li>料金は症状により異なるため、事前に見積もりをご確認ください。</li>
+                  <li>繁忙期は予約が取りにくくなる場合があります。</li>
+                  <li>岩手・秋田・長野・鳥取・島根は、対応エリアに掲載されていません。</li>
                 </ul>
               </div>
             </div>

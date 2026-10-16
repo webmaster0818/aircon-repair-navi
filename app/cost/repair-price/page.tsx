@@ -80,10 +80,10 @@ export default function RepairPricePage() {
             <span></span> 修理費用の基本的な仕組み
           </h2>
           <ul className="space-y-2 text-sm text-gray-700">
-            <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>（3,000〜8,000円）+ <strong>診断料</strong>（2,000〜5,000円）+ <strong>修理費</strong>が基本構成</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>業者によっては、診断料・出張費を修理費に含める場合があります</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>夏場（7〜9月）は繁忙期のため、料金が高くなる場合があります</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>見積もりは複数社から取ることをおすすめします</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>（3,000〜8,000円）+ <strong>診断料</strong>（2,000〜5,000円）+ <strong>修理費</strong>が基本的な構成です。</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>業者によっては、診断料・出張費を修理費に含める場合があります。</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>夏場（7〜9月）は繁忙期のため、料金が高くなる場合があります。</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>見積もりは複数社から取ることをおすすめします。</span></li>
           </ul>
         </div>
 

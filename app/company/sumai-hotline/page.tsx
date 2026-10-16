@@ -203,16 +203,16 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">好意的な声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・連休中・繁忙期でも早く対応してくれた</li>
-                  <li>・作業前の説明が丁寧でわかりやすかった</li>
-                  <li>・良心的な金額設定だと感じた</li>
+                  <li>・連休中・繁忙期でも早く対応してくれたという声</li>
+                  <li>・作業前の説明が丁寧でわかりやすかったという声</li>
+                  <li>・良心的な金額設定だと感じたという声</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
                 <h3 className="font-bold text-orange-800 mb-3">注意を要する声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・掲載店舗によって対応・料金に差がある</li>
-                  <li>・配管交換・脱着など追加作業で想定より高額になる場合がある</li>
+                  <li>・掲載店舗によって対応・料金に差があるという指摘</li>
+                  <li>・配管交換・脱着など追加作業で想定より高額になる場合があるという指摘</li>
                 </ul>
               </div>
             </div>
@@ -244,18 +244,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>口コミと料金を比較して依頼先を選べる</li>
-                  <li>地域密着の店舗を見つけやすい</li>
-                  <li>予約前にチャット等で相談・確認しやすい</li>
-                  <li>エアコン修理以外の暮らしのサービスもまとめて探せる</li>
+                  <li>口コミと料金を比較して依頼先を選べます</li>
+                  <li>地域密着の店舗を探すことができます</li>
+                  <li>予約前にチャット等で相談・確認できます</li>
+                  <li>エアコン修理以外の暮らしのサービスもまとめて探せます</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>選ぶ店舗によって対応・料金・保証に差が出る</li>
-                  <li>運営の受付は平日10〜18時。夜間・休日の対応可否は店舗によって異なる</li>
-                  <li>料金は症状・追加作業で変わるため、事前の見積もり確認が前提</li>
+                  <li>選ぶ店舗によって、対応・料金・保証に差が出ます</li>
+                  <li>運営の受付は平日10〜18時。夜間・休日の対応可否は店舗によって異なります</li>
+                  <li>料金は症状・追加作業で変わるため、事前の見積もり確認が必要です</li>
                 </ul>
               </div>
             </div>

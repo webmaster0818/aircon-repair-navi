@@ -122,7 +122,7 @@ export default function Page() {
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
-              <li>・実際に修理を担当するのは<strong>株式会社ヤマダテクニカルサービス（電気工事業登録・建設業許可・フロン回収業の有資格事業者）</strong>です。量販店グループの有資格事業者が施工する点が最大の強みです</li>
+              <li>・実際に修理を担当するのは<strong>株式会社ヤマダテクニカルサービス（電気工事業登録・建設業許可・フロン回収業の有資格事業者）</strong>です。量販店グループの有資格事業者が施工する点が主な特徴です</li>
               <li>・料金は<strong>2026年8月の公式サイト刷新後は掲載されていません（見積もりで確認）</strong>。刷新前の旧公式掲載額は出張料4,500円／冷房不良20,000円〜／水漏れ10,000円〜（2026年7月11日当サイト確認）。<strong>訪問後キャンセル・修理不能でも実費・診断料等がかかる場合</strong>があります</li>
               <li>・<strong>直営の出張エリアは群馬・新潟市・九州・札幌石狩の一部に限られます</strong>。エリア外の場合やお急ぎの場合は、料金の実額を公開している業者との<Link href="/cost/price-index/" className="text-sky-700 underline">相見積もり</Link>をおすすめします</li>
             </ul>
@@ -193,7 +193,7 @@ export default function Page() {
               </table>
             </div>
             <ul className="mt-4 space-y-2 text-slate-700 text-[0.95rem] leading-7">
-              <li>・<strong className="font-semibold">用意するもの</strong>：購入時のレシートまたは保証書（長期無料保証は保証No.21桁・保証台紙）、エアコンのメーカーと型番、購入日、症状のメモ</li>
+              <li>・<strong className="font-semibold">用意するもの</strong>：購入時のレシートまたは保証書（長期無料保証は保証No.21桁・保証台紙）、エアコンのメーカーと型番、購入日、症状のメモをご用意ください</li>
               <li>・<strong className="font-semibold">受付時間の注意</strong>：公式の告知ページでは「有人対応は9:00〜19:00、それ以外は自動受付」とされ、お問い合わせページの「19:00〜翌10:00は自動音声」と表記が分かれています。時間外に電話するとSMSで受付フォームのURLが届く仕組みです。21時頃以降の問い合わせは翌日の受付扱いと案内されています</li>
               <li>・<strong className="font-semibold">訪問時期</strong>：訪問までの日数の目安は公式に記載されていません。受付後に担当者から電話で訪問日の連絡があり、希望日に沿えない場合やその場で直らず再訪問になる場合があると案内されています</li>
               <li>・<strong className="font-semibold">料金</strong>：金額表は公式に掲載されていません。見積もりは訪問時に担当者へ確認する形で、訪問後にキャンセルすると訪問の実費や診断料がかかる場合があります（家電保の規程でも、修理キャンセル時の点検診断料・出張料はお客様負担）</li>
@@ -281,18 +281,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>全国展開の大手家電量販店グループで、窓口が明確である</li>
-                  <li>電気工事業登録・建設業許可・フロン回収業などを公表する有資格の施工会社</li>
-                  <li>許認可・会社情報を公式に公開する施工会社が対応（料金は2026年8月のサイト刷新後は見積もり確認方式）</li>
-                  <li>他店で購入したエアコンでも相談できる</li>
+                  <li>全国展開の大手家電量販店グループのため、窓口が明確です</li>
+                  <li>電気工事業登録・建設業許可・フロン回収業などを公表する有資格の施工会社が対応します</li>
+                  <li>許認可・会社情報を公式に公開する施工会社が対応します（料金は2026年8月のサイト刷新後は見積もり確認方式）</li>
+                  <li>他店で購入したエアコンでも相談できます</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>出張料に加え、キャンセル・修理不能時にも費用がかかる場合がある</li>
-                  <li>直営の出張エリアが限定的で、地域により断られることがある</li>
-                  <li>持ち込み不可・出張前提で、繁忙期は訪問日が先になりやすい</li>
+                  <li>出張料に加え、キャンセル・修理不能時にも費用がかかる場合があります</li>
+                  <li>直営の出張エリアが限定的で、地域により断られることがあります</li>
+                  <li>持ち込み不可・出張前提で、繁忙期は訪問日が先になる傾向があります</li>
                 </ul>
               </div>
             </div>

@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     q: "予約は取りやすいですか？",
-    a: "出店者のスケジュールによります。繁忙期（真夏・真冬）は人気の出店者ほど希望日時が埋まりやすく、早急な訪問が必要な緊急・即日対応には適さない場合があります。対応の早さを重視する場合は、複数の出店者に空き状況を確認することをおすすめします。",
+    a: "出店者のスケジュールによります。繁忙期（真夏・真冬）は予約の多い出店者ほど希望日時が埋まりやすく、早急な訪問が必要な緊急・即日対応には適さない場合があります。対応の早さを重視する場合は、複数の出店者に空き状況を確認することをおすすめします。",
   },
 ];
 
@@ -249,7 +249,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>許認可・資格の扱いも出店者ごとに異なります。</strong>冷媒（フロン）を扱う作業や電気工事は資格が必要な場合があり、プラットフォーム側で一律に担保されるわけではありません。出店者ページや事前のメッセージで有資格者かどうかをご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>損害賠償補償制度には対象外があります。</strong>補償されるのは出店者が起こした対人・対物事故で、作業自体の不出来（直らない・きれいにならない等）や、出店者と連絡がつかない場合は対象外です（2026年7月12日確認）</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>修理対応の可否・範囲は出店者により異なります。</strong>くらしのマーケットはクリーニング・取り付けの出店者も多く、冷えない等の症状はメーカー修理が適する場合もあります</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>繁忙期（真夏・真冬）は予約が取りにくくなります。</strong>人気の出店者ほど希望日時が埋まりやすく、早急な訪問が必要な緊急・即日対応には適さない場合があります</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>繁忙期（真夏・真冬）は予約が取りにくくなります。</strong>予約の多い出店者ほど希望日時が埋まりやすく、早急な訪問が必要な緊急・即日対応には適さない場合があります</span></li>
             </ul>
           </section>
 
@@ -259,20 +259,20 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>実際の利用者の口コミ・評価を確認して出店者を選べる</li>
-                  <li>料金が出店者ごとに明示され、比較しやすい（利用者の手数料は無料）</li>
-                  <li>予約前にメッセージで直接相談できる</li>
-                  <li>予約・支払い・やり取りがプラットフォーム上で完結し、記録が残る</li>
-                  <li>損害賠償補償制度が全予約に適用される（保険料は無料）</li>
+                  <li>実際の利用者の口コミ・評価を確認して出店者を選べます</li>
+                  <li>料金が出店者ごとに明示されており、比較できます（利用者の手数料は無料）</li>
+                  <li>予約前にメッセージで直接相談できます</li>
+                  <li>予約・支払い・やり取りがプラットフォーム上で完結し、記録が残ります</li>
+                  <li>損害賠償補償制度が全予約に適用されます（保険料は無料）</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>出店者によって技術・品質・許認可に差が出ることがある</li>
-                  <li>補償は作業自体の不出来や連絡不能には及ばない</li>
-                  <li>繁忙期は希望日時の予約が取りにくく、緊急対応に適さない場合がある</li>
-                  <li>修理対応の可否は出店者により異なる（クリーニング・設置中心の店も多い）</li>
+                  <li>出店者によって技術・品質・許認可に差が出ることがあります</li>
+                  <li>補償は、作業自体の不出来や連絡不能には及びません</li>
+                  <li>繁忙期は希望日時の予約が取りにくく、緊急対応に適さない場合があります</li>
+                  <li>修理対応の可否は出店者により異なります（クリーニング・設置中心の店も多い）</li>
                 </ul>
               </div>
             </div>

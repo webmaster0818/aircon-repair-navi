@@ -153,7 +153,7 @@ export default function Page() {
                     ["対応エリア", "43都道府県の対象市区町村（山形・福井・長崎・大分は掲載なし。郵便番号で要確認）（2026年10月15日・公式確認）"],
                     ["対象エアコン", "壁掛け型(通常・お掃除機能付き)。天井埋め込み・業務用・床置き・ウィンドウ型は対象外"],
                     ["保証", "7日以内の再施工保証(公称)／防カビ抗菌コート無料"],
-                    ["申し込み", "Webで完結・料金が事前にわかる"],
+                    ["申し込み", "Webで完結・料金は事前に確認可"],
                     ["公式サイト", "www.kajitaku.com"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -191,7 +191,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、人気の大手サービスという性質上、
+              好意的な評価が多い一方で、利用者の多い大手サービスという性質上、
               <strong className="font-semibold">繁忙期は予約が取りにくく、スタッフによって感じ方に差が出る場合がある</strong>
               点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
@@ -209,18 +209,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>イオングループが運営している</li>
-                  <li>Webで申し込みができ、料金が事前にわかる</li>
-                  <li>7日以内の再施工保証・防カビ抗菌コート無料(公称)</li>
-                  <li>3プランから内容を選べる</li>
+                  <li>イオングループが運営しています。</li>
+                  <li>Webで申し込みができ、料金を事前に確認できます。</li>
+                  <li>7日以内の再施工保証があり、防カビ抗菌コートは無料です（公称）。</li>
+                  <li>3つのプランから内容を選べます。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>繁忙期は予約が取りにくくなる場合がある</li>
-                  <li>対象機種が壁掛け型中心(対象外の機種がある)</li>
-                  <li>故障修理ではなくクリーニングのサービスである</li>
+                  <li>繁忙期は予約が取りにくくなる場合があります。</li>
+                  <li>対象機種は壁掛け型が中心です（対象外の機種があります）。</li>
+                  <li>故障修理ではなく、クリーニングのサービスです。</li>
                 </ul>
               </div>
             </div>

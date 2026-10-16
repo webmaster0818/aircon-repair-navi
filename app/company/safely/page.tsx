@@ -176,9 +176,9 @@ export default function Page() {
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
               <h3 className="font-bold text-sky-800 mb-3">公式サイトで案内されている仕組み</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>画像・動画付きの口コミで、仕上がりや対応を確認してから依頼先を選べる仕組みがある</li>
-                <li>複数の事業者を口コミとあわせて比較できる構成になっている</li>
-                <li>掲載事業者を審査・監視する体制が案内されており、掲載の質に配慮しているとされる</li>
+                <li>画像・動画付きの口コミで、仕上がりや対応を確認してから依頼先を選べる仕組みがあります。</li>
+                <li>複数の事業者を、口コミとあわせて比較できる構成になっています。</li>
+                <li>掲載事業者を審査・監視する体制が案内されており、掲載の質に配慮しているとされています。</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。第三者の口コミは特定できる形で確認できなかったため、個人の感想に基づく口コミ引用は掲載していません。最新の口コミはセーフリー公式サイトでご確認ください。</p>
@@ -208,18 +208,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>掲載事業者を審査・監視する体制がある</li>
-                  <li>画像・動画付きの口コミで仕上がりや対応を確認しやすい</li>
-                  <li>複数の事業者を比較して依頼先を選べる</li>
-                  <li>エアコンを含む暮らしのトラブル全般に対応する事業者を探せる</li>
+                  <li>掲載事業者を審査・監視する体制があります。</li>
+                  <li>画像・動画付きの口コミで、仕上がりや対応を確認できます。</li>
+                  <li>複数の事業者を比較して依頼先を選べます。</li>
+                  <li>エアコンを含む暮らしのトラブル全般に対応する事業者を探せます。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>実際の修理は掲載事業者が行うため、対応に差が生じる場合がある</li>
-                  <li>口コミは個人の感想であり、受け止め方に個人差がある</li>
-                  <li>料金は事業者・症状により異なるため、事前の見積もり確認が必要</li>
+                  <li>実際の修理は掲載事業者が行うため、対応に差が生じる場合があります。</li>
+                  <li>口コミは個人の感想であり、受け止め方には個人差があります。</li>
+                  <li>料金は事業者・症状により異なるため、事前に見積もりをご確認ください。</li>
                 </ul>
               </div>
             </div>

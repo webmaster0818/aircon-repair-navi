@@ -180,9 +180,10 @@ export default function ErrorCodeDaikinPage() {
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
                 <li>・ダイキン公式「エラーコード検索」(daikincc.com/errorcode/)の家庭用ルームエアコン公表データ({UPDATED}確認)</li>
-                <li>・修理費用の目安額は、当サイトの各費用ガイドの調査値です（確認日は各ページに明記しています）</li>
-                <li>・本記事は、エラーコードの意味の理解と依頼の判断にお役立ていただくためのものです。ダイキン公式の注意喚起のとおり、分解・修理は必ず専門業者・メーカーへご依頼ください</li>
+                <li>・修理費用の目安額：当サイトの各費用ガイドの調査値（確認日は各ページに明記）</li>
+                
               </ul>
+              <p className="mt-2">本記事は、エラーコードの意味の理解と依頼の判断にお役立ていただくためのものです。ダイキン公式の注意喚起のとおり、分解・修理は必ず専門業者・メーカーへご依頼ください。</p>
             </div>
           </section>
 

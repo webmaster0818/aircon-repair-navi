@@ -210,18 +210,18 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>全国47都道府県対応で、多くの地域で依頼できる</li>
-                  <li>「追加料金絶対なし宣言」により料金が明確(公称)</li>
-                  <li>損害保険・無料再作業などの保証がある(公称)</li>
-                  <li>各種キャッシュレス決済に幅広く対応している</li>
+                  <li>全国47都道府県に対応しており、多くの地域で依頼できます。</li>
+                  <li>「追加料金絶対なし宣言」により、料金が明確に示されています（公称）。</li>
+                  <li>損害保険・無料再作業などの保証があります（公称）。</li>
+                  <li>各種キャッシュレス決済に幅広く対応しています。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>店舗・スタッフにより対応に差が生じる場合がある</li>
-                  <li>故障修理ではなくクリーニングのサービスである</li>
-                  <li>繁忙期は予約が取りにくくなる場合がある</li>
+                  <li>店舗・スタッフにより、対応に差が生じる場合があります。</li>
+                  <li>故障修理ではなく、クリーニングのサービスです。</li>
+                  <li>繁忙期は予約が取りにくくなる場合があります。</li>
                 </ul>
               </div>
             </div>

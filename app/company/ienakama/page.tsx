@@ -197,8 +197,8 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">好意的な声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・対応が丁寧・誠実だった、作業が迅速だった</li>
-                  <li>・他社より金額が安かった、比較して選べて納得できた</li>
+                  <li>・対応が丁寧・誠実だった、作業が迅速だったという声</li>
+                  <li>・他社より金額が安かった、比較して選べて納得できたという声</li>
                   <li>・写真見積もり・日程調整の早さへの評価</li>
                 </ul>
               </div>
@@ -206,7 +206,7 @@ export default function Page() {
                 <h3 className="font-bold text-orange-800 mb-3">否定的な声の傾向</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>・業者と連絡が取れないなどのトラブル報告</li>
-                  <li>・担当する登録業者によって対応に差が出た</li>
+                  <li>・担当する登録業者によって対応に差が出たという声</li>
                   <li>・加盟店の審査基準が公開されておらず、業者選びは利用者の判断に委ねられるという指摘</li>
                 </ul>
               </div>
@@ -239,19 +239,19 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>利用者は無料。成約手数料がない分、工事代金が安くなる可能性がある（公式）</li>
-                  <li>複数の業者から見積もりが届き、料金・対応を比較して選べる</li>
-                  <li>写真をもとにした見積もり・日程調整が速いという声</li>
-                  <li>低評価業者は強制退会となる仕組みがある</li>
+                  <li>利用者は無料。成約手数料がない分、工事代金が安くなる可能性があります（公式）</li>
+                  <li>複数の業者から見積もりが届き、料金・対応を比較して選べます</li>
+                  <li>写真をもとにした見積もり・日程調整が速いという声があります</li>
+                  <li>低評価業者は強制退会となる仕組みがあります</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>施工は登録業者が行うため、対応品質・保証に差が出る</li>
-                  <li>加盟店の審査基準が公開されておらず、業者選びは利用者の判断に委ねられる</li>
-                  <li>統一相場表がなく、複数見積もりを比較する手間がかかる</li>
-                  <li>損害補償は条件付き（業者の事前申請が必要）</li>
+                  <li>施工は登録業者が行うため、対応品質・保証に差が出ます</li>
+                  <li>加盟店の審査基準が公開されておらず、業者選びは利用者の判断に委ねられます</li>
+                  <li>統一相場表がないため、複数の見積もりを比較する手間がかかります</li>
+                  <li>損害補償には条件があります（業者の事前申請が必要です）</li>
                 </ul>
               </div>
             </div>

@@ -286,7 +286,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">悪い口コミ・利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              高評価が多い一方で、口コミの多い人気サービスという性質上、
+              高評価が多い一方で、口コミ件数の多いサービスという性質上、
               <strong className="font-semibold">スタッフによって対応や仕上がりの感じ方に差が出る場合がある</strong>
               点にご留意ください。申し込み時には、次の点を確認することをおすすめします。
             </p>
@@ -311,8 +311,8 @@ export default function Page() {
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>10月20日受付分までの特別価格（壁掛け税込10,780円）を設定（通常価格は税込19,350円）</li>
-                  <li>防カビ・抗菌コートを標準の作業工程に含む</li>
-                  <li>作業実績50万件で口コミ件数が多く、評価を確認しやすい</li>
+                  <li>防カビ・抗菌コートを標準の作業工程として実施</li>
+                  <li>作業実績50万件で口コミ件数が多く、評価の確認が容易</li>
                   <li>各種クレジットカード・電子マネーに対応</li>
                 </ul>
               </div>
@@ -493,12 +493,12 @@ export default function Page() {
               アールクリーニングはキャンペーン価格中心の料金体系のため、見積もり時に条件を確定しておくことで、当日の相違を防げます。申し込み前に次の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">税込総額</strong>：台数(2台目以降の割引適用)・お掃除機能の有無・室外機やドレンホースなどオプションを含めた合計金額</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンペーンの適用条件</strong>：申し込み時点の価格と期限(時期により変動)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">税込総額</strong>：台数(2台目以降の割引適用)・お掃除機能の有無・室外機やドレンホースなどオプションを含めた合計金額をご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンペーンの適用条件</strong>：申し込み時点の価格と期限(時期により変動)をご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">機種の申告</strong>：お掃除機能付きかどうか(型番で確認)。申告漏れは当日の金額変更につながる場合があります</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">古い機種の保証</strong>：製造10年以上の機種は保証できない場合があるため、依頼可否と条件を事前に確認</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エリア・駐車場</strong>：対応エリア外の場合の出張料金(3,000円〜)、駐車場の有無</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンセル期限</strong>：前日14:59まで無料・15:00以降100%という規定の再確認</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">古い機種の保証</strong>：製造10年以上の機種は保証できない場合があるため、依頼可否と条件を事前にご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エリア・駐車場</strong>：対応エリア外の場合の出張料金(3,000円〜)と、駐車場の有無をご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンセル期限</strong>：前日14:59まで無料・15:00以降100%という規定を、あらためてご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">アフター窓口</strong>：不具合報告の期限は2週間以内です。連絡先を控えておくことをおすすめします</span></li>
             </ul>
             <p className="mt-5 leading-8 text-slate-700">

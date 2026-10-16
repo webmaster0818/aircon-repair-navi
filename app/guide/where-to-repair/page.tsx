@@ -260,10 +260,10 @@ export default function WhereToRepairPage() {
             <div className="space-y-4 leading-8 text-slate-700">
               <p>次のいずれかに当てはまる場合は、修理業者への依頼が適しています。</p>
               <ul className="space-y-2 text-[0.95rem] leading-7 list-disc pl-5">
-                <li><strong>保証期間がすべて終了している</strong>（購入から1年超・長期保証なし）</li>
-                <li><strong>当日・翌日中に修理したい</strong>（メーカーの訪問待ちが長い繁忙期）</li>
-                <li><strong>メーカーに部品がなく修理を受け付けてもらえなかった</strong>（製造打切り後10年超）→ 買い替えも比較</li>
-                <li><strong>ご自身で設置した中古品・譲り受けた製品</strong>で、購入店に依頼できない</li>
+                <li><strong>保証期間がすべて終了している場合</strong>（購入から1年超・長期保証なし）</li>
+                <li><strong>当日・翌日中の修理を希望する場合</strong>（メーカーの訪問待ちが長い繁忙期）</li>
+                <li><strong>メーカーに部品がなく修理を受け付けてもらえなかった場合</strong>（製造打切り後10年超。買い替えもあわせて比較）</li>
+                <li><strong>ご自身で設置した中古品・譲り受けた製品</strong>で、購入店に依頼できない場合</li>
               </ul>
               <p>
                 修理業者は料金体系・対応スピードがさまざまです。国民生活センターが2026年6月に注意喚起したとおり、

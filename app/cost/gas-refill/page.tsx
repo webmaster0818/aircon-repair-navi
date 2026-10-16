@@ -72,7 +72,7 @@ export default function GasRefillPage() {
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
               <li>・補充のみの公式掲載額の例: <strong>7,700円〜／16,500円〜</strong>（業者により差・当サイト調査）</li>
               <li>・漏れ修理を含むメーカー目安: <strong>冷媒系統70,000〜105,000円程度</strong>（ダイキン公式・税込）</li>
-              <li>・<strong>漏れを直さない補充は再発しやすい</strong>ため、見積もりの際に「漏れ点検・修理を含むか」をご確認ください</li>
+              <li>・確認事項: <strong>漏れを直さない補充は再発しやすい</strong>ため、見積もりに「漏れ点検・修理を含むか」の確認が必要</li>
             </ul>
           </div>
         </div>
@@ -176,8 +176,8 @@ export default function GasRefillPage() {
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
                 <li>・ダイキン公式FAQ「冷えない・暖まらない（修理金額）」電気系統28,000〜46,000円／冷媒系統70,000〜105,000円程度・税込、誤放出は保証対象外との記載（{UPDATED}確認）</li>
-                <li>・電気の工事屋さん／EPARK／ミツモア／すまいのホットラインの金額は当サイトの業者横断調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社料金インデックス</Link>）にもとづきます</li>
-                <li>・ヤマダ電機の旧公式掲載額は2026年7月11日の当サイト確認値です（現在の公式サイトは見積もり方式）</li>
+                <li>・電気の工事屋さん／EPARK／ミツモア／すまいのホットラインの金額: 当サイトの業者横断調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社料金インデックス</Link>）</li>
+                <li>・ヤマダ電機の旧公式掲載額: 2026年7月11日の当サイト確認値（現在の公式サイトは見積もり方式）</li>
                 <li>・国民生活センター「エアコン修理のトラブルに注意！」（2026年6月3日公表）</li>
               </ul>
             </div>

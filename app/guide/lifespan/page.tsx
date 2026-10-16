@@ -71,7 +71,7 @@ export default function LifespanPage() {
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
               <li>・<strong>設計上の標準使用期間 = 多くのメーカーで10年</strong>（本体のシールで確認可能）</li>
               <li>・<strong>実際の平均使用年数 = 13.6年</strong>（内閣府 消費動向調査・買替え理由は「故障」が65.1%）</li>
-              <li>・<strong>製造打ち切り後約10年で修理部品の保有期間が終了し</strong>、修理自体ができなくなる場合がある</li>
+              <li>・<strong>修理部品の保有期間 = 製造打ち切り後約10年</strong>（終了後は修理自体ができなくなる場合あり）</li>
             </ul>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function LifespanPage() {
               <ul className="space-y-1">
                 <li>・パナソニック公式「エアコンの買い替え時はいつ？」：設計上の標準使用期間10年・部品保有期間・消費動向調査の引用値（{UPDATED}確認）</li>
                 <li>・内閣府「消費動向調査」：ルームエアコンの平均使用年数13.6年・買替え理由 故障65.1%（上記パナソニック公式ページ掲載値として確認）</li>
-                <li>・平均使用年数は調査年により変動します。最新値は内閣府の公表資料をご確認ください</li>
+                <li>・平均使用年数の最新値：内閣府の公表資料（調査年により変動）</li>
               </ul>
             </div>
           </section>

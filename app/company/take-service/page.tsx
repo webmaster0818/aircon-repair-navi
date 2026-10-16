@@ -295,7 +295,7 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>24時間受付のため、急なトラブルでも相談が可能</li>
                   <li>最短5分での急行を公称しており、緊急時に対応可能</li>
-                  <li>年間30,000件とされる実績があり、対応範囲が広い</li>
+                  <li>年間30,000件とされる実績と、幅広い対応範囲</li>
                   <li>エアコン以外の電気工事もあわせて相談が可能</li>
                 </ul>
               </div>
@@ -478,9 +478,9 @@ export default function Page() {
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">総額と内訳</strong>：部品代・技術料・その他費用を分けた書面見積もり(またはスマホ写真での記録)。「見積金額の範囲内での作業」が公式の方針のため、最も重要な確認事項です</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">調査費用</strong>：器具外し・通電チェック・電波状況調査・漏電調査に該当する作業があるか、ある場合の金額(公式には金額非公開)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">調査費用</strong>：器具外し・通電チェック・電波状況調査・漏電調査に該当する作業があるか、ある場合はその金額を確認します(公式には金額非公開)</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">保証の期間と範囲</strong>：同一症状の再発は無料保証が公式の基本方針ですが、期間は工事内容・加盟店により異なるため、具体的な日数と対象範囲を確認します</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">支払い方法</strong>：訪問する加盟店がカード対応か(VISA・マスター・JCB対応でも一部加盟店は不可)</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">支払い方法</strong>：訪問する加盟店がカードに対応しているかを確認します(VISA・マスター・JCB対応でも一部加盟店は不可)</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">依頼後キャンセルの扱い</strong>：無料と明記されているのは施工依頼前のみです。承諾後に取りやめた場合の費用を事前に確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">相場との照合</strong>：提示額を<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別相場</Link>と比べ、大きく外れる場合は説明を求めます。急ぎでない場合は相見積もりをおすすめします</span></li>
             </ul>

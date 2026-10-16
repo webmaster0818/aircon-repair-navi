@@ -176,9 +176,9 @@ export default function RepairDaysPage() {
               <ul className="space-y-1">
                 <li>・シャープ「修理のご相談」（訪問日は最短翌日から指定可能の記載・{UPDATED}確認）</li>
                 <li>・パナソニック公式FAQ（宅配修理は到着後5日程度で返送・{UPDATED}確認）</li>
-                <li>・ダイキン／パナソニックの出張修理ページには訪問日数の目安の記載はありません（{UPDATED}確認）</li>
+                <li>・ダイキン／パナソニックの出張修理ページ（訪問日数の目安の記載なし・{UPDATED}確認）</li>
                 <li>・国民生活センター「エアコン修理のトラブルに注意！」（2026年6月3日公表）</li>
-                <li>・繁忙期の傾向は<Link href="/guide/busy-season/" className="text-sky-600 underline underline-offset-2">繁忙期カレンダー</Link>に掲載した各社の公式告知にもとづきます</li>
+                <li>・繁忙期の傾向：<Link href="/guide/busy-season/" className="text-sky-600 underline underline-offset-2">繁忙期カレンダー</Link>に掲載した各社の公式告知</li>
               </ul>
             </div>
           </section>

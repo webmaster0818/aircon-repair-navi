@@ -21,11 +21,11 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
   {
     category: "症状から探す",
     links: [
-      { href: "/symptom/not-cooling", label: "冷えない" },
+      { href: "/symptom/not-cooling", label: "冷えない症状" },
       { href: "/symptom/water-leak", label: "水漏れ" },
-      { href: "/symptom/noise", label: "異音がする" },
-      { href: "/symptom/bad-smell", label: "臭いがする" },
-      { href: "/symptom/not-starting", label: "動かない" },
+      { href: "/symptom/noise", label: "異音" },
+      { href: "/symptom/bad-smell", label: "臭い" },
+      { href: "/symptom/not-starting", label: "動かない症状" },
       { href: "/symptom/gas-leak", label: "ガス漏れ" },
       { href: "/symptom/remote-error", label: "リモコン不良" },
       { href: "/symptom/error-code", label: "エラーコード" },
