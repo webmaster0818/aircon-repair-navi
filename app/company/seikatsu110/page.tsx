@@ -6,9 +6,9 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "生活110番のエアコン修理の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "生活110番のエアコン修理の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "生活トラブル解決サービス「生活110番」のエアコン修理について、実際の利用者の口コミ・評判を出典付きでまとめました。料金の目安、対応エリアや受付時間、加盟店紹介型サービスならではのメリット・デメリット、向いている人まで中立的に解説します。",
+    "生活トラブル解決サービス「生活110番」のエアコン修理について、公開されている口コミ・評判の傾向をまとめています。料金の目安、対応エリアと受付時間、加盟店紹介型サービスのメリット・デメリット、向いている方を中立的な立場でご説明します。",
   alternates: { canonical: "/company/seikatsu110" },
 };
 
@@ -18,9 +18,9 @@ const toc = [
   { id: "summary", label: "生活110番とは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
@@ -30,15 +30,15 @@ const toc = [
 const faqs = [
   {
     q: "生活110番は自社で修理に来てくれるのですか？",
-    a: "生活110番自体は修理を行う業者ではなく、全国の加盟店（提携業者）の中から症状や地域に合った業者を紹介・マッチングするサービスです。実際の修理は紹介された加盟店が行います。そのため、対応品質は担当する加盟店によって変わる点を理解しておきましょう。",
+    a: "生活110番自体は修理を行う業者ではなく、全国の加盟店（提携業者）の中から症状や地域に合った業者を紹介・マッチングするサービスです。実際の修理は紹介された加盟店が行います。そのため、対応品質は担当する加盟店によって異なります。",
   },
   {
     q: "受付は24時間対応していますか？",
-    a: "コールセンターは24時間365日年中無休で受付しているとされています。ただし、実際の訪問日時は紹介される加盟店の状況によって変わるため、急ぎの場合は受付時に対応可能な時間を確認しておくと安心です。",
+    a: "コールセンターは24時間365日年中無休で受け付けているとされています。ただし、実際の訪問日時は紹介される加盟店の状況によって異なるため、お急ぎの場合は受付時に対応可能な時間をご確認ください。",
   },
   {
     q: "見積もりは無料ですか？",
-    a: "相談・見積もりは無料とされています。作業内容に納得してから依頼できるよう、訪問時に作業範囲と総額の見積もりを書面で確認してから契約するのがおすすめです。公式サイトの料金目安と現地見積もりに差がないかも確認しましょう。",
+    a: "相談・見積もりは無料とされています。作業内容に同意したうえで依頼できるよう、訪問時に作業範囲と総額の見積もりを書面で確認してから契約することをおすすめします。公式サイトの費用の目安と現地見積もりに差がないかもあわせてご確認ください。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "加盟店とトラブルになったらどうすればよいですか？",
-    a: "生活110番は紹介・マッチングを担う立場のため、加盟店との契約や作業内容に関するやり取りは利用者と加盟店の間で行うのが基本です。心配な場合は、依頼前に口コミや見積もり内容をよく確認し、追加費用が発生する条件を事前に聞いておくとトラブルを避けやすくなります。",
+    a: "生活110番は紹介・マッチングを担う立場のため、加盟店との契約や作業内容に関するやり取りは、原則として利用者と加盟店の間で行います。依頼前に口コミや見積もり内容を確認し、追加費用が発生する条件を事前に確認しておくことで、トラブルを避けやすくなります。",
   },
 ];
 
@@ -54,7 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "生活110番のエアコン修理の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "生活110番のエアコン修理の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -90,9 +90,9 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            生活110番のエアコン修理の口コミ・評判は？
+            生活110番のエアコン修理の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            料金・対応エリアを調査【2026年最新】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -107,13 +107,13 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            エアコンが急に効かなくなったとき、どこに頼めばよいか分からず困ることがあります。
-            この記事では、暮らしのトラブル全般に対応する全国対応サービス
+            エアコンが急に効かなくなった場合、依頼先の選定に迷われる方も少なくありません。
+            本記事では、暮らしのトラブル全般に対応する全国対応サービス
             <strong className="font-semibold text-slate-900">生活110番</strong>
-            のエアコン修理について、実際に公開されている利用者の口コミ、料金の目安、対応エリアや受付時間、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
+            のエアコン修理について、公開されている口コミの傾向、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※生活110番は、自社で修理を行うのではなく、全国の加盟店（提携業者）を紹介する「加盟店紹介型」のサービスです。本記事の口コミは、公式の加盟店レビューや口コミ紹介サイトで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年6月）。
+            ※生活110番は、自社で修理を行うのではなく、全国の加盟店（提携業者）を紹介する「加盟店紹介型」のサービスです。本記事の口コミに関する記載は、公式の加盟店レビューや口コミ紹介サイトで公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年6月）。
           </p>
         </div>
 
@@ -138,18 +138,18 @@ export default function Page() {
               生活110番は、シェアリングテクノロジー株式会社が運営する、暮らしの「困った」を解決する生活トラブル解決サービスです。エアコン修理のほか、水回り、害虫、鍵、不用品回収など150以上のサービスジャンルを扱い、症状や地域に合った専門業者を紹介・マッチングします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              公式では「全国7,600社以上の提携業者」とされ（2026年10月15日・公式確認）、コールセンターは24時間365日年中無休で受付。エアコンが冷えない・効かない、水漏れ、異音、エラー表示といった家庭で起きやすいトラブルに幅広く対応しています。運営会社が東証グロース市場に上場している点も、はじめて利用する人にとっては相談のしやすさにつながります。
+              公式サイトでは「全国7,600社以上の提携業者」とされており（2026年10月15日・公式確認）、コールセンターは24時間365日年中無休で受け付けています。エアコンが冷えない・効かない、水漏れ、異音、エラー表示といった家庭で起きやすいトラブルに幅広く対応しています。運営会社は東証グロース市場に上場しており、初めて利用する方にとって相談しやすい要素の一つです。
             </p>
           </section>
 
           {/* 仲介型と直接依頼型の違い（中立の比較導線・2026-07-04追加） */}
           <section className="scroll-mt-24">
             <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6">
-              <h2 className="text-lg font-bold text-sky-900 mb-2">先に知っておきたい：「仲介型」と「直接依頼型」の違い</h2>
+              <h2 className="text-lg font-bold text-sky-900 mb-2">「仲介型」と「直接依頼型」の違い</h2>
               <p className="text-sm text-slate-700 leading-relaxed mb-3">
-                生活110番のような「仲介・マッチング型」は、複数の登録業者から比較して選べるのが利点です。一方で、実際の作業は登録業者が行うため、料金や対応品質は担当業者によって幅があります。急ぎの修理では、業者へ直接依頼する「直接依頼型」（例：<Link href="/company/take-service" className="text-sky-600 font-bold hover:underline">テイクサービス</Link>＝24時間受付・最短即日対応を公称）と並行して見積もりを取り、条件と到着スピードで選ぶのが失敗しにくい使い方です。
+                生活110番のような「仲介・マッチング型」は、複数の登録業者を比較して選べる点が利点です。一方で、実際の作業は登録業者が行うため、料金や対応品質は担当業者によって異なります。お急ぎの修理では、業者へ直接依頼する「直接依頼型」（例：<Link href="/company/take-service" className="text-sky-600 font-bold hover:underline">テイクサービス</Link>＝24時間受付・最短即日対応を公称）と並行して見積もりを取り、条件と到着までの時間で選ぶ方法をおすすめします。
               </p>
-              <p className="text-sm text-slate-700 leading-relaxed mb-3"><strong>迷ったら</strong>：今日・明日中に直したい→直接依頼型に電話、複数の見積もりを比べてから決めたい→仲介型、が1秒で選べる目安です。</p>
+              <p className="text-sm text-slate-700 leading-relaxed mb-3"><strong>選び方の目安</strong>：当日・翌日中の修理を希望する場合は直接依頼型、複数の見積もりを比較してから決めたい場合は仲介型が適しています。</p>
               <Link href="/ranking" className="inline-flex items-center gap-1 text-sky-600 font-bold hover:underline text-sm">仲介型・直接型を含む業者比較ランキングを見る →</Link>
             </div>
           </section>
@@ -183,15 +183,15 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。生活110番の加盟店レビュー（公式サイト掲載）や複数の口コミ紹介サイトを確認したところ、次のような評価の傾向が見られました。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。生活110番の加盟店レビュー（公式サイト掲載）や複数の口コミ紹介サイトを確認した結果、以下のような評価の傾向が見られました。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                 <li>駆けつけ・対応の早さを評価する内容</li>
                 <li>見積もりや作業内容の説明のわかりやすさを評価する内容</li>
                 <li>事前に金額や作業方法の説明があり、納得して依頼できたとする内容</li>
-                <li>誠実・丁寧な対応で、初めての依頼でも安心できたとする内容</li>
+                <li>誠実・丁寧な対応により、初めての依頼でも安心できたとする内容</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期・担当する加盟店・地域により異なります。</p>
@@ -202,16 +202,16 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、加盟店紹介型サービスという性質上、
+              好意的な評価が多い一方で、加盟店紹介型サービスという性質上、
               <strong className="font-semibold">紹介された加盟店によって対応や料金に差が出る場合がある</strong>
-              点は理解しておきたいところです。口コミでも、料金の事前確認や加盟店とのやり取りに関する声が見られます。安心して任せるために、依頼時には次の点を確認しておくとよいでしょう。
+              点にご留意ください。口コミでも、料金の事前確認や加盟店とのやり取りに関する声が見られます。依頼時には、以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>修理を行うのは紹介された加盟店のため、地域や担当業者によって対応スピード・品質に差が出ることがある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>追加作業（配管カバーの取り付けなど）が見積もりに含まれるか、訪問時に確認しておくと安心</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>契約や作業内容のやり取りは加盟店との間で行うのが基本のため、見積もりは書面で確認してから依頼する</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>修理を行うのは紹介された加盟店のため、地域や担当業者によって対応スピード・品質に差が生じる場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>追加作業（配管カバーの取り付けなど）が見積もりに含まれるかを、訪問時にご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>契約や作業内容のやり取りは原則として加盟店との間で行うため、見積もりを書面で確認してから依頼することをおすすめします。</li>
             </ul>
             <p className="mt-3 text-xs text-slate-400">※注意点は、口コミ紹介サイトで指摘されている内容を中立的に要約したものです。実際の対応は加盟店ごとに異なります。</p>
           </section>
@@ -222,39 +222,39 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>24時間365日受付で、急なトラブルでも相談しやすい</li>
-                  <li>全国の加盟店ネットワークから近い業者を紹介してもらえる</li>
-                  <li>相談・見積もりが無料（公称）で相談のハードルが低い</li>
-                  <li>運営会社が上場企業で、窓口がはっきりしている安心感</li>
+                  <li>24時間365日受付のため、急なトラブルでも相談しやすい</li>
+                  <li>全国の加盟店ネットワークから近隣の業者を紹介してもらえる</li>
+                  <li>相談・見積もりが無料（公称）</li>
+                  <li>運営会社が上場企業で、窓口が明確である</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>修理するのは加盟店のため、対応に差が出ることがある</li>
+                  <li>修理を行うのは加盟店のため、対応に差が生じる場合がある</li>
                   <li>契約・作業内容のやり取りは加盟店との間で行う</li>
-                  <li>料金は症状で変わるため、事前の見積もり確認が前提</li>
+                  <li>料金は症状により異なるため、事前の見積もり確認が必要</li>
                 </ul>
               </div>
             </div>
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>夜間や休日など、急なエアコントラブルですぐ相談したい人</li>
-                  <li>近くに頼める業者がわからず、まず相談先を探している人</li>
-                  <li>窓口がはっきりした全国対応サービスで気軽に相談したい人</li>
+                  <li>夜間や休日など、急なエアコントラブルですぐに相談したい方</li>
+                  <li>近隣の依頼先がわからず、まず相談先を探している方</li>
+                  <li>窓口が明確な全国対応サービスに相談したい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>あらかじめ業者と料金をじっくり比較して選びたい人</li>
-                  <li>メーカー保証期間内で、メーカー修理を優先したい人</li>
+                  <li>事前に業者と料金を十分に比較して選びたい方</li>
+                  <li>メーカー保証期間内で、メーカー修理を優先したい方</li>
                 </ul>
               </div>
             </div>
@@ -266,7 +266,7 @@ export default function Page() {
               エアコン修理の費用は、症状や必要な作業（点検・ガス補充・部品交換など）によって幅があります。生活110番では相談・見積もりは無料とされており、実際の料金は紹介された加盟店の見積もりで決まります。一般的なエアコン修理の相場としては、簡単な点検が数千円台、ガス補充や基板交換などが必要な場合は数万円台になることもあります。公式サイトには、エアコン修理の平均費用として2.7万円（2019年11月更新・過去3年の利用料金に基づく）が掲載されています（2026年10月15日・公式確認）。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              口コミでは料金の事前確認に関する声も見られるため、訪問時には作業範囲と総額の見積もりを書面で確認し、追加費用が発生する条件まで聞いたうえで、納得してから依頼するのがおすすめです。可能であれば、複数の業者から見積もりを取って比較すると安心です。
+              口コミでは料金の事前確認に関する声も見られるため、訪問時には作業範囲と総額の見積もりを書面で確認し、追加費用が発生する条件まで確認したうえで依頼することをおすすめします。可能であれば、複数の業者から見積もりを取って比較してください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は一般的な目安です。正確な金額は紹介された加盟店の現地見積もりでご確認ください。</p>
           </section>
@@ -275,11 +275,11 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から修理完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["電話・Webで相談", "症状や設置状況を伝えます。受付は24時間365日年中無休とされています。"],
+                ["電話・Webでの相談", "症状や設置状況を伝えます。受付は24時間365日年中無休とされています。"],
                 ["加盟店の紹介・訪問日時の調整", "症状や地域に合った加盟店を紹介してもらい、訪問日時を調整します。"],
                 ["現地確認・見積もり", "加盟店がエアコンの状態を確認し、作業内容と費用を提示します。"],
-                ["修理作業", "見積もりに納得後、加盟店が修理を実施します。"],
-                ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
+                ["修理作業", "見積もり内容に同意した後、加盟店が修理を実施します。"],
+                ["動作確認・支払い", "正常に動作することを確認し、支払いを行って完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
                   <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
@@ -310,15 +310,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              生活110番は、24時間365日の受付と全国対応で、急なエアコントラブルにすぐ相談できる点が強みの加盟店紹介型サービスです。利用者の声では駆けつけの早さと、見積もり・作業の説明の丁寧さを評価する内容が目立ちます。一方で、実際に修理するのは紹介された加盟店のため、対応や料金に差が出る場合があります。依頼時には見積もりを書面で確認し、追加費用の条件まで聞いたうえで進めるのが安心です。
+              生活110番は、24時間365日の受付と全国対応により、急なエアコントラブルにすぐ相談できる点を強みとする加盟店紹介型サービスです。利用者の声では、駆けつけの早さと、見積もり・作業の説明の丁寧さを評価する内容が多く見られます。一方で、実際に修理を行うのは紹介された加盟店のため、対応や料金に差が生じる場合があります。依頼時には見積もりを書面で確認し、追加費用の条件まで確認したうえで進めることをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              エアコン修理は症状によって費用が変わります。急ぎでないときは複数の業者から見積もりを取り、料金と対応を比較して選ぶと失敗を防げます。
+              エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の業者から見積もりを取り、料金と対応を比較してお選びください。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコントラブルでお困りの方へ</p>
-              <p className="text-sky-100 text-sm mb-5">まずは無料相談・見積もりで、症状と費用の目安を確認してみましょう。</p>
+              <p className="text-sky-100 text-sm mb-5">無料相談・見積もりにて、症状と費用の目安をご確認いただけます。</p>
               <a href="https://www.seikatsu110.jp/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 生活110番 公式サイトを見る
               </a>

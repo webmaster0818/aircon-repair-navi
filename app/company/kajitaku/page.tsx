@@ -6,9 +6,9 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "カジタク(イオン)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "カジタク(イオン)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "イオングループのエアコンクリーニング「カジタク」の口コミ・評判をまとめました。みん評・マイナビ等の実際の利用者の声、料金プラン、対応エリアや保証、メリット・利用前の注意点まで中立的に解説します。",
+    "イオングループのエアコンクリーニング「カジタク」の口コミ・評判をまとめています。みん評・マイナビ等で公開されている利用者の声の傾向、料金プラン、対応エリアや保証、メリット・ご利用前の注意点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/kajitaku" },
 };
 
@@ -18,9 +18,9 @@ const toc = [
   { id: "summary", label: "カジタクとは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
@@ -30,23 +30,23 @@ const toc = [
 const faqs = [
   {
     q: "カジタクはエアコン修理もしてくれますか？",
-    a: "カジタクはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流して、ニオイや効きの改善を目指すサービスである点に注意してください。故障の場合は修理業者やメーカーへの相談が必要です。",
+    a: "カジタクはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流し、ニオイや効きの改善を目的とするサービスである点にご注意ください。故障の場合は、修理業者やメーカーへご相談ください。",
   },
   {
     q: "対応エリアはどこですか？",
-    a: "公式の対象エリア表では、エアコンクリーニングの対象は43都道府県の対象市区町村で、山形・福井・長崎・大分は掲載されていません。多くの県は掲載された市区町村のみが対象です（沖縄県は那覇市など対象市町村あり）（2026年10月15日・公式確認）。郵便番号で対象エリアかを確認できるため、申し込み時に対応可否と空き状況を確認しておきましょう。",
+    a: "公式の対象エリア表では、エアコンクリーニングの対象は43都道府県の対象市区町村で、山形・福井・長崎・大分は掲載されていません。多くの県は掲載された市区町村のみが対象です（沖縄県は那覇市など対象市町村あり）（2026年10月15日・公式確認）。郵便番号で対象エリアかを確認できるため、お申し込み時に対応可否と空き状況をご確認ください。",
   },
   {
     q: "料金はどのくらいですか？",
-    a: "公式サイトでは、ライト約9,700円、スタンダード約11,880円、プレミアム約22,770円(いずれも割引適用後の目安)の3プランが案内されています。ライトは本体の分解洗浄をしないプランです。2台以上の割引制度があり、全プランに約1年間の防カビ抗菌コートが無料で付くとされています。料金は時期で変わるため、申し込み時に確認してください。",
+    a: "公式サイトでは、ライト約9,700円、スタンダード約11,880円、プレミアム約22,770円(いずれも割引適用後の目安)の3プランが案内されています。ライトは本体の分解洗浄をしないプランです。2台以上の割引制度があり、全プランに約1年間の防カビ抗菌コートが無料で施工されるとされています。料金は時期により変わるため、お申し込み時にご確認ください。",
   },
   {
     q: "保証はありますか？",
-    a: "カジタクはイオングループの関連会社が運営しており、品質に対して7日以内なら再施工の保証があると案内されています。万一の場合の補償についても用意されています。詳細は申し込み時に確認しておくと安心です。",
+    a: "カジタクはイオングループの関連会社が運営しており、品質に対して7日以内なら再施工の保証があると案内されています。万一の場合の補償についても用意されています。詳細はお申し込み時にご確認ください。",
   },
   {
     q: "対応できないエアコンはありますか？",
-    a: "公式サイトでは、対象を壁掛け型の通常エアコンとお掃除機能付きモデルとし、天井埋め込み・業務用・床置き・ウィンドウ型などは対象外と案内しています。お持ちの機種が対象かどうか、申し込み前に確認しておきましょう。",
+    a: "公式サイトでは、対象を壁掛け型の通常エアコンとお掃除機能付きモデルとし、天井埋め込み・業務用・床置き・ウィンドウ型などは対象外と案内しています。お持ちの機種が対象かどうか、お申し込み前にご確認ください。",
   },
 ];
 
@@ -54,7 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "カジタク(イオン)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "カジタク(イオン)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -90,9 +90,9 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            カジタク(イオン)の口コミ・評判は？
+            カジタク(イオン)の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            料金・対応エリアを調査【2026年最新】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -107,12 +107,12 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            大手の安心感があって、Webで手軽に申し込めるエアコンクリーニングを探している——そんなときに候補になるのが、イオングループの
+            大手が運営し、Webで申し込めるエアコンクリーニングを探す際の候補の一つが、イオングループの
             <strong className="font-semibold text-slate-900">カジタク</strong>
-            です。この記事では、イオングループが運営するカジタクについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声、料金プラン、対応エリアや保証、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
+            です。本記事では、イオングループが運営するカジタクについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声の傾向、料金プラン、対応エリアや保証、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月)。
+            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年7月)。
           </p>
         </div>
 
@@ -134,10 +134,10 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">カジタクとは</h2>
             <p className="leading-8 text-slate-700">
-              カジタクは、イオングループ傘下のアクティアが運営するハウスクリーニング・宅配クリーニング・家事代行のサービスです。エアコンクリーニングでは、ライト・スタンダード・プレミアムの3プランを用意し、Webから料金を確認して申し込める手軽さが特徴です。
+              カジタクは、イオングループ傘下のアクティアが運営するハウスクリーニング・宅配クリーニング・家事代行のサービスです。エアコンクリーニングでは、ライト・スタンダード・プレミアムの3プランを用意し、Webから料金を確認して申し込める点が特徴です。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              全プランに約1年間の防カビ抗菌コートが無料で付き、品質に対する再施工保証(7日以内)も用意されています。イオングループの信頼感と、料金が事前にわかる明朗さを重視する人に候補となるサービスです。
+              全プランに約1年間の防カビ抗菌コートが無料で施工され、品質に対する再施工保証(7日以内)も用意されています。イオングループの信頼性と、料金が事前にわかる明確さを重視する方に適したサービスです。
             </p>
           </section>
 
@@ -170,15 +170,15 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。カジタクについては、Googleマップ・みん評・マイナビの口コミ調査記事・公式サイトで公開されている利用者の声を確認しました。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。カジタクについては、Googleマップ・みん評・マイナビの口コミ調査記事・公式サイトで公開されている利用者の声を確認しました。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                 <li>スタッフの対応が丁寧で、仕上がりがきれいだったという内容</li>
                 <li>申し込みから支払いまでWebで完結し、料金が事前にわかる点を評価する内容</li>
-                <li>イオングループ運営の安心感で、初めてでも申し込みやすかったという内容</li>
-                <li>防カビ仕上げが無料で付く点を評価する内容</li>
+                <li>イオングループが運営している点から、初めてでも申し込みやすかったという内容</li>
+                <li>防カビ仕上げが無料で施工される点を評価する内容</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
@@ -189,17 +189,17 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、人気の大手サービスという性質上、
+              好意的な評価が多い一方で、人気の大手サービスという性質上、
               <strong className="font-semibold">繁忙期は予約が取りにくく、スタッフによって感じ方に差が出る場合がある</strong>
-              点は理解しておきたいところです。安心して任せるために、申し込み時には次の点を確認しておくとよいでしょう。
+              点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>夏場や年末の繁忙期は予約が殺到し、希望日時に取りにくいことがある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって作業の丁寧さの感じ方に差が出る場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うか確認しておく</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お持ちの機種が対象か(天井埋め込み・業務用などは対象外)を申し込み前に確認する</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>夏場や年末の繁忙期は予約が集中し、希望日時に予約できない場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって、作業の丁寧さの受け止め方に差が生じる場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うかをご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お持ちの機種が対象か(天井埋め込み・業務用などは対象外)を、お申し込み前にご確認ください。</li>
             </ul>
           </section>
 
@@ -209,8 +209,8 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>イオングループ運営の安心感</li>
-                  <li>Webで申し込み・料金が事前にわかる明朗さ</li>
+                  <li>イオングループが運営している</li>
+                  <li>Webで申し込みができ、料金が事前にわかる</li>
                   <li>7日以内の再施工保証・防カビ抗菌コート無料(公称)</li>
                   <li>3プランから内容を選べる</li>
                 </ul>
@@ -220,28 +220,28 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>繁忙期は予約が取りにくくなる場合がある</li>
                   <li>対象機種が壁掛け型中心(対象外の機種がある)</li>
-                  <li>故障修理ではなくクリーニングのサービス</li>
+                  <li>故障修理ではなくクリーニングのサービスである</li>
                 </ul>
               </div>
             </div>
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>大手・イオングループの安心感を重視したい人</li>
-                  <li>Webで手軽に申し込み、料金を事前に把握したい人</li>
-                  <li>壁掛け型エアコンのニオイ・効きを洗浄で改善したい人</li>
+                  <li>大手・イオングループが運営するサービスを選びたい方</li>
+                  <li>Webで申し込み、料金を事前に把握したい方</li>
+                  <li>壁掛け型エアコンのニオイ・効きを洗浄で改善したい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>天井埋め込み・業務用など対象外機種を頼みたい人</li>
-                  <li>清掃ではなく、故障の修理を頼みたい人</li>
+                  <li>天井埋め込み・業務用など対象外機種を頼みたい方</li>
+                  <li>清掃ではなく、故障の修理を頼みたい方</li>
                 </ul>
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              カジタクの公式サイトでは、エアコンクリーニングの料金が次の3プランで案内されています(割引適用後の目安・調査時点)。
+              カジタクの公式サイトでは、エアコンクリーニングの料金が以下の3プランで案内されています(割引適用後の目安・調査時点)。
             </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -271,20 +271,20 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              割引やキャンペーンは時期によって変わります。台数やプランによって総額が変わるため、申し込み時に最新の料金と総額を確認しておくと安心です。
+              割引やキャンペーンは時期によって変わります。台数やプランによって総額が変わるため、お申し込み時に最新の料金と総額をご確認ください。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。最新の金額は申し込み時にご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。最新の金額はお申し込み時にご確認ください。</p>
           </section>
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["Webで申し込み", "プランを選び、機種や台数を入力します。料金が事前にわかります。"],
+                ["Webでの申し込み", "プランを選び、機種や台数を入力します。料金は事前に確認できます。"],
                 ["日程の調整", "都合の良い日時を調整します。対応エリア・空き状況を確認します。"],
-                ["訪問・養生", "スタッフが訪問し、周囲をしっかり養生します。"],
+                ["訪問・養生", "スタッフが訪問し、周囲を養生します。"],
                 ["分解洗浄", "プランに応じて内部を高圧洗浄します。防カビ抗菌コートを施工します。"],
-                ["動作確認・支払い", "仕上がりと動作を確認し、支払いをして完了です。"],
+                ["動作確認・支払い", "仕上がりと動作を確認し、支払いを行って完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
                   <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
@@ -315,15 +315,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              カジタクは、イオングループの安心感と、Webで料金を確認して申し込める明朗さを強みとするエアコンクリーニングのサービスです。利用者の声では、丁寧な対応・仕上がりの良さや、防カビ仕上げ無料・再施工保証への評価が見られます。一方で、繁忙期の予約の取りにくさや対象機種の制限、故障の修理ではなくクリーニングである点は理解しておきましょう。
+              カジタクは、イオングループによる運営と、Webで料金を確認して申し込める明確さを強みとするエアコンクリーニングのサービスです。利用者の声では、丁寧な対応・仕上がりの良さや、防カビ仕上げ無料・再施工保証への評価が見られます。一方で、繁忙期の予約の取りにくさや対象機種の制限、故障の修理ではなくクリーニングである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              料金はプラン・台数で変わります。申し込み時に総額と対象機種・作業範囲を確認し、納得してから依頼するのがおすすめです。
+              料金はプラン・台数により異なります。お申し込み時に総額と対象機種・作業範囲を確認したうえで依頼することをおすすめします。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
-              <p className="text-sky-100 text-sm mb-5">大手の安心感を重視するなら、まずは料金プランを確認してみましょう。</p>
+              <p className="text-sky-100 text-sm mb-5">ご利用前に、公式サイトにて最新の料金プランをご確認ください。</p>
               <a href="https://www.kajitaku.com/house-cleaning/airconditioner/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 カジタク公式サイトを見る
               </a>

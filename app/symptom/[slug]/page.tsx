@@ -26,20 +26,20 @@ const careTypeBox: Record<
   { title: string; body: string; linkHref: string; linkLabel: string }
 > = {
   repair: {
-    title: "この症状は「修理」の相談先が近道です",
-    body: "この症状は部品の故障・不具合が原因のことが多く、分解洗浄（エアコンクリーニング）では解決しない場合があります。修理に対応する業者へ症状を伝えて、見積もりを取るのが近道です。",
+    title: "この症状は「修理」に対応する業者への相談をおすすめします",
+    body: "この症状は部品の故障・不具合が原因のことが多く、分解洗浄（エアコンクリーニング）では解決しない場合があります。修理に対応する業者に症状を伝え、見積もりを取ることをおすすめします。",
     linkHref: "/ranking",
     linkLabel: "修理業者の比較ランキングを見る",
   },
   cleaning: {
-    title: "この症状は「クリーニング」の対象であることが大半です",
+    title: "この症状は主に「クリーニング」の対象です",
     body: "この症状は故障ではなく、エアコン内部のカビ・ホコリ汚れが原因のことが大半です。修理業者ではなく、分解洗浄を行うエアコンクリーニング業者（ダスキン・アールクリーニング・清風など）への依頼が適しています。",
     linkHref: "/company/duskin-servicemaster",
     linkLabel: "エアコンクリーニング業者の詳細を見る",
   },
   hybrid: {
-    title: "この症状は「汚れ起因」と「故障起因」の両方があり得ます",
-    body: "フィルターやドレンホースの汚れが原因ならクリーニングで解決することが多く、それでも改善しない場合は部品故障の可能性があるため修理業者への相談が近道です。まず下の「まず確認すること」を試してから切り分けましょう。",
+    title: "この症状には「汚れによるもの」と「故障によるもの」の両方があります",
+    body: "フィルターやドレンホースの汚れが原因の場合は、クリーニングで解決することが多くあります。それでも改善しない場合は部品故障の可能性があるため、修理業者への相談をおすすめします。まずは下記の「最初に確認すること」をお試しのうえ、原因を切り分けてください。",
     linkHref: "/ranking",
     linkLabel: "修理・クリーニング業者の比較を見る",
   },
@@ -47,12 +47,12 @@ const careTypeBox: Record<
 
 const guideMeta: Record<string, { href: string; label: string }> = {
   "repair-cost": { href: "/cost/repair-price/", label: "エアコン修理費用の相場ガイド" },
-  noise: { href: "/guide/noise", label: "エアコンの異音 原因と対処ガイド" },
+  noise: { href: "/guide/noise", label: "エアコンの異音の原因と対処ガイド" },
   "heating-not-working": { href: "/guide/heating-not-working/", label: "暖房が効かない原因と故障の見分け方" },
-  "repair-days": { href: "/guide/repair-days/", label: "エアコン修理は何日かかる？依頼先別の日数目安" },
+  "repair-days": { href: "/guide/repair-days/", label: "エアコン修理にかかる日数の目安（依頼先別）" },
   smell: { href: "/guide/smell/", label: "エアコンの臭いの原因と対処ガイド" },
   "cleaning-fee": { href: "/cost/cleaning-fee/", label: "エアコンクリーニングの料金相場" },
-  "power-not-on": { href: "/guide/power-not-on/", label: "電源が入らない時の確認手順とリセット方法" },
+  "power-not-on": { href: "/guide/power-not-on/", label: "電源が入らないときの確認手順とリセット方法" },
   "error-code-daikin": { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
   "error-code-mitsubishi": { href: "/guide/error-code-mitsubishi/", label: "三菱(霧ヶ峰)のランプ点滅・エラー表示の意味" },
 };
@@ -78,13 +78,13 @@ export async function generateMetadata({
 }
 
 const difficultyLabel: Record<string, { label: string; color: string }> = {
-  easy: { label: "DIY可能", color: "bg-green-100 text-green-700" },
+  easy: { label: "ご自身で対応可能", color: "bg-green-100 text-green-700" },
   medium: { label: "注意が必要", color: "bg-yellow-100 text-yellow-700" },
   professional: { label: "業者依頼推奨", color: "bg-red-100 text-red-700" },
 };
 
 const urgencyLabel: Record<string, { label: string; color: string }> = {
-  low: { label: "低（急がない）", color: "text-green-600" },
+  low: { label: "低（急ぎではありません）", color: "text-green-600" },
   medium: { label: "中（早めに対処）", color: "text-yellow-600" },
   high: { label: "高（早急に対処）", color: "text-red-600" },
 };
@@ -179,7 +179,7 @@ export default async function SymptomPage({
           <p className="text-sky-100 text-lg max-w-2xl">{symptom.description}</p>
           <div className="mt-6 bg-white/10 rounded-xl p-4 inline-flex items-center gap-4">
             <div>
-              <p className="text-sky-200 text-xs">修理費用目安</p>
+              <p className="text-sky-200 text-xs">修理費用の目安</p>
               <p className="font-bold text-white text-lg">{symptom.estimatedCost}</p>
             </div>
           </div>
@@ -193,7 +193,7 @@ export default async function SymptomPage({
             <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6">
               <h2 className="text-lg font-bold text-sky-900 mb-3 flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                まず確認すること
+                最初に確認すること
               </h2>
               <ul className="space-y-2">
                 {quickCheck.map((item) => (
@@ -254,7 +254,7 @@ export default async function SymptomPage({
                     <h3 className="font-bold text-slate-900">{solution.title}</h3>
                     <div className="flex items-center gap-2 flex-shrink-0">
                       <span className={`text-xs font-bold px-2 py-1 rounded-full ${solution.diy ? "bg-green-100 text-green-700" : "bg-gray-100 text-gray-600"}`}>
-                        {solution.diy ? "自分で対応可" : "業者依頼"}
+                        {solution.diy ? "ご自身で対応可" : "業者に依頼"}
                       </span>
                       <span className={`text-xs font-bold px-2 py-1 rounded-full ${diff.color}`}>
                         {diff.label}
@@ -283,7 +283,7 @@ export default async function SymptomPage({
                 <thead className="bg-[var(--color-brand)] text-white">
                   <tr>
                     <th className="px-5 py-3 text-left text-sm font-bold">原因・修理内容</th>
-                    <th className="px-5 py-3 text-right text-sm font-bold">費用目安</th>
+                    <th className="px-5 py-3 text-right text-sm font-bold">費用の目安</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -304,17 +304,17 @@ export default async function SymptomPage({
             </div>
           )}
           <p className="text-xs text-gray-500 mt-3">
-            ※費用はあくまで目安です。実際の金額は症状・機種・地域・業者によって変動します。正確な額は必ず見積もりで確認してください。
+            ※費用は目安です。実際の金額は症状・機種・地域・業者によって変動します。正確な金額は、必ず見積もりにてご確認ください。
           </p>
         </section>
 
         {/* DIY vs Pro */}
         <section>
-          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">自分でできること / 業者に頼むべきサイン</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">ご自身でできることと、業者への依頼を検討すべき症状</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-green-50 rounded-xl p-5 border border-green-100">
               <h3 className="font-bold text-green-800 mb-3 flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg> 自分で対応できること
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/></svg> ご自身で対応できること
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-green-500 font-bold">・</span> フィルターの清掃・交換</li>
@@ -330,8 +330,8 @@ export default async function SymptomPage({
               <ul className="space-y-2 text-sm text-gray-700">
                 <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 冷媒ガスの補充・修理（資格が必要）</li>
                 <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 基板・コンプレッサーの修理・交換</li>
-                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 電気系統のトラブル・自分での対処で改善しない</li>
-                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 焦げ臭い・煙・火花がある場合（火災リスク・すぐ運転停止）</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 電気系統のトラブル、またはご自身での対処で改善しない場合</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 焦げ臭い・煙・火花がある場合（火災のおそれがあるため、直ちに運転を停止してください）</li>
               </ul>
             </div>
           </div>
@@ -398,7 +398,7 @@ export default async function SymptomPage({
             <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">関連する情報</h2>
             {guideLinks.length > 0 && (
               <div className="mb-5">
-                <p className="text-sm font-bold text-slate-700 mb-2">詳しいガイド</p>
+                <p className="text-sm font-bold text-slate-700 mb-2">関連ガイド</p>
                 <ul className="space-y-2">
                   {guideLinks.map((g) => (
                     <li key={g.href}>
@@ -432,8 +432,8 @@ export default async function SymptomPage({
 
         {/* CTA */}
         <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
-          <h2 className="text-xl font-bold mb-3">まずは無料相談・見積もりを</h2>
-          <p className="text-sky-100 text-sm mb-6">専門業者に相談することで、最適な修理方法と費用がわかります。費用は機種・地域・業者で変動するため、正確な額は見積もりでご確認ください。</p>
+          <h2 className="text-xl font-bold mb-3">無料相談・見積もりのご案内</h2>
+          <p className="text-sky-100 text-sm mb-6">専門業者に相談すると、症状に適した修理方法と費用を確認できます。費用は機種・地域・業者によって変動するため、正確な金額は見積もりにてご確認ください。</p>
           <Link
             href="/ranking"
             className="ac-btn ac-btn-cta px-8 py-4 text-lg"

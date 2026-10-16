@@ -3,8 +3,8 @@ import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "エアコン修理の料金相場一覧【2026年】出張費・診断料・症状別の費用目安",
-  description: "エアコン修理の費用・価格・料金相場を症状別に一覧化【2026年版】。ガス補充・水漏れ・基板交換の目安に加え、見落としがちな出張費・診断料、修理と買い替えの判断基準まで解説。金額は目安のため見積もりでの確認を推奨します。",
+  title: "エアコン修理の料金相場一覧【2026年】出張費・診断料・症状別の費用の目安",
+  description: "エアコン修理の費用・価格・料金相場を症状別に一覧化【2026年版】。ガス補充・水漏れ・基板交換の目安に加え、出張費・診断料の仕組みや、修理と買い替えの判断基準についてご説明します。金額は目安のため、見積もりでのご確認をおすすめします。",
   alternates: { canonical: "/cost/repair-price/" },
 };
 
@@ -12,8 +12,8 @@ const costItems = [
   {
     category: "ガス・冷媒系",
     items: [
-      { name: "冷媒ガス補充（R32）", min: 20000, max: 40000, note: "補充量によって変動" },
-      { name: "冷媒ガス補充（R22）", min: 30000, max: 60000, note: "旧式冷媒は高め" },
+      { name: "冷媒ガス補充（R32）", min: 20000, max: 40000, note: "補充量により変動" },
+      { name: "冷媒ガス補充（R22）", min: 30000, max: 60000, note: "旧式冷媒のため高額" },
       { name: "ガス漏れ修理+補充", min: 35000, max: 80000, note: "漏れ箇所の修理費用を含む" },
     ],
   },
@@ -28,8 +28,8 @@ const costItems = [
   {
     category: "電気・基板系",
     items: [
-      { name: "基板（室内機）交換", min: 30000, max: 80000, note: "機種によって大きく異なる" },
-      { name: "基板（室外機）交換", min: 40000, max: 100000, note: "高額になる場合が多い" },
+      { name: "基板（室内機）交換", min: 30000, max: 80000, note: "機種により大きく異なります" },
+      { name: "基板（室外機）交換", min: 40000, max: 100000, note: "高額になる場合が多くあります" },
       { name: "センサー交換", min: 8000, max: 20000, note: "比較的安価" },
     ],
   },
@@ -47,7 +47,7 @@ const costItems = [
       { name: "リモコン交換（純正）", min: 5000, max: 15000, note: "メーカー純正品" },
       { name: "リモコン交換（汎用）", min: 2000, max: 5000, note: "互換品" },
       { name: "エアコンクリーニング", min: 8000, max: 20000, note: "壁掛けタイプ" },
-      { name: "出張費・診断料", min: 3000, max: 8000, note: "修理費用に含まれる場合も" },
+      { name: "出張費・診断料", min: 3000, max: 8000, note: "修理費用に含まれる場合あり" },
     ],
   },
 ];
@@ -66,10 +66,10 @@ export default function RepairPricePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理費用の相場</h1>
         <div className="bg-sky-50 border border-sky-200 rounded-xl p-4 my-5 text-sm text-slate-700">
-          <p className="font-bold mb-1">🆕 27社の料金を当サイトが公式サイトで実査しました（2026年7月7日確認）</p>
-          <p>本ページの相場目安に加え、<Link href="/cost/price-index/" className="text-sky-600 underline font-bold">料金インデックス【2026年7月実査】</Link>で各社の出張費・見積無料の有無・公式掲載実額を確認日付きで一覧化しています。</p>
+          <p className="font-bold mb-1">当サイトでは、27社の料金を各社の公式サイトで確認しています（2026年7月7日確認）</p>
+          <p>本ページの費用の目安に加え、<Link href="/cost/price-index/" className="text-sky-600 underline font-bold">料金インデックス【2026年7月調査】</Link>にて、各社の出張費・見積もり無料の有無・公式サイト掲載の金額を一覧にしています。各項目には確認日を記載しています。</p>
         </div>
-          <p className="text-sky-100 text-lg">症状・修理内容別の料金目安を徹底解説</p>
+          <p className="text-sky-100 text-lg">症状・修理内容別の費用の目安をご説明します</p>
         </div>
       </section>
 
@@ -81,9 +81,9 @@ export default function RepairPricePage() {
           </h2>
           <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>（3,000〜8,000円）+ <strong>診断料</strong>（2,000〜5,000円）+ <strong>修理費</strong>が基本構成</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>業者によっては診断料・出張費を修理費に含める場合がある</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>夏場（7〜9月）は繁忙期のため料金が高くなる場合がある</span></li>
-            <li className="flex items-start gap-2"><span>・</span> <span>見積もりは複数社から取ることを強くお勧めします</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>業者によっては、診断料・出張費を修理費に含める場合があります</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>夏場（7〜9月）は繁忙期のため、料金が高くなる場合があります</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span>見積もりは複数社から取ることをおすすめします</span></li>
           </ul>
         </div>
 
@@ -96,8 +96,8 @@ export default function RepairPricePage() {
                 <thead className="bg-[var(--color-brand)] text-white">
                   <tr>
                     <th className="px-4 py-3 text-left text-sm font-bold">修理内容</th>
-                    <th className="px-4 py-3 text-center text-sm font-bold">最安値目安</th>
-                    <th className="px-4 py-3 text-center text-sm font-bold">最高値目安</th>
+                    <th className="px-4 py-3 text-center text-sm font-bold">下限の目安</th>
+                    <th className="px-4 py-3 text-center text-sm font-bold">上限の目安</th>
                     <th className="px-4 py-3 text-left text-sm font-bold hidden md:table-cell">備考</th>
                   </tr>
                 </thead>
@@ -123,15 +123,15 @@ export default function RepairPricePage() {
         {/* Warning */}
         <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
           <p className="text-xs text-gray-500 leading-relaxed">
-            ※上記費用はあくまでも参考目安です。実際の費用は機種・使用年数・地域・業者によって大きく異なります。
-            必ず事前に無料見積もりを取得し、複数社を比較されることをお勧めします。
+            ※上記の費用は参考としての目安です。実際の費用は、機種・使用年数・地域・業者により大きく異なります。
+            ご依頼前に無料見積もりを取得し、複数社を比較されることをおすすめします。
           </p>
         </div>
 
         {/* CTA */}
         <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
-          <h2 className="text-xl font-bold mb-3">無料見積もりで実際の費用を確認しよう</h2>
-          <p className="text-sky-100 text-sm mb-6">複数社に見積もりを依頼すると最大30〜50%費用を抑えられるケースも。</p>
+          <h2 className="text-xl font-bold mb-3">無料見積もりによる実際の費用の確認</h2>
+          <p className="text-sky-100 text-sm mb-6">複数社に見積もりを依頼することで、最大30〜50%費用を抑えられる場合があります。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ranking"
@@ -143,7 +143,7 @@ export default function RepairPricePage() {
               href="/cost/replace-vs-repair"
               className="bg-white text-sky-700 font-bold px-8 py-3 rounded-xl hover:bg-sky-50 transition-colors"
             >
-              修理 vs 買い替え判断ガイド
+              修理か買い替えかの判断ガイド
             </Link>
           </div>
         </div>

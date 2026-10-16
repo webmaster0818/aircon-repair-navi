@@ -6,9 +6,9 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ユアマイスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ユアマイスターの口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "職人登録型マッチングサービス「ユアマイスター」の口コミ・評判をまとめました。実際の利用者の声、料金の目安、対応エリア（エアコン修理は12道県のみ掲載）や特徴、メリット・デメリットまで中立的に解説します。",
+    "職人登録型マッチングサービス「ユアマイスター」の口コミ・評判をまとめています。公開されている利用者の声の傾向、料金の目安、対応エリア（エアコン修理は12道県のみ掲載）や特徴、メリット・デメリットまで中立的な立場でご説明します。",
   alternates: { canonical: "/company/yourmystar" },
 };
 
@@ -18,9 +18,9 @@ const toc = [
   { id: "summary", label: "ユアマイスターとは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
@@ -30,11 +30,11 @@ const toc = [
 const faqs = [
   {
     q: "ユアマイスターはエアコンの修理にも対応していますか？",
-    a: "ユアマイスターはエアコンクリーニングを中心としたサービスで、エアコン修理のカテゴリもあります。ただしエアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみで、東京都を含むほかの35都府県は0件でした（2026年10月15日・公式確認）。申し込み前にお住まいの地域で対応できるプロがいるか確認しておきましょう。",
+    a: "ユアマイスターはエアコンクリーニングを中心としたサービスで、エアコン修理のカテゴリもあります。ただしエアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみで、東京都を含むほかの35都府県は0件でした（2026年10月15日・公式確認）。お申し込み前にお住まいの地域で対応できるプロがいるかご確認ください。",
   },
   {
     q: "対応エリアはどこまでですか？",
-    a: "エアコンクリーニングは全国でプロを探せますが、エアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみです（2026年10月15日・公式確認）。登録している職人のエリアによって対応できる地域や日程が変わるため、お住まいの地域で対応可能な職人がいるかを確認しておきましょう。",
+    a: "エアコンクリーニングは全国でプロを探せますが、エアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみです（2026年10月15日・公式確認）。登録している職人のエリアによって対応できる地域や日程が変わるため、お住まいの地域で対応可能な職人がいるかをご確認ください。",
   },
   {
     q: "どんな職人に依頼できるのですか？",
@@ -42,11 +42,11 @@ const faqs = [
   },
   {
     q: "料金はどのくらいかかりますか？",
-    a: "作業内容や依頼する職人によって料金は異なります。エアコンクリーニングはプロごとに料金が掲載されています（例：壁掛型7,150〜10,400円/台）が、エアコン修理の掲載には料金がなく、訪問日当日に職人が故障状況を診断して最終的な修理代金を確定する方式です（2026年10月15日・公式確認）。事前に総額を確認しておくと安心です。",
+    a: "作業内容や依頼する職人によって料金は異なります。エアコンクリーニングはプロごとに料金が掲載されています（例：壁掛型7,150〜10,400円/台）が、エアコン修理の掲載には料金がなく、訪問日当日に職人が故障状況を診断して最終的な修理代金を確定する方式です（2026年10月15日・公式確認）。事前に総額をご確認ください。",
   },
   {
     q: "お掃除機能付きエアコンにも対応していますか？",
-    a: "対応している職人もいますが、お掃除機能付きは構造が複雑で作業の難易度が上がります。対応実績や口コミを確認し、お掃除機能付きの作業に慣れた職人を選ぶと安心です。",
+    a: "対応している職人もいますが、お掃除機能付きは構造が複雑で、作業の難易度が上がります。対応実績や口コミを確認し、お掃除機能付きの作業経験が豊富な職人を選ぶことをおすすめします。",
   },
 ];
 
@@ -54,7 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ユアマイスターの口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ユアマイスターの口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -90,9 +90,9 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ユアマイスターの口コミ・評判は？
+            ユアマイスターの口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            料金・対応エリアを調査【2026年最新】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -107,13 +107,13 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            エアコンの不調や汚れが気になったとき、信頼できる職人に直接依頼できると安心です。
-            この記事では、職人登録型のマッチングサービス
+            エアコンの不調や汚れが気になる場合、職人に直接依頼する方法があります。
+            本記事では、職人登録型のマッチングサービス
             <strong className="font-semibold text-slate-900">ユアマイスター</strong>
-            について、実際に紹介されている利用者の声、料金の目安、対応エリアや特徴、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
+            について、公開されている利用者の声の傾向、料金の目安、対応エリアと特徴、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミは、口コミ掲載サイトや公式サイトで公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報は申し込み時にご確認ください（調査時点：2026年6月）。
+            ※本記事の口コミに関する記載は、口コミ掲載サイトや公式サイトで公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報はお申し込み時にご確認ください（調査時点：2026年6月）。
           </p>
         </div>
 
@@ -135,10 +135,10 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ユアマイスターとは</h2>
             <p className="leading-8 text-slate-700">
-              ユアマイスターは、ユアマイスター株式会社が運営する職人登録型のマッチングサービスです。エアコンクリーニングを中心に、ハウスクリーニングや修理・リペアまで幅広く対応しており、利用者は登録された職人のプロフィールや口コミを見比べたうえで依頼先を選べます。
+              ユアマイスターは、ユアマイスター株式会社が運営する職人登録型のマッチングサービスです。エアコンクリーニングを中心に、ハウスクリーニングや修理・リペアまで幅広く対応しており、利用者は登録された職人のプロフィールや口コミを比較したうえで依頼先を選べます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              エアコンクリーニングは全国でプロを探せますが、エアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみで、東京都などは0件でした（2026年10月15日・公式確認）。エアコンの汚れが気になるときに、信頼できる職人を探して直接依頼したいという人に向いています。
+              エアコンクリーニングは全国でプロを探せますが、エアコン修理のプロが掲載されているのは12道県（北海道・青森・岩手・福島・千葉・富山・石川・長野・愛知・福岡・熊本・大分）のみで、東京都などは0件でした（2026年10月15日・公式確認）。エアコンの汚れが気になる際に、職人を比較して直接依頼したい方に適したサービスです。
             </p>
           </section>
 
@@ -170,14 +170,14 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。みん評（minhyo.jp）には200件を超えるレビューが寄せられており、公式サイト掲載の口コミとあわせて確認したところ、次のような評価の傾向が見られました。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。みん評（minhyo.jp）には200件を超えるレビューが寄せられており、公式サイト掲載の口コミとあわせて確認した結果、以下のような評価の傾向が見られました。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                 <li>迅速かつ丁寧な作業を評価する内容</li>
                 <li>作業前の説明のわかりやすさや仕上がりの丁寧さを評価する内容</li>
-                <li>職人の接客・対応の良さで安心して任せられたとする内容</li>
+                <li>職人の接客・対応が良く、安心して任せられたとする内容</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期や依頼する職人・地域により異なります。</p>
@@ -188,16 +188,16 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、職人ごとに依頼先を選ぶマッチング型サービスという性質上、
-              <strong className="font-semibold">どの職人に依頼するかで対応に差が出る場合がある</strong>
-              点は理解しておきたいところです。特にお掃除機能付きエアコンは作業の難易度が上がるため、業者（職人）選びが大切になります。依頼時には次の点を確認しておくとよいでしょう。
+              好意的な評価が多い一方で、職人ごとに依頼先を選ぶマッチング型サービスという性質上、
+              <strong className="font-semibold">依頼する職人によって対応に差が生じる場合がある</strong>
+              点にご留意ください。特にお掃除機能付きエアコンは作業の難易度が上がるため、職人選びが重要です。依頼時には以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お掃除機能付きエアコンは構造が複雑なため、対応実績のある職人を選ぶと安心</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>職人ごとに対応エリアや日程が異なるため、希望日に依頼できるか事前に確認</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを確認してから依頼するのが安心</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お掃除機能付きエアコンは構造が複雑なため、対応実績のある職人を選ぶことをおすすめします。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>職人ごとに対応エリアや日程が異なるため、希望日に依頼できるかを事前にご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを確認してから依頼することをおすすめします。</li>
             </ul>
           </section>
 
@@ -208,39 +208,39 @@ export default function Page() {
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>エアコンクリーニングは口コミが豊富で選びやすい（修理の口コミは少数）</li>
-                  <li>職人のプロフィール・口コミを見比べて依頼先を選べる</li>
+                  <li>職人のプロフィール・口コミを比較して依頼先を選べる</li>
                   <li>エアコンクリーニングは全国でプロを探せる</li>
-                  <li>口コミでは作業の丁寧さ・接客の良さを評価する声が多い</li>
+                  <li>口コミでは作業の丁寧さ・接客の良さを評価する声が多く見られる</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>エアコン修理のプロが掲載されているのは12道県のみ（東京都などは0件）</li>
-                  <li>依頼する職人によって対応に差が出ることがある</li>
-                  <li>お掃除機能付きは難易度が高く、職人選びが重要</li>
-                  <li>料金は依頼内容で変わるため、事前の見積もり確認が前提</li>
+                  <li>依頼する職人によって対応に差が生じる場合がある</li>
+                  <li>お掃除機能付きは難易度が高く、職人選びが重要である</li>
+                  <li>料金は依頼内容により異なるため、事前の見積もり確認が必要</li>
                 </ul>
               </div>
             </div>
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>口コミやプロフィールを見て自分で職人を選びたい人</li>
-                  <li>クリーニングとあわせて点検・リペアも相談したい人</li>
+                  <li>口コミやプロフィールを比較して職人を選びたい方</li>
+                  <li>クリーニングとあわせて点検・リペアも相談したい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>12道県以外でエアコン修理を依頼したい人</li>
-                  <li>24時間即日の緊急駆けつけを最優先したい人</li>
-                  <li>メーカー保証期間内で、メーカー修理を優先したい人</li>
+                  <li>12道県以外でエアコン修理を依頼したい方</li>
+                  <li>24時間即日の緊急駆けつけを最優先したい方</li>
+                  <li>メーカー保証期間内で、メーカー修理を優先したい方</li>
                 </ul>
               </div>
             </div>
@@ -249,21 +249,21 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              ユアマイスターの料金は、依頼内容や選ぶ職人によって異なります。エアコンクリーニングはプロごとに料金が掲載されており（例：壁掛型7,150〜10,400円/台）、申し込み前に金額を確認できます。一方、エアコン修理の掲載には料金がなく、
+              ユアマイスターの料金は、依頼内容や選ぶ職人によって異なります。エアコンクリーニングはプロごとに料金が掲載されており（例：壁掛型7,150〜10,400円/台）、お申し込み前に金額を確認できます。一方、エアコン修理の掲載には料金がなく、
               <strong className="font-semibold">訪問日当日に職人が故障状況を診断して最終的な修理代金を確定する</strong>
               方式です（2026年10月15日・公式確認）。追加作業が必要になった場合は別途費用がかかることがあります。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              修理か買い替えかで迷うようなケースもあるため、作業前には作業範囲と総額の見積もりを確認し、納得してから依頼するのがおすすめです。可能であれば、複数の職人や業者から見積もりを取って比較すると安心です。
+              修理と買い替えで迷う場合もあるため、作業前には作業範囲と総額の見積もりを確認したうえで依頼することをおすすめします。可能であれば、複数の職人や業者から見積もりを取って比較してください。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は依頼内容・職人により異なります。正確な金額は申し込み時の提示内容でご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※料金は依頼内容・職人により異なります。正確な金額はお申し込み時の提示内容でご確認ください。</p>
           </section>
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["サービス・職人を選ぶ", "サイトで依頼内容を選び、職人のプロフィールや口コミを見て依頼先を検討します。"],
+                ["サービス・職人の選択", "サイトで依頼内容を選び、職人のプロフィールや口コミを確認して依頼先を検討します。"],
                 ["申し込み・日程調整", "希望の作業内容と日程を伝え、職人と日時を調整します。"],
                 ["当日の作業・確認", "職人が訪問し、作業内容を確認のうえ作業を実施します。"],
                 ["仕上がり確認", "作業後に仕上がりや動作を確認します。"],
@@ -298,15 +298,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ユアマイスターは、職人登録型のマッチングサービスで、口コミやプロフィールを見て自分で職人を選べる点が強みです。ただしエアコン修理のプロが掲載されているのは12道県のみです（2026年10月15日時点）。口コミでは作業の丁寧さと接客の良さを評価する声が目立ちます。一方で、依頼する職人によって対応に差が出る場合があり、特にお掃除機能付きエアコンは作業の難易度が高いため、対応実績のある職人を選び、見積もりを確認してから進めるのが安心です。
+              ユアマイスターは職人登録型のマッチングサービスで、口コミやプロフィールを比較して職人を選べる点が強みです。ただし、エアコン修理のプロが掲載されているのは12道県のみです（2026年10月15日時点）。口コミでは、作業の丁寧さと接客の良さを評価する声が多く見られます。一方で、依頼する職人によって対応に差が生じる場合があり、特にお掃除機能付きエアコンは作業の難易度が高いため、対応実績のある職人を選び、見積もりを確認してから依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              エアコンの作業や修理は内容によって費用が変わります。急ぎでないときは複数の職人や業者から見積もりを取り、料金と対応を比較して選ぶと失敗を防げます。
+              エアコンの作業や修理の費用は内容によって異なります。お急ぎでない場合は複数の職人や業者から見積もりを取り、料金と対応を比較してお選びください。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
-              <p className="text-lg font-bold mb-2">信頼できる職人を探したい方へ</p>
-              <p className="text-sky-100 text-sm mb-5">まずは口コミや料金を確認して、依頼先を比較してみましょう。</p>
+              <p className="text-lg font-bold mb-2">職人を比較して依頼したい方へ</p>
+              <p className="text-sky-100 text-sm mb-5">ご利用前に、公式サイトにて口コミや料金をご確認ください。</p>
               <a href="https://yourmystar.jp/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 ユアマイスター公式サイトを見る
               </a>

@@ -9,8 +9,8 @@ import { getAffiliate } from "@/lib/affiliates";
 import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
-  title: "エアコン修理業者ランキング【2026年10月】おすすめ26社を徹底比較",
-  description: "エアコン修理業者の総合ランキング。対応スピード・料金・口コミ・実績を徹底比較。最短即日対応から安い業者まで、あなたに最適な業者が見つかります。",
+  title: "エアコン修理業者ランキング【2026年10月】おすすめ26社の比較",
+  description: "エアコン修理業者の総合ランキングです。対応スピード・料金・口コミ・実績を比較し、最短即日対応の業者から料金の安い業者まで掲載しています。",
   alternates: { canonical: "/ranking/" },
 };
 
@@ -22,9 +22,9 @@ export default function RankingPage() {
       <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理業者 総合ランキング</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理業者の総合ランキング</h1>
           <p className="text-[var(--color-brand-wash)] text-sm md:text-base">
-            編集部が各社公式サイトを確認して比較した26社（費用・対応速度・エリア・特徴は2026年10月15日に公式で再確認）。公式サイトの画面は当サイトで撮影したものです
+            編集部が各社の公式サイトを確認し、26社を比較しています（費用・対応速度・エリア・特徴は2026年10月15日に公式サイトで再確認）。公式サイトの画面は、当サイトで撮影したものです。
           </p>
           <div className="flex flex-wrap justify-center gap-3 mt-6">
             <Link href="/ranking/fast" className="ac-btn bg-white text-[var(--color-brand)] border-white hover:bg-[var(--color-brand-wash)] text-sm">
@@ -55,7 +55,7 @@ export default function RankingPage() {
                   <p className="text-sm text-[var(--color-ink-2)] leading-[2] mb-4">{c.description}</p>
 
                   <dl className="grid grid-cols-3 border border-[var(--color-line)] rounded-lg overflow-hidden text-center mb-4">
-                    {([["費用目安", c.avgCost], ["対応速度", c.responseTime], ["対応エリア", c.coverage]] as const).map(([k, v], i) => (
+                    {([["費用の目安", c.avgCost], ["対応速度", c.responseTime], ["対応エリア", c.coverage]] as const).map(([k, v], i) => (
                       <div key={k} className={`px-2 py-3 ${i < 2 ? "border-r border-[var(--color-line)]" : ""}`}>
                         <dt className="text-[11px] text-[var(--color-ink-3)] mb-0.5">{k}</dt>
                         <dd className="font-bold text-sm text-[var(--color-brand)] leading-snug">{v}</dd>
@@ -96,9 +96,9 @@ export default function RankingPage() {
 
         {/* 夜間・24時間受付で選ぶ（2026-07-04・夏の熱帯夜対策） */}
         <section className="mt-12 bg-sky-50 border border-sky-200 rounded-2xl p-6">
-          <h2 className="text-xl font-bold text-slate-900 mb-2">夜間・24時間受付で選ぶ（熱帯夜の故障に）</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-2">夜間・24時間受付の業者（熱帯夜の故障への備え）</h2>
           <p className="text-sm text-slate-700 leading-relaxed mb-4">
-            7〜8月の夜間にエアコンが止まると熱中症のリスクに直結します。当サイト掲載業者のうち、<strong>24時間受付を公称している業者</strong>は次のとおりです（受付=相談・予約の受付時間。実際の訪問時間帯は業者・地域・混雑状況で異なるため、電話時に到着目安をご確認ください）。
+            7〜8月の夜間にエアコンが停止すると、熱中症のリスクが高まります。当サイトの掲載業者のうち、<strong>24時間受付を公称している業者</strong>は次のとおりです（受付は、相談・予約の受付時間を指します。実際の訪問時間帯は業者・地域・混雑状況によって異なるため、お電話の際に到着の目安をご確認ください）。
           </p>
           <ul className="space-y-2 text-sm text-slate-700 mb-4">
             {companies.filter((c) => (c.features || []).some((f) => String(f).includes("24時間"))).map((c) => (
@@ -107,12 +107,12 @@ export default function RankingPage() {
               </li>
             ))}
           </ul>
-          <p className="text-xs text-gray-500">※「24時間」は各社公式の受付に関する公称です。深夜帯は割増料金の業者もあるため、料金条件もあわせてご確認ください。</p>
+          <p className="text-xs text-gray-500">※「24時間」は、各社が公式に案内している受付時間です。深夜帯は割増料金となる業者もあるため、料金条件もあわせてご確認ください。</p>
         </section>
 
         {/* Related Links */}
         <div className="mt-6 bg-sky-50 border border-sky-200 rounded-xl p-4 text-sm">
-          <Link href="/cost/price-index/" className="font-bold text-sky-700 hover:underline">27社の料金実査データ（2026年7月・出張費/見積無料/実額の一覧）→</Link>
+          <Link href="/cost/price-index/" className="font-bold text-sky-700 hover:underline">27社の料金調査データ（2026年7月・出張費/見積無料/実額の一覧）→</Link>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -120,14 +120,14 @@ export default function RankingPage() {
             <span className="text-3xl"></span>
             <div>
               <h3 className="font-bold text-slate-900">即日対応ランキング</h3>
-              <p className="text-sm text-gray-600">急ぎで修理したい方はこちら</p>
+              <p className="text-sm text-gray-600">お急ぎの方向けのランキングです</p>
             </div>
           </Link>
           <Link href="/ranking/cheap" className="flex items-center gap-4 bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-200 transition-colors">
             <span className="text-3xl"></span>
             <div>
               <h3 className="font-bold text-slate-900">安い業者ランキング</h3>
-              <p className="text-sm text-gray-600">費用を抑えたい方はこちら</p>
+              <p className="text-sm text-gray-600">費用を抑えたい方向けのランキングです</p>
             </div>
           </Link>
         </div>

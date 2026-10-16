@@ -10,7 +10,7 @@ import areasData from "@/data/areas-data.json";
 
 /*
  * エリア別「エアコン修理業者おすすめ」量産テンプレート。
- * 掲載データは全て data/areas-data.json(公式・実査値のみ・確認日つき)から差し込む。
+ * 掲載データは全て data/areas-data.json(公式・調査値のみ・確認日を記録)から差し込む。
  * 提携各社の表示可否は公式対応エリアの照合ルールで自動判定(捏造ゼロ)。
  * 大阪府ページのみ手書きの /area/osaka/ が担当(静的ルート優先)。
  */
@@ -69,36 +69,36 @@ function buildVendors(area: AreaDef) {
     category: "エアコン修理（紹介型）",
     aff: "felmat",
     paras: [
-      `エアコントラブルセンターは、全国2,000社以上の加盟店ネットワークを持つエアコン修理の受付窓口です。公式サイトでは「全国どこでも対応」と案内されており、${area.name}の修理依頼にも受付対応しています。`,
-      `受付は24時間365日。公式サイトには「30分以内に駆け付けます」という案内もあり（地域・混雑状況により変動）、「今すぐ来てほしい」というニーズに向いた窓口です。料金は基本料金8,800円〜で、最終的な費用は現地見積もりで確定します。実際の施工は加盟店が行う紹介型のため、施工前に見積もり内容を書面やメールで残しておくと安心です。`,
+      `エアコントラブルセンターは、全国2,000社以上の加盟店ネットワークを持つエアコン修理の受付窓口です。公式サイトでは「全国どこでも対応」と案内されており、${area.name}の修理依頼も受け付けています。`,
+      `受付は24時間365日です。公式サイトには「30分以内に駆け付けます」との案内もあり（地域・混雑状況により変動）、早急な対応を希望する場合に適した窓口です。料金は基本料金8,800円〜で、最終的な費用は現地見積もりで確定します。実際の施工は加盟店が行う紹介型のため、施工前に見積もり内容を書面やメールで残しておくことをおすすめします。`,
     ],
     recommend: [
-      "・今日・明日中に修理に来てほしい人",
-      "・夜間や休日にエアコンが故障して受付先を探している人",
-      "・メーカーや量販店の修理予約が数日〜数週間先と言われた人",
+      "・当日・翌日中の修理を希望する方",
+      "・夜間や休日にエアコンが故障し、受付先を探している方",
+      "・メーカーや量販店の修理予約が数日〜数週間先と案内された方",
     ],
     table: [
-      ["料金目安", "基本料金8,800円〜（最終費用は現地見積もりで確定）"],
+      ["費用の目安", "基本料金8,800円〜（最終費用は現地見積もりで確定）"],
       ["受付時間", "24時間365日（電話 050-5369-1348）"],
       [`${area.prefName}の対応`, "公式サイトに「全国どこでも対応」と記載"],
-      ["対応スピード", "公式サイトに「30分以内に駆け付けます」の案内あり"],
-      ["確認日", "2026年8月10日（公式サイト実査）"],
+      ["対応スピード", "公式サイトに「30分以内に駆け付けます」との案内あり"],
+      ["確認日", "2026年8月10日（公式サイト調査）"],
     ],
-    note: "公式サイトに「出張費用・見積もり料金はいただいておりません」と明記されています。一方で運営会社名・許認可の記載は公式サイトで確認できないため、依頼時は見積もり書面の確認をおすすめします。",
+    note: "公式サイトに「出張費用・見積もり料金はいただいておりません」と明記されています。一方で、運営会社名・許認可の記載は公式サイトで確認できないため、依頼時には見積もり書面の確認をおすすめします。",
   });
 
   const curamaParas = [
     `くらしのマーケットは、地域の事業者を料金と口コミで比較して直接予約できるマッチングサイトです。${
-      curama?.count ? `${area.prefName}のエアコン修理カテゴリには${curama.count}件の事業者が登録されています（${D.confirmedAt}時点）。` : `${area.prefName}のエアコン修理カテゴリページから地元の登録事業者を探せます。`
+      curama?.count ? `${area.prefName}のエアコン修理カテゴリには${curama.count}件の事業者が登録されています（${D.confirmedAt}）。` : `${area.prefName}のエアコン修理カテゴリページから、地域の登録事業者を探せます。`
     }`,
-    `事業者ごとに税込料金・口コミ・評価・返信スピードを見比べて選べるのが最大の強みで、地域密着の事業者も多数見つかります。`,
+    `事業者ごとに税込料金・口コミ・評価・返信スピードを比較して選べる点が特徴で、地域密着の事業者も多数登録されています。`,
   ];
   const curamaTable: [string, string][] = [];
   if (curama?.priceGas) curamaTable.push(["ガス漏れ修理の掲載相場", curama.priceGas]);
   if (curama?.priceWater) curamaTable.push(["水漏れ修理の掲載相場", curama.priceWater]);
-  curamaTable.push([`${area.prefName}の登録`, curama?.count ? `エアコン修理${curama.count}件（${D.confirmedAt}時点）` : "都道府県ページで要確認"]);
-  curamaTable.push(["予約方法", "Webで事業者を選んで直接予約（メッセージ相談可）"]);
-  curamaTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ実査）`]);
+  curamaTable.push([`${area.prefName}の登録`, curama?.count ? `エアコン修理${curama.count}件（${D.confirmedAt}）` : "都道府県ページで要確認"]);
+  curamaTable.push(["予約方法", "Webで事業者を選び直接予約（メッセージでの相談可）"]);
+  curamaTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
   repair.push({
     slug: "kurashi-market",
     badge: curama?.count ? `${area.prefName}の修理事業者${curama.count}件を比較` : `${area.prefName}の事業者を料金と口コミで比較`,
@@ -107,20 +107,20 @@ function buildVendors(area: AreaDef) {
     aff: null,
     paras: curamaParas,
     recommend: [
-      "・複数の業者を口コミと料金で見比べてから決めたい人",
-      "・地域密着の個人事業者に割安に頼みたい人",
-      "・急ぎではなく、数日以内に都合の良い日時で予約したい人",
+      "・複数の業者を口コミと料金で比較してから決めたい方",
+      "・地域密着の個人事業者に費用を抑えて依頼したい方",
+      "・急ぎではなく、数日以内の都合の良い日時で予約したい方",
     ],
     table: curamaTable,
-    note: "出店者が直接施工する方式で、最大1億円の損害賠償補償制度があります（適用条件あり）。料金・品質は事業者ごとに異なるため、口コミ件数の多い事業者を選ぶのが定石です。",
+    note: "出店者が直接施工する方式で、最大1億円の損害賠償補償制度があります（適用条件あり）。料金・品質は事業者ごとに異なるため、口コミ件数の多い事業者を選ぶことをおすすめします。",
   });
 
   const mitsuTable: [string, string][] = [];
   if (mitsumoa?.souba) mitsuTable.push(["掲載の料金相場", mitsumoa.souba]);
-  mitsuTable.push([`${area.prefName}の登録`, mitsumoa?.pros ? `エアコン修理のプロ${mitsumoa.pros}人（${D.confirmedAt}時点）` : "都道府県ページで要確認"]);
-  if (mitsumoa?.reviews) mitsuTable.push(["口コミ", `${mitsumoa.reviews}件（${D.confirmedAt}時点）`]);
+  mitsuTable.push([`${area.prefName}の登録`, mitsumoa?.pros ? `エアコン修理のプロ${mitsumoa.pros}人（${D.confirmedAt}）` : "都道府県ページで要確認"]);
+  if (mitsumoa?.reviews) mitsuTable.push(["口コミ", `${mitsumoa.reviews}件（${D.confirmedAt}）`]);
   mitsuTable.push(["見積もり", "無料・最大5件・契約義務なし（公式明記）"]);
-  mitsuTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ実査）`]);
+  mitsuTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
   repair.push({
     slug: "mitsumoa",
     badge: mitsumoa?.pros ? `${area.prefName}の修理プロ${mitsumoa.pros}人・無料一括見積もり` : "無料一括見積もり・契約義務なし",
@@ -128,23 +128,23 @@ function buildVendors(area: AreaDef) {
     category: "マッチングサイト",
     aff: null,
     paras: [
-      `ミツモアは、質問に答えるだけで最大5件の見積もりが届く一括見積もりサイトです。${
-        mitsumoa?.pros ? `${area.prefName}のエアコン修理には${mitsumoa.pros}人のプロが登録されています（${D.confirmedAt}時点）。` : ""
-      }見積もりを受け取ってから依頼するかどうかを選べて、契約義務はないと公式に明記されています。`,
-      "複数社の金額と口コミを並べて比較したい人に向いています。",
+      `ミツモアは、質問に回答すると最大5件の見積もりが届く一括見積もりサイトです。${
+        mitsumoa?.pros ? `${area.prefName}のエアコン修理には${mitsumoa.pros}人のプロが登録されています（${D.confirmedAt}）。` : ""
+      }見積もりを受け取った後に依頼するかどうかを選ぶことができ、契約義務はないと公式に明記されています。`,
+      "複数社の金額と口コミを比較したい方に適しています。",
     ],
     recommend: [
-      "・とりあえず相場感を知ってから依頼を決めたい人",
-      "・複数社の見積もりを一度に集めたい人",
-      "・口コミ・資格・実績を見て自分で選びたい人",
+      "・相場を把握してから依頼を決めたい方",
+      "・複数社の見積もりを一度に集めたい方",
+      "・口コミ・資格・実績を確認して自分で選びたい方",
     ],
     table: mitsuTable,
-    note: "見積もり後の依頼は任意で、手数料は事業者側負担のため依頼者は無料で使えます。",
+    note: "見積もり後の依頼は任意です。手数料は事業者側の負担のため、依頼者は無料で利用できます。",
   });
 
   repair.push({
     slug: "yamada-repair",
-    badge: office ? `${office.name}あり・量販店系の安心感` : "量販店系の安心感・他店購入も相談可",
+    badge: office ? `${office.name}あり・家電量販店系` : "家電量販店系・他店購入品も相談可",
     name: "ヤマダデンキ 出張修理（ヤマダテクニカルサービス）",
     category: "家電量販店系",
     aff: null,
@@ -152,20 +152,20 @@ function buildVendors(area: AreaDef) {
       `ヤマダデンキの出張修理を担う株式会社ヤマダテクニカルサービスは、訪問修理事業とエアコンクリーニング事業を公式に掲げています。${
         office ? `${area.prefName}には${office.name}（${office.address}）が置かれています。` : `${area.prefName}を担当する拠点は公式の事業所一覧から確認できます。`
       }`,
-      "他店で購入したエアコンでも申込フォームに「他社購入」の選択肢があり相談可能です。ただし消費者向けの料金表は公式サイトに掲載されていないため、費用は申込時の確認が必要です。地域によっては出張修理に対応できない場合がある旨も公式に明記されています。",
+      "他店で購入したエアコンも、申込フォームに「他社購入」の選択肢があり、相談できます。ただし、消費者向けの料金表は公式サイトに掲載されていないため、費用は申込時に確認が必要です。地域によっては出張修理に対応できない場合がある旨も、公式に明記されています。",
     ],
     recommend: [
-      "・ヤマダデンキで購入したエアコンが故障した人（保証書がある人は特に）",
-      "・名前を知らない業者より大手系列に頼みたい人",
-      "・急ぎではなく、確実な手配を優先したい人",
+      "・ヤマダデンキで購入したエアコンが故障した方（特に保証書をお持ちの方）",
+      "・大手系列の窓口に依頼したい方",
+      "・急ぎではなく、確実な手配を優先したい方",
     ],
     table: [
-      ["料金目安", "公式サイトに料金表の掲載なし（申込時に要確認）"],
-      [`${area.prefName}の拠点`, office ? `${office.name}: ${office.address}` : "公式の事業所一覧で要確認（地域により対応不可の場合あり）"],
+      ["費用の目安", "公式サイトに料金表の掲載なし（申込時に確認が必要）"],
+      [`${area.prefName}の拠点`, office ? `${office.name}: ${office.address}` : "公式の事業所一覧で確認が必要（地域により対応不可の場合あり）"],
       ["対応範囲", "訪問修理・エアコンクリーニング（他店購入品も相談可）"],
-      ["確認日", "2026年8月10日（yamada-ts.co.jp実査）"],
+      ["確認日", "2026年8月10日（yamada-ts.co.jp調査）"],
     ],
-    note: "保証条件によっては自己負担が発生する場合があります。ヤマダの長期保証に入っている場合は、まず保証適用の可否を確認するのが最も安く済む可能性があります。",
+    note: "保証条件によっては自己負担が発生する場合があります。ヤマダの長期保証に加入している場合は、保証適用の可否を先に確認することで、費用を抑えられる可能性があります。",
   });
 
   const cleaning: Vendor[] = [];
@@ -179,27 +179,27 @@ function buildVendors(area: AreaDef) {
       aff: "felmat",
       paras: [
         `おそうじLaboは、大阪市中央区南船場に拠点を置く関西密着のエアコンクリーニング専門業者です。${area.type === "city" ? `対応エリアに${area.name}が含まれています（公式サイトの対応エリア記載・2026年8月10日確認）。` : "対応エリアは大阪府の広域と兵庫県の一部（尼崎市・西宮市など）です。"}`,
-        "公式サイトでは「100%自社作業」で外注しないと案内されており、料金はノーマルエアコンが初回8,800円、お掃除機能付きが初回17,000円と、大手より一段安い価格設定です。",
+        "公式サイトでは「100%自社作業」で外注しないと案内されています。料金はノーマルエアコンが初回8,800円、お掃除機能付きが初回17,000円で、大手より低い価格設定です。",
       ],
       recommend: [
-        "・地元の専門業者に頼みたい人",
-        "・外注ではなく自社スタッフに来てほしい人",
-        "・LINEで気軽に問い合わせたい人（24時間受付）",
+        "・地域の専門業者に依頼したい方",
+        "・外注ではなく自社スタッフによる作業を希望する方",
+        "・LINEで問い合わせたい方（24時間受付）",
       ],
       table: [
-        ["料金目安", "ノーマル初回8,800円／お掃除機能付き初回17,000円（2台目以降割引あり）"],
+        ["費用の目安", "ノーマル初回8,800円／お掃除機能付き初回17,000円（2台目以降割引あり）"],
         ["受付時間", "電話10:00〜19:00（050-8893-3636）・LINEは24時間"],
         ["運営会社", "株式会社ペイストレージ（大阪市中央区南船場1-11-9）"],
-        ["確認日", "2026年8月10日（公式サイト実査）"],
+        ["確認日", "2026年8月10日（公式サイト調査）"],
       ],
-      note: "キャンセル・日時変更は前日まで。当日キャンセルは見積もり料金の100%がかかると公式に明記されています。",
+      note: "キャンセル・日時変更は前日までです。当日のキャンセルには見積もり料金の100%がかかると公式に明記されています。",
     });
   }
 
   if (seifuOk) {
     cleaning.push({
       slug: "seifu-ac",
-      badge: seifuCityListed ? `${area.name}は対応エリアに明記・一律料金` : "機種問わず一律料金の専門店",
+      badge: seifuCityListed ? `${area.name}は対応エリアに明記・一律料金` : "機種を問わない一律料金の専門店",
       name: "エアコンクリーニング清風",
       category: "エアコンクリーニング（専門店）",
       aff: "a8",
@@ -211,40 +211,40 @@ function buildVendors(area: AreaDef) {
               : `${area.prefName}内の対応市町は公式の対応エリア一覧で確認できます。`
             : `${area.prefName}では${seifuList.length}市区町村が公式の対応エリア一覧に列挙されています（2026年8月12日確認）。`
         }`,
-        "料金は家庭用壁掛け13,200円・お掃除機能付き18,700円の機種を問わない一律制で、見積もり後の追加料金が発生しにくい明朗会計が特徴。専門店として年間3万台の実績を掲げています。",
+        "料金は家庭用壁掛け13,200円・お掃除機能付き18,700円で、機種を問わない一律制です。見積もり後の追加料金が発生しにくい料金体系が特徴で、専門店として年間3万台の実績を掲げています。",
       ],
       recommend: [
-        "・機種による追加料金なしの明朗会計で頼みたい人",
-        "・お掃除機能付きなど複雑な機種のクリーニングを頼みたい人",
+        "・機種による追加料金のない料金体系で依頼したい方",
+        "・お掃除機能付きなど、構造が複雑な機種のクリーニングを依頼したい方",
       ],
       table: [
-        ["料金目安", "壁掛け13,200円／お掃除機能付き18,700円／天井埋込26,400円（税込・一律）"],
+        ["費用の目安", "壁掛け13,200円／お掃除機能付き18,700円／天井埋込26,400円（税込・一律）"],
         ["受付時間", "0120-770-102（月〜金9:00〜18:00・サービス実施は年末年始除き無休）"],
         ["運営会社", "株式会社アロン（大阪市中央区南船場1-7-8）"],
-        ["確認日", "2026年8月12日（公式対応エリアページ実査）"],
+        ["確認日", "2026年8月12日（公式対応エリアページ調査）"],
       ],
-      note: "キャンセルは前日正午（12時）まで無料。それ以降は全額のキャンセル料が公式料金ページに明記されています。受付が平日のみのため、希望日は早めの相談がおすすめです。",
+      note: "キャンセルは前日正午（12時）まで無料で、それ以降は全額のキャンセル料がかかると公式料金ページに明記されています。受付は平日のみのため、希望日がある場合は早めのご相談をおすすめします。",
     });
   }
 
   if (rOk) {
     cleaning.push({
       slug: "r-cleaning",
-      badge: "首都圏特化・実績豊富",
+      badge: "首都圏対応のクリーニング業者",
       name: "アールクリーニング",
       category: "エアコンクリーニング（首都圏）",
       aff: "a8",
       paras: [
         `アールクリーニングは、東京・埼玉・神奈川・千葉の首都圏に対応エリアを絞ったクリーニング業者です。${area.prefName}は公式の対応エリアに含まれています。`,
-        "エリアを絞ることで移動効率を高め、価格を抑えたサービス提供を掲げています。詳しい料金・キャンペーンは公式サイトで確認できます。",
+        "対応エリアを絞ることで移動効率を高め、価格を抑えたサービスの提供を掲げています。詳しい料金・キャンペーンは公式サイトで確認できます。",
       ],
       recommend: [
-        "・首都圏で価格を抑えてクリーニングを頼みたい人",
-        "・複数台まとめての依頼を検討している人",
+        "・首都圏で費用を抑えてクリーニングを依頼したい方",
+        "・複数台をまとめて依頼することを検討している方",
       ],
       table: [
-        [`${area.prefName}の対応`, "公式対応エリア（東京・埼玉・神奈川・千葉）に含まれる"],
-        ["確認日", "2026年8月12日（公式サイト実査）"],
+        [`${area.prefName}の対応`, "公式の対応エリア（東京・埼玉・神奈川・千葉）に含まれます"],
+        ["確認日", "2026年8月12日（公式サイト調査）"],
       ],
       note: "料金・対応条件の詳細は時期により変わるため、公式サイトの最新情報をご確認ください。",
     });
@@ -257,20 +257,20 @@ function buildVendors(area: AreaDef) {
     category: "エアコンクリーニング（全国大手）",
     aff: "a8",
     paras: [
-      `ダスキンは47都道府県すべてに店舗を展開する全国大手で、${area.name}でも地域の加盟店がエアコンクリーニングに対応します（店舗により対応状況が異なる場合があります）。内部を分解洗浄し、カビ・ホコリによるニオイや効きの低下の改善を目指すサービスです。`,
-      "料金は壁掛け1台15,400円と地域密着業者より高めですが、大手ならではの品質管理・サポート体制を評価する声が多く見られます。離れて暮らす家族の家の手配にも使いやすいのが強みです。",
+      `ダスキンは47都道府県すべてに店舗を展開する全国大手で、${area.name}でも地域の加盟店がエアコンクリーニングに対応します（店舗により対応状況が異なる場合があります）。内部を分解洗浄し、カビ・ホコリによるニオイや効きの低下の改善を図るサービスです。`,
+      "料金は壁掛け1台15,400円で、地域密着の業者より高めの設定ですが、大手の品質管理・サポート体制を評価する声が多く見られます。離れて暮らすご家族の住まいの手配にも利用しやすいサービスです。",
     ],
     recommend: [
-      "・価格より大手の安心感・品質を優先したい人",
-      "・離れて暮らす家族の家のクリーニングを手配したい人",
+      "・価格より大手の品質・サポート体制を優先したい方",
+      "・離れて暮らすご家族の住まいのクリーニングを手配したい方",
     ],
     table: [
-      ["料金目安", "壁掛け15,400円／お掃除機能付き26,400円／室外機6,600円（税込）"],
+      ["費用の目安", "壁掛け15,400円／お掃除機能付き26,400円／室外機6,600円（税込）"],
       ["受付", "0120-100-309（Web申込あり・要予約型）"],
       [`${area.prefName}の対応`, "47都道府県すべてに店舗（公式記載・地域の加盟店が担当）"],
-      ["確認日", "2026年8月10日（公式サイト実査）"],
+      ["確認日", "2026年8月10日（公式サイト調査）"],
     ],
-    note: "駐車スペースの確保が必要（なければ有料駐車場を利用）、対象は幅120cm未満のエアコン、土日祝・夜間は追加費用が生じる場合がある、といった条件が公式に案内されています。",
+    note: "駐車スペースの確保が必要であること（ない場合は有料駐車場を利用）、対象は幅120cm未満のエアコンであること、土日祝・夜間は追加費用が生じる場合があることなどの条件が、公式に案内されています。",
   });
 
   return { repair, cleaning };
@@ -283,8 +283,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { repair, cleaning } = buildVendors(area);
   const n = repair.length + cleaning.length;
   return {
-    title: `【2026年最新】${area.name}のエアコン修理業者おすすめ${n}選！料金相場・口コミを徹底比較`,
-    description: `${area.name}でエアコン修理・クリーニングを頼める業者${n}社を比較。各社公式サイトの実査にもとづき、料金・受付時間・${area.prefName}の対応状況を確認日つきで掲載。${area.prefName}の登録業者数・料金相場データや、悪質業者トラブルの防ぎ方も解説します。`,
+    title: `【2026年最新】${area.name}のエアコン修理業者おすすめ${n}選｜料金相場・口コミの比較`,
+    description: `${area.name}でエアコン修理・クリーニングを依頼できる業者${n}社を比較しています。各社公式サイトの確認結果にもとづき、料金・受付時間・${area.prefName}の対応状況を確認日とともに掲載しています。${area.prefName}の登録業者数・料金相場のデータや、悪質業者によるトラブルの防止方法もご説明します。`,
     alternates: { canonical: `/area/${area.slug}/` },
   };
 }
@@ -324,7 +324,7 @@ function VendorBlock({ v, rank }: { v: Vendor; rank: number }) {
           <p key={i}>{p}</p>
         ))}
       </div>
-      <SubHeading>こんな人におすすめ</SubHeading>
+      <SubHeading>おすすめする方</SubHeading>
       <div className="rounded-lg border border-sky-100 bg-sky-50/60 px-5 md:px-6 py-4">
         <p className="whitespace-pre-line text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333]">
           {v.recommend.join("\n")}
@@ -343,7 +343,7 @@ function VendorBlock({ v, rank }: { v: Vendor; rank: number }) {
           </tbody>
         </table>
       </div>
-      <SubHeading>利用前に知っておきたいポイント</SubHeading>
+      <SubHeading>ご利用前の確認事項</SubHeading>
       <p className="text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333]">
         {v.note}{" "}
         <Link href={`/company/${v.slug}/`} className="text-sky-600 font-semibold hover:underline">
@@ -378,28 +378,28 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
 
   const faqs = [
     {
-      q: `${area.name}のエアコン修理の料金相場はいくらですか？`,
-      a: `マッチングサイトが掲載する${area.prefName}の相場（${D.confirmedAt}時点）では、${[
+      q: `${area.name}のエアコン修理の料金相場はどのくらいですか？`,
+      a: `マッチングサイトが掲載する${area.prefName}の相場（${D.confirmedAt}）では、${[
         stats?.mitsumoa?.souba ? `ミツモアが${stats.mitsumoa.souba}` : null,
         stats?.curama?.priceGas ? `くらしのマーケットがガス漏れ修理${stats.curama.priceGas}` : null,
         stats?.curama?.priceWater ? `水漏れ修理${stats.curama.priceWater}` : null,
-      ].filter(Boolean).join("、") || "公表相場の表示が確認できなかったため、複数社の見積もり比較をおすすめします"}。症状によって幅があるため、施工前に総額の見積もりを書面で確認するのが確実です。`,
+      ].filter(Boolean).join("、") || "公表相場の表示を確認できなかったため、複数社の見積もりの比較をおすすめします"}。症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。`,
     },
     {
-      q: `${area.name}で即日対応してくれるエアコン修理業者はありますか？`,
-      a: "エアコントラブルセンターは24時間365日受付で、公式サイトに「30分以内に駆け付けます」という案内があります（地域・混雑状況により変動）。7〜8月の繁忙期はどの業者も混み合うため、朝いちばんの連絡が有利です。",
+      q: `${area.name}で即日対応が可能なエアコン修理業者はありますか？`,
+      a: "エアコントラブルセンターは24時間365日受付で、公式サイトに「30分以内に駆け付けます」との案内があります（地域・混雑状況により変動）。7〜8月の繁忙期はどの業者も混み合うため、早い時間帯のご連絡をおすすめします。",
     },
     {
-      q: "修理とクリーニング、どちらを頼めばいいか分かりません。",
-      a: "「冷えない・ニオイがする・水漏れ」はフィルターや内部の汚れが原因のケースがあり、その場合はクリーニングで改善することがあります。「電源が入らない・エラーコードが出る・異音がする」は故障の可能性が高く修理が必要です。当サイトの症状別ページで見分け方を解説しています。",
+      q: "修理とクリーニングのどちらを依頼すべきか判断できません。",
+      a: "「冷えない・ニオイがする・水漏れ」は、フィルターや内部の汚れが原因の場合があり、その場合はクリーニングで改善することがあります。「電源が入らない・エラーコードが出る・異音がする」は故障の可能性が高く、修理が必要です。見分け方は、当サイトの症状別ページでご説明しています。",
     },
     {
-      q: "悪質なエアコン修理業者を避けるにはどうすればいいですか？",
-      a: `国民生活センターが2026年6月に注意喚起したとおり、ネット広告の「安い」「即日対応」だけで選ばず、①具体的な症状と作業内容の確認、②複数業者の比較、③総額の書面確認、を行うのが有効です。困ったときは消費者ホットライン188${center ? `（${center.name}: ${center.tel}）` : ""}に相談できます。`,
+      q: "悪質なエアコン修理業者を避ける方法を教えてください。",
+      a: `国民生活センターが2026年6月に注意喚起したとおり、ネット広告の「安い」「即日対応」といった表示のみで選ばず、①具体的な症状と作業内容の確認、②複数業者の比較、③総額の書面での確認を行うことが有効です。トラブルの際は、消費者ホットライン188${center ? `（${center.name}: ${center.tel}）` : ""}に相談できます。`,
     },
     {
       q: "賃貸のエアコンが故障した場合、費用は誰が負担しますか？",
-      a: "備え付け（設備扱い）のエアコンなら原則として大家さん・管理会社の負担です。自己判断で業者を呼ぶと費用を自己負担することになりかねないため、まず管理会社に連絡してください。詳しくは「賃貸のエアコン修理費は誰が負担？」で解説しています。",
+      a: "備え付け（設備扱い）のエアコンであれば、原則として大家さん・管理会社の負担です。自己判断で業者を手配すると費用を自己負担することになるおそれがあるため、まず管理会社にご連絡ください。詳しくは「賃貸のエアコン修理費の負担者」でご説明しています。",
     },
   ];
 
@@ -415,28 +415,28 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
       <section className="bg-gradient-to-br from-sky-50 via-white to-cyan-50 py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl md:text-4xl font-bold leading-snug tracking-wide mb-4">
-            【2026年最新】{area.name}のエアコン修理業者おすすめ{n}選！
+            【2026年最新】{area.name}のエアコン修理業者おすすめ{n}選
             <br className="hidden md:block" />
-            料金相場・口コミを徹底比較
+            料金相場・口コミの比較
           </h1>
           <p className="text-[14px] md:text-[15px] leading-[1.9] text-slate-600">
-            {area.name}でエアコンの修理・クリーニングを頼める{n}社を、各社公式サイトの実査にもとづいて比較しました。
-            料金・受付時間・{area.prefName}の対応状況はすべて確認日つきの公式情報です。
-            国民生活センターが2026年6月に注意喚起した「ネット広告型の修理トラブル」の防ぎ方もあわせて解説します。
+            {area.name}でエアコンの修理・クリーニングを依頼できる{n}社を、各社公式サイトの確認結果にもとづいて比較しています。
+            料金・受付時間・{area.prefName}の対応状況は、いずれも公式情報にもとづき、確認日を記載しています。
+            国民生活センターが2026年6月に注意喚起した「ネット広告型の修理トラブル」の防止方法もあわせてご説明します。
           </p>
           <p className="mt-3 text-[11px] text-slate-400">本ページはプロモーション（PR）を含みます。</p>
         </div>
       </section>
 
       <div className="max-w-4xl mx-auto px-4 pb-16">
-        <SectionHeading>{area.name}で頼める{n}社の早見比較</SectionHeading>
+        <SectionHeading>{area.name}で依頼できる{n}社の比較一覧</SectionHeading>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-[12px] md:text-[13px]">
             <thead>
               <tr>
                 <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">業者名</th>
                 <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">タイプ</th>
-                <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2">料金目安</th>
+                <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2">費用の目安</th>
               </tr>
             </thead>
             <tbody>
@@ -456,21 +456,21 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           ※各社公式サイト・掲載ページの確認値（確認日は各表に記載）。最新の料金・対応可否は各公式サイトでご確認ください。
         </p>
 
-        <SectionHeading>{area.name}でエアコン修理を頼める業者{repair.length}選</SectionHeading>
+        <SectionHeading>{area.name}でエアコン修理を依頼できる業者{repair.length}選</SectionHeading>
         <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600">
-          「電源が入らない」「エラーコードが出る」「異音がする」など故障が疑われる場合は、修理対応の業者・窓口へ。
+          「電源が入らない」「エラーコードが出る」「異音がする」など故障が疑われる場合は、修理に対応する業者・窓口へご依頼ください。
         </p>
         {repair.map((v, i) => (
           <VendorBlock key={v.slug} v={v} rank={i + 1} />
         ))}
 
-        <SectionHeading>その症状、クリーニングで直るかも？{area.name}のクリーニング業者{cleaning.length}選</SectionHeading>
+        <SectionHeading>{area.name}のクリーニング業者{cleaning.length}選（クリーニングで改善する症状）</SectionHeading>
         <div className="mt-4 rounded-lg border-2 border-orange-200 bg-orange-50/60 px-5 py-4 text-[13px] md:text-[14px] leading-[1.8]">
-          <p className="font-bold text-orange-600 mb-1">修理を呼ぶ前にチェック</p>
+          <p className="font-bold text-orange-600 mb-1">修理を依頼する前の確認事項</p>
           <p>
-            「冷えが弱い」「カビ臭い」「送風口から水が飛ぶ」は、内部のカビ・ホコリ詰まりが原因のケースがあります。
-            その場合は修理ではなく<strong>クリーニングで改善する</strong>ことがあり、費用も抑えられます。
-            見分け方は<Link href="/symptom/not-cooling/" className="text-sky-600 font-semibold hover:underline">症状別ページ</Link>で解説しています。
+            「冷えが弱い」「カビ臭い」「送風口から水が飛ぶ」といった症状は、内部のカビ・ホコリの詰まりが原因の場合があります。
+            その場合は、修理ではなく<strong>クリーニングで改善する</strong>ことがあり、費用も抑えられます。
+            見分け方は<Link href="/symptom/not-cooling/" className="text-sky-600 font-semibold hover:underline">症状別ページ</Link>でご説明しています。
           </p>
         </div>
         {cleaning.map((v, i) => (
@@ -481,7 +481,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <>
             <SectionHeading>{area.prefName}のエアコン修理 料金相場データ</SectionHeading>
             <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
-              {area.prefName}の事業者を掲載するマッチングサイトが公表している相場（{D.confirmedAt}時点の掲載値）です。
+              {area.prefName}の事業者を掲載するマッチングサイトが公表している相場（{D.confirmedAt}の掲載値）です。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-[12px] md:text-[13px]">
@@ -514,19 +514,19 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
               </table>
             </div>
             <p className="mt-2 text-[11px] text-slate-400">
-              ※{D.confirmedAt}時点の各サイト掲載値。実際の費用は症状・機種・事業者により変動します。詳しくは
-              <Link href="/cost/repair-price/" className="text-sky-600 hover:underline">修理料金の完全ガイド</Link>へ。
+              ※{D.confirmedAt}の各サイト掲載値です。実際の費用は症状・機種・事業者により変動します。詳しくは
+              <Link href="/cost/repair-price/" className="text-sky-600 hover:underline">修理費用の相場</Link>をご覧ください。
             </p>
           </>
         )}
 
-        <SectionHeading>知っておきたい：エアコン修理トラブルが5年で2倍以上に</SectionHeading>
+        <SectionHeading>エアコン修理に関する相談件数は5年で2倍以上に増加しています</SectionHeading>
         <div className="text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333] space-y-4">
           <p>
             国民生活センターは2026年6月3日、「エアコン修理のトラブルに注意！」という注意喚起を公表しました。
             全国の消費生活センターに寄せられたエアコン修理の相談は
             <strong className="font-bold underline decoration-orange-300 decoration-[3px] underline-offset-4">2021年度の451件から2025年度は1,251件へと、5年で2倍以上に増加</strong>
-            しています。典型例は「ネット検索した即日対応業者に依頼し、高額料金を支払ったが直っていない」というもの。防ぐポイントは次の3つです。
+            しています。典型的な事例は「ネット検索で見つけた即日対応の業者に依頼し、高額な料金を支払ったが直っていない」というものです。トラブルを防ぐためのポイントは次の3つです。
           </p>
           <div className="rounded-lg border border-sky-100 bg-sky-50/60 px-5 py-4">
             <p className="whitespace-pre-line leading-[2.0]">
@@ -534,7 +534,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             </p>
           </div>
           <p>
-            当ページの掲載各社の料金・条件はすべて確認日つきで掲載しています。困ったときは
+            本ページに掲載している各社の料金・条件には、確認日を記載しています。トラブルの際は
             <strong>消費者ホットライン188</strong>
             {center ? <>（{area.prefName}の窓口: {center.name} {center.tel}）</> : null}
             に相談できます。
@@ -555,7 +555,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
         </div>
 
         <div className="mt-14 rounded-xl bg-slate-50 p-6">
-          <p className="font-bold mb-3">あわせて読みたい</p>
+          <p className="font-bold mb-3">関連ページ</p>
           <ul className="space-y-2 text-[13px] md:text-[14px]">
             {prefPage && (
               <li>
@@ -575,10 +575,10 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
               <Link href="/ranking/" className="text-sky-600 font-semibold hover:underline">エアコン修理業者おすすめランキング【全国版】</Link>
             </li>
             <li>
-              <Link href="/cost/repair-price/" className="text-sky-600 font-semibold hover:underline">エアコン修理の料金相場 完全ガイド</Link>
+              <Link href="/cost/repair-price/" className="text-sky-600 font-semibold hover:underline">エアコン修理の料金相場</Link>
             </li>
             <li>
-              <Link href="/guide/rental-aircon-repair/" className="text-sky-600 font-semibold hover:underline">賃貸のエアコン修理費は誰が負担？</Link>
+              <Link href="/guide/rental-aircon-repair/" className="text-sky-600 font-semibold hover:underline">賃貸のエアコン修理費の負担者</Link>
             </li>
           </ul>
         </div>

@@ -41,7 +41,7 @@ export default function AreaFinder() {
           <span className="ac-eyebrow">AREA SEARCH</span>
           <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">エリアから探す</h2>
           <p className="text-[var(--color-ink-2)] text-sm">
-            47都道府県・{totalAreas}エリアの修理費用の目安と、その地域で使える業者をまとめています
+            47都道府県・{totalAreas}エリアについて、修理費用の目安と、その地域で利用できる業者を掲載しています
           </p>
         </div>
 

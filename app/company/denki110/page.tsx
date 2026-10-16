@@ -6,9 +6,9 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "電気工事110番の評判は悪い？口コミ・料金は高い？他社比較で徹底調査【2026年最新】",
+    "電気工事110番の評判は悪い？料金は高い？口コミと他社比較による調査【2026年最新】",
   description:
-    "電気工事110番の評判は悪い？料金は高い？上場グループ企業が運営するサービスの実際の利用者の声・料金の目安・対応エリア・受付時間を他社と比較。メリット・デメリットを中立的に徹底調査します。生活110番とは別運営である点もあわせて紹介します。",
+    "電気工事110番の評判と料金について、上場グループ企業が運営する同サービスの口コミの傾向・費用の目安・対応エリア・受付時間を他社と比較し、メリット・デメリットを中立的な立場でご説明します。生活110番とは別の会社が運営している点もあわせてご紹介します。",
   alternates: { canonical: "/company/denki110" },
 };
 
@@ -18,9 +18,9 @@ const toc = [
   { id: "summary", label: "電気工事110番とは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から修理完了までの流れ" },
   { id: "faq", label: "よくある質問" },
@@ -34,19 +34,19 @@ const faqs = [
   },
   {
     q: "受付時間は何時から何時までですか？",
-    a: "電話受付は全国・年中無休で9:00〜22:00、メールでの問い合わせは24時間受け付けているとされています。急ぎの場合は問い合わせ時に対応可能な時間を確認しておくと安心です。",
+    a: "電話受付は全国・年中無休で9:00〜22:00、メールでの問い合わせは24時間受け付けているとされています。急ぎの場合は問い合わせ時に対応可能な時間をご確認ください。",
   },
   {
     q: "相談や見積もりは無料ですか？",
-    a: "公称では無料相談に対応しているとされています。作業内容に納得してから依頼できるよう、訪問時に作業範囲と総額の見積もりを書面で確認してから契約するのがおすすめです。",
+    a: "無料相談に対応していると公称されています。作業内容に同意したうえで依頼できるよう、訪問時に作業範囲と総額の見積もりを書面で確認してから契約することをおすすめします。",
   },
   {
     q: "料金はどのくらいかかりますか？",
-    a: "エアコン修理に限った料金は公式サイトに掲載されていません。公式FAQでは、電気がつかないといった電気トラブル全般について「作業費込みで6,600円～」とされています（2026年10月15日・公式確認）。症状や作業内容によって金額は変わるため、最終的な費用は現地の見積もりで確認しましょう。事前に総額を確認しておくと安心です。",
+    a: "エアコン修理に限った料金は公式サイトに掲載されていません。公式FAQでは、電気がつかないといった電気トラブル全般について「作業費込みで6,600円～」とされています（2026年10月15日・公式確認）。症状や作業内容によって金額は変わるため、最終的な費用は現地の見積もりにて、事前に総額をご確認ください。",
   },
   {
     q: "対応エリアはどこまでですか？",
-    a: "全国の提携業者ネットワークを活かして、幅広い地域に対応しています。地域によって対応スピードや担当業者が異なる点には留意しておきましょう。",
+    a: "全国の提携業者ネットワークにより、幅広い地域に対応しています。地域によって対応スピードや担当業者が異なる点にご留意ください。",
   },
 ];
 
@@ -54,7 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "電気工事110番の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "電気工事110番の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-10",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -90,9 +90,9 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            電気工事110番の口コミ・評判は？
+            電気工事110番の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            料金・対応エリアを調査【2026年最新】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -107,13 +107,13 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            エアコンが急に効かなくなったり、配線や電源まわりのトラブルが起きたりしたとき、すぐに駆けつけてくれる修理サービスは心強い存在です。
-            この記事では、上場グループ（センコーグループ）の企業が運営する電気のトラブル対応サービス
+            エアコンが急に効かなくなった場合や、配線・電源まわりのトラブルが生じた場合には、出張対応の修理サービスへの相談が選択肢となります。
+            本記事では、上場グループ（センコーグループ）の企業が運営する電気のトラブル対応サービス
             <strong className="font-semibold text-slate-900">電気工事110番</strong>
-            について、実際に紹介されている利用者の声、料金の目安、対応エリアや受付時間、メリット・デメリットを、良い点・気になる点の両面から中立的にまとめました。
+            について、公開されている利用者の声の傾向、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事では、口コミ本文の転載・創作は行わず、確認できた評価の傾向のみを要約してお伝えしています。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
+            ※本記事では、口コミ本文の転載・創作を控え、確認できた評価の傾向のみを要約して掲載しています。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
           </p>
         </div>
 
@@ -138,9 +138,9 @@ export default function Page() {
               電気工事110番（DENKI110）は、株式会社イエノナカカンパニー（東証プライム上場センコーグループホールディングスの傘下）が運営する、電気のトラブルに対応する出張サービスです。エアコンの取り付け・取り外しや電源・配線まわりのトラブルなど、家庭で起きやすい電気関連の困りごとに幅広く対応しています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              名称が似ているため混同されがちですが、
+              名称が似ているため混同されることがありますが、
               <strong className="font-semibold">電気工事110番は生活110番とは別運営のサービス</strong>
-              です（運営会社が異なります）。全国・年中無休で受付（電話は9:00〜22:00、メールは24時間）に対応し、無料相談を公称しているため、まず相談してみたいという人に向いています。
+              です（運営会社が異なります）。全国・年中無休で受付（電話は9:00〜22:00、メールは24時間）に対応し、無料相談を公称しているため、まず相談から始めたい方に適しています。
             </p>
           </section>
 
@@ -173,14 +173,14 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。電気工事110番については、口コミ掲載サイトのセーフリー（safely.co.jp）で評価の傾向を確認しました。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。電気工事110番については、口コミ掲載サイトのセーフリー（safely.co.jp）で評価の傾向を確認しました。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                 <li>問い合わせ後の初動が速く、急ぎの依頼にも対応してもらえたという評価</li>
                 <li>深夜のトラブルでも電話がつながり、迅速に対応してもらえたという評価</li>
-                <li>作業が丁寧で、修理内容の説明が分かりやすいという評価</li>
+                <li>作業が丁寧で、修理内容の説明がわかりやすいという評価</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価の傾向は時期・担当業者・地域によって異なる場合があります。</p>
@@ -191,16 +191,16 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、提携業者のネットワーク型サービスという性質上、
+              好意的な評価が多い一方で、提携業者のネットワーク型サービスという性質上、
               <strong className="font-semibold">作業内容によっては表示の目安料金より費用がかかる場合がある</strong>
-              点は理解しておきたいところです。安心して任せるために、依頼時には次の点を確認しておくとよいでしょう。
+              点にご留意ください。依頼時には、以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式に掲載されている6,600円〜は電気トラブル全般の目安で、エアコン修理の料金は掲載されていないため、事前見積もりの確認がおすすめ</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>地域や担当業者によって対応スピード・品質に差が出ることがある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを書面で確認してから依頼するのが安心</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式に掲載されている6,600円〜は電気トラブル全般の目安であり、エアコン修理の料金は掲載されていないため、事前に見積もりをご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>地域や担当業者によって、対応スピード・品質に差が生じる場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを書面で確認してから依頼することをおすすめします。</li>
             </ul>
           </section>
 
@@ -212,15 +212,15 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>東証プライム上場グループ（センコーグループ）の企業が運営している</li>
                   <li>全国・年中無休で受付し、急なトラブルでも相談しやすい</li>
-                  <li>無料相談（公称）で相談のハードルが低い</li>
+                  <li>無料相談（公称）を利用できる</li>
                   <li>口コミでは対応の速さ・丁寧さを評価する声が見られる</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>担当する提携業者によって対応に差が出ることがある</li>
-                  <li>表示の目安料金より総額がかかる場合があるため見積もり確認が前提</li>
+                  <li>担当する提携業者によって対応に差が生じる場合がある</li>
+                  <li>表示の目安料金より総額が高くなる場合があるため、見積もり確認が必要</li>
                   <li>生活110番と名称が似ており混同しやすい（別運営）</li>
                 </ul>
               </div>
@@ -228,21 +228,21 @@ export default function Page() {
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>上場グループの企業が運営するサービスに任せたい人</li>
-                  <li>急な電気・エアコンのトラブルですぐ相談したい人</li>
-                  <li>無料相談で気軽に相談を始めたい人</li>
+                  <li>上場グループの企業が運営するサービスに任せたい方</li>
+                  <li>急な電気・エアコンのトラブルですぐに相談したい方</li>
+                  <li>無料相談から始めたい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>あらかじめ業者と料金をじっくり比較して選びたい人</li>
-                  <li>メーカー保証期間内で、メーカー修理を優先したい人</li>
+                  <li>事前に業者と料金を十分に比較して選びたい方</li>
+                  <li>メーカー保証期間内で、メーカー修理を優先したい方</li>
                 </ul>
               </div>
             </div>
@@ -253,10 +253,10 @@ export default function Page() {
             <p className="leading-8 text-slate-700">
               電気工事やエアコン関連作業の費用は、症状や必要な作業によって幅があります。電気工事110番の公式サイトにはエアコン修理に限った料金は掲載されておらず、公式FAQでは電気トラブル全般について
               <strong className="font-semibold">作業費込みで6,600円〜</strong>
-              とされています（2026年10月15日・公式確認）。無料相談に対応しているとされています。作業内容によっては、この目安より総額がかかる場合があるため、訪問時に総額を確認しておくと安心です。
+              とされています（2026年10月15日・公式確認）。無料相談に対応しているとされています。作業内容によっては、この目安より総額がかかる場合があるため、訪問時に総額をご確認ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              修理か買い替えかで迷うようなケースもあるため、訪問時には作業範囲と総額の見積もりを書面で確認し、納得してから依頼するのがおすすめです。可能であれば、複数の業者から見積もりを取って比較すると安心です。
+              修理と買い替えで迷う場合もあるため、訪問時には作業範囲と総額の見積もりを書面で確認したうえで依頼することをおすすめします。可能であれば、複数の業者から見積もりを取って比較してください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は公称の目安です。正確な金額は現地の見積もりでご確認ください。</p>
           </section>
@@ -265,11 +265,11 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から修理完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["電話・Webで相談", "症状や設置状況を伝えます。電話は年中無休 9:00〜22:00、メールは24時間受付とされています。"],
+                ["電話・Webでの相談", "症状や設置状況を伝えます。電話は年中無休 9:00〜22:00、メールは24時間受付とされています。"],
                 ["訪問日時の調整", "都合の良い日時を調整し、提携業者が訪問します。"],
-                ["現地確認・見積もり", "状態を確認し、作業内容と費用を提示してもらいます。"],
-                ["作業の実施", "見積もりに納得後、作業を実施します。"],
-                ["動作確認・支払い", "正常に動くか確認し、支払いをして完了です。"],
+                ["現地確認・見積もり", "状態を確認し、作業内容と費用が提示されます。"],
+                ["作業の実施", "見積もり内容に同意した後、作業を実施します。"],
+                ["動作確認・支払い", "正常に動作することを確認し、支払いを行って完了です。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
                   <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
@@ -300,15 +300,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              電気工事110番は、株式会社イエノナカカンパニー（センコーグループ）が運営する電気工事のサービスで、全国・年中無休の受付が強みです。名称が似ていますが、シェアリングテクノロジーが運営する生活110番とは別のサービスである点に注意しておきましょう。口コミでは対応の速さと作業の丁寧さを評価する声が目立ちます。一方で、作業内容によっては表示の目安より費用がかかる場合があるため、依頼時には見積もりを書面で確認し、納得してから進めるのが安心です。
+              電気工事110番は、株式会社イエノナカカンパニー（センコーグループ）が運営する電気工事のサービスで、全国・年中無休の受付が強みです。名称は似ていますが、シェアリングテクノロジーが運営する生活110番とは別のサービスです。口コミでは、対応の速さと作業の丁寧さを評価する声が多く見られます。一方で、作業内容によっては表示の目安より費用が高くなる場合があるため、依頼時には見積もりを書面で確認したうえで依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              エアコン修理は症状によって費用が変わります。急ぎでないときは複数の業者から見積もりを取り、料金と対応を比較して選ぶと失敗を防げます。
+              エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の業者から見積もりを取り、料金と対応を比較してお選びください。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコン・電気のトラブルでお困りの方へ</p>
-              <p className="text-sky-100 text-sm mb-5">まずは無料相談で、症状と費用の目安を確認してみましょう。</p>
+              <p className="text-sky-100 text-sm mb-5">無料相談にて、症状と費用の目安をご確認いただけます。</p>
               <a href="https://denki110.net/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 電気工事110番 公式サイトを見る
               </a>

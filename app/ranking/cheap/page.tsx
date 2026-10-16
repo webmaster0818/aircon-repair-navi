@@ -8,8 +8,8 @@ import { getAffiliate } from "@/lib/affiliates";
 import { getFelmat } from "@/lib/felmat";
 
 export const metadata: Metadata = {
-  title: "安いエアコン修理業者ランキング｜費用を抑えるコツも解説",
-  description: "エアコン修理費用を安く抑えたい方向けのランキング。各社の公式サイトに載っている最低料金が安い順にTOP5を紹介。見積もり比較で賢く節約する方法も解説。",
+  title: "安いエアコン修理業者ランキング｜費用を抑える方法",
+  description: "エアコン修理の費用を抑えたい方向けのランキングです。各社の公式サイトに記載された最低料金が安い順に、上位5社を紹介しています。見積もりの比較により費用を抑える方法も解説しています。",
   alternates: { canonical: "/ranking/cheap/" },
 };
 
@@ -42,8 +42,8 @@ export default function CheapRankingPage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <span className="inline-block border border-white/50 text-white text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-widest">PR</span>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">安いエアコン修理業者ランキング</h1>
-          <p className="text-emerald-100 text-lg">修理費用を最小限に抑えたい方向け・費用重視TOP5</p>
-          <p className="text-emerald-100 text-xs mt-2">各社の公式サイトに載っている最低料金の安い順（2026年10月15日確認）。料金に含まれる作業や条件は各社で異なります</p>
+          <p className="text-emerald-100 text-lg">修理費用を抑えたい方向けの上位5社です</p>
+          <p className="text-emerald-100 text-xs mt-2">各社の公式サイトに記載された最低料金の安い順に掲載しています（2026年10月15日確認）。料金に含まれる作業や条件は、各社で異なります。</p>
         </div>
       </section>
 
@@ -51,14 +51,14 @@ export default function CheapRankingPage() {
         {/* Tips */}
         <div className="bg-emerald-50 rounded-2xl p-6 border border-emerald-100 mb-10">
           <h2 className="text-lg font-bold text-emerald-900 mb-3 flex items-center gap-2">
-            <span></span> 修理費用を安く抑える5つのコツ
+            <span></span> 修理費用を抑えるための5つの方法
           </h2>
           <ol className="space-y-2 text-sm text-gray-700">
-            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">1.</span> 複数の業者から見積もりを取って比較する</li>
-            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">2.</span> 繁忙期（夏・冬）を避けて依頼すると割安になる場合がある</li>
-            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">3.</span> フィルター清掃などDIYできる作業は自分でやる</li>
-            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">4.</span> メーカー保証期間内かどうかを必ず確認する</li>
-            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">5.</span> 見積もり後の追加料金がないか事前に確認する</li>
+            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">1.</span> 複数の業者から見積もりを取り、比較します</li>
+            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">2.</span> 繁忙期（夏・冬）を避けて依頼すると、割安になる場合があります</li>
+            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">3.</span> フィルター清掃など、ご自身でできる作業はご自身で行います</li>
+            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">4.</span> メーカー保証の期間内かどうかを必ず確認します</li>
+            <li className="flex items-start gap-2"><span className="text-emerald-600 font-bold">5.</span> 見積もり後に追加料金が発生しないか、事前に確認します</li>
           </ol>
         </div>
 
@@ -113,13 +113,13 @@ export default function CheapRankingPage() {
 
         {/* CTA */}
         <div className="mt-10 bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
-          <h2 className="text-xl font-bold mb-3">複数社を比較して最安値を見つけよう</h2>
-          <p className="text-sky-100 text-sm mb-6">無料見積もりを複数社から取ることで、最大50%費用を節約できるケースも。</p>
+          <h2 className="text-xl font-bold mb-3">複数社の比較による費用の削減</h2>
+          <p className="text-sky-100 text-sm mb-6">複数社から無料見積もりを取ることで、費用を最大50%節約できる場合があります。</p>
           <Link
             href="/ranking"
             className="ac-btn ac-btn-cta px-8 py-4 text-lg"
           >
-            全26社ランキングを見る
+            全26社のランキングを見る
           </Link>
         </div>
       </div>

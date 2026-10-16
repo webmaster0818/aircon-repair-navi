@@ -4,8 +4,8 @@ import Link from "next/link";
 import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "エアコン修理 vs 買い替え｜どっちがお得か判断する方法",
-  description: "エアコンを修理すべきか買い替えるべきか迷ったときの判断基準を解説。使用年数・修理費用・省エネ性能から総合的に判断する方法をわかりやすく紹介。",
+  title: "エアコン修理と買い替え｜どちらが経済的かの判断基準",
+  description: "エアコンを修理するか買い替えるかを判断する基準をご説明します。使用年数・修理費用・省エネ性能などから総合的に判断する方法を掲載しています。",
   alternates: { canonical: "/cost/replace-vs-repair/" },
 };
 
@@ -22,31 +22,31 @@ const decisionFactors = [
     factor: "使用年数",
     repair: "5年未満",
     replace: "10年以上",
-    detail: "エアコンの平均寿命は約10〜15年。使用年数が長いほど部品の劣化が進み、修理してもすぐに別の箇所が壊れるリスクがあります。",
+    detail: "エアコンの平均寿命は約10〜15年です。使用年数が長いほど部品の劣化が進み、修理後に別の箇所が故障するおそれがあります。",
   },
   {
     factor: "修理費用の比率",
     repair: "新品価格の30%未満",
     replace: "新品価格の50%以上",
-    detail: "修理費が新品購入費の50%を超える場合、買い替えの方が長期的にお得なことが多いです。",
+    detail: "修理費が新品購入費の50%を超える場合は、買い替えのほうが長期的に経済的となる場合が多くあります。",
   },
   {
     factor: "省エネ性能",
     repair: "5年以内のモデル",
     replace: "10年以上前のモデル",
-    detail: "最新エアコンは旧モデルと比較して電気代が20〜40%安くなる場合があります。長期的な電気代の節約効果も考慮しましょう。",
+    detail: "最新エアコンは旧モデルと比較して電気代が20〜40%安くなる場合があります。長期的な電気代の節約効果も考慮することをおすすめします。",
   },
   {
     factor: "部品の入手可能性",
     repair: "部品が入手可能",
     replace: "部品保有期間終了後",
-    detail: "メーカーは製造終了後7〜9年程度で補修部品の保有を終了します。部品が入手できない場合は修理不可能になります。",
+    detail: "メーカーは製造終了後7〜9年程度で補修部品の保有を終了します。部品が入手できない場合は、修理ができなくなります。",
   },
   {
     factor: "修理頻度",
     repair: "初めて故障した",
     replace: "過去に何度も修理",
-    detail: "短期間に複数回故障している場合、耐用年数が来ている可能性が高く、買い替えを検討すべきシグナルです。",
+    detail: "短期間に複数回故障している場合は、耐用年数に達している可能性が高いため、買い替えの検討をおすすめします。",
   },
 ];
 
@@ -67,14 +67,14 @@ export default function ReplaceVsRepairPage() {
       <Breadcrumb
         items={[
           { name: "費用・比較", href: "/cost/repair-price" },
-          { name: "修理 vs 買い替え", href: "/cost/replace-vs-repair" },
+          { name: "修理と買い替え", href: "/cost/replace-vs-repair" },
         ]}
       />
 
       <section className="bg-[var(--color-brand)] text-white py-12">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">修理 vs 買い替え 判断ガイド</h1>
-          <p className="text-purple-100 text-lg">どっちがお得か？状況別に徹底解説</p>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4">修理と買い替えの判断ガイド</h1>
+          <p className="text-purple-100 text-lg">修理と買い替えのどちらが適しているかを、状況別にご説明します</p>
         </div>
       </section>
 
@@ -83,7 +83,7 @@ export default function ReplaceVsRepairPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-green-50 border-2 border-green-300 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-green-800 mb-4 flex items-center gap-2">
-              <span></span> 修理すべきケース
+              <span></span> 修理をおすすめするケース
             </h2>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5"></span> 使用年数が5年未満</li>
@@ -95,7 +95,7 @@ export default function ReplaceVsRepairPage() {
           </div>
           <div className="bg-orange-50 border-2 border-orange-300 rounded-2xl p-6">
             <h2 className="text-xl font-bold text-orange-800 mb-4 flex items-center gap-2">
-              <span></span> 買い替えすべきケース
+              <span></span> 買い替えをおすすめするケース
             </h2>
             <ul className="space-y-2 text-sm text-gray-700">
               <li className="flex items-start gap-2"><span className="text-orange-500 mt-0.5">!</span> 使用年数が10年以上</li>
@@ -109,7 +109,7 @@ export default function ReplaceVsRepairPage() {
 
         {/* Decision Factors */}
         <section>
-          <h2 className="text-xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-sky-500">判断基準の詳細解説</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-6 pb-2 border-b-2 border-sky-500">判断基準の詳細</h2>
           <div className="space-y-6">
             {decisionFactors.map((factor) => (
               <div key={factor.factor} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
@@ -135,7 +135,7 @@ export default function ReplaceVsRepairPage() {
 
         {/* Checklist */}
         <section>
-          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">かんたん判断チェックリスト</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">判断のためのチェックリスト</h2>
           <div className="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
             <table className="w-full">
               <thead className="bg-slate-800 text-white">
@@ -164,7 +164,7 @@ export default function ReplaceVsRepairPage() {
             </table>
           </div>
           <p className="text-xs text-gray-500 mt-2">
-            ※修理点数が高ければ修理、買い替え点数が高ければ買い替えを検討してください。
+            ※修理の点数が高い場合は修理を、買い替えの点数が高い場合は買い替えをご検討ください。
           </p>
         </section>
 
@@ -221,15 +221,15 @@ export default function ReplaceVsRepairPage() {
               </div>
             </div>
             <p className="text-xs text-gray-500 mt-4">
-              ※上記はあくまでも試算例です。電気代・修理費用・使用環境によって大きく異なります。
+              ※上記は試算の一例です。電気代・修理費用・使用環境により大きく異なります。
             </p>
           </div>
         </section>
 
         {/* CTA */}
         <div className="bg-[var(--color-brand)] rounded-2xl p-8 text-center text-white">
-          <h2 className="text-xl font-bold mb-3">まずは専門業者に相談してみよう</h2>
-          <p className="text-sky-100 text-sm mb-6">修理か買い替えか迷ったら、プロの診断を受けることが一番確実です。多くの業者が無料で診断してくれます。</p>
+          <h2 className="text-xl font-bold mb-3">専門業者へのご相談</h2>
+          <p className="text-sky-100 text-sm mb-6">修理か買い替えかの判断に迷う場合は、専門業者の診断を受けることをおすすめします。無料で診断を行う業者も多くあります。</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ranking"

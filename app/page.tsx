@@ -28,29 +28,29 @@ const costTable = [
 ];
 
 const choosingPoints = [
-  { iconType: "speed", title: "対応スピード", desc: "緊急時は最短即日〜翌日対応の業者を選ぶ。受付時間も重要。" },
-  { iconType: "area", title: "対応エリア", desc: "全国対応か地域密着型か。地方では対応可能な業者が限られることも。" },
-  { iconType: "price", title: "料金の透明性", desc: "事前見積もり無料・追加料金なしの業者が安心。相場との比較を。" },
-  { iconType: "reviews", title: "実績・口コミ", desc: "施工実績数や口コミ評価を確認。資格保有者が在籍かも確認を。" },
-  { iconType: "guarantee", title: "保証・アフターケア", desc: "修理後の保証期間や再修理対応があるか確認しておく。" },
+  { iconType: "speed", title: "対応スピード", desc: "緊急時は、最短即日〜翌日に対応できる業者をおすすめします。受付時間もあわせてご確認ください。" },
+  { iconType: "area", title: "対応エリア", desc: "全国対応か地域密着型かをご確認ください。地域によっては、対応できる業者が限られる場合があります。" },
+  { iconType: "price", title: "料金の透明性", desc: "事前見積もりが無料で、追加料金の条件が明示されている業者をおすすめします。相場との比較もご検討ください。" },
+  { iconType: "reviews", title: "実績・口コミ", desc: "施工実績数や口コミ評価に加え、有資格者が在籍しているかをご確認ください。" },
+  { iconType: "guarantee", title: "保証・アフターケア", desc: "修理後の保証期間や、再修理への対応の有無を事前にご確認ください。" },
 ];
 
 const faqs = [
   {
     q: "エアコン修理の費用相場はどのくらいですか？",
-    a: "症状によって大きく異なります。ガス補充で2〜5万円、水漏れで3千〜3万円程度が目安です。コンプレッサー交換など大型修理は8〜20万円になることもあります。まず無料見積もりを依頼することをお勧めします。",
+    a: "症状によって大きく異なります。ガス補充で2〜5万円、水漏れで3千〜3万円程度が目安です。コンプレッサー交換など大型修理は8〜20万円になることもあります。まずは無料見積もりの依頼をおすすめします。",
   },
   {
-    q: "修理業者を選ぶ際のポイントは？",
-    a: "対応スピード 料金の透明性 有資格者の在籍 口コミ・実績 保証内容の5つを確認しましょう。複数業者から見積もりを取ることで相場感がわかります。",
+    q: "修理業者を選ぶ際は、どのような点を確認すればよいですか？",
+    a: "対応スピード、料金の透明性、有資格者の在籍、口コミ・実績、保証内容の5点をご確認ください。複数の業者から見積もりを取ると、費用の相場を把握できます。",
   },
   {
-    q: "エアコン修理と買い替えどちらが得ですか？",
-    a: "修理費用が新品価格の50%以上になる場合や、使用年数が10年以上の場合は買い替えが経済的なことが多いです。省エネ性能の向上により、新しいエアコンは電気代が大幅に節約できます。",
+    q: "エアコンは修理と買い替えのどちらが経済的ですか？",
+    a: "修理費用が新品価格の50%以上になる場合や、使用年数が10年以上の場合は買い替えのほうが経済的な場合が多くなります。新しいエアコンは省エネ性能が向上しているため、電気代の節約も見込めます。",
   },
   {
-    q: "緊急時に最も早く対応してくれる業者は？",
-    a: "テイクサービスは最短5分で現場に向かうと公称しており、緊急時に特に頼りになります。エアコントラブルセンターも24時間365日対応で即日対応できます。",
+    q: "緊急時に早く対応できる業者はどこですか？",
+    a: "テイクサービスは、最短5分で現場に向かうと公称しています。エアコントラブルセンターも24時間365日受付で、即日の対応が可能です。",
   },
 ];
 
@@ -100,15 +100,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-[1.25fr_1fr] gap-8 lg:gap-14 items-start">
             <div>
               <h1 className="text-[28px] lg:text-[40px] font-bold leading-[1.45] text-[var(--color-ink)]">
-                エアコンが壊れた。
-                <br />
-                <span className="text-[var(--color-brand)]">どこに頼むか</span>を、
+                エアコン修理の
+                <span className="text-[var(--color-brand)]">業者選び</span>を、
                 <br className="hidden lg:block" />
-                5分で決める。
+                症状と費用の目安から支援します
               </h1>
               <p className="mt-6 text-sm lg:text-base text-[var(--color-ink-2)] leading-[2.1]">
-                症状から原因を切り分け、費用の目安を確かめ、全国26社から条件に合う業者を選べます。
-                料金は各社が公表している金額のみを掲載しています。
+                当サイトでは、エアコンの症状ごとの原因と対処法、修理費用の目安、全国26社の修理業者の情報を掲載しています。
+                料金は、各社が公表している金額のみを掲載しています。
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
@@ -144,7 +143,7 @@ export default function HomePage() {
         <div className="text-center mb-10">
           <span className="ac-eyebrow">SYMPTOM SEARCH</span>
           <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">症状から探す</h2>
-          <p className="text-[var(--color-ink-2)] text-sm">あてはまる症状を選ぶと、原因の切り分けと対処法、費用の目安が確認できます</p>
+          <p className="text-[var(--color-ink-2)] text-sm">該当する症状を選択すると、考えられる原因と対処法、費用の目安をご確認いただけます</p>
         </div>
 
         {/* カードの色は8枚すべて同一。選択肢ごとに色を変えない（施主指示④） */}
@@ -179,8 +178,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="ac-eyebrow">PICK UP</span>
-            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">まず検討したい3社</h2>
-            <p className="text-[var(--color-ink-2)] text-sm">当サイトが提携している業者です（PR）。公式サイトの内容は下の画像でご確認いただけます</p>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">当サイトの提携業者3社</h2>
+            <p className="text-[var(--color-ink-2)] text-sm">当サイトが提携している業者です（PR）。公式サイトの内容は、下の画像でご確認いただけます。</p>
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
@@ -210,7 +209,7 @@ export default function HomePage() {
 
                   <dl className="mt-4 border border-[var(--color-line)] rounded-lg divide-y divide-[var(--color-line)] text-xs">
                     <div className="flex px-3 py-2">
-                      <dt className="w-20 text-[var(--color-ink-3)]">費用目安</dt>
+                      <dt className="w-20 text-[var(--color-ink-3)]">費用の目安</dt>
                       <dd className="font-bold">{company.avgCost}</dd>
                     </div>
                     <div className="flex px-3 py-2">
@@ -247,7 +246,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <span className="ac-eyebrow">COST GUIDE</span>
             <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">修理費用の目安</h2>
-            <p className="text-[var(--color-ink-2)] text-sm">症状別の修理費用相場</p>
+            <p className="text-[var(--color-ink-2)] text-sm">症状別の修理費用の相場です</p>
           </div>
 
           <div className="border border-[var(--color-line)] rounded-lg overflow-hidden">
@@ -255,7 +254,7 @@ export default function HomePage() {
               <thead>
                 <tr className="bg-[var(--color-brand)] text-white">
                   <th className="px-5 py-3.5 text-left font-bold">症状・修理内容</th>
-                  <th className="px-5 py-3.5 text-right font-bold">費用目安</th>
+                  <th className="px-5 py-3.5 text-right font-bold">費用の目安</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-[var(--color-line)]">
@@ -269,7 +268,7 @@ export default function HomePage() {
             </table>
           </div>
           <p className="text-xs text-[var(--color-ink-3)] mt-3">
-            ※費用はあくまで目安です。実際の費用は症状・機種・業者によって異なります。
+            ※費用は目安です。実際の費用は、症状・機種・業者によって異なります。
           </p>
 
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">
@@ -280,7 +279,7 @@ export default function HomePage() {
               異音「ガガガ」の原因と対処ガイド
             </Link>
             <Link href="/guide/busy-season/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
-              修理はいつ頼むべき？繁忙期カレンダー
+              修理を依頼する時期と繁忙期カレンダー
             </Link>
             <Link href="/guide/heating-not-working/" className="text-[var(--color-brand)] font-bold hover:underline underline-offset-4">
               暖房が効かない・ランプ点滅（霜取り）の見分け方
@@ -297,8 +296,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="ac-eyebrow">COMPARISON</span>
-            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">26社 一括比較</h2>
-            <p className="text-[var(--color-ink-2)] text-sm">各社の公式サイトを当サイトで撮影して掲載しています</p>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">26社の一括比較</h2>
+            <p className="text-[var(--color-ink-2)] text-sm">各社の公式サイトの画面は、当サイトで撮影したものを掲載しています</p>
           </div>
 
           {/* マイベストの比較表を実測して合わせた構成（2026-10-12 施主指示）:
@@ -352,7 +351,7 @@ export default function HomePage() {
               </tbody>
             </table>
           </div>
-          <p className="ac-cmp-hint">表は横にスクロールできます。順位と業者名は固定されたまま、各項目を比べられます。</p>
+          <p className="ac-cmp-hint">表は横にスクロールできます。順位と業者名を固定したまま、各項目を比較いただけます。</p>
         </div>
       </section>
 
@@ -361,7 +360,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-10">
             <span className="ac-eyebrow">GUIDE</span>
-            <h2 className="text-2xl md:text-3xl font-bold mt-4">優良業者の選び方 5つのポイント</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mt-4">優良業者を選ぶための5つの確認事項</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {choosingPoints.map((p, i) => (
@@ -416,9 +415,9 @@ export default function HomePage() {
       {/* ============ 末尾CTA ============ */}
       <section className="bg-[var(--color-brand)] py-16">
         <div className="max-w-3xl mx-auto px-4 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブル、今すぐ解決</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">エアコンのトラブルに対応できる業者を掲載しています</h2>
           <p className="text-[var(--color-brand-wash)] mb-8 text-sm md:text-base">
-            24時間365日対応の業者も掲載しています。まずは無料見積もりから。
+            24時間365日受付の業者も掲載しています。まずは無料見積もりのご依頼をおすすめします。
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/ranking" className="ac-btn ac-btn-cta">

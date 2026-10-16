@@ -5,9 +5,9 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/cost/price-index/" },
-  title: "エアコン修理 料金インデックス【2026年7月実査】27社の出張費・見積・実額を当サイトが公式確認",
+  title: "エアコン修理 料金インデックス【2026年7月調査】27社の出張費・見積もり・公式掲載額",
   description:
-    "エアコン修理・クリーニング27社の料金を当サイトが各社公式サイトで実査（2026年7月7日確認）。出張費・見積無料の有無・最低料金・症状別実額（ダイキン公式28,000〜105,000円等）・クリーニング料金（9,800円〜26,400円）を確認日付きで一覧化した一次データ集です。",
+    "エアコン修理・クリーニング27社の料金を、当サイトが各社の公式サイトで確認した一覧です（2026年7月7日確認）。出張費・見積もり無料の有無・最低料金・症状別の金額（ダイキン公式28,000〜105,000円等）・クリーニング料金（9,800円〜26,400円）を、確認日とともに掲載しています。",
 };
 
 const SURVEY_DATE = "2026年7月7日";
@@ -15,8 +15,8 @@ const SURVEY_DATE = "2026年7月7日";
 const repairRows = [
   { name: "エアコントラブルセンター", slug: "aircon-trouble-center", trip: "無料", quote: "無料（依頼前キャンセル無料）", price: "8,800円〜（WEBクーポン1,000円OFF）", note: "全国加盟店ネットワーク型" },
   { name: "テイクサービス", slug: "take-service", trip: "無料", quote: "無料（特殊調査は有料・金額非公表）", price: "公式記載なし", note: "24時間受付" },
-  { name: "電気の工事屋さん", slug: "denki-koujiya", trip: "記載なし", quote: "0円明記", price: "修理3,300円〜／ガス充填16,500円〜／水漏れ5,500円〜", note: "症状別実額の公式掲載が最多" },
-  { name: "ライフ救急車", slug: "life-kyukyusha", trip: "記載なし", quote: "原則無料（遠方・深夜キャンセルは5,500円）", price: "公式記載なし", note: "夜間料金の可能性の記載あり" },
+  { name: "電気の工事屋さん", slug: "denki-koujiya", trip: "記載なし", quote: "0円と明記", price: "修理3,300円〜／ガス充填16,500円〜／水漏れ5,500円〜", note: "症状別の金額の公式掲載が最多" },
+  { name: "ライフ救急車", slug: "life-kyukyusha", trip: "記載なし", quote: "原則無料（遠方・深夜キャンセルは5,500円）", price: "公式記載なし", note: "夜間料金が発生する場合ありと記載" },
   { name: "生活110番", slug: "seikatsu110", trip: "記載なし", quote: "記載なし", price: "平均相場2.7万円（2019年集計の注記あり）", note: "紹介ポータル" },
   { name: "すまいのホットライン", slug: "sumai-hotline", trip: "記載なし", quote: "記載なし", price: "相場: ガス漏れ16,000〜19,000円／水漏れ11,000〜20,000円", note: "マッチング型" },
   { name: "電気110番", slug: "denki110", trip: "記載なし", quote: "見積後キャンセル可（無料の明記なし）", price: "公式記載なし", note: "作業完了後払い" },
@@ -24,7 +24,7 @@ const repairRows = [
 
 const platformRows = [
   { name: "ミツモア", slug: "mitsumoa", trip: "業者により0円〜4,400円", quote: "無料（最大5件比較）", price: "相場6,000〜15,800円／ガス漏れ14,400〜19,000円" },
-  { name: "くらしのマーケット", slug: "kurashi-market", trip: "業者個別", quote: "記載なし", price: "掲載価格11,000〜22,000円（実査日時点）" },
+  { name: "くらしのマーケット", slug: "kurashi-market", trip: "業者個別", quote: "記載なし", price: "掲載価格11,000〜22,000円（調査日時点）" },
   { name: "EPARKくらしのレスキュー", slug: "epark", trip: "無料の業者多数", quote: "無料の業者多数", price: "最低3,300円〜／ガス補充7,700円〜" },
   { name: "ユアマイスター", slug: "yourmystar", trip: "記載なし", quote: "記載なし", price: "業者個別ページ制（再発1ヶ月無償の記載）" },
   { name: "ゼヒトモ", slug: "zehitomo", trip: "記載なし", quote: "記載なし", price: "相場記事: 修理約2〜5万円" },
@@ -52,20 +52,20 @@ export default function PriceIndexPage() {
     <>
       <Breadcrumb items={[{ name: "費用・料金", href: "/cost/repair-price/" }, { name: "料金インデックス", href: "/cost/price-index/" }]} />
       <div className="max-w-5xl mx-auto px-4 py-10">
-        <p className="text-xs font-bold text-sky-600 tracking-widest mb-2">PRICE INDEX — 当サイト実査の一次データ</p>
-        <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">エアコン修理 料金インデックス【2026年7月実査】</h1>
+        <p className="text-xs font-bold text-sky-600 tracking-widest mb-2">PRICE INDEX — 当サイト調査の一次データ</p>
+        <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-3">エアコン修理 料金インデックス【2026年7月調査】</h1>
         <p className="text-sm text-slate-600 leading-relaxed mb-2">
-          掲載27社の料金・費用条件を、<strong>当サイトが各社公式サイトで直接確認</strong>して一覧化しました（確認日: {SURVEY_DATE}）。外部サイトの相場引用ではなく、出典を照合できる一次データです。「公式記載なし」はその項目を公式サイトが公表していないことを意味します（＝電話・見積で確認が必要）。
+          掲載27社の料金・費用条件を、<strong>当サイトが各社の公式サイトで直接確認</strong>し、一覧にしています（確認日: {SURVEY_DATE}）。外部サイトの相場の引用ではなく、出典を照合できる一次データです。「公式記載なし」は、その項目が公式サイトで公表されていないことを示します（電話・見積もりでの確認が必要です）。
         </p>
-        <p className="text-xs text-slate-400 mb-8">※料金は税込・変更される場合があります。仲介サイトの掲載価格は実査日時点の表示で、掲載業者の入替により変動します。</p>
+        <p className="text-xs text-slate-400 mb-8">※料金は税込で、変更される場合があります。仲介サイトの掲載価格は確認日時点の表示であり、掲載業者の入れ替えにより変動します。</p>
 
         {/* 結論 */}
         <div className="bg-sky-50 border border-sky-200 rounded-2xl p-6 mb-10">
-          <h2 className="font-bold text-slate-900 mb-3">実査でわかった3つの結論</h2>
+          <h2 className="font-bold text-slate-900 mb-3">確認の結果明らかになった3つの点</h2>
           <ul className="space-y-2 text-sm text-slate-700">
-            <li>1. <strong>「出張費・見積無料」を公式に明記しているかが最大の分かれ目</strong>。27社中、明記があるのは修理系の一部（エアコントラブルセンター・テイクサービス・電気の工事屋さん等）とEPARK掲載業者に限られます。</li>
-            <li>2. <strong>メーカー修理は「修理しなくても費用が出る」</strong>。ダイキンは出張点検費8,500〜19,000円、パナソニックは出張料4,950円が修理キャンセル時にも発生します（各公式明記）。そのぶんダイキンの症状別概算（28,000〜105,000円）は業界で最も詳細です。</li>
-            <li>3. <strong>症状別の実額を公式掲載している修理業者は少数派</strong>（電気の工事屋さん: 修理3,300円〜・ガス充填16,500円〜等）。「安さ」をうたう業者でも実額非公開が多いため、電話時に「出張費・見積・キャンセル料の3点」を必ず確認しましょう。</li>
+            <li>1. <strong>「出張費・見積もり無料」を公式に明記しているかどうかが、比較の重要な基準となります</strong>。27社のうち明記があるのは、修理系の一部（エアコントラブルセンター・テイクサービス・電気の工事屋さん等）とEPARK掲載業者に限られます。</li>
+            <li>2. <strong>メーカー修理は、修理を行わない場合にも費用が発生します</strong>。ダイキンは出張点検費8,500〜19,000円、パナソニックは出張料4,950円が修理キャンセル時にも発生します（各社公式に明記）。一方で、ダイキンの症状別概算（28,000〜105,000円）は業界で最も詳細です。</li>
+            <li>3. <strong>症状別の金額を公式に掲載している修理業者は少数です</strong>（電気の工事屋さん: 修理3,300円〜・ガス充填16,500円〜等）。低価格を掲げる業者でも金額を公開していない場合が多いため、お電話の際は「出張費・見積もり・キャンセル料の3点」をご確認ください。</li>
           </ul>
         </div>
 
@@ -96,8 +96,8 @@ export default function PriceIndexPage() {
           </div>
           <FelmatBanner
             slug="aircon-trouble-center"
-            heading="出張費・見積無料で確認するなら（エアコントラブルセンター）"
-            note="24時間受付・全国2,000社以上の加盟店ネットワーク。まずは無料相談で症状と費用の目安を確認できます。"
+            heading="出張費・見積もり無料で費用を確認できる窓口（エアコントラブルセンター）"
+            note="24時間受付で、全国2,000社以上の加盟店ネットワークを持つサービスです。無料相談で、症状と費用の目安を確認できます。"
           />
         </section>
 
@@ -111,7 +111,7 @@ export default function PriceIndexPage() {
                   <th className="px-3 py-2.5 text-left">サービス</th>
                   <th className="px-3 py-2.5 text-left">出張費・診断料</th>
                   <th className="px-3 py-2.5 text-left">見積もり</th>
-                  <th className="px-3 py-2.5 text-left">価格帯（実査日時点）</th>
+                  <th className="px-3 py-2.5 text-left">価格帯（調査日時点）</th>
                 </tr>
               </thead>
               <tbody>
@@ -153,7 +153,7 @@ export default function PriceIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-slate-500 mt-2">ダイキン公式の症状別概算（税込・出張料込み）: 運転しない28,000〜64,000円／室内基板28,000〜37,000円／ファンモータ28,000〜80,000円／ガス不足（冷媒系統）70,000〜105,000円。エラーコード別の詳細は<Link href="/company/daikin-cc/" className="text-sky-600 underline">ダイキンのページ</Link>へ。</p>
+          <p className="text-xs text-slate-500 mt-2">ダイキン公式の症状別概算（税込・出張料込み）: 運転しない28,000〜64,000円／室内基板28,000〜37,000円／ファンモータ28,000〜80,000円／ガス不足（冷媒系統）70,000〜105,000円。エラーコード別の詳細は<Link href="/company/daikin-cc/" className="text-sky-600 underline">ダイキンのページ</Link>をご覧ください。</p>
         </section>
 
         {/* クリーニング */}
@@ -181,22 +181,22 @@ export default function PriceIndexPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-slate-500 mt-2">※セーフリー・いえなかまは業者マッチングサイト（自社施工なし）のため本表から除外しています。安値順: おそうじラボ9,800円→おそうじ革命9,980円→セイフウ13,200円…（{SURVEY_DATE}時点の通常価格）。</p>
+          <p className="text-xs text-slate-500 mt-2">※セーフリー・いえなかまは業者マッチングサイト（自社施工なし）のため、本表には含めていません。通常価格の安い順は、おそうじラボ9,800円、おそうじ革命9,980円、セイフウ13,200円です（{SURVEY_DATE}時点）。</p>
           <FelmatBanner
             slug="osoji-labo"
-            heading="大阪・兵庫でクリーニングを頼むなら（おそうじLabo）"
-            note="100%自社作業・初回限定価格あり。最新の料金と予約可能日を公式サイトで確認できます。"
+            heading="大阪・兵庫のエアコンクリーニング（おそうじLabo）"
+            note="すべて自社作業（100%）で、初回限定価格を設けています。最新の料金と予約可能日は公式サイトで確認できます。"
           />
         </section>
 
         {/* 使い方 */}
         <section className="mb-12">
-          <h2 className="text-xl font-bold text-slate-900 mb-4">このデータの使い方（3ステップ）</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4">本データの活用方法（3ステップ）</h2>
           <div className="grid md:grid-cols-3 gap-4">
             {[
-              ["1", "症状で相場を掴む", "ガス系は1.4万〜10.5万円と幅が大きい（軽度=ガス補充のみ、重度=冷媒系統修理）。まず症状別ページで自分のケースを確認。"],
-              ["2", "「無料明記」の業者から当たる", "出張費・見積無料を公式に明記している業者から電話するのが安全。電話では出張費・見積・キャンセル料の3点を必ず確認。"],
-              ["3", "メーカー窓口と比べる", "保証期間内・高級機はメーカーへ。保証外は点検費（ダイキン8,500円〜等）が修理しなくても発生する点だけ注意。"],
+              ["1", "症状別の相場の把握", "ガス系は1.4万〜10.5万円と幅があります（軽度はガス補充のみ、重度は冷媒系統の修理）。症状別ページで該当する症状をご確認ください。"],
+              ["2", "無料を明記した業者への問い合わせ", "出張費・見積もり無料を公式に明記している業者からお問い合わせいただくことをおすすめします。お電話の際は、出張費・見積もり・キャンセル料の3点をご確認ください。"],
+              ["3", "メーカー窓口との比較", "保証期間内の場合や高級機の場合は、メーカーへの依頼をおすすめします。保証期間外では、修理を行わない場合にも点検費（ダイキン8,500円〜等）が発生する点にご注意ください。"],
             ].map(([n, t, d]) => (
               <div key={n} className="bg-white border border-gray-200 rounded-xl p-5">
                 <div className="w-8 h-8 rounded-full bg-[var(--color-brand)] text-white font-bold flex items-center justify-center mb-3">{n}</div>
@@ -211,7 +211,7 @@ export default function PriceIndexPage() {
         <section className="mb-10">
           <h2 className="text-lg font-bold text-slate-900 mb-3">更新履歴（毎月更新）</h2>
           <ul className="text-sm text-slate-600 space-y-1 bg-slate-50 rounded-xl p-5 border border-slate-200">
-            <li>・2026年7月7日: 初回実査（27社の公式サイトを直接確認して公開）</li>
+            <li>・2026年7月7日: 初回調査（27社の公式サイトを直接確認して公開）</li>
           </ul>
         </section>
 
@@ -226,8 +226,8 @@ export default function PriceIndexPage() {
             <p className="text-xs text-slate-500 mt-1">2026年10月更新・27社比較</p>
           </Link>
           <Link href="/ranking/fast/" className="bg-white border border-gray-200 rounded-xl p-4 hover:border-sky-300 transition-colors">
-            <p className="font-bold text-slate-900 text-sm">今日直したい方はこちら</p>
-            <p className="text-xs text-slate-500 mt-1">即日修理の頼み方・24時間受付</p>
+            <p className="font-bold text-slate-900 text-sm">即日対応の業者ランキング</p>
+            <p className="text-xs text-slate-500 mt-1">即日修理の依頼方法・24時間受付</p>
           </Link>
         </div>
       </div>

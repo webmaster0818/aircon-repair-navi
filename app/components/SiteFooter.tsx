@@ -35,7 +35,7 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
     category: "費用・比較",
     links: [
       { href: "/cost/repair-price", label: "修理費用の相場" },
-      { href: "/cost/replace-vs-repair", label: "修理 vs 買い替え" },
+      { href: "/cost/replace-vs-repair", label: "修理と買い替え" },
     ],
   },
   {
@@ -83,7 +83,7 @@ export default function SiteFooter() {
               </Link>
               <p className="mt-2 text-xs text-gray-500 max-w-md">
                 当サイトはエアコン修理業者の比較・紹介を行うサイトです。一部記事にはPR（広告）を含みます。
-                掲載情報は2026年10月時点のものです。最新情報は各業者サイトをご確認ください。
+                掲載情報は2026年10月時点のものです。ご利用前に、各業者の公式サイトにて最新情報をご確認ください。
               </p>
             </div>
             <div className="text-xs text-gray-500">

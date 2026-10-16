@@ -16,7 +16,7 @@ const navLinks = [
     { href: "/symptom/error-code", label: "エラーコード" },
   ]},
   { href: "/cost/repair-price", label: "修理費用" },
-  { href: "/cost/replace-vs-repair", label: "修理 vs 買い替え" },
+  { href: "/cost/replace-vs-repair", label: "修理と買い替え" },
 ];
 
 export default function SiteHeader() {

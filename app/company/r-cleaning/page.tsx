@@ -8,9 +8,9 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "アールクリーニングの口コミ・評判は？悪い口コミ・料金・他社比較を調査【2026年10月】",
+    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・他社比較の調査結果【2026年10月】",
   description:
-    "エアコンクリーニング「アールクリーニング」の口コミ・評判をまとめました。みん評・Googleマップ・くらしのマーケット等の実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
+    "エアコンクリーニング「アールクリーニング」の口コミ・評判をまとめました。みん評・Googleマップ・くらしのマーケット等で公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
   alternates: { canonical: "/company/r-cleaning" },
 };
 
@@ -24,7 +24,7 @@ const toc = [
   { id: "good", label: "良い口コミ・評判の傾向" },
   { id: "bad", label: "悪い口コミ・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
@@ -38,28 +38,28 @@ const toc = [
 
 const faqs = [
   {
-    q: "アールクリーニングはエアコン修理もしてくれますか？",
+    q: "アールクリーニングはエアコン修理にも対応していますか？",
     a: "アールクリーニングはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流して、ニオイや効きの改善を目指すサービスである点に注意してください。故障の場合は修理業者やメーカーへの相談が必要です。",
   },
   {
     q: "対応エリアはどこですか？",
-    a: "東京都(23区および多摩地域)、埼玉県、神奈川県、千葉県を中心に対応しています。公式サイトではエリア外でも出張料金(3,000円〜)で対応可能と案内されています。地域によって対応可否が変わるため、申し込み時に確認しておきましょう。",
+    a: "東京都(23区および多摩地域)、埼玉県、神奈川県、千葉県を中心に対応しています。公式サイトではエリア外でも出張料金(3,000円〜)で対応可能と案内されています。地域によって対応可否が異なるため、申し込み時にご確認ください。",
   },
   {
     q: "料金はどのくらいですか？",
     a: "公式サイトでは、壁掛けタイプが感謝価格9,800円(税込10,780円・10月20日受付分までの特別価格。通常価格は19,350円(税込)（2026年10月15日・公式確認）)、埋め込み型が感謝価格18,000円(税込19,800円)などと案内されています。台数・機種・オプションで総額が変わり、感謝価格(割引)は時期によって変動するため、申し込み時に最新の料金を確認してください。",
   },
   {
-    q: "受付時間は？",
+    q: "受付時間を教えてください。",
     a: "公式サイトでは受付時間を毎日9:00〜18:00としています。電話番号は0120-007-601と案内されています。",
   },
   {
     q: "防カビ・抗菌コートは追加料金がかかりますか？",
-    a: "公式サイトの作業工程では、最後に防カビ・抗菌イオンコーティングをして組み立てる流れが標準として案内されています（「無料」という表記は確認できませんでした・2026年10月15日確認）。内容や条件は時期によって変わる場合があるため、申し込み時に確認しておくと安心です。",
+    a: "公式サイトの作業工程では、最後に防カビ・抗菌イオンコーティングをして組み立てる流れが標準として案内されています（「無料」という表記は確認できませんでした・2026年10月15日確認）。内容や条件は時期によって変わる場合があるため、申し込み時にご確認ください。",
   },
   {
     q: "キャンセルや日程変更はいつまで無料ですか？",
-    a: "公式サイトでは、予約日前日の14:59までの連絡であればキャンセル料はかからないと案内されています。前日15:00以降のキャンセル・日程変更は料金の100%が発生すると明記されているため、予定が変わりそうな場合は早めに連絡しましょう(2026年8月2日公式確認)。",
+    a: "公式サイトでは、予約日前日の14:59までの連絡であればキャンセル料はかからないと案内されています。前日15:00以降のキャンセル・日程変更は料金の100%が発生すると明記されているため、予定が変わる可能性がある場合は、早めにご連絡ください(2026年8月2日公式確認)。",
   },
   {
     q: "お掃除機能付きエアコンの料金はいくらですか？",
@@ -70,16 +70,16 @@ const faqs = [
     a: "公式サイトでは、壁掛けタイプのエアコンクリーニングの作業時間は約1.5時間と案内されています(2026年8月2日確認)。台数や汚れの状況、オプションの有無によって前後する場合があります。",
   },
   {
-    q: "室外機やドレンホースの掃除も頼めますか？",
-    a: "オプションとして、室外機清掃(2026年8月2日確認時点でキャンペーン価格4,500円・通常8,800円)、ドレンホース洗浄(2,500円/箇所)、防虫キャップ取付(1,650円/箇所)が公式サイトに案内されています。価格・条件は時期により変わるため申し込み時に確認してください。",
+    q: "室外機やドレンホースの掃除も依頼できますか？",
+    a: "オプションとして、室外機清掃(2026年8月2日確認時点でキャンペーン価格4,500円・通常8,800円)、ドレンホース洗浄(2,500円/箇所)、防虫キャップ取付(1,650円/箇所)が公式サイトに案内されています。価格・条件は時期により変わるため、申し込み時にご確認ください。",
   },
   {
     q: "製造から10年以上経ったエアコンでも依頼できますか？",
-    a: "公式サイトでは、10年以上経過している設備については保障できない場合があると案内されています。洗浄起因の故障への保証は製造10年未満のエアコンが対象とされているため、古い機種を依頼する場合は事前に保証の扱いを確認しておくと安心です(2026年8月2日確認)。",
+    a: "公式サイトでは、10年以上経過している設備については保障できない場合があると案内されています。洗浄起因の故障への保証は製造10年未満のエアコンが対象とされているため、古い機種を依頼する場合は、事前に保証の扱いをご確認ください(2026年8月2日確認)。",
   },
   {
-    q: "作業後に不具合が見つかったらどうすればいいですか？",
-    a: "公式サイトでは、作業後の不具合の報告は2週間以内に申し付けるよう案内されています(2026年8月2日確認)。作業完了時に動作を一緒に確認し、気になる点があれば早めに連絡窓口へ伝えましょう。",
+    q: "作業後に不具合が見つかったらどうすればよいですか？",
+    a: "公式サイトでは、作業後の不具合の報告は2週間以内に申し付けるよう案内されています(2026年8月2日確認)。作業完了時に動作を一緒に確認し、気になる点があれば早めに連絡窓口へお伝えください。",
   },
 ];
 
@@ -87,7 +87,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "アールクリーニングの口コミ・評判は？悪い口コミ・料金・他社比較を調査【2026年10月】",
+    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・他社比較の調査結果【2026年10月】",
   datePublished: "2026-06-28",
   dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -123,9 +123,9 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            アールクリーニングの口コミ・評判は？
+            アールクリーニングの口コミ・評判
             <br className="hidden md:block" />
-            悪い口コミ・料金・他社比較を調査【2026年10月】
+            悪い口コミ・料金・他社比較の調査結果【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -140,9 +140,9 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            エアコンのニオイや効きが気になるとき、コストを抑えてしっかり洗浄したい——そんなときに候補に挙がるのが
+            エアコンのニオイや効きが気になり、費用を抑えて内部まで洗浄したい場合に、候補となるのが
             <strong className="font-semibold text-slate-900">アールクリーニング</strong>
-            です。この記事では、首都圏を中心に対応するアールクリーニングについて、みん評・Googleマップ・くらしのマーケットなどで公開されている利用者の声、料金の目安、対応エリアや受付時間、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
+            です。本記事では、首都圏を中心に対応するアールクリーニングについて、みん評・Googleマップ・くらしのマーケットなどで公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと注意点を、中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※アールクリーニングは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評・Googleマップ・くらしのマーケット等で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
@@ -165,7 +165,7 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 mt-8">
           <div className="rounded-2xl border-2 border-orange-200 bg-orange-50 p-6 text-center">
-            <p className="text-base font-bold text-slate-800 mb-3">＼ 公式サイトはこちら ／</p>
+            <p className="text-base font-bold text-slate-800 mb-3">公式サイトのご案内</p>
             <div className="flex justify-center mb-4"><a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+601S1" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www22.a8.net/svt/bgt?aid=260628928542&wid=013&eno=01&mid=s00000022947001008000&mc=1" /></a></div>
             <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" target="_blank" rel="sponsored nofollow noopener" className="ac-btn ac-btn-cta px-10 py-4 text-lg">アールクリーニング公式サイトを見る →</a>
             <p className="mt-3 text-xs text-slate-400">※本リンクはプロモーション（PR）です。</p>
@@ -184,16 +184,16 @@ export default function Page() {
             <AffiliateBanner
               slug="r-cleaning"
               heading="公式サイトで詳細・料金を確認する"
-              note="首都圏エリアなら、まずは料金と空き状況を確認してみましょう。"
+              note="首都圏にお住まいの方は、公式サイトで料金と空き状況をご確認ください。"
             />
           </section>
 
           <section id="latest" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の料金と他社比較（公式で再確認）</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              2026年10月14日に公式サイト（r-cleaning.com）を確認し直しました。壁掛けタイプは通常価格19,350円に対し、キャンペーン価格9,800円（税込10,780円）の表示です。お掃除機能付きは8月時点の16,000円から<strong className="font-semibold">17,000円（税込18,700円）</strong>に変わっていました。キャンペーンの受付期限は「10月20日まで」と表示されており、室外機清掃は10月限定4,500円（通常8,800円）です。
+              2026年10月14日に公式サイト（r-cleaning.com）を再確認しました。壁掛けタイプは通常価格19,350円に対し、キャンペーン価格9,800円（税込10,780円）の表示です。お掃除機能付きは8月時点の16,000円から<strong className="font-semibold">17,000円（税込18,700円）</strong>に変更されています。キャンペーンの受付期限は「10月20日まで」と表示されており、室外機清掃は10月限定4,500円（通常8,800円）です。
             </p>
-            <p className="leading-8 text-slate-700 mb-4">同じ日に公式サイトで確認した、ほかのエアコンクリーニング業者の壁掛けタイプの料金と並べると次のとおりです（税込）。</p>
+            <p className="leading-8 text-slate-700 mb-4">同じ日に公式サイトで確認した、ほかのエアコンクリーニング業者の壁掛けタイプの料金との比較は次のとおりです（税込）。</p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -219,7 +219,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              アールクリーニングは首都圏限定のキャンペーン価格で、表の中ではもっとも安い表示です。ただしキャンペーンには期限があり、時期によって金額が変わります。ダスキンは全国対応で価格は固定、清風はキャンペーンを行わず通常価格の定額にしている、という違いがあります。各社の詳細は<Link href="/company/duskin-servicemaster/" className="text-sky-600 underline underline-offset-2">ダスキンの口コミ・評判</Link>・<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風の口コミ・評判</Link>、相場全体は<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>にまとめています。
+              アールクリーニングは首都圏限定のキャンペーン価格で、表の中ではもっとも安い表示です。ただしキャンペーンには期限があり、時期によって金額が変わります。ダスキンは全国対応で価格は固定、清風はキャンペーンを行わず通常価格の定額としている点が異なります。各社の詳細は<Link href="/company/duskin-servicemaster/" className="text-sky-600 underline underline-offset-2">ダスキンの口コミ・評判</Link>・<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風の口コミ・評判</Link>、相場全体は<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>にまとめています。
             </p>
             <p className="mt-3 text-xs text-slate-400">出典：各社公式サイトの掲載価格（いずれも2026年10月14日確認）。キャンペーン・料金は変わる場合があります。</p>
           </section>
@@ -227,10 +227,10 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
             <p className="leading-8 text-slate-700">
-              アールクリーニングは、くらしのマーケットの店舗ページで総合4.73/5.0・口コミ662件(2026年8月1日時点)という高評価を得ており、丁寧な作業や問い合わせ対応の早さ、繁忙期の対応を称賛する声が中心です。明朗会計や事前説明、ビフォーアフター写真の提示など、作業プロセスの丁寧さを評価する内容も多く確認できます。
+              アールクリーニングは、くらしのマーケットの店舗ページで総合4.73/5.0・口コミ662件(2026年8月1日時点)という高い評価を得ており、丁寧な作業や問い合わせ対応の早さ、繁忙期の対応を評価する声が中心です。明朗会計や事前説明、ビフォーアフター写真の提示など、作業プロセスの丁寧さを評価する内容も多く確認できます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              一方、みん評の口コミは11件(2026年8月1日時点)と少数ながら評価が1〜5点に二極化しており、水漏れで部屋が濡れたという報告や、洗浄範囲・トラブル後の対応への不満といった厳しい声も確認できます。担当者による品質のムラを指摘する声もあるため、高評価が多数とはいえ当たり外れの可能性は念頭に置き、作業範囲と万一の際の補償を申し込み時に確認しておくと安心です。
+              一方、みん評の口コミは11件(2026年8月1日時点)と少数ながら評価が1〜5点に二極化しており、水漏れで部屋が濡れたという報告や、洗浄範囲・トラブル後の対応への不満といった否定的な声も確認できます。担当者による品質のばらつきを指摘する声もあるため、高い評価が多数であっても担当者により差が生じる可能性を考慮し、作業範囲と万一の際の補償を申し込み時にご確認ください。
             </p>
           </section>
 
@@ -272,7 +272,7 @@ export default function Page() {
                 <li>価格に対して清掃のクオリティが高く、コストパフォーマンスに満足したという評価</li>
                 <li>予約前の質問への返答が早く、当日の作業の流れや日頃のお手入れ方法の説明も丁寧だったという評価</li>
                 <li>独自洗剤と高圧洗浄で内部の汚れがよく落ち、エアコンの効きが改善したと感じたという評価</li>
-                <li>防カビ・抗菌コートまで施工してもらえる点や、スタッフの対応の感じが良かったという評価</li>
+                <li>防カビ・抗菌コートまで施工される点や、スタッフの対応が良かったという評価</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
@@ -288,21 +288,21 @@ export default function Page() {
             <p className="leading-8 text-slate-700 mb-4">
               高評価が多い一方で、口コミの多い人気サービスという性質上、
               <strong className="font-semibold">スタッフによって対応や仕上がりの感じ方に差が出る場合がある</strong>
-              点は理解しておきたいところです。安心して任せるために、申し込み時には次の点を確認しておくとよいでしょう。
+              点にご留意ください。申し込み時には、次の点を確認することをおすすめします。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって作業の丁寧さや仕上がりの感じ方に差が出る場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うか確認しておく</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(夏前など)は予約が取りにくく、希望日に作業できない場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>感謝価格(割引)やオプションは条件・期間が変わるため、申し込み時に総額を確認する</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって作業の丁寧さや仕上がりの感じ方に差が出る場合があります</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うかをご確認ください</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(夏前など)は予約が取りにくく、希望日に作業できない場合があります</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>感謝価格(割引)やオプションは条件・期間が変わるため、申し込み時に総額をご確認ください</li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">
-              なお、みん評では水漏れ事故や洗浄範囲への不満、トラブル後の対応に関する厳しい声も確認できます(件数は11件と少数で評価は二極化)。万一に備え、補償の有無と連絡窓口を作業前に確認しておくと安心です。
+              なお、みん評では水漏れ事故や洗浄範囲への不満、トラブル後の対応に関する否定的な声も確認できます(件数は11件と少数で、評価は二極化しています)。万一に備え、補償の有無と連絡窓口を作業前にご確認ください。
             </p>
             <p className="mt-3 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(アールクリーニングの口コミ・11件)</a> ／ <a href="https://selectra.jp/home/review/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">セレクトラのレビュー記事</a>(いずれも2026年8月1日確認)</p>
           </section>
 
-          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" label="アールクリーニング公式サイトを見る" lead="口コミの傾向を踏まえて検討したい方へ。詳細は公式サイトで確認できます" />
+          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" label="アールクリーニング公式サイトを見る" lead="口コミの傾向を踏まえてご検討ください。詳細は公式サイトでご確認いただけます" />
 
           <section id="merit" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">メリット・デメリット</h2>
@@ -310,9 +310,9 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>10月20日受付分までは特別価格（壁掛け税込10,780円）が設定されている（通常価格は税込19,350円）</li>
-                  <li>防カビ・抗菌コートが標準の作業工程に含まれる</li>
-                  <li>作業実績50万件・口コミ件数が多く、評価を確認しやすい</li>
+                  <li>10月20日受付分までの特別価格（壁掛け税込10,780円）を設定（通常価格は税込19,350円）</li>
+                  <li>防カビ・抗菌コートを標準の作業工程に含む</li>
+                  <li>作業実績50万件で口コミ件数が多く、評価を確認しやすい</li>
                   <li>各種クレジットカード・電子マネーに対応</li>
                 </ul>
               </div>
@@ -321,28 +321,28 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>対応エリアが首都圏中心(エリア外は出張料金)</li>
                   <li>故障修理ではなくクリーニングのサービス</li>
-                  <li>スタッフにより仕上がりの感じ方に差が出る場合がある</li>
+                  <li>スタッフにより仕上がりの感じ方に差が出る場合あり</li>
                 </ul>
               </div>
             </div>
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>首都圏でコストを抑えてエアコンを洗浄したい人</li>
-                  <li>口コミ件数の多いサービスで評価を見て選びたい人</li>
-                  <li>ニオイや効きの悪さを内部洗浄で改善したい人</li>
+                  <li>首都圏で費用を抑えてエアコンを洗浄したい方</li>
+                  <li>口コミ件数の多いサービスから、評価を確認して選びたい方</li>
+                  <li>ニオイや効きの悪さを内部洗浄で改善したい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>対応エリアから大きく離れている人</li>
-                  <li>清掃ではなく、故障の修理を頼みたい人</li>
+                  <li>対応エリアから大きく離れた地域にお住まいの方</li>
+                  <li>清掃ではなく、故障の修理を依頼したい方</li>
                 </ul>
               </div>
             </div>
@@ -351,7 +351,7 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              アールクリーニングの公式サイトでは、エアコンクリーニングの料金目安が次のように案内されています(税込・調査時点)。
+              アールクリーニングの公式サイトでは、エアコンクリーニングの料金の目安が次のように案内されています(税込・調査時点)。
             </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -371,20 +371,20 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              感謝価格(割引)やキャンペーンは時期によって変わります。台数や機種、オプションによって総額が変わるため、申し込み時に最新の料金と総額を確認しておくと安心です。
+              感謝価格(割引)やキャンペーンは時期によって変わります。台数や機種、オプションによって総額が変わるため、申し込み時に最新の料金と総額をご確認ください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。最新の金額は申し込み時にご確認ください。</p>
           </section>
 
-          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" label="アールクリーニング公式サイトを見る" lead="料金の詳細・正確な見積もりは公式サイトの無料相談で確認できます" />
+          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+61C2Q" label="アールクリーニング公式サイトを見る" lead="料金の詳細と正確な見積もりは、公式サイトの無料相談でご確認いただけます" />
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
               {[
                 ["電話・Webで相談", "機種や台数、汚れの状況を伝えます。受付は毎日9:00〜18:00です。"],
-                ["日程の調整", "都合の良い日時を調整します。質問への返答が早いと好評です。"],
-                ["訪問・養生", "スタッフが訪問し、周囲をしっかり養生します。"],
+                ["日程の調整", "都合の良い日時を調整します。質問への返答が早いという評価が見られます。"],
+                ["訪問・養生", "スタッフが訪問し、周囲を養生します。"],
                 ["分解洗浄", "独自洗剤と高圧洗浄で、内部のカビ・ホコリを洗浄します。"],
                 ["動作確認・支払い", "仕上がりと動作を確認し、支払いをして完了です。"],
               ].map(([t, d], i) => (
@@ -406,12 +406,12 @@ export default function Page() {
             </p>
             <ol className="space-y-4">
               {[
-                ["電話・Webで見積もり依頼", "掃除箇所・希望日程・住所などのほか、エアコンのお掃除機能の有無と駐車場の有無を確認されます。お掃除機能付きは料金が変わるため、機種名や室内機の型番を控えておくとスムーズです。見積金額が折り合わない場合はキャンセルでき、出張・見積もり費用はかからないと案内されています。"],
+                ["電話・Webで見積もり依頼", "掃除箇所・希望日程・住所などのほか、エアコンのお掃除機能の有無と駐車場の有無を確認されます。お掃除機能付きは料金が変わるため、機種名や室内機の型番を控えておくと手続きが円滑に進みます。見積金額が折り合わない場合はキャンセルでき、出張・見積もり費用はかからないと案内されています。"],
                 ["前日までの準備", "作業箇所周辺の荷物は事前に移動しておくよう案内されています。キャンセル・日程変更は前日14:59までなら無料です(15:00以降は100%のキャンセル料)。"],
                 ["訪問・作業前の確認", "スタッフが訪問し、作業前に清掃箇所を確認します。公式サイトでは「基本的に追加料金は発生しません」と案内されています。"],
                 ["分解洗浄(壁掛けで約1.5時間)", "公式サイトでは、分解→養生→洗剤噴射→部品洗浄→内部洗浄→内部乾燥→組立という工程が案内されており、壁掛けタイプの作業時間は約1.5時間とされています。"],
                 ["動作確認・支払い", "仕上がりと動作を確認し、現金・各種クレジットカード・電子マネー/QR決済(一部を除く)で支払って完了です。"],
-                ["アフター対応", "作業後の不具合の報告は2週間以内に申し付けるよう案内されています。気になる点があれば早めに連絡しましょう。"],
+                ["アフター対応", "作業後の不具合の報告は2週間以内に申し付けるよう案内されています。気になる点があれば早めにご連絡ください。"],
               ].map(([t, d], i) => (
                 <li key={i} className="flex gap-4">
                   <span className="shrink-0 grid place-items-center w-9 h-9 rounded-full bg-[var(--color-brand)] text-white font-bold text-sm">{i + 1}</span>
@@ -428,7 +428,7 @@ export default function Page() {
           <section id="menu-price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">機種・メニュー別の料金の見方</h2>
             <p className="leading-8 text-slate-700">
-              アールクリーニングの料金は「通常価格」と「キャンペーン価格」の二段構えで表示されており、申し込み時期のキャンペーン価格が実際の目安になります。2026年8月2日に公式サイトのエアコンクリーニング詳細ページで確認できた料金は次のとおりです。
+              アールクリーニングの料金は「通常価格」と「キャンペーン価格」の2種類で表示されており、申し込み時期のキャンペーン価格が実際の目安になります。2026年8月2日に公式サイトのエアコンクリーニング詳細ページで確認できた料金は次のとおりです。
             </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -452,7 +452,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              料金表を見るうえでのポイントは3点です。第一に、<strong className="font-semibold">2台目以降は1台目より安くなる複数台割引</strong>があるため、複数台まとめて依頼すると1台あたりの単価を下げられます。第二に、お掃除機能付きは通常機より高くなるため、<strong className="font-semibold">機種のお掃除機能の有無を正しく申告する</strong>ことが見積もりと請求のズレを防ぐ鍵になります。第三に、キャンペーン価格には期限が表示されており(確認時点では8月10日までの表示)、時期によって金額・割引率が変わります。
+              料金表を見るうえでのポイントは3点です。第一に、<strong className="font-semibold">2台目以降は1台目より安くなる複数台割引</strong>があるため、複数台まとめて依頼すると1台あたりの単価を下げられます。第二に、お掃除機能付きは通常機より高くなるため、<strong className="font-semibold">機種のお掃除機能の有無を正しく申告する</strong>ことが見積もりと請求の相違を防ぐうえで重要です。第三に、キャンペーン価格には期限が表示されており(確認時点では8月10日までの表示)、時期によって金額・割引率が変わります。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               対応範囲については、取り外しができない部品がある場合や機器が故障している場合は部分的な作業のみになると案内されています。また、洗浄起因の故障への保証は製造10年未満のエアコンが対象とされ、10年以上経過した設備は保証できない場合があると記載されています。
@@ -463,7 +463,7 @@ export default function Page() {
           <section id="payment" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定</h2>
             <p className="leading-8 text-slate-700">
-              支払いは作業完了後で、公式サイトでは<strong className="font-semibold">現金・各種クレジットカード・電子マネー/QR決済</strong>(一部を除く)に対応すると案内されています(2026年8月2日確認)。使いたい決済手段が決まっている場合は、申し込み時に利用可否を確認しておくと確実です。
+              支払いは作業完了後で、公式サイトでは<strong className="font-semibold">現金・各種クレジットカード・電子マネー/QR決済</strong>(一部を除く)に対応すると案内されています(2026年8月2日確認)。利用したい決済手段が決まっている場合は、申し込み時に利用可否をご確認ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">キャンセル・日程変更の規定は次のとおり明記されています。</p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
@@ -482,7 +482,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              前日15:00を境に全額のキャンセル料が発生する規定のため、天候や体調で予定が崩れそうなときは、<strong className="font-semibold">前日の昼までに連絡する</strong>のが安全です。なお、見積もり段階で金額が折り合わない場合のキャンセルは可能で、出張・見積もり費用はかからないと案内されています。
+              前日15:00を境に全額のキャンセル料が発生する規定のため、天候や体調により予定が変わる可能性がある場合は、<strong className="font-semibold">前日の昼までに連絡する</strong>ことをおすすめします。なお、見積もり段階で金額が折り合わない場合のキャンセルは可能で、出張・見積もり費用はかからないと案内されています。
             </p>
             <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認。規定は変更される場合があります。</p>
           </section>
@@ -490,16 +490,16 @@ export default function Page() {
           <section id="checklist" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              アールクリーニングはキャンペーン価格中心の料金体系のため、見積もり時に条件を固めておくほど当日のズレを防げます。申し込み前に次の点を確認しておきましょう。
+              アールクリーニングはキャンペーン価格中心の料金体系のため、見積もり時に条件を確定しておくことで、当日の相違を防げます。申し込み前に次の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">税込総額</strong>：台数(2台目以降の割引適用)・お掃除機能の有無・室外機やドレンホースなどオプションを含めた合計金額</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンペーンの適用条件</strong>：申し込み時点の価格と期限(時期により変動)</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">機種の申告</strong>：お掃除機能付きかどうか(型番で確認)。申告漏れは当日の金額変更につながりやすい</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">機種の申告</strong>：お掃除機能付きかどうか(型番で確認)。申告漏れは当日の金額変更につながる場合があります</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">古い機種の保証</strong>：製造10年以上の機種は保証できない場合があるため、依頼可否と条件を事前に確認</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エリア・駐車場</strong>：対応エリア外の場合の出張料金(3,000円〜)、駐車場の有無</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">キャンセル期限</strong>：前日14:59まで無料・15:00以降100%という規定の再確認</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">アフター窓口</strong>：不具合報告の期限は2週間以内。連絡先を控えておく</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">アフター窓口</strong>：不具合報告の期限は2週間以内です。連絡先を控えておくことをおすすめします</span></li>
             </ul>
             <p className="mt-5 leading-8 text-slate-700">
               補償体制については、公式サイトの「安心のための取り組み」ページに、<strong className="font-semibold">最大1億円の損害賠償保険に加入している</strong>ことと、作業後2週間の保証(気づかなかった不具合の報告に対応)が明記されています(2026年8月2日確認)。あわせて、使い捨てスリッパの持参、女性のみの世帯などへの女性スタッフの指名対応、予約前日のSMS確認、静音性の高い高圧洗浄機の使用、自社研修施設でのスタッフ教育といった取り組みも案内されています。一方、経年劣化(10年以上)による破損や落ちない変色、取り外せない部品などは保証の対象外になる場合があると注記されているため、古い機種は依頼前の確認が重要です。
@@ -515,7 +515,7 @@ export default function Page() {
               「アールクリーニング」という名称は、自宅から衣類を預ける<strong className="font-semibold">宅配衣類クリーニングのサービス</strong>を指して使われている例も確認できます。本記事で紹介しているのは、東京都を拠点に首都圏でエアコンクリーニング・ハウスクリーニングを行うアールクリーニング(公式サイト: r-cleaning.com)で、衣類の宅配クリーニングとは業態が異なります。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              また、千葉県船橋市周辺には<strong className="font-semibold">「アールクリーン」という名前の似た別のクリーニング業者</strong>があり、ミツモアなどでは高評価・口コミ件数の多い店舗として表示されます（2026年10月14日確認）。名前が一文字違うだけなので、評価を見るときは店名をよく確認してください。
+              また、千葉県船橋市周辺には<strong className="font-semibold">「アールクリーン」という名前の似た別のクリーニング業者</strong>があり、ミツモアなどでは高評価・口コミ件数の多い店舗として表示されます（2026年10月14日確認）。名称が一文字のみ異なるため、評価を確認する際は店名をよくご確認ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               口コミや評判を調べる際は、次の点を確認すると別業態の同名サービスと取り違えるのを防げます。
@@ -545,15 +545,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              アールクリーニングは、首都圏を中心に独自洗剤＋高圧洗浄でエアコンクリーニングを行うサービスです。利用者の声では、価格を上回る清掃のクオリティと丁寧な対応、防カビ・抗菌コートまでの施工を評価する内容が見られます。一方で、担当スタッフによる差や、故障の修理ではなくクリーニングである点は理解しておきましょう。
+              アールクリーニングは、首都圏を中心に独自洗剤＋高圧洗浄でエアコンクリーニングを行うサービスです。利用者の声では、価格に対する清掃の品質の高さと丁寧な対応、防カビ・抗菌コートまでの施工を評価する内容が見られます。一方で、担当スタッフによる差がある点や、故障の修理ではなくクリーニングのサービスである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              料金は機種・台数・オプションで変わります。感謝価格やキャンペーンは時期で変動するため、申し込み時に総額を確認し、納得してから依頼するのがおすすめです。
+              料金は機種・台数・オプションで変わります。感謝価格やキャンペーンは時期で変動するため、申し込み時に総額を確認し、納得したうえで依頼されることをおすすめします。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
-              <p className="text-sky-100 text-sm mb-5">首都圏エリアなら、まずは料金と空き状況を確認してみましょう。</p>
+              <p className="text-sky-100 text-sm mb-5">首都圏にお住まいの方は、公式サイトで料金と空き状況をご確認ください。</p>
               <div className="flex justify-center mb-5">
                 <a href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8YP7WY+4X26+601S1" rel="sponsored nofollow" target="_blank"><img width={300} height={250} alt="" src="https://www22.a8.net/svt/bgt?aid=260628928542&wid=013&eno=01&mid=s00000022947001008000&mc=1" /></a>
               </div>

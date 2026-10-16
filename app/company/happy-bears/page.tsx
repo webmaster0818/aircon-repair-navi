@@ -6,9 +6,9 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ベアーズ(ハッピーベアーズ)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "エアコンクリーニング「ベアーズ」の口コミ・評判をまとめました。みん評・マイナビ等の実際の利用者の声、料金の目安、対応エリアや受付時間、メリット・利用前の注意点まで中立的に解説します。",
+    "エアコンクリーニング「ベアーズ」の口コミ・評判をまとめています。みん評・マイナビ等で公開されている利用者の声の傾向、料金の目安、対応エリアや受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/happy-bears" },
 };
 
@@ -18,9 +18,9 @@ const toc = [
   { id: "summary", label: "ベアーズとは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "気になる点・利用前の注意点" },
+  { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
-  { id: "fit", label: "向いている人・向いていない人" },
+  { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "faq", label: "よくある質問" },
@@ -30,23 +30,23 @@ const toc = [
 const faqs = [
   {
     q: "ベアーズはエアコン修理もしてくれますか？",
-    a: "ベアーズはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流して、ニオイや効きの改善を目指すサービスである点に注意してください。故障の場合は修理業者やメーカーへの相談が必要です。",
+    a: "ベアーズはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流し、ニオイや効きの改善を目的とするサービスである点にご注意ください。故障の場合は、修理業者やメーカーへご相談ください。",
   },
   {
     q: "対応エリアはどこですか？",
-    a: "公式では「全国5大都市を中心に」サービスを提供しているとされ、ハウスクリーニングの対応エリア一覧に掲載されているのは34都道府県（一部地域）です。青森・岩手・秋田・新潟・富山・石川・福井・岐阜・岡山・山口・徳島・香川・熊本などは掲載されていません（2026年10月15日・公式確認）。地域によって対応状況が変わるため、申し込み時に対応可否と空き状況を確認しておきましょう。",
+    a: "公式では「全国5大都市を中心に」サービスを提供しているとされ、ハウスクリーニングの対応エリア一覧に掲載されているのは34都道府県（一部地域）です。青森・岩手・秋田・新潟・富山・石川・福井・岐阜・岡山・山口・徳島・香川・熊本などは掲載されていません（2026年10月15日・公式確認）。地域によって対応状況が変わるため、お申し込み時に対応可否と空き状況をご確認ください。",
   },
   {
     q: "料金はどのくらいですか？",
-    a: "公式サイトでは、家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認）。台数やオプションによって総額は変わります。標準作業時間は壁掛け1台につき約1〜2時間とされています。正確な金額は公式サイトまたは申し込み時に確認してください。",
+    a: "公式サイトでは、家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認）。台数やオプションによって総額は変わります。標準作業時間は壁掛け1台につき約1〜2時間とされています。正確な金額は公式サイトまたはお申し込み時にご確認ください。",
   },
   {
-    q: "受付時間と連絡先は？",
+    q: "受付時間と連絡先を教えてください。",
     a: "公式サイトでは受付時間を9:00〜18:00(年中無休)、電話番号を0120-552-445と案内しています。サービス終了後30分以内のフォローコール対応や手直し保証も掲げられています。",
   },
   {
-    q: "支払い方法は何がありますか？",
-    a: "公式サイトでは、クレジットカードの事前登録による決済や、後払い決済(コンビニ・銀行振込・郵便局など)が案内されています。詳細は申し込み時に確認しておくと安心です。",
+    q: "どのような支払い方法がありますか？",
+    a: "公式サイトでは、クレジットカードの事前登録による決済や、後払い決済(コンビニ・銀行振込・郵便局など)が案内されています。詳細はお申し込み時にご確認ください。",
   },
 ];
 
@@ -54,7 +54,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ベアーズ(ハッピーベアーズ)の口コミ・評判は？料金・対応エリアを徹底調査【2026年最新】",
+    "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
   dateModified: "2026-07-19",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -90,9 +90,9 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ベアーズ(ハッピーベアーズ)の口コミ・評判は？
+            ベアーズ(ハッピーベアーズ)の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを徹底調査【2026年最新】
+            料金・対応エリアを調査【2026年最新】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -107,12 +107,12 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
-            家事代行でも知られる大手で、研修を受けたスタッフにエアコンを任せたい——そんなときに候補になるのが
+            家事代行でも知られる大手で、研修を受けたスタッフがエアコンクリーニングを行うサービスとして候補の一つになるのが
             <strong className="font-semibold text-slate-900">ベアーズ(ハッピーベアーズ)</strong>
-            です。この記事では、全国5大都市を中心にサービスを展開するベアーズについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声、料金の目安、対応エリアや受付体制、メリット・気になる点を、良い点・注意点の両面から中立的にまとめました。
+            です。本記事では、全国5大都市を中心にサービスを展開するベアーズについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声の傾向、料金の目安、対応エリアや受付体制、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※ベアーズは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミは、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
+            ※ベアーズは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミに関する記載は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年6月)。
           </p>
         </div>
 
@@ -137,7 +137,7 @@ export default function Page() {
               ベアーズは、株式会社ベアーズが運営する家事代行・ハウスクリーニングのサービスです。エアコンクリーニングでは、研修を受けたスタッフが内部を分解し、高圧洗浄でカビ・ホコリ・ダニを除去します。標準作業時間は壁掛け1台につき約1〜2時間とされています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              累計サービス実績は250万件超を公表しており、サービス終了後30分以内のフォローコールや手直し保証など、アフター対応の手厚さを掲げている点が特徴です。大手の安心感を重視する人に候補となるサービスです。
+              累計サービス実績は250万件超を公表しており、サービス終了後30分以内のフォローコールや手直し保証など、アフター対応の充実を掲げている点が特徴です。大手の実績を重視する方に適したサービスです。
             </p>
           </section>
 
@@ -172,15 +172,15 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみをお伝えしています。ベアーズについては、みん評・マイナビなどの口コミ調査記事や公式サイトのお客様の声で利用者の評価が公開されています。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。ベアーズについては、みん評・マイナビなどの口コミ調査記事や公式サイトのお客様の声で利用者の評価が公開されています。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>スタッフの丁寧な説明や、日程調整のスムーズさを評価する声が目立つ</li>
-                <li>長年掃除していないエアコンの頑固なカビ・汚れも落ちたとする内容が見られる</li>
-                <li>作業前後の写真を使ったわかりやすい説明への評価がある</li>
-                <li>作業終了後のフォローコールなど、アフター対応の安心感を評価する傾向がある</li>
+                <li>スタッフの丁寧な説明や、日程調整の円滑さを評価する内容</li>
+                <li>長年掃除していないエアコンの頑固なカビ・汚れも落ちたとする内容</li>
+                <li>作業前後の写真を使ったわかりやすい説明を評価する内容</li>
+                <li>作業終了後のフォローコールなど、アフター対応を評価する内容</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
@@ -191,17 +191,17 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判がある一方で、多くのスタッフが対応するサービスという性質上、
-              <strong className="font-semibold">担当スタッフや時期によって対応・予約状況に差が出る場合がある</strong>
-              点は理解しておきたいところです。安心して任せるために、申し込み時には次の点を確認しておくとよいでしょう。
+              好意的な評価がある一方で、多くのスタッフが対応するサービスという性質上、
+              <strong className="font-semibold">担当スタッフや時期によって対応・予約状況に差が生じる場合がある</strong>
+              点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(夏前など)は予約が取りにくく、日程調整に時間がかかる場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって作業や接客の感じ方に差が出る場合がある</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うか確認しておく</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>料金は機種・台数・オプションで変わるため、申し込み時に総額を確認する</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>繁忙期(夏前など)は予約が取りにくく、日程調整に時間がかかる場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって、作業や接客の受け止め方に差が生じる場合があります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うかをご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>料金は機種・台数・オプションにより異なるため、お申し込み時に総額をご確認ください。</li>
             </ul>
           </section>
 
@@ -211,10 +211,10 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>累計250万件超の実績がある大手の安心感</li>
-                  <li>研修を受けたスタッフによる分解洗浄</li>
-                  <li>終了後30分以内のフォローコール・手直し保証(公称)</li>
-                  <li>後払い決済など支払い方法が選べる</li>
+                  <li>累計250万件超の実績がある大手が運営している</li>
+                  <li>研修を受けたスタッフが分解洗浄を行う</li>
+                  <li>終了後30分以内のフォローコール・手直し保証がある(公称)</li>
+                  <li>後払い決済など支払い方法を選べる</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
@@ -222,29 +222,29 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>対応エリアは5大都市中心で、対応エリア一覧に掲載のない県もある</li>
                   <li>繁忙期は予約が取りにくくなる場合がある</li>
-                  <li>担当スタッフにより対応に差が出ることがある</li>
-                  <li>故障修理ではなくクリーニングのサービス</li>
+                  <li>担当スタッフにより対応に差が生じる場合がある</li>
+                  <li>故障修理ではなくクリーニングのサービスである</li>
                 </ul>
               </div>
             </div>
           </section>
 
           <section id="fit" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている人・向いていない人</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">向いている方・向いていない方</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いている人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>実績の多い大手で安心して依頼したい人</li>
-                  <li>アフターのフォローや手直し保証を重視したい人</li>
-                  <li>ニオイや効きの悪さを内部洗浄で改善したい人</li>
+                  <li>実績の多い大手に依頼したい方</li>
+                  <li>アフターのフォローや手直し保証を重視したい方</li>
+                  <li>ニオイや効きの悪さを内部洗浄で改善したい方</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 p-6">
-                <h3 className="font-bold text-slate-800 mb-3">向いていない人</h3>
+                <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>とにかく最短で当日来てほしい人(繁忙期は調整に時間がかかる)</li>
-                  <li>清掃ではなく、故障の修理を頼みたい人</li>
+                  <li>当日中の訪問を最優先したい方(繁忙期は日程調整に時間がかかります)</li>
+                  <li>清掃ではなく、故障の修理を頼みたい方</li>
                 </ul>
               </div>
             </div>
@@ -256,18 +256,18 @@ export default function Page() {
               ベアーズのエアコンクリーニングの料金は、公式サイトで家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認）。台数や、室外機・防カビコートなどのオプションによって総額は変わります。標準作業時間は壁掛け1台につき約1〜2時間とされています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              台数が増えると割引が適用される場合もあります。お掃除機能付きは作業内容が変わり料金も上がるため、お持ちの機種を伝えたうえで、申し込み時に最新の料金と総額を確認しておくと安心です。
+              台数が増えると割引が適用される場合もあります。お掃除機能付きは作業内容が変わり料金も上がるため、お持ちの機種を伝えたうえで、お申し込み時に最新の料金と総額をご確認ください。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は2026年10月15日時点の公式サイトの表示です。変更される場合があるため、最新の金額は公式サイト・申し込み時にご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※料金は2026年10月15日時点の公式サイトの表示です。変更される場合があるため、最新の金額は公式サイト・お申し込み時にご確認ください。</p>
           </section>
 
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">依頼から作業完了までの流れ</h2>
             <ol className="space-y-4">
               {[
-                ["電話・Webで相談", "機種や台数、汚れの状況を伝えます。受付は9:00〜18:00(年中無休)です。"],
-                ["日程の調整", "希望日を伝えると折り返しの連絡で日程を調整します。"],
-                ["訪問・養生", "研修を受けたスタッフが訪問し、周囲をしっかり養生します。"],
+                ["電話・Webでの相談", "機種や台数、汚れの状況を伝えます。受付は9:00〜18:00(年中無休)です。"],
+                ["日程の調整", "希望日を伝えると、折り返しの連絡で日程を調整します。"],
+                ["訪問・養生", "研修を受けたスタッフが訪問し、周囲を養生します。"],
                 ["分解洗浄", "エアコンを分解し、高圧洗浄で内部のカビ・ホコリを洗い流します。"],
                 ["動作確認・フォロー", "仕上がりと動作を確認し、終了後にフォローコールがあります。"],
               ].map(([t, d], i) => (
@@ -300,15 +300,15 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ベアーズは、家事代行・ハウスクリーニングで実績の多い大手のエアコンクリーニングサービスです。利用者の声では、スタッフの丁寧な説明・対応や、頑固な汚れまで落とす洗浄力、終了後のフォローを評価する内容が見られます。一方で、繁忙期の予約の取りにくさや担当による差、故障の修理ではなくクリーニングである点は理解しておきましょう。
+              ベアーズは、家事代行・ハウスクリーニングで実績の多い大手のエアコンクリーニングサービスです。利用者の声では、スタッフの丁寧な説明・対応や、頑固な汚れまで落とす洗浄力、終了後のフォローを評価する内容が見られます。一方で、繁忙期の予約の取りにくさや担当による差、故障の修理ではなくクリーニングである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              料金は機種・台数・オプションで変わります。申し込み時に総額と作業範囲を確認し、納得してから依頼するのがおすすめです。
+              料金は機種・台数・オプションにより異なります。お申し込み時に総額と作業範囲を確認したうえで依頼することをおすすめします。
             </p>
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">エアコンのニオイ・汚れが気になる方へ</p>
-              <p className="text-sky-100 text-sm mb-5">大手の安心感とアフター対応を重視するなら、まずは料金を確認してみましょう。</p>
+              <p className="text-sky-100 text-sm mb-5">ご利用前に、公式サイトにて最新の料金をご確認ください。</p>
               <a href="https://www.happy-bears.com/houseclean/aircon/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                 ベアーズ公式サイトを見る
               </a>

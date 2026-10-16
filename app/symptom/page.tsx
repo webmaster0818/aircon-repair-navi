@@ -6,7 +6,7 @@ import symptoms from "@/data/symptoms.json";
 export const metadata: Metadata = {
   title: "エアコンの故障・症状から原因と対処法を探す｜症状別ガイド【2026年】",
   description:
-    "エアコンが冷えない・水漏れ・異音・ガス漏れ・動かないなど、症状別に原因と自分でできる対処法、業者に頼むべきサイン、修理費用の目安（要見積もり）を解説。あてはまる症状を選んで原因と直し方を確認できる症状別ガイドの一覧です。",
+    "エアコンが冷えない・水漏れ・異音・ガス漏れ・動かないなど、症状別に原因と自分でできる対処法、業者に頼むべきサイン、修理費用の目安（要見積もり）を解説しています。該当する症状を選択すると、原因と対処法をご確認いただける症状別ガイドの一覧です。",
   alternates: { canonical: "/symptom" },
 };
 
@@ -48,7 +48,7 @@ export default function SymptomHubPage() {
         <div className="max-w-5xl mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコンの症状から原因と対処法を探す</h1>
           <p className="text-[var(--color-brand-wash)] max-w-2xl text-sm md:text-base leading-[2]">
-            エアコンの故障・トラブルは症状ごとに原因と対処法が異なります。あてはまる症状を選ぶと、考えられる原因・自分でできる対処・業者に頼むべきサイン・修理費用の目安を確認できます。
+            エアコンの故障・トラブルは症状ごとに原因と対処法が異なります。該当する症状を選択すると、考えられる原因、ご自身でできる対処、業者への依頼を検討すべき症状、修理費用の目安をご確認いただけます。
           </p>
         </div>
       </section>
@@ -57,7 +57,7 @@ export default function SymptomHubPage() {
         {/* Symptom grid */}
         <section>
           <h2 className="text-xl font-bold text-slate-900 mb-2">症状から探す（全{sorted.length}種類）</h2>
-          <p className="text-sm text-gray-500 mb-6">あてはまる症状を選んでください。</p>
+          <p className="text-sm text-gray-500 mb-6">該当する症状を選択してください。</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {sorted.map((s) => {
               const icon = iconMap[s.slug];
@@ -83,19 +83,19 @@ export default function SymptomHubPage() {
 
         {/* Guides */}
         <section>
-          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">もっと詳しく知りたい方へ</h2>
+          <h2 className="text-xl font-bold text-slate-900 mb-4 pb-2 border-b-2 border-sky-500">関連ガイド</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <Link href="/cost/repair-price/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコン修理費用の相場ガイド</span>
               <span className="block text-xs text-gray-500">症状・修理内容別の費用相場と見積もりのポイント</span>
             </Link>
             <Link href="/guide/noise" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
-              <span className="block font-bold text-slate-900 mb-1">エアコンの異音 原因と対処ガイド</span>
+              <span className="block font-bold text-slate-900 mb-1">エアコンの異音の原因と対処ガイド</span>
               <span className="block text-xs text-gray-500">ガガガ・カラカラなど音の種類別の原因と対処法</span>
             </Link>
             <Link href="/ranking" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコン修理業者ランキング</span>
-              <span className="block text-xs text-gray-500">編集部が比較したおすすめ修理業者一覧</span>
+              <span className="block text-xs text-gray-500">編集部が比較した修理業者の一覧</span>
             </Link>
             <Link href="/cost/repair-price" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">修理費用の詳細</span>
@@ -105,7 +105,7 @@ export default function SymptomHubPage() {
         </section>
 
         <p className="text-xs text-gray-400">
-          ※掲載している原因・対処法は一般的な知見に基づくもので、すべてのケースに当てはまるとは限りません。費用はあくまで目安で、実際の金額は症状・機種・地域・業者によって変動します。正確な額は見積もりでご確認ください。
+          ※掲載している原因・対処法は一般的な知見にもとづくもので、すべてのケースに当てはまるものではありません。費用は目安であり、実際の金額は症状・機種・地域・業者によって変動します。正確な金額は見積もりにてご確認ください。
         </p>
       </div>
     </>
