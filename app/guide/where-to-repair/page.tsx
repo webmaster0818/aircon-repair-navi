@@ -27,7 +27,7 @@ const toc = [
 const makers = [
   {
     name: "ダイキン",
-    phone: "コンタクトセンター（24時間365日受付）",
+    phone: "0120-88-1081（ダイキンコンタクトセンター）",
     web: "Web修理申込あり",
     note: "受付は24時間365日",
     url: "https://www.daikin.co.jp/contact/consumer",
@@ -312,7 +312,7 @@ export default function WhereToRepairPage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※各社公式サイトの{UPDATED}時点の掲載情報です。ダイキンの電話受付は公式サイトでは番号が画像で案内されているため、上記リンク先からご確認ください。三菱電機は修理専用番号の掲載が確認できなかったため、お客さま相談センターの番号を記載しています。電話番号のかけ間違いにご注意ください。
+              ※各社公式サイトの{UPDATED}時点の掲載情報です。ダイキンの電話番号は2026年10月17日に公式の問い合わせページ（daikincc.com）で確認しました。三菱電機は修理専用番号の掲載が確認できなかったため、お客さま相談センターの番号を記載しています。電話番号のかけ間違いにご注意ください。
             </p>
           </section>
 
