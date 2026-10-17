@@ -66,8 +66,8 @@ export default function RepairPricePage() {
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">エアコン修理費用の相場</h1>
         <div className="bg-sky-50 border border-sky-200 rounded-xl p-4 my-5 text-sm text-slate-700">
-          <p className="font-bold mb-1">当サイトでは、27社の料金を各社の公式サイトで確認しています（2026年7月7日確認）</p>
-          <p>本ページの費用の目安に加え、<Link href="/cost/price-index/" className="text-sky-600 underline font-bold">料金インデックス【2026年7月調査】</Link>にて、各社の出張費・見積もり無料の有無・公式サイト掲載の金額を一覧にしています。各項目には確認日を記載しています。</p>
+          <p className="font-bold mb-1">当サイトでは、掲載各社の料金を各社の公式サイトで確認しています（2026年10月17日確認）</p>
+          <p>本ページの費用の目安に加え、<Link href="/cost/price-index/" className="text-sky-600 underline font-bold">料金インデックス【2026年10月調査】</Link>にて、各社の出張費・見積もり無料の有無・公式サイト掲載の金額を一覧にしています。各項目には確認日を記載しています。</p>
         </div>
           <p className="text-sky-100 text-lg">症状・修理内容別の費用の目安をご説明します</p>
         </div>

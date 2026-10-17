@@ -305,7 +305,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              住まいのホットラインの料金は<strong className="font-semibold">掲載店舗ごとに設定</strong>されており、公式に示されているのは症状別の目安の金額帯です。各店舗ページで料金と口コミを比較できるため、<strong className="font-semibold">複数の店舗を比較し、訪問時には作業範囲と総額の見積もりを書面で記録する</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>でご確認いただけます。
+              住まいのホットラインの料金は<strong className="font-semibold">掲載店舗ごとに設定</strong>されており、公式に示されているのは症状別の目安の金額帯です。各店舗ページで料金と口コミを比較できるため、<strong className="font-semibold">複数の店舗を比較し、訪問時には作業範囲と総額の見積もりを書面で記録する</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>でご確認いただけます。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は公式まとめおよび掲載店舗の目安です。正確な金額は各店舗の見積もりでご確認ください（2026年7月12日確認）。</p>
           </section>

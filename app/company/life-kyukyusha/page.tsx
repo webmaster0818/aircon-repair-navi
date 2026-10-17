@@ -224,7 +224,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（調査結果にもとづく）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>旧公式ドメインにアクセスできず、情報開示が限られています</strong>——かつての公式ドメイン（life-kyukyusha.jp）は2026年7月12日時点で名前解決ができない状態でした。現在の公式ページ（lifeqq.info）も2026年10月15日時点でSSL証明書の期限が切れており、会社概要・許認可は公式に確認できません</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>症状別の料金実額・キャンセル料が不明です</strong>。公式の料金は「作業費（調査・施工）5,500円〜＋部材費」のみで、数万〜10万円以上かかる作業もあると注記されています。深夜・早朝は夜間料金が発生する場合があります（2026年10月15日・公式確認）。金額を重視する方は、料金の実額を公開している業者との比較をおすすめします</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>症状別の料金実額が公表されていません</strong>。公式の料金は「作業費（調査・施工）5,500円〜＋部材費」のみで、数万〜10万円以上かかる作業もあると注記されています。深夜・早朝は夜間料金が発生する場合があります（2026年10月15日・公式確認）。キャンセル料は原則無料で、遠方・深夜の出張を希望した場合のみ5,500円と公式FAQに記載されています（2026年10月17日・公式確認）。金額を重視する方は、料金の実額を公開している業者との比較をおすすめします</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>紹介型で施工は別会社が担います</strong>。公式FAQでは保証期間は1年とされていますが、訪問する担当者・料金は手配先（株式会社ARS等とされる）により異なるため、保証の範囲は依頼前にご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>建設業許可・電気工事業登録などの公式な許認可表示が確認できません</strong>。電気工事を伴う作業もあるため、訪問時に施工会社名と有資格者かどうかをご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>口コミで作業・料金トラブルの指摘が見られます</strong>（ガス補充のみで根本的な修理を行わずメーカー修理を勧められた、高額請求、直前キャンセル等）。作業前の書面による見積もりと相見積もりが特に重要です</span></li>
@@ -287,7 +287,7 @@ export default function Page() {
                     ["出張費", "依頼時に要確認"],
                     ["見積もり", "公式に記載なし（受付時に無料かどうかを要確認）"],
                     ["症状別の修理実額", "公式に記載なし（現地見積もりで決まる）"],
-                    ["キャンセル料", "公式に記載なし（要確認）"],
+                    ["キャンセル料", "原則無料（遠方・深夜の出張を希望した場合は5,500円・2026年10月17日公式確認）"],
                     ["深夜・早朝の割増", "夜間料金が発生する場合あり（公式FAQ）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -307,7 +307,7 @@ export default function Page() {
             <p className="text-base font-bold text-slate-800 mb-1">料金相場の確認と比較</p>
             <p className="text-sm text-slate-500 mb-4">実額を公開している業者と相見積もりを取ると、金額の妥当性を判断しやすくなります。</p>
             <Link href="/cost/price-index/" className="ac-btn ac-btn-primary px-7 py-3">
-              27社の料金調査一覧を見る →
+              各社の料金調査一覧を見る →
             </Link>
           </div>
 

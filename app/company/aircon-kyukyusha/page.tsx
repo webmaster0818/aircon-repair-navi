@@ -297,7 +297,7 @@ export default function Page() {
             <p className="leading-8 text-slate-700">
               いずれの「エアコン救急隊」も、公式サイト上に料金の数字が掲載されていません。エアコン修理の費用は症状や作業内容(点検・ガス補充・部品交換など)で大きく変わるため、
               <strong className="font-semibold">正確な金額は現地の見積もりで確認し、書面で残す</strong>
-              ことが基本です。費用の相場は当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">27社の料金インデックス</Link>でご確認いただけます。可能であれば、料金を公開している業者を含む複数の業者から見積もりを取り、金額と対応を比較することをおすすめします。
+              ことが基本です。費用の相場は当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">料金インデックス</Link>でご確認いただけます。可能であれば、料金を公開している業者を含む複数の業者から見積もりを取り、金額と対応を比較することをおすすめします。
             </p>
           </section>
 

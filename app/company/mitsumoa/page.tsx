@@ -330,7 +330,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              ミツモアは<strong className="font-semibold">依頼者の手数料が0円</strong>で、実際の修理料金は各プロの見積もりで決まる方式です。上表の相場例はミツモア公式メディア掲載の目安で、症状・機種・プロにより変動します。金額だけでなく口コミの内容もあわせて確認し、<strong className="font-semibold">追加料金が発生する条件を依頼前にチャットで記録しておく</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でもご確認いただけます。冷えない・効かないなどの故障は<Link href="/cost/replace-vs-repair" className="text-sky-700 underline">メーカー修理や買い替え</Link>が適する場合もあります。
+              ミツモアは<strong className="font-semibold">依頼者の手数料が0円</strong>で、実際の修理料金は各プロの見積もりで決まる方式です。上表の相場例はミツモア公式メディア掲載の目安で、症状・機種・プロにより変動します。金額だけでなく口コミの内容もあわせて確認し、<strong className="font-semibold">追加料金が発生する条件を依頼前にチャットで記録しておく</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でもご確認いただけます。冷えない・効かないなどの故障は<Link href="/cost/replace-vs-repair" className="text-sky-700 underline">メーカー修理や買い替え</Link>が適する場合もあります。
             </p>
           </section>
 

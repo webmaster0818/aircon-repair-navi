@@ -202,7 +202,7 @@ export default function WaterLeakPage() {
                 <li>・ダイキン公式FAQ「室内機から水が漏れる（ルームエアコン）」（{UPDATED}確認）</li>
                 <li>・ダイキン公式FAQ「エアコンから水が漏れている（修理金額）」壁掛け17,000〜64,000円程度・税込（{UPDATED}確認）</li>
                 <li>・ダイキン公式FAQ「室外機から水が出る（ルームエアコン）」故障ではない旨の記載あり（{UPDATED}確認）</li>
-                <li>・電気の工事屋さん／すまいのホットラインの掲載額：当サイトによる業者横断の調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社料金インデックス</Link>）</li>
+                <li>・電気の工事屋さん／すまいのホットラインの掲載額：当サイトによる業者横断の調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>）</li>
                 <li>・国民生活センター「エアコン修理のトラブルに注意！」（2026年6月3日公表）</li>
                 <li>・民法606条（賃貸物の修繕義務）</li>
               </ul>
@@ -216,7 +216,7 @@ export default function WaterLeakPage() {
                 { href: "/ranking", label: "エアコン修理業者ランキング" },
                 { href: "/guide/rental-aircon-repair/", label: "賃貸エアコン修理の費用負担ガイド" },
                 { href: "/guide/where-to-repair/", label: "エアコン修理の依頼先の選び方" },
-                { href: "/cost/price-index/", label: "27社の料金インデックス（当サイト調査）" },
+                { href: "/cost/price-index/", label: "料金インデックス（当サイト調査）" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

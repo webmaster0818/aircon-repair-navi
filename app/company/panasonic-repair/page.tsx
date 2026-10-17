@@ -287,15 +287,15 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">※パナソニックの料金・条件は公式サイトの掲載情報（当サイト確認日：2026年7月12日）。街の業者の傾向は当サイトが実施した27社の調査にもとづく一般的な整理であり、実際の料金・対応は業者により異なります。</p>
+            <p className="mt-3 text-xs text-slate-400">※パナソニックの料金・条件は公式サイトの掲載情報（当サイト確認日：2026年7月12日）。街の業者の傾向は当サイトが実施した掲載各社の調査にもとづく一般的な整理であり、実際の料金・対応は業者により異なります。</p>
             <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
               <p className="font-bold text-slate-900 mb-1">実額で比べたい方へ</p>
               <p className="text-[0.95rem] leading-7 text-slate-700 mb-4">
-                当サイトでは、27社の出張費、見積もり無料の有無、公式サイトに掲載された実額を一覧にまとめ、確認日を記載しています。メーカーと業者の料金条件を比較してご確認いただけます。
+                当サイトでは、掲載各社の出張費、見積もり無料の有無、公式サイトに掲載された実額を一覧にまとめ、確認日を記載しています。メーカーと業者の料金条件を比較してご確認いただけます。
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 <Link href="/cost/price-index/" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
-                  料金インデックス【27社調査】 →
+                  料金インデックス（当サイト調査） →
                 </Link>
                 <Link href="/ranking" className="block rounded-xl border border-sky-200 bg-white px-4 py-3 text-sm font-semibold text-sky-800 hover:bg-sky-50 transition-colors">
                   修理業者ランキングで比較する →

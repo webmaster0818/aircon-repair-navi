@@ -185,7 +185,7 @@ export default function CleaningFeePage() {
               （例: ダイキン公式の水漏れ修理目安は壁掛け17,000〜64,000円）。
               汚れと故障のどちらが原因かを先に見極めることが、費用の節約につながります。
               修理側の実額は<Link href="/cost/repair-price/" className="text-sky-600 underline underline-offset-2">修理費用の相場</Link>・
-              <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社の料金インデックス</Link>にまとめています。
+              <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>にまとめています。
               また、製造から10年を超えている機種は<Link href="/guide/lifespan/" className="text-sky-600 underline underline-offset-2">寿命と買い替えの判断</Link>もあわせてご検討ください。
             </p>
           </section>

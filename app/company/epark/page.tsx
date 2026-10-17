@@ -121,7 +121,7 @@ export default function Page() {
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・EPARKくらしのレスキューは<strong>業者を比較して選べる検索プラットフォーム</strong>です。料金・受付時間・キャンセル料は<strong>すべて掲載業者ごとに異なります</strong>（運営は料金を決めていません）</li>
               <li>・利用規約上、<strong>契約は利用者と業者の直接契約で、運営はトラブルを仲介・保証しません</strong>。そのため、業者選びが重要です</li>
-              <li>・複数業者の掲載条件や口コミを比較して、ご自身で選びたい方に適しています。選ぶ手間を省きたい方は、当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査</Link>から、料金の実額を公開している業者を選ぶ方法もあります</li>
+              <li>・複数業者の掲載条件や口コミを比較して、ご自身で選びたい方に適しています。選ぶ手間を省きたい方は、当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">各社の料金調査</Link>から、料金の実額を公開している業者を選ぶ方法もあります</li>
             </ul>
             <p className="mt-3 text-xs text-slate-400">※2026年7月7日に公式サイト・利用規約・運営会社情報を確認した内容です。</p>
           </div>
@@ -283,7 +283,7 @@ export default function Page() {
               EPARKくらしのレスキュー自体は料金を設定せず、<strong className="font-semibold">掲載業者ごとの料金がそのまま適用されます</strong>。支払いは施工完了後に業者へ直接支払う後払い方式で、カード払いの可否も業者によって異なります。エアコンカテゴリの掲載例（確認日時点）では、基本料金3,300円〜・エアコン修理8,800円〜・ガスチャージ8,800円〜（エアコントラブルセンター）などの表記がありました。
             </p>
             <p className="leading-8 text-slate-700">
-              そのため、EPARKを利用すること自体で料金が安くなる、または高くなることはなく、<strong className="font-semibold">選んだ業者の料金表が適用されます</strong>。同じ業者に直接申し込む場合と条件が異なるかどうか、業者の公式サイトとあわせてご確認ください。費用の相場は<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>をご覧ください。
+              そのため、EPARKを利用すること自体で料金が安くなる、または高くなることはなく、<strong className="font-semibold">選んだ業者の料金表が適用されます</strong>。同じ業者に直接申し込む場合と条件が異なるかどうか、業者の公式サイトとあわせてご確認ください。費用の相場は<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>をご覧ください。
             </p>
           </section>
 

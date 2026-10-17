@@ -158,7 +158,7 @@ export default function ErrorCodeDaikinPage() {
               点検のみでもダイキン公式の目安で8,500〜19,000円程度（当サイト調査）がかかるため、依頼前に費用の目安を確認しておくことをおすすめします。
               <Link href="/cost/maker-repair-fee/" className="text-sky-600 underline underline-offset-2">メーカー修理費用の比較</Link>・
               <Link href="/cost/repair-price/" className="text-sky-600 underline underline-offset-2">修理費用の相場</Link>・
-              <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">27社の料金インデックス</Link>をご覧ください。
+              <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>をご覧ください。
               製造から10年前後の機種は<Link href="/guide/lifespan/" className="text-sky-600 underline underline-offset-2">寿命と買い替えの判断</Link>もあわせてご覧ください。
             </p>
           </section>

@@ -122,7 +122,7 @@ export default function Page() {
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・運営は東証プライム上場の<strong>株式会社ケーズホールディングス</strong>。窓口はケーズデンキで、<strong>出張修理はメーカー修理の取次</strong>が基本です</li>
               <li>・<strong>出張費・診断料は無料ではありません</strong>。公式に「症状が未再現でも・修理をキャンセルしても診断料・点検料・出張料がかかる場合がある」と明記されています（金額は非公開）</li>
-              <li>・<strong>長期無料保証／あんしんパスポート加入品は、保証の範囲内であれば無料で修理を受けられます</strong>。ただし、保証切れや症状未再現時の費用は有料です。お急ぎの場合や料金を比較したい場合は、料金の実額を公開している業者との相見積もりをおすすめします（<Link href="/cost/price-index/" className="text-sky-700 underline">27社の料金調査一覧</Link>）</li>
+              <li>・<strong>長期無料保証／あんしんパスポート加入品は、保証の範囲内であれば無料で修理を受けられます</strong>。ただし、保証切れや症状未再現時の費用は有料です。お急ぎの場合や料金を比較したい場合は、料金の実額を公開している業者との相見積もりをおすすめします（<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査一覧</Link>）</li>
             </ul>
             <p className="mt-3 text-xs text-slate-400">※2026年7月11日にケーズデンキ公式サイト（修理・長期無料保証・あんしんパスポート各ページ）で確認した内容です。</p>
           </div>
@@ -314,7 +314,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              ケーズデンキでの購入品で保証期間内であれば、あんしんパスポートと連携した長期無料保証により無料で修理を受けられる点が主な特徴です。一方、<strong className="font-semibold">保証切れの場合は、診断料・点検料・出張料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります</strong>。症状別の実額を公開している業者と異なり、金額は現地での見積もりで決まるため、提示された見積もりを書面で受け取ることをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
+              ケーズデンキでの購入品で保証期間内であれば、あんしんパスポートと連携した長期無料保証により無料で修理を受けられる点が主な特徴です。一方、<strong className="font-semibold">保証切れの場合は、診断料・点検料・出張料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります</strong>。症状別の実額を公開している業者と異なり、金額は現地での見積もりで決まるため、提示された見積もりを書面で受け取ることをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は機種・症状・保証加入状況により変動します。正確な金額は申込・現地の見積もりでご確認ください（2026年7月11日時点の公式確認）。</p>
             <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">

@@ -321,7 +321,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              エアコン修理の料金は<strong className="font-semibold">出店者が設定する方式</strong>で、上記の金額は掲載されている出品の一部を確認したものです（各出店者により異なり、追加料金が発生する場合があります）。複数の出店者を比較し、<strong className="font-semibold">追加料金が発生する条件を予約前にメッセージで確認する</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でもご確認いただけます。冷えない・効かないなどの故障の修理は、メーカー修理が適している場合もあるため、症状に応じてお選びください。
+              エアコン修理の料金は<strong className="font-semibold">出店者が設定する方式</strong>で、上記の金額は掲載されている出品の一部を確認したものです（各出店者により異なり、追加料金が発生する場合があります）。複数の出店者を比較し、<strong className="font-semibold">追加料金が発生する条件を予約前にメッセージで確認する</strong>ことをおすすめします。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でもご確認いただけます。冷えない・効かないなどの故障の修理は、メーカー修理が適している場合もあるため、症状に応じてお選びください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※出典：くらしのマーケット公式エアコン修理カテゴリ（curama.jp）、損害賠償補償制度ページ（curama.jp/guarantee/）。2026年7月12日確認。料金は目安であり、正確な金額は各出店者のページ・見積もりでご確認ください。</p>
           </section>

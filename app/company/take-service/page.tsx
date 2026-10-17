@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "料金はどのくらいかかりますか？",
-    a: "症状別の実額は公式に掲載されておらず、現地見積もりで金額が決まる完全見積制です。「見積金額の範囲内での作業」を公式に明記しているため、作業前に総額見積もりを書面で受け取ったうえでご判断ください。相場の目安は当サイトの27社料金調査（/cost/price-index/）が参考になります。",
+    a: "症状別の実額は公式に掲載されておらず、現地見積もりで金額が決まる完全見積制です。「見積金額の範囲内での作業」を公式に明記しているため、作業前に総額見積もりを書面で受け取ったうえでご判断ください。相場の目安は当サイトの料金調査（/cost/price-index/）が参考になります。",
   },
   {
     q: "誰が修理に来るのですか？",
@@ -158,7 +158,7 @@ export default function Page() {
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・<strong>出張費・見積もり・依頼前キャンセルは無料</strong>（公式明記）。ただし<strong>症状別の料金実額は公式に掲載がなく「完全見積制」</strong>です</li>
               <li>・実態は<strong>全国の加盟店を紹介する受付サービス（紹介型）</strong>。施工は加盟店が行い、保証内容も工事内容・加盟店により異なります</li>
-              <li>・夜間や急ぎで早期の訪問を希望される方に適しています。<strong>金額を比較してから決めたい方には、実額を公開している業者との相見積もりをおすすめします</strong>（<Link href="/cost/price-index/" className="text-sky-700 underline">27社の料金調査一覧</Link>）</li>
+              <li>・夜間や急ぎで早期の訪問を希望される方に適しています。<strong>金額を比較してから決めたい方には、実額を公開している業者との相見積もりをおすすめします</strong>（<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査一覧</Link>）</li>
             </ul>
             <p className="mt-3 text-xs text-slate-400">※2026年7月7日に公式受付ページで確認した内容です。</p>
           </div>
@@ -220,7 +220,7 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "テイクサービス"],
-                    ["運営会社", "株式会社アシスト（東京都渋谷区渋谷3-28-15）"],
+                    ["運営会社", "株式会社アシスト（東京都中央区銀座4-14-15・公式の会社概要より、2026年10月17日確認）"],
                     ["業態", "加盟店紹介型（受付・手配を行い、施工は全国の加盟店が実施）"],
                     ["許認可の表示", "公式ページに建設業許可・電気工事業登録等の記載なし（施工する加盟店の許認可も非開示・2026年7月7日確認）"],
                     ["対応エリア", "全国対応（公式LP・2026年10月15日確認。地域により対応スピードが異なる）"],
@@ -353,7 +353,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              症状別の実額を公開している業者（例: 修理3,300円〜等）と異なり、テイクサービスは<strong className="font-semibold">現地見積もりで金額が決まる方式</strong>です。「見積金額の範囲内での作業」を公式に明記しているため、<strong className="font-semibold">提示された見積もりを書面で残す</strong>ことが重要です。相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
+              症状別の実額を公開している業者（例: 修理3,300円〜等）と異なり、テイクサービスは<strong className="font-semibold">現地見積もりで金額が決まる方式</strong>です。「見積金額の範囲内での作業」を公式に明記しているため、<strong className="font-semibold">提示された見積もりを書面で残す</strong>ことが重要です。相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
             </p>
           </section>
 
@@ -436,7 +436,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              完全見積制のサービスで金額の妥当性を判断するには、<strong className="font-semibold">症状別の相場を事前に把握したうえで見積もりを受ける</strong>ことが有効です。ガス補充・基板交換・水漏れ修理などの相場は、当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">27社料金調査インデックス</Link>で確認できます。提示額が相場から大きく外れている場合は、内訳(部品代・技術料・出張関連費)の説明を求めることをおすすめします。
+              完全見積制のサービスで金額の妥当性を判断するには、<strong className="font-semibold">症状別の相場を事前に把握したうえで見積もりを受ける</strong>ことが有効です。ガス補充・基板交換・水漏れ修理などの相場は、当サイトの<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>と<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>で確認できます。提示額が相場から大きく外れている場合は、内訳(部品代・技術料・出張関連費)の説明を求めることをおすすめします。
             </p>
             <p className="mt-3 text-xs text-slate-400">※メニューの掲載内容は2026年8月2日に公式受付ページで確認したものです。対応可否は症状・機種・地域により異なります。</p>
           </section>
@@ -496,7 +496,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">東京都練馬区西大泉の株式会社テイクサービス</strong>：管工事・冷暖房設備工事を手がける建設業の会社で、こちらも別会社です</span></li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">
-              本記事で紹介しているエアコン修理受付のテイクサービスは、株式会社アシスト(東京都渋谷区)が運営するとされる紹介型サービスです。評判を調べる際は、運営会社名とサービス内容(エアコン修理の受付・紹介)が一致しているかを確認し、同名の別会社の評価と取り違えないよう注意してください。
+              本記事で紹介しているエアコン修理受付のテイクサービスは、株式会社アシスト(東京都中央区)が運営する紹介型サービスです。評判を調べる際は、運営会社名とサービス内容(エアコン修理の受付・紹介)が一致しているかを確認し、同名の別会社の評価と取り違えないよう注意してください。
             </p>
           </section>
 
