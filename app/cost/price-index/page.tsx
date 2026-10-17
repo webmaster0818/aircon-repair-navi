@@ -44,7 +44,7 @@ const cleaningRows = [
   { name: "カジタク", slug: "kajitaku", normal: "14,300円（ライト10,780円）", robot: "25,080円", extra: "駐車料金カジタク負担・イオングループ" },
   { name: "ハッピーベアーズ", slug: "happy-bears", normal: "14,190円", robot: "21,780円", extra: "駐車代一部負担例あり・39都道府県" },
   { name: "ダスキン", slug: "duskin-servicemaster", normal: "15,400円", robot: "26,400円", extra: "土日祝夜間は追加の場合あり・全国1,208店" },
-  { name: "Rクリーニング", slug: "r-cleaning", normal: "19,350円（キャンペーン時10,780円）", robot: "24,750円（同17,600円）", extra: "キャンペーンは期限付き・関東" },
+  { name: "Rクリーニング", slug: "r-cleaning", normal: "19,350円（キャンペーン時10,780円）", robot: "24,750円（同18,700円・10月17日確認）", extra: "キャンペーンは期限付き・関東" },
 ];
 
 export default function PriceIndexPage() {
@@ -209,9 +209,10 @@ export default function PriceIndexPage() {
 
         {/* 更新履歴 */}
         <section className="mb-10">
-          <h2 className="text-lg font-bold text-slate-900 mb-3">更新履歴（毎月更新）</h2>
+          <h2 className="text-lg font-bold text-slate-900 mb-3">更新履歴</h2>
           <ul className="text-sm text-slate-600 space-y-1 bg-slate-50 rounded-xl p-5 border border-slate-200">
             <li>・2026年7月7日: 初回調査（27社の公式サイトを直接確認して公開）</li>
+            <li>・2026年10月17日: Rクリーニングのお掃除機能付きのキャンペーン価格を公式で再確認し、18,700円に更新</li>
           </ul>
         </section>
 
@@ -223,7 +224,7 @@ export default function PriceIndexPage() {
           </Link>
           <Link href="/ranking/" className="bg-white border border-gray-200 rounded-xl p-4 hover:border-sky-300 transition-colors">
             <p className="font-bold text-slate-900 text-sm">修理業者ランキング</p>
-            <p className="text-xs text-slate-500 mt-1">2026年10月更新・27社比較</p>
+            <p className="text-xs text-slate-500 mt-1">2026年10月更新・26社比較</p>
           </Link>
           <Link href="/ranking/fast/" className="bg-white border border-gray-200 rounded-xl p-4 hover:border-sky-300 transition-colors">
             <p className="font-bold text-slate-900 text-sm">即日対応の業者ランキング</p>
