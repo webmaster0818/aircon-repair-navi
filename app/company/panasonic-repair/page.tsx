@@ -377,7 +377,7 @@ export default function Page() {
                 <Link href="/ranking" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
                   街の修理業者を比較する
                 </Link>
-                <a href="https://panasonic.jp/support/repair/on-site.html" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full border border-white/70 px-7 py-3 font-bold text-white hover:bg-white/10 transition-colors">
+                <a href="https://panasonic.jp/membership/repair/search/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full border border-white/70 px-7 py-3 font-bold text-white hover:bg-white/10 transition-colors">
                   パナソニック公式修理を見る
                 </a>
               </div>
