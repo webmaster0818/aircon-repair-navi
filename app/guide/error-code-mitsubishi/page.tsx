@@ -4,13 +4,13 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "三菱エアコン(霧ヶ峰)のランプ点滅・エラー表示の意味【家庭用】公式FAQにもとづく対処",
+    "霧ヶ峰のランプの意味｜緑・オレンジの点灯と点滅・エラー表示【三菱電機公式FAQ・取扱説明書】",
   description:
-    "三菱電機の家庭用ルームエアコン（霧ヶ峰）のランプ点滅・エラー表示について、三菱電機公式FAQにもとづいてご説明します。全ランプ点滅（風向フラップの取付不良）、数字点滅（本体異常の可能性）、U1表示、クリーンモニター点滅、お手入れランプが消えない場合のリセット操作など、表示ごとの対処と修理依頼の判断基準を掲載しています。",
+    "霧ヶ峰（三菱電機）のランプの意味を公式FAQと取扱説明書にもとづきご説明します。運転ランプの緑（運転中・入タイマー）とオレンジ（内部クリーン運転中）の違い、全ランプ点滅・数字点滅・U1表示の対処、修理を依頼する判断の基準を掲載しています。",
   alternates: { canonical: "/guide/error-code-mitsubishi/" },
 };
 
-const UPDATED = "2026年9月17日";
+const UPDATED = "2026年10月18日";
 
 const patterns = [
   {
@@ -59,6 +59,10 @@ const patterns = [
 
 const faqs = [
   {
+    q: "運転ランプがオレンジに点灯していて、停止したのに止まらないのは故障ですか？",
+    a: "故障ではない場合があります。三菱ルームエアコンの取扱説明書（MSZ-AXVシリーズ）では、冷房を約3分間以上、または除湿を約6分間以上運転した後に停止すると「内部クリーン運転」を行い、その間は運転/内部クリーンランプがオレンジに点灯すると説明されています。流れは停止（約3分間）→送風（約25分間）→弱暖房（最大10分間）→送風（約1分間）→自動停止です。「運転を止めたのに止まらない」「オレンジが消えない」場合は、内部クリーン運転が設定されていないかを確認するよう案内されています。",
+  },
+  {
     q: "霧ヶ峰には、ダイキンのようなエラーコード一覧はありますか？",
     a: "三菱電機の家庭用ルームエアコンは、「ランプの点滅パターン」と一部の表示（数字点滅・FL・U1など）で不具合を知らせる方式であり、消費者向けのエラーコード一覧は公開されていません。数字コードを検索できる「点検コード検索(WIN2K)」はありますが、公式に「販売店様向けのサービスです。個人のお客様は分解・修理などはせずに、必ずお買上げの販売店、または三菱電機 修理窓口へご相談ください」と明記されています(2026年9月17日確認)。本記事は、消費者向け公式FAQの公表内容のみにもとづいて作成しています。",
   },
@@ -94,33 +98,70 @@ export default function ErrorCodeMitsubishiPage() {
         <header className="max-w-3xl mx-auto px-5 pt-10 pb-6">
           <p className="text-sm font-semibold tracking-widest text-sky-700 mb-3">症状別ガイド</p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            三菱エアコン(霧ヶ峰)のランプ点滅・エラー表示
+            霧ヶ峰(三菱エアコン)のランプの意味
             <br className="hidden md:block" />
-            表示ごとの意味と対処【家庭用】
+            緑・オレンジの点灯と点滅・エラー表示の対処【家庭用】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-09-17">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
         <div className="max-w-3xl mx-auto px-5 pt-4">
           <p className="text-[1.05rem] leading-8 text-slate-700">
             三菱電機の家庭用ルームエアコン(霧ヶ峰)は、不具合や操作待ちを<strong className="font-semibold text-slate-900">ランプの点滅パターンと一部の表示(数字・FL・U1など)</strong>で知らせます。
-            ダイキンのような消費者向けエラーコード一覧は公開されていないため、本記事では<strong className="font-semibold text-slate-900">三菱電機の消費者向け公式FAQ（{UPDATED}確認）</strong>にもとづき、
+            ダイキンのような消費者向けエラーコード一覧は公開されていないため、本記事では<strong className="font-semibold text-slate-900">三菱電機の消費者向け公式FAQ（2026年9月17日確認）</strong>にもとづき、
             表示ごとの意味、ご自身でできる対処、修理を依頼する判断の基準をご説明します。
           </p>
           <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50/70 p-5">
             <p className="font-bold text-rose-800 mb-1">「点検コード検索」は販売店向けサービスです</p>
             <p className="text-sm leading-7 text-slate-700">
-              数字の点検コードを検索できる三菱電機の「WIN2K 点検コード検索」は、公式に「販売店様向けのサービスです。<strong>個人のお客様は分解・修理などはせずに</strong>、必ずお買上げの販売店、または三菱電機 修理窓口へご相談ください」と明記されています({UPDATED}確認)。
+              数字の点検コードを検索できる三菱電機の「WIN2K 点検コード検索」は、公式に「販売店様向けのサービスです。<strong>個人のお客様は分解・修理などはせずに</strong>、必ずお買上げの販売店、または三菱電機 修理窓口へご相談ください」と明記されています(2026年9月17日確認)。
               公式の案内では、数字が点滅した場合は意味を調べてご自身で修理しようとせず、下の表の安全な確認のみを行ったうえで点検を依頼するよう求めています。
             </p>
           </div>
         </div>
 
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
+          <section id="color" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ランプの色の意味：緑とオレンジ(点灯している場合)</h2>
+            <p className="text-sm leading-7 text-slate-700 mb-4">
+              点滅ではなく<strong>点灯</strong>している場合は、多くが正常な運転状態の表示です。三菱ルームエアコンの取扱説明書（MSZ-AXV224ほか・MSZ-AXVシリーズ）の「室内機の表示部」では、運転/内部クリーンランプの色を次のように説明しています。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm min-w-[560px]">
+                <thead>
+                  <tr>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">ランプの状態</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">意味(取扱説明書の説明)</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">確認すること</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["緑に点灯", "運転中、または入タイマーを設定しているとき(入タイマー設定中はエアコンが停止していても緑に点灯)", "異常ではありません"],
+                    ["オレンジに点灯", "内部クリーン運転中(冷房約3分以上・除湿約6分以上の運転後に停止すると自動で行う)", "停止後も最大約40分間(停止約3分・送風約25分・弱暖房最大10分・送風約1分)動き続けます。止めたい場合はリモコンで内部クリーンを解除します"],
+                    ["応急運転中の緑／オレンジ", "応急運転スイッチで運転したとき、応急冷房は緑・応急暖房はオレンジ", "リモコンの故障・電池切れのときの運転です"],
+                    ["エリアランプの点灯", "風あて・風よけ・ムラなし運転で空調しているエリアの表示(ムーブアイ搭載機)", "異常ではありません"],
+                    ["運転/内部クリーンランプの点滅", "取扱説明書の「こんなときは、修理を依頼する」に記載", "下の早見表の手順で解消しない場合は修理を依頼します"],
+                  ].map(([a, b, c]) => (
+                    <tr key={a}>
+                      <td className="border border-slate-300 px-3 py-2 font-bold text-sky-700 leading-6">{a}</td>
+                      <td className="border border-slate-300 px-3 py-2 leading-6">{b}</td>
+                      <td className="border border-slate-300 px-3 py-2 leading-6 text-slate-600">{c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-2 text-xs leading-6 text-slate-400">
+              ※出典: 三菱ルームエアコン取扱説明書 MSZ-AXV224/254/284/364/404S/564S(三菱電機 dl.mitsubishielectric.co.jp・2026年10月18日確認)。「最大約40分間」は同書の各工程の時間を当サイトで合計した目安です。ランプの名称・色・内部クリーンの有無は機種と年式により異なるため、お使いの機種の取扱説明書(室内機の形名で検索できます)をご確認ください。
+              一般的な解説サイトにある「青は冷房・赤は異常」といった色の対応は、当サイトが確認した上記の取扱説明書には記載がありませんでした。
+            </p>
+          </section>
+
           <section id="table" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ランプ点滅・表示パターンの早見表(公式FAQにもとづく)</h2>
             <div className="overflow-x-auto">
@@ -146,7 +187,7 @@ export default function ErrorCodeMitsubishiPage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※出典: 三菱電機 よくあるご質問FAQ(faq01.mitsubishielectric.co.jp・各No.は表内・{UPDATED}確認)。機種により表示・ボタンの有無が異なるため、最終的にはお使いの機種の取扱説明書をご確認ください。
+              ※出典: 三菱電機 よくあるご質問FAQ(faq01.mitsubishielectric.co.jp・各No.は表内・2026年9月17日確認)。機種により表示・ボタンの有無が異なるため、最終的にはお使いの機種の取扱説明書をご確認ください。
               公式の案内にしたがい、分解を伴う確認・修理は行わず、販売店・三菱電機修理窓口へご依頼ください。
             </p>
           </section>
@@ -199,8 +240,9 @@ export default function ErrorCodeMitsubishiPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出典・注記</h2>
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
-                <li>・三菱電機 よくあるご質問FAQ No.591/714/727/2619/2645/2646/2707/5874(faq01.mitsubishielectric.co.jp・{UPDATED}確認)</li>
-                <li>・三菱電機WIN2K「点検コード検索」ご利用ガイド(販売店向けサービスの旨・{UPDATED}確認)</li>
+                <li>・三菱電機 よくあるご質問FAQ No.591/714/727/2619/2645/2646/2707/5874(faq01.mitsubishielectric.co.jp・2026年9月17日確認)</li>
+                <li>・三菱ルームエアコン取扱説明書 MSZ-AXVシリーズ(室内機の表示部・内部クリーン運転・応急運転・修理を依頼するとき／2026年10月18日確認)</li>
+                <li>・三菱電機WIN2K「点検コード検索」ご利用ガイド(販売店向けサービスの旨・2026年9月17日確認)</li>
                 <li>・修理費用の目安額：当サイトの各費用ガイドの調査値（確認日は各ページに明記）</li>
                 
               </ul>

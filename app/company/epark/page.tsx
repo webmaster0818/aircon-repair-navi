@@ -6,16 +6,17 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "EPARKくらしのレスキューの評判｜口コミ・料金・仕組みの調査結果【2026年8月】",
+    "EPARKくらしのレスキューの評判・口コミ｜エアコン修理の掲載56業者と料金を調査【2026年10月】",
   description:
-    "EPARKくらしのレスキュー（運営：株式会社REsta、旧EPARK）の評判を、公式サイトの情報にもとづき検証しています（2026年7月確認）。料金や品質は紹介先の業者ごとに異なり、利用規約上、運営はトラブルを仲介しません。口コミの傾向と、依頼前の確認事項3点（出張費・見積もり・キャンセル料）を掲載します。",
+    "EPARKくらしのレスキュー（運営：株式会社REsta）の評判を公式サイトの掲載内容から調査しました（2026年10月18日確認）。エアコン修理の掲載業者は56件、料金表示は11件、口コミ100件超は2件です。運営は料金を設定せず、トラブルを仲介しません。依頼前の確認事項も掲載しています。",
   alternates: { canonical: "/company/epark" },
 };
 
-const UPDATED = "2026年7月7日";
+const UPDATED = "2026年10月18日";
 
 const toc = [
   { id: "summary", label: "EPARKくらしのレスキューとは" },
+  { id: "listing", label: "エアコン修理カテゴリの掲載状況（10月調査）" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -28,6 +29,14 @@ const toc = [
 ];
 
 const faqs = [
+  {
+    q: "EPARKくらしのレスキューの評判は良いですか？",
+    a: "サービス全体の評価は公開されておらず、評判は掲載業者ごとに分かれます。エアコン修理カテゴリ（2026年10月18日確認）では掲載56業者のうち口コミ評価を表示している業者は一部で、件数が100件を超えるのはエアコントラブルセンター（4.41・114件）とエアコンのレスキュープロ（4.32・111件）の2業者でした。件数が1〜20件程度の業者は評価点が高くても母数が少ないため、件数とあわせてご確認ください。",
+  },
+  {
+    q: "エアコン修理を依頼できる業者は何件掲載されていますか？",
+    a: "2026年10月18日時点で、エアコン修理カテゴリの掲載業者一覧には56件が表示されていました。そのうち料金を表示している業者は11件で、地域の電器店など料金の表示がない業者も多く含まれます。一部の業者には「当サイトでは受付できません」との表示があり、その場合は業者の公式サイトから依頼する案内になっています。",
+  },
   {
     q: "EPARKくらしのレスキューはどんなサービスですか？",
     a: "エアコン修理・水まわり・鍵・ガラス・害虫駆除などの駆けつけ業者を、全国47都道府県で検索・比較して予約できるプラットフォームです。運営は株式会社REsta（旧・株式会社EPARKくらしのレスキュー、2024年11月に社名変更）です。EPARKグループの一員で、設立2020年・資本金9,000万円の企業です（2026年7月7日公式確認）。",
@@ -60,7 +69,7 @@ const articleJsonLd = {
   headline:
     "EPARKくらしのレスキューの口コミ・評判｜エアコン修理の料金・対応エリアの調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-07",
+  dateModified: "2026-10-18",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -101,7 +110,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-07">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -123,7 +132,7 @@ export default function Page() {
               <li>・利用規約上、<strong>契約は利用者と業者の直接契約で、運営はトラブルを仲介・保証しません</strong>。そのため、業者選びが重要です</li>
               <li>・複数業者の掲載条件や口コミを比較して、ご自身で選びたい方に適しています。選ぶ手間を省きたい方は、当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">各社の料金調査</Link>から、料金の実額を公開している業者を選ぶ方法もあります</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年7月7日に公式サイト・利用規約・運営会社情報を確認した内容です。</p>
+            <p className="mt-3 text-xs text-slate-400">※利用規約は2026年7月7日、エアコン修理カテゴリの掲載状況と運営会社情報は2026年10月18日に公式サイトで確認した内容です。</p>
           </div>
         </div>
 
@@ -164,6 +173,36 @@ export default function Page() {
             </div>
           </section>
 
+          <section id="listing" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">エアコン修理カテゴリの掲載状況（2026年10月18日 公式確認）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              EPARKくらしのレスキューの評判は、どの掲載業者に依頼するかで大きく変わります。当サイトでは、公式サイトのエアコン修理カテゴリ（rescue.epark.jp/category/kaden/aircon）に表示されている掲載業者を数え、料金と口コミの表示状況を整理しました。
+            </p>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["掲載業者数", "56件（掲載業者一覧の表示件数）"],
+                    ["料金を表示している業者", "11件（残りの多くは地域の電器店などで料金の表示なし）"],
+                    ["口コミ件数が100件を超える業者", "2件（エアコントラブルセンター 4.41・114件／エアコンのレスキュープロ 4.32・111件）"],
+                    ["口コミ件数が20件以下の業者の例", "松本総合サービス 4.95・20件／Blue Wash株式会社 4.83・18件／エアコンのトラブル相談センター 5・4件"],
+                    ["キャンセル料の表示", "1業者のみ（エアコンのレスキュープロ「お客様都合のキャンセルは3,300円」）"],
+                    ["絞り込み条件", "見積もり無料・キャンセル無料・出張無料・クーポンあり"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="leading-8 text-slate-700">
+              評価点は各業者ページの口コミにもとづく公式の表示で、当サイトが付けた点数ではありません。口コミ件数が少ない業者は評価点が高く表示されやすいため、<strong className="font-semibold">点数だけでなく件数と、キャンセル料・出張費の表示があるか</strong>を比べることをおすすめします。口コミ件数が最も多いエアコントラブルセンターについては、公式サイトの料金表記との違いを<Link href="/company/aircon-trouble-center/" className="text-sky-700 underline">エアコントラブルセンターの口コミ・評判</Link>で整理しています。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：EPARKくらしのレスキュー エアコン修理カテゴリの掲載業者一覧（2026年10月18日確認）。掲載業者・評価点・件数は随時変わります。</p>
+          </section>
+
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
@@ -179,7 +218,7 @@ export default function Page() {
                     ["料金確認", "各業者ページで料金・口コミを比較可能"],
                     ["公式サイト", "rescue.epark.jp"],
                     ["運営会社", "株式会社REsta（旧・株式会社EPARKくらしのレスキュー／2024年11月1日社名変更・EPARKグループ）"],
-                    ["会社情報", "東京都港区芝5-15-2／設立2020年3月／資本金9,000万円"],
+                    ["会社情報", "東京都港区芝5-15-2／設立2020年3月6日／資本金9,000万円／代表取締役 五十嵐博文（2026年10月18日 公式の運営会社ページで確認）"],
                     ["許認可の表示", "プラットフォーム運営のため、施工に関する許認可の主体ではありません。掲載業者の審査基準・必要な許認可は公開されていません（2026年7月7日確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -347,6 +386,7 @@ export default function Page() {
               {[
                 { href: "/ranking", label: "エアコン修理業者ランキング" },
                 { href: "/ranking/fast", label: "対応が早い修理業者" },
+                { href: "/company/aircon-trouble-center/", label: "エアコントラブルセンターの口コミ・評判" },
                 { href: "/cost/repair-price", label: "エアコン修理の料金相場" },
                 { href: "/cost/replace-vs-repair", label: "修理と買い替えどちらが得か" },
               ].map((l) => (
