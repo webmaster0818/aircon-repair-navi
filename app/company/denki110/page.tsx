@@ -6,19 +6,19 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "電気工事110番の評判は悪い？料金は高い？口コミと他社比較による調査【2026年最新】",
+    "DENKI110（電気工事）の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い【2026年10月】",
   description:
-    "電気工事110番の評判と料金について、上場グループ企業が運営する同サービスの口コミの傾向・費用の目安・対応エリア・受付時間を他社と比較し、メリット・デメリットを中立的な立場でご説明します。生活110番とは別の会社が運営している点もあわせてご紹介します。",
+    "DENKI110の料金（電気トラブル全般6,600円〜）・キャンセル料・受付時間・対応エリアと、トラブル時に確認したい利用規約を公式で調査しました。シェアリングテクノロジーの「電気工事110番」とは運営会社が異なる点もご説明します（2026年10月20日確認）。",
   alternates: { canonical: "/company/denki110" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年10月20日";
 
 const toc = [
-  { id: "summary", label: "電気工事110番とは" },
+  { id: "summary", label: "DENKI110とは（電気工事110番との違い）" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
-  { id: "bad", label: "ご利用前の注意点" },
+  { id: "good", label: "評判・口コミについて" },
+  { id: "bad", label: "トラブルを避けるために規約で確認したい点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
   { id: "price", label: "料金の目安" },
@@ -29,16 +29,24 @@ const toc = [
 
 const faqs = [
   {
-    q: "電気工事110番は生活110番と同じサービスですか？",
-    a: "いいえ。運営会社が異なる別のサービスです。電気工事110番（DENKI110）は株式会社イエノナカカンパニー、生活110番はシェアリングテクノロジー株式会社（東証上場・証券コード3989）が運営しています（2026年10月15日・各公式サイトの運営会社ページで確認）。",
+    q: "DENKI110は「電気工事110番」や生活110番と同じサービスですか？",
+    a: "いいえ。DENKI110は株式会社イエノナカカンパニーが運営するサービスです。「電気工事110番」は、生活110番を運営するシェアリングテクノロジー株式会社（東証上場・証券コード3989）のサービスで、運営会社が異なります（2026年10月20日・各社の公式サイトで確認）。",
   },
   {
     q: "受付時間は何時から何時までですか？",
-    a: "電話受付は全国・年中無休で9:00〜22:00、メールでの問い合わせは24時間受け付けているとされています。急ぎの場合は問い合わせ時に対応可能な時間をご確認ください。",
+    a: "公式サイトでは、電話は年中無休で9:00〜22:00、メールは24時間受付と案内されています。到着までの時間は、公式FAQで「最短で60分前後」とされていますが、スタッフの距離や他の作業状況によって変わります（2026年10月20日・公式確認）。",
+  },
+  {
+    q: "キャンセル料はかかりますか？",
+    a: "公式FAQでは、キャンセルは可能で、キャンセル料は基本的にかからないとされています。ただし、遠方への出張や、22時以降の到着・作業となる深夜の出張では、事前の合意のうえでキャンセル料がかかる場合があると記載されています（2026年10月20日・公式確認）。",
+  },
+  {
+    q: "作業の契約相手はどこになりますか？",
+    a: "運営会社の利用規約（2024年4月1日施行）第6条では、利用者は提携業者と直接交渉・契約を行い、提携業者のサービスは提携業者の責任で提供されるとされています。依頼の取り消しも、利用者が提携業者へ直接連絡すると定められています。公式の会社概要では、施工者は「自社およびその提携業者」と記載されています。",
   },
   {
     q: "相談や見積もりは無料ですか？",
-    a: "無料相談に対応していると公称されています。作業内容に同意したうえで依頼できるよう、訪問時に作業範囲と総額の見積もりを書面で確認してから契約することをおすすめします。",
+    a: "公式サイトでは電話相談は無料とされ、電話で概算の見積もりを伝えたうえで、現地確認後の見積もりに納得できない場合はキャンセルできると案内されています。見積料の金額は明記されていないため、訪問時に作業範囲と総額を書面で確認してから依頼することをおすすめします。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -46,7 +54,7 @@ const faqs = [
   },
   {
     q: "対応エリアはどこまでですか？",
-    a: "全国の提携業者ネットワークにより、幅広い地域に対応しています。地域によって対応スピードや担当業者が異なる点にご留意ください。",
+    a: "公式サイトの対応エリアには北海道から沖縄県まで47都道府県が掲載されています。公式FAQでは「主要都市部は全域対応」とされているため、それ以外の地域では対応の可否や到着までの時間を問い合わせ時にご確認ください。",
   },
 ];
 
@@ -54,9 +62,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "電気工事110番の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "DENKI110の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-19",
+  dateModified: "2026-10-20",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -80,7 +88,7 @@ export default function Page() {
       <Breadcrumb
         items={[
           { name: "業者一覧", href: "/ranking" },
-          { name: "電気工事110番の口コミ・評判", href: "/company/denki110" },
+          { name: "DENKI110の評判・料金", href: "/company/denki110" },
         ]}
       />
 
@@ -90,30 +98,34 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            電気工事110番の口コミ・評判
+            DENKI110の評判・料金を公式で調査
             <br className="hidden md:block" />
-            料金・対応エリアを調査【2026年最新】
+            「電気工事110番」との違い【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-20">最終更新：{UPDATED}</time>
           </div>
         </header>
 
         <div className="max-w-3xl mx-auto px-5">
-          <SiteShot slug="denki110" name="電気工事110番" />
+          <SiteShot slug="denki110" name="DENKI110" />
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
             エアコンが急に効かなくなった場合や、配線・電源まわりのトラブルが生じた場合には、出張対応の修理サービスへの相談が選択肢となります。
-            本記事では、上場グループ（センコーグループ）の企業が運営する電気のトラブル対応サービス
-            <strong className="font-semibold text-slate-900">電気工事110番</strong>
-            について、公開されている利用者の声の傾向、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
+            本記事では、株式会社イエノナカカンパニーが運営する電気のトラブル対応サービス
+            <strong className="font-semibold text-slate-900">DENKI110</strong>
+            について、料金の目安、キャンセル料、対応エリアと受付時間、トラブルを避けるために利用規約で確認しておきたい点を、公式サイトの記載にもとづいてまとめています。
           </p>
+          <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[0.95rem] leading-7 text-slate-700">
+            <strong className="font-semibold">「電気工事110番」とは別のサービスです。</strong>
+            「電気工事110番」は、生活110番を運営するシェアリングテクノロジー株式会社のサービス名です。DENKI110の公式サイト（denki110.net）は「DENKI110」と名乗っており、運営会社も異なります。当サイトでは以前、DENKI110を「電気工事110番」と表記していましたが、2026年10月20日に各社の公式サイトで確認し、表記を改めました。
+          </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事では、口コミ本文の転載・創作を控え、確認できた評価の傾向のみを要約して掲載しています。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
+            ※料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査日：2026年10月20日）。
           </p>
         </div>
 
@@ -133,14 +145,14 @@ export default function Page() {
 
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
           <section id="summary" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">電気工事110番とは</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">DENKI110とは（電気工事110番との違い）</h2>
             <p className="leading-8 text-slate-700">
-              電気工事110番（DENKI110）は、株式会社イエノナカカンパニー（東証プライム上場センコーグループホールディングスの傘下）が運営する、電気のトラブルに対応する出張サービスです。エアコンの取り付け・取り外しや電源・配線まわりのトラブルなど、家庭で起きやすい電気関連の困りごとに幅広く対応しています。
+              DENKI110は、株式会社イエノナカカンパニーが運営する、電気のトラブルに対応する出張サービスです。同社の会社概要では、株主として東証プライム上場のセンコーグループホールディングス株式会社が掲載されています。照明・エアコン・電源まわりなど、家庭で起きやすい電気関連のトラブルに対応しています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               名称が似ているため混同されることがありますが、
-              <strong className="font-semibold">電気工事110番は生活110番とは別運営のサービス</strong>
-              です（運営会社が異なります）。全国・年中無休で受付（電話は9:00〜22:00、メールは24時間）に対応し、無料相談を公称しているため、まず相談から始めたい方に適しています。
+              <strong className="font-semibold">DENKI110と「電気工事110番」は運営会社が異なる別のサービス</strong>
+              です。「電気工事110番」はシェアリングテクノロジー株式会社（生活110番の運営会社）がエアコン工事・コンセント工事・漏電改修などの依頼先として案内しているサービスで、本ページの内容はあてはまりません。DENKI110は年中無休で受付（電話は9:00〜22:00、メールは24時間）しており、電話相談は無料とされています。
             </p>
           </section>
 
@@ -150,12 +162,15 @@ export default function Page() {
               <table className="w-full text-[0.95rem]">
                 <tbody>
                   {[
-                    ["サービス名", "電気工事110番"],
-                    ["運営会社", "株式会社イエノナカカンパニー（センコーグループ）"],
-                    ["生活110番との関係", "別の会社が運営する別サービス"],
-                    ["対応エリア", "全国（提携業者ネットワークが対応）"],
+                    ["サービス名", "DENKI110"],
+                    ["運営会社", "株式会社イエノナカカンパニー（東京都台東区上野7-6-5・株主：センコーグループホールディングス）"],
+                    ["「電気工事110番」との関係", "別の会社（シェアリングテクノロジー）が運営する別サービス"],
+                    ["施工", "自社およびその提携業者（公式の会社概要）"],
+                    ["対応エリア", "47都道府県を掲載（公式FAQでは主要都市部は全域対応）"],
                     ["受付時間", "年中無休／電話 9:00〜22:00・メール 24時間"],
-                    ["相談・見積もり", "無料相談（公称）"],
+                    ["到着の目安", "最短60分前後（公式FAQ・状況により変動）"],
+                    ["相談・見積もり", "電話相談無料・電話で概算見積もり（見積料の明記なし）"],
+                    ["キャンセル料", "原則なし（遠方・22時以降の深夜出張は事前合意のうえかかる場合あり）"],
                     ["料金の目安", "エアコン修理の料金は公式に掲載なし。電気トラブル全般は作業費込み6,600円〜（公式FAQ・2026年10月15日確認）"],
                     ["公式サイト", "https://denki110.net/"],
                   ].map(([k, v], i) => (
@@ -167,23 +182,17 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：公式・関連サイトの掲載情報。受付時間や対応エリアは変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：DENKI110公式サイト（トップ・会社概要・FAQ）、株式会社イエノナカカンパニー会社概要・利用規約（2026年10月20日確認）。受付時間や対応エリアは変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
-            <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。電気工事110番については、口コミ掲載サイトのセーフリー（safely.co.jp）で評価の傾向を確認しました。
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">評判・口コミについて</h2>
+            <p className="leading-8 text-slate-700">
+              当サイトでは、口コミ本文の転載・創作を行わず、出典を確認できた評価だけを掲載する方針としています。2026年10月20日時点で、DENKI110の口コミを確認できる掲載先を特定できなかったため、口コミの傾向は掲載していません。以前掲載していた評価の傾向も、出典を確認し直せなかったため削除しました。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>問い合わせ後の初動が速く、急ぎの依頼にも対応してもらえたという評価</li>
-                <li>深夜のトラブルでも電話がつながり、迅速に対応してもらえたという評価</li>
-                <li>作業が丁寧で、修理内容の説明がわかりやすいという評価</li>
-              </ul>
-            </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価の傾向は時期・担当業者・地域によって異なる場合があります。</p>
+            <p className="mt-4 leading-8 text-slate-700">
+              「電気工事110番 評判」などで検索した場合、シェアリングテクノロジーの「電気工事110番」に関する情報が表示されることがあります。口コミを参考にする際は、どちらのサービスについての記載かをご確認ください。なお、公式サイトに掲載されている「累計46.3万件」は、運営会社のサイト全体の実績と注記されており、DENKI110単体の件数ではありません。
+            </p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -191,16 +200,22 @@ export default function Page() {
           </div>
 
           <section id="bad" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">トラブルを避けるために規約で確認したい点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、提携業者のネットワーク型サービスという性質上、
-              <strong className="font-semibold">作業内容によっては表示の目安料金より費用がかかる場合がある</strong>
-              点にご留意ください。依頼時には、以下の点をご確認ください。
+              DENKI110は、運営会社と提携業者が作業を行う形のサービスです。運営会社の利用規約（2024年4月1日施行）には、次の定めがあります。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式に掲載されている6,600円〜は電気トラブル全般の目安であり、エアコン修理の料金は掲載されていないため、事前に見積もりをご確認ください。</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>地域や担当業者によって、対応スピード・品質に差が生じる場合があります。</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業前に、作業範囲と総額の見積もりを書面で確認してから依頼することをおすすめします。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>利用者は、提携業者と直接交渉・契約を行い、提携業者のサービスは提携業者の責任で提供されます（第6条）。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>利用者と提携業者との間で生じた問題に、運営会社は関与しないとされています（第6条第4項）。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>依頼を取り消す場合は、利用者が提携業者へ直接連絡します（第6条第5項）。</li>
+            </ul>
+            <p className="mt-5 leading-8 text-slate-700">
+              このため、依頼時には次の点を確認しておくことをおすすめします。
+            </p>
+            <ul className="mt-3 space-y-3 text-slate-700 leading-7">
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>当日に作業する業者の名称と連絡先</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>作業範囲と総額の見積もり（書面）。公式の6,600円〜は電気トラブル全般の目安で、エアコン修理の料金は掲載されていません</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>遠方・深夜（22時以降）の出張になる場合のキャンセル料の有無</li>
             </ul>
           </section>
 
@@ -210,18 +225,17 @@ export default function Page() {
               <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>東証プライム上場グループ（センコーグループ）の企業が運営しています。</li>
-                  <li>全国・年中無休で受け付けており、急なトラブルでも相談できます。</li>
-                  <li>無料相談（公称）を利用できます。</li>
-                  <li>口コミでは、対応の速さ・丁寧さを評価する声が見られます。</li>
+                  <li>運営会社の株主に、東証プライム上場のセンコーグループホールディングスが掲載されています。</li>
+                  <li>年中無休で受け付けており、急なトラブルでも相談できます。</li>
+                  <li>電話相談は無料で、キャンセル料も原則かからないとされています。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>担当する提携業者によって、対応に差が生じる場合があります。</li>
-                  <li>表示の目安料金より総額が高くなる場合があるため、見積もりをご確認ください。</li>
-                  <li>生活110番と名称が似ているため、混同にご注意ください（別運営です）。</li>
+                  <li>作業の契約相手は提携業者で、問題が生じた場合に運営会社は関与しないと規約に定められています。</li>
+                  <li>エアコン修理の料金は公式に掲載がないため、見積もりをご確認ください。</li>
+                  <li>「電気工事110番」と名称が似ているため、混同にご注意ください（別運営です）。</li>
                 </ul>
               </div>
             </div>
@@ -233,7 +247,7 @@ export default function Page() {
               <div className="rounded-2xl border border-slate-200 p-6">
                 <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>上場グループの企業が運営するサービスに任せたい方</li>
+                  <li>夜22時まで電話で相談したい方</li>
                   <li>急な電気・エアコンのトラブルですぐに相談したい方</li>
                   <li>無料相談から始めたい方</li>
                 </ul>
@@ -253,7 +267,7 @@ export default function Page() {
             <p className="leading-8 text-slate-700">
               電気工事やエアコン関連作業の費用は、症状や必要な作業によって幅があります。電気工事110番の公式サイトにはエアコン修理に限った料金は掲載されておらず、公式FAQでは電気トラブル全般について
               <strong className="font-semibold">作業費込みで6,600円〜</strong>
-              とされています（2026年10月15日・公式確認）。無料相談に対応しているとされています。作業内容によっては、この目安より総額がかかる場合があるため、訪問時に総額をご確認ください。
+              とされています（2026年10月20日・公式確認）。公式FAQでは、例示の料金は業者や現場の状況によって変わると注記されています。作業内容によっては、この目安より総額がかかる場合があるため、訪問時に総額をご確認ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               修理と買い替えで迷う場合もあるため、訪問時には作業範囲と総額の見積もりを書面で確認したうえで依頼することをおすすめします。可能であれば、複数の業者から見積もりを取って比較してください。
@@ -300,7 +314,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              電気工事110番は、株式会社イエノナカカンパニー（センコーグループ）が運営する電気工事のサービスで、全国・年中無休の受付が強みです。名称は似ていますが、シェアリングテクノロジーが運営する生活110番とは別のサービスです。口コミでは、対応の速さと作業の丁寧さを評価する声が多く見られます。一方で、作業内容によっては表示の目安より費用が高くなる場合があるため、依頼時には見積もりを書面で確認したうえで依頼することをおすすめします。
+              DENKI110は、株式会社イエノナカカンパニーが運営する電気トラブルの出張サービスで、年中無休の受付とキャンセル料が原則かからない点が特徴です。名称は似ていますが、シェアリングテクノロジーの「電気工事110番」とは別のサービスです。作業の契約相手は提携業者となるため、依頼時には作業する業者と総額の見積もりを書面で確認したうえで依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の業者から見積もりを取り、料金と対応を比較してお選びください。
@@ -308,9 +322,9 @@ export default function Page() {
 
             <div className="mt-8 rounded-2xl bg-[var(--color-brand)] p-7 text-center text-white">
               <p className="text-lg font-bold mb-2">急なエアコン・電気のトラブルでお困りの方へ</p>
-              <p className="text-sky-100 text-sm mb-5">無料相談にて、症状と費用の目安をご確認いただけます。</p>
+              <p className="text-sky-100 text-sm mb-5">電話相談（無料）で、症状と概算の費用をご確認いただけます。</p>
               <a href="https://denki110.net/" target="_blank" rel="noopener noreferrer" className="inline-block rounded-full bg-white px-7 py-3 font-bold text-sky-800 hover:bg-sky-50 transition-colors">
-                電気工事110番 公式サイトを見る
+                DENKI110 公式サイトを見る
               </a>
             </div>
           </section>
