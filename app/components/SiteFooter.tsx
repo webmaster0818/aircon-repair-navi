@@ -29,6 +29,7 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
       { href: "/symptom/gas-leak", label: "ガス漏れ" },
       { href: "/symptom/remote-error", label: "リモコン不良" },
       { href: "/symptom/error-code", label: "エラーコード" },
+      { href: "/guide/heating-not-working", label: "暖房が効かない" },
     ],
   },
   {
@@ -36,6 +37,8 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
     links: [
       { href: "/cost/repair-price", label: "修理費用の相場" },
       { href: "/cost/replace-vs-repair", label: "修理と買い替え" },
+      { href: "/cost/cleaning-fee", label: "クリーニング料金・業者別口コミ" },
+      { href: "/cost/gas-refill", label: "ガス補充の費用" },
     ],
   },
   {
