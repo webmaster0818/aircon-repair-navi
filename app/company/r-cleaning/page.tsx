@@ -8,7 +8,7 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・他社比較の調査結果【2026年10月】",
+    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   description:
     "エアコンクリーニング「アールクリーニング」の口コミ・評判・レビューをまとめました。みん評・Googleマップ・くらしのマーケット等で公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
   alternates: { canonical: "/company/r-cleaning" },
@@ -30,6 +30,7 @@ const toc = [
   { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
   { id: "menu-price", label: "機種・メニュー別の料金の見方" },
   { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "extra-fee", label: "追加料金がかかるケース（公式の注意事項）" },
   { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
   { id: "faq", label: "よくある質問" },
@@ -37,6 +38,10 @@ const toc = [
 ];
 
 const faqs = [
+  {
+    q: "アールクリーニングは追加料金がかかりますか？",
+    a: "公式サイトでは「余計な追加料金は頂きません」と案内されています。ただし、駐車スペースがない場合のパーキング料金、対応エリア外の出張料金(3,000円〜)、領収書の再発行手数料(1回1,000円・税抜)、前日15:00以降のキャンセル料(100%)は別途かかると注意事項に記載されています(2026年10月21日確認)。",
+  },
   {
     q: "アールクリーニングはエアコン修理にも対応していますか？",
     a: "アールクリーニングはエアコンクリーニング(分解洗浄)を中心としたハウスクリーニングのサービスです。故障の修理ではなく、内部のカビ・ホコリ・汚れを洗い流して、ニオイや効きの改善を目指すサービスである点に注意してください。故障の場合は修理業者やメーカーへの相談が必要です。",
@@ -87,7 +92,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・他社比較の調査結果【2026年10月】",
+    "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   datePublished: "2026-06-28",
   dateModified: "2026-10-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -488,6 +493,37 @@ export default function Page() {
               前日15:00を境に全額のキャンセル料が発生する規定のため、天候や体調により予定が変わる可能性がある場合は、<strong className="font-semibold">前日の昼までに連絡する</strong>ことをおすすめします。なお、見積もり段階で金額が折り合わない場合のキャンセルは可能で、出張・見積もり費用はかからないと案内されています。
             </p>
             <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認。規定は変更される場合があります。</p>
+          </section>
+
+          <section id="extra-fee" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">追加料金がかかるケース（公式の注意事項）</h2>
+            <p className="leading-8 text-slate-700">
+              公式サイトのエアコンクリーニングページでは「当社は余計な追加料金は頂きません」と案内されています。ただし、同じページとよくある質問ページの注意事項には、料金に関わる次の記載があります（2026年10月21日確認）。
+            </p>
+            <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["駐車スペースがない場合", "当日のパーキング料金は利用者の負担"],
+                    ["対応エリア（東京・埼玉・神奈川・千葉）外", "出張料金 3,000円〜"],
+                    ["領収書の再発行", "1回あたり1,000円（税抜）"],
+                    ["予約日前日15:00以降のキャンセル・日程変更", "料金の100%"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/2 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              料金以外の注意事項として、取り外しができない箇所や故障している場合は部分的な作業のみになるか作業を受けられない場合があること、設備の劣化により塗装がはがれる場合があること、変質・染色による汚れは完全には落ちない場合があることも明記されています。当日は水道と電源を借りるほか、お風呂場やベランダのスペースを使う場合があります。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              一部の紹介記事では、大型機種や高所設置で料金が変わると説明されていますが、2026年10月21日時点の公式サイトのエアコンクリーニングページとよくある質問ページには、本体の幅や設置の高さによる追加料金の記載は確認できませんでした。該当しそうな機種の場合は、見積もり時に総額をご確認ください。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://r-cleaning.com/air-conditioner/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">公式サイト エアコンクリーニング</a>・<a href="https://r-cleaning.com/qa/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">よくある質問</a>（2026年10月21日確認）。条件は変更される場合があります。</p>
           </section>
 
           <section id="checklist" className="scroll-mt-24">
