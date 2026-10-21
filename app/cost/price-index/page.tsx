@@ -45,7 +45,7 @@ const cleaningRows = [
   { name: "カジタク", slug: "kajitaku", normal: "14,300円（ライト10,780円）", robot: "25,080円", extra: "通常価格。期間の記載がない割引価格の表示あり（11,880円・ライト9,700円・お掃除機能付き18,980円）。駐車料金カジタク負担・イオングループ" },
   { name: "ハッピーベアーズ", slug: "happy-bears", normal: "14,190円", robot: "21,780円", extra: "敷地内に駐車場が無い場合は駐車料金の一部（1,018〜2,037円）を利用者負担・39都道府県" },
   { name: "ダスキン", slug: "duskin-servicemaster", normal: "15,400円", robot: "26,400円", extra: "土日祝夜間は追加の場合あり・全国1,208店" },
-  { name: "Rクリーニング", slug: "r-cleaning", normal: "19,350円（キャンペーン時10,780円）", robot: "24,750円（同18,700円）", extra: "キャンペーンは10月20日受付分まで・関東" },
+  { name: "Rクリーニング", slug: "r-cleaning", normal: "19,350円（キャンペーン時10,780円）", robot: "24,750円（同18,700円）", extra: "キャンペーンは10月31日受付分まで（10月21日公式確認）・関東" },
 ];
 
 export default function PriceIndexPage() {
