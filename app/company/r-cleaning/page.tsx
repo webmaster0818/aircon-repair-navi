@@ -240,6 +240,35 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               一方、みん評の口コミは11件(2026年8月1日時点)と少数ながら評価が1〜5点に二極化しており、水漏れで部屋が濡れたという報告や、洗浄範囲・トラブル後の対応への不満といった否定的な声も確認できます。担当者による品質のばらつきを指摘する声もあるため、高い評価が多数であっても担当者により差が生じる可能性を考慮し、作業範囲と万一の際の補償を申し込み時にご確認ください。
             </p>
+            <h3 className="mt-6 font-bold text-slate-900">口コミサイト別の評価（2026年10月22日確認）</h3>
+            <p className="mt-2 leading-8 text-slate-700">
+              評価はサイトによって大きく異なります。件数の多いくらしのマーケットでは星5が全体の約8割を占める一方、件数の少ないみん評では平均が3点を下回ります。どちらか一方だけで判断せず、件数と低評価の内容をあわせてご確認ください。
+            </p>
+            <div className="mt-3 overflow-x-auto rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <thead className="bg-slate-50 text-slate-600">
+                  <tr>
+                    <th className="text-left px-4 py-3 font-semibold">口コミサイト</th>
+                    <th className="text-left px-4 py-3 font-semibold">評価</th>
+                    <th className="text-left px-4 py-3 font-semibold">件数・内訳</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["くらしのマーケット", "4.73／5.0", "662件（星5：545件・星4：83件・星3：18件・星2：7件・星1：9件。星1〜2は合計16件・約2.4%）"],
+                    ["みん評", "2.72", "11件（評価は1〜5点に二極化）"],
+                    ["公式サイトの表示", "4.7", "件数の記載なし（2026年8月31日現在の表示）"],
+                  ].map(([k, v, n], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 px-4 py-3 border-t border-slate-100">{k}</th>
+                      <td className="align-top text-slate-700 px-4 py-3 border-t border-slate-100 whitespace-nowrap">{v}</td>
+                      <td className="text-slate-700 px-4 py-3 border-t border-slate-100">{n}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://curama.jp/600123749/review/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">くらしのマーケット アールクリーニングの口コミ</a>（2026年10月22日確認）／<a href="https://minhyo.jp/r-cleaning" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評 アールクリーニング</a>（2026年10月22日確認）／公式サイト。評価・件数は投稿により変動します。</p>
           </section>
 
           <section id="company" className="scroll-mt-24">

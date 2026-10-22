@@ -29,6 +29,7 @@ const footerLinks: { category: string; links: { href: string; label: string }[] 
       { href: "/symptom/gas-leak", label: "ガス漏れ" },
       { href: "/symptom/remote-error", label: "リモコン不良" },
       { href: "/symptom/error-code", label: "エラーコード" },
+      { href: "/guide/error-code-mitsubishi", label: "霧ヶ峰のランプの意味" },
       { href: "/guide/heating-not-working", label: "暖房が効かない" },
     ],
   },
