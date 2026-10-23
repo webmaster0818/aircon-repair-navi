@@ -8,13 +8,13 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年8月】",
+    "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年10月】",
   description:
-    "エアコントラブルセンター（運営: 株式会社composure）の口コミ傾向・料金の仕組みを公式ページで確認しました（2026年7月11日）。出張費・見積もり・施工前キャンセルは無料で、料金は基本料金8,800円〜の公称のみ掲載されており、症状別の実額は非公開です。全国2,000社以上の加盟店を手配する紹介型です。",
+    "エアコントラブルセンター（運営: 株式会社Composure）の口コミ傾向・料金の仕組みを公式ページで確認しました（2026年10月23日）。出張費・見積もり・施工前キャンセルは無料で、料金は基本料金8,800円〜の公称のみ掲載されており、症状別の実額は非公開です。全国2,000社の加盟店を手配する紹介型です。",
   alternates: { canonical: "/company/aircon-trouble-center" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月23日";
 
 const toc = [
   { id: "summary", label: "エアコントラブルセンターとは" },
@@ -38,7 +38,7 @@ const toc = [
 const faqs = [
   {
     q: "エアコントラブルセンターの出張費・見積もりは無料ですか？",
-    a: "はい。公式サイトに「出張費用・見積もり料金はいただいておりません」「施工前のキャンセルは無料」と明記されています（2026年7月11日確認）。ただし無料なのは相談・見積もりまでで、実際に施工に至った場合は基本料金（公称8,800円〜）以降の作業料金が発生します。",
+    a: "はい。公式サイトのよくある質問に「出張料・見積もり料金はいただいておりません」「施行依頼前のキャンセル料金は掛かりません」と明記されています（2026年10月23日確認）。ただし無料なのは相談・見積もりまでで、実際に施工に至った場合は基本料金（公称8,800円〜）以降の作業料金が発生します。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -46,11 +46,11 @@ const faqs = [
   },
   {
     q: "誰が修理に来るのですか？",
-    a: "運営元の株式会社composureは会社概要上の事業内容が「情報通信業・広告代理店業・メディア事業・マーケティングサポート」で、自社施工の会社ではありません。公式サイトも「全国2,000社以上の加盟店」と明記しており、実際の施工は各地域の加盟店が行う紹介型サービスです。そのため作業品質・保証の細部は担当加盟店により異なります。",
+    a: "運営元の株式会社Composureは、会社概要上の事業内容が「情報通信業」で、自社施工の会社ではありません（2026年10月23日確認）。公式サイトも「全国2,000社の加盟店」と明記しており、実際の施工は各地域の加盟店が行う紹介型サービスです。そのため作業品質・保証の細部は担当加盟店により異なります。",
   },
   {
     q: "保証はありますか？",
-    a: "公式サイトには「もしまた故障したら全額返金する」旨の記載がありますが、保証期間・対象範囲・適用条件の詳細は公式に明記されていません（2026年7月11日確認）。紹介型のため実際の保証運用は加盟店により差が出る可能性があり、期間と範囲は依頼前に必ず確認してください。",
+    a: "公式サイトに、保証の有無・期間・対象範囲を定めた記載はありません（2026年10月23日確認）。「もしまた故障したら全額返金する」という文言は、公式サイトの「お客様の声」に掲載された利用者の体験談の一部であり、サービスとしての保証規定ではありません。紹介型のため保証の運用は加盟店により異なる可能性があり、期間と範囲は依頼前に必ず確認してください。",
   },
   {
     q: "依頼から訪問まで、どのくらいの時間がかかりますか？",
@@ -66,19 +66,19 @@ const faqs = [
   },
   {
     q: "法人でも利用できますか？後日請求払いは可能ですか？",
-    a: "公式FAQに、法人の後日請求払いは「対応可能。ただし加盟店により出来かねる場合もあるため、受付時にその旨を申し付けてほしい」旨が記載されています（2026年8月2日確認）。法人利用で請求書払いを希望される場合は、受付の時点で必ずお伝えください。",
+    a: "公式FAQに、法人の後日請求払いは「対応可能。ただし加盟店により出来かねる場合もあるため、受付時にその旨を申し付けてほしい」旨が記載されています（2026年10月23日確認）。法人利用で請求書払いを希望される場合は、受付の時点で必ずお伝えください。",
   },
   {
     q: "割引やクーポンはありますか？",
-    a: "公式サイトにWEB限定クーポン1,000円OFFの表示があります（2026年8月2日確認）。ただし適用条件・併用可否の詳細は記載されていないため、受付時に適用の可否を確認し、見積書に反映されているかもあわせて確認することをおすすめします。",
+    a: "公式サイトにWEB限定クーポン1,000円OFFの表示があります（2026年10月23日確認）。ただし適用条件・併用可否の詳細は記載されていないため、受付時に適用の可否を確認し、見積書に反映されているかもあわせて確認することをおすすめします。",
   },
   {
     q: "作業前に署名する書類はありますか？",
-    a: "公式サイトには「事前作業承諾書の署名（サイン）を義務付けており、承諾後の作業になっている」と記載されています（2026年8月2日確認）。承諾書は施工依頼の意思表示にあたるため、署名前に総額・保証・キャンセル条件を確認し、控えまたはスマートフォンの写真を保管してください。",
+    a: "公式サイトには「事前作業承諾書の署名（サイン）を義務付けており、承諾後の作業になっている」と記載されています（2026年10月23日確認）。承諾書は施工依頼の意思表示にあたるため、署名前に総額・保証・キャンセル条件を確認し、控えまたはスマートフォンの写真を保管してください。",
   },
   {
     q: "見積もり後・施工依頼後のキャンセルはできますか？",
-    a: "無料と明記されているのは「施工依頼前のキャンセル」までです。施工依頼後（承諾書への署名後）や作業開始後のキャンセル規定は公式に記載がありません（2026年8月2日確認）。依頼を確定する前に、キャンセル費用が発生する条件を担当加盟店にご確認ください。",
+    a: "無料と明記されているのは「施工依頼前のキャンセル」までです。施工依頼後（承諾書への署名後）や作業開始後のキャンセル規定は公式に記載がありません（2026年10月23日確認）。依頼を確定する前に、キャンセル費用が発生する条件を担当加盟店にご確認ください。",
   },
 ];
 
@@ -86,9 +86,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年8月】",
+    "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -124,12 +124,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアコントラブルセンターの評判
             <br className="hidden md:block" />
-            口コミ・料金の調査結果【2026年8月】
+            口コミ・料金の調査結果【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -142,17 +142,17 @@ export default function Page() {
             エアコンが急に効かなくなった場合や、水漏れ・異音が発生した場合には、迅速に対応できる修理サービスが求められます。
             本記事では、24時間受付・全国対応を掲げるエアコン修理受付サービス
             <strong className="font-semibold text-slate-900">エアコントラブルセンター</strong>
-            について、当サイトが公式ページを直接確認した事実（2026年7月11日調査）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、中立的な立場でまとめています。
+            について、当サイトが公式ページを直接確認した事実（2026年7月11日調査・10月23日再確認）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、中立的な立場でまとめています。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・<strong>出張費・見積もり・施工前キャンセルは無料</strong>（公式明記）。ただし<strong>公式の料金掲載は「基本料金8,800円〜」の公称のみで、症状別の実額は非公開</strong>です</li>
-              <li>・実態は<strong>全国2,000社以上の加盟店を手配する紹介型サービス</strong>。運営会社（株式会社composure）の事業は情報通信・広告・マーケティングで、施工は加盟店が行い、保証内容も加盟店により異なります</li>
+              <li>・実態は<strong>全国2,000社の加盟店を手配する紹介型サービス</strong>。運営会社（株式会社Composure）の事業内容は情報通信業で、施工は加盟店が行います。保証の規定は公式に記載がありません</li>
               <li>・夜間や急ぎで早期の訪問を希望される方に適しています。<strong>金額を比較してから決めたい方には、実額を公開している業者との相見積もりをおすすめします</strong>（<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査一覧</Link>）</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年7月11日に公式受付ページ（aircon-troubleone.com）で確認した内容です。</p>
+            <p className="mt-3 text-xs text-slate-400">※2026年10月23日に公式受付ページ（aircon-troubleone.com）で再確認した内容です。</p>
           </div>
         </div>
 
@@ -182,10 +182,10 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">エアコントラブルセンターとは</h2>
             <p className="leading-8 text-slate-700">
-              エアコントラブルセンターは、冷えない・水漏れ・異音・電源が入らないといったエアコントラブルの<strong className="font-semibold">受付・紹介サービス</strong>です。公式サイトに「全国2,000社以上の加盟店」と明記されているとおり、受付窓口が各地域の加盟店を手配し、施工は加盟店が行う仕組みです。
+              エアコントラブルセンターは、冷えない・水漏れ・異音・電源が入らないといったエアコントラブルの<strong className="font-semibold">受付・紹介サービス</strong>です。公式サイトに「全国2,000社の加盟店」と明記されているとおり、受付窓口が各地域の加盟店を手配し、施工は加盟店が行う仕組みです。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              24時間365日受付・最短30分〜1時間での駆けつけ（いずれも公称）をうたっており、迅速な対応を求める場合に適した窓口です。運営元は株式会社composure（東京都新宿区）で、会社概要上の事業内容は情報通信業・広告代理店業・メディア事業・マーケティングサポートとされ、自社で施工を行う工事会社ではない点にご留意ください（2026年7月11日公式確認）。
+              24時間365日受付・最短30分〜1時間での駆けつけ（いずれも公称）をうたっており、迅速な対応を求める場合に適した窓口です。運営元は株式会社Composure（東京都新宿区）で、会社概要上の事業内容は情報通信業とされ、自社で施工を行う工事会社ではない点にご留意ください（2026年10月23日公式確認）。
             </p>
 
             <FelmatBanner
@@ -223,13 +223,14 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "エアコントラブルセンター"],
-                    ["運営会社", "株式会社composure（東京都新宿区高田馬場2-17-3 東京三協信用金庫本店ビル8階／2023年4月28日設立）"],
-                    ["業態", "加盟店紹介型（運営会社の事業内容は情報通信業・広告代理店業・メディア事業・マーケティング。施工は全国2,000社以上の加盟店が実施）"],
-                    ["許認可の表示", "公式サイト・運営会社の会社概要に建設業許可・電気工事業登録等の記載なし（施工する加盟店の許認可も非開示・2026年7月11日確認）"],
-                    ["対応エリア", "全国（2,000社以上の加盟店・公称。地域により対応スピードが異なる）"],
+                    ["運営会社", "株式会社Composure（東京都新宿区高田馬場2-17-3 東京三協信用金庫本店ビル8階／2023年4月28日設立／資本金500万円）"],
+                    ["業態", "加盟店紹介型（運営会社の事業内容は情報通信業。施工は全国2,000社の加盟店が実施）"],
+                    ["許認可の表示", "公式サイト・運営会社の会社概要に建設業許可・電気工事業登録等の記載なし（施工する加盟店の許認可も非開示・2026年10月23日確認）"],
+                    ["対応エリア", "全国（2,000社の加盟店・公称。地域により対応スピードが異なる）"],
                     ["受付時間", "24時間365日（公称。訪問時間は地域・加盟店の状況により変動）"],
                     ["対応スピード", "最短30分〜1時間で駆けつけ（公称）"],
-                    ["保証", "「再故障時は全額返金」旨の記載あり（期間・対象範囲の詳細は公式に記載なし）"],
+                    ["実績", "年間実績34,000件（公称。集計期間・定義の記載なし）"],
+                    ["保証", "公式に保証規定の記載なし（「全額返金」の文言は「お客様の声」の体験談内のみ）"],
                     ["支払い方法", "VISA・マスター・JCB／銀行振込／現金（加盟店により可否が異なる場合あり）"],
                     ["連絡先", "電話 050-5369-1348（公式サイト掲載）"],
                     ["公式サイト", "aircon-troubleone.com"],
@@ -242,7 +243,7 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：公式受付ページ（aircon-troubleone.com）および運営会社の会社概要（composure.jp）の掲載情報（2026年7月11日確認）。受付時間や対応エリアは変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：公式受付ページ（aircon-troubleone.com）および運営会社の会社概要（composure.jp/company/）の掲載情報（2026年10月23日確認）。受付時間や対応エリアは変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
@@ -296,8 +297,8 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（公式確認ベース）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>症状別の料金実額は公式に掲載がありません</strong>。掲載は「基本料金8,800円〜」の公称のみで金額の根拠は非公開のため、金額を重視される方には、実額を公開している業者との比較をおすすめします</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>運営会社は施工会社ではなく紹介型です</strong>。運営元（株式会社composure）の事業内容は情報通信・広告・マーケティングで、施工は全国2,000社以上の加盟店が行うため、品質・保証・カード可否は担当加盟店により異なります</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>保証の期間・範囲・条件の詳細は非公開です</strong>。公式に「再故障時は全額返金」旨の記載はありますが、対象期間や適用条件の明記がないため、作業前に必ず加盟店へご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>運営会社は施工会社ではなく紹介型です</strong>。運営元（株式会社Composure）の事業内容は情報通信業で、施工は全国2,000社の加盟店が行うため、品質・保証・カード可否は担当加盟店により異なります</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>保証の規定が公式に記載されていません</strong>。「全額返金」の文言は「お客様の声」の体験談に含まれるもので、サービスの保証規定ではありません。保証の有無・期間・条件は、作業前に必ず加盟店へご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>深夜・休日は割増になる場合があります</strong>。公式に割増料金の明記はありませんが、レビューでは深夜・休日の割増を指摘する声があるため、時間外に依頼する際は受付時にご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>繁忙期・遠方は対応が遅れる場合があります</strong>。公式も「加盟スタッフのスケジュールや遠方の場合は時間が変動する」旨を注記しており、真夏の繁忙期は到着目安を受付時にご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>許認可の表示がありません</strong>。公式・会社概要に建設業許可・電気工事業登録の記載がなく、施工加盟店の資格も非開示のため、高所作業や電気工事を伴う内容は、担当者の資格を事前にご確認ください</span></li>
@@ -313,7 +314,7 @@ export default function Page() {
                 <h3 className="font-bold text-sky-800 mb-3">メリット</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>24時間365日受付のため、急なトラブルでも相談が可能</li>
-                  <li>全国2,000社以上の加盟店から近隣の加盟店を手配</li>
+                  <li>全国2,000社の加盟店から近隣の加盟店を手配</li>
                   <li>出張費・見積もり・施工前キャンセルが無料（公式明記）</li>
                   <li>最短30分〜1時間の駆けつけを公称しており、緊急時に対応可能</li>
                 </ul>
@@ -353,7 +354,7 @@ export default function Page() {
           </section>
 
           <section id="price" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の仕組み（2026年7月11日 公式確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の仕組み（2026年10月23日 公式確認）</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
               <table className="w-full text-[0.95rem]">
                 <tbody>
@@ -376,7 +377,7 @@ export default function Page() {
             <p className="leading-8 text-slate-700">
               公式の料金掲載は「基本料金8,800円〜」の公称のみで、症状別の実額は<strong className="font-semibold">現地見積もりで決まる方式</strong>です。第三者の紹介掲載サイト（EPARKくらしのレスキュー）では、ガスチャージ・修理が8,800円〜、真空引き・高所作業が3,300円〜、新規取付65,000円〜といった参考額も掲載されていますが、公式の公称と数値が異なるため、<strong className="font-semibold">提示された見積もりを書面で残す</strong>ことが重要です。相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>で確認できます。
             </p>
-            <p className="mt-3 text-xs text-slate-400">出典：公式サイト（aircon-troubleone.com・基本料金8,800円〜）、EPARKくらしのレスキュー掲載情報（症状別参考額）。いずれも2026年7月11日確認。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：公式サイト（aircon-troubleone.com・基本料金8,800円〜）、EPARKくらしのレスキュー掲載情報（症状別参考額）。公式は2026年10月23日、EPARKは2026年7月11日に確認。</p>
           </section>
 
           <MiniCta href="https://t.felmat.net/fmcl?ak=N119806.1.G1645575.X138222G" label="エアコントラブルセンター公式サイトを見る" lead="料金の詳細と正確な見積もりは、公式サイトの無料相談でご確認いただけます" />
@@ -409,7 +410,7 @@ export default function Page() {
           </section>
 
           <section id="flow-detail" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">流れの詳細と所要時間の目安（2026年8月2日 公式確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">流れの詳細と所要時間の目安（2026年10月23日 公式確認）</h2>
             <p className="leading-8 text-slate-700">
               公式受付ページの記載をもとに、各ステップの確認事項と時間の目安を整理しています。
             </p>
@@ -431,7 +432,7 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">※修理作業そのものの所要時間は公式に記載がなく、症状・部品の有無・担当加盟店により変わります。急ぎの場合は、受付時に到着目安とあわせてご確認ください（2026年8月2日 公式確認）。</p>
+            <p className="mt-3 text-xs text-slate-400">※修理作業そのものの所要時間は公式に記載がなく、症状・部品の有無・担当加盟店により変わります。急ぎの場合は、受付時に到着目安とあわせてご確認ください（2026年10月23日 公式確認）。</p>
           </section>
 
           <section id="menu-scope" className="scroll-mt-24">
@@ -462,7 +463,7 @@ export default function Page() {
           </section>
 
           <section id="payment" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年8月2日 公式確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定（2026年10月23日 公式確認）</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
               <table className="w-full text-[0.95rem]">
                 <tbody>
@@ -494,7 +495,7 @@ export default function Page() {
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>総額の内訳</strong>——基本料金8,800円〜に何が含まれ、部品代・作業料・ガス代がいくら上乗せされるのか、見積書で項目ごとに確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>深夜・休日の割増の有無</strong>——公式に割増の記載がないため、時間外の依頼では、見積額に割増が含まれているかを確認します</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>「再故障時は全額返金」の期間・条件</strong>——公式に詳細の記載がないため、口頭ではなく見積書・承諾書に書面で残るかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>保証の有無・期間・条件</strong>——公式に保証規定の記載がないため、口頭ではなく見積書・承諾書に書面で残るかを確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>担当加盟店の名称・連絡先</strong>——請求書に事業所名・担当者名が記載されるかを確認します。過去の相談事例（Yahoo!知恵袋）で問題となった点です</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>カード払いの可否</strong>——公式は対応と案内していますが、加盟店により異なる場合があるため、作業前に確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>クーポン適用後の金額</strong>——WEB限定1,000円OFFクーポンが見積額に反映されているかを確認します</span></li>
@@ -511,7 +512,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコン救急隊</strong>（<a href="https://aircon-kaketsuke119.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-kaketsuke119.com</a>）——「救急」系の名称を持つ別のエアコン修理業者で、緊急駆けつけ系の検索結果で混在しやすい名称です（同名サービスの見分け方は<Link href="/company/aircon-kyukyusha/" className="text-sky-700 underline">エアコン救急隊の調査ページ</Link>に整理）</span></li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">
-              本記事で扱うエアコントラブルセンターは、<strong className="font-semibold">株式会社composure（東京都新宿区）運営・公式ドメイン aircon-troubleone.com・電話050-5369-1348</strong>のサービスです。口コミや評判を調べる際は、公式ドメインと運営会社名が一致しているかを確認し、別サービスの評判を同社のものと取り違えないようご注意ください。
+              本記事で扱うエアコントラブルセンターは、<strong className="font-semibold">株式会社Composure（東京都新宿区）運営・公式ドメイン aircon-troubleone.com・電話050-5369-1348</strong>のサービスです。口コミや評判を調べる際は、公式ドメインと運営会社名が一致しているかを確認し、別サービスの評判を同社のものと取り違えないようご注意ください。
             </p>
           </section>
 
@@ -533,7 +534,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              エアコントラブルセンターは、24時間受付・出張費と見積もりが無料で、急なエアコントラブルをすぐに相談できる受付窓口です。一方で公式の料金掲載は「基本料金8,800円〜」の公称のみで症状別実額は非公開、施工は全国2,000社以上の加盟店が行うため品質や保証は担当店により差があります。依頼時には「総額見積もりを書面で」「保証期間の確認」「カード可否・担当者の資格の確認」の3点を確認することで、紹介型サービスに伴う主な懸念点に対処できます。
+              エアコントラブルセンターは、24時間受付・出張費と見積もりが無料で、急なエアコントラブルをすぐに相談できる受付窓口です。一方で公式の料金掲載は「基本料金8,800円〜」の公称のみで症状別実額は非公開、施工は全国2,000社の加盟店が行うため品質や保証は担当店により差があります。依頼時には「総額見積もりを書面で」「保証期間の確認」「カード可否・担当者の資格の確認」の3点を確認することで、紹介型サービスに伴う主な懸念点に対処できます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理は症状によって費用が変わります。急ぎでない場合は、複数の業者から見積もりを取り、料金と対応を比較して選ぶことをおすすめします。

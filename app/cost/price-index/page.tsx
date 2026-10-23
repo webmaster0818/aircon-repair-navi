@@ -98,7 +98,7 @@ export default function PriceIndexPage() {
           <FelmatBanner
             slug="aircon-trouble-center"
             heading="出張費・見積もり無料で費用を確認できる窓口（エアコントラブルセンター）"
-            note="24時間受付で、全国2,000社以上の加盟店ネットワークを持つサービスです。無料相談で、症状と費用の目安を確認できます。"
+            note="24時間受付で、全国2,000社の加盟店ネットワークを持つサービスです。無料相談で、症状と費用の目安を確認できます。"
           />
         </section>
 
