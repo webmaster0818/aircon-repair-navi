@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年10月14日";
+const UPDATED = "2026年10月23日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
@@ -229,7 +229,7 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
             <p className="leading-8 text-slate-700">
-              おそうじLabo（大阪・株式会社ペイストレージ）については、<strong className="font-semibold">第三者サイトでの口コミは現時点で少数</strong>です（2026年8月1日調査時点）。店舗情報サイトのエキテンにはページがあり評点3.06と表示されていますが、口コミ本文の投稿は0件で、評価の傾向を判断できる材料はありません。公式サイトには「想像以上にきれいになった」といった5つ星のお客様の声が掲載されているものの、自社サイト掲載のため第三者による検証はできません。くらしのマーケットの出店ページも確認できませんでした。
+              おそうじLabo（大阪・株式会社ペイストレージ）については、<strong className="font-semibold">第三者サイトでの口コミは現時点で少数</strong>です（2026年8月1日調査・2026年10月23日再確認）。店舗情報サイトのエキテンにはページがあり評点3.06と表示されていますが、10月23日時点でも口コミ本文の投稿は0件で、評価の傾向を判断できる材料はありません。公式サイトには「想像以上にきれいになった」といった5つ星のお客様の声が掲載されているものの、自社サイト掲載のため第三者による検証はできません。くらしのマーケットの出店ページも確認できませんでした。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               一方で、悪い評判の一次出典も確認されておらず、口コミが少ないことは悪い評判があることを意味するものではありません。第三者による裏付けが少ないため、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前に確認されることをおすすめします。
@@ -282,7 +282,7 @@ export default function Page() {
               <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
                 <li>
                   ・参照元: <a href="https://www.ekiten.jp/shop_27504638/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">エキテン（おそうじLabo店舗ページ）</a>
-                  ——評点表示は3.06ですが、口コミ本文の投稿は0件です（2026年8月1日確認）。掲載はエアコンクリーニング8,800円〜等のメニュー情報が中心です
+                  ——評点表示は3.06ですが、口コミ本文の投稿は0件です（2026年8月1日確認・2026年10月23日再確認でも変化なし）。掲載は料金帯8,800円〜17,000円（税込）や作業時間の目安（ノーマル約60〜90分・お掃除機能付き約120〜180分）などのメニュー情報が中心で、公式サイトの初回料金と一致しています
                 </li>
                 <li>
                   ・参照元: 公式サイト（osojilabo.com）——5つ星のお客様の声を自社掲載。自社サイト掲載のため第三者検証はできません
@@ -516,7 +516,7 @@ export default function Page() {
               東京都には<strong className="font-semibold">「株式会社おそうじラボ」という同名（表記違い）の別法人</strong>が実在し、ハウスクリーニング予約サイトの<a href="https://yourmystar.jp/suppliers/osoujilab/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">ユアマイスターに出店</a>しています（壁掛けエアコンクリーニングの口コミ1件・評点5.0／2026年8月1日時点）。カタカナ・英字の表記のみが異なる名称のため、ユアマイスター上の高評価口コミを大阪の「おそうじLabo」のものと誤認しやすい状況ですが、<strong className="font-semibold">両者は別の会社</strong>です。本記事でも東京の同名法人の口コミは、大阪のおそうじLaboの評価として扱っていません。
             </p>
             <p className="leading-8 text-slate-700">
-              また「おそうじラボ」で検索すると、<strong className="font-semibold">宮城県仙台市の「スッキリおそうじラボ」</strong>や、全国チェーンの「おそうじ本舗」の口コミページも上位に表示されます（2026年10月14日確認）。いずれも本記事のおそうじLaboとは別の事業者であり、口コミの件数や評点も別個のものです。
+              また「おそうじラボ」で検索すると、<strong className="font-semibold">宮城県仙台市の「スッキリおそうじラボ」</strong>（ミツモアで評価4.9・口コミ87件、2026年10月23日確認）や、全国チェーンの「おそうじ本舗」の口コミページも上位に表示されます（2026年10月14日確認）。いずれも本記事のおそうじLaboとは別の事業者であり、口コミの件数や評点も別個のものです。
             </p>
             <p className="leading-8 text-slate-700 mt-4">
               本記事で扱う「おそうじLabo」は、<strong className="font-semibold">株式会社ペイストレージ運営・大阪市中央区南船場拠点・公式ドメイン osojilabo.com</strong>のサービスです。口コミを調べる際は、運営法人名と所在地（大阪か東京か）が一致しているかをご確認ください。
