@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/take-service" },
 };
 
-const UPDATED = "2026年8月2日";
+const UPDATED = "2026年10月24日";
 
 const toc = [
   { id: "summary", label: "テイクサービスとは" },
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "料金はどのくらいかかりますか？",
-    a: "症状別の実額は公式に掲載されておらず、現地見積もりで金額が決まる完全見積制です。「見積金額の範囲内での作業」を公式に明記しているため、作業前に総額見積もりを書面で受け取ったうえでご判断ください。相場の目安は当サイトの料金調査（/cost/price-index/）が参考になります。",
+    a: "症状別の料金表は公式に掲載されておらず、現地見積もりで金額が決まる完全見積制です。公式ページの比較画像には作業事例として「作業料金（基本料金込み）8,800円・出張費0円・部品代金5,500円・合計14,300円（税込）」が掲載されています（2026年10月24日確認）が、症状によって金額は変わります。「見積金額の範囲内での作業」を公式に明記しているため、作業前に総額見積もりを書面で受け取ったうえでご判断ください。相場の目安は当サイトの料金調査（/cost/price-index/）が参考になります。",
   },
   {
     q: "誰が修理に来るのですか？",
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "修理以外の作業(クリーニングや取り付け・取り外し)も依頼できますか？",
-    a: "公式受付ページでは、エアコン修理のほかにエアコンクリーニング・取り付け・取り外し・ガスチャージがメニューとして掲載されています(2026年8月2日確認)。ただし、いずれも個別の料金は掲載されておらず、現地見積もりで金額が決まる方式です。",
+    a: "公式受付ページのサービス一覧には、エアコン修理のほかにエアコンクリーニング・取り付け・取り外しが掲載されています（ガスチャージは「お悩み」の一つとして掲載・2026年10月24日確認）。ただし、いずれも個別の料金は掲載されておらず、現地見積もりで金額が決まる方式です。",
   },
   {
     q: "他社の見積もりが高かった場合、値引きの相談はできますか？",
@@ -87,7 +87,7 @@ const articleJsonLd = {
   headline:
     "テイクサービスの口コミ・評判｜エアコン修理の料金・対応エリアの調査結果【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-08-02",
+  dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -128,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-02">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -276,7 +276,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（公式確認ベース）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>症状別の料金実額は公式に掲載がありません</strong>（完全見積制）。「業界最安水準」等の文言はありますが金額の根拠は非公開のため、金額を重視される方には、実額を公開している業者との比較をおすすめします</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>症状別の料金表は公式に掲載がありません</strong>（完全見積制）。「最安値挑戦」等の文言と作業事例1件（合計14,300円）は掲載されていますが、症状別の金額は分からないため、金額を重視される方には、症状別の料金を公開している業者との比較をおすすめします</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>見積もりは無料でも、調査は有料になる場合があります</strong>——器具の取り外し作業・通電チェック・電波状況調査・漏電調査は調査費用が発生すると公式に明記されています（金額は非公開）</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>保証の期間・詳細は工事内容と加盟店により異なります</strong>。「同じ症状の再発は無料保証・別箇所の故障は対象外」が公式の基本方針ですが、期間の明記はないため、作業前に必ずご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>クレジットカードが使えない加盟店があります</strong>（VISA・マスター・JCB対応は「一部加盟店では不可」と注記）。カード払いを希望される場合は、受付時にお伝えください</span></li>
@@ -296,7 +296,6 @@ export default function Page() {
                   <li>24時間受付のため、急なトラブルでも相談が可能</li>
                   <li>最短5分での急行を公称しており、緊急時に対応可能</li>
                   <li>年間30,000件とされる実績と、幅広い対応範囲</li>
-                  <li>エアコン以外の電気工事もあわせて相談が可能</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
@@ -317,7 +316,6 @@ export default function Page() {
                 <h3 className="font-bold text-slate-800 mb-3">向いている方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>夜間や休日など、急なエアコントラブルですぐに相談したい方</li>
-                  <li>エアコンとあわせて電気まわりもまとめて依頼したい方</li>
                   <li>迅速な手配を最優先したい方</li>
                 </ul>
               </div>
@@ -341,7 +339,7 @@ export default function Page() {
                     ["見積もり", "無料"],
                     ["依頼前キャンセル", "無料"],
                     ["調査費用", "器具外し・通電チェック・電波状況調査・漏電調査は有料（金額非公開）"],
-                    ["症状別の修理実額", "公式に掲載なし（完全見積制）"],
+                    ["症状別の修理実額", "公式に掲載なし（完全見積制）。作業事例として合計14,300円（作業料金8,800円＋部品代5,500円・出張費0円）の掲載あり"],
                     ["深夜・早朝の割増", "記載なし（受付時に要確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -415,7 +413,7 @@ export default function Page() {
           <section id="menu-price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">対応メニューと料金の見方</h2>
             <p className="leading-8 text-slate-700">
-              2026年8月2日に公式受付ページを確認したところ、対応メニューとして次の5つが掲載されていました。いずれも<strong className="font-semibold">個別の料金表は掲載されておらず、現地見積もりで金額が決まる完全見積制</strong>です。
+              2026年10月24日に公式受付ページを確認したところ、サービス一覧には次の4つが掲載されていました（ガスチャージは「お悩み」の一つとして掲載）。いずれも<strong className="font-semibold">個別の料金表は掲載されておらず、現地見積もりで金額が決まる完全見積制</strong>です。
             </p>
             <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -425,7 +423,6 @@ export default function Page() {
                     ["エアコンクリーニング", "メニューとして掲載あり。料金掲載なし"],
                     ["エアコン取り付け", "メニューとして掲載あり。料金掲載なし"],
                     ["エアコン取り外し", "メニューとして掲載あり。料金掲載なし"],
-                    ["ガスチャージ", "冷媒ガスの補充。メニューとして掲載あり。料金掲載なし"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
                       <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>

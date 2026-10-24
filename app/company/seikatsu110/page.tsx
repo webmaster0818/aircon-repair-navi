@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/seikatsu110" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年10月24日";
 
 const toc = [
   { id: "summary", label: "生活110番とは" },
@@ -56,7 +56,7 @@ const articleJsonLd = {
   headline:
     "生活110番のエアコン修理の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-19",
+  dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -135,7 +135,7 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">生活110番とは</h2>
             <p className="leading-8 text-slate-700">
-              生活110番は、シェアリングテクノロジー株式会社が運営する、暮らしの「困った」を解決する生活トラブル解決サービスです。エアコン修理のほか、水回り、害虫、鍵、不用品回収など150以上のサービスジャンルを扱い、症状や地域に合った専門業者を紹介・マッチングします。
+              生活110番は、シェアリングテクノロジー株式会社が運営する、暮らしの「困った」を解決する生活トラブル解決サービスです。エアコン修理のほか、水回り、害虫、鍵、不用品回収など140以上のカテゴリに対応し（公式トップの表記・2026年10月24日確認）、症状や地域に合った専門業者を紹介・マッチングします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               公式サイトでは「全国7,600社以上の提携業者」とされており（2026年10月15日・公式確認）、コールセンターは24時間365日年中無休で受け付けています。エアコンが冷えない・効かない、水漏れ、異音、エラー表示といった家庭で起きやすいトラブルに幅広く対応しています。運営会社は東証グロース市場に上場しており、初めて利用する方にとって相談しやすい要素の一つです。
@@ -165,7 +165,7 @@ export default function Page() {
                     ["サービス形態", "加盟店紹介型（全国の提携業者を紹介・マッチング）"],
                     ["対応エリア", "全国（提携業者7,600社以上・公式）"],
                     ["受付時間", "24時間365日年中無休（コールセンター受付。訪問時間は加盟店により変動）"],
-                    ["対応ジャンル", "エアコン修理ほか150以上の生活トラブル"],
+                    ["対応ジャンル", "エアコン修理ほか140カテゴリ以上（公式トップ）"],
                     ["相談・見積もり", "無料（公称）"],
                     ["公式サイト", "www.seikatsu110.jp"],
                   ].map(([k, v], i) => (
