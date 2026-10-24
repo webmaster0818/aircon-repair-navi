@@ -88,7 +88,7 @@ const articleJsonLd = {
   headline:
     "エアコンクリーニング清風（せいふう）の口コミ・評判｜運営会社・料金・対応エリアの調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-14",
+  dateModified: "2026-10-23",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +129,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
           </div>
         </header>
 
