@@ -119,18 +119,18 @@ function buildVendors(area: AreaDef) {
   if (mitsumoa?.souba) mitsuTable.push(["掲載の料金相場", mitsumoa.souba]);
   mitsuTable.push([`${area.prefName}の登録`, mitsumoa?.pros ? `エアコン修理のプロ${mitsumoa.pros}人（${D.confirmedAt}）` : "都道府県ページで要確認"]);
   if (mitsumoa?.reviews) mitsuTable.push(["口コミ", `${mitsumoa.reviews}件（${D.confirmedAt}）`]);
-  mitsuTable.push(["見積もり", "無料・最大5件・契約義務なし（公式明記）"]);
+  mitsuTable.push(["見積もり", "無料・最大5件（支払いはプロに依頼するときだけと公式に記載）"]);
   mitsuTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
   repair.push({
     slug: "mitsumoa",
-    badge: mitsumoa?.pros ? `${area.prefName}の修理プロ${mitsumoa.pros}人・無料一括見積もり` : "無料一括見積もり・契約義務なし",
+    badge: mitsumoa?.pros ? `${area.prefName}の修理プロ${mitsumoa.pros}人・無料一括見積もり` : "無料一括見積もり",
     name: "ミツモア",
     category: "マッチングサイト",
     aff: null,
     paras: [
       `ミツモアは、質問に回答すると最大5件の見積もりが届く一括見積もりサイトです。${
         mitsumoa?.pros ? `${area.prefName}のエアコン修理には${mitsumoa.pros}人のプロが登録されています（${D.confirmedAt}）。` : ""
-      }見積もりを受け取った後に依頼するかどうかを選ぶことができ、契約義務はないと公式に明記されています。`,
+      }見積もりを受け取った後に依頼するかどうかを選ぶことができ、支払いが発生するのはプロに仕事を依頼するときだけと公式のよくある質問に記載されています（2026年10月24日確認）。`,
       "複数社の金額と口コミを比較したい方に適しています。",
     ],
     recommend: [
