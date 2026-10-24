@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/kajitaku" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年10月24日";
 
 const toc = [
   { id: "summary", label: "カジタクとは" },
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "対応エリアはどこですか？",
-    a: "公式の対象エリア表では、エアコンクリーニングの対象は43都道府県の対象市区町村で、山形・福井・長崎・大分は掲載されていません。多くの県は掲載された市区町村のみが対象です（沖縄県は那覇市など対象市町村あり）（2026年10月15日・公式確認）。郵便番号で対象エリアかを確認できるため、お申し込み時に対応可否と空き状況をご確認ください。",
+    a: "公式の対象エリア表では、エアコンクリーニングの対象は44都道府県の対象市区町村で、福井・長崎・大分は掲載されていません（山形県は山形市・米沢市が対象）。多くの県は掲載された市区町村のみが対象です（沖縄県は那覇市など対象市町村あり）（2026年10月24日・公式確認）。郵便番号で対象エリアかを確認できるため、お申し込み時に対応可否と空き状況をご確認ください。",
   },
   {
     q: "料金はどのくらいですか？",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "対応できないエアコンはありますか？",
-    a: "公式サイトでは、対象を壁掛け型の通常エアコンとお掃除機能付きモデルとし、天井埋め込み・業務用・床置き・ウィンドウ型などは対象外と案内しています。お持ちの機種が対象かどうか、お申し込み前にご確認ください。",
+    a: "壁掛け型のプラン（ライト・スタンダード・プレミアム）は、壁掛け型の通常エアコンとお掃除機能付きモデルが対象で、天井埋め込み・業務用・床置き・ウィンドウ型などは対象外です。天井埋め込み型は別のサービス（30,800円/台・東京23区・大阪市・名古屋市が対象）として案内されています（2026年10月24日・公式確認）。お持ちの機種が対象かどうか、お申し込み前にご確認ください。",
   },
 ];
 
@@ -56,7 +56,7 @@ const articleJsonLd = {
   headline:
     "カジタク(イオン)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-07-19",
+  dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -150,8 +150,8 @@ export default function Page() {
                     ["サービス名", "カジタク(KAJITAKU)"],
                     ["運営", "イオングループ(アクティア株式会社)"],
                     ["サービス内容", "エアコンクリーニング／ハウスクリーニング／宅配クリーニング／家事代行 等"],
-                    ["対応エリア", "43都道府県の対象市区町村（山形・福井・長崎・大分は掲載なし。郵便番号で要確認）（2026年10月15日・公式確認）"],
-                    ["対象エアコン", "壁掛け型(通常・お掃除機能付き)。天井埋め込み・業務用・床置き・ウィンドウ型は対象外"],
+                    ["対応エリア", "44都道府県の対象市区町村（福井・長崎・大分は掲載なし。郵便番号で要確認）（2026年10月24日・公式確認）"],
+                    ["対象エアコン", "壁掛け型(通常・お掃除機能付き)。天井埋め込み型は別サービス(30,800円/台・東京23区・大阪市・名古屋市)。業務用・床置き・ウィンドウ型は対象外"],
                     ["保証", "7日以内の再施工保証(公称)／防カビ抗菌コート無料"],
                     ["申し込み", "Webで完結・料金は事前に確認可"],
                     ["公式サイト", "www.kajitaku.com"],
@@ -199,7 +199,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>夏場や年末の繁忙期は予約が集中し、希望日時に予約できない場合があります。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>担当スタッフによって、作業の丁寧さの受け止め方に差が生じる場合があります。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>故障の「修理」ではなくクリーニングのサービスのため、目的に合うかをご確認ください。</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お持ちの機種が対象か(天井埋め込み・業務用などは対象外)を、お申し込み前にご確認ください。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>お持ちの機種が対象か(壁掛け型のプランは天井埋め込み・業務用などが対象外。天井埋め込み型は別サービスで対象地域が限られます)を、お申し込み前にご確認ください。</li>
             </ul>
           </section>
 
@@ -240,7 +240,7 @@ export default function Page() {
               <div className="rounded-2xl border border-slate-200 p-6">
                 <h3 className="font-bold text-slate-800 mb-3">向いていない方</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>天井埋め込み・業務用など対象外機種を頼みたい方</li>
+                  <li>業務用・床置きなど対象外の機種や、天井埋め込み型を対象地域外で頼みたい方</li>
                   <li>清掃ではなく、故障の修理を頼みたい方</li>
                 </ul>
               </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/denki-koujiya" },
 };
 
-const UPDATED = "2026年7月19日";
+const UPDATED = "2026年10月24日";
 
 const toc = [
   { id: "summary", label: "電気の工事屋さんとは" },
@@ -52,7 +52,7 @@ const articleJsonLd = {
   headline:
     "電気の工事屋さんの評判は悪い？エアコン修理の料金は高い？口コミと他社比較による調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-07-19",
+  dateModified: "2026-10-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -93,7 +93,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-07-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
