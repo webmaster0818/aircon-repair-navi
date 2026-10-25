@@ -8,13 +8,13 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアホームのエアコン修理の評判｜口コミ・料金の調査結果【2026年8月】",
+    "エアホームのエアコン修理の評判｜口コミ・料金の調査結果【2026年10月】",
   description:
     "エアコン修理「エアホーム」(横浜市西区)の料金・口コミを公式サイトで調査(2026年10月15日再確認)。基本料金2,980円〜・出張費/見積もり0円・24時間365日受付と、保証・許認可・特定商取引法の表記が非掲載である点、依頼前に確認すべき点を中立的に解説します。",
   alternates: { canonical: "/company/airhome-support" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年10月25日";
 
 const toc = [
   { id: "summary", label: "エアホームとは" },
@@ -86,9 +86,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアホームのエアコン修理の評判｜口コミ・料金の調査結果【2026年8月】",
+    "エアホームのエアコン修理の評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-24",
+  dateModified: "2026-10-25",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -124,12 +124,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアホームのエアコン修理の評判
             <br className="hidden md:block" />
-            口コミ・料金の調査結果【2026年8月】
+            口コミ・料金の調査結果【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -190,7 +190,7 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
             <p className="leading-8 text-slate-700">
-              エアホーム（airhomesupport.com）については、Yahoo!知恵袋・みん評・Googleマップ・くらしのマーケットなどを対象に再調査を行いましたが、同社を特定できる一次的な口コミの掲載は確認できず、<strong className="font-semibold">第三者サイトでの口コミは現時点で少数</strong>です（2026年8月1日調査時点）。公式サイトにお客様の声の掲載はありません。実績件数は公式サイトの画像内に「年間実績30,000件以上」と記載されていますが、第三者が確認できる数字ではありません（2026年10月24日確認）。良い評判・悪い評判のいずれも、出典を示せる形では確認できませんでした。
+              エアホーム（airhomesupport.com）については、Yahoo!知恵袋・みん評・Googleマップ・くらしのマーケットなどを対象に再調査を行いましたが、同社を特定できる一次的な口コミの掲載は確認できず、<strong className="font-semibold">第三者サイトでの口コミは現時点で少数</strong>です（2026年8月1日調査時点。2026年10月25日に一般検索・ミツモア・ゼヒトモ・くらしのマーケットの検索結果で再確認しましたが、表示されるのは別事業者の口コミのみで、同社を特定できる口コミは見つかりませんでした）。公式サイトにお客様の声の掲載はありません。実績件数は公式サイトの画像内に「年間実績30,000件以上」と記載されていますが、第三者が確認できる数字ではありません（2026年10月24日確認）。良い評判・悪い評判のいずれも、出典を示せる形では確認できませんでした。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               口コミが確認できないこと自体は「悪い評判がある」という意味ではありません。ただし第三者情報による裏付けが得られないため、依頼前に<strong className="font-semibold">「総額見積もりの書面化」「運営法人名・許認可の有無」「再発時の保証の有無」</strong>を電話で直接確認されることをおすすめします。
@@ -237,7 +237,7 @@ export default function Page() {
           <section id="review" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              当サイトでは、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。エアホーム(airhomesupport.com)については、2026年7月12日時点で、くらしのマーケット・ミツモアなどの主要な口コミプラットフォームや検索結果を調べても、<strong className="font-semibold">同社を特定できる第三者の口コミ・評価は確認できませんでした</strong>。2026年8月1日にYahoo!知恵袋・みん評・Googleマップも含めて再調査しましたが、結果は同じです。知恵袋には同社を名指しするスレッドが見つからず、検索でヒットしたエアコン故障相談のスレッドを実際に開いて確認しても同社への言及はありませんでした。「エアホームの口コミ」を扱う外部記事も確認しましたが、実際の口コミの引用はなく、業界の一般論の紹介にとどまっていました。
+              当サイトでは、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。エアホーム(airhomesupport.com)については、2026年7月12日時点で、くらしのマーケット・ミツモアなどの主要な口コミプラットフォームや検索結果を調べても、<strong className="font-semibold">同社を特定できる第三者の口コミ・評価は確認できませんでした</strong>。2026年8月1日にYahoo!知恵袋・みん評・Googleマップも含めて再調査しましたが、結果は同じです。2026年10月25日にも「エアホーム 評判」「エアホーム 口コミ」「エアホーム 横浜市西区」で検索しましたが、上位に表示されるのはミツモアなどに掲載された別事業者の口コミで、同社への言及はありませんでした。知恵袋には同社を名指しするスレッドが見つからず、検索でヒットしたエアコン故障相談のスレッドを実際に開いて確認しても同社への言及はありませんでした。「エアホームの口コミ」を扱う外部記事も確認しましたが、実際の口コミの引用はなく、業界の一般論の紹介にとどまっていました。
             </p>
             <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
               <h3 className="font-bold text-orange-800 mb-3">評判を見るうえでの前提</h3>
@@ -247,7 +247,7 @@ export default function Page() {
                 <li>・そのため本記事では、事実として確認できた公式サイトの掲載内容のみを扱い、評価の断定は避けています</li>
               </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月12日（2026年8月1日に再調査）。調査対象：エアホーム公式サイト、Yahoo!知恵袋、みん評、Googleマップ、くらしのマーケット・ミツモア等の口コミプラットフォーム、一般検索結果。いずれにも同社を特定できる一次口コミの掲載はなく、リンクでご案内できる出典もありません。口コミが確認できないことは「悪い評判がある」という意味ではありませんが、事前の情報収集が難しい点にご留意ください。</p>
+            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月12日（2026年8月1日・2026年10月25日に再調査）。調査対象：エアホーム公式サイト、Yahoo!知恵袋、みん評、Googleマップ、くらしのマーケット・ミツモア等の口コミプラットフォーム、一般検索結果。いずれにも同社を特定できる一次口コミの掲載はなく、リンクでご案内できる出典もありません。口コミが確認できないことは「悪い評判がある」という意味ではありませんが、事前の情報収集が難しい点にご留意ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

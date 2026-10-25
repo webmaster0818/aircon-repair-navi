@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年10月25日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
@@ -92,7 +92,7 @@ const articleJsonLd = {
   headline:
     "ダスキンのエアコンクリーニングの口コミ・評判｜悪い口コミ・料金・満足の保証の調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-23",
+  dateModified: "2026-10-25",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -133,7 +133,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -376,7 +376,38 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               土日祝・夜間作業は追加費用が生じる場合があります。台数や機種、オプションによって総額が変わるため、申し込み時に最新の料金と総額をご確認ください。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。店舗・時期により異なる場合があります。最新の金額は申し込み時にご確認ください。</p>
+            <h3 className="mt-6 font-bold text-slate-900">他社との料金比較（壁掛け1台・税込・各社公式の掲載額）</h3>
+            <div className="mt-3 overflow-x-auto rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <thead>
+                  <tr className="bg-slate-100">
+                    <th className="text-left font-semibold text-slate-600 px-4 py-3">業者</th>
+                    <th className="text-left font-semibold text-slate-600 px-4 py-3">お掃除機能なし</th>
+                    <th className="text-left font-semibold text-slate-600 px-4 py-3">お掃除機能付き</th>
+                    <th className="text-left font-semibold text-slate-600 px-4 py-3">確認日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["ダスキン", "15,400円（2台セット25,300円）", "26,400円", "2026年10月14日"],
+                    ["おそうじ本舗", "通常14,300円（キャンペーン価格13,200円）", "通常24,200円（キャンペーン価格23,100円）", "2026年10月25日"],
+                    ["アールクリーニング", "10,780円（10月31日受付分までの特別価格・通常19,350円）", "18,700円", "2026年10月14日・21日"],
+                    ["エアコンクリーニング清風", "13,200円", "18,700円", "2026年10月14日"],
+                  ].map(([a, b, c, d], i) => (
+                    <tr key={a} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-700 px-4 py-3 border-t border-slate-100 whitespace-nowrap">{a}</th>
+                      <td className="text-slate-700 px-4 py-3 border-t border-slate-100">{b}</td>
+                      <td className="text-slate-700 px-4 py-3 border-t border-slate-100">{c}</td>
+                      <td className="text-slate-500 px-4 py-3 border-t border-slate-100 whitespace-nowrap">{d}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              ダスキンは掲載額では高めですが、全国約1,200店舗の体制と、不備があればやり直す「満足の保証」がある点が他社との違いです。アールクリーニングは首都圏、清風は関東・関西・東海が対応エリアのため、お住まいの地域で依頼できるかもあわせてご確認ください。各社の詳細は<Link href="/company/r-cleaning/" className="text-sky-600 underline underline-offset-2">アールクリーニング</Link>・<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風</Link>の各ページと<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>でご覧いただけます。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">※料金は公式サイト掲載の目安です。店舗・時期により異なる場合があります。最新の金額は申し込み時にご確認ください。他社の金額は当サイトが各社公式サイトで確認した時点のもので、キャンペーン価格は期間により変わります。</p>
           </section>
 
           <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+91ODXU+503W+63WO2" label="ダスキン サービスマスター公式サイトを見る" lead="料金の詳細と正確な見積もりは、公式サイトの無料相談でご確認いただけます" />
