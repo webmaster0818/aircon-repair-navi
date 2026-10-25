@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cost/gas-refill/" },
 };
 
-const UPDATED = "2026年8月19日";
+const UPDATED = "2026年10月25日";
 
 const faqs = [
   {
     q: "ガス補充だけなら費用はいくらですか？",
-    a: "業者の公式掲載額では、電気の工事屋さんがガス充填16,500円〜、EPARKくらしのレスキュー掲載業者でガス補充7,700円〜という水準が確認できています（当サイト調査）。ただし、ガスが減っている場合の多くは、どこかに漏れ箇所があります。漏れを特定・修理せずに補充のみを行うと再びガスが抜けるため、「補充のみの金額」と「漏れ修理を含む金額」を分けて見積もりで確認することが重要です。",
+    a: "業者の公式掲載額では、電気の工事屋さんがガス充填16,500円〜、EPARKくらしのレスキューの掲載業者でガスチャージ・ガス充填8,800円〜という表示が確認できます（いずれも2026年10月25日に公式サイトで確認）。ただし、ガスが減っている場合の多くは、どこかに漏れ箇所があります。漏れを特定・修理せずに補充のみを行うと再びガスが抜けるため、「補充のみの金額」と「漏れ修理を含む金額」を分けて見積もりで確認することが重要です。",
   },
   {
     q: "メーカーに依頼した場合、ガス系の修理費用はどのくらいですか？",
-    a: "ダイキン公式FAQでは、冷えない・暖まらない症状の修理目安として電気系統部品28,000〜46,000円程度、冷媒系統部品70,000〜105,000円程度（いずれも税込・出張料/技術料/部品代込み・保証期間終了後）と案内されています（2026年8月19日確認）。また、圧縮機交換など溶接を伴う作業では、約15万〜20万円程度になる場合があると公式に記載されています。",
+    a: "ダイキン公式FAQでは、冷えない・暖まらない症状の修理目安として電気系統部品28,000〜46,000円程度、冷媒系統部品70,000〜105,000円程度（いずれも税込・出張料/技術料/部品代込み・保証期間終了後）と案内されています（2026年10月25日確認）。また、圧縮機交換など溶接を伴う作業では、約15万〜20万円程度になる場合があると公式に記載されています。",
   },
   {
     q: "ヤマダ電機やケーズデンキでガス補充を頼めますか？",
-    a: "ヤマダ電機（ヤマダテクニカルサービス）は現在、症状別の料金表を公式サイトに掲載しておらず、見積もりで確認する方式です（旧公式サイトには出張料4,500円等の掲載がありました。2026年7月11日当サイト確認値）。ケーズデンキは、公式サイトで症状別の金額を確認できませんでした（当サイトの確認時にアクセス制限あり・2026年8月時点）。いずれも購入店・保証経由であれば費用面のメリットがあるため、保証書をご確認のうえでお問い合わせいただくことをおすすめします。",
+    a: "ヤマダ電機（ヤマダテクニカルサービス）は現在、症状別の料金表を公式サイトに掲載しておらず、見積もりで確認する方式です（旧公式サイトには出張料4,500円等の掲載がありました。2026年7月11日当サイト確認値）。ケーズデンキは、公式サイトで症状別の金額を確認できていません（2026年10月25日時点も、当サイトから公式サイトに接続できない状態です）。いずれも購入店・保証経由であれば費用面のメリットがあるため、保証書をご確認のうえでお問い合わせいただくことをおすすめします。",
   },
   {
     q: "ガスが漏れているかどうかは自分で判断できますか？",
@@ -56,7 +56,7 @@ export default function GasRefillPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-19">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -70,7 +70,7 @@ export default function GasRefillPage() {
           <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
             <p className="font-bold text-amber-800 mb-1">本記事の要点</p>
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
-              <li>・補充のみの公式掲載額の例: <strong>7,700円〜／16,500円〜</strong>（業者により差・当サイト調査）</li>
+              <li>・補充のみの公式掲載額の例: <strong>8,800円〜／16,500円〜</strong>（業者により差・{UPDATED}確認）</li>
               <li>・漏れ修理を含むメーカー目安: <strong>冷媒系統70,000〜105,000円程度</strong>（ダイキン公式・税込）</li>
               <li>・確認事項: <strong>漏れを直さない補充は再発しやすい</strong>ため、見積もりに「漏れ点検・修理を含むか」の確認が必要</li>
             </ul>
@@ -93,17 +93,17 @@ export default function GasRefillPage() {
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">電気の工事屋さん</td>
                     <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">ガス充填 16,500円〜</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">公式サイトに症状別の金額を掲載（当サイト調査）。見積もり0円と明記</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">公式サイトに作業別の金額を掲載。見積もり無料と明記（{UPDATED}確認）</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">EPARKくらしのレスキュー</td>
-                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">ガス補充 7,700円〜</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">掲載業者の最低価格帯（当サイト調査）。「〜」表記のため、補充量・漏れの状況により変動</td>
+                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">ガスチャージ・充填 8,800円〜</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">エアコン修理カテゴリの掲載業者の表示のうち最も低い額（{UPDATED}確認）。ほかの掲載業者では11,000円〜・18,000円・19,800円〜などの表示もあります。「〜」表記のため、補充量・漏れの状況により変動します</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">マッチング型の掲載相場</td>
-                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">ガス漏れ 14,400〜19,000円</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">ミツモア14,400〜19,000円／すまいのホットライン16,000〜19,000円（いずれも当サイト調査の掲載相場）</td>
+                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">ガス漏れ 15,000〜19,500円</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">ミツモア15,000〜19,500円（公式相場・2026年10月23日更新。成約金額の中央値は18,000円）／すまいのホットライン16,000〜19,000円（公式の目安・1台あたり）。いずれも2026年10月24日に公式サイトで確認</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">ダイキン（メーカー直接）</td>
@@ -116,14 +116,14 @@ export default function GasRefillPage() {
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">ヤマダ電機／ケーズデンキ</td>
                     <td className="border border-slate-300 px-3 py-2 whitespace-nowrap">見積もり確認方式</td>
                     <td className="border border-slate-300 px-3 py-2 leading-7">
-                      ヤマダは現在、症状別料金の公式掲載なし（旧公式サイトの出張料4,500円等は2026年7月11日当サイト確認値）。ケーズは公式サイトで症状別の金額を確認できず（確認時にアクセス制限あり）。保証の適用可否を事前にご確認ください
+                      ヤマダは現在、症状別料金の公式掲載なし（旧公式サイトの出張料4,500円等は2026年7月11日当サイト確認値）。ケーズは公式サイトで症状別の金額を確認できず（2026年10月25日時点も公式サイトに接続できない状態）。保証の適用可否を事前にご確認ください
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※金額は{UPDATED}時点までの当サイト調査値・公式掲載値です。冷媒の種類（R32/R410A/R22）・補充量・漏れ箇所により変動します。旧式のR22冷媒は割高になる傾向があります。
+              ※金額は2026年10月24〜25日に確認した公式掲載値です。冷媒の種類（R32/R410A/R22）・補充量・漏れ箇所により変動します。旧式のR22冷媒は割高になる傾向があります。
             </p>
           </section>
 
@@ -176,7 +176,7 @@ export default function GasRefillPage() {
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
                 <li>・ダイキン公式FAQ「冷えない・暖まらない（修理金額）」電気系統28,000〜46,000円／冷媒系統70,000〜105,000円程度・税込、誤放出は保証対象外との記載（{UPDATED}確認）</li>
-                <li>・電気の工事屋さん／EPARK／ミツモア／すまいのホットラインの金額: 当サイトの業者横断調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>）</li>
+                <li>・電気の工事屋さん（公式の料金表・{UPDATED}確認）／EPARKくらしのレスキュー（エアコン修理カテゴリの掲載業者・{UPDATED}確認）／ミツモア・すまいのホットライン（各公式の相場・2026年10月24日確認）。各社の比較は<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>をご覧ください</li>
                 <li>・ヤマダ電機の旧公式掲載額: 2026年7月11日の当サイト確認値（現在の公式サイトは見積もり方式）</li>
                 <li>・国民生活センター「エアコン修理のトラブルに注意！」（2026年6月3日公表）</li>
               </ul>
