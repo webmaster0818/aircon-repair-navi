@@ -95,7 +95,7 @@ export default function PowerNotOnPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">改善しない場合の修理の検討</h2>
             <p className="text-sm leading-7 text-slate-700 mb-4">
               リセット・ブレーカー・仕様の確認で改善しない場合は、基板・配線・受電系の不具合が考えられ、ご自身で原因を特定することはできません。
-              修理費用の水準は<Link href="/cost/repair-price/" className="text-sky-700 underline">修理の実額ガイド</Link>と<Link href="/guide/repair-cost/" className="text-sky-700 underline">修理費用の相場ガイド</Link>でご確認いただけます。
+              修理費用の水準は<Link href="/cost/repair-price/" className="text-sky-700 underline">修理の実額ガイド</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">修理費用の相場ガイド</Link>でご確認いただけます。
               使用年数が10年前後の場合は<Link href="/guide/lifespan/" className="text-sky-700 underline">寿命・買い替え判断</Link>もあわせてご覧ください。
               電源は入るものの暖房だけが効かない場合は<Link href="/guide/heating-not-working/" className="text-sky-700 underline">暖房が効かない原因ガイド</Link>をご覧ください。
               賃貸の備え付けエアコンは原則として貸主の負担となるため、まず管理会社へご連絡ください（<Link href="/guide/rental-aircon-repair/" className="text-sky-700 underline">賃貸の負担区分ガイド</Link>）。
@@ -121,7 +121,7 @@ export default function PowerNotOnPage() {
                 { href: "/guide/remote-not-working/", label: "リモコンが効かない場合の応急運転" },
                 { href: "/guide/outdoor-unit-not-working/", label: "室外機が動かない場合の見分け方" },
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
-                { href: "/guide/repair-cost/", label: "エアコン修理費用の相場" },
+                { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/rental-aircon-repair/", label: "賃貸エアコンの修理費用の負担区分" },
                 { href: "/guide/lifespan/", label: "エアコンの寿命と買い替えの目安" },
               ].map((l) => (

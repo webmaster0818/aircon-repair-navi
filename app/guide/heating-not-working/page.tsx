@@ -181,7 +181,7 @@ export default function HeatingNotWorkingPage() {
             </ol>
             <p className="mt-4 text-sm leading-7 text-slate-700">
               この3つで改善しない場合は、冷媒ガスの不足・漏れや部品の不具合が考えられます。
-              ガス関連は<Link href="/cost/gas-refill/" className="text-sky-700 underline">ガス補充の費用ガイド</Link>を、修理費用全般は<Link href="/guide/repair-cost/" className="text-sky-700 underline">修理費用の相場ガイド</Link>をご覧ください。
+              ガス関連は<Link href="/cost/gas-refill/" className="text-sky-700 underline">ガス補充の費用ガイド</Link>を、修理費用全般は<Link href="/cost/repair-price/" className="text-sky-700 underline">修理費用の相場ガイド</Link>をご覧ください。
               エラーコードが表示されている場合は、<Link href="/guide/error-code-daikin/" className="text-sky-700 underline">エラーコード一覧</Link>で意味をご確認いただけます。
             </p>
           </section>
@@ -207,7 +207,7 @@ export default function HeatingNotWorkingPage() {
                 { href: "/symptom/not-cooling", label: "冷房が冷えない場合の原因と対処" },
                 { href: "/guide/outdoor-unit-not-working/", label: "室外機が動かない場合の見分け方" },
                 { href: "/cost/gas-refill/", label: "エアコンのガス補充費用" },
-                { href: "/guide/repair-cost/", label: "エアコン修理費用の相場" },
+                { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/lifespan/", label: "エアコンの寿命と買い替えの目安" },
                 { href: "/guide/busy-season/", label: "修理の繁忙期と依頼の時期" },
               ].map((l) => (

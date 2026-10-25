@@ -128,7 +128,7 @@ export default function OutdoorUnitPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">改善しない場合の修理費用の考え方</h2>
             <p className="text-sm leading-7 text-slate-700 mb-4">
               上記で改善しない場合は、室外機のファンモータ・基板・圧縮機・冷媒系統などの不具合が考えられ、ご自身で原因を特定することはできません。
-              費用は部位により大きく異なるため、<Link href="/guide/repair-cost/" className="text-sky-700 underline">修理費用ガイド(メーカー公式目安+業者実額)</Link>で部位別の目安を確認してから依頼することをおすすめします。
+              費用は部位により大きく異なるため、<Link href="/cost/repair-price/" className="text-sky-700 underline">修理費用ガイド(メーカー公式目安+業者実額)</Link>で部位別の目安を確認してから依頼することをおすすめします。
               室外機の修理は高額になりやすいため、使用年数が10年前後の場合は<Link href="/guide/lifespan/" className="text-sky-700 underline">寿命・買い替え判断のガイド</Link>もあわせてご確認ください。
               依頼先の選び方は<Link href="/guide/where-to-repair/" className="text-sky-700 underline">修理の依頼先の比較ガイド</Link>でご説明しています。
             </p>
@@ -151,7 +151,7 @@ export default function OutdoorUnitPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
-                { href: "/guide/repair-cost/", label: "エアコン修理費用の相場" },
+                { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/lifespan/", label: "エアコンの寿命と買い替えの目安" },
                 { href: "/guide/remote-not-working/", label: "リモコンが効かない場合の応急運転" },
                 { href: "/guide/where-to-repair/", label: "修理の依頼先の比較" },

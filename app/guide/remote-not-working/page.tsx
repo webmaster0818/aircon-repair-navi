@@ -131,7 +131,7 @@ export default function RemoteNotWorkingPage() {
               <li><strong>汎用リモコン</strong>：家電量販店・通販で購入でき、価格も手頃ですが、機種専用の機能（お掃除設定・センサー関連など）は操作できない場合があります。</li>
             </ul>
             <p className="mt-4 text-sm leading-7 text-slate-700">
-              リモコンを交換しても動かない場合は、本体の受光部・基板側の問題が考えられます。費用の目安は<Link href="/guide/repair-cost/" className="text-sky-700 underline">修理費用ガイド</Link>、依頼先は<Link href="/guide/where-to-repair/" className="text-sky-700 underline">依頼先の比較ガイド</Link>をご覧ください。
+              リモコンを交換しても動かない場合は、本体の受光部・基板側の問題が考えられます。費用の目安は<Link href="/cost/repair-price/" className="text-sky-700 underline">修理費用ガイド</Link>、依頼先は<Link href="/guide/where-to-repair/" className="text-sky-700 underline">依頼先の比較ガイド</Link>をご覧ください。
             </p>
           </section>
 
@@ -152,7 +152,7 @@ export default function RemoteNotWorkingPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
                 { href: "/guide/outdoor-unit-not-working/", label: "室外機が動かない場合の見分け方" },
-                { href: "/guide/repair-cost/", label: "エアコン修理費用の相場" },
+                { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/rental-aircon-repair/", label: "賃貸エアコンの修理費用の負担区分" },
                 { href: "/guide/where-to-repair/", label: "修理の依頼先の比較" },
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
