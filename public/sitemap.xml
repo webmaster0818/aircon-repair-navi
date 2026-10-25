@@ -709,6 +709,7 @@
     <priority>0.7</priority>
   </url>  <url>
     <loc>https://aircon-maintenance-navi.com/guide/water-leak/</loc>
+    <lastmod>2026-10-25</lastmod>
   </url>
   <url>
     <loc>https://aircon-maintenance-navi.com/cost/gas-refill/</loc>
@@ -1092,21 +1093,25 @@
   </url>
   <url>
     <loc>https://aircon-maintenance-navi.com/guide/outdoor-unit-not-working/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aircon-maintenance-navi.com/guide/remote-not-working/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aircon-maintenance-navi.com/guide/smell/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://aircon-maintenance-navi.com/guide/power-not-on/</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
