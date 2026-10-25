@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/rental-aircon-repair/" },
 };
 
-const UPDATED = "2026年8月10日";
+const UPDATED = "2026年10月25日";
 
 const toc = [
   { id: "summary", label: "原則は大家の負担" },
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     q: "大家が何日も対応しない場合は、どうすればよいですか？",
-    a: "①修繕が必要であることを通知した記録（メール・アプリのやりとり等）を残す、②相当の期間（一般に真夏の生活必需設備なら数日程度が目安とされますが法定の日数はありません）を待つ、③それでも対応がない場合は、民法607条の2にもとづきご自身で修繕を手配し、民法608条1項により、支出した必要費を直ちに大家へ償還請求できます。トラブルを防ぐため、見積もりを事前に大家へ共有しておくことをおすすめします。",
+    a: "①修繕が必要であることを通知した記録（メール・アプリのやりとり等）を残す、②相当の期間を待つ（民法は「相当の期間」と定めるのみで、具体的な日数の定めはありません）、③それでも対応がない場合は、民法607条の2にもとづきご自身で修繕を手配し、民法608条1項により、支出した必要費を直ちに大家へ償還請求できます。トラブルを防ぐため、見積もりを事前に大家へ共有しておくことをおすすめします。",
   },
   {
     q: "前の入居者が残したエアコン（残置物）も、大家が修理しますか？",
@@ -68,7 +68,7 @@ export default function RentalAirconRepairPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -191,7 +191,7 @@ export default function RentalAirconRepairPage() {
               </div>
               <p className="text-sm leading-7 text-slate-500">
                 条文出典：e-Gov法令検索「民法」（明治二十九年法律第八十九号）
-                <a href="https://elaws.e-gov.go.jp/document?lawid=129AC0000000089" target="_blank" rel="noopener" className="text-sky-600 underline underline-offset-2 ml-1">原文を見る</a>
+                <a href="https://laws.e-gov.go.jp/document?lawid=129AC0000000089" target="_blank" rel="noopener" className="text-sky-600 underline underline-offset-2 ml-1">原文を見る</a>
                 （{UPDATED}確認）
               </p>
             </div>
@@ -267,7 +267,7 @@ export default function RentalAirconRepairPage() {
               {[
                 ["契約書でエアコンの扱いを確認する", "「設備」であれば大家に修繕義務があります。「残置物」であればご自身で手配します。"],
                 ["管理会社・大家に記録が残る形で連絡する", "症状・発生日・部屋番号を伝え、修繕を依頼した記録（メールなど）を残します。これが民法607条の2第1号の「通知」にあたります。"],
-                ["相当の期間を待つ", "法定の日数はありませんが、夏季の冷房など生活に不可欠な設備は、比較的短い期間で判断されると考えられています。再度の連絡も記録に残してください。"],
+                ["相当の期間を待つ", "民法は「相当の期間」と定めるのみで、具体的な日数の定めはありません。再度の連絡も記録に残してください。"],
                 ["対応がない場合はご自身で修繕を手配する", "民法607条の2にもとづき、修理業者へ依頼します。見積もりを事前に大家へ共有しておくことで、トラブルを防ぎやすくなります。"],
                 ["費用を大家に償還請求する", "民法608条1項により、支出した必要費は直ちに請求できます。領収書・見積書・やりとりの記録を保管してください。"],
               ].map(([t, d], i) => (
@@ -330,7 +330,7 @@ export default function RentalAirconRepairPage() {
             <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <p className="font-bold text-slate-800 mb-2">出典（いずれも{UPDATED}確認）</p>
               <ul className="space-y-1">
-                <li>・<a href="https://elaws.e-gov.go.jp/document?lawid=129AC0000000089" target="_blank" rel="noopener" className="text-sky-600 underline underline-offset-2">e-Gov法令検索「民法」</a>（606条・607条の2・608条）</li>
+                <li>・<a href="https://laws.e-gov.go.jp/document?lawid=129AC0000000089" target="_blank" rel="noopener" className="text-sky-600 underline underline-offset-2">e-Gov法令検索「民法」</a>（606条・607条の2・608条）</li>
                 <li>・<a href="https://www.mlit.go.jp/jutakukentiku/house/jutakukentiku_house_tk3_000020.html" target="_blank" rel="noopener" className="text-sky-600 underline underline-offset-2">国土交通省「原状回復をめぐるトラブルとガイドライン」</a>（再改訂版）</li>
               </ul>
             </div>

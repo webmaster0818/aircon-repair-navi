@@ -4,22 +4,22 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "エアコンの寿命は何年？標準使用期間10年と平均使用年数13.6年の違い【2026年】",
+    "エアコンの寿命は何年？標準使用期間10年と平均使用年数13.4年の違い【2026年】",
   description:
-    "エアコンの寿命を、公的統計とメーカー公式の情報にもとづいてご説明します。設計上の標準使用期間は多くのメーカーで10年、内閣府消費動向調査の平均使用年数は13.6年（買替え理由は故障が65.1%）です。修理と買い替えの判断基準、部品保有期間の終了により修理できなくなる時期、寿命の兆候を出典とあわせて掲載しています。",
+    "エアコンの寿命を、公的統計とメーカー公式の情報にもとづいてご説明します。設計上の標準使用期間は多くのメーカーで10年、内閣府消費動向調査（2026年3月調査）の平均使用年数は13.4年（買替え理由は故障が66.6%）です。修理と買い替えの判断基準、部品保有期間の終了により修理できなくなる時期、寿命の兆候を出典とあわせて掲載しています。",
   alternates: { canonical: "/guide/lifespan/" },
 };
 
-const UPDATED = "2026年8月21日";
+const UPDATED = "2026年10月25日";
 
 const faqs = [
   {
     q: "エアコンの寿命は何年ですか？",
-    a: "目安は2つあります。安全に使用できる設計上の目安である「標準使用期間」は、多くのメーカーで10年とされています（本体のシールに表示・パナソニック公式解説、2026年8月21日確認）。一方、実際の使用年数は、内閣府の消費動向調査で平均13.6年です（パナソニック公式ページ掲載値）。公的統計と公式の情報からは、10年が点検・買い替えを検討する目安であり、実際には13年前後まで使用する方が多いといえます。",
+    a: "目安は2つあります。安全に使用できる設計上の目安である「標準使用期間」は、多くのメーカーで10年とされています（本体のシールに表示・パナソニック公式解説、2026年10月25日確認）。一方、実際の使用年数は、内閣府の消費動向調査（2026年3月調査）で平均13.4年です。公的統計と公式の情報からは、10年が点検・買い替えを検討する目安であり、平均では13年以上使用されているといえます。",
   },
   {
     q: "10年を超えたエアコンは修理できますか？",
-    a: "修理できる場合とできない場合があります。メーカーは修理用部品の保有期間（製造打ち切り後おおむね10年）を定めており、この期間を過ぎると部品の在庫がなく、修理を受け付けてもらえない場合があります（パナソニック公式解説・2026年8月21日確認）。製造から10年前後の機種は、修理を依頼する前にメーカーの部品の保有状況をご確認ください。",
+    a: "修理できる場合とできない場合があります。メーカーは修理用部品の保有期間（製造打ち切り後おおむね10年）を定めており、この期間を過ぎると部品の在庫がなく、修理を受け付けてもらえない場合があります（パナソニック公式「補修用性能部品の保有期間」でエアコンは10年・2026年10月25日確認）。製造から10年前後の機種は、修理を依頼する前にメーカーの部品の保有状況をご確認ください。",
   },
   {
     q: "寿命のサインにはどんな症状がありますか？",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "修理と買い替えは、どちらを選ぶべきですか？",
-    a: "一般的な判断基準は、「修理費が新品購入価格の半分を超えるかどうか」と「製造から10年を超えているかどうか」の2点です。10年を超える機種は、部品保有期間の終了に加え、修理しても他の部品が続けて故障する可能性があります。一方、保証期間内や購入から数年以内であれば、修理が基本となります。詳しくは、修理と買い替えの判断ガイドで、メーカー公式の修理目安額とあわせてご説明しています。",
+    a: "当サイトでは、「修理費と買い替え費用の比較」と「製造から10年を超えているかどうか」の2点で判断することをおすすめしています（公的な基準ではなく、当サイトの目安です）。10年を超える機種は、部品保有期間の終了に加え、修理しても他の部品が続けて故障する可能性があります。一方、保証期間内や購入から数年以内であれば、修理が基本となります。詳しくは、修理と買い替えの判断ガイドで、メーカー公式の修理目安額とあわせてご説明しています。",
   },
   {
     q: "エアコンの寿命を延ばす方法はありますか？",
@@ -51,12 +51,12 @@ export default function LifespanPage() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアコンの寿命は何年？
             <br className="hidden md:block" />
-            「10年」と「13.6年」の2つの数字の意味
+            「10年」と「13.4年」の2つの数字の意味
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-21">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -70,7 +70,7 @@ export default function LifespanPage() {
             <p className="font-bold text-sky-800 mb-1">要点</p>
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
               <li>・<strong>設計上の標準使用期間 = 多くのメーカーで10年</strong>（本体のシールで確認可能）</li>
-              <li>・<strong>実際の平均使用年数 = 13.6年</strong>（内閣府 消費動向調査・買替え理由は「故障」が65.1%）</li>
+              <li>・<strong>実際の平均使用年数 = 13.4年</strong>（内閣府 消費動向調査・2026年3月調査。買替え理由は「故障」が66.6%）</li>
               <li>・<strong>修理部品の保有期間 = 製造打ち切り後約10年</strong>（終了後は修理自体ができなくなる場合あり）</li>
             </ul>
           </div>
@@ -86,13 +86,13 @@ export default function LifespanPage() {
               エアコン本体に貼ってあるシールなどの表示で確認できます（{UPDATED}確認）。
             </p>
             <p className="text-sm leading-7 text-slate-700">
-              この期間を超えてすぐに故障するわけではありませんが、経年劣化による発煙・発火などの安全上のリスクが高まる目安とされているため、
+              この期間を超えてすぐに故障するわけではありませんが、経済産業省の長期使用製品安全表示制度では、標準使用期間を超えて使用すると経年劣化による発火・けが等の事故に至るおそれがあるとされています。そのため、
               10年を超えた機種は、不調の兆候を放置しないことが重要です。
             </p>
           </section>
 
           <section id="actual" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">「13.6年」の根拠：公的統計の平均使用年数</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">「13.4年」の根拠：公的統計の平均使用年数</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -105,12 +105,12 @@ export default function LifespanPage() {
                 <tbody>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">平均使用年数</td>
-                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">13.6年</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">内閣府「消費動向調査」（パナソニック公式ページ掲載値・{UPDATED}確認）</td>
+                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">13.4年</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">内閣府「消費動向調査」（2026年3月実施分・買替えをした世帯の平均・{UPDATED}確認）</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">買替え理由の1位</td>
-                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">故障（65.1%）</td>
+                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">故障（66.6%）</td>
                     <td className="border border-slate-300 px-3 py-2 leading-7">同上。上位品目への買替えなど他の理由を大きく上回り、故障が最多です</td>
                   </tr>
                 </tbody>
@@ -127,8 +127,8 @@ export default function LifespanPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見落とされやすい修理部品の保有期間</h2>
             <p className="text-sm leading-7 text-slate-700">
               寿命を考えるうえで見落とされやすいのが、<strong>修理用部品の保有期間</strong>です。
-              メーカーは修理部品の保有期間を定めており（製造打ち切り後おおむね10年）、これを過ぎると
-              <strong>部品の在庫がなく、修理ができない</strong>状態になります（パナソニック公式解説・{UPDATED}確認）。
+              メーカーは修理部品の保有期間を定めており（パナソニックの場合、エアコンは10年）、これを過ぎると
+              <strong>部品の在庫がなく、修理ができない</strong>状態になる場合があります（パナソニック公式「補修用性能部品の保有期間」・{UPDATED}確認）。
               製造から10年前後の機種で故障した場合は、修理の受付時に部品の在庫を必ずご確認ください。
               メーカー別の修理目安額は<Link href="/cost/maker-repair-fee/" className="text-sky-600 underline underline-offset-2">メーカー修理費用の比較</Link>にまとめています。
             </p>
@@ -173,7 +173,7 @@ export default function LifespanPage() {
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">製造から10年未満</td>
-                    <td className="border border-slate-300 px-3 py-2 leading-7">見積もりを比較し、修理費が新品購入価格の半分を超える場合は買い替えもご検討ください</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">見積もりを比較し、修理費と買い替え費用を使用年数とあわせてご判断ください（当サイトの目安です）</td>
                   </tr>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">製造から10年超</td>
@@ -205,7 +205,9 @@ export default function LifespanPage() {
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
                 <li>・パナソニック公式「エアコンの買い替え時はいつ？」：設計上の標準使用期間10年・部品保有期間・消費動向調査の引用値（{UPDATED}確認）</li>
-                <li>・内閣府「消費動向調査」：ルームエアコンの平均使用年数13.6年・買替え理由 故障65.1%（上記パナソニック公式ページ掲載値として確認）</li>
+                <li>・内閣府「消費動向調査」（令和8（2026）年3月実施分）：ルームエアコンの平均使用年数13.4年・買替え理由 故障66.6%（{UPDATED}確認）</li>
+                <li>・パナソニック公式「補修用性能部品の保有期間」：エアコン10年（{UPDATED}確認）</li>
+                <li>・経済産業省「長期使用製品安全表示制度」（{UPDATED}確認）</li>
                 <li>・平均使用年数の最新値：内閣府の公表資料（調査年により変動）</li>
               </ul>
             </div>

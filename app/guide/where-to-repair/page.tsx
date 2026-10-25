@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/where-to-repair/" },
 };
 
-const UPDATED = "2026年8月10日";
+const UPDATED = "2026年10月25日";
 
 const toc = [
   { id: "summary", label: "依頼先を決める3つの質問" },
@@ -34,7 +34,7 @@ const makers = [
   },
   {
     name: "パナソニック",
-    phone: "0120-878-554（携帯: 0570-087-692）",
+    phone: "0120-878-554（フリーダイヤルに接続できない場合: 03-6633-6700・有料）",
     web: "Web出張修理申込あり",
     note: "9:00〜18:00・年中無休",
     url: "https://panasonic.jp/aircon/support.html",
@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: "当日中に修理したい場合はどうすればよいですか？",
-    a: "メーカーや量販店の修理は受付から訪問まで日数がかかることがあり、特に7〜8月の繁忙期は1週間以上待つ場合もあります。即日対応を掲げる修理業者に朝の早い時間帯に連絡し、症状と総額の見積もりを確認したうえで依頼する方法が有効です。当サイトの即日対応ランキングでは、24時間受付の業者を比較できます。",
+    a: "メーカーや量販店の修理は受付から訪問まで日数がかかることがあり、特に7〜8月の繁忙期は訪問までに日数がかかる場合があります。即日対応を掲げる修理業者に朝の早い時間帯に連絡し、症状と総額の見積もりを確認したうえで依頼する方法が有効です。当サイトの即日対応ランキングでは、24時間受付の業者を比較できます。",
   },
 ];
 
@@ -113,7 +113,7 @@ export default function WhereToRepairPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-08-10">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -181,7 +181,7 @@ export default function WhereToRepairPage() {
                   no: "NOなら次の質問へ",
                 },
                 {
-                  q: "Q3. 量販店の長期保証（5〜11年）に加入していますか？",
+                  q: "Q3. 量販店の長期保証（期間は販売店・プランにより異なります）に加入していますか？",
                   yes: "→ 購入した量販店の保証窓口へ連絡",
                   yesHref: "#shop",
                   no: "NOなら修理業者へ依頼（即日対応も可能）",
