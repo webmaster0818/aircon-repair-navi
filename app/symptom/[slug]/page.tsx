@@ -7,7 +7,7 @@ import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 
-const UPDATED = "2026年7月2日";
+const UPDATED = "2026年10月25日";
 
 // 症状の主因タイプ: 修理(故障起因) / クリーニング(汚れ起因) / 両方あり得る
 const careType: Record<string, "repair" | "cleaning" | "hybrid"> = {
@@ -108,6 +108,7 @@ export default async function SymptomPage({
   const seoDescription = (s.seoDescription as string) ?? symptom.description;
   const quickCheck = (s.quickCheck as string[] | undefined) ?? [];
   const costBreakdown = (s.costBreakdown as CostRow[] | undefined) ?? [];
+  const costNote = (s.costNote as string | undefined) ?? "";
   const relatedGuides = (s.relatedGuides as string[] | undefined) ?? [];
   const relatedSymptomSlugs = (s.relatedSymptoms as string[] | undefined) ?? [];
 
@@ -142,7 +143,7 @@ export default async function SymptomPage({
     headline: seoTitle,
     description: seoDescription,
     datePublished: "2026-06-29",
-    dateModified: "2026-06-29",
+    dateModified: "2026-10-25",
     author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
     publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
   };
@@ -303,6 +304,9 @@ export default async function SymptomPage({
               </p>
             </div>
           )}
+          {costNote ? (
+            <p className="text-xs leading-6 text-gray-600 mt-3">出典：{costNote}</p>
+          ) : null}
           <p className="text-xs text-gray-500 mt-3">
             ※費用は目安です。実際の金額は症状・機種・地域・業者によって変動します。正確な金額は、必ず見積もりにてご確認ください。
           </p>

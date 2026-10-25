@@ -19,12 +19,13 @@ const symptoms = [
 ];
 
 const costTable = [
-  { symptom: "ガス補充（冷えない）", range: "20,000〜50,000円" },
-  { symptom: "水漏れ修理", range: "3,000〜30,000円" },
-  { symptom: "異音修理（ファン系）", range: "8,000〜40,000円" },
-  { symptom: "基板交換", range: "30,000〜100,000円" },
-  { symptom: "コンプレッサー交換", range: "80,000〜200,000円" },
-  { symptom: "リモコン交換", range: "2,000〜10,000円" },
+  { symptom: "ガス漏れ修理・ガス補充（ミツモア公式の相場）", range: "15,000〜19,500円" },
+  { symptom: "冷媒系統部品の修理（ダイキン公式）", range: "70,000〜105,000円程度" },
+  { symptom: "水漏れ・壁掛けタイプ（ダイキン公式）", range: "17,000〜64,000円程度" },
+  { symptom: "運転しない・運転中に止まる（ダイキン公式）", range: "28,000〜64,000円程度" },
+  { symptom: "ファンの修理・室外機／室内機（ダイキン公式）", range: "21,000〜55,000円／53,000〜75,000円程度" },
+  { symptom: "圧縮機交換など溶接を伴う修理（ダイキン公式）", range: "約15万〜20万円程度" },
+  { symptom: "リモコンの購入（ダイキン公式）", range: "2,000〜10,000円程度" },
 ];
 
 const choosingPoints = [
@@ -246,7 +247,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <span className="ac-eyebrow">COST GUIDE</span>
             <h2 className="text-2xl md:text-3xl font-bold mt-4 mb-3">修理費用の目安</h2>
-            <p className="text-[var(--color-ink-2)] text-sm">症状別の修理費用の相場です</p>
+            <p className="text-[var(--color-ink-2)] text-sm">公式サイトに掲載されている、症状別の修理費用の目安です</p>
           </div>
 
           <div className="border border-[var(--color-line)] rounded-lg overflow-hidden">
@@ -268,7 +269,7 @@ export default function HomePage() {
             </table>
           </div>
           <p className="text-xs text-[var(--color-ink-3)] mt-3">
-            ※費用は目安です。実際の費用は、症状・機種・業者によって異なります。
+            出典：ダイキン公式FAQの修理目安金額（税込・出張料・技術料・部品代を含む・保証期間終了後・2026年10月25日確認）、ミツモア公式のエアコン修理の相場（2026年10月23日更新・10月24日確認）。※費用は目安です。実際の費用は、症状・機種・業者によって異なります。
           </p>
 
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-sm">

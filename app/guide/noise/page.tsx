@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/noise" },
 };
 
-const UPDATED = "2026年6月29日";
+const UPDATED = "2026年10月25日";
 
 const toc = [
   { id: "summary", label: "エアコンの異音が示す状態" },
@@ -69,7 +69,7 @@ const faqs = [
   },
   {
     q: "修理費用はどのくらいかかりますか？",
-    a: "原因や交換部品によって幅があります。ファン系の修理は8,000〜40,000円程度、内部部品の交換が必要な場合はさらに高くなることもあります。これらは一般的な目安であり、実際の金額は機種・症状・業者によって異なるため、見積もりでご確認ください。費用の詳細は費用ガイドもご覧ください。",
+    a: "原因や交換部品によって幅があります。ダイキン公式FAQの目安では、ファンの修理は室外機21,000〜55,000円程度、室内機53,000〜75,000円程度です（税込・出張料等を含む・保証期間終了後・2026年10月25日確認）。点検・原因の調査だけであれば、ミツモア公式の相場で6,000〜9,900円です（2026年10月24日確認）。実際の金額は機種・症状・業者によって異なるため、見積もりでご確認ください。費用の詳細は費用ガイドもご覧ください。",
   },
 ];
 
@@ -79,7 +79,7 @@ const articleJsonLd = {
   headline:
     "エアコンの異音「ガガガ」など 症状別の原因と対処【2026年】",
   datePublished: "2026-06-29",
-  dateModified: "2026-06-29",
+  dateModified: "2026-10-25",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -120,7 +120,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-06-29">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
