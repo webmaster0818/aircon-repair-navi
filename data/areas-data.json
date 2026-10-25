@@ -1,9 +1,10 @@
 {
  "confirmedAt": "2026年8月時点",
+ "curamaConfirmedAt": "2026年10月25日時点",
  "prefStats": {
   "aichi": {
    "curama": {
-    "count": 36,
+    "count": 42,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "13,000円"
@@ -16,7 +17,7 @@
   },
   "yamanashi": {
    "curama": {
-    "count": 3,
+    "count": 5,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "19,500円"
@@ -29,7 +30,7 @@
   },
   "fukui": {
    "curama": {
-    "count": 3,
+    "count": 4,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "20,000円"
@@ -68,7 +69,7 @@
   },
   "tottori": {
    "curama": {
-    "count": 1,
+    "count": 2,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "22,000円"
@@ -81,7 +82,7 @@
   },
   "ibaraki": {
    "curama": {
-    "count": 21,
+    "count": 26,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "10,000円"
@@ -94,7 +95,7 @@
   },
   "shimane": {
    "curama": {
-    "count": 2,
+    "count": 3,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -107,7 +108,7 @@
   },
   "hyogo": {
    "curama": {
-    "count": 52,
+    "count": 54,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "11,000円"
@@ -133,7 +134,7 @@
   },
   "tokushima": {
    "curama": {
-    "count": 4,
+    "count": 5,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -146,7 +147,7 @@
   },
   "shizuoka": {
    "curama": {
-    "count": 9,
+    "count": 12,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,000円"
@@ -198,7 +199,7 @@
   },
   "nagano": {
    "curama": {
-    "count": 1,
+    "count": 4,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -224,7 +225,7 @@
   },
   "nara": {
    "curama": {
-    "count": 20,
+    "count": 23,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "11,000円"
@@ -250,7 +251,7 @@
   },
   "gifu": {
    "curama": {
-    "count": 17,
+    "count": 20,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,000円"
@@ -263,7 +264,7 @@
   },
   "okinawa": {
    "curama": {
-    "count": 5,
+    "count": 6,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "16,500円"
@@ -276,7 +277,7 @@
   },
   "fukuoka": {
    "curama": {
-    "count": 24,
+    "count": 26,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "3,300円"
@@ -315,7 +316,7 @@
   },
   "yamaguchi": {
    "curama": {
-    "count": 5,
+    "count": 6,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -328,7 +329,7 @@
   },
   "ehime": {
    "curama": {
-    "count": 3,
+    "count": 4,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "14,000円"
@@ -341,7 +342,7 @@
   },
   "miyagi": {
    "curama": {
-    "count": 6,
+    "count": 7,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "17,000円"
@@ -354,7 +355,7 @@
   },
   "tokyo": {
    "curama": {
-    "count": 89,
+    "count": 92,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "10,000円"
@@ -367,7 +368,7 @@
   },
   "mie": {
    "curama": {
-    "count": 9,
+    "count": 12,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "12,000円"
@@ -380,7 +381,7 @@
   },
   "toyama": {
    "curama": {
-    "count": 3,
+    "count": 4,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -393,7 +394,7 @@
   },
   "hiroshima": {
    "curama": {
-    "count": 7,
+    "count": 9,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,600円"
@@ -406,7 +407,7 @@
   },
   "chiba": {
    "curama": {
-    "count": 45,
+    "count": 51,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "10,000円"
@@ -419,7 +420,7 @@
   },
   "gunma": {
    "curama": {
-    "count": 5,
+    "count": 8,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -432,7 +433,7 @@
   },
   "miyazaki": {
    "curama": {
-    "count": 3,
+    "count": 4,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -445,7 +446,7 @@
   },
   "iwate": {
    "curama": {
-    "count": 2,
+    "count": 1,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -458,7 +459,7 @@
   },
   "kyoto": {
    "curama": {
-    "count": 24,
+    "count": 27,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "12,000円"
@@ -484,7 +485,7 @@
   },
   "shiga": {
    "curama": {
-    "count": 11,
+    "count": 15,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,000円"
@@ -497,7 +498,7 @@
   },
   "fukushima": {
    "curama": {
-    "count": 2,
+    "count": 3,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "20,000円"
@@ -510,7 +511,7 @@
   },
   "tochigi": {
    "curama": {
-    "count": 9,
+    "count": 11,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,000円"
@@ -523,7 +524,7 @@
   },
   "saga": {
    "curama": {
-    "count": 11,
+    "count": 13,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "3,300円"
@@ -536,7 +537,7 @@
   },
   "hokkaido": {
    "curama": {
-    "count": 9,
+    "count": 8,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "18,000円"
@@ -549,7 +550,7 @@
   },
   "kagawa": {
    "curama": {
-    "count": 6,
+    "count": 8,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "15,000円"
@@ -562,7 +563,7 @@
   },
   "nagasaki": {
    "curama": {
-    "count": 4,
+    "count": 7,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "16,500円"
@@ -588,7 +589,7 @@
   },
   "saitama": {
    "curama": {
-    "count": 64,
+    "count": 74,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": "10,000円"
@@ -601,7 +602,7 @@
   },
   "osaka": {
    "curama": {
-    "count": 65,
+    "count": 68,
     "priceGas": "16,000〜19,000円",
     "priceWater": "11,000〜20,000円",
     "minPrice": null

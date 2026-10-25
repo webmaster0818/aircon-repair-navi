@@ -17,6 +17,7 @@ import areasData from "@/data/areas-data.json";
 
 const D = areasData as {
   confirmedAt: string;
+  curamaConfirmedAt: string;
   prefStats: Record<string, {
     curama: { count: number | null; priceGas: string | null; priceWater: string | null; minPrice: string | null };
     mitsumoa: { pros: number | null; souba: string | null; reviews: number | null };
@@ -89,16 +90,16 @@ function buildVendors(area: AreaDef) {
 
   const curamaParas = [
     `くらしのマーケットは、地域の事業者を料金と口コミで比較して直接予約できるマッチングサイトです。${
-      curama?.count ? `${area.prefName}のエアコン修理カテゴリには${curama.count}件の事業者が登録されています（${D.confirmedAt}）。` : `${area.prefName}のエアコン修理カテゴリページから、地域の登録事業者を探せます。`
+      curama?.count ? `${area.prefName}のエアコン修理カテゴリには${curama.count}件の事業者が登録されています（${D.curamaConfirmedAt}）。` : `${area.prefName}のエアコン修理カテゴリページから、地域の登録事業者を探せます。`
     }`,
     `事業者ごとに税込料金・口コミ・評価・返信スピードを比較して選べる点が特徴で、地域密着の事業者も多数登録されています。`,
   ];
   const curamaTable: [string, string][] = [];
   if (curama?.priceGas) curamaTable.push(["ガス漏れ修理の相場", `${curama.priceGas}（全国の相場・2023年8月時点。くらしのマーケット公式コラムで2026年10月25日確認）`]);
   if (curama?.priceWater) curamaTable.push(["水漏れ修理の相場", `${curama.priceWater}（全国の相場・2023年8月時点。くらしのマーケット公式コラムで2026年10月25日確認）`]);
-  curamaTable.push([`${area.prefName}の登録`, curama?.count ? `エアコン修理${curama.count}件（${D.confirmedAt}）` : "都道府県ページで要確認"]);
+  curamaTable.push([`${area.prefName}の登録`, curama?.count ? `エアコン修理${curama.count}件（${D.curamaConfirmedAt}）` : "都道府県ページで要確認"]);
   curamaTable.push(["予約方法", "Webで事業者を選び直接予約（メッセージでの相談可）"]);
-  curamaTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
+  curamaTable.push(["確認日", `${D.curamaConfirmedAt}（${area.prefName}ページ調査）`]);
   repair.push({
     slug: "kurashi-market",
     badge: curama?.count ? `${area.prefName}の修理事業者${curama.count}件を比較` : `${area.prefName}の事業者を料金と口コミで比較`,
