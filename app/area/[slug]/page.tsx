@@ -18,9 +18,10 @@ import areasData from "@/data/areas-data.json";
 const D = areasData as {
   confirmedAt: string;
   curamaConfirmedAt: string;
+  mitsumoaConfirmedAt: string;
   prefStats: Record<string, {
     curama: { count: number | null; priceGas: string | null; priceWater: string | null; minPrice: string | null };
-    mitsumoa: { pros: number | null; souba: string | null; reviews: number | null };
+    mitsumoa: { pros: number | null; gasSouba: string | null; reviews: number | null; avg: string | null };
   }>;
   seifuAreas: Record<string, string[]>;
   rcleaningPrefs: string[];
@@ -117,11 +118,11 @@ function buildVendors(area: AreaDef) {
   });
 
   const mitsuTable: [string, string][] = [];
-  if (mitsumoa?.souba) mitsuTable.push(["掲載の料金相場", mitsumoa.souba]);
-  mitsuTable.push([`${area.prefName}の登録`, mitsumoa?.pros ? `エアコン修理のプロ${mitsumoa.pros}人（${D.confirmedAt}）` : "都道府県ページで要確認"]);
-  if (mitsumoa?.reviews) mitsuTable.push(["口コミ", `${mitsumoa.reviews}件（${D.confirmedAt}）`]);
+  if (mitsumoa?.gasSouba) mitsuTable.push(["冷媒ガス漏れ修理・ガス補充の相場", `${mitsumoa.gasSouba}（${area.prefName}のページ）`]);
+  mitsuTable.push([`${area.prefName}の登録`, mitsumoa?.pros ? `紹介できるエアコン修理のプロ${mitsumoa.pros}人（${D.mitsumoaConfirmedAt}）` : "都道府県ページで要確認"]);
+  if (mitsumoa?.reviews) mitsuTable.push(["口コミ", `${mitsumoa.reviews}件${mitsumoa.avg ? `・平均${mitsumoa.avg}` : ""}（${D.mitsumoaConfirmedAt}）`]);
   mitsuTable.push(["見積もり", "無料・最大5件（支払いはプロに依頼するときだけと公式に記載）"]);
-  mitsuTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
+  mitsuTable.push(["確認日", `${D.mitsumoaConfirmedAt}（${area.prefName}ページ調査）`]);
   repair.push({
     slug: "mitsumoa",
     badge: mitsumoa?.pros ? `${area.prefName}の修理プロ${mitsumoa.pros}人・無料一括見積もり` : "無料一括見積もり",
@@ -130,7 +131,7 @@ function buildVendors(area: AreaDef) {
     aff: null,
     paras: [
       `ミツモアは、質問に回答すると最大5件の見積もりが届く一括見積もりサイトです。${
-        mitsumoa?.pros ? `${area.prefName}のエアコン修理には${mitsumoa.pros}人のプロが登録されています（${D.confirmedAt}）。` : ""
+        mitsumoa?.pros ? `${area.prefName}のエアコン修理には${mitsumoa.pros}人のプロが紹介可能と表示されています（${D.mitsumoaConfirmedAt}）。` : ""
       }見積もりを受け取った後に依頼するかどうかを選ぶことができ、支払いが発生するのはプロに仕事を依頼するときだけと公式のよくある質問に記載されています（2026年10月24日確認）。`,
       "複数社の金額と口コミを比較したい方に適しています。",
     ],
@@ -380,7 +381,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   const faqs = [
     {
       q: `${area.name}のエアコン修理の料金相場はどのくらいですか？`,
-      a: `${stats?.mitsumoa?.souba ? `ミツモアの${area.prefName}のページでは、修理の料金相場が${stats.mitsumoa.souba}と掲載されていました（${D.confirmedAt}）。` : ""}${stats?.curama?.priceGas ? `くらしのマーケットは公式コラムで、全国の相場をガス漏れ修理${stats.curama.priceGas}${stats.curama.priceWater ? `・水漏れ修理${stats.curama.priceWater}` : ""}と案内しています（2023年8月時点）。` : ""}${!stats?.mitsumoa?.souba && !stats?.curama?.priceGas ? "公表相場の表示を確認できなかったため、複数社の見積もりの比較をおすすめします。" : ""}症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。`,
+      a: `${stats?.mitsumoa?.gasSouba ? `ミツモアの${area.prefName}のページでは、冷媒ガス漏れ修理・ガス補充の相場が${stats.mitsumoa.gasSouba}と掲載されています（${D.mitsumoaConfirmedAt}）。` : ""}${stats?.curama?.priceGas ? `くらしのマーケットは公式コラムで、全国の相場をガス漏れ修理${stats.curama.priceGas}${stats.curama.priceWater ? `・水漏れ修理${stats.curama.priceWater}` : ""}と案内しています（2023年8月時点）。` : ""}${!stats?.mitsumoa?.gasSouba && !stats?.curama?.priceGas ? "公表相場の表示を確認できなかったため、複数社の見積もりの比較をおすすめします。" : ""}症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。`,
     },
     {
       q: `${area.name}で即日対応が可能なエアコン修理業者はありますか？`,
@@ -474,7 +475,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <VendorBlock key={v.slug} v={v} rank={i + 1} />
         ))}
 
-        {(stats?.curama?.priceGas || stats?.mitsumoa?.souba) && (
+        {(stats?.curama?.priceGas || stats?.mitsumoa?.gasSouba) && (
           <>
             <SectionHeading>{area.prefName}のエアコン修理 料金相場データ</SectionHeading>
             <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
@@ -501,10 +502,10 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
                       <td className="border border-[#D9D9D9] px-3 py-2">{stats.curama.priceWater}</td>
                     </tr>
                   )}
-                  {stats?.mitsumoa?.souba && (
+                  {stats?.mitsumoa?.gasSouba && (
                     <tr>
-                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">修理の料金相場（ミツモア・{area.prefName}のページ・{D.confirmedAt}）</td>
-                      <td className="border border-[#D9D9D9] px-3 py-2">{stats.mitsumoa.souba}</td>
+                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">冷媒ガス漏れ修理・ガス補充（ミツモア・{area.prefName}のページ・{D.mitsumoaConfirmedAt}）</td>
+                      <td className="border border-[#D9D9D9] px-3 py-2">{stats.mitsumoa.gasSouba}</td>
                     </tr>
                   )}
                 </tbody>

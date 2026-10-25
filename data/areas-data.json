@@ -1,6 +1,7 @@
 {
  "confirmedAt": "2026年8月時点",
  "curamaConfirmedAt": "2026年10月25日時点",
+ "mitsumoaConfirmedAt": "2026年10月25日時点",
  "prefStats": {
   "aichi": {
    "curama": {
@@ -10,9 +11,10 @@
     "minPrice": "13,000円"
    },
    "mitsumoa": {
-    "pros": 135,
-    "souba": "7,000〜15,000円",
-    "reviews": 1538
+    "pros": 151,
+    "gasSouba": "13,000〜20,000円",
+    "reviews": 1835,
+    "avg": "4.9"
    }
   },
   "yamanashi": {
@@ -23,9 +25,10 @@
     "minPrice": "19,500円"
    },
    "mitsumoa": {
-    "pros": 66,
-    "souba": "8,800〜16,000円",
-    "reviews": 345
+    "pros": 68,
+    "gasSouba": "18,000〜24,000円",
+    "reviews": 341,
+    "avg": "4.8"
    }
   },
   "fukui": {
@@ -37,8 +40,9 @@
    },
    "mitsumoa": {
     "pros": 21,
-    "souba": "6,000〜16,000円",
-    "reviews": 583
+    "gasSouba": "17,000〜25,000円",
+    "reviews": 419,
+    "avg": "4.9"
    }
   },
   "kochi": {
@@ -49,9 +53,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": null,
-    "souba": null,
-    "reviews": null
+    "pros": 16,
+    "gasSouba": "16,000〜24,000円",
+    "reviews": 74,
+    "avg": "4.9"
    }
   },
   "ishikawa": {
@@ -62,9 +67,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 20,
-    "souba": "6,000〜15,400円",
-    "reviews": 252
+    "pros": 22,
+    "gasSouba": "18,000〜24,000円",
+    "reviews": 426,
+    "avg": "4.9"
    }
   },
   "tottori": {
@@ -75,9 +81,10 @@
     "minPrice": "22,000円"
    },
    "mitsumoa": {
-    "pros": 13,
-    "souba": "8,000〜16,000円",
-    "reviews": 284
+    "pros": 14,
+    "gasSouba": "15,000〜24,000円",
+    "reviews": 289,
+    "avg": "4.9"
    }
   },
   "ibaraki": {
@@ -88,9 +95,10 @@
     "minPrice": "10,000円"
    },
    "mitsumoa": {
-    "pros": 162,
-    "souba": "7,000〜13,000円",
-    "reviews": 1221
+    "pros": 166,
+    "gasSouba": "18,000〜22,000円",
+    "reviews": 1310,
+    "avg": "4.7"
    }
   },
   "shimane": {
@@ -101,9 +109,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 15,
-    "souba": "8,000〜16,000円",
-    "reviews": 27
+    "pros": 18,
+    "gasSouba": "15,000〜19,500円",
+    "reviews": 82,
+    "avg": "4.8"
    }
   },
   "hyogo": {
@@ -114,9 +123,10 @@
     "minPrice": "11,000円"
    },
    "mitsumoa": {
-    "pros": 185,
-    "souba": "6,000〜15,950円",
-    "reviews": 2840
+    "pros": 204,
+    "gasSouba": "15,000〜18,000円",
+    "reviews": 3262,
+    "avg": "4.8"
    }
   },
   "kanagawa": {
@@ -127,9 +137,10 @@
     "minPrice": "5,000円"
    },
    "mitsumoa": {
-    "pros": 221,
-    "souba": "8,800〜19,800円",
-    "reviews": 3772
+    "pros": 226,
+    "gasSouba": "16,000〜19,800円",
+    "reviews": 3233,
+    "avg": "4.8"
    }
   },
   "tokushima": {
@@ -140,9 +151,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 19,
-    "souba": "6,000〜12,250円",
-    "reviews": 104
+    "pros": 20,
+    "gasSouba": "18,000〜24,000円",
+    "reviews": 250,
+    "avg": "4.9"
    }
   },
   "shizuoka": {
@@ -153,9 +165,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 81,
-    "souba": "6,000〜15,250円",
-    "reviews": 586
+    "pros": 88,
+    "gasSouba": "16,000〜24,000円",
+    "reviews": 730,
+    "avg": "4.9"
    }
   },
   "wakayama": {
@@ -166,9 +179,10 @@
     "minPrice": "11,000円"
    },
    "mitsumoa": {
-    "pros": 64,
-    "souba": "5,000〜16,000円",
-    "reviews": 1740
+    "pros": 67,
+    "gasSouba": "15,000〜20,000円",
+    "reviews": 1708,
+    "avg": "4.9"
    }
   },
   "aomori": {
@@ -179,9 +193,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 11,
-    "souba": "5,000〜16,000円",
-    "reviews": 8
+    "pros": 13,
+    "gasSouba": "15,000〜15,500円",
+    "reviews": 45,
+    "avg": "4.9"
    }
   },
   "yamagata": {
@@ -193,8 +208,9 @@
    },
    "mitsumoa": {
     "pros": 25,
-    "souba": "6,600〜14,250円",
-    "reviews": 154
+    "gasSouba": "15,000〜20,000円",
+    "reviews": 150,
+    "avg": "4.8"
    }
   },
   "nagano": {
@@ -205,9 +221,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 31,
-    "souba": "8,800〜16,000円",
-    "reviews": 174
+    "pros": 35,
+    "gasSouba": "20,000〜24,000円",
+    "reviews": 223,
+    "avg": "4.9"
    }
   },
   "kagoshima": {
@@ -219,8 +236,9 @@
    },
    "mitsumoa": {
     "pros": 28,
-    "souba": "6,000〜16,000円",
-    "reviews": 125
+    "gasSouba": "16,000〜19,200円",
+    "reviews": 139,
+    "avg": "4.9"
    }
   },
   "nara": {
@@ -231,9 +249,10 @@
     "minPrice": "11,000円"
    },
    "mitsumoa": {
-    "pros": 124,
-    "souba": "5,800〜14,950円",
-    "reviews": 1954
+    "pros": 133,
+    "gasSouba": "13,000〜18,000円",
+    "reviews": 2471,
+    "avg": "4.8"
    }
   },
   "kumamoto": {
@@ -244,9 +263,10 @@
     "minPrice": "10,000円"
    },
    "mitsumoa": {
-    "pros": 40,
-    "souba": "6,000〜15,000円",
-    "reviews": 211
+    "pros": 45,
+    "gasSouba": "17,000〜20,000円",
+    "reviews": 243,
+    "avg": "4.8"
    }
   },
   "gifu": {
@@ -257,9 +277,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 82,
-    "souba": "8,000〜17,330円",
-    "reviews": 636
+    "pros": 93,
+    "gasSouba": "15,000〜23,000円",
+    "reviews": 881,
+    "avg": "4.9"
    }
   },
   "okinawa": {
@@ -270,9 +291,10 @@
     "minPrice": "16,500円"
    },
    "mitsumoa": {
-    "pros": 34,
-    "souba": "6,000〜16,000円",
-    "reviews": 353
+    "pros": 36,
+    "gasSouba": "15,000〜25,000円",
+    "reviews": 368,
+    "avg": "4.8"
    }
   },
   "fukuoka": {
@@ -283,9 +305,10 @@
     "minPrice": "3,300円"
    },
    "mitsumoa": {
-    "pros": 99,
-    "souba": "6,000〜15,000円",
-    "reviews": 593
+    "pros": 104,
+    "gasSouba": "14,000〜19,800円",
+    "reviews": 640,
+    "avg": "4.8"
    }
   },
   "oita": {
@@ -296,9 +319,10 @@
     "minPrice": "24,000円"
    },
    "mitsumoa": {
-    "pros": 33,
-    "souba": "6,300〜10,250円",
-    "reviews": 165
+    "pros": 40,
+    "gasSouba": "16,000〜19,200円",
+    "reviews": 179,
+    "avg": "4.8"
    }
   },
   "niigata": {
@@ -309,9 +333,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 22,
-    "souba": "6,600〜16,000円",
-    "reviews": 97
+    "pros": 24,
+    "gasSouba": "16,000〜20,000円",
+    "reviews": 149,
+    "avg": "4.8"
    }
   },
   "yamaguchi": {
@@ -322,9 +347,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 26,
-    "souba": "5,000〜16,000円",
-    "reviews": 57
+    "pros": 31,
+    "gasSouba": "15,000〜17,000円",
+    "reviews": 111,
+    "avg": "4.9"
    }
   },
   "ehime": {
@@ -335,9 +361,10 @@
     "minPrice": "14,000円"
    },
    "mitsumoa": {
-    "pros": 29,
-    "souba": "6,000〜16,000円",
-    "reviews": 144
+    "pros": 31,
+    "gasSouba": "15,000〜19,500円",
+    "reviews": 99,
+    "avg": "4.8"
    }
   },
   "miyagi": {
@@ -348,9 +375,10 @@
     "minPrice": "17,000円"
    },
    "mitsumoa": {
-    "pros": 40,
-    "souba": "6,000〜12,000円",
-    "reviews": 280
+    "pros": 44,
+    "gasSouba": "13,200〜20,000円",
+    "reviews": 299,
+    "avg": "4.8"
    }
   },
   "tokyo": {
@@ -361,9 +389,10 @@
     "minPrice": "10,000円"
    },
    "mitsumoa": {
-    "pros": 303,
-    "souba": "6,600〜18,480円",
-    "reviews": 5295
+    "pros": 316,
+    "gasSouba": "14,400〜18,000円",
+    "reviews": 5487,
+    "avg": "4.8"
    }
   },
   "mie": {
@@ -374,9 +403,10 @@
     "minPrice": "12,000円"
    },
    "mitsumoa": {
-    "pros": 95,
-    "souba": "8,000〜15,000円",
-    "reviews": 1534
+    "pros": 102,
+    "gasSouba": "15,000〜22,000円",
+    "reviews": 1577,
+    "avg": "4.9"
    }
   },
   "toyama": {
@@ -387,9 +417,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 15,
-    "souba": "5,250〜15,000円",
-    "reviews": 18
+    "pros": 17,
+    "gasSouba": "15,000〜19,500円",
+    "reviews": 71,
+    "avg": "4.8"
    }
   },
   "hiroshima": {
@@ -400,9 +431,10 @@
     "minPrice": "15,600円"
    },
    "mitsumoa": {
-    "pros": 43,
-    "souba": "5,700〜16,000円",
-    "reviews": 129
+    "pros": 46,
+    "gasSouba": "15,000〜17,600円",
+    "reviews": 388,
+    "avg": "4.8"
    }
   },
   "chiba": {
@@ -413,9 +445,10 @@
     "minPrice": "10,000円"
    },
    "mitsumoa": {
-    "pros": 223,
-    "souba": "6,000〜17,100円",
-    "reviews": 2587
+    "pros": 235,
+    "gasSouba": "15,000〜19,200円",
+    "reviews": 2183,
+    "avg": "4.7"
    }
   },
   "gunma": {
@@ -426,9 +459,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 77,
-    "souba": "6,000〜16,000円",
-    "reviews": 759
+    "pros": 82,
+    "gasSouba": "14,000〜22,000円",
+    "reviews": 702,
+    "avg": "4.8"
    }
   },
   "miyazaki": {
@@ -439,9 +473,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 27,
-    "souba": "6,000〜16,000円",
-    "reviews": 207
+    "pros": 29,
+    "gasSouba": "15,000〜16,000円",
+    "reviews": 226,
+    "avg": "4.8"
    }
   },
   "iwate": {
@@ -452,9 +487,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 15,
-    "souba": "6,000〜16,000円",
-    "reviews": 62
+    "pros": 16,
+    "gasSouba": "20,000円",
+    "reviews": 64,
+    "avg": "5.0"
    }
   },
   "kyoto": {
@@ -465,9 +501,10 @@
     "minPrice": "12,000円"
    },
    "mitsumoa": {
-    "pros": 128,
-    "souba": "6,000〜16,000円",
-    "reviews": 1844
+    "pros": 135,
+    "gasSouba": "15,500〜19,200円",
+    "reviews": 2090,
+    "avg": "4.8"
    }
   },
   "okayama": {
@@ -478,9 +515,10 @@
     "minPrice": "15,400円"
    },
    "mitsumoa": {
-    "pros": 48,
-    "souba": "6,000〜16,000円",
-    "reviews": 353
+    "pros": 52,
+    "gasSouba": "15,000〜18,000円",
+    "reviews": 675,
+    "avg": "4.9"
    }
   },
   "shiga": {
@@ -491,9 +529,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 75,
-    "souba": "6,000〜15,000円",
-    "reviews": 1041
+    "pros": 83,
+    "gasSouba": "15,000〜20,000円",
+    "reviews": 1063,
+    "avg": "4.8"
    }
   },
   "fukushima": {
@@ -504,9 +543,10 @@
     "minPrice": "20,000円"
    },
    "mitsumoa": {
-    "pros": 42,
-    "souba": "6,000〜9,450円",
-    "reviews": 227
+    "pros": 43,
+    "gasSouba": "17,600〜20,000円",
+    "reviews": 260,
+    "avg": "4.8"
    }
   },
   "tochigi": {
@@ -517,9 +557,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 94,
-    "souba": "6,600〜16,000円",
-    "reviews": 685
+    "pros": 98,
+    "gasSouba": "16,500〜22,000円",
+    "reviews": 740,
+    "avg": "4.8"
    }
   },
   "saga": {
@@ -530,9 +571,10 @@
     "minPrice": "3,300円"
    },
    "mitsumoa": {
-    "pros": 73,
-    "souba": "6,000〜16,000円",
-    "reviews": 364
+    "pros": 77,
+    "gasSouba": "15,000〜20,000円",
+    "reviews": 465,
+    "avg": "4.8"
    }
   },
   "hokkaido": {
@@ -543,9 +585,10 @@
     "minPrice": "18,000円"
    },
    "mitsumoa": {
-    "pros": 37,
-    "souba": "6,600〜16,000円",
-    "reviews": 158
+    "pros": 42,
+    "gasSouba": "15,000〜19,500円",
+    "reviews": 189,
+    "avg": "4.9"
    }
   },
   "kagawa": {
@@ -556,9 +599,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 43,
-    "souba": "8,000〜15,000円",
-    "reviews": 308
+    "pros": 47,
+    "gasSouba": "18,900〜20,000円",
+    "reviews": 469,
+    "avg": "4.9"
    }
   },
   "nagasaki": {
@@ -569,9 +613,10 @@
     "minPrice": "16,500円"
    },
    "mitsumoa": {
-    "pros": 32,
-    "souba": "6,000〜16,000円",
-    "reviews": 151
+    "pros": 34,
+    "gasSouba": "14,000〜18,000円",
+    "reviews": 166,
+    "avg": "4.8"
    }
   },
   "akita": {
@@ -582,9 +627,10 @@
     "minPrice": "15,000円"
    },
    "mitsumoa": {
-    "pros": 19,
-    "souba": "10,000〜16,000円",
-    "reviews": 39
+    "pros": 20,
+    "gasSouba": "16,000〜20,000円",
+    "reviews": 41,
+    "avg": "5.0"
    }
   },
   "saitama": {
@@ -595,9 +641,10 @@
     "minPrice": "10,000円"
    },
    "mitsumoa": {
-    "pros": 273,
-    "souba": "6,500〜18,000円",
-    "reviews": 3795
+    "pros": 280,
+    "gasSouba": "14,000〜17,000円",
+    "reviews": 3900,
+    "avg": "4.8"
    }
   },
   "osaka": {
@@ -608,9 +655,10 @@
     "minPrice": null
    },
    "mitsumoa": {
-    "pros": 183,
-    "souba": "5,000〜14,950円",
-    "reviews": 3049
+    "pros": 197,
+    "gasSouba": "13,000〜17,000円",
+    "reviews": 3229,
+    "avg": "4.8"
    }
   }
  },
