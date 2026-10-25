@@ -80,7 +80,7 @@ export default function RepairPricePage() {
             <span></span> 修理費用の基本的な仕組み
           </h2>
           <ul className="space-y-2 text-sm text-gray-700">
-            <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>（3,000〜8,000円）+ <strong>診断料</strong>（2,000〜5,000円）+ <strong>修理費</strong>が基本的な構成です。</span></li>
+            <li className="flex items-start gap-2"><span>・</span> <span><strong>出張費</strong>＋<strong>診断料（点検費）</strong>＋<strong>修理費</strong>が基本的な構成です。出張費・診断料の額は依頼先によって異なり、無料とする業者もあります（メーカーの例：パナソニックの出張料4,950円＝2026年10月18日確認、ダイキンの出張点検費8,500〜19,000円＝2026年10月25日確認。いずれも税込・公式）。</span></li>
             <li className="flex items-start gap-2"><span>・</span> <span>業者によっては、診断料・出張費を修理費に含める場合があります。</span></li>
             <li className="flex items-start gap-2"><span>・</span> <span>夏場（7〜9月）は繁忙期のため、料金が高くなる場合があります。</span></li>
             <li className="flex items-start gap-2"><span>・</span> <span>見積もりは複数社から取ることをおすすめします。</span></li>

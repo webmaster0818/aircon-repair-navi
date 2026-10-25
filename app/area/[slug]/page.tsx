@@ -94,8 +94,8 @@ function buildVendors(area: AreaDef) {
     `事業者ごとに税込料金・口コミ・評価・返信スピードを比較して選べる点が特徴で、地域密着の事業者も多数登録されています。`,
   ];
   const curamaTable: [string, string][] = [];
-  if (curama?.priceGas) curamaTable.push(["ガス漏れ修理の掲載相場", curama.priceGas]);
-  if (curama?.priceWater) curamaTable.push(["水漏れ修理の掲載相場", curama.priceWater]);
+  if (curama?.priceGas) curamaTable.push(["ガス漏れ修理の相場", `${curama.priceGas}（全国の相場・2023年8月時点。くらしのマーケット公式コラムで2026年10月25日確認）`]);
+  if (curama?.priceWater) curamaTable.push(["水漏れ修理の相場", `${curama.priceWater}（全国の相場・2023年8月時点。くらしのマーケット公式コラムで2026年10月25日確認）`]);
   curamaTable.push([`${area.prefName}の登録`, curama?.count ? `エアコン修理${curama.count}件（${D.confirmedAt}）` : "都道府県ページで要確認"]);
   curamaTable.push(["予約方法", "Webで事業者を選び直接予約（メッセージでの相談可）"]);
   curamaTable.push(["確認日", `${D.confirmedAt}（${area.prefName}ページ調査）`]);
@@ -379,11 +379,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   const faqs = [
     {
       q: `${area.name}のエアコン修理の料金相場はどのくらいですか？`,
-      a: `マッチングサイトが掲載する${area.prefName}の相場（${D.confirmedAt}）では、${[
-        stats?.mitsumoa?.souba ? `ミツモアが${stats.mitsumoa.souba}` : null,
-        stats?.curama?.priceGas ? `くらしのマーケットがガス漏れ修理${stats.curama.priceGas}` : null,
-        stats?.curama?.priceWater ? `水漏れ修理${stats.curama.priceWater}` : null,
-      ].filter(Boolean).join("、") || "公表相場の表示を確認できなかったため、複数社の見積もりの比較をおすすめします"}。症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。`,
+      a: `${stats?.mitsumoa?.souba ? `ミツモアの${area.prefName}のページでは、修理の料金相場が${stats.mitsumoa.souba}と掲載されていました（${D.confirmedAt}）。` : ""}${stats?.curama?.priceGas ? `くらしのマーケットは公式コラムで、全国の相場をガス漏れ修理${stats.curama.priceGas}${stats.curama.priceWater ? `・水漏れ修理${stats.curama.priceWater}` : ""}と案内しています（2023年8月時点）。` : ""}${!stats?.mitsumoa?.souba && !stats?.curama?.priceGas ? "公表相場の表示を確認できなかったため、複数社の見積もりの比較をおすすめします。" : ""}症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。`,
     },
     {
       q: `${area.name}で即日対応が可能なエアコン修理業者はありますか？`,
@@ -481,7 +477,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           <>
             <SectionHeading>{area.prefName}のエアコン修理 料金相場データ</SectionHeading>
             <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
-              {area.prefName}の事業者を掲載するマッチングサイトが公表している相場（{D.confirmedAt}の掲載値）です。
+              マッチングサイトが公表している相場です。くらしのマーケットの値は全国の相場（公式コラム・2023年8月時点）で、{area.prefName}だけの値ではありません。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-[12px] md:text-[13px]">
@@ -494,19 +490,19 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
                 <tbody>
                   {stats?.curama?.priceGas && (
                     <tr>
-                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">ガス漏れ修理（くらしのマーケット）</td>
+                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">ガス漏れ修理（くらしのマーケット・全国・2023年8月時点）</td>
                       <td className="border border-[#D9D9D9] px-3 py-2">{stats.curama.priceGas}</td>
                     </tr>
                   )}
                   {stats?.curama?.priceWater && (
                     <tr>
-                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">水漏れ修理（くらしのマーケット）</td>
+                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">水漏れ修理（くらしのマーケット・全国・2023年8月時点）</td>
                       <td className="border border-[#D9D9D9] px-3 py-2">{stats.curama.priceWater}</td>
                     </tr>
                   )}
                   {stats?.mitsumoa?.souba && (
                     <tr>
-                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">修理の料金相場（ミツモア）</td>
+                      <td className="border border-[#D9D9D9] px-3 py-2 font-semibold whitespace-nowrap">修理の料金相場（ミツモア・{area.prefName}のページ・{D.confirmedAt}）</td>
                       <td className="border border-[#D9D9D9] px-3 py-2">{stats.mitsumoa.souba}</td>
                     </tr>
                   )}
@@ -514,7 +510,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
               </table>
             </div>
             <p className="mt-2 text-[11px] text-slate-400">
-              ※{D.confirmedAt}の各サイト掲載値です。実際の費用は症状・機種・事業者により変動します。詳しくは
+              ※各サイトの掲載値です（くらしのマーケットのコラムは2026年10月25日に確認）。実際の費用は症状・機種・事業者により変動します。詳しくは
               <Link href="/cost/repair-price/" className="text-sky-600 hover:underline">修理費用の相場</Link>をご覧ください。
             </p>
           </>

@@ -95,7 +95,7 @@ const repairCompanies: Company[] = [
       "・急ぎではなく、数日以内の都合の良い日時で予約したい方",
     ],
     table: [
-      ["費用の目安", "ガス漏れ修理16,000〜19,000円／水漏れ修理11,000〜20,000円（サイト掲載の大阪相場）"],
+      ["費用の目安", "ガス漏れ修理16,000〜19,000円／水漏れ修理11,000〜20,000円（公式コラムの全国の相場・2023年8月時点。2026年10月25日確認）"],
       ["登録事業者", "大阪府のエアコン修理65店舗・クリーニング740件（2026年8月時点）"],
       ["口コミ", "大阪の修理カテゴリで3,973件・平均4.88（2026年8月時点）"],
       ["予約方法", "Webで事業者を選び直接予約（メッセージでの相談可）"],
@@ -128,7 +128,7 @@ const repairCompanies: Company[] = [
       "・口コミ・資格・実績を確認して自分で選びたい方",
     ],
     table: [
-      ["費用の目安", "修理相場5,000〜14,950円（サイト掲載の大阪相場）"],
+      ["費用の目安", "修理相場5,000〜14,950円（ミツモアの大阪府のページ・2026年8月時点）"],
       ["登録プロ", "大阪府のエアコン修理183人・クリーニング768人（2026年8月時点）"],
       ["口コミ", "大阪の修理カテゴリで3,049件（2026年8月時点）"],
       ["見積もり", "無料・最大5件（支払いはプロに依頼するときだけと公式に記載）"],
@@ -281,7 +281,7 @@ const cleaningCompanies: Company[] = [
 const faqs = [
   {
     q: "大阪のエアコン修理の料金相場はどのくらいですか？",
-    a: "マッチングサイト2社が掲載する大阪の相場（2026年8月時点）では、ミツモアが5,000〜14,950円、くらしのマーケットがガス漏れ修理16,000〜19,000円・水漏れ修理11,000〜20,000円です。症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。",
+    a: "ミツモアの大阪府のページでは、修理の料金相場が5,000〜14,950円と掲載されていました（2026年8月時点）。くらしのマーケットは公式コラムで、全国の相場をガス漏れ修理16,000〜19,000円・水漏れ修理11,000〜20,000円と案内しています（2023年8月時点）。症状により費用に幅があるため、施工前に総額の見積もりを書面でご確認ください。",
   },
   {
     q: "大阪で即日対応が可能なエアコン修理業者はありますか？",
@@ -508,26 +508,26 @@ export default function OsakaAreaPage() {
           <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
-          大阪府の事業者を掲載するマッチングサイト2社が公表している相場（2026年8月時点の掲載値）です。
+          マッチングサイト2社が公表している相場です。ミツモアは大阪府のページの掲載値（2026年8月時点）、くらしのマーケットのガス漏れ・水漏れは公式コラムの全国の相場（2023年8月時点・2026年10月25日確認）で、大阪だけの値ではありません。
         </p>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-[12px] md:text-[13px]">
             <thead>
               <tr>
                 <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">症状・作業</th>
-                <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">くらしのマーケット掲載相場</th>
+                <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">くらしのマーケット</th>
                 <th className="border border-[#D9D9D9] bg-[#EFEFEF] px-3 py-2 whitespace-nowrap">ミツモア掲載相場</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td className="border border-[#D9D9D9] px-3 py-2 font-semibold">ガス漏れ修理</td>
-                <td className="border border-[#D9D9D9] px-3 py-2">16,000〜19,000円</td>
+                <td className="border border-[#D9D9D9] px-3 py-2">16,000〜19,000円（全国・2023年8月時点）</td>
                 <td className="border border-[#D9D9D9] px-3 py-2 whitespace-pre-line">修理全体で5,000〜14,950円{"\n"}（症状別内訳: ガス漏れ12,800〜17,000円）</td>
               </tr>
               <tr>
                 <td className="border border-[#D9D9D9] px-3 py-2 font-semibold">水漏れ修理</td>
-                <td className="border border-[#D9D9D9] px-3 py-2">11,000〜20,000円</td>
+                <td className="border border-[#D9D9D9] px-3 py-2">11,000〜20,000円（全国・2023年8月時点）</td>
                 <td className="border border-[#D9D9D9] px-3 py-2">ドレンホース詰まり 9,000〜13,000円</td>
               </tr>
               <tr>
