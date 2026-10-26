@@ -518,12 +518,12 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
           </>
         )}
 
-        <SectionHeading>エアコン修理に関する相談件数は5年で2倍以上に増加しています</SectionHeading>
+        <SectionHeading>エアコン修理に関する相談件数は2025年度に2021年度の2倍以上に増えています</SectionHeading>
         <div className="text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333] space-y-4">
           <p>
             国民生活センターは2026年6月3日、「エアコン修理のトラブルに注意！」という注意喚起を公表しました。
             全国の消費生活センターに寄せられたエアコン修理の相談は
-            <strong className="font-bold underline decoration-orange-300 decoration-[3px] underline-offset-4">2021年度の451件から2025年度は1,251件へと、5年で2倍以上に増加</strong>
+            <strong className="font-bold underline decoration-orange-300 decoration-[3px] underline-offset-4">2021年度の451件から2025年度は1,251件へと、2倍以上に増加</strong>
             しています。典型的な事例は「ネット検索した即日対応業者に依頼し、高額料金を支払ったが直っていない」というものです。トラブルを防ぐためのポイントは次の3つです。
           </p>
           <div className="rounded-lg border border-sky-100 bg-sky-50/60 px-5 py-4">

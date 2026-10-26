@@ -545,14 +545,14 @@ export default function OsakaAreaPage() {
 
         {/* 注意喚起 */}
         <h2 className="relative pb-3 mt-16 mb-6 text-xl md:text-2xl font-bold tracking-wide border-b-4 border-slate-200">
-          エアコン修理に関する相談件数は5年で2倍以上に増加しています
+          エアコン修理に関する相談件数は2025年度に2021年度の2倍以上に増えています
           <span className="absolute left-0 bottom-[-4px] h-[4px] w-[120px] rounded-l-[2px] bg-[var(--color-brand)]" />
         </h2>
         <div className="text-[13px] md:text-[14px] leading-[1.9] tracking-wide text-[#333333] space-y-4">
           <p>
             国民生活センターは2026年6月3日、「エアコン修理のトラブルに注意！」という注意喚起を公表しました。
             全国の消費生活センターに寄せられたエアコン修理の相談は
-            <Em>2021年度の451件から2025年度は1,251件へと、5年で2倍以上に増加</Em>
+            <Em>2021年度の451件から2025年度は1,251件へと、2倍以上に増加</Em>
             しています。大阪市消費者センターも、同様の内容を注意喚起として掲載しています（いずれも{SURVEY_DATE}確認）。
           </p>
           <p>典型的なトラブルは、「ネット検索した即日対応業者に依頼し、高額料金を支払ったが直っていない」「再修理を頼みたいが業者と連絡が取れない」というものです。トラブルを防ぐためのポイントは次の3つです。</p>
