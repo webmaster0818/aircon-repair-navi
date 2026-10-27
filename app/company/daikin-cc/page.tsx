@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/daikin-cc" },
 };
 
-const UPDATED = "2026年10月17日";
+const UPDATED = "2026年10月27日";
 
 const toc = [
   { id: "contact", label: "修理依頼の電話番号・Web申込" },
@@ -70,11 +70,11 @@ const faqs = [
   },
   {
     q: "修理料金はどのくらいかかりますか？",
-    a: "症状や交換部品によって異なります。正確な金額は現地診断後に提示されるため、相談時に症状を具体的に伝え、見積もりを確認してから依頼することをおすすめします。保証期間内で保証対象の場合は無償となることがあります。",
+    a: "修理料金は出張料・技術料（点検費を含む）・部品代で構成され、公式FAQに症状別の目安（例：冷えない・暖まらない場合、電気系統28,000〜46,000円・冷媒系統70,000〜105,000円、税込）が掲載されています。訪問または引き取りで点検した後に修理をしなかった場合も、ルームエアコンは1台あたり8,500〜19,000円（税込）の出張（引取）点検費がかかります。部品手配で複数回訪問しても点検費は二重にかからないと案内されています（2026年10月27日・公式FAQ確認）。",
   },
   {
     q: "保証期間内なら無料で修理してもらえますか？",
-    a: "メーカー保証期間内で、保証規定の対象となる自然故障であれば、無償修理となる場合があります。保証書の内容や購入時期をご確認のうえ、ご相談ください。経年劣化や使用状況による故障は有償となることがあります。",
+    a: "ダイキンのルームエアコンの保証期間は、お買い上げから本体1年間・冷媒系統5年間です（2026年10月27日・公式FAQ確認）。保証期間内で保証規定の対象となる自然故障であれば、無償修理となる場合があります。保証書の内容や購入時期をご確認のうえ、ご相談ください。使用状況による故障は保証期間内でも有償となることがあります。",
   },
 ];
 
@@ -84,7 +84,7 @@ const articleJsonLd = {
   headline:
     "ダイキンエアコン修理の口コミ・評判｜コンタクトセンターの料金・相談方法を調査【2026年最新】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-17",
+  dateModified: "2026-10-27",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -108,7 +108,7 @@ export default function Page() {
       <Breadcrumb
         items={[
           { name: "業者一覧", href: "/ranking" },
-          { name: "ダイキンコンタクトセンターの口コミ・評判", href: "/company/daikin-cc" },
+          { name: "ダイキンのエアコン修理の電話番号・依頼方法", href: "/company/daikin-cc" },
         ]}
       />
 
@@ -118,14 +118,14 @@ export default function Page() {
             エアコン修理サービスレビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ダイキンエアコン修理の口コミ・評判
+            ダイキンのエアコン修理の電話番号・受付時間
             <br className="hidden md:block" />
-            コンタクトセンターの料金・相談方法を調査【2026年最新】
+            コンタクトセンターへの依頼方法と料金・評判【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-17">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -134,6 +134,16 @@ export default function Page() {
         </div>
 
         <div className="max-w-3xl mx-auto px-5 pt-8">
+          <div className="mb-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
+            <p className="font-bold text-slate-900 mb-3">結論：ダイキンのエアコン修理の依頼先</p>
+            <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
+              <li>・<strong>電話：ダイキンコンタクトセンター 0120-88-1081</strong>（フリーダイヤル・24時間365日受付。AI音声ガイダンスで用件を話すと担当窓口に案内されます）</li>
+              <li>・<strong>Web：</strong>公式サイト「修理のご相談・お申し込み」から申し込めます。事前に故障診断を行うと、その結果を反映して申し込めます</li>
+              <li>・<strong>買い替えの相談は別番号</strong>（0120-085-022・平日9:30〜17:00）です</li>
+              <li>・<strong>費用：</strong>点検後に修理をしなかった場合も、ルームエアコン1台あたり<strong>8,500〜19,000円（税込）の出張（引取）点検費</strong>がかかります。保証期間は本体1年・冷媒系統5年です（2026年10月27日・公式FAQ確認）</li>
+            </ul>
+            <p className="mt-3 text-xs text-slate-400">※電話番号・Web申込は2026年10月17日、点検費・保証期間は2026年10月27日にダイキン公式（daikincc.com の問い合わせページ・よくあるご質問）で確認した内容です。詳しくは<a href="#contact" className="underline">電話番号・Web申込の表</a>をご覧ください。</p>
+          </div>
           <p className="text-[1.05rem] leading-8 text-slate-700">
             ダイキン製のエアコンが冷えない・効かない、水漏れや異音、エラー表示が出るといったトラブルが生じた場合、メーカー公式の相談窓口に直接相談する方法があります。
             本記事では、

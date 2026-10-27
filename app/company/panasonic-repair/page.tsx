@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/panasonic-repair" },
 };
 
-const UPDATED = "2026年10月18日";
+const UPDATED = "2026年10月27日";
 
 const toc = [
   { id: "conclusion", label: "本記事の要点" },
@@ -88,7 +88,7 @@ const articleJsonLd = {
   headline:
     "パナソニックのエアコン修理費用｜出張料4,950円・キャンセル料・料金の目安の調べ方と街の業者との比較【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-18",
+  dateModified: "2026-10-27",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +129,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-18">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -197,6 +197,8 @@ export default function Page() {
                     ["技術料", "不具合箇所の特定・修理・調整・点検の料金（症状により変動）"],
                     ["部品代", "修理に使用した部品・補助材料の料金"],
                     ["時間指定料", "営業時間外・日曜・祝日の時間指定は指定料金2,200円（税込）が追加"],
+                    ["キャンセル", "技術員の訪問前は無料、訪問後は出張料4,950円（税込）。訪問前日の16時まではお問い合わせフォームまたは電話、16時以降は電話でキャンセル（修理受付番号と電話番号下4桁が必要）"],
+                    ["支払い方法", "現地でのクレジットカード払い（VISA・Mastercard・JCB・American Express・Diners、1回払いのみ）、または請求書払い（修理完了後10〜20日後に発送・コンビニ／郵便局／銀行で支払い）"],
                     ["遠方・特殊料金", "一部のエリアでは、フェリーなどの特殊料金や遠方料金を加算する場合あり（金額は公式に記載なし）"],
                     ["料金の調べ方", "公式「修理診断ナビ 修理料金の目安」で、①品番を選ぶ ②エラーコード・ランプの状態などから症状を1つ選ぶ ③故障内容と料金の目安を確認。目安には技術料・部品代・出張料を含む。複数の部品交換が必要な場合などは目安を超えることあり"],
                     ["受付", "修理ご相談窓口 0120-878-554（受付9:00〜18:00・年中無休）。フリーダイヤルがつながらない場合は 03-6633-6700（通話料有料）／Web申込は随時（2026年10月18日・公式確認）"],
@@ -209,7 +211,7 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：パナソニック公式FAQ「修理にかかる料金は」（jpn.faq.panasonic.com/app/answers/detail/a_id/63915）、パナソニック公式「エアコン サポート」。当サイト確認日：2026年10月18日（出張料・指定料金・キャンセル時の扱いは2026年7月12日の確認時から変更なし）。料金は税込で、地域・商品グレード・交換箇所により上記以外の費用がかかる場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：パナソニック公式FAQ「修理にかかる料金は」（jpn.faq.panasonic.com/app/answers/detail/a_id/63915）・「修理申込みのキャンセル料は」（a_id/63917）・キャンセル方法（a_id/63901）・支払い方法（a_id/63918）、パナソニック公式「エアコン サポート」。当サイト確認日：2026年10月18日（キャンセル方法・支払い方法は2026年10月27日）（出張料・指定料金・キャンセル時の扱いは2026年7月12日の確認時から変更なし）。料金は税込で、地域・商品グレード・交換箇所により上記以外の費用がかかる場合があります。</p>
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-6">
               <p className="font-bold text-amber-900 mb-1">費用が発生する条件について</p>
               <p className="text-sm text-slate-700 leading-7">

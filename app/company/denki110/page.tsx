@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/denki110" },
 };
 
-const UPDATED = "2026年10月20日";
+const UPDATED = "2026年10月27日";
 
 const toc = [
   { id: "summary", label: "DENKI110とは（電気工事110番との違い）" },
@@ -64,7 +64,7 @@ const articleJsonLd = {
   headline:
     "DENKI110の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-20",
+  dateModified: "2026-10-27",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -105,7 +105,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-20">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -123,6 +123,16 @@ export default function Page() {
           <div className="mt-5 rounded-xl border border-amber-200 bg-amber-50 p-4 text-[0.95rem] leading-7 text-slate-700">
             <strong className="font-semibold">「電気工事110番」とは別のサービスです。</strong>
             「電気工事110番」は、生活110番を運営するシェアリングテクノロジー株式会社のサービス名です。DENKI110の公式サイト（denki110.net）は「DENKI110」と名乗っており、運営会社も異なります。当サイトでは以前、DENKI110を「電気工事110番」と表記していましたが、2026年10月20日に各社の公式サイトで確認し、表記を改めました。
+          </div>
+          <div className="mt-4 rounded-xl border border-slate-200 bg-slate-50 p-4 text-[0.95rem] leading-7 text-slate-700">
+            <p className="font-semibold text-slate-900 mb-2">「電気工事110番」（シェアリングテクノロジー）の評判を調べている方へ：公式の主な記載</p>
+            <ul className="space-y-1">
+              <li>・運営：シェアリングテクノロジー株式会社（東証上場・証券コード3989）。24時間365日受付</li>
+              <li>・エアコン関連の料金：エアコンクリーニング7,700円〜、エアコン取付工事8,800円〜（いずれも税込）。<strong>エアコン修理工事・ガスチャージ工事は「別途ご相談」で、金額の掲載はありません</strong></li>
+              <li>・見積もり後のキャンセルは可能で、見積もり確定後の追加料金は発生しないとされています。ただし、対応エリア・加盟店・現場状況により、事前確認のうえ調査・見積もりに費用がかかる場合があります</li>
+              <li>・作業は加盟店が行い、加盟店によっては作業前に料金の支払いを求める場合があると明記されています。請負賠償保険に加入しているとされています</li>
+            </ul>
+            <p className="mt-2 text-xs text-slate-400">出典：シェアリングテクノロジー「電気工事110番」公式（sharing-tech.co.jp/denki/ ・ /denki/price/、2026年10月27日確認）。口コミ・満足度の数値は、公式の画像表示のみで本文に記載がないため掲載していません。</p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査日：2026年10月20日）。

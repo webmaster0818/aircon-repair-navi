@@ -377,6 +377,9 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
     ? prefCities
     : prefCities.slice(myIdx + 1).concat(prefCities.slice(0, myIdx)).slice(0, 4);
   const prefPage = area.type === "city" ? (area.prefSlug === "osaka" ? { slug: "osaka", name: "大阪府" } : ALL_AREAS.find((a) => a.type === "pref" && a.slug === area.prefSlug)) : null;
+  // 県名と市名が同じで「山形 エアコン修理」のような語を県ページと分け合っている市だけ、冒頭で役割を書き分けて県ページへ案内する（2026-10-27）。
+  // 全都市（167ページ）への展開は判断待ち。
+  const leadPrefNote = prefPage && ["yamagata-city"].includes(area.slug);
 
   const faqs = [
     {
@@ -422,6 +425,13 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
             料金・受付時間・{area.prefName}の対応状況は、いずれも公式情報にもとづき、確認日を記載しています。
             国民生活センターが2026年6月に注意喚起した「ネット広告型の修理トラブル」の防止方法もあわせてご説明します。
           </p>
+          {leadPrefNote && prefPage && (
+            <p className="mt-3 text-[13px] md:text-[14px] leading-[1.9] text-slate-600">
+              本ページは{area.name}内でご依頼いただける業者に絞っています。{area.name}以外の{prefPage.name}内の市町村でお探しの場合は、
+              <Link href={`/area/${prefPage.slug}/`} className="text-sky-600 font-semibold hover:underline">{prefPage.name}全域のエアコン修理業者まとめ</Link>
+              をご覧ください。
+            </p>
+          )}
           <p className="mt-3 text-[11px] text-slate-400">本ページはプロモーション（PR）を含みます。</p>
         </div>
       </section>

@@ -94,9 +94,9 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ケーズデンキのエアコン修理の評判
+            ケーズデンキのエアコン修理依頼の方法
             <br className="hidden md:block" />
-            料金・出張費・診断料の調査結果【2026年7月】
+            WEB受付・出張修理料金・診断料と評判
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
@@ -120,6 +120,7 @@ export default function Page() {
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
+              <li>・<strong>修理依頼の方法</strong>：エアコンなどの大型商品の出張修理は、ケーズデンキ公式の<strong>「出張修理WEB受付フォーム」</strong>から申し込みます。症状・設置状況・製品情報を入力して受付を進めます（2026年7月11日公式確認）。全国共通の修理受付電話番号・受付時間は、当サイトでは公式ページで確認できていません（10月は公式サイトに接続できず未再確認）</li>
               <li>・運営は東証プライム上場の<strong>株式会社ケーズホールディングス</strong>。窓口はケーズデンキで、<strong>出張修理はメーカー修理の取次</strong>が基本です</li>
               <li>・<strong>出張費・診断料は無料ではありません</strong>。公式に「症状が未再現でも・修理をキャンセルしても診断料・点検料・出張料がかかる場合がある」と明記されています（金額は非公開）</li>
               <li>・<strong>長期無料保証／あんしんパスポート加入品は、保証の範囲内であれば無料で修理を受けられます</strong>。ただし、保証切れや症状未再現時の費用は有料です。お急ぎの場合や料金を比較したい場合は、料金の実額を公開している業者との相見積もりをおすすめします（<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査一覧</Link>）</li>

@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ヤマダ電機のエアコン修理依頼の方法｜受付電話・Web申込・出張修理料金と評判【2026年10月】",
+    "ヤマダ電機のエアコン修理依頼｜修理受付センターの電話番号・Web申込・出張修理料金【2026年10月】",
   description:
-    "ヤマダ電機のエアコン出張修理（施工：株式会社ヤマダテクニカルサービス）の受付方法・料金・口コミの傾向を、当サイトが公式サイトで確認しています（2026年10月19日確認）。料金表の掲載がない現在の状況、参考となる旧公式掲載額（出張料4,500円等）、申込前に総額を確認する方法をご説明します。",
+    "ヤマダ電機のエアコン修理の依頼先（家電保 0120-506-858・長期無料保証 0570-666-533・Web出張修理受付フォーム）と受付時間、出張修理料金の掲載状況を、2026年10月27日に公式サイトで確認しています。旧公式掲載額（出張料4,500円等）、申込前に総額を確認する方法もご説明します。",
   alternates: { canonical: "/company/yamada-repair" },
 };
 
-const UPDATED = "2026年10月19日";
+const UPDATED = "2026年10月27日";
 const OFFICIAL = "https://yamada-ts.co.jp/";
 
 const toc = [
@@ -60,9 +60,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ヤマダ電機のエアコン修理依頼の方法｜受付電話・Web申込・出張修理料金と評判【2026年10月】",
+    "ヤマダ電機のエアコン修理依頼｜修理受付センターの電話番号・Web申込・出張修理料金【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-14",
+  dateModified: "2026-10-27",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,14 +96,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ヤマダ電機のエアコン修理依頼の方法
+            ヤマダ電機のエアコン修理依頼
             <br className="hidden md:block" />
-            受付電話・Web申込・料金と評判【2026年10月】
+            修理受付センターの電話番号・Web申込・料金【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-14">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -116,17 +116,19 @@ export default function Page() {
             エアコンが効かない、水漏れや異音が発生したといった場合、大手家電量販店の出張修理は窓口が明確で、相談しやすい選択肢です。
             本記事では、
             <strong className="font-semibold text-slate-900">ヤマダ電機のエアコン出張修理（施工＝株式会社ヤマダテクニカルサービス）</strong>
-            について、当サイトが公式ページを直接確認した内容（2026年7月11日確認）をもとに、料金・出張費・口コミの傾向・利用前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
+            について、当サイトが公式ページを直接確認した内容（受付窓口は2026年10月27日、会社情報は2026年7月11日確認）をもとに、料金・出張費・口コミの傾向・利用前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
+              <li>・<strong>修理の依頼先（電話）</strong>：家電総合保証「家電保」加入の方は<strong>0120-506-858</strong>、ヤマダの長期無料保証を使う方は<strong>0570-666-533</strong>（いずれも24時間受付・19:00〜翌10:00は自動音声・元日を除く）。受付後の問い合わせは YAMADA SELECT 0120-258-260（10:00〜19:00）です</li>
+              <li>・<strong>修理の依頼先（Web）</strong>：公式の<strong>出張修理受付フォーム</strong>から、保証なし・他店購入品も申し込めます（ベストFC保証は電話のみ）。エアコンは出張修理の対象で、店頭への持込修理は小型家電が対象です</li>
               <li>・実際に修理を担当するのは<strong>株式会社ヤマダテクニカルサービス（電気工事業登録・建設業許可・フロン回収業の有資格事業者）</strong>です。量販店グループの有資格事業者が施工する点が主な特徴です</li>
               <li>・料金は<strong>2026年8月の公式サイト刷新後は掲載されていません（見積もりで確認）</strong>。刷新前の旧公式掲載額は出張料4,500円／冷房不良20,000円〜／水漏れ10,000円〜（2026年7月11日当サイト確認）。<strong>訪問後キャンセル・修理不能でも実費・診断料等がかかる場合</strong>があります</li>
               <li>・<strong>直営の出張エリアは群馬・新潟市・九州・札幌石狩の一部に限られます</strong>。エリア外の場合やお急ぎの場合は、料金の実額を公開している業者との<Link href="/cost/price-index/" className="text-sky-700 underline">相見積もり</Link>をおすすめします</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年7月11日にヤマダテクニカルサービス／ヤマダデンキの公式ページで確認した内容です。料金・エリアは変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">※電話番号・受付時間・Web受付・持込修理の対象は2026年10月27日にヤマダデンキ公式（お問い合わせ・長期無料保証の電話申込・出張修理受付フォーム・修理相談の各ページ）で確認しました。会社情報・エリアは2026年7月11日の確認です。変更される場合があります。</p>
           </div>
         </div>
 
@@ -165,7 +167,7 @@ export default function Page() {
           <section id="request" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">修理依頼の方法（受付電話・Web・受付時間）</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              ヤマダデンキでエアコンの修理を依頼する窓口は、<strong className="font-semibold">加入している保証の種類によって電話番号が分かれています</strong>。2026年10月14日にヤマダデンキ公式サイトのお問い合わせページ・修理受付ページで確認した内容は次のとおりです。
+              ヤマダデンキでエアコンの修理を依頼する窓口は、<strong className="font-semibold">加入している保証の種類によって電話番号が分かれています</strong>。2026年10月14日にヤマダデンキ公式サイトのお問い合わせページ・修理受付ページで確認し、10月27日に番号・受付時間に変更がないことを再確認した内容は次のとおりです。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
@@ -179,7 +181,7 @@ export default function Page() {
                 <tbody>
                   {[
                     ["Webで申し込みたい（保証の有無を問わない）", "公式サイトの出張修理受付フォーム", "24時間。メーカー・型番・購入日・症状・保証の種類を入力。ヤマダ以外で買った製品・保証なしも選択可（ベストFC保証は電話のみ）"],
-                    ["家電総合保証「家電保」に入っている", "修理受付サポートセンター 0120-506-858", "電話24時間受付（19:00〜翌10:00は自動音声）・元日を除く。9時台・10時台はつながりにくいと注記"],
+                    ["家電総合保証「家電保」に入っている", "家電保の修理受付 0120-506-858（家電保リーフレットでは「修理受付サポートセンター」。公式お問い合わせページでは「家電総合保証サービス『家電保』」として掲載）", "電話24時間受付（19:00〜翌10:00は自動音声）・元日を除く。9時台・10時台はつながりにくいと注記"],
                     ["ヤマダの長期無料保証を使う", "長期無料保証の窓口 0570-666-533", "電話24時間受付（19:00〜翌10:00は自動音声）・元日を除く。オンライン受付は24時間"],
                     ["修理を受け付けた後の問い合わせ", "YAMADA SELECT 0120-258-260", "10:00〜19:00（元日を除き年中無休）"],
                   ].map((r) => (
@@ -201,7 +203,7 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               夏場や繁忙期は電話がつながりにくいという口コミも見られるため、お急ぎの場合は、電話よりも先にWebフォームで受付を済ませることをおすすめします。保証が切れていて早く直したい場合は、<Link href="/ranking/fast" className="text-sky-600 underline underline-offset-2">対応が早い修理業者</Link>への相見積もりも選択肢になります。
             </p>
-            <p className="mt-3 text-xs text-slate-400">出典：ヤマダデンキ公式「お問い合わせ」「修理のご依頼」「出張修理受付フォーム」「24時間受付のお知らせ」、家電保リーフレット（いずれも2026年10月14日確認）。電話番号・受付時間は変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：ヤマダデンキ公式「お問い合わせ」「修理のご依頼」「出張修理受付フォーム」「24時間受付のお知らせ」、家電保リーフレット（2026年10月14日確認・10月27日再確認）。電話番号・受付時間は変更される場合があります。</p>
           </section>
 
           <section id="company" className="scroll-mt-24">
@@ -335,7 +337,7 @@ export default function Page() {
           </section>
 
           <section id="price" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の仕組み（2026年7月11日 公式確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の仕組み（2026年10月27日 公式確認）</h2>
             <div className="overflow-hidden rounded-2xl border border-slate-200 mb-4">
               <table className="w-full text-[0.95rem]">
                 <tbody>
@@ -344,7 +346,7 @@ export default function Page() {
                     ["エアコン冷房不良（冷えない）", "旧公式掲載20,000円〜（2026年7月11日当サイト確認・現在は公式掲載なし）"],
                     ["エアコン水漏れ", "旧公式掲載10,000円〜（2026年7月11日当サイト確認・現在は公式掲載なし）"],
                     ["見積もり", "公式に無料/有料の明記なし（現地見積もりで総額を確認）"],
-                    ["訪問後キャンセル・修理不能時", "訪問の実費・診断料等を負担する場合あり（金額は公式非開示／第三者情報で計4,950円の例・要確認）"],
+                    ["訪問後キャンセル・修理不能時", "訪問の実費・診断料等を負担する場合あり（金額は公式非開示・申込時に要確認）"],
                     ["深夜・早朝の割増", "公式に記載なし（申込時に要確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -356,7 +358,7 @@ export default function Page() {
               </table>
             </div>
             <p className="leading-8 text-slate-700">
-              ヤマダ電機の出張修理は、現在は公式に料金の金額が掲載されておらず（2026年10月15日・公式確認）、見積もりで総額を確認する方式です。そのうえで、<strong className="font-semibold">「修理をしなくても訪問実費・診断料がかかる場合がある」</strong>点は、量販店・メーカー系の修理に共通する、見落とされやすい費用です。出張料や診断料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
+              ヤマダ電機の出張修理は、現在は公式に料金の金額が掲載されておらず（2026年10月27日・公式確認）、見積もりで総額を確認する方式です。そのうえで、<strong className="font-semibold">「修理をしなくても訪問実費・診断料がかかる場合がある」</strong>点は、量販店・メーカー系の修理に共通する、見落とされやすい費用です。出張料や診断料まで含めると、街の修理業者のほうが費用が安く、対応も早い場合があります。費用の相場は当サイトの<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査インデックス</Link>と<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>でご確認いただけます。
             </p>
             <p className="mt-3 text-xs text-slate-400">※旧公式掲載額は、2026年8月の公式サイト刷新前に施工会社（ヤマダテクニカルサービス）の公式ページ・公式料金表に記載されていた目安です。2026年10月19日時点の公式ページ（yamada-ts.co.jp／yamada-denki.jp の修理案内）には金額の記載はありません。旧料金表PDFは現在、施工会社のトップページへ転送されます。正確な金額は申込・現地の見積もりでご確認ください。</p>
             <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6 text-center">
