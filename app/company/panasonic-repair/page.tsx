@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "パナソニックのエアコン修理費用｜出張料4,950円・キャンセル料・料金の目安の調べ方と街の業者との比較【2026年10月】",
+    "パナソニックの出張修理料金｜出張料4,950円＋技術料＋部品代・キャンセル料・料金の目安の調べ方【2026年10月】",
   description:
-    "パナソニックのエアコン出張修理の費用を、公式FAQで確認しています（2026年10月18日確認）。出張料4,950円（訪問後のキャンセルでも発生）、時間外・日曜祝日の指定料金2,200円、修理診断ナビで料金の目安を調べる手順、部品保有期間10年をまとめ、街の修理業者との違いをご説明します。",
+    "パナソニックのエアコンの出張修理料金は「出張料4,950円＋技術料＋部品代」です（公式FAQ・2026年10月18日確認）。出張料は訪問後のキャンセルでも発生し、時間外・日曜祝日の指定料金2,200円、修理診断ナビで料金の目安を調べる手順、部品保有期間10年をまとめ、街の修理業者との違いをご説明します。",
   alternates: { canonical: "/company/panasonic-repair" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年10月28日";
 
 const toc = [
   { id: "conclusion", label: "本記事の要点" },
@@ -86,9 +86,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "パナソニックのエアコン修理費用｜出張料4,950円・キャンセル料・料金の目安の調べ方と街の業者との比較【2026年10月】",
+    "パナソニックの出張修理料金｜出張料4,950円＋技術料＋部品代・キャンセル料・料金の目安の調べ方【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-27",
+  dateModified: "2026-10-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -122,14 +122,14 @@ export default function Page() {
             メーカー修理と街の業者の比較
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            パナソニックのエアコン修理費用
+            パナソニックのエアコン出張修理料金
             <br className="hidden md:block" />
-            出張料・キャンセル料・料金の目安の調べ方と街の業者との比較【2026年10月】
+            出張料4,950円＋技術料＋部品代・キャンセル料・料金の目安の調べ方【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -143,6 +143,32 @@ export default function Page() {
             <strong className="font-semibold text-slate-900">メーカー公式（パナソニックの出張修理）に頼むべきか、街の修理業者に頼むべきか</strong>
             で迷われる方は少なくありません。本記事では、パナソニック公式の料金の仕組み（出張料・キャンセル費用など）と、街の修理業者との違いを、第三者の立場で比較しています。
           </p>
+          <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
+            <p className="font-bold text-slate-900 mb-3">結論：パナソニックの出張修理料金の内訳（公式FAQ）</p>
+            <div className="overflow-hidden rounded-xl border border-sky-100 bg-white">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["出張料", "4,950円（税込）。訪問後に修理をキャンセルした場合も発生"],
+                    ["技術料", "症状により変動（不具合箇所の特定・修理・調整・点検の料金）"],
+                    ["部品代", "使用した部品・補助材料の実費"],
+                    ["指定料金", "営業時間外・日曜・祝日の時間指定は2,200円（税込）を追加"],
+                    ["キャンセル", "訪問前は無料（前日16時まではフォームまたは電話、16時以降は電話）"],
+                    ["総額の目安", "公式「修理診断ナビ 修理料金の目安」で、品番と症状から確認可能（出張料・技術料・部品代を含む目安）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-2.5 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-2.5 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-[0.95rem] leading-7 text-slate-700">
+              技術料は症状ごとに変わるため、公式には一律の金額表がありません。基板やコンプレッサーなど主要部品の交換を伴う修理は、技術料と部品代が大きくなりやすい点にご注意ください。総額を比べたい場合は、出張費・見積もり無料の街の修理業者にも見積もりを依頼する方法があります（<Link href="#compare" className="text-sky-700 underline">比較表</Link>）。
+            </p>
+            <p className="mt-2 text-xs text-slate-400">※出張料・指定料金・修理診断ナビは2026年10月18日、キャンセル方法は2026年10月27日に公式FAQで確認しています。</p>
+          </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※本記事のパナソニックの料金・条件は、いずれも同社公式サイトの掲載情報にもとづき、当サイトが確認したものです（確認日：2026年10月18日）。料金や受付内容は時期により変わるため、ご利用前に、公式サイトにて最新情報をご確認ください。
           </p>

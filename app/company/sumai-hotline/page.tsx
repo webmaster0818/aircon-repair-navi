@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/sumai-hotline" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年10月28日";
 
 const toc = [
   { id: "summary", label: "住まいのホットラインとは" },
@@ -60,7 +60,7 @@ const articleJsonLd = {
   headline:
     "住まいのホットラインの評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-10-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -101,7 +101,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -114,7 +114,7 @@ export default function Page() {
             エアコンが急に効かなくなった際には、口コミや料金を比較して依頼先を選ぶことが大切です。
             本記事では、暮らしまわりのサービスを比較・予約できるプラットフォーム
             <strong className="font-semibold text-slate-900">住まいのホットライン</strong>
-            のエアコン修理について、当サイトが公式サイト（hotlines.shop）を直接確認した内容（2026年10月24日確認）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
+            （公式サイト上の表記は「すまいのホットライン」・2026年10月28日確認）のエアコン修理について、当サイトが公式サイト（hotlines.shop）を直接確認した内容（2026年10月24日確認）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">

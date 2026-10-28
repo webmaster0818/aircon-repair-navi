@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/ienakama" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年10月28日";
 
 const toc = [
   { id: "summary", label: "家仲間コムとは" },
@@ -52,6 +52,18 @@ const faqs = [
     q: "対応エリアはどこですか？",
     a: "全国の登録業者が対応しています（月間約30万人以上が利用と公称）。ただし、地域によって登録業者の数や対応の早さが異なるため、依頼時に対応可否をご確認ください。",
   },
+  {
+    q: "家仲間コムの業者一覧はどこで見られますか？",
+    a: "公式の業者一覧ページ（https://www.ienakama.com/dealer/）で、地域とカテゴリーを指定して登録業者を探せます。各業者には利用者の評価から計算した「おすすめ率」が表示され、おすすめ率が40%を下回った業者は強制退会となると記載されています（2026年10月28日 公式確認）。",
+  },
+  {
+    q: "家仲間コムの退会やログインの方法を教えてください。",
+    a: "業者さまのログインは業者さま向けページのログイン（https://www.ienakama.com/d/login/）から、利用者は公式サイト上部の「マイページにログイン」から行います。業者向けのよくある質問には「最低加入期間を設けておりませんので、ご都合に合わせていつでも退会いただけます」と記載されています。利用者（依頼者）側の退会手続きは、公開ページでは記載を確認できなかったため、公式のお問い合わせフォームでご確認ください（2026年10月28日確認）。",
+  },
+  {
+    q: "家仲間コムでトラブルはどのくらい起きていますか？",
+    a: "公式の利用規約では、過去6年間に実際に依頼して報告のあった利用者評価約2万6千件のうち「もう頼みたくない」が2.7%、過去累計約5千業者のうち特に悪質で強制退会となった業者は4業者（0.08%）と公表されています。一方で「悪意ある業者の登録を防ぎきれない状況がある」「業者や工事内容に関し保証制度はありません」とも明記されています。訪問した業者の名義や連絡先が登録内容と違う場合は、家仲間コムへ知らせるよう案内されています（2026年10月28日 公式確認）。",
+  },
 ];
 
 const articleJsonLd = {
@@ -60,7 +72,7 @@ const articleJsonLd = {
   headline:
     "家仲間コムの評判｜手数料・口コミ・仕組みの調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-10-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -101,7 +113,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -123,8 +135,10 @@ export default function Page() {
               <li>・<strong>利用者の手数料は無料</strong>です。手数料は業者側が負担する仕組みで、業者の負担は<strong>月額5,000円（税別）のみで、成約手数料は0円</strong>です。公式では「手数料がない分、工事代金が安くなる可能性があります」とされています（公式確認）</li>
               <li>・<strong>登録業者を紹介するマッチングプラットフォーム（紹介型）</strong>です。施工は登録業者が行うため、対応品質・保証は業者により差が出ます。エアコン工事のカテゴリには<strong>1,071社</strong>が掲載されています（公式エアコンページの表示・2026年10月27日確認）</li>
               <li>・工事で家に損害が出た場合の<strong>最大1,000万円の賠償責任保険がありますが、条件付き（業者が工事開始前日までに申込みした工事が対象）です</strong>。過去に業者によるトラブル事案もあったため、<strong>複数業者の見積もりと口コミの比較をおすすめします</strong>（<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>）</li>
+              <li>・公式の利用規約では、過去6年間の利用者評価<strong>約2万6千件</strong>のうち「また頼みたい」<strong>88.5%</strong>・「どちらとも言えない」8.8%・「もう頼みたくない」<strong>2.7%</strong>、過去累計約5千業者のうち特に悪質で強制退会となった業者は<strong>4業者（0.08%）</strong>と公表されています。あわせて「家仲間コムは、業者や工事内容に関し保証制度はありません」と明記されています</li>
+              <li>・<strong>業者一覧</strong>は公式の<a href="https://www.ienakama.com/dealer/" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline">業者一覧ページ</a>で、おすすめ率とあわせて確認できます。<strong>業者さまのログイン</strong>は<a href="https://www.ienakama.com/d/login/" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline">業者さま向けログインページ</a>、利用者は「マイページにログイン」から入ります。業者の<strong>退会</strong>は最低加入期間がなく、いつでも可能と公式に記載されています</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年10月24日に公式ページで確認した内容です（エアコンカテゴリの掲載業者数は2026年10月27日確認）。口コミの傾向は2026年7月12日の調査です。</p>
+            <p className="mt-3 text-xs text-slate-400">※2026年10月24日に公式ページで確認した内容です（エアコンカテゴリの掲載業者数は2026年10月27日、利用規約の評価・強制退会の件数と業者一覧・ログイン・退会の案内は2026年10月28日確認）。口コミの傾向は2026年7月12日の調査です。</p>
           </div>
         </div>
 
