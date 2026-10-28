@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年10月28日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
@@ -89,7 +89,7 @@ const articleJsonLd = {
   headline:
     "おそうじLabo（おそうじラボ）の口コミ・評判｜大阪・兵庫の料金と対応エリアの調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-23",
+  dateModified: "2026-10-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -130,7 +130,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -217,13 +217,44 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
+            <h3 className="mt-6 mb-3 text-lg font-bold text-slate-900">複数台のセット料金（ノーマルタイプ・税込）</h3>
+            <p className="leading-8 text-slate-700 mb-3">
+              公式サイトでは、ノーマルタイプを複数台まとめて依頼する場合の合計額が台数別に掲載されています。2台目以降は1台7,800円の扱いで、お掃除機能付きを含める場合は該当する1台につき8,200円が加算されます（2026年10月28日・公式確認）。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["台数", "合計（通常）", "お掃除機能付きを含む場合"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["2台", "17,600円", "該当1台につき＋8,200円"],
+                    ["3台", "25,400円", "該当1台につき＋8,200円"],
+                    ["4台", "33,200円", "該当1台につき＋8,200円"],
+                    ["5台", "41,000円", "該当1台につき＋8,200円"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      {r.map((v, i) => (
+                        <td key={i} className={`border border-slate-300 px-3 py-2 ${i === 0 ? "font-semibold" : "whitespace-nowrap"}`}>{v}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-2 text-xs text-slate-500">※初めて依頼する場合は、上記の合計から1,000円引きと案内されています。電話予約の500円引きとの併用可否は、予約時にご確認ください。</p>
             <ul className="mt-4 space-y-2 text-slate-700 text-[0.95rem] leading-7">
               <li>・<strong className="font-semibold">実施中の特典</strong>：抗菌・防カビコート無料（終了時期は未定と案内）／電話予約で500円オフ／セット注文の初回1,000円オフ／室外機洗浄の依頼で防虫キャップ無料取付</li>
+              <li>・<strong className="font-semibold">予約状況</strong>：公式サイトでは「11月は予約が埋まり始めている」と案内されています（2026年10月28日確認）。暖房シーズン前に依頼する場合は、早めに空き日程をご確認ください</li>
               <li>・<strong className="font-semibold">対応エリア</strong>：大阪府（大阪市全域ほか）、兵庫県の尼崎市・伊丹市・西宮市・宝塚市・芦屋市・川西市・猪名川町</li>
               <li>・<strong className="font-semibold">受付</strong>：電話 10:00〜19:00（050-8893-3636）／LINE 24時間</li>
               <li>・<strong className="font-semibold">補償</strong>：損害保険に加入、壁の破損・汚れや本体故障は補償すると案内。仕上がりに不満があれば無料で追加作業、作業は外部委託なしの自社スタッフ</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">出典：おそうじLabo公式サイト（2026年10月14日確認）。特典の内容・期間は変わる場合があります。申し込み時に最新の金額をご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：おそうじLabo公式サイト（料金表・特典 2026年10月14日確認、セット料金・予約状況 2026年10月28日確認）。特典の内容・期間は変わる場合があります。申し込み時に最新の金額をご確認ください。</p>
           </section>
 
           <section id="review-summary" className="scroll-mt-24">

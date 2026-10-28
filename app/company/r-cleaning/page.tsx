@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年10月26日";
+const UPDATED = "2026年10月28日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
@@ -98,7 +98,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-26",
+  dateModified: "2026-10-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -139,7 +139,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-26">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -239,7 +239,7 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
             <p className="leading-8 text-slate-700">
-              アールクリーニングは、くらしのマーケットの店舗ページで総合4.73/5.0・口コミ662件(2026年8月1日時点)という高い評価を得ており、丁寧な作業や問い合わせ対応の早さ、繁忙期の対応を評価する声が中心です。明朗会計や事前説明、ビフォーアフター写真の提示など、作業プロセスの丁寧さを評価する内容も多く確認できます。
+              アールクリーニングは、くらしのマーケットの店舗ページで総合4.73/5.0・口コミ662件(2026年8月1日時点・10月28日の再確認でも同じ件数・評点)という高い評価を得ており、丁寧な作業や問い合わせ対応の早さ、繁忙期の対応を評価する声が中心です。明朗会計や事前説明、ビフォーアフター写真の提示など、作業プロセスの丁寧さを評価する内容も多く確認できます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               一方、みん評の口コミは11件(2026年8月1日時点)と少数ながら評価が1〜5点に二極化しており、水漏れで部屋が濡れたという報告や、洗浄範囲・トラブル後の対応への不満といった否定的な声も確認できます。担当者による品質のばらつきを指摘する声もあるため、高い評価が多数であっても担当者により差が生じる可能性を考慮し、作業範囲と万一の際の補償を申し込み時にご確認ください。
