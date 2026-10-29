@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年10月28日";
+const UPDATED = "2026年10月29日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
@@ -98,7 +98,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-28",
+  dateModified: "2026-10-29",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -139,7 +139,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-29">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -154,7 +154,7 @@ export default function Page() {
             です。本記事では、首都圏を中心に対応するアールクリーニングについて、みん評・Googleマップ・くらしのマーケットなどで公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと注意点を、中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※アールクリーニングは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評・Googleマップ・くらしのマーケット等で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年6月)。
+            ※アールクリーニングは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評・Googleマップ・くらしのマーケット等で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(初回調査：2026年6月／料金・キャンペーン：10月21日公式再確認／口コミの評点・件数：くらしのマーケット10月28日・みん評10月22日再確認)。
           </p>
         </div>
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年10月29日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
@@ -96,7 +96,7 @@ const articleJsonLd = {
   headline:
     "ダスキンのエアコンクリーニングの口コミ・評判｜悪い口コミ・料金・満足の保証の調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-27",
+  dateModified: "2026-10-29",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-29">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -490,6 +490,9 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              2台以上をまとめて申し込むと、1台ずつ依頼する場合より安くなります。2026年10月29日に公式のWEBお見積もりページで同じ料金(壁掛け・横幅120cm未満)を再確認し、当サイトで差額を計算したところ、通常タイプは2台セット25,300円で、1台料金15,400円×2台(30,800円)より<strong className="font-semibold">5,500円安く</strong>、1台あたり12,650円(1台料金の約18%引き)でした。お掃除機能付きは2台セット47,300円で、26,400円×2台(52,800円)より5,500円安く、1台あたり23,650円(約10%引き)です。3台目以降も同じ1台あたりの料金で追加できるため、リビングと寝室など複数台を同じ日に依頼すると割安になります。なお、横幅120cm以上の壁掛けタイプの料金は同ページに記載がないため、見積もり時にご確認ください。
+            </p>
             <p className="mt-4 leading-8 text-slate-700">
               天井埋込1・2方向タイプは、公式の詳細ページでさらに細かい料金が案内されています(税込・2026年8月2日確認)。
             </p>
