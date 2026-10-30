@@ -7,13 +7,13 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "テイクサービスの口コミ・評判｜完全見積制の料金と注意点の調査結果【2026年8月】",
+    "テイクサービス（テイクサービス・エアコン）の口コミ・評判｜完全見積制の料金と注意点【2026年10月】",
   description:
-    "エアコン修理のテイクサービス（運営: 株式会社アシスト）の口コミ傾向・料金の仕組みを当サイトが公式ページで調査（2026年7月7日確認）。出張費・見積もり・依頼前キャンセルは無料で、症状別の実額は公開されていない完全見積制です。調査費用が有料になる条件と、依頼前に確認すべき3点もあわせて解説します。",
+    "エアコン修理のテイクサービス（運営: 株式会社アシスト）の口コミ傾向・料金の仕組みを当サイトが公式ページで調査（2026年10月30日再確認）。出張費・見積もり・依頼前キャンセルは無料で、症状別の実額は公開されていない完全見積制です。調査費用が有料になる条件と、依頼前に確認すべき3点もあわせて解説します。",
   alternates: { canonical: "/company/take-service" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年10月30日";
 
 const toc = [
   { id: "summary", label: "テイクサービスとは" },
@@ -85,9 +85,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "テイクサービスの口コミ・評判｜エアコン修理の料金・対応エリアの調査結果【2026年最新】",
+    "テイクサービス（テイクサービス・エアコン）の口コミ・評判｜完全見積制の料金と注意点【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-10-30",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -121,14 +121,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            テイクサービスの口コミ・評判
+            テイクサービス（テイクサービス・エアコン）の口コミ・評判
             <br className="hidden md:block" />
-            エアコン修理の料金・対応エリアの調査結果【2026年最新】
+            完全見積制の料金と注意点【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-30">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -150,12 +150,13 @@ export default function Page() {
             エアコンが急に効かなくなった場合や、水漏れ・異音が発生した場合には、迅速に対応できる修理サービスが求められます。
             本記事では、24時間受付のエアコン修理受付サービス
             <strong className="font-semibold text-slate-900">テイクサービス</strong>
-            について、当サイトが公式ページを直接確認した事実（2026年7月7日調査・基本情報は2026年10月15日に現在の公式LPで再確認）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、中立的な立場でまとめています。
+            について、当サイトが公式ページを直接確認した事実（2026年7月7日調査・基本情報は2026年10月30日に現在の公式LPで再確認）をもとに、料金の仕組み・口コミの傾向・依頼前に確認すべき点を、中立的な立場でまとめています。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
+              <li>・公式受付ページ（aircon.assist-life-service.com）の表記は<strong>「テイクサービス・エアコン」</strong>で、フッターの運営表記は Assist Corp.（株式会社アシスト）です（2026年10月30日確認）</li>
               <li>・<strong>出張費・見積もり・依頼前キャンセルは無料</strong>（公式明記）。ただし<strong>症状別の料金実額は公式に掲載がなく「完全見積制」</strong>です</li>
               <li>・実態は<strong>全国の加盟店を紹介する受付サービス（紹介型）</strong>。施工は加盟店が行い、保証内容も工事内容・加盟店により異なります</li>
               <li>・夜間や急ぎで早期の訪問を希望される方に適しています。<strong>金額を比較してから決めたい方には、実額を公開している業者との相見積もりをおすすめします</strong>（<Link href="/cost/price-index/" className="text-sky-700 underline">料金調査一覧</Link>）</li>
@@ -223,11 +224,11 @@ export default function Page() {
                     ["運営会社", "株式会社アシスト（東京都中央区銀座4-14-15・公式の会社概要より、2026年10月17日確認）"],
                     ["業態", "加盟店紹介型（受付・手配を行い、施工は全国の加盟店が実施）"],
                     ["許認可の表示", "公式ページに建設業許可・電気工事業登録等の記載なし（施工する加盟店の許認可も非開示・2026年7月7日確認）"],
-                    ["対応エリア", "全国対応（公式LP・2026年10月15日確認。地域により対応スピードが異なる）"],
-                    ["受付時間", "24時間365日（公称・2026年10月15日確認。訪問時間は地域・状況により変動）"],
-                    ["対応スピード", "最短5分で急行（公称・2026年10月15日確認）"],
+                    ["対応エリア", "全国対応（公式LP・2026年10月15日・10月30日確認。地域により対応スピードが異なる）"],
+                    ["受付時間", "24時間365日（公称・2026年10月15日・10月30日確認。訪問時間は地域・状況により変動）"],
+                    ["対応スピード", "最短5分で急行（公称・2026年10月15日・10月30日確認）"],
                     ["実績", "年間30,000件（公称・算出条件の記載なし）"],
-                    ["公式サイト", "aircon.assist-life-service.com（2026年10月15日確認。以前の公式ページ aircon-syuri.jp は同日時点で接続できず）"],
+                    ["公式サイト", "aircon.assist-life-service.com（2026年10月15日・10月30日確認。以前の公式ページ aircon-syuri.jp は10月15日時点で接続できず）"],
                     ["支払い方法", "VISA・マスター・JCB（一部加盟店は不可）／法人の後日請求払いは条件付き対応"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>

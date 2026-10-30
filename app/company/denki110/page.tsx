@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/denki110" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年10月30日";
 
 const toc = [
   { id: "summary", label: "DENKI110とは（電気工事110番との違い）" },
@@ -64,7 +64,7 @@ const articleJsonLd = {
   headline:
     "DENKI110の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-27",
+  dateModified: "2026-10-30",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -105,7 +105,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-30">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -132,7 +132,15 @@ export default function Page() {
               <li>・見積もり後のキャンセルは可能で、見積もり確定後の追加料金は発生しないとされています。ただし、対応エリア・加盟店・現場状況により、事前確認のうえ調査・見積もりに費用がかかる場合があります</li>
               <li>・作業は加盟店が行い、加盟店によっては作業前に料金の支払いを求める場合があると明記されています。請負賠償保険に加入しているとされています</li>
             </ul>
-            <p className="mt-2 text-xs text-slate-400">出典：シェアリングテクノロジー「電気工事110番」公式（sharing-tech.co.jp/denki/ ・ /denki/price/、2026年10月27日確認）。口コミ・満足度の数値は、公式の画像表示のみで本文に記載がないため掲載していません。</p>
+            <p className="font-semibold text-slate-900 mt-3 mb-2">「電気工事110番 トラブル」で調べている方へ：依頼前に確認したい公式の注意書き</p>
+            <ul className="space-y-1">
+              <li>・エリア・加盟店によっては<strong>掲載価格で対応できない場合がある</strong>とされています。掲載価格は目安として扱い、現地見積もりの総額を確認してから依頼してください</li>
+              <li>・現地調査は、事前に了承を得たうえで<strong>調査費用がかかる場合がある</strong>とされています。訪問前に調査費用の有無と金額をご確認ください</li>
+              <li>・支払いは作業完了後が基本ですが、加盟店によっては作業前の支払いを求める場合があり、一部の加盟店・エリアではクレジットカードが使えない場合があります</li>
+              <li>・保証期間の記載は、電気工事110番の公式トップページ（sharing-tech.co.jp/denki/）では確認できませんでした（2026年10月30日）。作業後の不具合への対応は、見積もり時に加盟店へご確認ください</li>
+              <li>・受付：0120-949-684（24時間365日）</li>
+            </ul>
+            <p className="mt-2 text-xs text-slate-400">出典：シェアリングテクノロジー「電気工事110番」公式（sharing-tech.co.jp/denki/ ・ /denki/price/、2026年10月27日確認。注意書き・受付番号は2026年10月30日に再確認）。口コミ・満足度の数値は、公式の画像表示のみで本文に記載がないため掲載していません。</p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査日：2026年10月20日）。
@@ -275,7 +283,7 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              電気工事やエアコン関連作業の費用は、症状や必要な作業によって幅があります。電気工事110番の公式サイトにはエアコン修理に限った料金は掲載されておらず、公式FAQでは電気トラブル全般について
+              電気工事やエアコン関連作業の費用は、症状や必要な作業によって幅があります。DENKI110の公式サイトにはエアコン修理に限った料金は掲載されておらず、公式FAQでは電気トラブル全般について
               <strong className="font-semibold">作業費込みで6,600円〜</strong>
               とされています（2026年10月20日・公式確認）。公式FAQでは、例示の料金は業者や現場の状況によって変わると注記されています。作業内容によっては、この目安より総額がかかる場合があるため、訪問時に総額をご確認ください。
             </p>
