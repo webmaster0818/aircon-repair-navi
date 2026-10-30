@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/r-cleaning" },
 };
 
-const UPDATED = "2026年10月29日";
+const UPDATED = "2026年10月30日";
 
 const toc = [
   { id: "summary", label: "アールクリーニングとは" },
@@ -29,7 +29,7 @@ const toc = [
   { id: "flow", label: "依頼から作業完了までの流れ" },
   { id: "flow-detail", label: "申し込み〜作業完了までの流れ【詳細版】" },
   { id: "menu-price", label: "機種・メニュー別の料金の見方" },
-  { id: "payment", label: "支払い方法・キャンセル規定" },
+  { id: "payment", label: "支払い方法・キャンセル規定・ギフト券" },
   { id: "extra-fee", label: "追加料金がかかるケース（公式の注意事項）" },
   { id: "checklist", label: "見積もりで確認すべきチェックポイント" },
   { id: "confusion", label: "同名・類似業者との混同に注意" },
@@ -61,6 +61,10 @@ const faqs = [
   {
     q: "0120-007-601はどこの電話番号ですか？",
     a: "アールクリーニングの公式サイト(r-cleaning.com)に、問い合わせ・申し込みの受付番号として掲載されている番号です(受付は毎日9:00〜18:00、2026年10月26日確認)。公式サイトには、この番号から利用者へ折り返し・確認の電話をするかどうかの記載はありません。心当たりのない着信の場合は、番号を公式サイトの表示と照らし合わせたうえで、公式の受付に直接お問い合わせください。",
+  },
+  {
+    q: "アールクリーニングのギフト券はありますか？",
+    a: "公式サイトの「おそうじギフト券」ページでは、1枚10,000円(税込)の商品券を案内しています。エアコンクリーニングを含む全メニューで使え、有効期限は購入から1年間、利用できるのは東京都・埼玉県・神奈川県・千葉県の対応エリア内に限られます。購入は公式サイトの申し込みフォームまたは電話で行い、ギフト券は送料無料で郵送されると記載されています(2026年10月30日確認)。",
   },
   {
     q: "防カビ・抗菌コートは追加料金がかかりますか？",
@@ -98,7 +102,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-29",
+  dateModified: "2026-10-30",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -502,7 +506,7 @@ export default function Page() {
           </section>
 
           <section id="payment" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">支払い方法・キャンセル規定・ギフト券</h2>
             <p className="leading-8 text-slate-700">
               支払いは作業完了後で、公式サイトでは<strong className="font-semibold">現金・各種クレジットカード・電子マネー/QR決済</strong>(一部を除く)に対応すると案内されています(2026年8月2日確認)。利用したい決済手段が決まっている場合は、申し込み時に利用可否をご確認ください。
             </p>
@@ -524,6 +528,9 @@ export default function Page() {
             </div>
             <p className="mt-4 leading-8 text-slate-700">
               前日15:00を境に全額のキャンセル料が発生する規定のため、天候や体調により予定が変わる可能性がある場合は、<strong className="font-semibold">前日の昼までに連絡する</strong>ことをおすすめします。なお、見積もり段階で金額が折り合わない場合のキャンセルは可能で、出張・見積もり費用はかからないと案内されています。
+            </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              また、公式サイトでは<strong className="font-semibold">「おそうじギフト券」(1枚10,000円・税込)</strong>を販売しています。全メニューで使え、有効期限は購入から1年間、使えるのは東京都・埼玉県・神奈川県・千葉県の対応エリア内です。申し込みは公式サイトのフォームまたは電話で、ギフト券は送料無料で郵送されると案内されています(2026年10月30日確認)。口コミサイトや比較記事でも「贈り物や景品に使える」点が特徴として挙げられていますが、エリア外に住む方へ贈る場合は使えない点に注意が必要です。
             </p>
             <p className="mt-3 text-xs text-slate-400">※2026年8月2日公式確認。規定は変更される場合があります。</p>
           </section>
