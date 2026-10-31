@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年10月29日";
+const UPDATED = "2026年10月31日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
@@ -96,7 +96,7 @@ const articleJsonLd = {
   headline:
     "ダスキンのエアコンクリーニングの口コミ・評判｜悪い口コミ・料金・満足の保証の調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-29",
+  dateModified: "2026-10-31",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-29">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -278,10 +278,11 @@ export default function Page() {
                 <li>クリーニング後に冷房の効きが良くなったとする内容が見られます。</li>
                 <li>大手ならではの体制や、スタッフの清潔感・説明のわかりやすさを評価する声が多く見られます。</li>
                 <li>丁寧かつ迅速な作業と仕上がりの品質を評価する傾向があります。</li>
+                <li>小さな子どもがいる家庭で、女性スタッフ2名の訪問や、音の大きい作業中の待機場所の案内など、家庭の事情に合わせた配慮を評価する声があります(セレクトラの利用者口コミ)。</li>
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当店舗・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
-            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/duskin/tags/aircon" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(ダスキンのエアコンクリーニング関連口コミ・127件)</a>では、2名体制の効率的な作業や時間厳守など「料金に見合う内容」とする肯定的な評価も確認できます(2026年8月1日確認)。</p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://minhyo.jp/duskin/tags/aircon" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">みん評(ダスキンのエアコンクリーニング関連口コミ・127件)</a>では、2名体制の効率的な作業や時間厳守など「料金に見合う内容」とする肯定的な評価も確認できます(2026年8月1日確認)。<a href="https://selectra.jp/home/review/duskin/customer-reviews" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">セレクトラの利用者口コミ</a>は平均4.0／5・3件(ページ更新2026年8月11日、当サイト2026年10月31日確認)で、3件ともエアコンクリーニングを含む依頼への4点評価です。件数が少ないため、件数の多いみん評(平均3.33・約130件)とあわせてご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
