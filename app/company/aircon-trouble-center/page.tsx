@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/aircon-trouble-center" },
 };
 
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年10月31日";
 
 const toc = [
   { id: "summary", label: "エアコントラブルセンターとは" },
@@ -77,6 +77,10 @@ const faqs = [
     a: "公式サイトには「事前作業承諾書の署名（サイン）を義務付けており、承諾後の作業になっている」と記載されています（2026年10月23日確認）。承諾書は施工依頼の意思表示にあたるため、署名前に総額・保証・キャンセル条件を確認し、控えまたはスマートフォンの写真を保管してください。",
   },
   {
+    q: "エアコントラブルバスターズとエアコントラブルセンターは同じ会社ですか？",
+    a: "別のサービスです。エアコントラブルセンターは株式会社Composure（東京都新宿区）運営・公式ドメイン aircon-troubleone.com・電話050-5369-1348、エアコントラブルバスターズは公式ドメイン aircon-troublebusters.com・所在地 横浜市神奈川区金港町・電話0120-539-588です（2026年10月31日確認）。エアコントラブルバスターズの公式サイトに記載されている料金関連の情報は「見積もり無料」「見積もり後のキャンセル料無料」「連絡なしのキャンセルは基本料金のみ請求」で、基本料金の金額は記載されていません。口コミを調べる際は、公式ドメインと電話番号でどちらのサービスかを確認してください。",
+  },
+  {
     q: "見積もり後・施工依頼後のキャンセルはできますか？",
     a: "無料と明記されているのは「施工依頼前のキャンセル」までです。施工依頼後（承諾書への署名後）や作業開始後のキャンセル規定は公式に記載がありません（2026年10月23日確認）。依頼を確定する前に、キャンセル費用が発生する条件を担当加盟店にご確認ください。",
   },
@@ -88,7 +92,7 @@ const articleJsonLd = {
   headline:
     "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-23",
+  dateModified: "2026-10-31",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +133,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -505,10 +509,10 @@ export default function Page() {
           <section id="confusion" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">同名・類似業者との混同に注意</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              「エアコントラブル○○」という名称の緊急対応系サービスは複数実在し、検索結果や口コミが混ざりやすい状況です。当サイトが実在を確認できた（2026年8月1日時点）類似名称のサービスは次のとおりです。
+              「エアコントラブル○○」という名称の緊急対応系サービスは複数実在し、検索結果や口コミが混ざりやすい状況です。当サイトが実在を確認できた（2026年8月1日時点・エアコントラブルバスターズは10月31日に再確認）類似名称のサービスは次のとおりです。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコントラブルバスターズ</strong>（<a href="https://www.aircon-troublebusters.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-troublebusters.com</a>・横浜市神奈川区金港町・0120-539-588）——名称が酷似する別サービスです。全国対応・即日対応を掲げており、本記事のエアコントラブルセンターとは運営が異なります</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコントラブルバスターズ</strong>（<a href="https://www.aircon-troublebusters.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-troublebusters.com</a>・横浜市神奈川区金港町・0120-539-588）——名称が酷似する別サービスです。全国対応・即日対応を掲げており、本記事のエアコントラブルセンターとは運営が異なります。公式サイト（2026年10月31日確認）の記載は、見積もり無料・見積もり後のキャンセル料無料・連絡なしのキャンセルは基本料金のみ請求、の3点です。基本料金の金額、修理料金の例、受付時間、保証、支払い方法はトップページに記載がなく、運営会社名もサービス名（エアコントラブルバスターズ）の表記のみです。依頼前に、基本料金の金額と保証の有無を電話で確認してください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">エアコン救急隊</strong>（<a href="https://aircon-kaketsuke119.com/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">aircon-kaketsuke119.com</a>）——「救急」系の名称を持つ別のエアコン修理業者で、緊急駆けつけ系の検索結果で混在しやすい名称です（同名サービスの見分け方は<Link href="/company/aircon-kyukyusha/" className="text-sky-700 underline">エアコン救急隊の調査ページ</Link>に整理）</span></li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">

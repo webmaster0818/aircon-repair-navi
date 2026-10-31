@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ダイキンのエアコン修理の電話番号・受付時間｜0120-88-1081（24時間）とWeb修理申込の方法・料金【2026年10月確認】",
+    "ダイキンのエアコン修理・お客様窓口の電話番号｜コンタクトセンター0120-88-1081（24時間）とWeb申込・料金【2026年10月確認】",
   description:
-    "ダイキンのエアコン修理の依頼先（ダイキンコンタクトセンター）の電話番号0120-88-1081・受付時間（24時間365日）・Web修理申込の手順・電話がつながらない場合の対処を、2026年10月17日に公式サイトで確認して掲載しています。出張修理料金の目安と地域の修理業者との比較もご説明します。",
+    "ダイキンのエアコンのお客様窓口（空調お客様サポート／ダイキンコンタクトセンター）の修理受付電話0120-88-1081は24時間365日受付です（2026年10月31日公式確認）。買い替え相談の別番号、Web修理申込の手順、点検費・保証期間、電話がつながらない場合の対処を掲載しています。",
   alternates: { canonical: "/company/daikin-cc" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年10月31日";
 
 const toc = [
   { id: "contact", label: "修理依頼の電話番号・Web申込" },
@@ -82,9 +82,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ダイキンエアコン修理の口コミ・評判｜コンタクトセンターの料金・相談方法を調査【2026年最新】",
+    "ダイキンのエアコン修理・お客様窓口の電話番号｜コンタクトセンター0120-88-1081（24時間）とWeb申込・料金【2026年10月確認】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-27",
+  dateModified: "2026-10-31",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -118,14 +118,14 @@ export default function Page() {
             エアコン修理サービスレビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ダイキンのエアコン修理の電話番号・受付時間
+            ダイキンのエアコン修理・お客様窓口の電話番号
             <br className="hidden md:block" />
             コンタクトセンターへの依頼方法と料金・評判【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -140,9 +140,10 @@ export default function Page() {
               <li>・<strong>電話：ダイキンコンタクトセンター 0120-88-1081</strong>（フリーダイヤル・24時間365日受付。AI音声ガイダンスで用件を話すと担当窓口に案内されます）</li>
               <li>・<strong>Web：</strong>公式サイト「修理のご相談・お申し込み」から申し込めます。事前に故障診断を行うと、その結果を反映して申し込めます</li>
               <li>・<strong>買い替えの相談は別番号</strong>（0120-085-022・平日9:30〜17:00）です</li>
+              <li>・<strong>窓口の名称：</strong>公式サイトでは、エアコンなど空調製品の問い合わせ先を「空調お客様サポート（ダイキンコンタクトセンター）」、購入相談の窓口を「ダイキンカスタマーセンター」と表記しています。「お客様センター」「コールセンター」で検索した場合も、修理の依頼先は上記の0120-88-1081です（2026年10月31日確認）</li>
               <li>・<strong>費用：</strong>点検後に修理をしなかった場合も、ルームエアコン1台あたり<strong>8,500〜19,000円（税込）の出張（引取）点検費</strong>がかかります。保証期間は本体1年・冷媒系統5年です（2026年10月27日・公式FAQ確認）</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※電話番号・Web申込は2026年10月17日、点検費・保証期間は2026年10月27日にダイキン公式（daikincc.com の問い合わせページ・よくあるご質問）で確認した内容です。詳しくは<a href="#contact" className="underline">電話番号・Web申込の表</a>をご覧ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※電話番号・Web申込は2026年10月17日（10月31日に再確認）、点検費・保証期間は2026年10月27日にダイキン公式（daikincc.com の問い合わせページ・よくあるご質問）で確認した内容です。詳しくは<a href="#contact" className="underline">電話番号・Web申込の表</a>をご覧ください。</p>
           </div>
           <p className="text-[1.05rem] leading-8 text-slate-700">
             ダイキン製のエアコンが冷えない・効かない、水漏れや異音、エラー表示が出るといったトラブルが生じた場合、メーカー公式の相談窓口に直接相談する方法があります。

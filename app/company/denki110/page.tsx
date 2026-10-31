@@ -6,7 +6,7 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "DENKI110（電気工事）の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い【2026年10月】",
+    "電気工事110番とDENKI110の評判・料金｜運営会社の違いとトラブル時の注意を公式で調査【2026年10月】",
   description:
     "DENKI110の料金（電気トラブル全般6,600円〜）・キャンセル料・受付時間・対応エリアと、トラブル時に確認したい利用規約を公式で調査しました。シェアリングテクノロジーの「電気工事110番」とは運営会社が異なる点もご説明します（2026年10月20日確認）。",
   alternates: { canonical: "/company/denki110" },
@@ -62,7 +62,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "DENKI110の評判・料金・トラブル時の規約を公式で調査｜「電気工事110番」との違い",
+    "電気工事110番とDENKI110の評判・料金｜運営会社の違いとトラブル時の注意を公式で調査【2026年10月】",
   datePublished: "2026-06-10",
   dateModified: "2026-10-30",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
@@ -98,9 +98,9 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            DENKI110の評判・料金を公式で調査
+            電気工事110番とDENKI110の評判・料金
             <br className="hidden md:block" />
-            「電気工事110番」との違い【2026年10月】
+            運営会社の違いとトラブル時の注意【2026年10月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
