@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/busy-season/" },
 };
 
-const UPDATED = "2026年10月15日";
+const UPDATED = "2026年10月31日";
 
 const toc = [
   { id: "summary", label: "依頼に適した時期" },
@@ -39,12 +39,12 @@ const calendar: { month: string; level: Level; wait: string; note: string }[] = 
   { month: "4月", level: "低", wait: "取りやすい", note: "試運転で不調に気づきやすい時期です。梅雨・夏前の点検に適しています。" },
   { month: "5月", level: "中", wait: "やや混み始める", note: "冷房の使用が始まり、点検・クリーニングの需要が増え始めます。" },
   { month: "6月", level: "中", wait: "混み始める", note: "梅雨の時期です。猛暑の前に点検・修理を済ませておくことをおすすめします。" },
-  { month: "7月", level: "高", wait: "数日〜1週間以上になることも", note: "猛暑日が続き、受付が集中します。訪問まで日数がかかりやすくなります。" },
-  { month: "8月", level: "最繁忙", wait: "1週間以上待つ場合もある", note: "需要のピークです。お盆は各社が休業するため、日程調整にさらに時間がかかる傾向があります。" },
+  { month: "7月", level: "高", wait: "日程調整に時間がかかりやすい", note: "猛暑日が続き、受付が集中します。訪問まで日数がかかりやすくなります。" },
+  { month: "8月", level: "最繁忙", wait: "日程調整に最も時間がかかりやすい", note: "需要のピークです。お盆期間の受付日・訪問日は、依頼先へご確認ください。" },
   { month: "9月", level: "高", wait: "徐々に緩和", note: "残暑で需要は続きますが、下旬にかけて落ち着いていきます。" },
   { month: "10月", level: "低", wait: "取りやすくなる", note: "冷房シーズンの終わりです。翌シーズンに向けた点検に適しています。" },
   { month: "11月", level: "中", wait: "取りやすい", note: "暖房の使用開始にともない不調に気づく方が増えますが、予約には比較的余裕があります。" },
-  { month: "12月", level: "中", wait: "年末は日程調整に時間を要する", note: "寒波による暖房の故障に加え、年末年始の休業により予約が取りにくくなります。" },
+  { month: "12月", level: "中", wait: "年末年始は依頼先の営業日を確認", note: "寒波で暖房の不調に気づく時期です。ダイキンは、年末年始等の長期休暇期間は引取修理のお預かり期間が通常より長くなると案内しています。" },
 ];
 
 const faqs = [
@@ -54,15 +54,15 @@ const faqs = [
   },
   {
     q: "夏に依頼した場合、どのくらい待ちますか？",
-    a: "待ち日数は各社・地域・症状・その年の天候によって大きく異なるため、一律にはお示しできません。依頼が少ない時期であれば数日以内に対応を受けられることが多い一方、夏の繁忙期は日程調整に時間がかかり、訪問まで1週間以上となる場合もあると案内されています。正確な状況は、依頼先へ直接ご確認ください。",
+    a: "待ち日数は各社・地域・症状・その年の天候によって大きく異なり、メーカー各社も具体的な日数は公表していないため、一律にはお示しできません。パナソニックは、訪問日時を指定せずに申し込んだ場合は当日中に連絡するとしたうえで「繁忙期は日程調整までお時間をいただく場合があります」と案内しており、5日以上たっても連絡がない場合は問い合わせるよう求めています。正確な状況は、依頼先へ直接ご確認ください。",
   },
   {
     q: "少しでも早く修理してもらうにはどうすればよいですか？",
-    a: "受付開始直後の朝の時間帯や、比較的つながりやすい平日の日中に電話する方法があります。1社に限定せず複数社に同時に相談することで、早く対応できる業者が見つかりやすくなります。また、メーカー名・型番・エラー表示・症状をあらかじめ記録しておくと、受付や日程調整が円滑に進みます。急ぎの場合は、即日・最短対応を掲げる業者を探す方法もあります。",
+    a: "電話がつながりにくい場合は、Web受付を利用する方法があります。ダイキンは、回線の混雑時は電話が途中で切断される場合があるとして、Webでの修理依頼やメールでの問い合わせを案内しており、Web受付では電話受付時と同じ最短日を選択できるとしています。1社に限定せず複数社に同時に相談することで、早く対応できる業者が見つかりやすくなります。また、メーカー名・型番・エラー表示・症状をあらかじめ記録しておくと、受付や日程調整が円滑に進みます。急ぎの場合は、即日・最短対応を掲げる業者を探す方法もあります。",
   },
   {
     q: "繁忙期は料金が高くなりますか？",
-    a: "料金そのものは、時期によって大きくは変わらないことが多いとされています。ただし、繁忙期は予約が取りにくく選択肢が限られるため、相見積もりを取って比較する時間を確保しにくくなります。依頼が少ない時期に点検・修理を済ませておくことで、料金と対応を十分に比較したうえで依頼先を選びやすくなります。",
+    a: "時期による料金の扱いは依頼先によって異なるため、見積もりの際にご確認ください。繁忙期は予約が取りにくく選択肢が限られるため、相見積もりを取って比較する時間を確保しにくくなります。依頼が少ない時期に点検・修理を済ませておくことで、料金と対応を十分に比較したうえで依頼先を選びやすくなります。",
   },
   {
     q: "業者を待つ間に、自分でできることはありますか？",
@@ -76,7 +76,7 @@ const articleJsonLd = {
   headline:
     "エアコン修理はいつ頼むべき？繁忙期カレンダー【2026年】混雑・待ち日数の目安",
   datePublished: "2026-07-12",
-  dateModified: "2026-10-15",
+  dateModified: "2026-10-31",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -117,7 +117,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-15">最終更新：{UPDATED}</time>
+            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -143,11 +143,11 @@ export default function Page() {
           <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/70 p-5">
             <p className="font-bold text-sky-800 mb-1">2026年10月は予約を取りやすい時期です</p>
             <p className="text-sm leading-7 text-slate-700">
-              10月は冷房シーズンが終わり、真夏に比べて日程を取りやすくなります。11月は暖房の使用開始にともない不調に気づく方が増え、12月は年末年始の休業により予約が取りにくくなる傾向があるため、暖房の試運転と点検・修理の相談は10月中に済ませておくことをおすすめします。
+              10月は冷房シーズンが終わり、真夏に比べて日程を取りやすくなります。11月は暖房の使用開始にともない不調に気づく方が増え、年末年始は休業する依頼先もあるため、暖房の試運転と点検・修理の相談は早めに済ませておくことをおすすめします。
             </p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の混雑度・待ち日数は、各社の公式告知や一般的な傾向にもとづく「目安」であり、その年の天候・地域・業者・症状によって大きく変わります（推定を含みます）。正確な状況は依頼先へ直接ご確認ください（確認日：2026年7月12日）。
+            ※本記事の混雑度・待ち日数は、各社の公式告知や一般的な傾向にもとづく「目安」であり、その年の天候・地域・業者・症状によって大きく変わります（推定を含みます）。正確な状況は依頼先へ直接ご確認ください（各社の告知の確認日：2026年10月31日）。
           </p>
         </div>
 
@@ -177,7 +177,7 @@ export default function Page() {
               <p className="font-bold text-sky-800 mb-3">早く修理したい方への推奨事項</p>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                 <li className="flex gap-2"><span className="text-sky-600 font-bold shrink-0">1.</span><span><strong>梅雨明け前（6月ごろ）の点検・試運転</strong>：混雑する前に不調を把握できます</span></li>
-                <li className="flex gap-2"><span className="text-sky-600 font-bold shrink-0">2.</span><span><strong>朝の時間帯・平日の電話</strong>：受付が比較的つながりやすい時間帯です</span></li>
+                <li className="flex gap-2"><span className="text-sky-600 font-bold shrink-0">2.</span><span><strong>電話がつながらない場合はWeb受付</strong>：ダイキンは、回線の混雑時にWebでの修理依頼を案内しています</span></li>
                 <li className="flex gap-2"><span className="text-sky-600 font-bold shrink-0">3.</span><span><strong>複数社への同時相談</strong>：早く対応できる業者が見つかりやすくなります</span></li>
               </ul>
             </div>
@@ -250,20 +250,22 @@ export default function Page() {
                 <p className="mt-2 text-xs text-slate-500">
                   出典：Panasonic 出張修理サービスFAQ（
                   <a href="https://jpn.faq.panasonic.com/app/answers/detail/a_id/63906/" target="_blank" rel="noopener noreferrer" className="text-sky-600 underline underline-offset-2">jpn.faq.panasonic.com</a>
-                  ）／確認日：2026年7月12日
+                  ）／確認日：2026年10月31日
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
-                <h3 className="font-bold text-slate-900 mb-2">ダイキン（修理受付の流れ）</h3>
+                <h3 className="font-bold text-slate-900 mb-2">ダイキン（修理のお申し込み窓口）</h3>
                 <p className="text-[0.95rem] leading-7 text-slate-700">
-                  修理・サービスの受付ページで、
-                  <strong className="font-semibold">「混雑する前のお申し込み」</strong>
-                  を呼びかけており、お盆や年末年始などの時期によっては希望に応えにくい場合があるとしています。時期による混雑を前提とした案内です。
+                  修理受付の電話窓口のページで
+                  <strong className="font-semibold">「現在、電話が大変込み合っております」</strong>
+                  と告知し、回線の混雑時はオペレーターにつなぐ途中で電話が切断される場合があるとして、Webでの修理依頼やメールでの問い合わせを案内しています。Web受付では、電話受付時と同じ最短日を選択できるとしています（一部地域を除く）。
                 </p>
                 <p className="mt-2 text-xs text-slate-500">
-                  出典：ダイキン工業「どんな流れで修理するの？」（
+                  出典：ダイキン工業「お問合せ」（
+                  <a href="https://www.daikincc.com/business_inquiry.html" target="_blank" rel="noopener noreferrer" className="text-sky-600 underline underline-offset-2">daikincc.com</a>
+                  ）・「どんな流れで修理するの？」（
                   <a href="https://www.daikincc.com/acceptnew/howto.html" target="_blank" rel="noopener noreferrer" className="text-sky-600 underline underline-offset-2">daikincc.com</a>
-                  ）／確認日：2026年7月12日
+                  ）／確認日：2026年10月31日
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
@@ -276,7 +278,7 @@ export default function Page() {
                 <p className="mt-2 text-xs text-slate-500">
                   出典：日本経済新聞「ダイキン、電話応答の3割AIで 修理受付で繁忙期に備え」（
                   <a href="https://www.nikkei.com/article/DGXZQOUF285T30Y5A220C2000000/" target="_blank" rel="noopener noreferrer" className="text-sky-600 underline underline-offset-2">nikkei.com</a>
-                  ）／確認日：2026年7月12日
+                  ）／確認日：2026年10月31日
                 </p>
               </div>
             </div>
@@ -289,7 +291,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">早く・費用を抑えて依頼する方法</h2>
             <ol className="space-y-4">
               {[
-                ["朝の時間帯・平日の日中に電話する", "受付開始直後や平日の日中は、比較的つながりやすい時間帯とされています。夕方以降や休日の混雑を避けることで、日程調整が進みやすくなります。"],
+                ["電話がつながらない場合はWeb受付を使う", "ダイキンは、回線の混雑時は電話が途中で切断される場合があるとして、Webでの修理依頼やメールでの問い合わせを案内しています。Web受付では、電話受付時と同じ最短日を選択できるとしています（一部地域を除く）。"],
                 ["複数社に同時に相談する", "1社に限定せず2〜3社に相談することで、早く対応できる業者が見つかりやすくなり、料金の比較もできます。繁忙期は特に、複数の選択肢を確保しておくことをおすすめします。"],
                 ["梅雨の時期に予防点検・試運転を行う", "混雑する前に冷房の試運転を行い、不調を把握しておくことで、余裕をもって修理や買い替えを検討できます。"],
                 ["メーカー名・型番・症状を記録する", "型番やエラー表示、症状が発生した時期と内容を伝えることで、受付・見積もり・日程調整が円滑に進み、待ち時間の短縮につながります。"],
@@ -349,12 +351,13 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ・更新履歴</h2>
             <p className="leading-8 text-slate-700">
-              エアコン修理が最も混み合うのは7〜8月の猛暑日が続く時期であり、各社とも繁忙期は日程調整に時間がかかる傾向があります。早く修理するには、梅雨明け前の点検、朝の時間帯・平日の電話、複数社への同時相談が有効です。急ぎの場合は即日対応の業者を探すとともに、業者を待つ間は安全を最優先にし、可能な範囲で応急対処を行ってください。
+              エアコン修理が最も混み合うのは7〜8月の猛暑日が続く時期であり、各社とも繁忙期は日程調整に時間がかかる傾向があります。早く修理するには、梅雨明け前の点検、電話がつながらない場合のWeb受付、複数社への同時相談が有効です。急ぎの場合は即日対応の業者を探すとともに、業者を待つ間は安全を最優先にし、可能な範囲で応急対処を行ってください。
             </p>
 
             <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
               <p className="text-sm font-bold text-slate-700 mb-3">更新履歴</p>
               <ul className="space-y-1 text-[0.9rem] text-slate-600">
+                <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-10-31</span><span>各社の告知を公式で再確認しました。ダイキンの告知を問い合わせページの記載に差し替え、出典の無い待ち日数（「数日以内」「1週間以上」）と電話がつながりやすい時間帯の記述を削除しました。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-08-03</span><span>8月更新。最繁忙期の状況とお盆期間の注意事項を追記しました。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-07-12</span><span>初版公開。混雑カレンダーと公式告知を掲載しました。</span></li>
               </ul>
