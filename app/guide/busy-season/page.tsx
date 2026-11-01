@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/busy-season/" },
 };
 
-const UPDATED = "2026年10月31日";
+const UPDATED = "2026年11月1日";
 
 const toc = [
   { id: "summary", label: "依頼に適した時期" },
@@ -76,7 +76,7 @@ const articleJsonLd = {
   headline:
     "エアコン修理はいつ頼むべき？繁忙期カレンダー【2026年】混雑・待ち日数の目安",
   datePublished: "2026-07-12",
-  dateModified: "2026-10-31",
+  dateModified: "2026-11-01",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -117,7 +117,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-01">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -141,9 +141,9 @@ export default function Page() {
             です。夏季は修理の依頼が集中し、訪問まで日数がかかる場合があります。本記事では、繁忙期（6〜8月）の混雑・待ち日数・予約の傾向を月別カレンダーで掲載し、早く・費用を抑えて依頼する方法と、業者を待つ間の応急対処をご説明します。
           </p>
           <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/70 p-5">
-            <p className="font-bold text-sky-800 mb-1">2026年10月は予約を取りやすい時期です</p>
+            <p className="font-bold text-sky-800 mb-1">2026年11月は予約を比較的取りやすい時期です</p>
             <p className="text-sm leading-7 text-slate-700">
-              10月は冷房シーズンが終わり、真夏に比べて日程を取りやすくなります。11月は暖房の使用開始にともない不調に気づく方が増え、年末年始は休業する依頼先もあるため、暖房の試運転と点検・修理の相談は早めに済ませておくことをおすすめします。
+              11月は暖房の使用開始にともない不調に気づく方が増えますが、真夏に比べると予約には比較的余裕があります。12月は寒波で暖房の不調に気づく方が増え、年末年始は依頼先によって営業日が異なります（ダイキンは、年末年始等の長期休暇期間は引取修理のお預かり期間が通常より長くなると案内しています）。暖房の試運転と、不調があった場合の点検・修理の相談は、11月中に済ませておくことをおすすめします。
             </p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
@@ -357,6 +357,7 @@ export default function Page() {
             <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
               <p className="text-sm font-bold text-slate-700 mb-3">更新履歴</p>
               <ul className="space-y-1 text-[0.9rem] text-slate-600">
+                <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-11-01</span><span>11月版に更新しました（冒頭の「いま」欄を11月・12月の内容に変更）。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-10-31</span><span>各社の告知を公式で再確認しました。ダイキンの告知を問い合わせページの記載に差し替え、出典の無い待ち日数（「数日以内」「1週間以上」）と電話がつながりやすい時間帯の記述を削除しました。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-08-03</span><span>8月更新。最繁忙期の状況とお盆期間の注意事項を追記しました。</span></li>
                 <li className="flex gap-3"><span className="tabular-nums text-slate-400">2026-07-12</span><span>初版公開。混雑カレンダーと公式告知を掲載しました。</span></li>
