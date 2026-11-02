@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 };
 
 const UPDATED = "2026年10月25日";
+const CONTACTS_CHECKED = "2026年11月2日";
 
 const toc = [
   { id: "summary", label: "依頼先を決める3つの質問" },
@@ -113,7 +114,7 @@ export default function WhereToRepairPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-02">最終更新：{CONTACTS_CHECKED}</time>
           </div>
         </header>
 
@@ -286,7 +287,7 @@ export default function WhereToRepairPage() {
 
           {/* メーカー窓口 */}
           <section id="contacts" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">主要メーカー修理窓口一覧（{UPDATED}確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">主要メーカー修理窓口一覧（{CONTACTS_CHECKED}確認）</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -312,7 +313,7 @@ export default function WhereToRepairPage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※各社公式サイトの{UPDATED}時点の掲載情報です。ダイキンの電話番号は2026年10月17日に公式の問い合わせページ（daikincc.com）で確認しました。三菱電機は修理専用番号の掲載が確認できなかったため、お客さま相談センターの番号を記載しています。電話番号のかけ間違いにご注意ください。
+              ※6社の電話番号・受付時間は、{CONTACTS_CHECKED}に各社の公式ページ（ダイキンは daikincc.com の問い合わせページ、三菱電機はお客さま相談センターのページ）で確認した掲載情報です。シャープの修理窓口ページには、{CONTACTS_CHECKED}時点で「現在、電話がつながりにくくなっております。Web修理申し込みをご利用ください。」と掲載されています。三菱電機は修理専用番号の掲載が確認できなかったため、お客さま相談センターの番号を記載しています。電話番号のかけ間違いにご注意ください。
             </p>
           </section>
 
