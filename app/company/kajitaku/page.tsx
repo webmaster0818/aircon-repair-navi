@@ -182,6 +182,7 @@ export default function Page() {
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/kajitaku/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「カジタク エアコンクリーニングの口コミ・評判」</a>（平均2.96・46件・2026年11月3日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

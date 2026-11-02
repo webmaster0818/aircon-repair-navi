@@ -183,6 +183,7 @@ export default function Page() {
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域(店舗)により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/osoujikakumei/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「おそうじ革命 エアコンクリーニングの口コミ・評判」</a>（平均3.14・64件（カテゴリ平均3.05）・2026年11月3日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
