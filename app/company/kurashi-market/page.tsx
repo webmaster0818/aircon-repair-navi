@@ -232,7 +232,7 @@ export default function Page() {
                 </ul>
               </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※出典：くらしのマーケット公式エアコン修理カテゴリ（curama.jp／2026年10月24日確認・「2026年10月時点」の表示で累計口コミ19,288件・平均点4.84）、およびみん評・口コミ紹介サイト等で公開されている内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。作業を行うのは各出店者のため、品質は担当出店者により差が出る点は構造的な特徴です。</p>
+            <p className="mt-4 text-xs text-slate-400">※出典：<a href="https://curama.jp/aircon-repair/" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">くらしのマーケット公式エアコン修理カテゴリ</a>（2026年11月4日取得・「2026年11月時点」の表示で累計口コミ19,320件・平均点4.84）、<a href="https://minhyo.jp/curama" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「くらしのマーケットの口コミ・評判」</a>（平均3.34・621件（カテゴリ平均2.88）・2026年11月4日取得。エアコン以外の依頼を含むサービス全体の件数です）、およびその他の口コミ紹介サイト等で公開されている内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。作業を行うのは各出店者のため、品質は担当出店者により差が出る点は構造的な特徴です。</p>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向は、いずれも出店者ごとの品質の差に関するものです。マーケットプレイス型のサービスのため、<strong className="font-semibold">口コミ件数・内容・資格表示を確認し、作業範囲や追加料金の条件を予約前にメッセージで確認する</strong>ことで、トラブルの多くは防ぐことができます。
             </p>

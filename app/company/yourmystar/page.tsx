@@ -181,6 +181,7 @@ export default function Page() {
               </ul>
             </div>
             <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期や依頼する職人・地域により異なります。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/yourmystar" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「ユアマイスターの口コミ・評判」</a>（平均3.14・225件（カテゴリ平均2.88）・2026年11月4日取得。エアコン以外の依頼を含むサービス全体の件数です）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
