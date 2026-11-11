@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年11月3日";
+const UPDATED = "2026年11月11日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-03">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-11">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -400,7 +400,7 @@ export default function Page() {
                   {[
                     ["ダスキン", "15,400円（2台セット25,300円）", "26,400円", "2026年10月14日"],
                     ["おそうじ本舗", "通常14,300円（キャンペーン価格13,200円）", "通常24,200円（キャンペーン価格23,100円）", "2026年10月25日"],
-                    ["アールクリーニング", "10,780円（11月10日受付分までの特別価格・通常19,350円）", "18,700円", "2026年10月14日・11月1日"],
+                    ["アールクリーニング", "10,780円（11月20日受付分までの特別価格・通常19,350円）", "18,700円", "2026年10月14日・11月11日"],
                     ["エアコンクリーニング清風", "13,200円", "18,700円", "2026年10月14日"],
                   ].map(([a, b, c, d], i) => (
                     <tr key={a} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
