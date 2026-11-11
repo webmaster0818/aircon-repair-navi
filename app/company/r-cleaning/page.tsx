@@ -115,7 +115,7 @@ const articleJsonLd = {
   headline:
     "アールクリーニングの口コミ・評判｜悪い口コミ・料金・追加料金・他社比較【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-31",
+  dateModified: "2026-11-11",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -647,6 +647,10 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               また、千葉県船橋市周辺には<strong className="font-semibold">「アールクリーン」という名前の似た別のクリーニング業者</strong>があり、ミツモアなどでは高評価・口コミ件数の多い店舗として表示されます（ミツモアの「アールクリーン」は千葉県船橋市・評価4.9・口コミ1,784件、2026年10月23日確認）。「アールクリーニング エアコンクリーニング」の検索結果にもミツモアの同店ページが表示されるため、当ページで紹介しているアールクリーニング（くらしのマーケット4.73・662件）の評価と混同しないようご注意ください。名称が一文字のみ異なるため、評価を確認する際は店名をよくご確認ください。
             </p>
+            <p className="mt-4 leading-8 text-slate-700">
+              顧客満足度ランキングを参照する際も名称の確認が必要です。2026年11月11日に「オリコン顧客満足度ランキング ハウスクリーニング」2026年版（更新日2026年4月1日・回答5,211人）を確認したところ、調査対象13社にアールクリーニングは含まれていませんでした。調査対象には名称の似た「アールおそうじセンター」が含まれていますが、当サイトでは同社とアールクリーニング（運営：株式会社Fire Works）が同じ事業者であるかを確認できていません。ランキングの順位や得点をアールクリーニングの評価として扱わないようご注意ください。
+            </p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://life.oricon.co.jp/rank-house-cleaning/spot/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">オリコン顧客満足度ランキング（ハウスクリーニング・エアコンクリーニング部門 2026年版）</a>・2026年11月11日確認</p>
             <p className="mt-4 leading-8 text-slate-700">
               口コミや評判を調べる際は、次の点を確認すると別業態の同名サービスと取り違えるのを防げます。
             </p>
