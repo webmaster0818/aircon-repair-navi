@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title:
     "おそうじ革命の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "エアコンクリーニング「おそうじ革命」の口コミ・評判をまとめています。みん評・Googleマップ等で公開されている利用者の声の傾向、料金の目安、対応エリアと受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
+    "エアコンクリーニング「おそうじ革命」の口コミ・評判をまとめています。みん評の口コミ全件から読み取れる好評・不満の傾向、料金の目安、対応エリアと受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/osouji-kakumei" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月12日";
 
 const toc = [
   { id: "summary", label: "おそうじ革命とは" },
@@ -56,7 +56,7 @@ const articleJsonLd = {
   headline:
     "おそうじ革命の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-12">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -109,10 +109,10 @@ export default function Page() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             全国対応の大手で、料金体系が明確なエアコンクリーニングを探す際の候補の一つが
             <strong className="font-semibold text-slate-900">おそうじ革命</strong>
-            です。本記事では、全国の各エリア（一部を除く）に対応するおそうじ革命について、みん評・Googleマップ・公式サイトで公開されている利用者の声の傾向、料金の目安、対応エリアと特徴、メリット・注意点を中立的な立場でまとめています。
+            です。本記事では、全国の各エリア（一部を除く）に対応するおそうじ革命について、みん評の口コミ64件（全件）から読み取れる好評・不満の傾向、料金の目安、対応エリアと特徴、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※おそうじ革命は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評・Googleマップ等で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域・店舗により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年6月)。
+            ※おそうじ革命は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事では、みん評で公開されている口コミについて、本文の転載・創作は行わず、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域・店舗により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年6月)。
           </p>
         </div>
 
@@ -171,19 +171,30 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。おそうじ革命については、みん評・Googleマップなどの口コミプラットフォームで多数の利用者の声が公開されており、料金の安さと基本的な品質を評価する傾向が見られます。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。おそうじ革命については、2026年11月12日にみん評のエアコンクリーニングの口コミ64件をすべて確認しました。満足度の内訳は、★5が21件・★4が5件・★3が1件・★2が4件・★1が26件・無評価が7件で、高い評価と低い評価に分かれています。以前掲載していた好評の傾向のうち、「大手が運営している点」を評価する内容は今回の64件で確認できなかったため削除しました。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>ビフォーアフターの写真で汚れの落ち具合がわかりやすく、カビ臭の改善など仕上がりに満足したという評価</li>
-                <li>作業前の流れ・注意点の説明や、質問への受け答えが丁寧だったという評価</li>
-                <li>作業が丁寧かつ迅速で、エアコンの状態についての説明もあったという評価</li>
-                <li>大手が運営している点に加え、料金が抑えめでコストパフォーマンスが良いという評価</li>
-              </ul>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+                <h3 className="font-bold text-sky-800 mb-3">好評の傾向（★4〜5の26件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>作業前の説明や、作業後に写真・汚れた水を見せながらの説明がわかりやすかったという内容</li>
+                  <li>作業が丁寧で、においが消えた・きれいになったという内容</li>
+                  <li>担当者の言葉づかいや気づかいが丁寧だったという内容</li>
+                  <li>料金がほかの業者より抑えめだったという内容</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
+                <h3 className="font-bold text-amber-800 mb-3">不満の傾向（★1〜2・無評価の37件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>問い合わせ・予約に返信が来ない、予約が確定しない、直前にキャンセルされたという内容（最も多い）</li>
+                  <li>清掃後に部品の破損・不具合や、床などの傷が見つかったとする内容</li>
+                  <li>担当する店舗・スタッフによって作業の丁寧さや対応に差があるという内容</li>
+                  <li>設置状況により一部しか清掃できなかった際の料金や、トラブル後の本部の対応に不満があったという内容</li>
+                </ul>
+              </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域(店舗)により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
-            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/osoujikakumei/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「おそうじ革命 エアコンクリーニングの口コミ・評判」</a>（平均3.14・64件（カテゴリ平均3.05）・2026年11月3日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
+            <p className="mt-4 text-xs text-slate-400">※確認日：2026年11月12日（みん評のエアコンクリーニングの口コミ64件・2019年〜2026年の投稿）。評価は時期・担当スタッフ・地域(店舗)により異なります。おそうじ革命はフランチャイズ方式で、依頼先の店舗によって対応が変わる点に触れた口コミもありました。上記は口コミ原文の転載ではなく、当サイトが全件を読んで分類した傾向の要約です。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/osoujikakumei/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「おそうじ革命 エアコンクリーニングの口コミ・評判」</a>（平均3.14・64件（カテゴリ平均3.05）・2026年11月12日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -193,7 +204,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、フランチャイズ展開のサービスという性質上、
+              みん評では高い評価と低い評価が分かれており、フランチャイズ展開のサービスという性質上、
               <strong className="font-semibold">店舗・担当スタッフによって対応や仕上がりに差が出る場合がある</strong>
               点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
@@ -318,7 +329,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              おそうじ革命は、全国の各エリア（一部を除く）に対応し、料金の明確さとコストパフォーマンスを強みとするエアコンクリーニングのサービスです。利用者の声では、仕上がりへの満足や説明の丁寧さ、料金の明確さを評価する内容が見られます。一方で、フランチャイズ展開のため店舗・スタッフによる差がある点や、故障の修理ではなくクリーニングである点にご留意ください。
+              おそうじ革命は、全国の各エリア（一部を除く）に対応し、料金の明確さとコストパフォーマンスを強みとするエアコンクリーニングのサービスです。みん評の口コミ64件では、説明の丁寧さや仕上がり、料金の抑えめさを評価する内容がある一方、問い合わせ・予約の連絡に関する不満が最も多く見られます。あわせて、フランチャイズ展開のため店舗・スタッフによる差がある点や、故障の修理ではなくクリーニングである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               料金は機種・台数・オプションにより異なります。店舗による差もあるため、お申し込み時に総額と作業範囲を確認したうえで依頼することをおすすめします。

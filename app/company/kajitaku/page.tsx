@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title:
     "カジタク(イオン)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "イオングループのエアコンクリーニング「カジタク」の口コミ・評判をまとめています。みん評・マイナビ等で公開されている利用者の声の傾向、料金プラン、対応エリアや保証、メリット・ご利用前の注意点を中立的な立場でご説明します。",
+    "イオングループのエアコンクリーニング「カジタク」の口コミ・評判をまとめています。みん評の口コミ全件から読み取れる好評・不満の傾向、料金プラン、対応エリアや保証、メリット・ご利用前の注意点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/kajitaku" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月12日";
 
 const toc = [
   { id: "summary", label: "カジタクとは" },
@@ -56,7 +56,7 @@ const articleJsonLd = {
   headline:
     "カジタク(イオン)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-12",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-12">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -109,10 +109,10 @@ export default function Page() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             大手が運営し、Webで申し込めるエアコンクリーニングを探す際の候補の一つが、イオングループの
             <strong className="font-semibold text-slate-900">カジタク</strong>
-            です。本記事では、イオングループが運営するカジタクについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声の傾向、料金プラン、対応エリアや保証、メリット・注意点を中立的な立場でまとめています。
+            です。本記事では、イオングループが運営するカジタクについて、みん評の口コミ46件（全件）から読み取れる好評・不満の傾向、料金プラン、対応エリアや保証、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年7月)。
+            ※カジタクは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、みん評で公開されている口コミを全件読んで傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年7月)。
           </p>
         </div>
 
@@ -170,19 +170,31 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。カジタクについては、Googleマップ・みん評・マイナビの口コミ調査記事・公式サイトで公開されている利用者の声を確認しました。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。カジタクについては、2026年11月12日にみん評のエアコンクリーニングの口コミ46件をすべて確認しました。満足度の内訳は、★5が3件・★4が3件・★3が2件・★2が3件・★1が28件・無評価が7件で、低い評価が多数を占めています。以前掲載していた好評の傾向のうち、今回の46件で確認できなかったもの（料金が事前にわかる点・防カビ仕上げを評価する内容など）は削除しました。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>スタッフの対応が丁寧で、仕上がりがきれいだったという内容</li>
-                <li>申し込みから支払いまでWebで完結し、料金が事前にわかる点を評価する内容</li>
-                <li>イオングループが運営している点から、初めてでも申し込みやすかったという内容</li>
-                <li>防カビ仕上げが無料で施工される点を評価する内容</li>
-              </ul>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+                <h3 className="font-bold text-sky-800 mb-3">好評の傾向（★4〜5の6件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>時間どおりに到着し、作業が手際よく進んだという内容</li>
+                  <li>作業前の確認・説明や作業中の対応が丁寧だったという内容</li>
+                  <li>カビやほこりが取れ、においがなくなったという内容</li>
+                  <li>ネットで空きを確認して予約まで完了できる点が便利だったという内容</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
+                <h3 className="font-bold text-amber-800 mb-3">不満の傾向（★1〜2・無評価の38件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>電話がつながりにくい、折り返しの連絡が来ないなど、予約・日程調整の窓口に関する内容（最も多い）</li>
+                  <li>予約が数週間〜数か月先になる、当日に延期・キャンセルされたという内容</li>
+                  <li>料金を先に支払う仕組みで、キャンセルや返金の扱いに困ったという内容</li>
+                  <li>担当者によって作業の丁寧さに差があり、カビやにおいが残ったという内容</li>
+                  <li>清掃後に部品の破損や不具合が起きたとする内容</li>
+                </ul>
+              </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
-            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/kajitaku/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「カジタク エアコンクリーニングの口コミ・評判」</a>（平均2.96・46件・2026年11月3日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
+            <p className="mt-4 text-xs text-slate-400">※確認日：2026年11月12日（みん評のエアコンクリーニングの口コミ46件・2017年〜2026年の投稿）。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが全件を読んで分類した傾向の要約です。好評の口コミの中にも「日程を決める電話はつながりにくい」とする記載がありました。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/kajitaku/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「カジタク エアコンクリーニングの口コミ・評判」</a>（平均2.96・46件・2026年11月12日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -192,7 +204,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、利用者の多い大手サービスという性質上、
+              みん評では低い評価が多数を占めており、利用者の多い大手サービスという性質上、
               <strong className="font-semibold">繁忙期は予約が取りにくく、スタッフによって感じ方に差が出る場合がある</strong>
               点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
@@ -316,7 +328,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              カジタクは、イオングループによる運営と、Webで料金を確認して申し込める明確さを強みとするエアコンクリーニングのサービスです。利用者の声では、丁寧な対応・仕上がりの良さや、防カビ仕上げ無料・再施工保証への評価が見られます。一方で、繁忙期の予約の取りにくさや対象機種の制限、故障の修理ではなくクリーニングである点にご留意ください。
+              カジタクは、イオングループによる運営と、Webで料金を確認して申し込める明確さを強みとするエアコンクリーニングのサービスです。みん評の口コミ46件では低い評価が多数を占め、電話のつながりにくさや日程調整への不満が最も多く見られます。好評の口コミでは、時間どおりの到着や丁寧な説明・仕上がりが評価されています。あわせて、対象機種の制限、故障の修理ではなくクリーニングである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               料金はプラン・台数により異なります。お申し込み時に総額と対象機種・作業範囲を確認したうえで依頼することをおすすめします。
