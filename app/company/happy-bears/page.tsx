@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title:
     "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   description:
-    "エアコンクリーニング「ベアーズ」の口コミ・評判をまとめています。みん評・マイナビ等で公開されている利用者の声の傾向、料金の目安、対応エリアや受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
+    "エアコンクリーニング「ベアーズ」の口コミ・評判をまとめています。みん評のエアコンクリーニングの口コミ34件の内訳と傾向、料金の目安、対応エリアや受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/happy-bears" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月13日";
 
 const toc = [
   { id: "summary", label: "ベアーズとは" },
@@ -56,7 +56,7 @@ const articleJsonLd = {
   headline:
     "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-13",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -109,10 +109,10 @@ export default function Page() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             家事代行でも知られる大手で、研修を受けたスタッフがエアコンクリーニングを行うサービスとして候補の一つになるのが
             <strong className="font-semibold text-slate-900">ベアーズ(ハッピーベアーズ)</strong>
-            です。本記事では、39都道府県の一部地域でサービスを提供するベアーズについて、みん評・マイナビ等の調査記事や公式サイトで公開されている利用者の声の傾向、料金の目安、対応エリアや受付体制、メリット・注意点を中立的な立場でまとめています。
+            です。本記事では、39都道府県の一部地域でサービスを提供するベアーズについて、みん評に投稿されたエアコンクリーニングの口コミ34件の内訳と傾向、料金の目安、対応エリアや受付体制、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※ベアーズは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミに関する記載は、みん評・口コミ調査記事・公式サイト等で公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください(調査時点：2026年6月)。
+            ※ベアーズは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミに関する記載は、2026年11月13日にみん評のエアコンクリーニングの口コミ34件をすべて読み、当サイトが分類した傾向の要約です。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください。
           </p>
         </div>
 
@@ -172,18 +172,29 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。ベアーズについては、みん評・マイナビなどの口コミ調査記事や公式サイトのお客様の声で利用者の評価が公開されています。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。ベアーズについては、2026年11月13日にみん評のエアコンクリーニングの口コミ34件をすべて確認しました。満足度の内訳は、★5が1件・★2が3件・★1が22件・無評価が8件で、低い評価が大半を占めています。以前掲載していた好評の傾向のうち、今回の34件で確認できなかったもの（作業前後の写真を使った説明・フォローコールを評価する内容・日程調整の円滑さ）は削除しました。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>スタッフの丁寧な説明や、日程調整の円滑さを評価する内容</li>
-                <li>長年掃除していないエアコンの頑固なカビ・汚れも落ちたとする内容</li>
-                <li>作業前後の写真を使ったわかりやすい説明を評価する内容</li>
-                <li>作業終了後のフォローコールなど、アフター対応を評価する内容</li>
-              </ul>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+                <h3 className="font-bold text-sky-800 mb-3">好評の傾向（★5の1件・無評価の好評1件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>分解して油汚れまで落としてもらえ、作業が丁寧だったという内容</li>
+                  <li>嫌なにおいがしなくなり、作業員が親切だったという内容</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
+                <h3 className="font-bold text-amber-800 mb-3">不満の傾向（★1〜2・無評価の32件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>清掃中・清掃後にエアコンの部品破損、エラー、水漏れ、漏電が起きたとする内容（最も多い）</li>
+                  <li>予約の取り違え、前日のキャンセル、時間になっても来ないなど、予約・日程に関する内容</li>
+                  <li>電話の折り返しがない、メールで対応してもらえないなど、窓口の対応に関する内容</li>
+                  <li>見積もり時に伝えた条件と異なる金額を当日請求されたという内容</li>
+                  <li>養生や後片付けが不十分で、壁・床が濡れたままだったという内容</li>
+                </ul>
+              </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、公開されている評価から確認できた傾向の要約です。</p>
+            <p className="mt-4 text-xs text-slate-400">※確認日：2026年11月13日（みん評のエアコンクリーニングの口コミ34件・2017年〜2026年の投稿）。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが全件を読んで分類した傾向の要約です。不満の口コミの中にも「作業員の接客は良かった」「洗浄はきちんとしてくれた」とする記載がありました。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/bears/tags/aircon" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「ベアーズ エアコンクリーニングの口コミ・評判」</a>（平均2.86・34件・2026年11月13日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -193,7 +204,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価がある一方で、多くのスタッフが対応するサービスという性質上、
+              みん評のエアコンクリーニングの口コミ34件では低い評価が大半を占めており、多くのスタッフが対応するサービスという性質上、
               <strong className="font-semibold">担当スタッフや時期によって対応・予約状況に差が生じる場合がある</strong>
               点にご留意ください。お申し込み時には、以下の点をご確認ください。
             </p>
@@ -300,7 +311,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ベアーズは、家事代行・ハウスクリーニングで実績の多い大手のエアコンクリーニングサービスです。利用者の声では、スタッフの丁寧な説明・対応や、頑固な汚れまで落とす洗浄力、終了後のフォローを評価する内容が見られます。一方で、繁忙期の予約の取りにくさや担当による差、故障の修理ではなくクリーニングである点にご留意ください。
+              ベアーズは、家事代行・ハウスクリーニングで実績の多い大手のエアコンクリーニングサービスです。みん評のエアコンクリーニングの口コミ34件（2026年11月13日確認）では、丁寧な分解洗浄を評価する声が2件ある一方、清掃後の不具合や予約・窓口の対応に関する不満が大半を占めています。依頼する際は、作業後に冷暖房・お掃除機能まで動作を確認すること、見積もり時に機種（お掃除機能の有無）と駐車場の条件を伝えて総額を確認することをおすすめします。故障の修理ではなくクリーニングのサービスである点にもご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               料金は機種・台数・オプションにより異なります。お申し込み時に総額と作業範囲を確認したうえで依頼することをおすすめします。

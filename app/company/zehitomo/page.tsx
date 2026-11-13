@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ゼヒトモの評判｜エアコン修理の口コミ・料金・仕組みを調査【2026年7月】",
+    "ゼヒトモの評判｜みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】",
   description:
-    "ゼヒトモ（運営：株式会社Zehitomo）のエアコン修理について、評判・口コミの傾向と料金の考え方を調査しました。フォーム入力でプロから相見積もりの提案が届くマッチングの仕組み、依頼者は無料で提案を受け取れる点、プロごとに料金・対応が異なる点を中立的な立場でご説明します。",
+    "ゼヒトモ（運営：株式会社Zehitomo）のエアコン修理について、みん評の口コミ230件の内訳とエアコンに関する口コミ、料金の考え方を調査しました。フォーム入力でプロから相見積もりの提案が届くマッチングの仕組み、依頼者は無料で提案を受け取れる点、プロごとに料金・対応が異なる点を中立的な立場でご説明します。",
   alternates: { canonical: "/company/zehitomo" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月13日";
 
 const toc = [
   { id: "summary", label: "ゼヒトモとは" },
@@ -54,9 +54,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ゼヒトモの評判｜エアコン修理の口コミ・料金・仕組みを調査【2026年7月】",
+    "ゼヒトモの評判｜みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-13",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -92,12 +92,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             ゼヒトモの評判
             <br className="hidden md:block" />
-            エアコン修理の口コミ・料金・仕組みを調査【2026年7月】
+            みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -110,10 +110,10 @@ export default function Page() {
             エアコン修理の依頼先を決めかねている場合、複数のプロから提案を受け取って比較できるサービスを利用する方法があります。
             本記事では、フォーム入力でプロから相見積もり提案が届くマッチングサービス
             <strong className="font-semibold text-slate-900">ゼヒトモ</strong>
-            について、口コミ・評判の傾向、料金の考え方、対応エリアと特徴、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
+            について、みん評の口コミ230件の内訳とエアコンに関する口コミ、料金の考え方、対応エリアと特徴、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※当サイトでは、口コミ本文の転載・創作を控え、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報はお申し込み時にご確認ください（最終確認：2026年7月19日）。
+            ※当サイトでは、口コミ本文の転載・創作を控え、確認できた傾向の要約のみを掲載しています。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報はお申し込み時にご確認ください（口コミの確認：2026年11月13日）。
           </p>
         </div>
 
@@ -169,18 +169,30 @@ export default function Page() {
 
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
-            <p className="leading-8 text-slate-700 mb-4">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。ゼヒトモでは、サイト上の各プロ（業者）のプロフィールに利用者のレビューが公開される仕組みがあり、依頼前に個別のプロの評価を確認できます。
+            <p className="leading-8 text-slate-700 mb-6">
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。ゼヒトモについては、2026年11月13日にみん評の口コミ230件をすべて確認しました。満足度の内訳は、★5が11件・★4が3件・★3が6件・★2が17件・★1が142件・無評価が51件です。ただし、みん評の口コミはエアコンに限らずゼヒトモ全体のもので、<strong className="font-semibold">プロ（事業者）として登録した側の投稿が多くを占めます</strong>（有料の応募の仕組みや営業電話に関する内容など）。依頼者としての評判を知る目的では、件数の内訳をそのまま当てはめられない点にご留意ください。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>・<strong>複数のプロの提案を比較して選べる点</strong>を評価する傾向があります。料金や対応を比較してから決められる点が、マッチング型の利点として挙げられています。</li>
-                <li>・フォーム入力のみで提案が届くため、<strong>業者を一から探す手間を省ける</strong>という利便性を評価する内容があります。</li>
-                <li>・一方で、<strong>評価はプロ（業者）ごとに大きく異なる</strong>ため、サービス全体ではなく、依頼するプロ個人のレビューを確認することが重要です。</li>
-              </ul>
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-2xl border border-amber-100 bg-amber-50/60 p-6">
+                <h3 className="font-bold text-amber-800 mb-3">エアコンに関する口コミ（3件）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>依頼者：エアコンの取付・電源工事の仕上がりが悪く、数日後にモールが落下したという内容（★1）</li>
+                  <li>依頼者：エアコンを修理したがすぐに元に戻り、業者にもゼヒトモにも連絡がつかなかったという内容（無評価）</li>
+                  <li>プロ側：エアコン取付の業者として登録したが、有料で連絡した依頼者から返信がなかったという内容（★1）</li>
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+                <h3 className="font-bold text-sky-800 mb-3">依頼者の好評の傾向（エアコン以外を含む）</h3>
+                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                  <li>複数のプロから提案が届き、予算に合う相手を選べたという内容</li>
+                  <li>相見積もりで、大手と比べて費用を抑えられたという内容</li>
+                  <li>依頼前に、プロごとの星付きレビューや写真を確認できて安心だったという内容</li>
+                  <li>担当したプロの説明・作業が丁寧だったという内容（評価は依頼したプロ個人に向けたもの）</li>
+                </ul>
+              </div>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。ゼヒトモはマッチング型のため、施工品質・対応は登録プロごとに異なります。依頼前に各プロのプロフィール上のレビューと実績をご確認ください。</p>
+            <p className="mt-4 text-xs text-slate-400">※確認日：2026年11月13日（みん評のゼヒトモの口コミ230件・全カテゴリ）。上記は口コミ原文の転載ではなく、当サイトが全件を読んで分類した傾向の要約です。ゼヒトモはマッチング型のため、施工品質・対応は登録プロごとに異なります。依頼前に、各プロのプロフィール上のレビューと実績をご確認ください。以前掲載していた「フォーム入力のみで業者を探す手間を省ける」という傾向は、今回の確認で該当する口コミが1件にとどまったため、傾向としては掲載していません。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/zehitomo" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「Zehitomo（ゼヒトモ）の口コミ・評判」</a>（平均2.84・230件・2026年11月13日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -297,7 +309,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ゼヒトモは、フォーム入力で複数のプロから相見積もり提案が届くマッチングサービスで、料金や対応を比較してから依頼先を決められる点が強みです。口コミでは複数の提案を比較できる利便性を評価する声が見られます。一方で、依頼するプロによって対応や料金に差が生じる場合があるため、届いた提案を比較し、見積もりを確認してから依頼することをおすすめします。
+              ゼヒトモは、フォーム入力で複数のプロから相見積もり提案が届くマッチングサービスで、料金や対応を比較してから依頼先を決められる点が強みです。みん評の口コミ230件（2026年11月13日確認）では、依頼者から複数の提案を比較して選べた点を評価する声がある一方、エアコンに関する依頼者の口コミ2件はいずれも不満の内容でした。一方で、依頼するプロによって対応や料金に差が生じる場合があるため、届いた提案を比較し、見積もりを確認してから依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の提案を比較し、料金と対応を確認してお選びください。

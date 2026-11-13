@@ -6,18 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "電気の工事屋さんの評判は悪い？エアコン修理の料金は高い？口コミと他社比較による調査【2026年最新】",
+    "電気の工事屋さんの評判・料金｜公式のお客様の声とエアコン修理の他社比較【2026年11月】",
   description:
-    "電気の工事屋さんの評判と料金について、有資格の電気工事士が対応するエアコン修理の口コミの傾向・費用の目安・対応エリア・受付時間を他社と比較し、メリット・デメリットや向いている方を中立的な立場でご説明します。",
+    "電気の工事屋さんの評判と料金について、公式サイトのお客様の声（3件）と第三者の口コミの確認結果、エアコン修理の費用の目安・対応エリア・受付時間を他社と比較し、メリット・デメリットや向いている方を中立的な立場でご説明します。",
   alternates: { canonical: "/company/denki-koujiya" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月13日";
 
 const toc = [
   { id: "summary", label: "電気の工事屋さんとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "評判（公式のお客様の声）" },
   { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -50,9 +50,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "電気の工事屋さんの評判は悪い？エアコン修理の料金は高い？口コミと他社比較による調査【2026年最新】",
+    "電気の工事屋さんの評判・料金｜公式のお客様の声とエアコン修理の他社比較【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-13",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -76,7 +76,7 @@ export default function Page() {
       <Breadcrumb
         items={[
           { name: "業者一覧", href: "/ranking" },
-          { name: "電気の工事屋さんの口コミ・評判", href: "/company/denki-koujiya" },
+          { name: "電気の工事屋さんの評判・料金", href: "/company/denki-koujiya" },
         ]}
       />
 
@@ -86,14 +86,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            電気の工事屋さんの口コミ・評判
+            電気の工事屋さんの評判・料金
             <br className="hidden md:block" />
-            エアコン修理の料金・対応エリアを調査【2026年最新】
+            公式のお客様の声とエアコン修理の他社比較【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -106,10 +106,10 @@ export default function Page() {
             エアコンが効かない、電源が入らないといったトラブルは、本体だけでなく電気系統が原因のこともあります。
             本記事では、有資格の電気工事士が対応する
             <strong className="font-semibold text-slate-900">電気の工事屋さん</strong>
-            のエアコン修理について、公開されている利用者の声の傾向、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
+            のエアコン修理について、公式サイトのお客様の声と第三者の口コミの確認結果、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事では、口コミ本文の転載・創作を控え、確認できた評価の傾向のみを要約して掲載しています。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
+            ※本記事では、口コミ本文の転載・創作を控え、確認できた内容のみを要約して掲載しています。2026年11月13日時点で、第三者の口コミサイトに電気の工事屋さんの口コミは見つかっていません。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください。
           </p>
         </div>
 
@@ -164,20 +164,21 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">評判（公式のお客様の声）</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。電気の工事屋さんについては、公式サイトのお客様の声（施工後アンケート）で評価の傾向を確認しました。なお、第三者の口コミプラットフォームでは傾向を十分に確認できませんでした。
+              当サイトでは、口コミ本文の転載・創作を控え、確認できた内容の要約のみを掲載しています。電気の工事屋さんについては、2026年11月13日に公式サイトの「お客様の声」を確認しました。掲載は3件で、3件ともエアコンのトラブルに関するものです。運営会社が選んで掲載している声のため、評価の偏りがある点にご留意ください。みん評などの第三者の口コミサイトでは、電気の工事屋さんの口コミは見つかりませんでした。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">公式のお客様の声（3件）に書かれている内容</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>問い合わせから訪問までの対応が早いという評価</li>
-                <li>電話対応や、希望に合わせた提案が丁寧という評価</li>
-                <li>有資格の電気工事士が対応する点と、説明のわかりやすさを評価する内容</li>
-                <li>見積もり時に費用の内訳が明確だったという評価</li>
+                <li>冷えなくなったエアコンに即日対応してもらえ、冷媒ガスの充填とあわせて1時間あまりで作業が終わったという内容</li>
+                <li>暖房が効かなくなり、問い合わせから1時間以内に訪問があったという内容</li>
+                <li>基板の故障で買い替えを勧められ、エアコン選びからコンセントの変更、取り付けまで対応してもらえたという内容</li>
+                <li>3件のうち1件で、電話対応のよさが挙げられています</li>
               </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。評価の傾向は時期・担当者・地域によって異なる場合があります。</p>
+            <p className="mt-4 text-xs text-slate-400">※確認日：2026年11月13日。以前掲載していた「有資格者が対応する点・説明のわかりやすさを評価する内容」「見積もり時に費用の内訳が明確だったという評価」は、公式のお客様の声で確認できなかったため削除しました。</p>
+            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://denki-koji.work/voice/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">電気の工事屋さん公式「お客様の声」</a>（2026年11月13日取得）</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -187,7 +188,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              技術面の評価が高い一方で、
+              第三者の口コミで評判を確かめられないため、
               <strong className="font-semibold">料金は症状や作業内容によって幅がある</strong>
               点にご留意ください。依頼時には、以下の点をご確認ください。
             </p>
@@ -292,7 +293,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              電気の工事屋さんは、国家資格を持つ電気工事士が対応する点と、作業別の料金が公式に掲載され見積もりが無料である点が強みのサービスです。利用者の声では、対応の早さと丁寧さ、有資格者が対応する点を評価する内容が多く見られます。一方で、料金は症状によって幅があるため、依頼時には総額の見積もりを書面で確認したうえで依頼することをおすすめします。
+              電気の工事屋さんは、国家資格を持つ電気工事士が対応する点と、作業別の料金が公式に掲載され見積もりが無料である点が強みのサービスです。公式サイトのお客様の声（3件）では、即日の訪問と電話・提案の丁寧さが挙げられていますが、第三者の口コミサイトでは口コミを確認できていません（2026年11月13日時点）。一方で、料金は症状によって幅があるため、依頼時には総額の見積もりを書面で確認したうえで依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の業者から見積もりを取り、料金と対応を比較してお選びください。
