@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/duskin-servicemaster" },
 };
 
-const UPDATED = "2026年11月12日";
+const UPDATED = "2026年11月13日";
 
 const toc = [
   { id: "summary", label: "ダスキン サービスマスターとは" },
-  { id: "latest", label: "2026年10月の料金・キャンペーン・保証の申し出期限" },
+  { id: "latest", label: "2026年11月の料金・キャンペーン・保証の申し出期限" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "良い口コミ・評判の傾向" },
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     q: "天井埋め込みタイプのエアコンにも対応していますか？",
-    a: "対応しています。公式サイトでは天井埋込1・2方向タイプのエアコンクリーニングが34,100円(税込)〜と案内されています(2026年8月2日公式確認)。機種や設置状況で金額が変わるため、正確な金額は見積もりで確認してください。",
+    a: "対応しています。公式サイトでは天井埋込1・2方向タイプのエアコンクリーニングが34,100円(税込)〜と案内されています(2026年8月2日・11月13日公式確認)。機種や設置状況で金額が変わるため、正確な金額は見積もりで確認してください。",
   },
   {
     q: "支払いにクレジットカードは使えますか？",
@@ -96,7 +96,7 @@ const articleJsonLd = {
   headline:
     "ダスキンのエアコンクリーニングの口コミ・評判｜悪い口コミ・料金・満足の保証の調査結果【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-12",
+  dateModified: "2026-11-13",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -137,7 +137,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-12">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -152,7 +152,7 @@ export default function Page() {
             のエアコンクリーニングです。本記事では、全国に約1,200店舗を展開するダスキンについて、オリコン顧客満足度やGoogleマップなどで公開されている利用者の声、料金の目安、対応エリア、メリットと注意点を、中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※ダスキンのエアコンクリーニングは故障の「修理」ではなく（公式でも部品交換・ガス補充は行わないと案内されています。故障は<Link href="/guide/where-to-repair/" className="text-sky-700 underline">エアコン修理の依頼先</Link>をご覧ください）、内部を分解洗浄する「クリーニング」のサービスです。本記事の口コミは、オリコン顧客満足度・Googleマップ・口コミ調査記事等で公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・店舗により変わるため、最新の情報は申し込み時にご確認ください(初回調査：2026年6月／料金・保証は2026年10月14日、口コミサイトの件数・傾向は2026年10月27日に再確認)。
+            ※ダスキンのエアコンクリーニングは故障の「修理」ではなく（公式でも部品交換・ガス補充は行わないと案内されています。故障は<Link href="/guide/where-to-repair/" className="text-sky-700 underline">エアコン修理の依頼先</Link>をご覧ください）、内部を分解洗浄する「クリーニング」のサービスです。本記事の口コミは、オリコン顧客満足度・Googleマップ・口コミ調査記事等で公開されている利用者の声を引用・要約したものです。料金や対応内容は時期・地域・店舗により変わるため、最新の情報は申し込み時にご確認ください(初回調査：2026年6月／料金・保証は2026年10月14日（料金とキャンペーンは11月13日にも再確認）、口コミサイトの件数・傾向は2026年10月27日に再確認)。
           </p>
         </div>
 
@@ -196,9 +196,9 @@ export default function Page() {
           </section>
 
           <section id="latest" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年10月の料金・キャンペーン・保証の申し出期限</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">2026年11月の料金・キャンペーン・保証の申し出期限</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              2026年10月14日に公式サイト（duskin.jp）でエアコンクリーニングの料金ページと「満足の保証」のページを確認し直しました。料金は8月の確認時点から変わっていません（税込）。
+              2026年10月14日に公式サイト（duskin.jp）でエアコンクリーニングの料金ページと「満足の保証」のページを確認し直しました。料金は8月の確認時点から変わっていません（税込）。2026年11月13日にもエアコンクリーニングのページを確認し、壁掛けタイプの標準料金15,400円（税抜14,000円）・天井埋込1・2方向タイプ34,100円〜と、キャッシュレスキャンペーンの実施中表示に変更がないことを確かめました。キャッシュレスキャンペーン第2弾は11月30日までのため、12月以降に依頼する場合は公式サイトで新しいキャンペーンの有無をご確認ください。
             </p>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
@@ -227,7 +227,7 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               他社との料金比較は、首都圏の<Link href="/company/r-cleaning/" className="text-sky-600 underline underline-offset-2">アールクリーニング</Link>（壁掛けキャンペーン価格10,780円）、関東・関西・東海の<Link href="/company/seifu-ac/" className="text-sky-600 underline underline-offset-2">清風</Link>（壁掛け13,200円）など、同日に確認した各社の料金を<Link href="/cost/cleaning-fee/" className="text-sky-600 underline underline-offset-2">エアコンクリーニングの料金相場</Link>とあわせて見ると判断しやすくなります。
             </p>
-            <p className="mt-3 text-xs text-slate-400">出典：ダスキン公式サイト（エアコンクリーニング料金ページ・満足の保証、2026年10月14日確認）。料金の適用条件は担当店にご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：ダスキン公式サイト（エアコンクリーニング料金ページ・満足の保証、2026年10月14日確認／料金・キャンペーン表示は11月13日に再確認）。料金の適用条件は担当店にご確認ください。</p>
           </section>
 
           <section id="review-summary" className="scroll-mt-24">
@@ -402,7 +402,7 @@ export default function Page() {
                 </thead>
                 <tbody>
                   {[
-                    ["ダスキン", "15,400円（2台セット25,300円）", "26,400円", "2026年10月14日"],
+                    ["ダスキン", "15,400円（2台セット25,300円）", "26,400円", "2026年10月14日・11月13日（壁掛け）"],
                     ["おそうじ本舗", "通常14,300円（キャンペーン価格13,200円）", "通常24,200円（キャンペーン価格23,100円）", "2026年10月25日"],
                     ["アールクリーニング", "10,780円（11月20日受付分までの特別価格・通常19,350円）", "18,700円", "2026年10月14日・11月11日"],
                     ["エアコンクリーニング清風", "13,200円", "18,700円", "2026年10月14日"],
