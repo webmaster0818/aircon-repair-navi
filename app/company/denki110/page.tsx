@@ -6,18 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "電気工事110番とDENKI110の評判・料金｜運営会社の違いとトラブル時の注意を公式で調査【2026年10月】",
+    "電気工事110番とDENKI110の評判・料金｜公式の口コミ9件と運営会社の違い・トラブル時の注意【2026年11月】",
   description:
     "DENKI110の料金（電気トラブル全般6,600円〜）・キャンセル料・受付時間・対応エリアと、トラブル時に確認したい利用規約を公式で調査しました。シェアリングテクノロジーの「電気工事110番」とは運営会社が異なる点もご説明します（2026年10月20日確認）。",
   alternates: { canonical: "/company/denki110" },
 };
 
-const UPDATED = "2026年10月30日";
+const UPDATED = "2026年11月14日";
 
 const toc = [
   { id: "summary", label: "DENKI110とは（電気工事110番との違い）" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "評判・口コミについて" },
+  { id: "good", label: "評判・口コミの確認結果" },
   { id: "bad", label: "トラブルを避けるために規約で確認したい点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -62,9 +62,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "電気工事110番とDENKI110の評判・料金｜運営会社の違いとトラブル時の注意を公式で調査【2026年10月】",
+    "電気工事110番とDENKI110の評判・料金｜公式の口コミ9件と運営会社の違い・トラブル時の注意【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-30",
+  dateModified: "2026-11-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -105,7 +105,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-30">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -140,7 +140,7 @@ export default function Page() {
               <li>・保証期間の記載は、電気工事110番の公式トップページ（sharing-tech.co.jp/denki/）では確認できませんでした（2026年10月30日）。作業後の不具合への対応は、見積もり時に加盟店へご確認ください</li>
               <li>・受付：0120-949-684（24時間365日）</li>
             </ul>
-            <p className="mt-2 text-xs text-slate-400">出典：シェアリングテクノロジー「電気工事110番」公式（sharing-tech.co.jp/denki/ ・ /denki/price/、2026年10月27日確認。注意書き・受付番号は2026年10月30日に再確認）。口コミ・満足度の数値は、公式の画像表示のみで本文に記載がないため掲載していません。</p>
+            <p className="mt-2 text-xs text-slate-400">出典：シェアリングテクノロジー「電気工事110番」公式（sharing-tech.co.jp/denki/ ・ /denki/price/、2026年10月27日確認。注意書き・受付番号は2026年10月30日に再確認）。満足度の数値は、公式の画像表示のみで本文に記載がないため掲載していません。公式に掲載された口コミの内訳は「評判・口コミの確認結果」の節に記載しています（2026年11月14日確認）。</p>
           </div>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査日：2026年10月20日）。
@@ -204,12 +204,25 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">評判・口コミについて</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">評判・口コミの確認結果</h2>
             <p className="leading-8 text-slate-700">
-              当サイトでは、口コミ本文の転載・創作を行わず、出典を確認できた評価だけを掲載する方針としています。2026年10月20日時点で、DENKI110の口コミを確認できる掲載先を特定できなかったため、口コミの傾向は掲載していません。以前掲載していた評価の傾向も、出典を確認し直せなかったため削除しました。
+              当サイトでは、口コミ本文の転載・創作を行わず、出典を確認できた評価だけを掲載する方針としています。2026年11月14日に、第三者の口コミサイト（みん評）とWeb検索で「DENKI110」「電気工事110番」の口コミを探しましたが、どちらのサービスについても、第三者の口コミの掲載先は見つかりませんでした。そのため、以下は運営会社が自社サイトに掲載している声に限って、内容の内訳をまとめたものです。
             </p>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="font-bold text-slate-800 mb-3">DENKI110（イエノナカカンパニー）</h3>
+              <p className="text-slate-700 text-[0.95rem] leading-7">公式サイトのトップページ（本文）に、利用者の口コミは掲載されていませんでした（2026年11月14日確認）。当サイトでは口コミの傾向を掲載していません。以前掲載していた評価の傾向も、出典を確認し直せなかったため削除しています。</p>
+            </div>
+            <div className="mt-4 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">電気工事110番（シェアリングテクノロジー）：公式掲載の9件</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>公式トップの「最新の口コミ」は5件で、5件とも★5です（2026年10月5日〜10月31日の投稿）。作業の内訳は、アンテナ工事3件・漏電修理2件です。<strong className="font-semibold">エアコンに関する口コミは含まれていません</strong>。</li>
+                <li>5件の内容は、連絡したその日や空いている一番近い日に対応してもらえたこと、説明の丁寧さ、深夜の電話で解決して料金がかからなかったこと（漏電）への評価です。1件は「見積りはけっこうな金額」としつつ、妥当な金額だったと書いています。</li>
+                <li>同じページの「お客様の声」4件（30〜50代の男女）も、電話の折り返し・挨拶・説明・言葉づかいの丁寧さを評価する内容で、不満の声は掲載されていません。</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-500">出典：<a href="https://sharing-tech.co.jp/denki/" target="_blank" rel="noopener noreferrer" className="underline">シェアリングテクノロジー「電気工事110番」公式</a>（2026年11月14日確認）。運営会社が選んで掲載している声のため、不満の声は含まれていない点にご留意ください。同じ運営会社の「生活110番」については、第三者のみん評に口コミがあり、<Link href="/company/seikatsu110" className="underline">生活110番のページ</Link>で内訳を掲載しています。</p>
+            </div>
             <p className="mt-4 leading-8 text-slate-700">
-              「電気工事110番 評判」などで検索した場合、シェアリングテクノロジーの「電気工事110番」に関する情報が表示されることがあります。口コミを参考にする際は、どちらのサービスについての記載かをご確認ください。なお、公式サイトに掲載されている「累計46.3万件」は、運営会社のサイト全体の実績と注記されており、DENKI110単体の件数ではありません。
+              「電気工事110番 評判」などで検索した場合、シェアリングテクノロジーの「電気工事110番」に関する情報が表示されることがあります。口コミを参考にする際は、どちらのサービスについての記載かをご確認ください。なお、DENKI110の公式サイトに掲載されている「累計46.3万件」は、運営会社のサイト全体の実績と注記されており、DENKI110単体の件数ではありません。
             </p>
           </section>
 

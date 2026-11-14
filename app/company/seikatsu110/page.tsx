@@ -6,18 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "生活110番のエアコン修理の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "生活110番のエアコン修理の口コミ・評判｜公式38件・みん評11件の内訳と料金【2026年11月】",
   description:
-    "生活トラブル解決サービス「生活110番」のエアコン修理について、公開されている口コミ・評判の傾向をまとめています。料金の目安、対応エリアと受付時間、加盟店紹介型サービスのメリット・デメリット、向いている方を中立的な立場でご説明します。",
+    "生活110番のエアコン修理の口コミを、公式サイトの評価（平均4.3・38件）とみん評（平均2.70・11件）の内訳から確認しました（2026年11月14日）。料金の目安、受付時間、加盟店紹介型のメリット・デメリットもご説明します。",
   alternates: { canonical: "/company/seikatsu110" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月14日";
 
 const toc = [
   { id: "summary", label: "生活110番とは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "口コミ・評判の内訳" },
   { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -54,9 +54,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "生活110番のエアコン修理の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "生活110番のエアコン修理の口コミ・評判｜公式38件・みん評11件の内訳と料金【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -92,12 +92,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             生活110番のエアコン修理の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを調査【2026年最新】
+            公式38件・みん評11件の内訳と料金【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -110,10 +110,10 @@ export default function Page() {
             エアコンが急に効かなくなった場合、依頼先の選定に迷われる方も少なくありません。
             本記事では、暮らしのトラブル全般に対応する全国対応サービス
             <strong className="font-semibold text-slate-900">生活110番</strong>
-            のエアコン修理について、公開されている口コミの傾向、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
+            のエアコン修理について、公式サイトとみん評に掲載された口コミの内訳、料金の目安、対応エリアと受付時間、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※生活110番は、自社で修理を行うのではなく、全国の加盟店（提携業者）を紹介する「加盟店紹介型」のサービスです。本記事の口コミに関する記載は、公式の加盟店レビューや口コミ紹介サイトで公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年6月）。
+            ※生活110番は、自社で修理を行うのではなく、全国の加盟店（提携業者）を紹介する「加盟店紹介型」のサービスです。本記事の口コミに関する記載は、公式サイトのエアコン修理ページに掲載された口コミと、第三者の口コミサイト「みん評」の掲載内容を、当サイトが2026年11月14日に確認した結果です。料金や対応内容は時期・地域・症状により変わるため、最新の情報は問い合わせ時にご確認ください。
           </p>
         </div>
 
@@ -181,20 +181,28 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の内訳</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。生活110番の加盟店レビュー（公式サイト掲載）や複数の口コミ紹介サイトを確認した結果、以下のような評価の傾向が見られました。
+              当サイトでは、生活110番の口コミを2か所で確認しました（2026年11月14日）。公式サイトの口コミは運営会社が掲載しているもの、みん評は第三者の口コミサイトです。どちらも口コミ本文は転載せず、件数と内容の内訳のみを掲載しています。
             </p>
             <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
+              <h3 className="font-bold text-sky-800 mb-3">公式サイト「エアコン修理」ページの口コミ：平均4.3・38件</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>駆けつけ・対応の早さを評価する内容</li>
-                <li>見積もりや作業内容の説明のわかりやすさを評価する内容</li>
-                <li>事前に金額や作業方法の説明があり、納得して依頼できたとする内容</li>
-                <li>誠実・丁寧な対応により、初めての依頼でも安心できたとする内容</li>
+                <li>ページに表示されている口コミは5件で、5件とも★5です（最新は2026年8月17日の投稿）。38件全体の星の内訳は公開されていません。</li>
+                <li>5件の内容は、連絡の翌日に来てもらえたこと（お盆期間中・大雪の日を含む）、早く来てもらえたこと、状況や故障原因を丁寧に説明してもらえたことへの評価です。</li>
+                <li>口コミは生活110番の加盟店ごとに付いており、5件の評価対象は4社の加盟店です。担当する加盟店が変われば、対応も変わる点にご留意ください。</li>
               </ul>
+              <p className="mt-3 text-xs text-slate-500">出典：<a href="https://www.seikatsu110.jp/service/electronics/es_air_conditioner/" target="_blank" rel="noopener noreferrer" className="underline">生活110番「エアコン修理」</a>（2026年11月14日確認）。公式は「一部業者情報は公開されている情報から当社独自に収集したもの」と注記しています。</p>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期・担当する加盟店・地域により異なります。</p>
+            <div className="mt-4 rounded-2xl border border-slate-200 bg-white p-6">
+              <h3 className="font-bold text-slate-800 mb-3">みん評「生活110番」：平均2.70・11件</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>11件のうち、1ページ目に表示された10件を読みました。<strong className="font-semibold">エアコンに関する口コミは0件</strong>です。残る1件は、2ページ目が当サイトの取得時に表示されず、確認できていません。</li>
+                <li>10件の内訳は、★1が6件（アンテナ修理2件・鍵の修理・草刈り・依頼フォームに入力後の対応エリア外の案内・本文が会員限定で読めないもの各1件）、★3が1件（バッテリー上がり）、★4が1件（ペットの火葬）、★5が2件（蜂の駆除）です。</li>
+                <li>不満の内容で多かったのは、現地で広告の金額を大きく超える見積もりを示されたというものです（アンテナ修理で「1万6,000円〜」の広告に対し4万円、鍵の修理で15万円、草刈りで9万円）。好評は、駆け付けの早さと丁寧な対応への評価でした。</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-500">出典：<a href="https://minhyo.jp/seikatsu110" target="_blank" rel="noopener noreferrer" className="underline">みん評「生活110番の口コミ・評判」</a>（2026年11月14日確認）。エアコン以外の作業の口コミのため、エアコン修理の評価としてではなく、加盟店紹介型サービスの傾向としてご覧ください。</p>
+            </div>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -204,16 +212,16 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、加盟店紹介型サービスという性質上、
+              公式サイトの口コミは高評価ですが、加盟店紹介型サービスという性質上、
               <strong className="font-semibold">紹介された加盟店によって対応や料金に差が出る場合がある</strong>
-              点にご留意ください。口コミでも、料金の事前確認や加盟店とのやり取りに関する声が見られます。依頼時には、以下の点をご確認ください。
+              点にご留意ください。みん評でも、エアコン以外の作業で、現地の見積もりが広告の金額を大きく超えたという口コミが見られます。依頼時には、以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>修理を行うのは紹介された加盟店のため、地域や担当業者によって対応スピード・品質に差が生じる場合があります。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>追加作業（配管カバーの取り付けなど）が見積もりに含まれるかを、訪問時にご確認ください。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>契約や作業内容のやり取りは原則として加盟店との間で行うため、見積もりを書面で確認してから依頼することをおすすめします。</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※注意点は、口コミ紹介サイトで指摘されている内容を中立的に要約したものです。実際の対応は加盟店ごとに異なります。</p>
+            <p className="mt-3 text-xs text-slate-400">※注意点は、上記のみん評の口コミ（2026年11月14日確認）と、加盟店紹介型という仕組みから当サイトが整理したものです。実際の対応は加盟店ごとに異なります。</p>
           </section>
 
           <section id="merit" className="scroll-mt-24">
@@ -266,7 +274,7 @@ export default function Page() {
               エアコン修理の費用は、症状や必要な作業（点検・ガス補充・部品交換など）によって幅があります。生活110番では相談・見積もりは無料とされており、実際の料金は紹介された加盟店の見積もりで決まります。一般的なエアコン修理の相場としては、軽度の点検が数千円台、ガス補充や基板交換などが必要な場合は数万円台になることもあります。公式サイトには、エアコン修理の平均費用として2.7万円（2019年11月更新・過去3年の利用料金に基づく）が掲載されています（2026年10月15日・公式確認）。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              口コミでは料金の事前確認に関する声も見られるため、訪問時には作業範囲と総額の見積もりを書面で確認し、追加費用が発生する条件まで確認したうえで依頼することをおすすめします。可能であれば、複数の業者から見積もりを取って比較してください。
+              みん評では、現地の見積もりが広告の金額を大きく超えたという口コミ（エアコン以外の作業）も見られるため、訪問時には作業範囲と総額の見積もりを書面で確認し、追加費用が発生する条件まで確認したうえで依頼することをおすすめします。可能であれば、複数の業者から見積もりを取って比較してください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金は一般的な目安です。正確な金額は紹介された加盟店の現地見積もりでご確認ください。</p>
           </section>
@@ -310,7 +318,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              生活110番は、24時間365日の受付と全国対応により、急なエアコントラブルにすぐ相談できる点を強みとする加盟店紹介型サービスです。利用者の声では、駆けつけの早さと、見積もり・作業の説明の丁寧さを評価する内容が多く見られます。一方で、実際に修理を行うのは紹介された加盟店のため、対応や料金に差が生じる場合があります。依頼時には見積もりを書面で確認し、追加費用の条件まで確認したうえで進めることをおすすめします。
+              生活110番は、24時間365日の受付と全国対応により、急なエアコントラブルにすぐ相談できる点を強みとする加盟店紹介型サービスです。公式サイトのエアコン修理の口コミ（平均4.3・38件）では、翌日の訪問や説明の丁寧さが評価されています。一方、第三者のみん評（平均2.70・11件）にはエアコンの口コミが無く、ほかの作業で現地見積もりが広告額を超えたという不満が見られます。一方で、実際に修理を行うのは紹介された加盟店のため、対応や料金に差が生じる場合があります。依頼時には見積もりを書面で確認し、追加費用の条件まで確認したうえで進めることをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン修理の費用は症状によって異なります。お急ぎでない場合は複数の業者から見積もりを取り、料金と対応を比較してお選びください。
