@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/ienakama" },
 };
 
-const UPDATED = "2026年10月28日";
+const UPDATED = "2026年11月14日";
 
 const toc = [
   { id: "summary", label: "家仲間コムとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "口コミ・評判の確認結果" },
   { id: "bad", label: "制限条件・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -72,7 +72,7 @@ const articleJsonLd = {
   headline:
     "家仲間コムの評判｜手数料・口コミ・仕組みの調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-28",
+  dateModified: "2026-11-14",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -113,7 +113,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-14">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -126,19 +126,19 @@ export default function Page() {
             エアコンの取り付け・移設・修理を依頼する際には、料金と対応を比較してから依頼先を選ぶことが大切です。
             本記事では、エアコン工事・修理の業者マッチングサイト
             <strong className="font-semibold text-slate-900">家仲間コム</strong>
-            について、当サイトが公式ページを直接確認した内容（2026年10月24日確認）をもとに、手数料の仕組み・口コミの傾向・利用前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
+            について、当サイトが公式ページを直接確認した内容（2026年10月24日確認）をもとに、手数料の仕組み・口コミの件数と評価・利用前に確認すべき点を、良い点と注意すべき点の両面から中立的な立場でまとめています。
           </p>
 
           <div className="mt-6 rounded-2xl border-2 border-sky-200 bg-sky-50/70 p-6">
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・<strong>利用者の手数料は無料</strong>です。手数料は業者側が負担する仕組みで、業者の負担は<strong>月額5,000円（税別）のみで、成約手数料は0円</strong>です。公式では「手数料がない分、工事代金が安くなる可能性があります」とされています（公式確認）</li>
-              <li>・<strong>登録業者を紹介するマッチングプラットフォーム（紹介型）</strong>です。施工は登録業者が行うため、対応品質・保証は業者により差が出ます。エアコン工事のカテゴリには<strong>1,071社</strong>が掲載されています（公式エアコンページの表示・2026年10月27日確認）</li>
+              <li>・<strong>登録業者を紹介するマッチングプラットフォーム（紹介型）</strong>です。施工は登録業者が行うため、対応品質・保証は業者により差が出ます。エアコン工事のカテゴリには<strong>1,065社</strong>が掲載され、口コミは12,637件です（公式エアコンページの表示・2026年11月14日確認）</li>
               <li>・工事で家に損害が出た場合の<strong>最大1,000万円の賠償責任保険がありますが、条件付き（業者が工事開始前日までに申込みした工事が対象）です</strong>。過去に業者によるトラブル事案もあったため、<strong>複数業者の見積もりと口コミの比較をおすすめします</strong>（<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>）</li>
               <li>・公式の利用規約では、過去6年間の利用者評価<strong>約2万6千件</strong>のうち「また頼みたい」<strong>88.5%</strong>・「どちらとも言えない」8.8%・「もう頼みたくない」<strong>2.7%</strong>、過去累計約5千業者のうち特に悪質で強制退会となった業者は<strong>4業者（0.08%）</strong>と公表されています。あわせて「家仲間コムは、業者や工事内容に関し保証制度はありません」と明記されています</li>
               <li>・<strong>業者一覧</strong>は公式の<a href="https://www.ienakama.com/dealer/" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline">業者一覧ページ</a>で、おすすめ率とあわせて確認できます。<strong>業者さまのログイン</strong>は<a href="https://www.ienakama.com/d/login/" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline">業者さま向けログインページ</a>、利用者は「マイページにログイン」から入ります。業者の<strong>退会</strong>は最低加入期間がなく、いつでも可能と公式に記載されています</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※2026年10月24日に公式ページで確認した内容です（エアコンカテゴリの掲載業者数は2026年10月27日、利用規約の評価・強制退会の件数と業者一覧・ログイン・退会の案内は2026年10月28日確認）。口コミの傾向は2026年7月12日の調査です。</p>
+            <p className="mt-3 text-xs text-slate-400">※2026年10月24日に公式ページで確認した内容です（エアコンカテゴリの掲載業者数・口コミ件数は2026年11月14日、利用規約の評価・強制退会の件数と業者一覧・ログイン・退会の案内は2026年10月28日確認）。</p>
           </div>
         </div>
 
@@ -204,31 +204,23 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の確認結果</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、公式掲載の利用者の声・第三者レビューサイト等で確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています（2026年7月12日調査）。
+              当サイトの方針として、口コミ本文の転載・創作は行わず、件数と出典を確認できた内容のみを掲載しています。2026年11月14日に確認したところ、第三者の口コミサイト「みん評」には家仲間コムのページがありませんでした。そのため、以下は家仲間コムの公式サイトに掲載されている評価の数字です。
             </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-                <h3 className="font-bold text-sky-800 mb-3">好意的な声の傾向</h3>
-                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・対応が丁寧・誠実だった、作業が迅速だったという声</li>
-                  <li>・他社より金額が安かった、比較して選べて納得できたという声</li>
-                  <li>・写真見積もり・日程調整の早さへの評価</li>
-                </ul>
-              </div>
-              <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
-                <h3 className="font-bold text-orange-800 mb-3">否定的な声の傾向</h3>
-                <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                  <li>・業者と連絡が取れないなどのトラブル報告</li>
-                  <li>・担当する登録業者によって対応に差が出たという声</li>
-                  <li>・加盟店の審査基準が公開されておらず、業者選びは利用者の判断に委ねられるという指摘</li>
-                </ul>
-              </div>
+            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">公式「エアコン取り付け・取り外し・工事・修理」カテゴリの口コミ</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>・掲載業者は1,065社、利用者から投稿された口コミは12,637件です（公式の最終更新日：2026年11月13日）。</li>
+                <li>・各業者には「みんなのおすすめ率」が表示されます。50%から始まり、「また頼みたい」は+1、「どちらとも言えない」は0、「もう頼みたくない」は−3ポイントで計算され、40%を下回った業者は強制退会になると説明されています。</li>
+                <li>・一覧の1ページ目に表示された20社のおすすめ率は75〜99%でした。業者によって差があるため、依頼前に各業者のおすすめ率と口コミ件数をご確認ください。</li>
+                <li>・サービス全体では、公式の利用規約に、過去6年間の利用者評価約2万6千件のうち「また頼みたい」88.5%・「どちらとも言えない」8.8%・「もう頼みたくない」2.7%と記載されています（上記「本記事の要点」と同じ出典です）。</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-500">出典：<a href="https://www.ienakama.com/aircon/" target="_blank" rel="noopener noreferrer" className="underline">家仲間コム「エアコン取り付け・取り外し・工事・修理の業者」</a>（2026年11月14日確認）。口コミは家仲間コムで依頼した利用者の投稿ですが、運営会社のサイト上の評価であり、第三者による集計ではありません。</p>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※出典：公式サイト掲載の利用者の声、および第三者レビューサイト（リフォーム比較jp／ninenail.com／リフォームのマニュアル 等）の掲載内容の傾向を当サイトで整理したものです（2026年7月12日調査）。個別の体験を保証するものではありません。マッチング型のため実際の作業品質は担当する登録業者により差が出る点は構造的な特徴です。</p>
+            <p className="mt-4 text-xs text-slate-400">※以前掲載していた「好意的な声・否定的な声の傾向」（2026年7月12日調査）は、出典の件数を確認し直せなかったため、2026年11月14日に削除しました。</p>
             <p className="mt-4 leading-8 text-slate-700">
-              否定的な傾向の多くは、担当業者による対応の差と連絡に関するトラブルです。マッチング型サービスのため、<strong className="font-semibold">依頼前に複数業者の見積もりと口コミを比較し、作業範囲と総額を書面で記録する</strong>ことで、リスクの多くは抑えられます。
+              マッチング型サービスのため、作業品質は担当する登録業者によって差が出ます。<strong className="font-semibold">依頼前に複数業者の見積もりと口コミを比較し、作業範囲と総額を書面で記録する</strong>ことで、リスクの多くは抑えられます。
             </p>
           </section>
 
@@ -338,7 +330,7 @@ export default function Page() {
             <ol className="space-y-4">
               {[
                 ["サイトで依頼内容を入力", "エアコンの作業内容や状況、写真などを入力し、匿名で一括見積もりを依頼します。"],
-                ["業者から見積もりが到着", "登録業者から見積もりが届きます。写真見積もりの対応が速いと評価されています。"],
+                ["業者から見積もりが到着", "登録業者から見積もりが届きます。依頼時には写真を添付できます（公式の依頼フォーム）。"],
                 ["見積もりの比較・依頼先の選定", "料金・対応・口コミを比較し、納得できる業者を選びます。作業範囲と総額もあわせて確認します。"],
                 ["日程調整・施工", "都合の良い日時を調整し、選んだ登録業者が作業を行います。"],
                 ["動作確認・支払い", "正常に動作することを確認し、業者への支払いを済ませて完了です。"],
@@ -372,7 +364,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              家仲間コムは、利用者の手数料が無料で、業者から成約手数料を取らない仕組みで、その分工事代金が安くなる可能性がある（公式）業者マッチングサイトです。写真見積もり・日程調整の速さや、複数社を比較して選べる点が強みです。一方で、施工は登録業者が行うため対応品質や保証に差が出やすく、加盟店の審査基準は公開されておらず、賠償責任保険も業者の申込みが条件であるといった注意点があります。依頼時は「複数業者の見積もり・口コミを比較」「作業範囲と総額を書面で確認」「保証範囲を業者へ確認」の3点を確認することで、この種のサービスの注意点の多くは事前に解消できます。
+              家仲間コムは、利用者の手数料が無料で、業者から成約手数料を取らない仕組みで、その分工事代金が安くなる可能性がある（公式）業者マッチングサイトです。公式のエアコンカテゴリには1,065社・口コミ12,637件（2026年11月13日更新）が掲載されており、業者ごとのおすすめ率と口コミを比べて選べる点が強みです。一方で、施工は登録業者が行うため対応品質や保証に差が出やすく、加盟店の審査基準は公開されておらず、賠償責任保険も業者の申込みが条件であるといった注意点があります。依頼時は「複数業者の見積もり・口コミを比較」「作業範囲と総額を書面で確認」「保証範囲を業者へ確認」の3点を確認することで、この種のサービスの注意点の多くは事前に解消できます。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコン工事・修理は作業内容によって費用が変わります。お急ぎでない場合は、複数の見積もりを比較し、料金と対応をふまえて選ぶことをおすすめします。
