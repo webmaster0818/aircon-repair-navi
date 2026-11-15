@@ -5,13 +5,13 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "エアコン救急隊の評判｜同名の複数サービスの見分け方と料金の調査結果【2026年10月】",
+    "エアコン救急隊の評判｜同名の複数サービスの見分け方と口コミ・料金の調査結果【2026年11月】",
   description:
     "「エアコン救急隊」という名称のエアコン修理サービスは複数存在します。当サイトでは各公式サイトを確認し(2026年10月24日)、株式会社SAZANKA運営(aircon99.net)と神戸市の同名サービスの運営情報・料金・保証・キャンセルの条件と、依頼前の見分け方をご説明します。",
   alternates: { canonical: "/company/aircon-kyukyusha" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月15日";
 
 const toc = [
   { id: "summary", label: "「エアコン救急隊」という名称の複数のサービス" },
@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     q: "エアコン救急隊の口コミ・評判を教えてください。",
-    a: "当サイトが口コミを調査した2026年7月19日時点では、主要な口コミプラットフォームや検索結果を調べても、「エアコン救急隊」を特定できる第三者の口コミ・評価は確認できませんでした。同名のサービスが複数あるため、仮に口コミがあってもどの事業者に対するものか判別が難しい状況です。口コミ件数や第三者評価を重視して選びたい場合は、実績・評価が公開されている業者との比較をおすすめします。",
+    a: "2026年11月15日に、みん評・くらしのマーケット・ミツモア・ゼヒトモ・Yahoo!知恵袋・一般検索を調べましたが、どの「エアコン救急隊」かを特定できる第三者の口コミはありませんでした。各公式サイトにも、お客様の声の掲載はありません。「エアコン救急隊」の名前での書き込みは2件見つかりました（作業をしないまま作業費1万7千円を支払ったとする2023年の知恵袋の質問と、キャンセル料1万4千円ほどを請求されたとする2026年の電話番号掲示板への匿名投稿）。ただし、どちらも電話番号・会社名・URLの記載がなく、どのサービスのことかは判別できません。口コミ件数や第三者評価を重視して選びたい場合は、実績・評価が公開されている業者との比較をおすすめします。",
   },
   {
     q: "対応エリアはどこまでですか？",
@@ -57,9 +57,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコン救急隊の評判｜同名の複数サービスの見分け方と料金の調査結果【2026年10月】",
+    "エアコン救急隊の評判｜同名の複数サービスの見分け方と口コミ・料金の調査結果【2026年11月】",
   datePublished: "2026-07-19",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-15",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -95,12 +95,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             エアコン救急隊の評判
             <br className="hidden md:block" />
-            同名の複数サービスの見分け方と料金の調査結果【2026年10月】
+            同名の複数サービスの見分け方と口コミ・料金の調査結果【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-15">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -129,9 +129,9 @@ export default function Page() {
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・<strong>「エアコン救急隊」を名乗る別々のサービスが複数あります</strong>。確認できた範囲では、株式会社SAZANKA運営(aircon99.net・埼玉県八潮市・47都道府県対応を掲げる)と、神戸市に所在地を置く同名サービス(aircon-kaketsuke119.com・法人名の記載なし・関東/関西対応)が存在します(2026年10月24日確認)</li>
               <li>・<strong>いずれも公式サイトに修理費用の金額の掲載がありません</strong>。見積もり・キャンセル・保証の条件はサービスごとに異なります(下表)。作業前に書面で見積もりを受け取り、相場と比較することが必要です</li>
-              <li>・<strong>第三者の口コミは、どのサービスのものか特定できる形では確認できませんでした</strong>。口コミや実績を重視する場合は、情報を十分に公開している業者との相見積もりをおすすめします(<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>・<Link href="/ranking" className="text-sky-700 underline">業者比較</Link>)</li>
+              <li>・<strong>第三者の口コミは、どのサービスのものか特定できる形では確認できませんでした</strong>(2026年11月15日)。口コミや実績を重視する場合は、情報を十分に公開している業者との相見積もりをおすすめします(<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別の修理相場</Link>・<Link href="/ranking" className="text-sky-700 underline">業者比較</Link>)</li>
             </ul>
-            <p className="mt-3 text-xs text-slate-400">※公式サイトの記載は2026年10月24日、口コミは2026年7月19日に確認した内容です。掲載内容は変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">※公式サイトの記載は2026年10月24日、口コミは2026年11月15日に確認した内容です。掲載内容は変更される場合があります。</p>
           </div>
         </div>
 
@@ -205,17 +205,41 @@ export default function Page() {
           <section id="review" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              当サイトの方針として、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。「エアコン救急隊」については、2026年7月19日時点で主要な口コミプラットフォームや検索結果を調べても、<strong className="font-semibold">対象の事業者を特定できる第三者の口コミ・評価は確認できませんでした</strong>。
+              2026年11月15日に、口コミサイトと一般検索で「エアコン救急隊」を調べました。<strong className="font-semibold">どのサービスかを特定できる第三者の口コミは0件</strong>でした。調べた範囲と結果は次のとおりです。
             </p>
-            <div className="rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
-              <h3 className="font-bold text-orange-800 mb-3">評判を見るうえでの前提</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>・同名のサービスが複数あるため、仮に「エアコン救急隊」の口コミを見つけても、<strong>どの事業者に対する評価か判別が難しい</strong>状態です</li>
-                <li>・各公式サイトにも実績件数・お客様の声の掲載はなく(2026年10月24日も同様)、<strong>満足度を第三者の情報から裏づける材料が少ない</strong>状態です</li>
-                <li>・そのため本記事では、事実として確認できた各公式サイトの掲載内容のみを扱い、評価の断定は避けています</li>
-              </ul>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <thead>
+                  <tr className="bg-slate-100 text-slate-700">
+                    <th className="text-left px-4 py-3 font-semibold w-1/3">確認先</th>
+                    <th className="text-left px-4 py-3 font-semibold">結果（2026年11月15日）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["みん評", "サイト内検索で「エアコン救急隊」の掲載ページなし（水の救急隊など別の会社のみ）"],
+                    ["くらしのマーケット・ミツモア・ゼヒトモ", "「エアコン救急隊」の掲載なし（「エアコン清掃救急隊」「なんでも救急隊」など名前の違う事業者のみ）"],
+                    ["各公式サイト", "aircon99.net・aircon-kaketsuke119.com とも、お客様の声・実績件数の掲載なし"],
+                    ["電話番号の口コミサイト", "公式の2つの番号（0120-624-815・0120-451-148）とも口コミ0件"],
+                    ["Yahoo!知恵袋・電話番号掲示板", "「エアコン救急隊」の名前での書き込みが2件。いずれも電話番号・会社名・URLがなく、どのサービスか判別できない（下記）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※口コミの調査日：2026年7月19日。調査対象：各公式サイト、主要口コミプラットフォーム、一般検索結果。公式サイトの実績件数・お客様の声の有無は2026年10月24日に再確認しています。口コミが確認できないことは「悪い評判がある」という意味ではありませんが、事前の情報収集が難しい点にご留意ください。</p>
+            <div className="mt-6 rounded-2xl border border-orange-100 bg-orange-50/50 p-6">
+              <h3 className="font-bold text-orange-800 mb-3">サービスを特定できない書き込み（2件）</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>・Yahoo!知恵袋の質問（2023年7月23日）：「何もしないで一時間で作業費として一万七千円払わされました」「業者はエアコン救急隊という所から来た業者です」と書かれています。</li>
+                <li>・電話番号の掲示板への匿名投稿（2026年8月6日）：キャンセル料は無料とされていたが、1万4千円ほどを請求されたという内容です。投稿先の携帯番号は、上記2つの公式の番号とは異なります。</li>
+              </ul>
+              <p className="mt-3 text-sm leading-7 text-slate-600">どちらも1件ずつの投稿で、内容を裏づける情報はありません。同名のサービスが複数あるため、上の公式サイトのサービスに対する評価とは限りません。ただし、出張後の作業費やキャンセル料をめぐる不満が書かれている点は、依頼前に費用の条件を書面で確かめる理由になります。</p>
+            </div>
+            <p className="mt-4 text-xs text-slate-400">※出典：みん評・くらしのマーケット・ミツモア・ゼヒトモの検索結果、Yahoo!知恵袋（質問 q11283350556）、jpnumber、各公式サイト。いずれも2026年11月15日確認。口コミが見つからないことは「悪い評判がある」という意味ではありません。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">

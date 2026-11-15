@@ -1,0 +1,524 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script type="text/javascript" src="../js/ganalytics.php?v=1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6790HZG9B6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6790HZG9B6', {
+            'custom_map': {
+                'dimension1': 'ip_address',
+                'dimension2': 'access_time',
+            },
+            'ip_address': getIPAddress(),
+            'access_time': getAccessTime(),
+        });
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KPJDV2C2');
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="ja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index,follow" />
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/callData.js"></script>
+    <title>
+        エアコンのトラブルを解決します！｜エアコン救急隊
+    </title>
+    <script>
+	const BASE_URL = "https://crmapi.pcrm.work/v1/";
+	// const BASE_URL = "https://stg-crmapi.pcrm.work/v1/";
+	// const BASE_URL = "https://develop-crmapi.pcrm.work/v1/";
+
+	const ROUTES = {
+		create_anken: "create-anken-new-bridge",
+	};
+
+	// 3447　8800
+	// 3446　6600
+	// 3456　4400(夜間)
+	// let account_ids = {
+	// 	'北海道': '3447',
+	// 	'宮城県': '3447',
+	// 	'新潟県': '3447',
+	// 	'東京都': '3447',
+	// 	'神奈川県': '3447',
+	// 	'千葉県': '3447',
+	// 	'埼玉県': '3447',
+	// 	'栃木県': '3447',
+	// 	'群馬県': '3447',
+	// 	'茨城県': '3447',
+	// 	'静岡県': '3447',
+	// 	'愛知県': '3447',
+	// 	'岐阜県': '3447',
+	// 	'三重県': '3447',
+	// 	'大阪府': '3447',
+	// 	'京都府': '3447',
+	// 	'兵庫県': '3447',
+	// 	'奈良県': '3447',
+	// 	'滋賀県': '3447',
+	// 	'和歌山県': '3447',
+	// 	'岡山県': '3447',
+	// 	'広島県': '3447',
+	// 	'愛媛県': '3447',
+	// 	'福岡県': '3447',
+	// 	'熊本県': '3447',
+	// 	'鹿児島県': '3447',
+	// 	'沖縄県': '3447',
+	// 	'青森県': '3446',
+	// 	'秋田県': '3446',
+	// 	'岩手県': '3446',
+	// 	'山形県': '3446',
+	// 	'福島県': '3446',
+	// 	'富山県': '3446',
+	// 	'長野県': '3446',
+	// 	'山梨県': '3446',
+	// 	'石川県': '3446',
+	// 	'福井県': '3446',
+	// 	'鳥取県': '3446',
+	// 	'島根県': '3446',
+	// 	'山口県': '3446',
+	// 	'高知県': '3446',
+	// 	'徳島県': '3446',
+	// 	'香川県': '3446',
+	// 	'佐賀県': '3446',
+	// 	'長崎県': '3446',
+	// 	'大分県': '3446',
+	// 	'宮崎県': '3446',
+	// };
+
+
+	// let night_account_ids = {
+	// 	'北海道': '3447',
+	// 	'静岡県': '3447',
+	// 	'和歌山県': '3447',
+	// 	'鹿児島県': '3447',
+	// 	'沖縄県': '3447',
+	// 	'青森県': '3446',
+	// 	'秋田県': '3446',
+	// 	'岩手県': '3446',
+	// 	'山形県': '3446',
+	// 	'長野県': '3446',
+	// 	'山梨県': '3446',
+	// 	'鳥取県': '3446',
+	// 	'島根県': '3446',
+	// 	'佐賀県': '3446',
+	// 	'長崎県': '3446',
+	// 	'大分県': '3446',
+	// 	'宮城県': '3456',
+	// 	'福島県': '3456',
+	// 	'新潟県': '3456',
+	// 	'富山県': '3456',
+	// 	'石川県': '3456',
+	// 	'福井県': '3456',
+	// 	'群馬県': '3456',
+	// 	'栃木県': '3456',
+	// 	'茨城県': '3456',
+	// 	'千葉県': '3456',
+	// 	'埼玉県': '3456',
+	// 	'東京都': '3456',
+	// 	'神奈川県': '3456',
+	// 	'愛知県': '3456',
+	// 	'岐阜県': '3456',
+	// 	'三重県': '3456',
+	// 	'滋賀県': '3456',
+	// 	'京都府': '3456',
+	// 	'大阪府': '3456',
+	// 	'奈良県': '3456',
+	// 	'兵庫県': '3456',
+	// 	'岡山県': '3456',
+	// 	'広島県': '3456',
+	// 	'山口県': '3456',
+	// 	'香川県': '3456',
+	// 	'徳島県': '3456',
+	// 	'高知県': '3456',
+	// 	'愛媛県': '3456',
+	// 	'福岡県 ': '3456',
+	// 	'宮崎県': '3456',
+	// 	'熊本県': '3456',
+	// };
+
+
+	let account_ids = {
+		'北海道': '3480',
+		'宮城県': '3480',
+		'新潟県': '3480',
+		'東京都': '3480',
+		'神奈川県': '3480',
+		'千葉県': '3480',
+		'埼玉県': '3480',
+		'栃木県': '3480',
+		'群馬県': '3480',
+		'茨城県': '3480',
+		'静岡県': '3480',
+		'愛知県': '3480',
+		'岐阜県': '3480',
+		'三重県': '3480',
+		'大阪府': '3480',
+		'京都府': '3480',
+		'兵庫県': '3480',
+		'奈良県': '3480',
+		'滋賀県': '3480',
+		'和歌山県': '3480',
+		'岡山県': '3480',
+		'広島県': '3480',
+		'愛媛県': '3480',
+		'福岡県': '3480',
+		'熊本県': '3480',
+		'鹿児島県': '3480',
+		'沖縄県': '3480',
+		'青森県': '3480',
+		'秋田県': '3480',
+		'岩手県': '3480',
+		'山形県': '3480',
+		'福島県': '3480',
+		'富山県': '3480',
+		'長野県': '3480',
+		'山梨県': '3480',
+		'石川県': '3480',
+		'福井県': '3480',
+		'鳥取県': '3480',
+		'島根県': '3480',
+		'山口県': '3480',
+		'高知県': '3480',
+		'徳島県': '3480',
+		'香川県': '3480',
+		'佐賀県': '3480',
+		'長崎県': '3480',
+		'大分県': '3480',
+		'宮崎県': '3480',
+	};
+
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 11172656015【aircon99】-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11172656015"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'AW-11172656015');
+</script>
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+
+function ytag() {
+    yjDataLayer.push(arguments);
+}
+ytag({
+    "type": "ycl_cookie",
+    "config": {
+        "ycl_use_non_cookie_storage": true
+    }
+});
+</script>
+
+<!-- Event snippet for 2023_Call CV【aircon99】 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+    var callback = function() {
+        if (typeof(url) != 'undefined') {
+            // window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11172656015/2ZcWCM-0_v0DEI_nxM8p',
+        'event_callback': callback
+    });
+    return false;
+}
+</script>
+
+<!-- Event snippet for 2023_Call CV【aircon99】 conversion page-->
+<script async>
+yahoo_report_conversion = function(url) {
+    var opt = {
+        "yahoo_conversion_id": 1001290367,
+        "yahoo_conversion_label": "NqalCLje_f0DEIeiw88p",
+        "yahoo_conversion_value": 2000,
+        "yahoo_remarketing_only": false,
+        "onload_callback": function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        }
+    };
+    ytag({
+        "type": "yss_call_conversion",
+        "config": opt
+    });
+}
+</script>
+
+<script>
+function PhoneClick() {
+    // var targetCall = 'tel:050-5804-1409'
+
+
+    var url = window.location.href;
+    // var url = $(location).attr('href');
+    var arr = url.split('?');
+    console.log("url:" + url);
+    console.log("search:" + arr[1]);
+    const defaultNumber = "0120624815";
+    const phoneMap = {
+        "NB_facebook": "05058041437",
+        "NB_instagram": "05058041438"
+    };
+    const urlParams = new URLSearchParams(window.location.search);
+    const source = urlParams.get("source");
+    const targetCall = "tel:" + (phoneMap[source] || defaultNumber);
+    gtag_report_conversion(targetCall);
+    yahoo_report_conversion();
+    console.log('phone');
+    var userAgentResult = navigator.userAgent;
+    var data = {
+        query: arr[1],
+        userAgent: userAgentResult
+    };
+    const api_url = BASE_URL + 'cv_record';
+    console.log("api_url:" + api_url);
+    $.ajax(api_url, {
+        type: 'post',
+        data: data,
+        dataType: 'json'
+    }).done(function(data) {
+        console.log("PhoneClick success");
+        console.log(targetCall)
+        console.log("Success send data.");
+    }).fail(function() {
+        console.log("Fail send data.");
+    });
+    // if (isIOS()) {
+    //     window.location.href = targetCall;
+    //     return;
+    // }
+
+    // if (isAndroid() && !isInstaOrFacebook()) {
+    openCallModal(() => {
+        setTimeout(() => {
+            window.location.href = targetCall;
+        }, 100);
+    });
+    // } else {
+    //     window.location.href = targetCall;
+    // }
+}
+</script>
+
+
+<!-- Event snippet for 2023_Mail CV【aircon99】 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion_mail(url) {
+    var callback = function() {
+        if (typeof(url) != 'undefined') {
+            // window.location = url;
+        }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-11172656015/B6mMCILRz50YEI_nxM8p',
+        'event_callback': callback
+    });
+    return false;
+}
+</script>
+
+<!-- Event snippet for 2023_Mail CV【aircon99】 conversion page-->
+<script async>
+yahoo_report_conversion_mail = function(url) {
+    var opt = {
+        "yahoo_conversion_id": "1001290367",
+        "yahoo_conversion_label": "w4Q-CISoy50YEIeiw88p",
+        "yahoo_conversion_value": "6000",
+        "yahoo_remarketing_only": false,
+        "onload_callback": function() {
+            if (typeof(url) != 'undefined') {
+                window.location = url;
+            }
+        }
+    };
+    ytag({
+        "type": "yss_call_conversion",
+        "config": opt
+    });
+}
+</script>
+
+<script>
+function MailClick() {
+    var targetCall = 'tel:050-5804-1409'
+    gtag_report_conversion_mail(targetCall);
+    yahoo_report_conversion_mail(undefined);
+
+    var url = window.location.href;
+    // var url = $(location).attr('href');
+    var arr = url.split('?');
+    console.log("url:" + url);
+    console.log("search:" + arr[1]);
+
+    var userAgentResult = navigator.userAgent;
+    var data = {
+        query: arr[1],
+        userAgent: userAgentResult
+    };
+    const api_url = BASE_URL + 'cv_record';
+    console.log("api_url:" + api_url);
+    $.ajax(api_url, {
+        type: 'post',
+        data: data,
+        dataType: 'json'
+    }).done(function(data) {
+        console.log("chatClick_inquiry success");
+        console.log("Success send data.");
+    }).fail(function() {
+        console.log("Fail send data.");
+    });
+}
+</script>
+
+
+<script>
+function openCallModal(callback) {
+    const modal = document.getElementById("callModal");
+    const confirmBtn = document.getElementById("confirmCall"); // Optional, not needed for image modal
+
+    if (modal) {
+        modal.style.display = "flex";
+
+        // Auto trigger call after 1.2 seconds (Android only)
+        setTimeout(() => {
+            if (typeof callback === "function") {
+                callback();
+            }
+        }, 100);
+    }
+}
+
+function closeCallModal() {
+    const modal = document.getElementById("callModal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+function isAndroid() {
+    return /Android/i.test(navigator.userAgent);
+}
+
+function isIOS() {
+    return /iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+function isInstaOrFacebook() {
+    const ua = navigator.userAgent || navigator.vendor || window.opera;
+    return /FBAN|FBAV|Instagram/.test(ua);
+}
+</script></head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPJDV2C2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <div class="content-width">
+            <div id="logo" class="logo">
+                <picture>
+                    <source srcset="../img/sp/header_logo_opening@2x.png" alt="エアコン救急隊" media="(max-width: 750px)" width="166" height="40">
+                    <img src="../img/pc/header_logo.png" alt="エアコン救急隊" width="192" height="30">
+                </picture>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="company" class="company common-lineout">
+            <div class="fit-img">
+                <picture>
+                    <source srcset="../img/sp/company_title@2x.png" alt="会社概要" media="(max-width: 750px)" width="200" height="36">
+                    <img src="../img/pc/company_title.png" alt="会社概要" width="240" height="39">
+                </picture>
+            </div>
+            <table class="content-width">
+                <tbody>
+                    <tr>
+                        <th>会社名</th>
+                        <td>株式会社SAZANKA</td>
+                    </tr>
+                    <tr>
+                        <th>設立</th>
+                        <td>令和5年3月17日</td>
+                    </tr>
+                    <tr>
+                        <th>代表取締役</th>
+                        <td>西脇 大空</td>
+                    </tr>
+                    <tr>
+                        <th>資本金</th>
+                        <td>500万円</td>
+                    </tr>
+                    <tr>
+                        <th>所在地</th>
+                        <td>埼玉県八潮市古新田1054</td>
+                    </tr>
+                    <!-- <tr>
+                        <th>電話番号</th>
+                        <td>0120-624-815</td>
+                    </tr> -->
+                    <tr>
+                        <th>事業内容</th>
+                        <td>空調設備の脱着工事・修理業、ハウスクリーニング業、不用品回収業、リフォーム業、訪問販売業、中古車販売業、広告業、前各号に附帯又は関連する一切の事業</td>
+                    </tr>
+                    <tr>
+                        <th>施工会社</th>
+                        <td>株式会社SAZANKAおよび提携協力企業</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="close" onclick="window.close();">閉じる</p>
+    </main>
+    <footer>
+        <div class="fit-img">
+            <img class="footer-logo" src="../img/foot_logo@2x.png" width="167" height="26">
+        </div>
+        <p>Copyright 2023 - エアコン救急隊 All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "セーフリー（Safely）のエアコン修理の評判｜審査・口コミの仕組みを調査【2026年最新】",
+    "セーフリー（Safely）のエアコン修理の評判｜公式の口コミ134件の内訳と審査の仕組み【2026年11月】",
   description:
-    "口コミ比較サービス「セーフリー（Safely）」の特徴をまとめています。掲載事業者の審査・監視体制、画像付き口コミで比較できる仕組み、利用者の評価に基づく掲載順、ご利用前の注意点を中立的な立場でご説明します。",
+    "セーフリー（Safely）のエアコン設置・修理カテゴリの口コミは134件・平均4.3です（公式・2026年11月15日確認）。★の内訳、第三者の口コミの有無、写真付き口コミへの謝礼、審査・監視の仕組みと注意点をまとめています。",
   alternates: { canonical: "/company/safely" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月15日";
 
 const toc = [
   { id: "summary", label: "セーフリーとは" },
@@ -38,7 +38,7 @@ const faqs = [
   },
   {
     q: "口コミはどの程度信頼できますか？",
-    a: "セーフリーでは画像・動画付きの口コミを掲載し、掲載事業者を審査・監視する仕組みを設けています。ただし、口コミは個人の感想であり、受け止め方には個人差があります。複数の口コミを総合的に確認したうえでご判断ください。",
+    a: "公式のエアコン設置・修理カテゴリには口コミが134件あり、平均は4.3です（★5が69件・★4が47件・★3が13件・★2が5件・★1が0件。2026年11月15日確認）。公式は、専任チームによる口コミの定期確認や、有料プランの利用が評価に影響しないことを説明しています。一方で、写真付きで詳しい口コミを書いた利用者に謝礼のキャッシュバックを渡していると公表しています。また、みん評などの第三者サイトにセーフリーの口コミページは見つかりませんでした。数字は運営会社の集計である点を踏まえてご判断ください。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -54,9 +54,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "セーフリー（Safely）のエアコン修理の評判｜審査・口コミの仕組みを調査【2026年最新】",
+    "セーフリー（Safely）のエアコン修理の評判｜公式の口コミ134件の内訳と審査の仕組み【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-15",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -92,12 +92,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             セーフリーのエアコン修理の評判
             <br className="hidden md:block" />
-            審査・口コミの仕組みを調査【2026年最新】
+            公式の口コミ134件の内訳と審査の仕組み【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-15">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -113,7 +113,7 @@ export default function Page() {
             について、掲載事業者の審査・監視体制、画像付き口コミで比較できる仕組み、利用者の評価に基づく掲載順、ご利用前の注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事では口コミ本文の引用を控え、確認できた範囲の情報のみをまとめています。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください（調査時点：2026年7月）。
+            ※口コミの件数・内訳はセーフリー公式（エアコン設置・修理カテゴリ）の表示を2026年11月15日に確認した内容です。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください。
           </p>
         </div>
 
@@ -171,17 +171,40 @@ export default function Page() {
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。セーフリーの利用体験については、調査時点で第三者の口コミを出典を特定できる形で確認できませんでした。そのため、個別の口コミ内容は掲載を控え、公式サイトで案内されている仕組みの範囲で整理しています。
+              セーフリー公式の「エアコン設置・修理」カテゴリには、<strong className="font-semibold">口コミが134件・平均4.3</strong>と表示されています（掲載事業者249件・2026年11月15日確認）。一方、みん評などの第三者の口コミサイトには、セーフリーの口コミページは見つかりませんでした。当サイトで確認できた数字は次のとおりです。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">公式サイトで案内されている仕組み</h3>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <thead>
+                  <tr className="bg-slate-100 text-slate-700">
+                    <th className="text-left px-4 py-3 font-semibold w-1/3">確認先</th>
+                    <th className="text-left px-4 py-3 font-semibold">表示されていた内容（2026年11月15日）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["セーフリー公式 エアコン設置・修理", "口コミ134件・平均4.3（★5：69件／★4：47件／★3：13件／★2：5件／★1：0件）、掲載事業者249件"],
+                    ["みん評", "「セーフリー」「SAFELY」「水道修理のセーフリー」で検索し、該当なし"],
+                    ["Googleマップ", "「水道修理のセーフリー」は★4.5・182件ですが、水道修理の店舗としての評価で、エアコンの評価ではありません"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-6 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">数字を読むときに確認しておきたい点</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>画像・動画付きの口コミで、仕上がりや対応を確認してから依頼先を選べる仕組みがあります。</li>
-                <li>複数の事業者を、口コミとあわせて比較できる構成になっています。</li>
-                <li>掲載事業者を審査・監視する体制が案内されており、掲載の質に配慮しているとされています。</li>
+                <li>・<strong>運営会社の集計です。</strong>公式は「有料プランを利用しているかどうかが口コミ評価や点数に影響することは一切ありません」と説明していますが、第三者による集計ではありません。</li>
+                <li>・<strong>写真付きの口コミには謝礼があります。</strong>公式の会社概要に「写真付きで詳しい口コミを書いてくださった方に、お礼としてキャッシュバックをお渡ししています」と記載されています（良い評価を促す目的ではないとの説明つき）。</li>
+                <li>・<strong>不満の口コミも掲載されています。</strong>2026年11月4日投稿の★1.0の口コミでは、エアコンの取り外し時に壁紙が破損し、話し合いの末に取り付けをされないまま作業が終わったと書かれています。ただし、11月15日時点の★の内訳では★1が「0件」のままで、一覧と内訳の数字が一致していませんでした。</li>
+                <li>・<strong>エアコン以外の口コミも含まれます。</strong>カテゴリは「電気工事」の中の「エアコン設置・修理」で、上位の事業者の口コミにはブレーカーや防犯カメラの工事も含まれていました。</li>
               </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。第三者の口コミは特定できる形で確認できなかったため、個人の感想に基づく口コミ引用は掲載していません。最新の口コミはセーフリー公式サイトでご確認ください。</p>
+            <p className="mt-4 text-xs text-slate-400">※出典：セーフリー公式「エアコン設置・修理」（safely.co.jp/ec/air/）、会社概要（/about-us/）、口コミ掲載基準（/review-policy/）、みん評のサイト内検索、Googleマップ。いずれも2026年11月15日確認。口コミは個人の感想であり、最新の件数は公式サイトでご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -199,6 +222,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>実際の修理は掲載事業者が行うため、事業者ごとに対応・品質・料金に差があります。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>口コミは個人の感想であり、受け止め方には個人差があります。複数のレビューを総合的に確認してください。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>依頼前に、作業範囲と総額の見積もりを確認してから契約することをおすすめします。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>公式は掲載後の監視として「専任チームが口コミの定期確認、事業者への事実確認・改善指導を行い」と説明しています。一方で、トラブル時の補償は「補償制度も調整中です」とされており、2026年11月15日時点では制度として案内されていません。壁紙などの破損や、工事が途中で終わった場合の扱いは、依頼先の事業者に事前にご確認ください。</li>
             </ul>
           </section>
 
