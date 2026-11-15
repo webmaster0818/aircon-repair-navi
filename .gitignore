@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# research の生HTML（取得したページの保存物）は commit しない（11/15 tomomi-2 指示・public リポのため）
+research/**/*.html
+research/**/*.htm
