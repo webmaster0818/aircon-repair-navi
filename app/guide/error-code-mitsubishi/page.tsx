@@ -4,13 +4,13 @@ import Breadcrumb from "@/app/components/Breadcrumb";
 
 export const metadata: Metadata = {
   title:
-    "霧ヶ峰のランプの意味｜緑・オレンジの点灯と点滅・エラー表示【三菱電機公式FAQ・取扱説明書】",
+    "霧ヶ峰のランプの意味｜緑・オレンジの点灯と点滅・暖房中の霜取り・エラー表示【三菱電機公式FAQ・取扱説明書】",
   description:
-    "霧ヶ峰（三菱電機）のランプの意味を公式FAQと取扱説明書にもとづきご説明します。運転ランプの緑（運転中・入タイマー）とオレンジ（内部クリーン運転中）の違い、全ランプ点滅・数字点滅・U1表示の対処、修理を依頼する判断の基準を掲載しています。",
+    "霧ヶ峰（三菱電機）のランプの意味を公式FAQと取扱説明書にもとづきご説明します。運転ランプの緑（運転中・入タイマー）とオレンジ（内部クリーン運転中）の違い、暖房中の霜取り運転（最大10分）とランプ点滅の見分け方、全ランプ点滅・数字点滅・U1表示の対処、修理を依頼する判断の基準を掲載しています。",
   alternates: { canonical: "/guide/error-code-mitsubishi/" },
 };
 
-const UPDATED = "2026年10月30日";
+const UPDATED = "2026年11月16日";
 
 const patterns = [
   {
@@ -59,6 +59,10 @@ const patterns = [
 
 const faqs = [
   {
+    q: "暖房中に風が止まり、運転ランプが点滅しています。霜取り運転ですか？",
+    a: "霧ヶ峰の取扱説明書（MSZ-GV2224ほか・2024年1月版）では、霜取り運転中は上下風向フラップが水平になり、最大10分間風が止まると説明されていますが、霜取り中にランプが点滅するという記載はありません。一方、同書の「こんなときは、修理を依頼する」には「運転ランプが点滅する」が挙げられています。風が止まってフラップが水平でもランプが点滅していなければ霜取りなどの正常な動作の可能性が高く、運転ランプが点滅している場合は早見表の3つの手順を試し、解消しなければ修理を依頼してください（2026年11月16日確認）。パナソニック・日立は霜取り中に運転ランプが点滅すると案内しており、メーカーによって表示が異なります。",
+  },
+  {
     q: "運転ランプがオレンジに点灯していて、停止したのに止まらないのは故障ですか？",
     a: "故障ではない場合があります。三菱ルームエアコンの取扱説明書（MSZ-AXVシリーズ）では、冷房を約3分間以上、または除湿を約6分間以上運転した後に停止すると「内部クリーン運転」を行い、その間は運転/内部クリーンランプがオレンジに点灯すると説明されています。流れは停止（約3分間）→送風（約25分間）→弱暖房（最大10分間）→送風（約1分間）→自動停止です。「運転を止めたのに止まらない」「オレンジが消えない」場合は、内部クリーン運転が設定されていないかを確認するよう案内されています。",
   },
@@ -105,7 +109,7 @@ export default function ErrorCodeMitsubishiPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-30">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-16">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -213,6 +217,48 @@ export default function ErrorCodeMitsubishiPage() {
             </div>
           </section>
 
+          <section id="heating" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">暖房中に風が止まる・ランプが点滅する場合(霜取り運転との見分け方)</h2>
+            <p className="text-sm leading-7 text-slate-700 mb-4">
+              冬に「暖房中に急に風が止まった」「ランプが点滅している」というご相談が増えます。三菱電機の取扱説明書と公式の「冬の時期に多いお問い合わせ」では、暖房中に風が止まる・上下風向が変わる原因として次の3つを挙げています（三菱ルームエアコン取扱説明書 MSZ-GV2224ほか・2024年1月版、2026年11月16日確認）。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm min-w-[560px]">
+                <thead>
+                  <tr>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">タイミング</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">エアコンの動作(取扱説明書の説明)</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">風・フラップの状態</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["運転開始時", "暖かい風を出す準備をしています(約3分間)", "上下風向フラップが水平になり、風が出ないことがあります"],
+                    ["暖房の途中(霜取り運転)", "外気温度が低く湿度が高いと室外機に霜が付くため、約30〜90分に1回程度、自動で霜を溶かします。最大10分間で終了し、外気温度によってはその後さらに数分、暖かい風の準備にかかります", "上下風向フラップが水平になり、風が止まります。室外機の音が大きくなったり、室外機下面の排水口から水が出たりします"],
+                    ["室温が設定温度を超えたとき", "暖め過ぎを防ぐため室外機を停止します", "上下風向フラップが水平になり、微風運転になります"],
+                  ].map(([a, b, c]) => (
+                    <tr key={a}>
+                      <td className="border border-slate-300 px-3 py-2 font-bold text-sky-700 leading-6">{a}</td>
+                      <td className="border border-slate-300 px-3 py-2 leading-6">{b}</td>
+                      <td className="border border-slate-300 px-3 py-2 leading-6 text-slate-600">{c}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
+              <p className="font-bold text-amber-800 mb-1">霧ヶ峰の取扱説明書には「霜取り中のランプ点滅」の記載がありません</p>
+              <p className="text-sm leading-7 text-slate-700">
+                当サイトが確認した取扱説明書では、霜取り運転の説明は「フラップが水平になり風が止まる」であり、ランプが点滅するという記載はありませんでした。一方で、同書の「こんなときは、修理を依頼する」には<strong>「運転ランプが点滅する」</strong>が挙げられています。
+                パナソニック・日立は霜取り中に運転ランプが点滅すると公式に案内しているため、他社の情報をそのまま当てはめないようご注意ください。
+                風が止まってもランプが点滅していなければ、10分ほど待って暖かい風が戻るかをご確認ください。運転ランプが点滅している場合は、上の「3つの手順による切り分け」を試し、解消しなければ修理を依頼します。
+              </p>
+            </div>
+            <p className="mt-2 text-xs leading-6 text-slate-400">
+              ※出典: 三菱ルームエアコン取扱説明書 MSZ-GV2224/2524/2824/3624/4024S/5624S（2024年1月版・dl.mitsubishielectric.co.jp）の「暖房運転」のおしらせ・「故障かな？と思ったら」・「修理を依頼するとき」、三菱電機「冬の時期に多いお問い合わせ」（いずれも2026年11月16日確認）。表示や動作は機種・年式により異なるため、お使いの機種の取扱説明書をご確認ください。メーカー別の霜取り時間は<Link href="/guide/heating-not-working/" className="underline">暖房が効かない原因のガイド</Link>にまとめています。
+            </p>
+          </section>
+
           <section id="cost" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">修理を依頼する前の費用の確認</h2>
             <p className="text-sm leading-7 text-slate-700">
@@ -242,6 +288,8 @@ export default function ErrorCodeMitsubishiPage() {
               <ul className="space-y-1">
                 <li>・三菱電機 よくあるご質問FAQ No.591/714/727/2619/2645/2646/2707/5874(faq01.mitsubishielectric.co.jp・2026年10月30日確認)</li>
                 <li>・三菱ルームエアコン取扱説明書 MSZ-AXVシリーズ(室内機の表示部・内部クリーン運転・応急運転・修理を依頼するとき／2026年10月18日確認)</li>
+                <li>・三菱ルームエアコン取扱説明書 MSZ-GV2224/2524/2824/3624/4024S/5624S（2024年1月版。暖房運転のおしらせ・故障かな？と思ったら・修理を依頼するとき／2026年11月16日確認）</li>
+                <li>・三菱電機「冬の時期に多いお問い合わせ」（暖房運転時、風が出ない・風が止まる・上下風向が途中で変わる／2026年11月16日確認）</li>
                 <li>・三菱電機WIN2K「点検コード検索」ご利用ガイド(販売店向けサービスの旨・2026年10月30日確認)</li>
                 <li>・修理費用の目安額：当サイトの各費用ガイドの調査値（確認日は各ページに明記）</li>
                 
@@ -254,7 +302,7 @@ export default function ErrorCodeMitsubishiPage() {
             <h2 className="text-lg font-bold text-slate-900 mb-4">関連ページ</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
-                { href: "/guide/heating-not-working/", label: "暖房中に止まる・ランプ点滅(霜取り運転)の見分け方" },
+                { href: "/guide/heating-not-working/", label: "暖房が効かない・途中で止まる原因(メーカー別の霜取り運転)" },
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧【家庭用】" },
                 { href: "/symptom/error-code/", label: "エラーコードが出る(症状別の切り分け)" },
                 { href: "/cost/maker-repair-fee/", label: "メーカー修理費用の比較" },

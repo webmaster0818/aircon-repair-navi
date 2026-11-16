@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title:
     "エアコンの暖房が効かない・暖まらない原因｜霜取り・ランプ点滅の見分け方【メーカー公式FAQにもとづく】",
   description:
-    "エアコンの暖房が効かない・暖かい風が出ない原因を、ダイキン・パナソニック・日立の公式FAQにもとづいてご説明します。メーカー別の霜取り運転の時間とランプ点滅、故障を疑う目安（日立は25分以上）、公式が案内する3つの対処、霜取りを減らす設定温度、修理を依頼する判断の基準を掲載しています。",
+    "エアコンの暖房が効かない・暖かい風が出ない原因を、ダイキン・パナソニック・日立の公式FAQと三菱電機の取扱説明書にもとづいてご説明します。メーカー別の霜取り運転の時間とランプ点滅、故障を疑う目安（日立は25分以上）、公式が案内する3つの対処、霜取りを減らす設定温度、修理を依頼する判断の基準を掲載しています。",
   alternates: { canonical: "/guide/heating-not-working/" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年11月16日";
 
 const faqs = [
   {
@@ -64,7 +64,7 @@ export default function HeatingNotWorkingPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-16">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -72,7 +72,7 @@ export default function HeatingNotWorkingPage() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             暖房を使用する際の「風がぬるい」「途中で止まる」「なかなか暖まらない」といった症状は、冬に多いトラブルです。
             暖房には、<strong className="font-semibold text-slate-900">冷房にはない、故障と誤解されやすい正常動作が2つ</strong>あります（霜取り運転と予熱）。
-            本記事ではダイキン・パナソニック・日立の公式FAQの記載にもとづき、正常動作の見分け方、公式が案内する3つの対処、修理の判断の順にご説明します（{UPDATED}更新）。
+            本記事ではダイキン・パナソニック・日立の公式FAQと三菱電機の取扱説明書の記載にもとづき、正常動作の見分け方、公式が案内する3つの対処、修理の判断の順にご説明します（{UPDATED}更新）。
           </p>
           <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
             <p className="font-bold text-amber-800 mb-1">判断の目安</p>
@@ -149,11 +149,16 @@ export default function HeatingNotWorkingPage() {
                     <td className="border border-slate-300 px-3 py-2 leading-7">5〜22分（予熱は2〜3分）</td>
                     <td className="border border-slate-300 px-3 py-2 leading-7">運転ランプが点灯と減光をくり返します。暖房開始直後であれば予熱、暖房中・停止後であれば霜取りです。<strong>25分以上点滅が続く場合は点検をご相談ください</strong></td>
                   </tr>
+                  <tr>
+                    <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">三菱電機(霧ヶ峰)</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">最大10分間（約30〜90分に1回程度。終了後さらに数分かかる場合あり）</td>
+                    <td className="border border-slate-300 px-3 py-2 leading-7">上下風向フラップが水平になり、風が止まります。取扱説明書には霜取り中のランプ点滅の記載がなく、<strong>「運転ランプが点滅する」は「修理を依頼する」症状に挙げられています</strong>。詳しくは三菱のランプ点滅ガイドをご覧ください</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※出典: ダイキン公式FAQ「暖まらない、暖かい風がでない(ルームエアコン)」（2026年10月27日確認）、パナソニック公式「霜取り運転」解説ページ（最長12分程度）・公式コラム「暖房中に温風が急に止まる理由」（およそ5分から15分）、日立 kadenfan「暖房運転時、運転ランプが点滅します。」（{UPDATED}確認）。三菱電機(霧ヶ峰)のランプ表示は<Link href="/guide/error-code-mitsubishi/" className="underline">三菱のランプ点滅ガイド</Link>をご覧ください。
+              ※出典: ダイキン公式FAQ「暖まらない、暖かい風がでない(ルームエアコン)」（2026年10月27日確認）、パナソニック公式「霜取り運転」解説ページ（最長12分程度）・公式コラム「暖房中に温風が急に止まる理由」（およそ5分から15分）、日立 kadenfan「暖房運転時、運転ランプが点滅します。」（2026年10月27日確認）、三菱ルームエアコン取扱説明書 MSZ-GV2224ほか（2024年1月版・2026年11月16日確認）。三菱電機(霧ヶ峰)のランプ表示の詳細は<Link href="/guide/error-code-mitsubishi/" className="underline">三菱のランプ点滅ガイド</Link>をご覧ください。
             </p>
             <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/60 p-5">
               <p className="font-bold text-sky-800 mb-1">霜がつきやすい気象条件</p>
