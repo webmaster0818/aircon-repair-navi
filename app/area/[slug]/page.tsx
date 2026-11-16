@@ -7,6 +7,11 @@ import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 import { FelmatOfficialButton } from "@/app/components/FelmatBanner";
 import { ALL_AREAS, type AreaDef } from "@/data/areas-def";
 import areasData from "@/data/areas-data.json";
+import cityFactsData from "@/data/city-facts.json";
+
+// 市の公式サイトで確かめた事実（出典URL・確認日つき）。データのある市だけ節を出す（2026-11-16〜）。
+type CityFact = { label: string; text: string; source: string; url: string; checkedAt: string };
+const CITY_FACTS = (cityFactsData as { cities: Record<string, CityFact[]> }).cities;
 
 /*
  * エリア別「エアコン修理業者おすすめ」量産テンプレート。
@@ -369,6 +374,7 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
   const n = all.length;
   const stats = D.prefStats[area.prefSlug];
   const center = D.shohiCenters[area.prefName];
+  const cityFacts = area.type === "city" ? CITY_FACTS[area.slug] || [] : [];
   // 都道府県ページは県内の全都市、都市ページは県内で自分の次から4都市(循環)を出す。
   // 先頭4件固定だと5件目以降の都市がTOPからしか張られず孤立していた。
   const prefCities = ALL_AREAS.filter((a) => a.type === "city" && a.prefSlug === area.prefSlug);
@@ -463,6 +469,34 @@ export default async function AreaPage({ params }: { params: Promise<{ slug: str
         <p className="mt-2 text-[11px] text-slate-400">
           ※各社公式サイト・掲載ページの確認値（確認日は各表に記載）。最新の料金・対応可否は各公式サイトでご確認ください。
         </p>
+
+        {cityFacts.length > 0 && (
+          <>
+            <SectionHeading>{area.name}の公式サイトで確認できること（処分・相談窓口など）</SectionHeading>
+            <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600 mb-4">
+              修理か買い替えかを決める前に、{area.name}の公式サイトの案内を確認しました。各項目に出典と確認日を記載しています。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-[13px] md:text-[14px]">
+                <tbody>
+                  {cityFacts.map((f, i) => (
+                    <tr key={i}>
+                      <th className="border border-[#D9D9D9] whitespace-nowrap bg-[#EFEFEF] px-4 py-2 text-left font-bold text-[#333333] align-top">{f.label}</th>
+                      <td className="border border-[#D9D9D9] px-4 py-2 leading-[1.8] text-[#333333]">
+                        {f.text}
+                        <span className="block mt-1 text-[11px] text-slate-400">
+                          出典:{" "}
+                          <a href={f.url} target="_blank" rel="noopener noreferrer" className="text-sky-600 hover:underline">{f.source}</a>
+                          （{f.checkedAt}確認）
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
+        )}
 
         <SectionHeading>{area.name}でエアコン修理を依頼できる業者{repair.length}選</SectionHeading>
         <p className="text-[13px] md:text-[14px] leading-[1.8] text-slate-600">

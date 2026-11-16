@@ -8,20 +8,20 @@ import FelmatBanner from "@/app/components/FelmatBanner";
 
 export const metadata: Metadata = {
   title:
-    "おそうじLabo（おそうじラボ）の口コミ・評判｜大阪・兵庫の料金と対応エリアの調査結果【2026年10月】",
+    "おそうじLabo（おそうじラボ）の口コミ・評判｜セーフリー31件の内訳と大阪・兵庫の料金【2026年11月】",
   description:
-    "大阪・兵庫のエアコンクリーニング「おそうじLabo（おそうじラボ）」の口コミ・評判をまとめました。公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
+    "大阪・兵庫のエアコンクリーニング「おそうじLabo」の口コミを、セーフリーの31件（総合4.38）と公式掲載の声15件の内訳で整理しました（2026年11月16日確認）。料金、対応エリア、受付時間、利用前の注意点もご説明します。",
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年10月28日";
+const UPDATED = "2026年11月16日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
   { id: "latest", label: "2026年10月の最新料金・キャンペーン" },
   { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "口コミ・評判の内訳" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -87,9 +87,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "おそうじLabo（おそうじラボ）の口コミ・評判｜大阪・兵庫の料金と対応エリアの調査結果【2026年10月】",
+    "おそうじLabo（おそうじラボ）の口コミ・評判｜セーフリー31件の内訳と大阪・兵庫の料金【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-28",
+  dateModified: "2026-11-16",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -125,12 +125,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             おそうじLabo（おそうじラボ）の口コミ・評判
             <br className="hidden md:block" />
-            大阪・兵庫の料金と対応エリアの調査結果【2026年10月】
+            セーフリー31件の内訳と大阪・兵庫の料金【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-16">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -146,7 +146,7 @@ export default function Page() {
             について、公開されている利用者の声、料金の目安、対応エリア、受付時間、メリットと注意点を、中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※おそうじLaboは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミ・評判は、エキテンや公式サイトで公開されている情報の傾向を要約したもので、原文の転載は行っていません。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月、口コミ出典は2026年8月1日に再調査)。
+            ※おそうじLaboは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミは、セーフリー（第三者の比較サイト）に掲載された口コミと公式サイト掲載のお客様の声を、2026年11月16日に件数と内容まで確認して整理したものです。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください。
           </p>
         </div>
 
@@ -260,10 +260,10 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評（出典ベース）</h2>
             <p className="leading-8 text-slate-700">
-              おそうじLabo（大阪・株式会社ペイストレージ）については、<strong className="font-semibold">第三者サイトでの口コミは現時点で少数</strong>です（2026年8月1日調査・2026年10月23日再確認）。店舗情報サイトのエキテンにはページがあり評点3.06と表示されていますが、10月23日時点でも口コミ本文の投稿は0件で、評価の傾向を判断できる材料はありません。公式サイトには「想像以上にきれいになった」といった5つ星のお客様の声が掲載されているものの、自社サイト掲載のため第三者による検証はできません。くらしのマーケットの出店ページも確認できませんでした。
+              第三者のサイトで件数がまとまっているのは、比較サイト<strong className="font-semibold">セーフリーの31件（総合評価4.38）</strong>です（2026年11月16日確認）。運営会社名（株式会社ペイストレージ）と所在地（大阪市中央区南船場）が当サイトの調べと一致しており、同じ事業者の掲載です。表示された28件はすべて★4または★5で、★3以下の口コミはありませんでした。28件のうち15件がエアコンクリーニングの口コミで、分解した内部の汚れを見せてもらえたこと、ニオイが消えたこと、お手入れ方法の説明を評価する内容が中心です。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              一方で、悪い評判の一次出典も確認されておらず、口コミが少ないことは悪い評判があることを意味するものではありません。第三者による裏付けが少ないため、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前に確認されることをおすすめします。
+              一方で、セーフリーは写真付きの口コミにキャッシュバックの謝礼を設けています（同社の案内）。また、エキテンのページは口コミ本文0件のまま（2026年10月23日確認。11月16日はアクセスが遮断され再確認できませんでした）、みん評・くらしのマーケットには該当ページが見つかっていません。低評価の口コミがないことを「不満がない」と断定できる材料はないため、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前に確認されることをおすすめします。
             </p>
           </section>
 
@@ -296,32 +296,64 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の内訳</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。おそうじLabo（大阪）については、エキテンの店舗ページと公式サイトで公開されているお客様の声を確認しました。なお、ユアマイスターに掲載のある「株式会社おそうじラボ」は東京の別法人のため（後述）、同社の口コミは本記事では扱っていません。
+              当サイトでは、口コミ本文の転載・創作は行わず、件数と内容を確認した結果のみを掲載しています。2026年11月16日に、セーフリーの掲載口コミ（「もっと見る」で表示できた28件すべて）と、公式サイト掲載のお客様の声15件を読みました。なお、ユアマイスターに掲載のある「株式会社おそうじラボ」は東京の別法人のため（後述）、同社の口コミは本記事では扱っていません。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向（公式サイト自社掲載の声より）</h3>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["掲載先", "件数・評価", "内訳"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">セーフリー（第三者の比較サイト）</td>
+                    <td className="border border-slate-300 px-3 py-2">31件・総合4.38（★5 85%・★4 14%・★3以下 0%）</td>
+                    <td className="border border-slate-300 px-3 py-2">表示28件（投稿日 2026年3月21日〜8月4日）：★5 24件・★4 4件。分野別はエアコンクリーニング15件（★5 13・★4 2）、水回り4件、お風呂4件、キッチン2件、不動産賃貸2件、窓1件</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">公式サイト（運営会社が掲載）</td>
+                    <td className="border border-slate-300 px-3 py-2">15件・すべて★5</td>
+                    <td className="border border-slate-300 px-3 py-2">日付は2025年10月〜11月。投稿者名・地域の記載はありません</td>
+                  </tr>
+                  <tr>
+                    <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">エキテン</td>
+                    <td className="border border-slate-300 px-3 py-2">口コミ本文0件</td>
+                    <td className="border border-slate-300 px-3 py-2">2026年10月23日確認。11月16日はアクセスが遮断され再確認できませんでした</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="mt-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">セーフリーのエアコンクリーニング15件に見られる内容</h3>
               <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>「想像以上にきれいになった」など、仕上がりへの驚き・満足を伝える内容</li>
-                <li>料金説明が明確でわかりやすかった点を評価する内容</li>
+                <li>・分解した内部の汚れを見せてもらえた、ニオイ・カビがなくなったという内容が複数あります</li>
+                <li>・作業後に、お手入れ方法や室外機の手入れを教わったという内容があります</li>
+                <li>・外注ではなく自社スタッフが来ることを決め手にしたという口コミが1件あります</li>
+                <li>・室外機洗浄に付く防虫キャップの無料取付に触れた口コミが1件あります</li>
+                <li>・「予約は少し先になりました」と、希望日に入りにくかったことに触れた口コミが1件あります</li>
               </ul>
-              <p className="mt-3 text-xs text-slate-500">※いずれも公式サイトに自社掲載されたお客様の声のため、第三者による検証はできません。</p>
+              <p className="mt-3 text-xs text-slate-500">※★4の口コミでは、項目別評価の「料金」を3とした投稿が2件ありました。セーフリーの★別の割合（85%・14%）は、ページの表示をそのまま記載しています。</p>
             </div>
             <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
-              <p className="font-bold text-slate-700 text-sm mb-2">参照元（2026年8月1日確認）</p>
-              <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
-                <li>
-                  ・参照元: <a href="https://www.ekiten.jp/shop_27504638/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">エキテン（おそうじLabo店舗ページ）</a>
-                  ——評点表示は3.06ですが、口コミ本文の投稿は0件です（2026年8月1日確認・2026年10月23日再確認でも変化なし）。掲載は料金帯8,800円〜17,000円（税込）や作業時間の目安（ノーマル約60〜90分・お掃除機能付き約120〜180分）などのメニュー情報が中心で、公式サイトの初回料金と一致しています
-                </li>
-                <li>
-                  ・参照元: 公式サイト（osojilabo.com）——5つ星のお客様の声を自社掲載。自社サイト掲載のため第三者検証はできません
-                </li>
-              </ul>
-              <p className="mt-3 text-xs text-slate-400">※みん評に該当ページはなく、くらしのマーケットの出店ページ・Googleマップの評点も確認できませんでした（2026年8月1日調査）。口コミ本文の長文転載は行わず、傾向の要約のみ掲載しています。</p>
+              <p className="font-bold text-slate-700 text-sm mb-2">公式サイト掲載の声について</p>
+              <p className="text-[0.9rem] leading-7 text-slate-600">
+                15件はいずれも運営会社が選んで掲載したもので、第三者による検証はできません。また、「料金説明も分かりやすく、追加費用もなく安心でした」「普段の使い方やカビ予防の方法も教えていただきました」「次回もこちらに依頼します」の3つの文は、それぞれ15件のうち3件に同じ文面で入っています。
+              </p>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日（2026年8月1日に再調査）。評価は時期・担当スタッフ・地域により異なります。上記は口コミ原文の転載ではなく、当サイトが確認した範囲での傾向の要約です。</p>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-slate-50 p-5">
+              <p className="font-bold text-slate-700 text-sm mb-2">参照元（2026年11月16日確認）</p>
+              <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
+                <li>・<a href="https://safely.co.jp/hc/member/osojilabo/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">セーフリー（おそうじLaboの口コミ・評判ページ）</a>——会社概要欄の運営会社・所在地が公式と一致</li>
+                <li>・公式サイト（osojilabo.com）トップページの「お客様の声」</li>
+                <li>・<a href="https://www.ekiten.jp/shop_27504638/" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">エキテン（おそうじLabo店舗ページ）</a>——2026年10月23日確認時点で口コミ本文0件</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-400">※みん評・くらしのマーケットでは該当ページを確認できていません（みん評は11月16日にアクセスが遮断され、検索できませんでした）。評価は時期・担当スタッフにより異なります。</p>
+            </div>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -343,7 +375,7 @@ export default function Page() {
             </ul>
           </section>
 
-          <MiniCta href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" label="おそうじLabo公式サイトを見る" lead="口コミの傾向を踏まえてご検討ください。詳細は公式サイトでご確認いただけます" />
+          <MiniCta href="https://t.felmat.net/fmcl?ak=A11875S.1.V1646036.X138222G" label="おそうじLabo公式サイトを見る" lead="口コミの内訳を踏まえてご検討ください。詳細は公式サイトでご確認いただけます" />
 
           <section id="merit" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">メリット・デメリット</h2>
@@ -572,7 +604,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              おそうじLaboは、大阪・兵庫を中心に「100%自社作業」でエアコンクリーニングを行うサービスです。公式サイト掲載のお客様の声では、仕上がりへの満足や料金説明のわかりやすさを評価する内容が見られます（自社掲載のため第三者による検証はできません）。一方で、エキテン等の第三者サイトでの口コミは現時点で少数です。対応エリアが大阪・兵庫の一部に限られている点や、故障の修理ではなくクリーニングのサービスである点にご留意ください。
+              おそうじLaboは、大阪・兵庫を中心に「100%自社作業」でエアコンクリーニングを行うサービスです。第三者の比較サイトのセーフリーでは31件・総合4.38で、表示された28件はすべて★4以上でした（2026年11月16日確認）。エアコンクリーニングの口コミでは、汚れを見せてもらえたこと、ニオイの解消、お手入れ方法の説明を評価する内容が中心です。ただし、セーフリーには写真付き口コミへの謝礼があり、公式サイト掲載の声15件は運営会社が選んだものです。対応エリアが大阪・兵庫の一部に限られている点や、故障の修理ではなくクリーニングのサービスである点にご留意ください。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               料金は機種・台数・オプションで変わります。初回限定価格やキャンペーンは時期で変動するため、申し込み時に総額を確認し、納得したうえで依頼されることをおすすめします。
