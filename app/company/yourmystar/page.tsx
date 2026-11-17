@@ -6,18 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ユアマイスターの口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "ユアマイスターの口コミ・評判｜みん評225件と公式の声6件の内訳・料金【2026年11月】",
   description:
-    "職人登録型マッチングサービス「ユアマイスター」の口コミ・評判をまとめています。公開されている利用者の声の傾向、料金の目安、対応エリア（エアコン修理は12道県のみ掲載）や特徴、メリット・デメリットまで中立的な立場でご説明します。",
+    "職人登録型マッチングサービス「ユアマイスター」の口コミ・評判をまとめています。みん評225件と公式掲載の声6件の内訳、料金の目安、対応エリア（エアコン修理は12道県のみ掲載）や特徴、メリット・デメリットまで中立的な立場でご説明します。",
   alternates: { canonical: "/company/yourmystar" },
 };
 
-const UPDATED = "2026年10月24日";
+const UPDATED = "2026年11月17日";
 
 const toc = [
   { id: "summary", label: "ユアマイスターとは" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "口コミ・評判の確認結果" },
   { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -54,9 +54,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ユアマイスターの口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "ユアマイスターの口コミ・評判｜みん評225件と公式の声6件の内訳・料金【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-24",
+  dateModified: "2026-11-17",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -97,7 +97,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-24">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-17">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -110,10 +110,10 @@ export default function Page() {
             エアコンの不調や汚れが気になる場合、職人に直接依頼する方法があります。
             本記事では、職人登録型のマッチングサービス
             <strong className="font-semibold text-slate-900">ユアマイスター</strong>
-            について、公開されている利用者の声の傾向、料金の目安、対応エリアと特徴、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
+            について、口コミの件数と内訳、料金の目安、対応エリアと特徴、メリット・デメリットを、評価される点と注意点の両面から中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※本記事の口コミに関する記載は、口コミ掲載サイトや公式サイトで公開されている利用者の声の傾向を要約したものです。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報はお申し込み時にご確認ください（調査時点：2026年6月）。
+            ※口コミの件数・内訳は2026年11月4日・17日に確認した内容です。料金や対応内容は時期・地域・依頼内容により変わるため、最新の情報はお申し込み時にご確認ください。
           </p>
         </div>
 
@@ -168,20 +168,36 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の確認結果</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作を控え、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。みん評（minhyo.jp）には200件を超えるレビューが寄せられており、公式サイト掲載の口コミとあわせて確認した結果、以下のような評価の傾向が見られました。
+              当サイトでは、口コミ本文の転載・創作を行わず、件数と出典を確認できた評価だけを掲載しています。2026年11月17日に確認した結果は次のとおりです。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>迅速かつ丁寧な作業を評価する内容</li>
-                <li>作業前の説明のわかりやすさや仕上がりの丁寧さを評価する内容</li>
-                <li>職人の接客・対応が良く、安心して任せられたとする内容</li>
-              </ul>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["みん評（第三者）", "平均3.14・225件（カテゴリ平均2.88）。エアコン以外の依頼を含むサービス全体の件数です（2026年11月4日取得。11月17日は同サイトがアクセスを遮断したため再確認できていません）"],
+                    ["公式（エアコンクリーニングのページ）", "「口コミ累計16万件以上」と掲載。ページに表示されている利用者の声は6件（すべてエアコンクリーニング・★の表示なし）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記は口コミ原文の転載ではなく、公開されている情報から確認できた傾向の要約です。評価は時期や依頼する職人・地域により異なります。</p>
-            <p className="mt-2 text-xs text-slate-500">出典：<a href="https://minhyo.jp/yourmystar" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「ユアマイスターの口コミ・評判」</a>（平均3.14・225件（カテゴリ平均2.88）・2026年11月4日取得。エアコン以外の依頼を含むサービス全体の件数です）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
+            <div className="mt-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+              <h3 className="font-bold text-sky-800 mb-3">公式に掲載された6件の声に書かれていること（当サイトで集計）</h3>
+              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+                <li>作業前後の説明（汚れの状態・作業前後の温度・室外機オプションの要否など）に触れた声：4件</li>
+                <li>作業の丁寧さに触れた声：3件</li>
+                <li>床や家具の養生に触れた声：2件</li>
+                <li>担当者の人柄・感じのよさに触れた声：2件</li>
+              </ul>
+              <p className="mt-3 text-sm text-slate-600 leading-7">6件は運営会社が選んで掲載している声で、すべて好意的な内容です。利用者全体の評価の傾向を示すものではありません。</p>
+            </div>
+            <p className="mt-4 text-xs text-slate-500">出典：<a href="https://yourmystar.jp/cleaning/aircon/" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">ユアマイスター「エアコンクリーニング」公式</a>（2026年11月17日確認）／<a href="https://minhyo.jp/yourmystar" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評「ユアマイスターの口コミ・評判」</a>（2026年11月4日取得）。みん評は低い評価の投稿が多くなりやすいと同サイト自身が注記しています。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -191,7 +207,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              好意的な評価が多い一方で、職人ごとに依頼先を選ぶマッチング型サービスという性質上、
+              職人ごとに依頼先を選ぶマッチング型サービスという性質上、
               <strong className="font-semibold">依頼する職人によって対応に差が生じる場合がある</strong>
               点にご留意ください。特にお掃除機能付きエアコンは作業の難易度が上がるため、職人選びが重要です。依頼時には以下の点をご確認ください。
             </p>
@@ -211,7 +227,6 @@ export default function Page() {
                   <li>エアコンクリーニングは口コミが豊富で、依頼先を選びやすくなっています（修理の口コミは少数です）。</li>
                   <li>職人のプロフィール・口コミを比較して依頼先を選べます。</li>
                   <li>エアコンクリーニングは全国でプロを探せます。</li>
-                  <li>口コミでは、作業の丁寧さ・接客の良さを評価する声が多く見られます。</li>
                 </ul>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6">
@@ -299,7 +314,7 @@ export default function Page() {
           <section id="last" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">まとめ</h2>
             <p className="leading-8 text-slate-700">
-              ユアマイスターは職人登録型のマッチングサービスで、口コミやプロフィールを比較して職人を選べる点が強みです。ただし、エアコン修理のプロが掲載されているのは12道県のみです（2026年10月15日時点）。口コミでは、作業の丁寧さと接客の良さを評価する声が多く見られます。一方で、依頼する職人によって対応に差が生じる場合があり、特にお掃除機能付きエアコンは作業の難易度が高いため、対応実績のある職人を選び、見積もりを確認してから依頼することをおすすめします。
+              ユアマイスターは職人登録型のマッチングサービスで、口コミやプロフィールを比較して職人を選べる点が強みです。ただし、エアコン修理のプロが掲載されているのは12道県のみです（2026年10月15日時点）。公式に掲載された6件の声では作業前後の説明と丁寧さに触れたものが多い一方、みん評の平均は3.14（225件）です。また、依頼する職人によって対応に差が生じる場合があり、特にお掃除機能付きエアコンは作業の難易度が高いため、対応実績のある職人を選び、見積もりを確認してから依頼することをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               エアコンの作業や修理の費用は内容によって異なります。お急ぎでない場合は複数の職人や業者から見積もりを取り、料金と対応を比較してお選びください。

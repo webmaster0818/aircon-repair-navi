@@ -8,20 +8,19 @@ import AffiliateBanner from "@/app/components/AffiliateBanner";
 
 export const metadata: Metadata = {
   title:
-    "エアコンクリーニング清風（せいふう）の口コミ・評判｜運営会社・料金・対応エリアの調査結果【2026年10月】",
+    "エアコンクリーニング清風（せいふう）の評判・料金｜第三者の口コミはエキテン1件・運営会社と対応エリア【2026年11月】",
   description:
-    "エアコンクリーニング専門店「清風」の口コミ・評判をまとめました。公開されている利用者の声、税込・定額の料金、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
+    "エアコンクリーニング専門店「清風」の評判（第三者の口コミはエキテン1件）、税込・定額の料金、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
   alternates: { canonical: "/company/seifu-ac" },
 };
 
-const UPDATED = "2026年10月23日";
+const UPDATED = "2026年11月17日";
 
 const toc = [
   { id: "summary", label: "エアコンクリーニング清風とは" },
   { id: "latest", label: "2026年10月の確認結果（運営会社・料金・保証）" },
-  { id: "review-summary", label: "口コミ総評" },
   { id: "company", label: "運営会社・基本情報" },
-  { id: "good", label: "口コミ・評判の傾向" },
+  { id: "good", label: "口コミ・評判の確認結果" },
   { id: "bad", label: "気になる点・利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -86,9 +85,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "エアコンクリーニング清風（せいふう）の口コミ・評判｜運営会社・料金・対応エリアの調査結果【2026年10月】",
+    "エアコンクリーニング清風（せいふう）の評判・料金｜第三者の口コミはエキテン1件・運営会社と対応エリア【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-23",
+  dateModified: "2026-11-17",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-23">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-17">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -142,10 +141,10 @@ export default function Page() {
             エアコンのニオイや効きが気になる場合には、内部の分解洗浄(エアコンクリーニング)をおすすめします。
             本記事では、エアコンクリーニング専門店
             <strong className="font-semibold text-slate-900">清風(せいふう)</strong>
-            について、公開されている利用者の声、税込・定額の料金、対応エリア、受付時間、メリットと注意点を、中立的な立場でまとめています。
+            について、確認できた口コミの件数、税込・定額の料金、対応エリア、受付時間、メリットと注意点を、中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※清風は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」の専門店です。本記事では口コミ本文の引用は行わず、ユアマイスターで公開されている利用者評価の傾向を要約してお伝えしています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください(調査時点：2026年7月)。
+            ※清風は故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」の専門店です。口コミは件数と出典を確認できたものだけを掲載しています。料金や対応内容は時期・地域により変わるため、最新の情報は申し込み時にご確認ください。
           </p>
         </div>
 
@@ -222,15 +221,6 @@ export default function Page() {
             <p className="mt-3 text-xs text-slate-400">出典：エアコンクリーニング清風 公式サイト（料金表・会社概要、2026年10月14日確認）／<a href="https://www.ekiten.jp/shop_18681397/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">エキテン 清風の店舗ページ</a>（2026年10月23日確認）。</p>
           </section>
 
-          <section id="review-summary" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
-            <p className="leading-8 text-slate-700">
-              清風の口コミは、Googleマップの実口コミを引用する比較メディアで「電話対応も作業も丁寧でスピーディー」といった好意的な声が中心に紹介されており、「悪い口コミはほとんど見当たらなかった」とする記事も確認できます(2026年8月1日時点)。比較メディアの独自採点では総合4.4/5.0(料金4.8・作業品質4.5など。口コミの集計値ではなく記事独自の評点)という評価も見られます。
-            </p>
-            <p className="mt-4 leading-8 text-slate-700">
-              一方で、同じ記事でも「対応エリアが限定的」「繁忙期(5〜8月・12月)は予約が取りにくい」点は弱みとして挙げられています。また、みん評・Yahoo!知恵袋・くらしのマーケットでは清風固有の口コミを確認できず(2026年8月1日時点)、確認できた出典はGoogleマップ口コミを引用する比較・紹介記事が中心であり、中立的な第三者レビューは現時点で限られています。申し込み前に、最新のGoogleマップ口コミもあわせて確認されることをおすすめします。
-            </p>
-          </section>
 
           <section id="company" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">運営会社・基本情報</h2>
@@ -261,21 +251,30 @@ export default function Page() {
           </section>
 
           <section id="good" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の確認結果</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              当サイトでは、口コミ本文の転載・創作は行わず、確認できた<strong className="font-semibold">傾向の要約</strong>のみを掲載しています。清風については、口コミプラットフォーム「ユアマイスター」に掲載されている利用者評価を確認し、その傾向を整理しました。
+              当サイトでは、口コミ本文の転載・創作を行わず、件数と出典を確認できた評価だけを掲載しています。清風について確認した結果は次のとおりです。
             </p>
-            <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
-              <h3 className="font-bold text-sky-800 mb-3">見られる評価の傾向</h3>
-              <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
-                <li>作業員の誠実で丁寧な対応や清潔感を評価する内容が多く見られます。</li>
-                <li>手際が良く、予定より早く作業が完了したという内容が複数見られます。</li>
-                <li>クリーニング後の風量やニオイの改善など、仕上がりへの満足に触れる内容があります。</li>
-                <li>複数台の依頼でも円滑に対応してもらえたという内容があります。</li>
-              </ul>
+            <div className="overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["エキテン（第三者）", "評点3.28・口コミ1件（2024年9月24日投稿・冷えが良くなったことへの満足と、翌年も依頼したいという内容）。2026年10月23日確認。11月17日は同サイトがアクセスを制限したため再確認できていません"],
+                    ["みん評・Yahoo!知恵袋・くらしのマーケット", "清風（エアコンクリーニング）の口コミは確認できませんでした（2026年8月1日確認）"],
+                    ["公式サイト", "トップページ・メニュー・ご利用ガイドに、利用者の声や口コミの掲載はありませんでした（2026年11月17日確認）"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※調査日：2026年7月19日。上記はユアマイスター掲載の利用者評価をもとに編集部が傾向を要約したものです。個々の口コミ本文の引用は掲載していません。最新の口コミは各プラットフォームでご確認ください。</p>
-            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://kaji-navi.co.jp/seifu_aircon_cleaning/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">家事ナビ(Googleマップの実口コミを引用した紹介記事)</a> ／ <a href="https://helpful-magazine.com/212/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Helpful Magazine(記事独自の採点で総合4.4/5.0)</a>(いずれも2026年8月1日確認)</p>
+            <p className="mt-4 leading-8 text-slate-700">
+              件数を確認できた第三者の口コミは1件のみのため、当サイトでは清風の評判の傾向を判断していません。申し込み前に、Googleマップなどで最新の口コミをあわせてご確認ください。以前このページに掲載していた「評価の傾向」（2026年7月19日調査）は、件数と出典を確認できなかったため削除しました。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://www.ekiten.jp/shop_18681397/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">エキテン 清風の店舗ページ</a>（2026年10月23日確認）／<a href="https://seifu-ac.jp/" rel="noopener" target="_blank" className="underline hover:text-sky-700">エアコンクリーニング清風 公式サイト</a>（2026年11月17日確認）</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
@@ -285,7 +284,7 @@ export default function Page() {
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">気になる点・利用前の注意点</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              良い評判が多い一方で、対応エリアを三大都市圏に限定しているため、
+              対応エリアを三大都市圏に限定しているため、
               <strong className="font-semibold">地域によっては利用できない</strong>
               点にご留意ください。申し込み時には、次の点を確認することをおすすめします。
             </p>
@@ -298,7 +297,7 @@ export default function Page() {
             <p className="mt-4 text-xs text-slate-400">参照元: <a href="https://helpful-magazine.com/212/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Helpful Magazine</a>のレビュー記事でも、対応エリアの限定と繁忙期(5〜8月・12月)の予約の取りにくさが気になる点として挙げられています(2026年8月1日確認)。</p>
           </section>
 
-          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" label="エアコンクリーニング清風 公式サイトを見る" lead="口コミの傾向を踏まえてご検討ください。詳細は公式サイトでご確認いただけます" />
+          <MiniCta href="https://px.a8.net/svt/ejp?a8mat=4B66KG+8WWX3M+4F7Y+BX3J6" label="エアコンクリーニング清風 公式サイトを見る" lead="料金・対応エリア・受付時間の詳細は公式サイトでご確認いただけます" />
 
           <section id="merit" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">メリット・デメリット</h2>
