@@ -6,18 +6,19 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ヤマダ電機のエアコン修理依頼｜修理受付センターの電話番号・Web申込・出張修理料金【2026年10月】",
+    "ヤマダ電機の出張修理・修理受付｜電話番号・Web申込・持ち込み修理との違い・料金【2026年11月】",
   description:
-    "ヤマダ電機のエアコン修理の依頼先（家電保 0120-506-858・長期無料保証 0570-666-533・Web出張修理受付フォーム）と受付時間、出張修理料金の掲載状況を、2026年10月27日に公式サイトで確認しています。旧公式掲載額（出張料4,500円等）、申込前に総額を確認する方法もご説明します。",
+    "ヤマダ電機の修理受付の電話番号（家電保 0120-506-858・長期無料保証 0570-666-533）とWeb出張修理受付フォーム、出張修理の対象商品と店頭への持ち込み修理の区別、料金の掲載状況を、2026年11月18日に公式サイトで確認してご説明します。",
   alternates: { canonical: "/company/yamada-repair" },
 };
 
-const UPDATED = "2026年10月27日";
+const UPDATED = "2026年11月18日";
 const OFFICIAL = "https://yamada-ts.co.jp/";
 
 const toc = [
   { id: "summary", label: "ヤマダ電機の出張修理とは" },
   { id: "request", label: "修理依頼の方法（受付電話・Web・受付時間）" },
+  { id: "carry-in", label: "出張修理と持ち込み修理の違い（対象商品）" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "制限条件・利用前の注意点" },
@@ -47,6 +48,10 @@ const faqs = [
     a: "はい。ヤマダデンキの出張修理申込フォームには「他社購入」の選択肢があり、他店購入品も対応可能です。ただし保証条件により自己負担が発生する場合があります。また地域によっては出張修理を承れない場合がある旨も公式に明記されているため、対応可否は申込時にご確認ください。",
   },
   {
+    q: "ヤマダ電機に修理品を持ち込むことはできますか？エアコンや洗濯機はどうなりますか？",
+    a: "ヤマダデンキ公式の「大型家電の出張修理 ご案内」では、備え付け家電と大型家電以外の電化製品は店舗への持ち込み修理を案内しており、持込修理の対象商品は出張修理を受け付けていないと記載されています。エアコン・洗濯機・ドラム式洗濯機・衣類乾燥機・冷蔵庫・大型テレビ・大型マッサージ機・電子レンジは出張修理の対象商品例として挙げられています。持込修理の受付は最寄りの店舗または購入店舗への問い合わせと案内されています（2026年11月18日確認）。",
+  },
+  {
     q: "メーカー保証や長期保証は使えますか？",
     a: "公式には「各種保証をご利用の際は、事前に保証内容をご確認の上お申込みください」と案内されています。メーカー保証期間内・ヤマダの長期保証（ベストFC保証等）に加入していれば負担が変わる場合があるため、保証書と加入内容を手元に用意してお申し込みいただくことをおすすめします。保証期間内は、メーカー修理のほうが有利な場合もあります。",
   },
@@ -60,9 +65,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ヤマダ電機のエアコン修理依頼｜修理受付センターの電話番号・Web申込・出張修理料金【2026年10月】",
+    "ヤマダ電機の出張修理・修理受付｜電話番号・Web申込・持ち込み修理との違い・料金【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-27",
+  dateModified: "2026-11-18",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -96,14 +101,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ヤマダ電機のエアコン修理依頼
+            ヤマダ電機の出張修理・修理受付
             <br className="hidden md:block" />
-            修理受付センターの電話番号・Web申込・料金【2026年10月】
+            電話番号・Web申込・持ち込み修理との違い・料金【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-27">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -123,7 +128,7 @@ export default function Page() {
             <p className="font-bold text-slate-900 mb-3">本記事の要点</p>
             <ul className="space-y-2 text-[0.95rem] leading-7 text-slate-700">
               <li>・<strong>修理の依頼先（電話）</strong>：家電総合保証「家電保」加入の方は<strong>0120-506-858</strong>、ヤマダの長期無料保証を使う方は<strong>0570-666-533</strong>（いずれも24時間受付・19:00〜翌10:00は自動音声・元日を除く）。受付後の問い合わせは YAMADA SELECT 0120-258-260（10:00〜19:00）です</li>
-              <li>・<strong>修理の依頼先（Web）</strong>：公式の<strong>出張修理受付フォーム</strong>から、保証なし・他店購入品も申し込めます（ベストFC保証は電話のみ）。エアコンは出張修理の対象で、店頭への持込修理は小型家電が対象です</li>
+              <li>・<strong>修理の依頼先（Web）</strong>：公式の<strong>出張修理受付フォーム</strong>から、保証なし・他店購入品も申し込めます（ベストFC保証は電話のみ）。エアコンは出張修理の対象で、店頭への持込修理は小型家電が対象です。出張修理の対象商品は、公式ではエアコン・洗濯機・衣類乾燥機・冷蔵庫・大型テレビ・電子レンジなどと案内されています（<a href="#carry-in" className="text-sky-700 underline">一覧</a>・2026年11月18日確認）</li>
               <li>・実際に修理を担当するのは<strong>株式会社ヤマダテクニカルサービス（電気工事業登録・建設業許可・フロン回収業の有資格事業者）</strong>です。量販店グループの有資格事業者が施工する点が主な特徴です</li>
               <li>・料金は<strong>2026年8月の公式サイト刷新後は掲載されていません（見積もりで確認）</strong>。刷新前の旧公式掲載額は出張料4,500円／冷房不良20,000円〜／水漏れ10,000円〜（2026年7月11日当サイト確認）。<strong>訪問後キャンセル・修理不能でも実費・診断料等がかかる場合</strong>があります</li>
               <li>・<strong>直営の出張エリアは群馬・新潟市・九州・札幌石狩の一部に限られます</strong>。エリア外の場合やお急ぎの場合は、料金の実額を公開している業者との<Link href="/cost/price-index/" className="text-sky-700 underline">相見積もり</Link>をおすすめします</li>
@@ -204,6 +209,43 @@ export default function Page() {
               夏場や繁忙期は電話がつながりにくいという口コミも見られるため、お急ぎの場合は、電話よりも先にWebフォームで受付を済ませることをおすすめします。保証が切れていて早く直したい場合は、<Link href="/ranking/fast" className="text-sky-600 underline underline-offset-2">対応が早い修理業者</Link>への相見積もりも選択肢になります。
             </p>
             <p className="mt-3 text-xs text-slate-400">出典：ヤマダデンキ公式「お問い合わせ」「修理のご依頼」「出張修理受付フォーム」「24時間受付のお知らせ」、家電保リーフレット（2026年10月14日確認・10月27日再確認）。電話番号・受付時間は変更される場合があります。</p>
+          </section>
+
+          <section id="carry-in" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出張修理と持ち込み修理の違い（対象商品）</h2>
+            <p className="leading-8 text-slate-700 mb-4">
+              ヤマダデンキの修理は、<strong className="font-semibold">大型家電・備え付け家電は自宅への出張修理、それ以外の電化製品は店舗への持ち込み修理</strong>に分かれています。2026年11月18日にヤマダデンキ公式「大型家電の出張修理 ご案内」と「お問い合わせ」ページで確認した内容は次のとおりです。
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-sm">
+                <thead>
+                  <tr>
+                    {["区分", "対象（公式の記載）", "申し込み方法"].map((h) => (
+                      <th key={h} className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["出張修理", "対象商品例：エアコン・洗濯機・ドラム式洗濯機・衣類乾燥機・大型テレビ・冷蔵庫・大型マッサージ機・電子レンジ（これ以外にも対象商品があるため問い合わせを、と記載）。他店購入品も受付", "Webの出張修理申込フォーム、または電話（保証の種類別の窓口は上の表）。フォーム送信後に確認メール、その後に担当者から訪問日の電話連絡"],
+                    ["持ち込み修理", "備え付け家電・大型家電以外の電化製品。持込修理の対象商品は出張修理を受け付けていない", "メーカー保証書等を確認のうえ、最寄りのヤマダデンキ店舗へ持参。問い合わせは最寄りの店舗または購入店舗"],
+                    ["受け付けていないもの", "ヤマダデンキで取り扱いのないメーカーの製品、業務用製品", "メーカーへ直接問い合わせ"],
+                  ].map((r) => (
+                    <tr key={r[0]}>
+                      {r.map((v, i) => (
+                        <td key={i} className={`border border-slate-300 px-3 py-2 leading-7 ${i === 0 ? "font-semibold whitespace-nowrap" : ""}`}>{v}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <ul className="mt-4 space-y-2 text-slate-700 text-[0.95rem] leading-7">
+              <li>・<strong className="font-semibold">申し込み前の無料トラブル診断</strong>：冷蔵庫・洗濯機・エアコン・テレビ・電子レンジは、公式サイトに自宅でできる点検の案内（よくある問い合わせと解消方法）があり、訪問前に改善できる場合があるとされています。エアコンでは、リモコンの電池・ブレーカー・フィルターの汚れなどを先に確かめると、出張の手間と費用を省ける場合があります</li>
+              <li>・<strong className="font-semibold">持ち込み修理の料金</strong>：持ち込み修理の料金表は、確認したページには掲載されていませんでした。料金は店舗で見積もりを確認してください</li>
+              <li>・<strong className="font-semibold">エリア</strong>：出張修理は「地域によっては承れない場合がある」とされ、対象エリアは事前に電話・メールで問い合わせるよう案内されています</li>
+            </ul>
+            <p className="mt-3 text-xs text-slate-400">出典：ヤマダデンキ公式「大型家電の出張修理 ご案内」（yamada-denki.jp/service/repairs/）、「お問い合わせ」（yamada-denki.jp/contact/）・2026年11月18日確認。対象商品や受付方法は変更される場合があります。</p>
           </section>
 
           <section id="company" className="scroll-mt-24">
