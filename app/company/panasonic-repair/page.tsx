@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/panasonic-repair" },
 };
 
-const UPDATED = "2026年10月28日";
+const UPDATED = "2026年11月18日";
 
 const toc = [
   { id: "conclusion", label: "本記事の要点" },
@@ -88,7 +88,7 @@ const articleJsonLd = {
   headline:
     "パナソニックの出張修理料金｜出張料4,950円＋技術料＋部品代・キャンセル料・料金の目安の調べ方【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-28",
+  dateModified: "2026-11-18",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +129,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-28">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -241,7 +241,7 @@ export default function Page() {
             <div className="mt-6 rounded-2xl border border-amber-200 bg-amber-50 p-6">
               <p className="font-bold text-amber-900 mb-1">費用が発生する条件について</p>
               <p className="text-sm text-slate-700 leading-7">
-                メーカー修理では、修理を行わない場合にも費用が発生する点にご注意ください。パナソニックは訪問後にキャンセルしても出張料4,950円が発生します（参考：ダイキンは出張点検費8,500〜19,000円が修理キャンセル時にも発生）。一方、街の修理業者には「出張費・見積もり無料」を明記している会社もあり、見積もり後のキャンセルであれば無料の場合があります。依頼前に、出張費・見積もり・キャンセル料の3点をご確認ください。
+                メーカー修理では、修理を行わない場合にも費用が発生する点にご注意ください。パナソニックは訪問後にキャンセルしても出張料4,950円が発生します（参考：ダイキンは出張点検費8,500〜25,300円が修理キャンセル時にも発生）。一方、街の修理業者には「出張費・見積もり無料」を明記している会社もあり、見積もり後のキャンセルであれば無料の場合があります。依頼前に、出張費・見積もり・キャンセル料の3点をご確認ください。
               </p>
             </div>
           </section>

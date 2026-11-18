@@ -7,7 +7,7 @@ import symptoms from "@/data/symptoms.json";
 import companies from "@/data/companies.json";
 import AffiliateOfficialButton from "@/app/components/AffiliateOfficialButton";
 
-const UPDATED = "2026年10月25日";
+const UPDATED = "2026年11月18日";
 
 // 症状の主因タイプ: 修理(故障起因) / クリーニング(汚れ起因) / 両方あり得る
 const careType: Record<string, "repair" | "cleaning" | "hybrid"> = {
@@ -143,7 +143,7 @@ export default async function SymptomPage({
     headline: seoTitle,
     description: seoDescription,
     datePublished: "2026-06-29",
-    dateModified: "2026-10-25",
+    dateModified: "2026-11-18",
     author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
     publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
   };

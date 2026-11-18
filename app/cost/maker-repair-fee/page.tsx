@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cost/maker-repair-fee/" },
 };
 
-const UPDATED = "2026年10月25日";
+const UPDATED = "2026年11月18日";
 
 const feeTable = [
   {
     maker: "ダイキン",
     dispatch: "単体の公式掲載なし（修理目安金額に込み）",
-    cancel: "出張（引取）点検費 8,500〜19,000円",
+    cancel: "出張（引取）点検費 8,500〜25,300円",
     holiday: "公式記載なし",
   },
   {
@@ -62,11 +62,11 @@ const symptomTable = [
   },
   {
     symptom: "基板・電気系統の交換",
-    range: "ダイキン 28,000〜46,000円程度／三菱 17,600〜52,800円／シャープ 18,000〜50,000円／東芝（室内基板）33,000〜36,000円",
+    range: "ダイキン 20,000〜81,000円程度／三菱 17,600〜52,800円／シャープ 18,000〜50,000円／東芝（室内基板）33,000〜36,000円",
   },
   {
     symptom: "冷えない（冷媒回路・圧縮機）",
-    range: "ダイキン 70,000〜105,000円程度（溶接を伴う場合 約15万〜20万円）／三菱 23,100〜136,400円／シャープ 60,000〜98,000円（購入後5年以上）／東芝 74,000〜126,000円／日立 117,000〜194,000円前後",
+    range: "ダイキン 145,000〜248,000円程度（溶接を伴う場合 約15万円以上）／三菱 23,100〜136,400円／シャープ 60,000〜98,000円（購入後5年以上）／東芝 74,000〜126,000円／日立 117,000〜194,000円前後",
   },
   {
     symptom: "水漏れ（ドレン詰まり等）",
@@ -77,7 +77,7 @@ const symptomTable = [
 const faqs = [
   {
     q: "エアコンの点検のみを依頼した場合、費用はいくらかかりますか？",
-    a: "メーカーに点検のみを依頼し、修理しなかった場合の費用（パナソニックは2026年10月18日、ほかの5社は10月25日に公式確認）は、三菱電機が見積診断5,390円、日立が診断料＋出張料で5,830円、パナソニックが出張料4,950円、ダイキンが出張（引取）点検費8,500〜19,000円、シャープが出張診断料9,020円〜です。東芝は出張費の負担を明記していますが、金額の公式掲載はありません。いずれのメーカーも、点検は有料です。",
+    a: "メーカーに点検のみを依頼し、修理しなかった場合の費用（パナソニックは2026年10月18日、ダイキンは11月18日、ほかの4社は10月25日に公式確認）は、三菱電機が見積診断5,390円、日立が診断料＋出張料で5,830円、パナソニックが出張料4,950円、ダイキンが出張（引取）点検費8,500〜25,300円、シャープが出張診断料9,020円〜です。東芝は出張費の負担を明記していますが、金額の公式掲載はありません。いずれのメーカーも、点検は有料です。",
   },
   {
     q: "出張費が一番安いメーカーはどこですか？",
@@ -93,7 +93,7 @@ const faqs = [
   },
   {
     q: "修理費が高額になると案内されました。買い替えたほうがよいですか？",
-    a: "冷媒回路や圧縮機の故障は、各社とも6万〜20万円程度と高額です。製造から10年前後が経過している場合は部品保有期間（製造打切り後10年）の問題もあるため、修理費が新品購入価格の半分を超える場合は、買い替えの検討をおすすめします。判断基準は「修理と買い替えの判断ガイド」でご説明しています。",
+    a: "冷媒回路や圧縮機の故障は、各社とも6万〜25万円程度と高額です（ダイキン公式の冷媒系統部品の目安は145,000〜248,000円程度）。製造から10年前後が経過している場合は部品保有期間（製造打切り後10年）の問題もあるため、修理費が新品購入価格の半分を超える場合は、買い替えの検討をおすすめします。判断基準は「修理と買い替えの判断ガイド」でご説明しています。",
   },
 ];
 
@@ -118,7 +118,7 @@ export default function MakerRepairFeePage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -127,13 +127,13 @@ export default function MakerRepairFeePage() {
             メーカーに修理を依頼する際は、
             <strong className="font-semibold text-slate-900">点検のみの場合にかかる費用</strong>を事前に把握しておくことが重要です。
             本記事では、ダイキン・パナソニック・三菱電機・日立・シャープ・東芝の
-            <strong className="font-semibold text-slate-900">6社の公式料金ページを{UPDATED}に確認</strong>し、
+            <strong className="font-semibold text-slate-900">6社の公式料金ページを2026年10月25日に確認</strong>（ダイキンの金額は2026年11月18日に再確認）し、
             出張料・診断料・キャンセル時の費用を一つの表にまとめています。公式サイトに掲載のない項目は「掲載なし」と記載しています。
           </p>
           <div className="mt-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-5">
             <p className="font-bold text-sky-800 mb-1">比較結果の要点</p>
             <ul className="text-sm leading-7 text-slate-700 space-y-1">
-              <li>・<strong>6社とも点検は有料</strong>です（点検のみでも4,950円〜19,000円）</li>
+              <li>・<strong>6社とも点検は有料</strong>です（点検のみでも4,950円〜25,300円）</li>
               <li>・出張料の実額を公表しているのは日立（3,850円）・パナソニック（4,950円）・シャープ（9,020円〜）の3社です</li>
               <li>・休日・夜間の追加料金の<strong>金額</strong>を明記しているのはパナソニックのみです（＋2,200円）。日立は時間外修理に追加料金がかかる場合があると記載しています</li>
             </ul>
@@ -142,7 +142,7 @@ export default function MakerRepairFeePage() {
 
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
           <section id="fee-table" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出張費・診断料 横断比較表（{UPDATED}公式確認）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出張費・診断料 横断比較表（2026年10月25日公式確認）</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -166,7 +166,7 @@ export default function MakerRepairFeePage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※金額はすべて税込です。各社公式サイトの{UPDATED}時点の掲載値であり、変更される場合があります。「公式記載なし」は該当ページに記載を確認できなかったことを示すもので、費用が発生しないことを保証するものではありません。
+              ※金額はすべて税込です。各社公式サイトの2026年10月25日時点の掲載値であり、変更される場合があります。「公式記載なし」は該当ページに記載を確認できなかったことを示すもので、費用が発生しないことを保証するものではありません。
             </p>
           </section>
 
@@ -199,7 +199,7 @@ export default function MakerRepairFeePage() {
             <div className="mt-5 rounded-2xl border-2 border-orange-200 bg-orange-50/60 p-5 text-sm leading-7">
               <p className="font-bold text-orange-700 mb-1">冷媒回路の故障は「5年保証」の確認をおすすめします</p>
               <p>
-                「冷えない」症状の高額修理（6万〜20万円）の原因になりやすい冷媒回路は、
+                「冷えない」症状の高額修理（6万〜25万円程度）の原因になりやすい冷媒回路は、
                 <strong>購入から5年以内であればメーカー保証により無償となる可能性</strong>があります（ダイキン・パナソニック・三菱・シャープが公式に明記）。
                 詳しくは<Link href="/guide/warranty/" className="text-sky-700 underline underline-offset-2 font-semibold">保証期間まとめ</Link>をご覧ください。
               </p>
@@ -237,7 +237,7 @@ export default function MakerRepairFeePage() {
           <section id="last" className="scroll-mt-24 pb-4">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出典</h2>
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
-              <p className="mb-2">いずれも{UPDATED}に各社公式サイトで確認した掲載値です。</p>
+              <p className="mb-2">いずれも2026年10月25日に各社公式サイトで確認した掲載値です。</p>
               <ul className="space-y-1">
                 <li>・ダイキン「製品別の修理目安金額」・公式FAQ（点検費・症状別概算）</li>
                 <li>・パナソニック公式FAQ「修理にかかる料金は」「修理サービスの流れ」</li>

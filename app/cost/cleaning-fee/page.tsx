@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/cost/cleaning-fee/" },
 };
 
-const UPDATED = "2026年10月25日";
+const UPDATED = "2026年11月18日";
 
 const faqs = [
   {
@@ -59,7 +59,7 @@ export default function CleaningFeePage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -67,7 +67,7 @@ export default function CleaningFeePage() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             臭い・風量低下・カビ汚れなど、故障には至らない不調は、分解洗浄（エアコンクリーニング）で改善が見込める場合があります。
             本記事では、<strong className="font-semibold text-slate-900">全国展開する大手2社（おそうじ本舗・ダスキン）の公式掲載価格</strong>を比較し、
-            <strong className="font-semibold text-slate-900">クリーニングで改善する症状と修理が必要な症状の見分け方</strong>についてご説明します（{UPDATED}確認・いずれも税込）。
+            <strong className="font-semibold text-slate-900">クリーニングで改善する症状と修理が必要な症状の見分け方</strong>についてご説明します（2026年10月25日確認・いずれも税込）。
           </p>
           <div className="mt-5 rounded-2xl border border-sky-200 bg-sky-50/70 p-5">
             <p className="font-bold text-sky-800 mb-1">相場の一覧（壁掛けタイプ・税込）</p>
@@ -81,7 +81,7 @@ export default function CleaningFeePage() {
 
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
           <section id="price" className="scroll-mt-24">
-            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">大手2社の公式料金表（{UPDATED}確認・税込）</h2>
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">大手2社の公式料金表（2026年10月25日確認・税込）</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
                 <thead>
@@ -126,7 +126,7 @@ export default function CleaningFeePage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※おそうじ本舗はエアコンクリーニング料金一覧、ダスキンは壁掛けタイプ（幅120cm未満）の公式ページの掲載価格です（いずれも{UPDATED}確認）。
+              ※おそうじ本舗はエアコンクリーニング料金一覧、ダスキンは壁掛けタイプ（幅120cm未満）の公式ページの掲載価格です（いずれも2026年10月25日確認）。
               ダスキンは、幅120cm以上のお掃除機能なしが18,700円であり、複数台料金は同一世帯に限ること、土日祝や夜間は追加費用が発生する場合があることを公式に注記しています。
               おそうじ本舗の表の金額は通常価格です。2026年10月25日時点では、キャンペーン価格（お掃除機能なし13,200円・2台目以降1台11,000円／お掃除機能付き23,100円・2台目以降1台20,900円）が公式サイトに掲載されています。完全分解洗浄+8,800円などのオプションもあります。最新の価格・キャンペーンは、各社の公式サイトにてご確認ください。
             </p>
@@ -182,7 +182,7 @@ export default function CleaningFeePage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">修理費用との比較</h2>
             <p className="text-sm leading-7 text-slate-700">
               クリーニング（約1.4万〜2.6万円）に対し、修理は症状によって数千円〜6万円超まで幅があります
-              （例: ダイキン公式の水漏れ修理目安は壁掛け17,000〜64,000円）。
+              （例: ダイキン公式の水漏れ修理目安は壁掛け18,000〜68,000円）。
               汚れと故障のどちらが原因かを先に見極めることが、費用の節約につながります。
               修理側の実額は<Link href="/cost/repair-price/" className="text-sky-600 underline underline-offset-2">修理費用の相場</Link>・
               <Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>にまとめています。
@@ -240,9 +240,9 @@ export default function CleaningFeePage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出典・注記</h2>
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
-                <li>・おそうじ本舗公式「エアコンクリーニング料金一覧」（{UPDATED}確認・税込）</li>
-                <li>・ダスキン公式「エアコンクリーニング（壁掛けタイプ）」価格・料金一覧（{UPDATED}確認・税込・幅120cm未満）</li>
-                <li>・ダイキン公式FAQの修理目安金額（水漏れ・壁掛け17,000〜64,000円）は当サイト2026年8月19日確認値</li>
+                <li>・おそうじ本舗公式「エアコンクリーニング料金一覧」（2026年10月25日確認・税込）</li>
+                <li>・ダスキン公式「エアコンクリーニング（壁掛けタイプ）」価格・料金一覧（2026年10月25日確認・税込・幅120cm未満）</li>
+                <li>・ダイキン公式FAQの修理目安金額（水漏れ・壁掛け18,000〜68,000円）は当サイト2026年11月18日確認値</li>
                 
               </ul>
               <p className="mt-2">料金は改定される場合があります。お申し込みの前に、各社の公式サイトにて最新の価格をご確認ください。本ページは特定業者のあっせんを目的としたものではありません。</p>

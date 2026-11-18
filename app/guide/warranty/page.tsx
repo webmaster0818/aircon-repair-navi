@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/guide/warranty/" },
 };
 
-const UPDATED = "2026年10月26日";
+const UPDATED = "2026年11月18日";
 
 const faqs = [
   {
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "冷媒回路とは、どの部分のことですか？",
-    a: "冷媒（ガス）が循環するエアコンの中核部分を指し、三菱電機の公式規定では「圧縮機、冷却器、凝縮器、本体付属配管など」、ダイキンでは「現地配管を除く圧縮機、熱交換器および室内・室外ユニットの内配管」とされています。「冷えない」故障の原因になりやすい高額な修理箇所（シャープ・ダイキン公式の目安で6万〜20万円程度）が含まれるため、購入から5年以内かどうかで費用負担が大きく異なります。",
+    a: "冷媒（ガス）が循環するエアコンの中核部分を指し、三菱電機の公式規定では「圧縮機、冷却器、凝縮器、本体付属配管など」、ダイキンでは「現地配管を除く圧縮機、熱交換器および室内・室外ユニットの内配管」とされています。「冷えない」故障の原因になりやすい高額な修理箇所（シャープ・ダイキン公式の目安で6万〜24.8万円程度）が含まれるため、購入から5年以内かどうかで費用負担が大きく異なります。",
   },
   {
     q: "購入から3年で冷えなくなった場合、無料で修理できますか？",
@@ -56,7 +56,7 @@ export default function WarrantyPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-26">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -64,7 +64,7 @@ export default function WarrantyPage() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             エアコンの修理費を支払う前に、<strong className="font-semibold text-slate-900">無料で修理できる保証が残っていないか</strong>をご確認ください。
             エアコンの保証は<strong className="font-semibold text-slate-900">①メーカー保証 ②量販店の長期保証 ③部品保有期間</strong>の3つの制度で構成されており、
-            保証を確認せずに有償修理を依頼すると、本来不要な数万円の費用が発生する場合があります。本記事では、各社公式の規定（{UPDATED}確認）にもとづいてご説明します。
+            保証を確認せずに有償修理を依頼すると、本来不要な数万円の費用が発生する場合があります。本記事では、各社公式の規定（2026年10月26日確認）にもとづいてご説明します。
           </p>
           <div className="mt-5 rounded-2xl border border-sky-100 bg-sky-50/60 p-5">
             <p className="font-bold text-sky-800 mb-1">無料修理の確認項目</p>
@@ -88,7 +88,7 @@ export default function WarrantyPage() {
                 <thead>
                   <tr>
                     <th className="border border-slate-300 bg-slate-100 px-3 py-2 whitespace-nowrap">メーカー</th>
-                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">公式規定（{UPDATED}確認）</th>
+                    <th className="border border-slate-300 bg-slate-100 px-3 py-2">公式規定（2026年10月26日確認）</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,7 +116,7 @@ export default function WarrantyPage() {
               <p>
                 保証期間は1年で終了していると考え、有償修理を依頼する方が少なくありませんが、
                 <strong>「冷えない」故障の主な原因である冷媒回路は5年保証</strong>の対象です。
-                冷媒回路の修理は、シャープ公式の概算で6万〜9.8万円（購入後5年以上）、ダイキン公式の目安で7万〜10.5万円（溶接を伴う場合は15万〜20万円）と高額な箇所であるため、購入から5年以内の場合は、必ずメーカーに保証の適用可否を確認してから依頼してください。
+                冷媒回路の修理は、シャープ公式の概算で6万〜9.8万円（購入後5年以上）、ダイキン公式の目安で14.5万〜24.8万円程度（2026年11月18日確認）と高額な箇所であるため、購入から5年以内の場合は、必ずメーカーに保証の適用可否を確認してから依頼してください。
               </p>
             </div>
           </section>
@@ -126,7 +126,7 @@ export default function WarrantyPage() {
             <div className="space-y-4 leading-8 text-slate-700">
               <p>
                 量販店の長期保証は、メーカー保証の終了後を補う制度です。当サイトで公式規定を確認できた
-                <strong className="font-semibold">ヤマダデンキの「無料 長期保証」</strong>の内容は以下のとおりです（保証規定 ver.202509A・{UPDATED}確認）。
+                <strong className="font-semibold">ヤマダデンキの「無料 長期保証」</strong>の内容は以下のとおりです（保証規定 ver.202509A・2026年10月26日確認）。
               </p>
               <ul className="list-disc pl-5 text-[0.95rem] leading-7 space-y-1">
                 <li>対象: 税込33,000円以上の指定商品（エアコン含む）・<strong>加入料無料・購入と同時のみ加入可</strong></li>
@@ -148,7 +148,7 @@ export default function WarrantyPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">③部品保有期間：製造打切り後10年</h2>
             <p className="leading-8 text-slate-700">
               保証とは別に、修理の可否そのものを左右するのが<strong className="font-semibold">補修用性能部品の保有期間</strong>です。
-              ダイキン・パナソニックとも、エアコンの部品保有期間を<strong className="font-semibold">製造打切り後10年</strong>と公式に案内しています（{UPDATED}確認）。
+              ダイキン・パナソニックとも、エアコンの部品保有期間を<strong className="font-semibold">製造打切り後10年</strong>と公式に案内しています（2026年10月26日確認）。
               この期間を過ぎると部品の在庫がなく、保証や費用にかかわらず修理ができない場合があります。
               製造年は、室内機側面などの銘板シールで確認できます。10年前後の機種で高額な故障が発生した場合は、
               <Link href="/cost/replace-vs-repair/" className="text-sky-600 underline underline-offset-2 font-semibold">修理と買い替えの比較</Link>をおすすめします。
@@ -158,7 +158,7 @@ export default function WarrantyPage() {
           <section id="flow" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">保証が適用されない場合の依頼先の選び方</h2>
             <p className="leading-8 text-slate-700">
-              3つの制度のいずれにも該当しない場合は、有償修理となります。メーカーは点検のみでも3,850〜19,000円の費用がかかります（
+              3つの制度のいずれにも該当しない場合は、有償修理となります。メーカーは点検のみでも3,850〜25,300円の費用がかかります（
               <Link href="/cost/maker-repair-fee/" className="text-sky-600 underline underline-offset-2 font-semibold">6社の出張費・診断料の比較</Link>）。一方で、
               修理業者には見積もりを無料とする会社もあります。総額の見積もりを書面で確認したうえで、依頼先をお選びください。
             </p>
@@ -186,7 +186,7 @@ export default function WarrantyPage() {
           <section id="last" className="scroll-mt-24 pb-4">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出典</h2>
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
-              <p className="mb-2">いずれも{UPDATED}に各社公式サイトで確認しています。</p>
+              <p className="mb-2">いずれも2026年10月26日に各社公式サイトで確認しています。</p>
               <ul className="space-y-1">
                 <li>・ダイキン公式FAQ「保証について（ルームエアコン）」「メーカー保証期間について」「冷えない・暖まらない（修理金額）」（保証期間・冷媒系統の定義・部品保有期間・保証期間内でも有料となる場合・冷媒ガス放出時の扱い・冷媒系統の修理目安）</li>
                 <li>・パナソニック公式FAQ（保証期間・部品保有期間）</li>

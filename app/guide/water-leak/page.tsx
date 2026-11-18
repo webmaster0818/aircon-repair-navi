@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title:
     "エアコンの水漏れを自分で直す方法｜公式の確認手順と修理費用の相場【2026年】",
   description:
-    "エアコン室内機からの水漏れの確認手順を、ダイキン公式FAQにもとづいてご説明します。ドレンホースの詰まりの確認からフィルター清掃まで、ご自身で対応できる範囲と、メーカー修理の目安額（ダイキン公式：壁掛け17,000〜64,000円）、業者の実額相場、賃貸の場合の費用負担を、公式情報にもとづいて掲載しています。",
+    "エアコン室内機からの水漏れの確認手順を、ダイキン公式FAQにもとづいてご説明します。ドレンホースの詰まりの確認からフィルター清掃まで、ご自身で対応できる範囲と、メーカー修理の目安額（ダイキン公式：壁掛け18,000〜68,000円）、業者の実額相場、賃貸の場合の費用負担を、公式情報にもとづいて掲載しています。",
   alternates: { canonical: "/guide/water-leak/" },
 };
 
-const UPDATED = "2026年10月25日";
+const UPDATED = "2026年11月18日";
 
 const faqs = [
   {
@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     q: "水漏れの修理費用はどのくらいかかりますか？",
-    a: "ダイキンに直接依頼する場合の公式目安は壁掛けタイプで17,000〜64,000円程度（税込・出張料/技術料/部品代込み・保証期間終了後、2026年10月25日確認）です。想定される作業は、ドレンパン交換・ドレン清掃・ドレンポンプ交換などです。修理業者では、水漏れ5,500円〜と公式サイトに掲載している業者（電気の工事屋さん）や、相場11,000〜20,000円（すまいのホットライン掲載）といった金額を確認しています。原因によって金額の幅が大きいため、作業前に書面で見積もりを確認することが重要です。",
+    a: "ダイキンに直接依頼する場合の公式目安は壁掛けタイプで18,000〜68,000円程度（税込・出張料/技術料/部品代込み・保証期間終了後、2026年11月18日確認）です。想定される作業は、ドレンパン交換・ドレン清掃・ドレンポンプ交換などです。修理業者では、水漏れ5,500円〜と公式サイトに掲載している業者（電気の工事屋さん）や、相場11,000〜20,000円（すまいのホットライン掲載）といった金額を確認しています。原因によって金額の幅が大きいため、作業前に書面で見積もりを確認することが重要です。",
   },
   {
     q: "室外機から水が出ている場合も故障ですか？",
@@ -56,7 +56,7 @@ export default function WaterLeakPage() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-18">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -64,7 +64,7 @@ export default function WaterLeakPage() {
           <p className="text-[1.05rem] leading-8 text-slate-700">
             冷房を使用する夏に多いトラブルのひとつが、室内機から水が垂れる<strong className="font-semibold text-slate-900">「水漏れ」</strong>です。
             水漏れは、<strong className="font-semibold text-slate-900">ご自身で確認・解消できる場合と、修理の依頼が必要な場合の切り分け手順を、メーカーが公式に公開している</strong>症状です。
-            本記事ではダイキン公式FAQの手順にもとづき、ご自身で対応できる範囲、修理を依頼した場合の実額、賃貸の場合の注意点を、出典とあわせてご説明します（{UPDATED}確認）。
+            本記事ではダイキン公式FAQの手順にもとづき、ご自身で対応できる範囲、修理を依頼した場合の実額、賃貸の場合の注意点を、出典とあわせてご説明します（2026年10月25日確認）。
           </p>
           <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
             <p className="font-bold text-amber-800 mb-1">最初に行うこと（ダイキン公式FAQより）</p>
@@ -79,7 +79,7 @@ export default function WaterLeakPage() {
           <section id="steps" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご自身で確認する手順（公式FAQにもとづく）</h2>
             <p className="text-sm leading-7 text-slate-700 mb-4">
-              ダイキン公式FAQ「室内機から水が漏れる」の切り分けは、<strong>屋外のドレンホースから水が出ているかどうか</strong>が判断の基準です（{UPDATED}確認）。
+              ダイキン公式FAQ「室内機から水が漏れる」の切り分けは、<strong>屋外のドレンホースから水が出ているかどうか</strong>が判断の基準です（2026年10月25日確認）。
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-sm">
@@ -113,14 +113,14 @@ export default function WaterLeakPage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※出典: ダイキン公式FAQ「室内機から水が漏れる（ルームエアコン）」（{UPDATED}確認）。他メーカーも構造は同様ですが、お使いの機種の取扱説明書・公式FAQをご確認ください。
+              ※出典: ダイキン公式FAQ「室内機から水が漏れる（ルームエアコン）」（2026年10月25日確認）。他メーカーも構造は同様ですが、お使いの機種の取扱説明書・公式FAQをご確認ください。
             </p>
           </section>
 
           <section id="outdoor" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">室外機からの水は故障ではありません</h2>
             <p className="text-sm leading-7 text-slate-700">
-              室外機まわりの水について、ダイキン公式FAQでは<strong>「故障ではありません」</strong>と明記されています（{UPDATED}確認）。
+              室外機まわりの水について、ダイキン公式FAQでは<strong>「故障ではありません」</strong>と明記されています（2026年10月25日確認）。
               冷房・除湿運転では室外機内部や配管接続部が冷媒ガスで冷やされて水滴が発生し、暖房運転では霜取り運転で霜が溶けた水や湯気が出ます。
               ベランダへの排水が気になる場合は、ドレンソケットとドレンホースで排水経路を設ける方法が公式に案内されています（寒冷地では凍結するため取り付けできません）。
             </p>
@@ -140,7 +140,7 @@ export default function WaterLeakPage() {
                 <tbody>
                   <tr>
                     <td className="border border-slate-300 px-3 py-2 font-semibold whitespace-nowrap">ダイキン（メーカー直接）</td>
-                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">壁掛け 17,000〜64,000円程度（税込）</td>
+                    <td className="border border-slate-300 px-3 py-2 whitespace-nowrap font-semibold text-slate-900">壁掛け 18,000〜68,000円程度（税込）</td>
                     <td className="border border-slate-300 px-3 py-2 leading-7">
                       公式の修理目安金額（出張料・技術料・部品代込み、保証期間終了後）。想定部品はドレンパン・ドレン清掃・ドレンポンプ交換等。<strong>修理しなかった場合も出張料と点検費が発生する</strong>と公式に明記されています
                     </td>
@@ -163,7 +163,7 @@ export default function WaterLeakPage() {
               </table>
             </div>
             <p className="mt-2 text-xs leading-6 text-slate-400">
-              ※金額はいずれも{UPDATED}時点までの当サイト調査値・公式掲載値です。故障状況・機種・地域により変動するため、必ず作業前に書面の見積もりで総額をご確認ください。
+              ※金額はいずれも2026年10月25日時点までの当サイト調査値・公式掲載値です。故障状況・機種・地域により変動するため、必ず作業前に書面の見積もりで総額をご確認ください。
             </p>
             <div className="mt-5 rounded-2xl border border-rose-200 bg-rose-50/70 p-5">
               <p className="font-bold text-rose-800 mb-1">高額請求のトラブルにご注意ください</p>
@@ -199,9 +199,9 @@ export default function WaterLeakPage() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">出典・注記</h2>
             <div className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5 text-sm leading-7 text-slate-600">
               <ul className="space-y-1">
-                <li>・ダイキン公式FAQ「室内機から水が漏れる（ルームエアコン）」（{UPDATED}確認）</li>
-                <li>・ダイキン公式FAQ「エアコンから水が漏れている（修理金額）」壁掛け17,000〜64,000円程度・税込（{UPDATED}確認）</li>
-                <li>・ダイキン公式FAQ「室外機から水が出る（ルームエアコン）」故障ではない旨の記載あり（{UPDATED}確認）</li>
+                <li>・ダイキン公式FAQ「室内機から水が漏れる（ルームエアコン）」（2026年10月25日確認）</li>
+                <li>・ダイキン公式FAQ「エアコンから水が漏れている（修理金額）」壁掛け18,000〜68,000円程度・税込（2026年11月18日確認）</li>
+                <li>・ダイキン公式FAQ「室外機から水が出る（ルームエアコン）」故障ではない旨の記載あり（2026年10月25日確認）</li>
                 <li>・電気の工事屋さん／すまいのホットラインの掲載額：当サイトによる業者横断の調査（<Link href="/cost/price-index/" className="text-sky-600 underline underline-offset-2">料金インデックス</Link>）</li>
                 <li>・国民生活センター「エアコン修理のトラブルに注意！」（2026年6月3日公表）</li>
                 <li>・民法606条（賃貸物の修繕義務）</li>
