@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/aircon-trouble-center" },
 };
 
-const UPDATED = "2026年10月31日";
+const UPDATED = "2026年11月20日";
 
 const toc = [
   { id: "summary", label: "エアコントラブルセンターとは" },
@@ -84,6 +84,10 @@ const faqs = [
     q: "見積もり後・施工依頼後のキャンセルはできますか？",
     a: "無料と明記されているのは「施工依頼前のキャンセル」までです。施工依頼後（承諾書への署名後）や作業開始後のキャンセル規定は公式に記載がありません（2026年10月23日確認）。依頼を確定する前に、キャンセル費用が発生する条件を担当加盟店にご確認ください。",
   },
+  {
+    q: "口コミの件数や評価はどこで確認できますか？",
+    a: "件数と評点が表示されている掲載先として、EPARKくらしのレスキューの掲載ページがあります（総合評価4.41・お客さまの声114件と表示、2026年11月20日確認）。本文を読める27件を当サイトで分類したところ、総合評価4以上が15件（対応の早さ・説明の丁寧さへの評価が中心）、2.2以下が8件（ガス補充などの総額が高い、診断費や診断内容への不満が中心）でした。評価は担当する加盟店によって分かれているため、作業前の総額見積もりと診断費の有無をご確認ください。",
+  },
 ];
 
 const articleJsonLd = {
@@ -92,7 +96,7 @@ const articleJsonLd = {
   headline:
     "エアコントラブルセンターの評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-31",
+  dateModified: "2026-11-20",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -133,7 +137,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-31">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-20">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -205,7 +209,7 @@ export default function Page() {
               第三者サイトの一次口コミを再調査したところ（2026年8月1日時点）、まとめ系のレビュー紹介サイトには「対応が早い・丁寧」といった好意的な記述が見られる一方、これらは出所が明示されていないため一次評価としては扱っていません。実際に本文まで確認できた一次出典はYahoo!知恵袋の相談スレッド2件で、「電話がつながりにくく折り返しが来なかった」「支払い後に症状が再発し、請求書の記載内容に不安が残った」という否定的な声も確認できます。みん評に該当ページはなく、評点・件数が明記されたレビューサイトへの掲載も確認できませんでした。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              否定的な体験談が複数ある一方で、利用者全体の傾向を示せる件数・評点のデータはないため、評価を断定することはできません。そのため、依頼時には<strong className="font-semibold">「作業前に総額見積もりを書面で残す」「請求書に事業所名・担当者名の記載を求める」</strong>の2点を必ず実施することをおすすめします。
+              その後、2026年11月20日に、件数と評点が表示されている口コミとして<a href="https://rescue.epark.jp/detail/2718" target="_blank" rel="nofollow noopener" className="text-sky-700 underline">EPARKくらしのレスキューの掲載ページ</a>を確認しました（集計は下の「EPARKくらしのレスキューの口コミ27件の集計」をご覧ください）。好意的な口コミと否定的な口コミの両方が一定数あり、評価は担当する加盟店によって分かれています。そのため、依頼時には<strong className="font-semibold">「作業前に総額見積もりを書面で残す」「請求書に事業所名・担当者名の記載を求める」</strong>の2点を必ず実施することをおすすめします。
             </p>
           </section>
 
@@ -286,7 +290,36 @@ export default function Page() {
                   ——「6万円を支払ったが夜には症状が再発した。請求書に事業所名・氏名の記載がなかった」という相談。回答には「消費者センターへ相談を」という助言が寄せられています
                 </li>
               </ul>
-              <p className="mt-3 text-xs text-slate-400">※口コミ本文の長文転載は行わず、傾向の要約のみ掲載しています。個別の相談内容であり、サービス全体の品質を示すものではありません。なお、みん評（minhyo.jp）に該当ページはなく、評点・件数が明記されたレビュープラットフォームへの掲載も確認できませんでした（2026年8月1日調査）。</p>
+              <p className="mt-3 text-xs text-slate-400">※口コミ本文の長文転載は行わず、傾向の要約のみ掲載しています。個別の相談内容であり、サービス全体の品質を示すものではありません。なお、みん評（minhyo.jp）に該当ページはありません（2026年8月1日調査）。評点・件数が表示されている掲載先は、2026年11月20日にEPARKくらしのレスキューで確認しました（下記）。</p>
+            </div>
+            <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-5">
+              <h3 className="font-bold text-slate-800 mb-3">EPARKくらしのレスキューの口コミ27件の集計（2026年11月20日 当サイト集計）</h3>
+              <p className="text-[0.95rem] leading-7 text-slate-700 mb-3">
+                EPARKくらしのレスキューの「エアコントラブルセンター」掲載ページには、総合評価4.41（お客さまの声114件）と表示されています。このうち本文を読める口コミ27件（投稿日2025年5月20日〜2026年10月12日）を、当サイトで1件ずつ読んで分類しました。
+              </p>
+              <div className="overflow-hidden rounded-xl border border-slate-200 mb-3">
+                <table className="w-full text-[0.9rem]">
+                  <tbody>
+                    {[
+                      ["総合評価4以上", "15件（うち「当日・すぐ来てくれた」など対応の早さに触れたもの10件、説明・対応の丁寧さに触れたもの10件。重複あり）"],
+                      ["総合評価3〜3.8", "4件（対応の早さ・説明への評価と、想定より高くなったという記載が混在）"],
+                      ["総合評価2.2以下", "8件（ガス補充などの総額が6万〜10万円弱で高いと感じたもの4件、点検・診断費（8,000〜8,800円前後や技術料）や診断内容への不満4件、修理の翌日に再び動かなくなったもの1件。重複あり）"],
+                      ["27件の総合評価の単純平均", "3.68（表示されている4.41は114件の値で、27件の平均とは一致しません）"],
+                    ].map(([k, v], i) => (
+                      <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                        <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-3 py-2 border-b border-slate-100">{k}</th>
+                        <td className="text-slate-700 px-3 py-2 border-b border-slate-100">{v}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <ul className="space-y-2 text-[0.9rem] leading-7 text-slate-600">
+                <li>・同じ掲載ページの料金欄には「エアコン故障特定診断費（技術料）8,800円〜」と記載されています。公式サイトは「出張料・見積もり料金はいただいておりません」と案内しているため、<strong className="font-semibold">診断・点検に費用がかかるかどうかを訪問前に確認する</strong>ことをおすすめします</li>
+                <li>・同じ掲載ページでは、営業時間8:00〜22:00、対応エリアは茨城・栃木・群馬・埼玉・千葉・東京・富山・石川・岐阜・愛知・三重・大阪・兵庫・奈良・和歌山・岡山・広島の17都府県と表示されています。公式サイトの「24時間365日受付・全国対応」とは記載が異なるため、ご自宅の地域と訪問可能な時間を受付時にご確認ください</li>
+                <li>・否定的な口コミのうち1件には、作業完了時に担当者からその場でEPARKへのレビュー投稿を依頼されたとの記載があります。評点は参考情報としてご覧ください</li>
+              </ul>
+              <p className="mt-3 text-xs text-slate-400">出典：EPARKくらしのレスキュー「エアコントラブルセンター」掲載ページ（rescue.epark.jp/detail/2718・口コミ1〜27件目、2026年11月20日確認）。分類は当サイトによるもので、口コミは投稿者個人の体験です。EPARK経由で依頼した利用者の投稿であり、加盟店ごとに担当者が異なります。</p>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向は「加盟店ごとの品質差」と「金額の認識の相違」に集約されます。<strong className="font-semibold">作業前に総額見積もりを書面（またはスマートフォンの写真）で残す</strong>ことで、多くのトラブルを防ぐことができます。
@@ -494,7 +527,7 @@ export default function Page() {
           <section id="checklist" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              料金の仕組みの表で見たとおり、無料なのは「出張費・見積もり・施工前キャンセル」までで、基本料金8,800円〜の先の実額は現地見積もりで決まります。見積書を受け取ったら、<strong className="font-semibold">事前作業承諾書に署名する前に</strong>次の6点をご確認ください。
+              料金の仕組みの表で見たとおり、無料なのは「出張費・見積もり・施工前キャンセル」までで、基本料金8,800円〜の先の実額は現地見積もりで決まります。見積書を受け取ったら、<strong className="font-semibold">事前作業承諾書に署名する前に</strong>次の7点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>総額の内訳</strong>——基本料金8,800円〜に何が含まれ、部品代・作業料・ガス代がいくら上乗せされるのか、見積書で項目ごとに確認します</span></li>
@@ -503,7 +536,15 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>担当加盟店の名称・連絡先</strong>——請求書に事業所名・担当者名が記載されるかを確認します。過去の相談事例（Yahoo!知恵袋）で問題となった点です</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>カード払いの可否</strong>——公式は対応と案内していますが、加盟店により異なる場合があるため、作業前に確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>クーポン適用後の金額</strong>——WEB限定1,000円OFFクーポンが見積額に反映されているかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑦</span><span><strong>診断・点検費（技術料）の有無</strong>——公式は出張料・見積もり料金を無料と案内していますが、EPARKくらしのレスキューの掲載ページには「故障特定診断費（技術料）8,800円〜」の記載があり、診断費を支払ったという口コミもあります（2026年11月20日確認）。修理を依頼せずに断った場合に診断費がかかるかを、訪問前の電話で確認します</span></li>
             </ul>
+            <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/60 p-5">
+              <p className="font-bold text-amber-900 text-sm mb-2">参考：国民生活センターの注意喚起（2026年6月3日公表）</p>
+              <p className="text-[0.92rem] leading-7 text-slate-700">
+                国民生活センターは「エアコン修理のトラブルに注意！」として、ネット広告で「安い」「即日対応」とうたう業者への依頼に関する相談が増えていると公表しています。PIO-NETに寄せられたエアコン修理の相談は、2021年度451件から2025年度1,251件に増えています。アドバイスとして、作業前に故障原因・修理内容・修理費用を確認すること、業者が帰る前に直ったことを一緒に確認すること、納得できない請求はその場で支払わず説明を求めること、困ったときは消費者ホットライン「188」に相談することが挙げられています。この公表は特定の業者を対象としたものではありません。
+              </p>
+              <p className="mt-2 text-xs text-slate-400">出典：<a href="https://www.kokusen.go.jp/news/data/n-20260603_1.html" target="_blank" rel="noopener" className="underline">国民生活センター「エアコン修理のトラブルに注意！」</a>（2026年6月3日公表・2026年11月20日確認）</p>
+            </div>
           </section>
 
           <section id="confusion" className="scroll-mt-24">

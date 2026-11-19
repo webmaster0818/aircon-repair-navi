@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/airhome-support" },
 };
 
-const UPDATED = "2026年10月25日";
+const UPDATED = "2026年11月20日";
 
 const toc = [
   { id: "summary", label: "エアホームとは" },
@@ -57,6 +57,10 @@ const faqs = [
     a: "症状の確認や見積もりの相談は、電話(公式記載：050-1793-2218)またはお問い合わせフォームで問い合わせる形になります。公式サイトでは出張費・ご相談・お見積もりは0円とされていますが、故障診断に別途料金が発生する場合があるとの注記があるため（2026年10月15日・公式確認）、相談時に必ずご確認ください。",
   },
   {
+    q: "見積もりの後に追加料金を請求されることはありますか？",
+    a: "公式のよくある質問には「ご提示したお見積り金額を超えることはございません」とあり、事前に判明しなかった内容が作業当日に判明した場合は、作業前に必ず説明すると記載されています（2026年11月20日確認）。また、見積もりは無料である一方、別途調査費用がかかる場合はスタッフから事前に伝えるとされています。当日に作業内容や金額が変わる場合は、説明を受けた内容を書面で残したうえで承諾することをおすすめします。",
+  },
+  {
     q: "依頼から訪問まで、どのくらいの時間がかかりますか？",
     a: "公式サイトでは「24時間365日受付中！」「最短10分で現場急行！」とされ、「場合によって、即日対応も可能です」と案内されています（2026年10月15日・公式確認）。申し込みフォームでは訪問時間帯として「9〜12時」「12〜15時」「15〜18時」「18〜21時」の4枠が選べるようになっています。地域や繁忙期(真夏・真冬)によって訪問までの時間は変動するため、急ぎの場合は最短の訪問可能日をご確認ください(2026年7月12日確認)。",
   },
@@ -88,7 +92,7 @@ const articleJsonLd = {
   headline:
     "エアホームのエアコン修理の評判｜口コミ・料金の調査結果【2026年10月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-10-25",
+  dateModified: "2026-11-20",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -129,7 +133,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-25">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-20">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -460,15 +464,16 @@ export default function Page() {
           <section id="checklist" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">見積もりで確認すべきチェックポイント</h2>
             <p className="leading-8 text-slate-700 mb-4">
-              料金の考え方の表で見たとおり、エアホームは出張費・見積もりは0円と公式に掲載していますが、故障診断料の金額・症状別実額・割増は非公開です。非公開の項目が多い業者ほど、見積もり時の確認が重要です。訪問時には次の6点をご確認ください。
+              料金の考え方の表で見たとおり、エアホームは出張費・見積もりは0円と公式に掲載していますが、故障診断料の金額・症状別実額・割増は非公開です。非公開の項目が多い業者ほど、見積もり時の確認が重要です。訪問時には次の7点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>故障診断料の有無</strong>——出張費・見積もりは0円と公式にありますが、故障診断に別途料金が発生する場合があるとされているため、見積もりだけで断った場合にも費用が発生するか、訪問前の電話で確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>故障診断料の有無</strong>——出張費・見積もりは0円と公式にありますが、故障診断に別途料金が発生する場合があるとされているため、見積もりだけで断った場合にも費用が発生するか、訪問前の電話で確認します。公式のよくある質問には「別途調査費用がかかる場合もございますが、その際にはスタッフから事前にお伝えします」とあり、申し込みの流れの画像にも「症状によっては調査費用が発生する場合がございます」と記載されています（2026年11月20日確認）。調査費用の説明を受けた時点で金額を確認し、作業に進むかどうかを判断します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>総額の内訳</strong>——点検料・部品代・作業料が見積書に項目ごとに分かれて記載されているかを確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>時間帯による割増</strong>——18〜21時枠など遅い時間帯の訪問で割増が付くかを確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>保証</strong>——修理後に同じ症状が再発した場合の無償対応の有無・期間が書面に残るかを確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>事業者情報</strong>——見積書・請求書に法人名（屋号）・担当者名・連絡先が記載されるかを確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑥</span><span><strong>資格</strong>——ガス補充や電気系統の作業を伴う場合に、有資格者が対応するかを確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑦</span><span><strong>見積額を超える請求がないこと</strong>——公式のよくある質問には「ご提示したお見積り金額を超えることはございません」「事前には判明しなかった内容が作業当日に判明した場合は、作業前に必ずご説明させて頂きます」と記載されています（2026年11月20日確認）。当日に作業内容が変わる場合は、追加分の金額を書面で示してもらってから承諾します</span></li>
             </ul>
           </section>
 
