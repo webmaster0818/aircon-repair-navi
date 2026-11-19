@@ -359,6 +359,8 @@ export default function WhereToRepairPage() {
                 { href: "/cost/repair-price/", label: "エアコン修理の費用・料金相場" },
                 { href: "/cost/replace-vs-repair/", label: "修理と買い替えの判断基準" },
                 { href: "/guide/busy-season/", label: "エアコン修理の繁忙期カレンダー" },
+                { href: "/guide/repair-scam/", label: "エアコン修理の詐欺・高額請求の対策" },
+                { href: "/guide/installation-trouble/", label: "取り付け工事のトラブルの対処" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

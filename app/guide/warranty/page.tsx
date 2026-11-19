@@ -206,6 +206,7 @@ export default function WarrantyPage() {
                 { href: "/cost/maker-repair-fee/", label: "メーカー6社の出張費・診断料の比較" },
                 { href: "/cost/replace-vs-repair/", label: "修理と買い替えの判断基準" },
                 { href: "/guide/rental-aircon-repair/", label: "賃貸のエアコン修理費の負担区分" },
+                { href: "/guide/fire-insurance/", label: "エアコンの故障と火災保険の補償" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

@@ -105,6 +105,22 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">冷媒ガスの入れすぎ（過充填）</span>
               <span className="block text-xs text-gray-500">メーカー説明書の記載と規定量の決まり方</span>
             </Link>
+            <Link href="/cost/fan-motor/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">ファンモーター交換の費用</span>
+              <span className="block text-xs text-gray-500">日立・東芝・ダイキンの公式修理料金目安</span>
+            </Link>
+            <Link href="/guide/repair-scam/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコン修理の詐欺・高額請求の対策</span>
+              <span className="block text-xs text-gray-500">国民生活センターの相談事例と依頼前の確認点</span>
+            </Link>
+            <Link href="/guide/fire-insurance/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンの故障と火災保険</span>
+              <span className="block text-xs text-gray-500">落雷・台風・電気的事故の補償と対象外の条件</span>
+            </Link>
+            <Link href="/guide/installation-trouble/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">取り付け工事のトラブルの対処</span>
+              <span className="block text-xs text-gray-500">室内機の脱落・施工不良の紛争事例と依頼前の確認点</span>
+            </Link>
             <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
               <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>

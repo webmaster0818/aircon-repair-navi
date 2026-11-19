@@ -257,6 +257,7 @@ export default function MakerRepairFeePage() {
                 { href: "/guide/warranty/", label: "エアコンの保証期間まとめ（無料修理の条件）" },
                 { href: "/guide/where-to-repair/", label: "エアコン修理の依頼先の使い分けガイド" },
                 { href: "/cost/replace-vs-repair/", label: "修理と買い替えの判断基準" },
+                { href: "/cost/fan-motor/", label: "ファンモーター交換費用（メーカー公式の目安）" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}
