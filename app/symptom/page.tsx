@@ -93,6 +93,14 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">エアコンの異音の原因と対処ガイド</span>
               <span className="block text-xs text-gray-500">ガガガ・カラカラなど音の種類別の原因と対処法</span>
             </Link>
+            <Link href="/guide/louver-not-closing/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">ルーバー（風向板）が閉まらない原因</span>
+              <span className="block text-xs text-gray-500">故障ではない場合の見分け方とリセット方法</span>
+            </Link>
+            <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
+              <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>
+            </Link>
             <Link href="/ranking" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコン修理業者ランキング</span>
               <span className="block text-xs text-gray-500">編集部が比較した修理業者の一覧</span>
