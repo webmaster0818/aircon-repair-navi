@@ -191,6 +191,7 @@ export default function GasRefillPage() {
                 { href: "/cost/repair-price/", label: "症状別の修理費用相場一覧" },
                 { href: "/cost/replace-vs-repair/", label: "修理と買い替えの判断ガイド" },
                 { href: "/cost/maker-repair-fee/", label: "メーカー6社の出張費・診断料 横断比較" },
+                { href: "/guide/gas-overcharge/", label: "ガスの入れすぎ（過充填）とメーカー説明書の記載" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

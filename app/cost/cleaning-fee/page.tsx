@@ -260,6 +260,9 @@ export default function CleaningFeePage() {
                 { href: "/guide/cleaning-frequency/", label: "エアコンクリーニングの頻度の目安" },
                 { href: "/guide/disassembly-cleaning/", label: "完全分解洗浄と通常洗浄の違い" },
                 { href: "/guide/diy-cleaning/", label: "エアコン掃除を自分でできる範囲" },
+                { href: "/guide/cheap-cleaning/", label: "エアコンクリーニングを安く頼む方法" },
+                { href: "/guide/auto-clean-function/", label: "お掃除機能付きエアコンは必要か" },
+                { href: "/guide/cleaning-effect/", label: "エアコンクリーニングの効果と依頼の判断" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}

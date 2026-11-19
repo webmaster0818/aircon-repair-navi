@@ -123,6 +123,7 @@ export default function PowerNotOnPage() {
                 { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
                 { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/rental-aircon-repair/", label: "賃貸エアコンの修理費用の負担区分" },
+                { href: "/guide/stops-midway/", label: "運転中に途中で止まる場合の原因" },
                 { href: "/guide/lifespan/", label: "エアコンの寿命と買い替えの目安" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-500 hover:text-sky-700 transition-colors">

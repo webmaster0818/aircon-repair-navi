@@ -97,6 +97,14 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">ルーバー（風向板）が閉まらない原因</span>
               <span className="block text-xs text-gray-500">故障ではない場合の見分け方とリセット方法</span>
             </Link>
+            <Link href="/guide/stops-midway/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンが途中で止まる原因</span>
+              <span className="block text-xs text-gray-500">タイマー・霜取り・保護停止と故障の見分け方</span>
+            </Link>
+            <Link href="/guide/gas-overcharge/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">冷媒ガスの入れすぎ（過充填）</span>
+              <span className="block text-xs text-gray-500">メーカー説明書の記載と規定量の決まり方</span>
+            </Link>
             <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
               <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>
