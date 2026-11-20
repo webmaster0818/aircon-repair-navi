@@ -42,7 +42,7 @@ const faqs = [
   },
   {
     q: "施工する人の資格や品質は保証されますか？",
-    a: "くらしのマーケットはプラットフォームで、施工は各出店者（個人事業主を含む）が直接行います。技術・品質・保有資格は出店者ごとに異なり、プラットフォーム側が一律に保証するものではありません。冷媒（フロン）を扱う作業や電気工事は資格が必要な場合があるため、口コミ件数・内容に加え、出店者ページや事前のメッセージで有資格者かどうかをご確認ください。",
+    a: "くらしのマーケットはプラットフォームで、施工は各出店者（個人事業主を含む）が直接行います。技術・品質・保有資格は出店者ごとに異なり、プラットフォーム側が一律に保証するものではありません。電気工事は電気工事士の資格が必要な場合があるため、口コミ件数・内容に加え、出店者ページや事前のメッセージで有資格者かどうかをご確認ください。",
   },
   {
     q: "作業でトラブルが発生した場合の補償はありますか？",
@@ -246,7 +246,7 @@ export default function Page() {
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">制限条件・利用前の注意点（公式確認ベース）</h2>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">①</span><span><strong>実際に施工するのは各出店者（個人事業主を含む）です。</strong>技術・品質・対応はプラットフォームが一律に保証するものではなく、出店者ごとに差が出ます。口コミ件数・内容をご確認ください</span></li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>許認可・資格の扱いも出店者ごとに異なります。</strong>冷媒（フロン）を扱う作業や電気工事は資格が必要な場合があり、プラットフォーム側で一律に担保されるわけではありません。出店者ページや事前のメッセージで有資格者かどうかをご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">②</span><span><strong>許認可・資格の扱いも出店者ごとに異なります。</strong>電気工事は電気工事士の資格が必要な場合があり、冷媒（フロン）を扱う作業には専用の工具と技術が要りますが、これらはプラットフォーム側で一律に担保されるわけではありません。出店者ページや事前のメッセージで有資格者かどうかをご確認ください</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">③</span><span><strong>損害賠償補償制度には対象外があります。</strong>補償されるのは出店者が起こした対人・対物事故で、作業自体の不出来（直らない・きれいにならない等）や、出店者と連絡がつかない場合は対象外です（2026年10月24日確認）</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">④</span><span><strong>修理対応の可否・範囲は出店者により異なります。</strong>くらしのマーケットはクリーニング・取り付けの出店者も多く、冷えない等の症状はメーカー修理が適する場合もあります</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">⑤</span><span><strong>繁忙期（真夏・真冬）は予約が取りにくくなります。</strong>予約の多い出店者ほど希望日時が埋まりやすく、早急な訪問が必要な緊急・即日対応には適さない場合があります</span></li>

@@ -154,7 +154,7 @@ export default function FastRankingPage() {
               <li>・冷房が効かない間は、カーテンで直射日光を遮る、扇風機を併用する、水分を補給するなど、熱中症対策を最優先してください</li>
               <li>・<strong>焦げ臭い・煙・火花がある場合は使用を中止</strong>し、プラグを抜いて業者に連絡してください（火災のおそれがあるためです）</li>
             </ul>
-            <p className="text-xs text-gray-500 mt-3">※分解を伴う作業や冷媒ガスの処置は資格が必要です。無理をせず、業者にご依頼ください。症状別の詳しい対処は<Link href="/symptom" className="text-sky-600 underline font-bold">症状から探す</Link>をご覧ください。</p>
+            <p className="text-xs text-gray-500 mt-3">※分解を伴う作業や冷媒ガスの処置には専用の工具と技術が要ります。無理をせず、業者にご依頼ください。症状別の詳しい対処は<Link href="/symptom" className="text-sky-600 underline font-bold">症状から探す</Link>をご覧ください。</p>
           </div>
         </section>
 

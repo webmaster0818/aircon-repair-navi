@@ -332,7 +332,7 @@ export default async function SymptomPage({
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg> 業者に頼むべきサイン
               </h3>
               <ul className="space-y-2 text-sm text-gray-700">
-                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 冷媒ガスの補充・修理（資格が必要）</li>
+                <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 冷媒ガスの補充・修理（専用の工具と技術が必要）</li>
                 <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 基板・コンプレッサーの修理・交換</li>
                 <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 電気系統のトラブル、またはご自身での対処で改善しない場合</li>
                 <li className="flex items-start gap-2"><span className="text-orange-500 font-bold">!</span> 焦げ臭い・煙・火花がある場合（火災のおそれがあるため、直ちに運転を停止してください）</li>
