@@ -121,6 +121,14 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">取り付け工事のトラブルの対処</span>
               <span className="block text-xs text-gray-500">室内機の脱落・施工不良の紛争事例と依頼前の確認点</span>
             </Link>
+            <Link href="/guide/ten-years-no-cleaning/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンを10年掃除していない場合</span>
+              <span className="block text-xs text-gray-500">業者5社の受付条件とクリーニングか買い替えかの判断</span>
+            </Link>
+            <Link href="/guide/cleaning-failure/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンクリーニングの失敗を防ぐ方法</span>
+              <span className="block text-xs text-gray-500">国民生活センターの相談事例と業者5社の補償規定</span>
+            </Link>
             <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
               <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>

@@ -263,6 +263,9 @@ export default function CleaningFeePage() {
                 { href: "/guide/cheap-cleaning/", label: "エアコンクリーニングを安く頼む方法" },
                 { href: "/guide/auto-clean-function/", label: "お掃除機能付きエアコンは必要か" },
                 { href: "/guide/cleaning-effect/", label: "エアコンクリーニングの効果と依頼の判断" },
+                { href: "/guide/ten-years-no-cleaning/", label: "エアコンを10年掃除していない場合" },
+                { href: "/guide/cleaning-failure/", label: "エアコンクリーニングの失敗を防ぐ方法" },
+                { href: "/guide/duskin-vs-osoujihonpo/", label: "ダスキンとおそうじ本舗の比較" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="block rounded-xl border border-slate-200 px-4 py-3 text-sm font-medium text-slate-700 hover:border-sky-300 hover:bg-slate-50 transition-colors">
                   {l.label}
