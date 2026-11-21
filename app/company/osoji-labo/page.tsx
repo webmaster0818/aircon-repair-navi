@@ -89,7 +89,7 @@ const articleJsonLd = {
   headline:
     "おそうじLabo（おそうじラボ）の口コミ・評判｜セーフリー31件の内訳と大阪・兵庫の料金【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-16",
+  dateModified: "2026-11-21",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -130,7 +130,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-16">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-21">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -263,7 +263,7 @@ export default function Page() {
               第三者のサイトで件数がまとまっているのは、比較サイト<strong className="font-semibold">セーフリーの31件（総合評価4.38）</strong>です（2026年11月16日確認）。運営会社名（株式会社ペイストレージ）と所在地（大阪市中央区南船場）が当サイトの調べと一致しており、同じ事業者の掲載です。表示された28件はすべて★4または★5で、★3以下の口コミはありませんでした。28件のうち15件がエアコンクリーニングの口コミで、分解した内部の汚れを見せてもらえたこと、ニオイが消えたこと、お手入れ方法の説明を評価する内容が中心です。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              一方で、セーフリーは写真付きの口コミにキャッシュバックの謝礼を設けています（同社の案内）。また、エキテンのページは口コミ本文0件のまま（2026年10月23日確認。11月16日はアクセスが遮断され再確認できませんでした）、みん評・くらしのマーケットには該当ページが見つかっていません。低評価の口コミがないことを「不満がない」と断定できる材料はないため、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前に確認されることをおすすめします。
+              一方で、セーフリーは写真付きの口コミにキャッシュバックの謝礼を設けています（同社の案内）。また、エキテンのページは口コミ本文0件のまま（2026年10月23日確認。11月16日はアクセスが遮断され再確認できませんでした）、みん評・くらしのマーケットには該当ページが見つかっていません（くらしのマーケットの「おそうじラボ」は大分県別府市の別の店舗です。後述）。低評価の口コミがないことを「不満がない」と断定できる材料はないため、申し込み時に<strong className="font-semibold">「オプション込みの総額」「作業範囲」「仕上がりに不満があった場合の対応」</strong>を事前に確認されることをおすすめします。
             </p>
           </section>
 
@@ -581,6 +581,14 @@ export default function Page() {
             <p className="leading-8 text-slate-700">
               また「おそうじラボ」で検索すると、<strong className="font-semibold">宮城県仙台市の「スッキリおそうじラボ」</strong>（ミツモアで評価4.9・口コミ87件、2026年10月23日確認）や、全国チェーンの「おそうじ本舗」の口コミページも上位に表示されます（2026年10月14日確認）。いずれも本記事のおそうじLaboとは別の事業者であり、口コミの件数や評点も別個のものです。
             </p>
+            <p className="leading-8 text-slate-700 mt-4">
+              「おそうじラボ 口コミ」「おそうじラボ 評判」で検索した場合に上位に表示される口コミページも、2026年11月21日に当サイトで確認したところ、いずれも本記事のおそうじLaboとは別の事業者のものでした。
+            </p>
+            <ul className="mt-3 space-y-2 text-slate-700 leading-7">
+              <li>・<strong className="font-semibold">おうちにプロの「おそうじラボ」</strong>：提供会社は東京都豊島区の株式会社おそうじラボ（上記ユアマイスターと同じ東京の別法人）で、対応エリアは東京・神奈川・埼玉・千葉です。口コミは3件・評点4.2で、最新の利用日は2017年6月です</li>
+              <li>・<strong className="font-semibold">くらしのマーケットの「おそうじラボ」</strong>：店舗の所在地は大分県別府市で、ハウスクリーニングの口コミ22件・評点4.72が掲載されています</li>
+              <li>・<strong className="font-semibold">「お掃除ラボ〜tsubasa〜」</strong>：埼玉県川越市のハウスクリーニング事業者の公式サイトで、同サイトの口コミページはこの事業者のものです</li>
+            </ul>
             <p className="leading-8 text-slate-700 mt-4">
               本記事で扱う「おそうじLabo」は、<strong className="font-semibold">株式会社ペイストレージ運営・大阪市中央区南船場拠点・公式ドメイン osojilabo.com</strong>のサービスです。口コミを調べる際は、運営法人名と所在地（大阪か東京か）が一致しているかをご確認ください。
             </p>
