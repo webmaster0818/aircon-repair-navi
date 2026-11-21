@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/take-service" },
 };
 
-const UPDATED = "2026年10月30日";
+const UPDATED = "2026年11月22日";
 
 const toc = [
   { id: "summary", label: "テイクサービスとは" },
@@ -76,6 +76,10 @@ const faqs = [
     a: "公式FAQでは、夜間対応について「ご相談頂ければお客様のご希望に合わせてお伺い致します」と案内されています(2026年8月2日確認)。ただし、夜間や繁忙期は対応できず他の業者を紹介される場合があることもFAQに明記されているため、受付時に到着目安をご確認ください。",
   },
   {
+    q: "テイクサービスの口コミはどこで、何件くらい確認できますか？",
+    a: "2026年11月22日に当サイトが確認した範囲では、口コミまとめサイト「口評」に良い口コミ8件・悪い口コミ2件、Yahoo!知恵袋に2024年9月投稿の質問1件（回答7件）があります。口評の良い口コミ8件のうちエアコンに関するものは2件で、残りは換気扇・ブレーカー・漏電・アンテナの工事です。件数が少なく、同名の別会社の口コミも混ざりやすいため、運営会社名（株式会社アシスト）とサービス内容が一致しているかを確認したうえでお読みください。",
+  },
+  {
     q: "施工を依頼した後のキャンセルはできますか？",
     a: "無料と明記されているのは「施工依頼前」のキャンセルです(2026年8月2日確認)。施工依頼後・作業開始後のキャンセル規定は公式ページに記載が確認できないため、見積もりを承諾する前に、依頼後にキャンセルした場合の扱いを担当スタッフにご確認ください。",
   },
@@ -87,7 +91,7 @@ const articleJsonLd = {
   headline:
     "テイクサービス（テイクサービス・エアコン）の口コミ・評判｜完全見積制の料金と注意点【2026年10月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-10-30",
+  dateModified: "2026-11-22",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -128,7 +132,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-10-30">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-22">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -207,7 +211,7 @@ export default function Page() {
           <section id="review-summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ総評</h2>
             <p className="leading-8 text-slate-700">
-              テイクサービスの口コミは、評価が明確に分かれています。口コミまとめサイト「口評」では総合4.0/5.0とされ、相見積もりで見積額が最も安かった、深夜でも電話がつながった、急な依頼に対応してもらえたという好意的な声が確認できます。一方、Yahoo!知恵袋では「テイクサービスというエアコン業者は安全ですか?」という質問(2019年投稿・閲覧7.7万回超)に対し、無料のはずの出張・見積もりで費用を請求されたという報告や修理後すぐの再故障の報告など、強く否定的な回答が寄せられています(2026年8月1日時点)。
+              テイクサービスの口コミは、評価が明確に分かれています。口コミまとめサイト「口評」では総合4.0/5.0とされ、相見積もりで見積額が最も安かった、深夜でも電話がつながった、急な依頼に対応してもらえたという好意的な声が確認できます。一方、Yahoo!知恵袋では「テイクサービスというエアコン業者は安全ですか?」という質問(2019年投稿・閲覧7.7万回超)に対し、無料のはずの出張・見積もりで費用を請求されたという報告や修理後すぐの再故障の報告など、強く否定的な回答が寄せられています(2026年8月1日時点)。2024年9月にも、ガス補充の口頭見積もり（約2〜3万円）に対して実際の支払いが約4万円で、明細が出されなかったという質問が投稿されています（2026年11月22日確認）。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               実作業は全国の提携業者(加盟店)が行う紹介型のため「品質は担当業者に依存し当たり外れがある」という構造的な指摘は、第三者の解説記事でも共通しています。急ぎの駆けつけが必要な場面では有用な一方、金額トラブルを避けるため、作業前に書面で見積もりを受け取ること、また急ぎでない場合は相見積もりを取ることを強くおすすめします。
@@ -240,6 +244,9 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-3 text-xs text-slate-400">出典：公式受付ページの掲載情報（2026年7月7日確認）。対応エリア・受付時間・対応スピード・実績は2026年10月15日に現在の公式LP（aircon.assist-life-service.com）で再確認。受付時間や対応エリアは変更される場合があります。</p>
+            <p className="mt-4 leading-8 text-slate-700">
+              公式LPのフッターからリンクされている株式会社アシストの会社概要（assist-corp.net・2026年11月22日確認）には、創業2013年2月・代表取締役 渋谷雄史・資本金1,000万円・従業員数50名・売上高15億円・事業内容「ハウスメンテナンス関連仲介／コールセンター運営」と掲載されています。事業内容が「仲介」「コールセンター運営」である点からも、同社は受付・手配を担い、施工は加盟店が行う仕組みであることが確認できます。
+            </p>
           </section>
 
           <section id="good" className="scroll-mt-24">
@@ -260,11 +267,39 @@ export default function Page() {
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>・見積額と最終請求額が異なったという指摘</li>
                   <li>・相場より高く感じた、明細がわかりにくかったという指摘</li>
+                  <li>・ガス補充の明細（ガスの種類・量）が出されなかったという指摘（Yahoo!知恵袋・2024年9月）</li>
                 </ul>
               </div>
             </div>
             <p className="mt-4 text-xs text-slate-400">※複数のレビュー紹介サイト・Q&Aサイトに掲載された内容の傾向を当サイトで整理したものです。個別の体験を保証するものではありません。紹介型サービスのため、実際の作業品質は担当する加盟店により差が出る点は構造的な特徴です。</p>
-            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://kuchihyou.xsrv.jp/take-service/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">口評(総合4.0/5.0の口コミまとめ)</a> ／ <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10210386690" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Yahoo!知恵袋(安全性を尋ねるQ&A・強い否定的な回答あり)</a> ／ <a href="https://reformfact.com/takeservice-reputation/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">リフォームファクト(業界経験者による解説記事)</a>(いずれも2026年8月1日確認)</p>
+            <p className="mt-2 text-xs text-slate-400">参照元: <a href="https://kuchihyou.xsrv.jp/take-service/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">口評(総合4.0/5.0の口コミまとめ)</a> ／ <a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10210386690" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Yahoo!知恵袋(安全性を尋ねるQ&A・強い否定的な回答あり)</a> ／ <a href="https://reformfact.com/takeservice-reputation/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">リフォームファクト(業界経験者による解説記事)</a>(いずれも2026年8月1日確認)／<a href="https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13304141278" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">Yahoo!知恵袋(2024年9月投稿・ガス補充の明細に関するQ&A)</a>(2026年11月22日確認)</p>
+            <div className="mt-6 rounded-2xl border border-slate-200 p-6">
+              <h3 className="font-bold text-slate-800 mb-3">口コミの件数と内訳（当サイト集計・2026年11月22日確認）</h3>
+              <div className="overflow-hidden rounded-xl border border-slate-200">
+                <table className="w-full text-[0.9rem]">
+                  <thead className="bg-slate-50">
+                    <tr>
+                      <th className="text-left font-semibold text-slate-600 px-3 py-2 border-b border-slate-200">掲載元</th>
+                      <th className="text-left font-semibold text-slate-600 px-3 py-2 border-b border-slate-200">件数</th>
+                      <th className="text-left font-semibold text-slate-600 px-3 py-2 border-b border-slate-200">内容の内訳</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-white">
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">口評（口コミまとめサイト）</td>
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">良い口コミ8件・悪い口コミ2件</td>
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">良い口コミ8件のうちエアコンに関するものは2件（取り付けの相見積もりで最安だった・深夜に連絡して翌朝ガス充填で改善）で、残る6件は換気扇交換（2件）・ブレーカー増設・漏電調査・アンテナのブースター工事（2件）です。悪い口コミ2件はX（旧Twitter）の投稿（2018年12月・2023年7月）で、対応の遅さ・請求額・説明への不満です。総合4.0/5.0は同サイト独自の評価で、算出方法は示されていません</td>
+                    </tr>
+                    <tr className="bg-slate-50">
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">Yahoo!知恵袋（2024年9月17日投稿）</td>
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">質問1件・回答7件（閲覧2,120回）</td>
+                      <td className="align-top text-slate-700 px-3 py-2 border-b border-slate-100">ガス補充の口頭見積もり約2〜3万円に対し支払いは約4万円で、明細は後日求めても「ガスチャージ」の1行のみだったという質問です。回答では、ガス漏れの場合は漏れ箇所の修理を先に行うべきという指摘が複数あります</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-xs text-slate-400">※件数は各ページに掲載されている口コミ・回答を当サイトで数えたものです（2026年11月22日時点）。口評の良い口コミの多くはエアコン以外の電気工事に関するもので、エアコン修理の評価として読める件数は限られています。</p>
+            </div>
             <p className="mt-4 leading-8 text-slate-700">
               否定的な傾向はいずれも「金額の認識の相違」に関するものです。完全見積制のサービスのため、<strong className="font-semibold">作業前に総額見積もりを書面（またはスマートフォンの写真）で残す</strong>ことで、多くのトラブルを防ぐことができます。
             </p>
@@ -480,6 +515,7 @@ export default function Page() {
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">保証の期間と範囲</strong>：同一症状の再発は無料保証が公式の基本方針ですが、期間は工事内容・加盟店により異なるため、具体的な日数と対象範囲を確認します</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">支払い方法</strong>：訪問する加盟店がカードに対応しているかを確認します(VISA・マスター・JCB対応でも一部加盟店は不可)</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">依頼後キャンセルの扱い</strong>：無料と明記されているのは施工依頼前のみです。承諾後に取りやめた場合の費用を事前に確認します</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">ガス補充の場合の明細</strong>：冷媒ガスの種類と補充量、漏れ箇所の点検・修理を行うかどうかを見積もりと領収書に書いてもらいます。知恵袋にはガス補充後に明細が出なかったという質問（2024年9月）があり、ガス漏れが原因であれば補充だけでは再発するおそれがあります</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">相場との照合</strong>：提示額を<Link href="/cost/repair-price/" className="text-sky-700 underline">症状別相場</Link>と比べ、大きく外れる場合は説明を求めます。急ぎでない場合は相見積もりをおすすめします</span></li>
             </ul>
           </section>
@@ -492,6 +528,9 @@ export default function Page() {
             <ul className="mt-4 space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">大阪市住吉区の株式会社テイクサービス(take-service.jp)</strong>：ボディコーティング・板金・車内クリーニングなどカーケア専門の会社(法人番号2120001110791)。エアコン修理のテイクサービスとは別会社です</span></li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">東京都練馬区西大泉の株式会社テイクサービス</strong>：管工事・冷暖房設備工事を手がける建設業の会社で、こちらも別会社です</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">転職会議の「株式会社テイクサービス」の社員口コミ</strong>：本社所在地は大阪府大阪市の苅田（代表者名 小泉弘）と掲載されており、エアコン修理受付のテイクサービス（株式会社アシスト）の口コミではありません（2026年11月22日確認）</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">運営会社の所在地の表記</strong>：口コミまとめサイトの一部では株式会社アシストの所在地が千葉県松戸市と記載されていますが、公式の会社概要の事業所は東京都中央区銀座4-14-15です（2026年11月22日確認）。最新の情報は公式の会社概要でご確認ください</span></li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span><span><strong className="font-semibold">take-service.com（【電気の工事屋】）</strong>：「テイクサービス」で検索すると表示される電気工事全般の受付サイトです。ページ上の名称は【電気の工事屋】で、エアコン修理の公式LP（テイクサービス・エアコン）とは別のサイトです。換気扇・漏電・アンテナ等の口コミはこちらのサービスに関するものである可能性があります（2026年11月22日確認）</span></li>
             </ul>
             <p className="mt-4 leading-8 text-slate-700">
               本記事で紹介しているエアコン修理受付のテイクサービスは、株式会社アシスト(東京都中央区)が運営する紹介型サービスです。評判を調べる際は、運営会社名とサービス内容(エアコン修理の受付・紹介)が一致しているかを確認し、同名の別会社の評価と取り違えないよう注意してください。
