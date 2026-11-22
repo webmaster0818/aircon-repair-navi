@@ -197,6 +197,7 @@ export default function InstallationTroublePage() {
             <h2 className="text-xl font-bold text-slate-900 mb-4">関連ガイド</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
+                { href: "/cost/installation/", label: "エアコン取り付け費用の目安（量販店4社）" },
                 { href: "/guide/water-leak/", label: "エアコンの水漏れの対処" },
                 { href: "/guide/repair-scam/", label: "エアコン修理の詐欺・高額請求の対策" },
                 { href: "/guide/where-to-repair/", label: "エアコン修理の依頼先の選び方" },

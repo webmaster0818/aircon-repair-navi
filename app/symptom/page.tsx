@@ -129,6 +129,26 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">エアコンクリーニングの失敗を防ぐ方法</span>
               <span className="block text-xs text-gray-500">国民生活センターの相談事例と業者5社の補償規定</span>
             </Link>
+            <Link href="/guide/error-code-hitachi/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">日立(白くまくん)のランプ点滅の意味</span>
+              <span className="block text-xs text-gray-500">タイマーランプ・みはりランプの回数別一覧と公式の修理料金</span>
+            </Link>
+            <Link href="/guide/error-code-toshiba/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">東芝(大清快)のエラー表示の意味</span>
+              <span className="block text-xs text-gray-500">公式が公表している表示と故障ではない点滅</span>
+            </Link>
+            <Link href="/guide/error-code-panasonic/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">パナソニック(エオリア)のエラーコード一覧</span>
+              <span className="block text-xs text-gray-500">H11・F91など公式FAQの18コードと確認方法</span>
+            </Link>
+            <Link href="/guide/error-code-sharp/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">シャープのエラー番号の確認方法</span>
+              <span className="block text-xs text-gray-500">ランプ点滅の読み方と公式の故障診断ナビの内容</span>
+            </Link>
+            <Link href="/cost/installation/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコン取り付け費用の目安</span>
+              <span className="block text-xs text-gray-500">量販店4社の標準工事費・追加工事費と総額試算</span>
+            </Link>
             <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
               <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>

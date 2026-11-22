@@ -55,6 +55,10 @@ const guideMeta: Record<string, { href: string; label: string }> = {
   "power-not-on": { href: "/guide/power-not-on/", label: "電源が入らないときの確認手順とリセット方法" },
   "error-code-daikin": { href: "/guide/error-code-daikin/", label: "ダイキンのエラーコード一覧" },
   "error-code-mitsubishi": { href: "/guide/error-code-mitsubishi/", label: "三菱(霧ヶ峰)のランプ点滅・エラー表示の意味" },
+  "error-code-hitachi": { href: "/guide/error-code-hitachi/", label: "日立(白くまくん)のランプ点滅の意味" },
+  "error-code-toshiba": { href: "/guide/error-code-toshiba/", label: "東芝(大清快)のエラー表示の意味" },
+  "error-code-panasonic": { href: "/guide/error-code-panasonic/", label: "パナソニック(エオリア)のエラーコード一覧" },
+  "error-code-sharp": { href: "/guide/error-code-sharp/", label: "シャープのエラー番号の確認方法と意味" },
 };
 
 export async function generateStaticParams() {

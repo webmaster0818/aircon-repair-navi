@@ -635,7 +635,11 @@
     "relatedGuides": [
       "repair-cost",
       "error-code-daikin",
-      "error-code-mitsubishi"
+      "error-code-mitsubishi",
+      "error-code-hitachi",
+      "error-code-toshiba",
+      "error-code-panasonic",
+      "error-code-sharp"
     ],
     "relatedSymptoms": [
       "not-starting",
