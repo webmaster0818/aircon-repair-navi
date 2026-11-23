@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   title:
     "エアコンクリーニング清風（せいふう）の評判・料金｜第三者の口コミはエキテン1件・運営会社と対応エリア【2026年11月】",
   description:
-    "エアコンクリーニング専門店「清風」の評判（第三者の口コミはエキテン1件）、税込・定額の料金、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
+    "エアコンクリーニング専門店「清風」の評判（ユアマイスター2店舗で計24件・エキテン1件）、税込・定額の料金、対応エリア、受付時間、メリットと利用前の注意点を中立的な立場で解説します。",
   alternates: { canonical: "/company/seifu-ac" },
 };
 
-const UPDATED = "2026年11月17日";
+const UPDATED = "2026年11月24日";
 
 const toc = [
   { id: "summary", label: "エアコンクリーニング清風とは" },
@@ -87,7 +87,7 @@ const articleJsonLd = {
   headline:
     "エアコンクリーニング清風（せいふう）の評判・料金｜第三者の口コミはエキテン1件・運営会社と対応エリア【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-17",
+  dateModified: "2026-11-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -128,7 +128,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-17">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -216,7 +216,7 @@ export default function Page() {
               注意すべき点は<strong className="font-semibold">損害保険・作業保証についての記載</strong>です。2026年10月14日時点で、公式サイトのトップページ・料金ページ・会社概要のいずれにも、損害賠償保険や作業後の保証の記載は見つかりませんでした。記載がないことは「保険に入っていない」という意味ではありませんが、万一の破損や水漏れに備えて、<strong className="font-semibold">予約の電話で保険加入の有無と作業後の連絡期限を確認しておく</strong>ことをおすすめします。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              口コミについては、店舗情報サイトのエキテンに「エアコンクリーニングの清風（エアコンクリーニングノセイフウ）」の店舗ページがあり、2026年10月23日に直接確認したところ<strong className="font-semibold">評点3.28・口コミ1件</strong>でした。その1件（2024年9月24日投稿・「丁寧」の項目4.50）は、掃除後に冷えが良くなったことへの満足と、翌年も依頼したいという好意的な内容です。第三者サイトの口コミは現時点でこの1件のみであり、件数から評判を判断することはできません。なお、エキテンの料金帯表示（8,624円〜30,800円）は公式サイトの料金表（壁掛けスタンダード13,200円〜）と一致しないため、料金は公式サイトの表示でご確認ください。なお「清風」は学校名など同じ名称の団体が多いため、口コミを検索する際は「清風 エアコンクリーニング」と業種を加えると、別の団体の情報が混在しにくくなります。
+              口コミについては、店舗情報サイトのエキテンに「エアコンクリーニングの清風（エアコンクリーニングノセイフウ）」の店舗ページがあり、2026年10月23日に直接確認したところ<strong className="font-semibold">評点3.28・口コミ1件</strong>でした。その1件（2024年9月24日投稿・「丁寧」の項目4.50）は、掃除後に冷えが良くなったことへの満足と、翌年も依頼したいという好意的な内容です。このほか、出張サービスの予約サイト「ユアマイスター」にも清風（大阪市中央区南船場・「年間実績3万台」の表記で出店）と「エアコンクリーニング清風 東京支店」の店舗ページがあり、2026年11月24日の確認で計24件の口コミが掲載されていました（詳しくは下の「口コミ・評判の確認結果」）。ただし投稿は2017〜2020年のもので、最近の評判を示すものではありません。なお、エキテンの料金帯表示（8,624円〜30,800円）は公式サイトの料金表（壁掛けスタンダード13,200円〜）と一致しないため、料金は公式サイトの表示でご確認ください。なお「清風」は学校名など同じ名称の団体が多いため、口コミを検索する際は「清風 エアコンクリーニング」と業種を加えると、別の団体の情報が混在しにくくなります。
             </p>
             <p className="mt-3 text-xs text-slate-400">出典：エアコンクリーニング清風 公式サイト（料金表・会社概要、2026年10月14日確認）／<a href="https://www.ekiten.jp/shop_18681397/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">エキテン 清風の店舗ページ</a>（2026年10月23日確認）。</p>
           </section>
@@ -260,7 +260,9 @@ export default function Page() {
                 <tbody>
                   {[
                     ["エキテン（第三者）", "評点3.28・口コミ1件（2024年9月24日投稿・冷えが良くなったことへの満足と、翌年も依頼したいという内容）。2026年10月23日確認。11月17日は同サイトがアクセスを制限したため再確認できていません"],
-                    ["みん評・Yahoo!知恵袋・くらしのマーケット", "清風（エアコンクリーニング）の口コミは確認できませんでした（2026年8月1日確認）"],
+                    ["ユアマイスター「清風」（第三者・大阪市中央区南船場の店舗）", "総合評価4.40・口コミ15件。このうち壁掛型エアコンクリーニングの14件の投稿日は2017年11月〜2020年6月で、2021年以降の投稿はありません（2026年11月24日確認）"],
+                    ["ユアマイスター「エアコンクリーニング清風 東京支店」（第三者）", "評価4.4・口コミ9件。投稿日はすべて2018年6月〜8月です（2026年11月24日確認）"],
+                    ["みん評・Yahoo!知恵袋・くらしのマーケット", "清風（エアコンクリーニング）の口コミは確認できませんでした（2026年8月1日確認。くらしのマーケットの「清風屋」は名称が異なる別の店舗です）"],
                     ["公式サイト", "トップページ・メニュー・ご利用ガイドに、利用者の声や口コミの掲載はありませんでした（2026年11月17日確認）"],
                   ].map(([k, v], i) => (
                     <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
@@ -272,9 +274,9 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              件数を確認できた第三者の口コミは1件のみのため、当サイトでは清風の評判の傾向を判断していません。申し込み前に、Googleマップなどで最新の口コミをあわせてご確認ください。以前このページに掲載していた「評価の傾向」（2026年7月19日調査）は、件数と出典を確認できなかったため削除しました。
+              件数を確認できた第三者の口コミはユアマイスターの計24件とエキテンの1件です。ただしユアマイスターの口コミは2017〜2020年の投稿で、現在の担当者・料金・サービス内容と同じとは限らないため、当サイトではこれらから現在の評判の傾向を判断していません。申し込み前に、Googleマップなどで最新の口コミをあわせてご確認ください。以前このページに掲載していた「評価の傾向」（2026年7月19日調査）は、件数と出典を確認できなかったため削除しました。
             </p>
-            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://www.ekiten.jp/shop_18681397/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">エキテン 清風の店舗ページ</a>（2026年10月23日確認）／<a href="https://seifu-ac.jp/" rel="noopener" target="_blank" className="underline hover:text-sky-700">エアコンクリーニング清風 公式サイト</a>（2026年11月17日確認）</p>
+            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://www.ekiten.jp/shop_18681397/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">エキテン 清風の店舗ページ</a>（2026年10月23日確認）／<a href="https://yourmystar.jp/suppliers/seifu/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">ユアマイスター 清風の店舗ページ</a>・<a href="https://yourmystar.jp/suppliers/seifutokyo/reviews/" rel="nofollow noopener" target="_blank" className="underline hover:text-sky-700">同 東京支店の口コミ</a>（2026年11月24日確認）／<a href="https://seifu-ac.jp/" rel="noopener" target="_blank" className="underline hover:text-sky-700">エアコンクリーニング清風 公式サイト</a>（2026年11月17日確認）</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
