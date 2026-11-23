@@ -58,6 +58,10 @@ const guideMeta: Record<string, { href: string; label: string }> = {
   "error-code-hitachi": { href: "/guide/error-code-hitachi/", label: "日立(白くまくん)のランプ点滅の意味" },
   "error-code-toshiba": { href: "/guide/error-code-toshiba/", label: "東芝(大清快)のエラー表示の意味" },
   "error-code-panasonic": { href: "/guide/error-code-panasonic/", label: "パナソニック(エオリア)のエラーコード一覧" },
+  "weak-airflow": { href: "/guide/weak-airflow/", label: "エアコンの風が弱い原因（メーカー7社の確認項目）" },
+  "compressor-failure": { href: "/guide/compressor-failure/", label: "コンプレッサー（圧縮機）の故障と修理料金" },
+  "broken-heat-measures": { href: "/guide/broken-heat-measures/", label: "エアコンが壊れたときの暑さ対策" },
+  "fire-risk": { href: "/guide/fire-risk/", label: "エアコンの発火・火災の原因と予防" },
   "error-code-sharp": { href: "/guide/error-code-sharp/", label: "シャープのエラー番号の確認方法と意味" },
 };
 

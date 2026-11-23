@@ -75,7 +75,10 @@
     "relatedGuides": [
       "repair-cost",
       "heating-not-working",
-      "repair-days"
+      "repair-days",
+      "weak-airflow",
+      "compressor-failure",
+      "broken-heat-measures"
     ],
     "relatedSymptoms": [
       "gas-leak",
@@ -397,7 +400,8 @@
     "relatedGuides": [
       "repair-cost",
       "smell",
-      "cleaning-fee"
+      "cleaning-fee",
+      "fire-risk"
     ],
     "relatedSymptoms": [
       "water-leak",

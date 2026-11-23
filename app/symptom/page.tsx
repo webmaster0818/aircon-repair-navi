@@ -149,6 +149,26 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">エアコン取り付け費用の目安</span>
               <span className="block text-xs text-gray-500">量販店4社の標準工事費・追加工事費と総額試算</span>
             </Link>
+            <Link href="/guide/weak-airflow/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンの風が弱い原因</span>
+              <span className="block text-xs text-gray-500">メーカー7社の確認項目と修理が必要な場合</span>
+            </Link>
+            <Link href="/guide/compressor-failure/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">コンプレッサー（圧縮機）の故障</span>
+              <span className="block text-xs text-gray-500">症状の見分け方とメーカー5社の修理料金</span>
+            </Link>
+            <Link href="/guide/fire-risk/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンの発火・火災の原因と予防</span>
+              <span className="block text-xs text-gray-500">NITEの事故データと異常時の対処</span>
+            </Link>
+            <Link href="/guide/broken-heat-measures/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">エアコンが壊れたときの暑さ対策</span>
+              <span className="block text-xs text-gray-500">修理までの過ごし方と救急車を呼ぶ目安</span>
+            </Link>
+            <Link href="/guide/online-purchase-installation/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">通販で買う場合の取り付け工事</span>
+              <span className="block text-xs text-gray-500">通販4社の標準工事の範囲と追加料金の払い方</span>
+            </Link>
             <Link href="/guide/parts-names/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコンの部品の名称と役割</span>
               <span className="block text-xs text-gray-500">室内機・室外機の各部とメーカー別の呼び方</span>

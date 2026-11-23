@@ -260,6 +260,7 @@ export default function InstallationCostPage() {
             <div className="grid sm:grid-cols-2 gap-3">
               {[
                 { href: "/guide/installation-trouble/", label: "取り付け工事のトラブルの対処" },
+                { href: "/guide/online-purchase-installation/", label: "通販で買う場合の取り付け工事" },
                 { href: "/cost/replace-vs-repair/", label: "修理と買い替えの比較" },
                 { href: "/cost/repair-price/", label: "エアコン修理費用の相場" },
                 { href: "/guide/lifespan/", label: "エアコンの寿命と買い替えの判断" },
