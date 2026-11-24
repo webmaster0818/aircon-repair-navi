@@ -6,13 +6,13 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "ベアーズ（ハッピーベアーズ）のエアコンクリーニングの口コミ・評判｜料金・オプション・対応エリアを調査【2026年11月】",
   description:
-    "エアコンクリーニング「ベアーズ」の口コミ・評判をまとめています。みん評のエアコンクリーニングの口コミ34件の内訳と傾向、料金の目安、対応エリアや受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
+    "ベアーズ（公式サイト happy-bears.com・通称ハッピーベアーズ）のエアコンクリーニングの口コミ34件の傾向、料金14,190円〜とオプション4種、作業時間、対応39都道府県を公式で確認してまとめています。",
   alternates: { canonical: "/company/happy-bears" },
 };
 
-const UPDATED = "2026年11月13日";
+const UPDATED = "2026年11月24日";
 
 const toc = [
   { id: "summary", label: "ベアーズとは" },
@@ -34,11 +34,11 @@ const faqs = [
   },
   {
     q: "対応エリアはどこですか？",
-    a: "公式のエアコンクリーニングのページの「サービス提供エリア」に掲載されているのは39都道府県（一部地域）です。青森・岩手・秋田・新潟・富山・石川・福井・岡山は掲載されていません（2026年10月24日・公式確認）。公式トップページの説明文には「全国5大都市を中心にサービスエリアを全国に拡大中」とあります。地域によって対応状況が変わるため、お申し込み時に対応可否と空き状況をご確認ください。",
+    a: "公式のエアコンクリーニングのページの「サービス提供エリア」に掲載されているのは39都道府県（一部地域）です。青森・岩手・秋田・新潟・富山・石川・福井・岡山は掲載されていません（2026年11月24日・公式で再確認）。公式トップページの説明文には「全国5大都市を中心にサービスエリアを全国に拡大中」とあります。地域によって対応状況が変わるため、お申し込み時に対応可否と空き状況をご確認ください。",
   },
   {
     q: "料金はどのくらいですか？",
-    a: "公式サイトでは、家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認）。台数やオプションによって総額は変わります。標準作業時間は壁掛け1台につき約1〜2時間とされています。正確な金額は公式サイトまたはお申し込み時にご確認ください。",
+    a: "公式サイトでは、家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認、11月24日に再確認し変更なし）。台数やオプションによって総額は変わります。作業時間の目安は、通常タイプが約120分、お掃除機能付きが約180分と案内されています（2026年11月24日・公式確認）。正確な金額は公式サイトまたはお申し込み時にご確認ください。",
   },
   {
     q: "受付時間と連絡先を教えてください。",
@@ -54,9 +54,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ベアーズ(ハッピーベアーズ)の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "ベアーズ（ハッピーベアーズ）のエアコンクリーニングの口コミ・評判｜料金・オプション・対応エリアを調査【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-13",
+  dateModified: "2026-11-24",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,14 +90,14 @@ export default function Page() {
             エアコンクリーニング業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ベアーズ(ハッピーベアーズ)の口コミ・評判
+            ベアーズ（ハッピーベアーズ）のエアコンクリーニングの口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを調査【2026年最新】
+            料金・オプション・対応エリアを調査【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-24">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -108,11 +108,14 @@ export default function Page() {
         <div className="max-w-3xl mx-auto px-5 pt-8">
           <p className="text-[1.05rem] leading-8 text-slate-700">
             家事代行でも知られる大手で、研修を受けたスタッフがエアコンクリーニングを行うサービスとして候補の一つになるのが
-            <strong className="font-semibold text-slate-900">ベアーズ(ハッピーベアーズ)</strong>
+            <strong className="font-semibold text-slate-900">ベアーズ（ハッピーベアーズ）</strong>
             です。本記事では、39都道府県の一部地域でサービスを提供するベアーズについて、みん評に投稿されたエアコンクリーニングの口コミ34件の内訳と傾向、料金の目安、対応エリアや受付体制、メリット・注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
             ※ベアーズは故障の「修理」ではなく、内部を分解洗浄する「エアコンクリーニング」のサービスです。本記事の口コミに関する記載は、2026年11月13日にみん評のエアコンクリーニングの口コミ34件をすべて読み、当サイトが分類した傾向の要約です。料金や対応内容は時期・地域により変わるため、最新の情報はお申し込み時にご確認ください。
+          </p>
+          <p className="mt-3 text-sm leading-7 text-slate-500">
+            ※「ハッピーベアーズ」は、ベアーズの公式サイトのアドレス（www.happy-bears.com）に由来し、検索で使われることのある呼び名で、サービスの運営会社は株式会社ベアーズです（公式サイトの表記を2026年11月24日に確認）。「ハッピーデンキ」「ハッピークリーン」など、名前の似た別の事業者とは関係ありません。
           </p>
         </div>
 
@@ -134,7 +137,7 @@ export default function Page() {
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ベアーズとは</h2>
             <p className="leading-8 text-slate-700">
-              ベアーズは、株式会社ベアーズが運営する家事代行・ハウスクリーニングのサービスです。エアコンクリーニングでは、研修を受けたスタッフが内部を分解し、高圧洗浄でカビ・ホコリ・ダニを除去します。標準作業時間は壁掛け1台につき約1〜2時間とされています。
+              ベアーズは、株式会社ベアーズが運営する家事代行・ハウスクリーニングのサービスです。エアコンクリーニングでは、研修を受けたスタッフが内部を分解し、高圧洗浄でカビ・ホコリ・ダニを除去します。作業時間の目安は、壁掛けの通常タイプで約120分、お掃除機能付きで約180分と案内されています（2026年11月24日・公式確認）。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               累計サービス実績は250万件超を公表しており、サービス終了後30分以内のフォローコールや手直し保証など、アフター対応の体制を掲げている点が特徴です。大手の実績を重視する方に適したサービスです。
@@ -150,7 +153,7 @@ export default function Page() {
                     ["サービス名", "ベアーズ(Happy Bears)"],
                     ["運営会社", "株式会社ベアーズ"],
                     ["サービス内容", "エアコンクリーニング／ハウスクリーニング／家事代行 等"],
-                    ["対応エリア", "39都道府県の一部地域（エアコンクリーニングのサービス提供エリア。青森・岩手・秋田・新潟・富山・石川・福井・岡山は掲載なし）（2026年10月24日・公式確認）"],
+                    ["対応エリア", "39都道府県の一部地域（エアコンクリーニングのサービス提供エリア。青森・岩手・秋田・新潟・富山・石川・福井・岡山は掲載なし）（2026年11月24日・公式で再確認）"],
                     ["受付時間", "9:00〜18:00(年中無休)"],
                     ["施工内容", "分解洗浄による高圧洗浄／研修を受けたスタッフが対応"],
                     ["アフター", "終了後30分以内のフォローコール／手直し保証(公称)"],
@@ -264,12 +267,27 @@ export default function Page() {
           <section id="price" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">料金の目安</h2>
             <p className="leading-8 text-slate-700">
-              ベアーズのエアコンクリーニングの料金は、公式サイトで家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認）。台数や、室外機・防カビコートなどのオプションによって総額は変わります。標準作業時間は壁掛け1台につき約1〜2時間とされています。
+              ベアーズのエアコンクリーニングの料金は、公式サイトで家庭用壁掛けエアコンの通常タイプが14,190円（税込）、お掃除機能付きが21,780円と案内されています（2026年10月15日・公式確認、11月24日に再確認し変更なし）。作業時間の目安は通常タイプが約120分、お掃除機能付きが約180分です。
+            </p>
+            <div className="mt-5 overflow-x-auto">
+              <table className="w-full text-sm border border-slate-200">
+                <caption className="text-left text-xs text-slate-500 mb-2">ベアーズ公式のエアコンクリーニングのオプション料金（税込・2026年11月24日確認）</caption>
+                <thead className="bg-slate-50"><tr><th className="border border-slate-200 px-3 py-2 text-left">オプション</th><th className="border border-slate-200 px-3 py-2 text-left">料金</th><th className="border border-slate-200 px-3 py-2 text-left">公式の説明の要点</th></tr></thead>
+                <tbody>
+                  <tr><td className="border border-slate-200 px-3 py-2">室外機</td><td className="border border-slate-200 px-3 py-2">+5,500円</td><td className="border border-slate-200 px-3 py-2">砂埃などの目詰まりを清掃し、効きと消費電力の改善を図る</td></tr>
+                  <tr><td className="border border-slate-200 px-3 py-2">汚れ防止コーティング</td><td className="border border-slate-200 px-3 py-2">+2,200円</td><td className="border border-slate-200 px-3 py-2">熱交換器に抗菌効果のあるコーティング剤を塗布</td></tr>
+                  <tr><td className="border border-slate-200 px-3 py-2">防カビコーティング</td><td className="border border-slate-200 px-3 py-2">+5,500円</td><td className="border border-slate-200 px-3 py-2">熱交換器に防菌・防カビ効果のあるコーティング剤を塗布</td></tr>
+                  <tr><td className="border border-slate-200 px-3 py-2">ダクトキャップ</td><td className="border border-slate-200 px-3 py-2">+1,100円</td><td className="border border-slate-200 px-3 py-2">排水ホース（ドレンホース）の先にキャップを付け、害虫の侵入を防ぐ</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              公式の料金表をもとにした計算例として、通常タイプ1台に室外機と防カビコーティングを付けると、14,190円＋5,500円＋5,500円＝25,190円（税込）になります。駐車場がない住宅では、有料駐車場の料金の一部（1,018円〜2,037円）を負担する旨も公式に記載されています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
               お掃除機能付きは作業内容が変わり料金も上がるため、お持ちの機種を伝えたうえで、お申し込み時に最新の料金と総額をご確認ください。
             </p>
-            <p className="mt-3 text-xs text-slate-400">※料金は2026年10月15日時点の公式サイトの表示です。変更される場合があるため、最新の金額は公式サイト・お申し込み時にご確認ください。</p>
+            <p className="mt-3 text-xs text-slate-400">※料金は2026年11月24日時点の公式サイト（www.happy-bears.com/houseclean/aircon/）の表示です。変更される場合があるため、最新の金額は公式サイト・お申し込み時にご確認ください。</p>
           </section>
 
           <section id="flow" className="scroll-mt-24">
