@@ -63,6 +63,8 @@ const guideMeta: Record<string, { href: string; label: string }> = {
   "broken-heat-measures": { href: "/guide/broken-heat-measures/", label: "エアコンが壊れたときの暑さ対策" },
   "fire-risk": { href: "/guide/fire-risk/", label: "エアコンの発火・火災の原因と予防" },
   "error-code-sharp": { href: "/guide/error-code-sharp/", label: "シャープのエラー番号の確認方法と意味" },
+  "error-code-fujitsu": { href: "/guide/error-code-fujitsu/", label: "富士通（ゼネラル）のランプ点滅の意味" },
+  "iris-ohyama-repair": { href: "/guide/iris-ohyama-repair/", label: "アイリスオーヤマのエアコン修理とエラーコード" },
 };
 
 export async function generateStaticParams() {

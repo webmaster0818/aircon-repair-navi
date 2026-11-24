@@ -145,6 +145,14 @@ export default function SymptomHubPage() {
               <span className="block font-bold text-slate-900 mb-1">シャープのエラー番号の確認方法</span>
               <span className="block text-xs text-gray-500">ランプ点滅の読み方と公式の故障診断ナビの内容</span>
             </Link>
+            <Link href="/guide/error-code-fujitsu/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">富士通（ゼネラル）のランプ点滅の意味</span>
+              <span className="block text-xs text-gray-500">点滅回数の一覧と形名からの生産年度の調べ方</span>
+            </Link>
+            <Link href="/guide/iris-ohyama-repair/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
+              <span className="block font-bold text-slate-900 mb-1">アイリスオーヤマのエアコン修理</span>
+              <span className="block text-xs text-gray-500">申し込み方法・訪問点検の費用・エラーコード</span>
+            </Link>
             <Link href="/cost/installation/" className="block bg-white rounded-xl p-5 border border-gray-100 shadow-sm hover:border-sky-300 hover:shadow-md transition-all">
               <span className="block font-bold text-slate-900 mb-1">エアコン取り付け費用の目安</span>
               <span className="block text-xs text-gray-500">量販店4社の標準工事費・追加工事費と総額試算</span>
