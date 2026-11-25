@@ -6,17 +6,18 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "おそうじ革命の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "おそうじ革命の口コミ・評判｜電話番号0120-963-933・予約とキャンセル料・料金を調査【2026年11月】",
   description:
-    "エアコンクリーニング「おそうじ革命」の口コミ・評判をまとめています。みん評の口コミ全件から読み取れる好評・不満の傾向、料金の目安、対応エリアと受付時間、メリット・ご利用前の注意点を中立的な立場でご説明します。",
+    "おそうじ革命の口コミ・評判を、みん評の全64件から分類しています。本部の電話番号0120-963-933と問い合わせフォーム、キャンセル料（前日50％・当日100％）、料金の目安も公式で確認しました。",
   alternates: { canonical: "/company/osouji-kakumei" },
 };
 
-const UPDATED = "2026年11月12日";
+const UPDATED = "2026年11月25日";
 
 const toc = [
   { id: "summary", label: "おそうじ革命とは" },
   { id: "company", label: "運営会社・基本情報" },
+  { id: "contact", label: "電話番号・問い合わせ方法とキャンセル料" },
   { id: "good", label: "口コミ・評判の傾向" },
   { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
@@ -46,7 +47,11 @@ const faqs = [
   },
   {
     q: "受付時間と連絡先を教えてください。",
-    a: "公式サイトでは電話番号0120-963-933が案内されています。本部所在地は東京都港区です。公式FAQでは、年末年始を除き土日祝日も営業しており、スケジュールに空きがあれば当日の訪問も可能とされています（2026年10月15日・公式確認）。予約の取りやすさは時期によって異なるため、お申し込み時にご確認ください。",
+    a: "公式サイトでは、おそうじ革命本部の電話番号として0120-963-933（フリーダイヤル）が案内されています。本部所在地は東京都港区です。電話の受付時間は、公式サイトのフッター・お問い合わせページ・よくあるご質問のいずれにも記載がありませんでした（2026年11月25日・公式確認）。公式FAQでは、年末年始を除き土日祝日も営業しており、スケジュールに空きがあれば当日の訪問も可能とされています。電話のほか、公式サイトのお問い合わせフォームからも依頼できます。",
+  },
+  {
+    q: "キャンセル料はかかりますか？",
+    a: "公式FAQでは、作業日の2日前までのキャンセルは無料、前日のキャンセルは作業料金の50％、当日のキャンセルは100％のキャンセル料がかかると案内されています（2026年11月25日・公式確認）。日程が変わる可能性がある場合は、2日前までに連絡することをおすすめします。",
   },
 ];
 
@@ -54,9 +59,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "おそうじ革命の口コミ・評判｜料金・対応エリアを調査【2026年最新】",
+    "おそうじ革命の口コミ・評判｜電話番号0120-963-933・予約とキャンセル料・料金を調査【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-12",
+  dateModified: "2026-11-25",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -92,12 +97,12 @@ export default function Page() {
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
             おそうじ革命の口コミ・評判
             <br className="hidden md:block" />
-            料金・対応エリアを調査【2026年最新】
+            電話番号・予約とキャンセル料・料金を調査【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-12">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-25">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -166,6 +171,39 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-3 text-xs text-slate-400">出典：公式サイトの掲載情報。料金・保証内容は変更される場合があります。</p>
+          </section>
+
+          <section id="contact" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">電話番号・問い合わせ方法とキャンセル料</h2>
+            <p className="leading-8 text-slate-700">
+              「0120-963-933」は、公式サイトのヘッダーとフッターに「おそうじ革命本部」の電話番号として掲載されているフリーダイヤルです。当サイトが2026年11月25日に公式サイトのトップページ・お問い合わせページ・よくあるご質問を確認した内容を、以下の表にまとめました。
+            </p>
+            <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <tbody>
+                  {[
+                    ["電話番号", "0120-963-933（おそうじ革命本部・フリーダイヤル）"],
+                    ["電話の受付時間", "公式サイトに記載なし（トップ・お問い合わせ・よくあるご質問を確認）"],
+                    ["Webからの依頼", "公式サイトのお問い合わせフォーム。エアコンの場合は型式番号の入力欄があり、型式番号がわかる写真（7MBまで）を添付できます"],
+                    ["営業日", "年末年始を除き土日祝日も営業。土日祝日も料金は変わりません"],
+                    ["予約できる時期", "電話・メールで依頼した日から半年先が目安。空きがあれば翌日・当日の訪問も可能"],
+                    ["予約が取りやすい時期", "比較的9〜10月と1〜2月（公式FAQの記載）"],
+                    ["作業前日の連絡", "作業日前日などの事前連絡はしていない（公式FAQの記載）"],
+                    ["キャンセル料", "2日前まで無料／前日は作業料金の50％／当日は100％"],
+                    ["来訪するスタッフ", "通常はお住まいの近隣店舗のスタッフ。混雑状況などにより近隣以外の店舗が対応する場合あり"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 w-1/3 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              みん評の口コミでは、「問い合わせ・予約に返信が来ない」「予約が確定しない」という内容が不満の中で最も多く見られました（下の「口コミ・評判の傾向」を参照）。公式サイトのお問い合わせページには、当社からのメールが届かない場合は迷惑メールフォルダ等を確認するよう注記があります。フォームで依頼した後に返信がない場合は、迷惑メールフォルダを確認したうえで、本部の電話番号へ問い合わせる方法が考えられます。また、作業前日の連絡は行わない運用のため、予約日時は確定時の連絡内容で控えておくと安心です。
+            </p>
+            <p className="mt-3 text-xs text-slate-400">出典：<a href="https://www.osoujikakumei.jp/faq/" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">おそうじ革命「よくあるご質問」</a>・<a href="https://www.osoujikakumei.jp/contact/" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">お問い合わせ</a>（いずれも2026年11月25日確認）。受付時間・キャンセル規定は変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
