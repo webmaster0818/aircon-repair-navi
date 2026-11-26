@@ -6,18 +6,19 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "セーフリー（Safely）のエアコン修理の評判｜公式の口コミ134件の内訳と審査の仕組み【2026年11月】",
+    "セーフリー（Safely）の評判・口コミ｜公式134件の内訳・アプリ評価・運営会社とおすすめ順の決め方【2026年11月】",
   description:
-    "セーフリー（Safely）のエアコン設置・修理カテゴリの口コミは134件・平均4.3です（公式・2026年11月15日確認）。★の内訳、第三者の口コミの有無、写真付き口コミへの謝礼、審査・監視の仕組みと注意点をまとめています。",
+    "セーフリー（Safely）のエアコン設置・修理カテゴリの口コミは134件・平均4.3、App Storeのアプリ評価は★5.0（6件）です（2026年11月26日確認）。★の内訳、運営会社（株式会社SAFELY・2019年設立）、おすすめ順の決め方、名前の似たサービスとの違い、注意点をまとめています。",
   alternates: { canonical: "/company/safely" },
 };
 
-const UPDATED = "2026年11月15日";
+const UPDATED = "2026年11月26日";
 
 const toc = [
   { id: "summary", label: "セーフリーとは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
+  { id: "ranking", label: "おすすめ順の決め方・似た名前のサービス" },
   { id: "bad", label: "ご利用前の注意点" },
   { id: "merit", label: "メリット・デメリット" },
   { id: "fit", label: "向いている方・向いていない方" },
@@ -28,6 +29,14 @@ const toc = [
 ];
 
 const faqs = [
+  {
+    q: "セーフリーの評判はどうですか？",
+    a: "公式のエアコン設置・修理カテゴリの口コミは134件・平均4.3（★1は0件表示）、App Storeのアプリ評価は★5.0・6件です（2026年11月26日確認）。いずれも件数や集計元に限りがあり、みん評などの第三者サイトに口コミページは見つかりませんでした。依頼先の事業者ごとの口コミと見積もり内容をあわせてご確認ください。",
+  },
+  {
+    q: "セーフリーの運営会社はどこですか？",
+    a: "株式会社SAFELY（東京都渋谷区富ケ谷・代表取締役 岡野健二・2019年4月設立・資本金500万円・従業員23人）です。2024年5月に株式会社ネットKENから社名を変更し、前身は「水道修理のセーフリー」です（会社概要・2026年11月26日確認）。",
+  },
   {
     q: "セーフリーは修理を直接行う業者ですか？",
     a: "セーフリーは修理を直接行う業者ではなく、暮らしのトラブルに対応する事業者を掲載し、口コミで比較できる「口コミ比較サービス」です（公式は「マッチングサービス」とも説明しています）。実際の修理は、掲載されている事業者が行います（2026年10月24日・公式確認）。",
@@ -54,9 +63,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "セーフリー（Safely）のエアコン修理の評判｜公式の口コミ134件の内訳と審査の仕組み【2026年11月】",
+    "セーフリー（Safely）の評判・口コミ｜公式134件の内訳・アプリ評価・運営会社とおすすめ順の決め方【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-11-15",
+  dateModified: "2026-11-26",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,14 +99,14 @@ export default function Page() {
             エアコン修理サービスレビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            セーフリーのエアコン修理の評判
+            セーフリーの評判・口コミ
             <br className="hidden md:block" />
-            公式の口コミ134件の内訳と審査の仕組み【2026年11月】
+            公式134件の内訳・アプリ評価・運営会社とおすすめ順の決め方【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-15">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-26">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -113,8 +122,21 @@ export default function Page() {
             について、掲載事業者の審査・監視体制、画像付き口コミで比較できる仕組み、利用者の評価に基づく掲載順、ご利用前の注意点を中立的な立場でまとめています。
           </p>
           <p className="mt-4 text-sm leading-7 text-slate-500">
-            ※口コミの件数・内訳はセーフリー公式（エアコン設置・修理カテゴリ）の表示を2026年11月15日に確認した内容です。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください。
+            ※口コミの件数・内訳はセーフリー公式（エアコン設置・修理カテゴリ）の表示を2026年11月26日に確認した内容です（件数・内訳は11月15日の確認時から変化なし）。料金や対応内容は依頼先の事業者・症状により変わるため、最新の情報は問い合わせ時にご確認ください。
           </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto px-5 mt-6">
+          <div className="rounded-2xl border border-sky-100 bg-sky-50/60 p-6">
+            <p className="font-bold text-sky-800 mb-3">結論：セーフリーの評判（2026年11月26日確認）</p>
+            <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
+              <li>・公式の「エアコン設置・修理」カテゴリの口コミは<strong>134件・平均4.3</strong>（★1は0件表示）。ただし運営会社の集計で、写真付き口コミには謝礼があります。</li>
+              <li>・App Storeのアプリ「セーフリー｜口コミ比較で安心の業者選び」は<strong>★5.0・評価6件</strong>。件数が少なく、参考程度の数字です。</li>
+              <li>・みん評などの第三者の口コミサイトには、セーフリーの口コミページは見つかりませんでした。</li>
+              <li>・運営は<strong>株式会社SAFELY</strong>（2019年4月設立・東京都渋谷区・従業員23人）。前身は「水道修理のセーフリー」です。</li>
+              <li>・検索で出てくる海外の「Safely」（safely.com など）や、クラウドカメラの「セーフィー（Safie）」は別のサービスです。</li>
+            </ul>
+          </div>
         </div>
 
         <nav aria-label="目次" className="max-w-3xl mx-auto px-5 mt-8">
@@ -149,7 +171,12 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "セーフリー（Safely）"],
-                    ["運営会社", "株式会社SAFELY"],
+                    ["運営会社", "株式会社SAFELY（2024年5月に株式会社ネットKENから社名変更）"],
+                    ["代表者", "代表取締役 岡野 健二"],
+                    ["設立・資本金", "2019年4月3日・500万円"],
+                    ["従業員数", "23人"],
+                    ["所在地", "東京都渋谷区富ケ谷2-43-15 山崎ビル4F"],
+                    ["沿革", "2020年1月「トイレつまり修理受付センター」開始 → 2022年1月「水道修理のセーフリー」に名称変更 → 2024年1月 暮らし全般の「セーフリー」を開始"],
                     ["サービス種別", "口コミ比較サービス（公式は「マッチングサービス」とも説明）"],
                     ["対応分野", "エアコンを含む暮らしのトラブル全般"],
                     ["差別化のポイント", "掲載事業者の審査・監視／画像・動画付き口コミ"],
@@ -165,25 +192,26 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：セーフリー公式サイトの掲載情報。対応分野やサービス内容は変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：セーフリー公式サイトの掲載情報、会社概要（safely.co.jp/about-us/・2026年11月26日確認）。対応分野やサービス内容は変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">口コミ・評判の傾向</h2>
             <p className="leading-8 text-slate-700 mb-6">
-              セーフリー公式の「エアコン設置・修理」カテゴリには、<strong className="font-semibold">口コミが134件・平均4.3</strong>と表示されています（掲載事業者249件・2026年11月15日確認）。一方、みん評などの第三者の口コミサイトには、セーフリーの口コミページは見つかりませんでした。当サイトで確認できた数字は次のとおりです。
+              セーフリー公式の「エアコン設置・修理」カテゴリには、<strong className="font-semibold">口コミが134件・平均4.3</strong>と表示されています（掲載事業者は11月15日の249件から11月26日は149社に減っています・2026年11月26日確認）。一方、みん評などの第三者の口コミサイトには、セーフリーの口コミページは見つかりませんでした。当サイトで確認できた数字は次のとおりです。
             </p>
             <div className="overflow-hidden rounded-2xl border border-slate-200">
               <table className="w-full text-[0.95rem]">
                 <thead>
                   <tr className="bg-slate-100 text-slate-700">
                     <th className="text-left px-4 py-3 font-semibold w-1/3">確認先</th>
-                    <th className="text-left px-4 py-3 font-semibold">表示されていた内容（2026年11月15日）</th>
+                    <th className="text-left px-4 py-3 font-semibold">表示されていた内容（2026年11月26日）</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    ["セーフリー公式 エアコン設置・修理", "口コミ134件・平均4.3（★5：69件／★4：47件／★3：13件／★2：5件／★1：0件）、掲載事業者249件"],
+                    ["セーフリー公式 エアコン設置・修理", "口コミ134件・平均4.3（★5：69件／★4：47件／★3：13件／★2：5件／★1：0件）、掲載事業者149社（11月15日は249件）"],
+                    ["App Store（アプリ）", "「セーフリー｜口コミ比較で安心の業者選び」（提供元 SAFELY, K.K.・2024年11月公開・最新版 2026年11月10日）は★5.0・評価6件。文章のレビューは1件（2026年4月8日・★5「思っていたよりコストを抑えられた」）で、エアコンに限った評価ではありません"],
                     ["みん評", "「セーフリー」「SAFELY」「水道修理のセーフリー」で検索し、該当なし"],
                     ["Googleマップ", "「水道修理のセーフリー」は★4.5・182件ですが、水道修理の店舗としての評価で、エアコンの評価ではありません"],
                   ].map(([k, v], i) => (
@@ -204,12 +232,55 @@ export default function Page() {
                 <li>・<strong>エアコン以外の口コミも含まれます。</strong>カテゴリは「電気工事」の中の「エアコン設置・修理」で、上位の事業者の口コミにはブレーカーや防犯カメラの工事も含まれていました。</li>
               </ul>
             </div>
-            <p className="mt-4 text-xs text-slate-400">※出典：セーフリー公式「エアコン設置・修理」（safely.co.jp/ec/air/）、会社概要（/about-us/）、口コミ掲載基準（/review-policy/）、みん評のサイト内検索、Googleマップ。いずれも2026年11月15日確認。口コミは個人の感想であり、最新の件数は公式サイトでご確認ください。</p>
+            <p className="mt-4 text-xs text-slate-400">※出典：セーフリー公式「エアコン設置・修理」（safely.co.jp/ec/air/）、会社概要（/about-us/）、口コミ掲載基準（/review-policy/）、みん評のサイト内検索、Googleマップ。App Store（iTunes Search API・カスタマーレビューRSS）。公式・App Storeは2026年11月26日、みん評・Googleマップは11月15日確認。口コミは個人の感想であり、最新の件数は公式サイトでご確認ください。</p>
           </section>
 
           <div className="relative w-full aspect-[16/9] overflow-hidden rounded-2xl ring-1 ring-slate-200">
             <Image src="/images/hero-b.jpg" alt="室外機を点検する修理作業のイメージ" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
           </div>
+
+          <section id="ranking" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">おすすめ順の決め方（公式の説明）</h2>
+            <p className="leading-8 text-slate-700">
+              セーフリーの「エアコン設置・修理」の一覧は、初期表示が「おすすめ順」です。公式は、電気工事の資格・登録・許可を確認できた事業者を対象に、まず「セーフリー認定」の事業者を先に表示し、そのうえで次の5つの観点を同じ重さで評価して並べていると説明しています（2026年11月26日確認）。
+            </p>
+            <div className="mt-5 overflow-hidden rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.95rem]">
+                <thead>
+                  <tr className="bg-slate-100 text-slate-700">
+                    <th className="text-left px-4 py-3 font-semibold w-1/3">観点</th>
+                    <th className="text-left px-4 py-3 font-semibold">公式の説明（要約）</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["料金への納得度", "口コミの「料金の評価」と「総合評価」の差が小さく、評価が高いほど高く評価"],
+                    ["電話のつながりやすさ", "セーフリーに載せている電話番号への電話に応答した割合"],
+                    ["最近の口コミ", "直近12か月に投稿された口コミの評価と件数"],
+                    ["頼む前の比べやすさ", "料金・対応エリア・営業時間・支払い方法・会社情報の掲載の有無"],
+                    ["利用者とのやりとり", "相談への回答、口コミへの返信、施工事例の公開、セーフリー限定キャンペーンの有無"],
+                  ].map(([k, v], i) => (
+                    <tr key={k} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      <th className="text-left align-top font-semibold text-slate-600 px-4 py-3 border-b border-slate-100">{k}</th>
+                      <td className="text-slate-700 px-4 py-3 border-b border-slate-100">{v}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 leading-8 text-slate-700">
+              「セーフリー認定」は、本人確認書類と事業の実態の確認、反社会的勢力との関係がないことの確認（第三者の調査機関と自社基準）、過去3年間に利用者との法的トラブルがないことの確認を通過した事業者に付く印と説明されています。なお、5つの観点のうち「セーフリー限定キャンペーン」の有無も評価に含まれるため、おすすめ順は口コミの点数だけで決まる順位ではありません。点数で比べたい場合は、並び替えを「口コミ評価が高い順」「口コミ数が多い順」に切り替えてご確認ください。
+            </p>
+            <div className="mt-5 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
+              <p className="font-bold text-amber-800 mb-2">名前の似たサービスにご注意ください</p>
+              <ul className="space-y-1 text-slate-700 text-[0.95rem] leading-7">
+                <li>・「セーフリー 評判」で検索すると、海外の口コミサイトTrustpilotの「Safely」（safely.com・safelyteam.com）が表示されることがあります。ドメインがセーフリー（safely.co.jp）と異なり、投稿も英語圏の利用者によるもので、当サイトでは同じ運営会社であることを確認できませんでした。</li>
+                <li>・クラウド録画カメラの「セーフィー（Safie）」は、名前が似ていますが別の会社のサービスです。</li>
+                <li>・Googleマップの「水道修理のセーフリー」は、同じ運営会社の前身サービス名ですが、評価は水道修理の店舗としてのものです。</li>
+              </ul>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">※出典：セーフリー公式「エアコン設置・修理」（safely.co.jp/ec/air/）の「おすすめ順」の説明、会社概要（/about-us/）。2026年11月26日確認。</p>
+          </section>
 
           <section id="bad" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ご利用前の注意点</h2>
