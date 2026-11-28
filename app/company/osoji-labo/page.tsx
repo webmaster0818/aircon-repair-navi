@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/company/osoji-labo" },
 };
 
-const UPDATED = "2026年11月21日";
+const UPDATED = "2026年11月29日";
 
 const toc = [
   { id: "summary", label: "おそうじLaboとは" },
@@ -89,7 +89,7 @@ const articleJsonLd = {
   headline:
     "おそうじLabo（おそうじラボ）の口コミ・評判｜セーフリー31件の内訳と大阪・兵庫の料金【2026年11月】",
   datePublished: "2026-06-28",
-  dateModified: "2026-11-21",
+  dateModified: "2026-11-29",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -130,7 +130,7 @@ export default function Page() {
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-21">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-29">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -528,7 +528,7 @@ export default function Page() {
               </table>
             </div>
             <p className="mt-4 leading-8 text-slate-700">
-              エアコン以外にも、レンジフード（9,800円〜）・キッチン・浴室・トイレ・洗面所の単品クリーニング、水回りセット（29,800円〜）、在室・空室のまるごとクリーニング、ベランダ・バルコニー清掃まで対応メニューが公開されています。エアコンクリーニングとあわせて依頼する場合は、合計金額と全体の所要時間を予約時にご確認ください。
+              エアコン以外にも、レンジフード（9,800円〜）・キッチン・浴室・トイレ・洗面所の単品クリーニング、水回りセット（28,800円〜・2026年11月29日公式確認）、在室・空室のまるごとクリーニング、ベランダ・バルコニー清掃まで対応メニューが公開されています。エアコンクリーニングとあわせて依頼する場合は、合計金額と全体の所要時間を予約時にご確認ください。
             </p>
             <p className="mt-3 text-xs text-slate-400">※料金・メニューは公式サイト掲載の内容（2026年8月2日確認）。キャンペーン等により変わる場合があります。</p>
           </section>
