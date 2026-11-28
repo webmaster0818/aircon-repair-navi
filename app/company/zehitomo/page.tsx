@@ -6,15 +6,16 @@ import SiteShot from "@/app/components/SiteShot";
 
 export const metadata: Metadata = {
   title:
-    "ゼヒトモの評判｜みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】",
+    "ゼヒトモの評判・口コミ・レビュー｜公式4.81とみん評2.84の違い、エアコン修理の料金【2026年11月】",
   description:
-    "ゼヒトモ（運営：株式会社Zehitomo）のエアコン修理について、みん評の口コミ230件の内訳とエアコンに関する口コミ、料金の考え方を調査しました。フォーム入力でプロから相見積もりの提案が届くマッチングの仕組み、依頼者は無料で提案を受け取れる点、プロごとに料金・対応が異なる点を中立的な立場でご説明します。",
+    "ゼヒトモ（株式会社Zehitomo）の評判を、公式のエアコン修理カテゴリのレビュー（4.81・2,730件）、みん評（2.84・230件）、App Store（3.7・3件）の3つで比較しました。評価が分かれる理由、利用者の手数料、症状別の費用目安を公式で確認してご説明します。",
   alternates: { canonical: "/company/zehitomo" },
 };
 
-const UPDATED = "2026年11月13日";
+const UPDATED = "2026年11月28日";
 
 const toc = [
+  { id: "conclusion", label: "結論：評判は3つの出典で分かれます" },
   { id: "summary", label: "ゼヒトモとは" },
   { id: "company", label: "運営会社・基本情報" },
   { id: "good", label: "口コミ・評判の傾向" },
@@ -37,12 +38,16 @@ const faqs = [
     a: "対応しています。公式サイトにエアコン修理のカテゴリがあり、フォームから依頼できます（2026年10月24日確認）。ただし、依頼内容によって提案が届くプロは異なるため、フォーム入力時に内容を具体的に記入することで、より適した提案を受けやすくなります。",
   },
   {
+    q: "ゼヒトモの評判は良いですか、悪いですか？",
+    a: "出典によって大きく異なります。公式のエアコン修理カテゴリでは、依頼者が登録プロを評価したレビューが平均4.81（2,730件）と表示されています。一方、みん評は平均2.84（230件）で、その多くはプロ（事業者）として登録した側の投稿です。App Storeのアプリ評価は3.7（3件）です（いずれも2026年11月28日確認、みん評は11月13日に全件確認）。依頼者として判断する場合は、依頼候補のプロ個別のレビューを確認されることをおすすめします。",
+  },
+  {
     q: "対応エリアはどこまでですか？",
     a: "全国に対応しています。登録しているプロのエリアによって、届く提案の数や日程が変わるため、お住まいの地域で対応できるプロがいるかをご確認ください。",
   },
   {
     q: "提案や見積もりを受け取るのに費用はかかりますか？",
-    a: "提案を受け取る段階では、原則として利用者側に費用はかかりません。実際の作業料金は依頼するプロによって異なるため、提案内容と総額を確認したうえで依頼することをおすすめします。",
+    a: "かかりません。公式の料金ページでは、利用者の登録・依頼の作成・プロの採用はいずれも無料で、ゼヒトモに支払う手数料はなく、採用したプロに承諾した金額を支払う仕組みと記載されています（2026年11月28日確認）。一方、プロ（事業者）側には有料の課金があり、みん評ではその仕組みへの不満が多く投稿されています。",
   },
   {
     q: "料金はどのくらいかかりますか？",
@@ -54,9 +59,9 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "ゼヒトモの評判｜みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】",
+    "ゼヒトモの評判・口コミ・レビュー｜公式4.81とみん評2.84の違い、エアコン修理の料金【2026年11月】",
   datePublished: "2026-06-10",
-  dateModified: "2026-11-13",
+  dateModified: "2026-11-28",
   author: { "@type": "Organization", name: "エアコン修理ナビ編集部" },
   publisher: { "@type": "Organization", name: "エアコン修理ナビ" },
 };
@@ -90,14 +95,14 @@ export default function Page() {
             エアコン修理業者レビュー
           </p>
           <h1 className="text-[1.7rem] leading-snug md:text-[2.1rem] md:leading-tight font-bold text-slate-900">
-            ゼヒトモの評判
+            ゼヒトモの評判・口コミ・レビュー
             <br className="hidden md:block" />
-            みん評230件の内訳とエアコン修理の料金・仕組み【2026年11月】
+            公式4.81とみん評2.84の違い、エアコン修理の料金【2026年11月】
           </h1>
           <div className="mt-4 flex items-center gap-3 text-sm text-slate-500">
             <span>エアコン修理ナビ編集部</span>
             <span className="text-slate-300">|</span>
-            <time dateTime="2026-11-13">最終更新：{UPDATED}</time>
+            <time dateTime="2026-11-28">最終更新：{UPDATED}</time>
           </div>
         </header>
 
@@ -132,13 +137,46 @@ export default function Page() {
         </nav>
 
         <div className="max-w-3xl mx-auto px-5 mt-12 space-y-14">
+          <section id="conclusion" className="scroll-mt-24">
+            <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">結論：評判は3つの出典で分かれます</h2>
+            <p className="leading-8 text-slate-700 mb-5">
+              ゼヒトモの評判は、<strong className="font-semibold">誰が何を評価しているか</strong>によって大きく異なります。公式のレビューは依頼者が担当したプロを評価したもの、みん評はプロ（事業者）として登録した側の投稿が中心です。依頼者として判断する場合は、公式の各プロのレビューと、みん評の依頼者側の投稿を分けてご覧ください。
+            </p>
+            <div className="overflow-x-auto rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.9rem]">
+                <thead className="bg-slate-50 text-slate-600">
+                  <tr>
+                    <th className="text-left px-4 py-3 font-semibold">出典</th>
+                    <th className="text-left px-4 py-3 font-semibold">評価・件数</th>
+                    <th className="text-left px-4 py-3 font-semibold">誰が何を評価しているか</th>
+                    <th className="text-left px-4 py-3 font-semibold">確認日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["ゼヒトモ公式（エアコン修理カテゴリ）", "平均4.81・2,730件", "依頼者が、担当したエアコン修理のプロを評価（ゼヒトモが自社サイトに表示する値）", "2026年11月28日"],
+                    ["みん評", "平均2.84・230件", "ゼヒトモ全体（全カテゴリ）。プロ（事業者）側の投稿が多く、エアコンに関する投稿は3件", "2026年11月13日（全件確認）"],
+                    ["App Store（iPhoneアプリ）", "★3.7・3件", "アプリの評価（提供元 ZEHITOMO INC.・2026年8月公開）", "2026年11月28日"],
+                  ].map((r, i) => (
+                    <tr key={r[0]} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      {r.map((c, j) => (
+                        <td key={j} className="px-4 py-3 border-t border-slate-100 align-top text-slate-700">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">出典：ゼヒトモ公式「エアコン修理業者を探す」ページの表示（プロ1,403人・評価4.81・2,730件）、<a href="https://minhyo.jp/zehitomo" target="_blank" rel="nofollow noopener noreferrer" className="underline underline-offset-2">みん評</a>、App Store（iTunes Search API で取得）。公式の値はゼヒトモ自身が集計・表示しているもので、当サイトでは件数の内訳を確認できていません。数値は日々変わります。</p>
+          </section>
+
           <section id="summary" className="scroll-mt-24">
             <h2 className="text-2xl font-bold text-slate-900 border-l-4 border-sky-600 pl-4 mb-5">ゼヒトモとは</h2>
             <p className="leading-8 text-slate-700">
               ゼヒトモは、株式会社Zehitomo（東京都品川区・2015年設立）が運営するマッチングサービスです。フォームに依頼内容を入力すると、登録しているプロ（業者）から見積もりや提案が届く仕組みで、利用者は複数の提案を比較したうえで依頼先を選べます。エアコンの修理・取り付けをはじめ、暮らしのさまざまな依頼に対応しています。
             </p>
             <p className="mt-4 leading-8 text-slate-700">
-              公式サイトにエアコン修理のカテゴリがあり、全国に対応しており、複数の業者を比較してから依頼先を決めたい方に適しています。
+              公式サイトのエアコン修理カテゴリには、2026年11月28日時点で1,403人のプロが登録されています。依頼内容を入力すると最大5人のプロから提案を受けられる仕組みで、複数の業者を比較してから依頼先を決めたい方に適しています。
             </p>
           </section>
 
@@ -149,10 +187,15 @@ export default function Page() {
                 <tbody>
                   {[
                     ["サービス名", "ゼヒトモ"],
-                    ["運営会社", "株式会社Zehitomo（東京都品川区・2015年設立）"],
+                    ["運営会社", "株式会社Zehitomo（2015年設立）"],
+                    ["代表者", "代表取締役 三浦雄一郎"],
+                    ["所在地", "東京都品川区西五反田7-22-17 TOCビル11階"],
                     ["サービス形態", "フォーム入力でプロから相見積もり提案が届くマッチング"],
                     ["対応エリア", "全国（登録プロのエリアにより変動）"],
                     ["主な対応内容", "エアコン修理・取り付けほか暮らしの依頼全般"],
+                    ["エアコン修理のプロ数", "1,403人（公式カテゴリページ表示）"],
+                    ["提案数", "最大5人のプロから提案"],
+                    ["利用者の費用", "登録・依頼・採用は無料。ゼヒトモへの手数料なし（作業代金は採用したプロに支払い）"],
                     ["料金", "依頼するプロ・作業内容により変動（提案で確認可能）"],
                     ["公式サイト", "https://www.zehitomo.com/"],
                   ].map(([k, v], i) => (
@@ -164,7 +207,7 @@ export default function Page() {
                 </tbody>
               </table>
             </div>
-            <p className="mt-3 text-xs text-slate-400">出典：公式・関連サイトの掲載情報。対応エリアやサービス内容は変更される場合があります。</p>
+            <p className="mt-3 text-xs text-slate-400">出典：ゼヒトモ公式の会社概要（/about）・ご利用料金（/fee）・トップページ・エアコン修理カテゴリページ（いずれも2026年11月28日確認）。対応エリアやサービス内容は変更される場合があります。</p>
           </section>
 
           <section id="good" className="scroll-mt-24">
@@ -204,11 +247,11 @@ export default function Page() {
             <p className="leading-8 text-slate-700 mb-4">
               利便性の高い仕組みである一方、プロから提案が届くマッチング型サービスという性質上、
               <strong className="font-semibold">依頼するプロによって対応や料金に差が生じる場合がある</strong>
-              点にご留意ください。また、修理単体の依頼は取り付けなどに比べるとやや限定的なため、依頼内容を具体的に伝えることが重要です。依頼時には以下の点をご確認ください。
+              点にご留意ください。依頼時には以下の点をご確認ください。
             </p>
             <ul className="space-y-3 text-slate-700 leading-7">
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>地域や依頼内容によって、届く提案の数や日程が変わる場合があります。</li>
-              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>修理単体の依頼はやや限定的なため、症状を具体的に伝えることで提案を受けやすくなります。</li>
+              <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>症状（エラー表示・発生時期・型番）を具体的に入力すると、プロが見積もりを出しやすくなります。</li>
               <li className="flex gap-3"><span className="text-sky-600 font-bold shrink-0">・</span>依頼前に、各プロの作業範囲と総額の見積もりを比較・確認することをおすすめします。</li>
             </ul>
           </section>
@@ -229,7 +272,7 @@ export default function Page() {
                 <h3 className="font-bold text-slate-700 mb-3">デメリット・注意点</h3>
                 <ul className="space-y-2 text-slate-700 text-[0.95rem] leading-7">
                   <li>依頼するプロによって、対応や料金に差が生じる場合があります。</li>
-                  <li>修理単体の依頼は、対応できるプロが限られる場合があります。</li>
+                  <li>公式のレビューは依頼者がプロ個人を評価したもので、ゼヒトモ全体の評価ではありません。</li>
                   <li>料金は提案内容により異なるため、事前に見積もりを比較してください。</li>
                 </ul>
               </div>
@@ -267,6 +310,35 @@ export default function Page() {
             <p className="mt-4 leading-8 text-slate-700">
               修理と買い替えで迷う場合もあるため、依頼前には各プロの作業範囲と総額の見積もりを確認したうえで依頼することをおすすめします。複数の提案を比較できる仕組みを活用し、料金と対応を比較してください。
             </p>
+            <h3 className="mt-6 font-bold text-slate-800">ゼヒトモが掲載している症状別の費用・作業時間の目安</h3>
+            <div className="mt-3 overflow-x-auto rounded-2xl border border-slate-200">
+              <table className="w-full text-[0.9rem]">
+                <thead className="bg-slate-50 text-slate-600">
+                  <tr>
+                    <th className="text-left px-4 py-3 font-semibold">故障内容</th>
+                    <th className="text-left px-4 py-3 font-semibold">費用の目安</th>
+                    <th className="text-left px-4 py-3 font-semibold">作業時間の目安</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["電源が入らない", "2〜3.5万円", "30〜60分"],
+                    ["エアコンから風が出ない", "0.9〜13万円", "60〜120分"],
+                    ["冷暖房が効かない", "2.7〜10.5万円", "60〜120分"],
+                    ["水漏れ", "0.8〜6万円", "30〜120分"],
+                    ["室外機の故障", "2〜11万円", "60〜120分"],
+                    ["リモコン操作が効かない", "0.6〜3.5万円", "10〜30分"],
+                  ].map((r, i) => (
+                    <tr key={r[0]} className={i % 2 === 0 ? "bg-white" : "bg-slate-50"}>
+                      {r.map((c, j) => (
+                        <td key={j} className="px-4 py-3 border-t border-slate-100 text-slate-700">{c}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 text-xs text-slate-400">出典：ゼヒトモ公式「エアコン修理業者を探す」ページの「エアコン修理の費用と工事時間」（2026年11月28日確認）。ゼヒトモが掲載する一般的な目安で、実際の金額は届いた見積もりで決まります。同ページでは、10万円を超える場合は買い替えも検討するよう案内しています（<Link href="/cost/replace-vs-repair" className="underline underline-offset-2">修理と買い替えの比較</Link>）。</p>
             <p className="mt-3 text-xs text-slate-400">※料金は依頼するプロ・作業内容により異なります。正確な金額は届いた提案でご確認ください。</p>
           </section>
 
